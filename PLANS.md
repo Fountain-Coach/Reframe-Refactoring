@@ -14,12 +14,17 @@ Plan:
 - Step 1 (status: done) - Import the committed integration guide into `docs/`.
 - Step 2 (status: done) - Add FCIS-compliant repository layers and synchronization ownership.
 - Step 3 (status: done) - Validate content parity, links, shell syntax, and repository hygiene.
-- Step 4 (status: in_progress) - Publish the private Fountain Coach repository and verify reciprocal links.
+- Step 4 (status: done) - Publish the private Fountain Coach repository and verify reciprocal links.
 Validation:
 - Every guide chapter exists under `docs/` and relative Markdown links resolve.
 - `Scripts/sync-integration-copy --check <integration-checkout>` reports no difference.
 - `sh -n Scripts/sync-integration-copy` passes.
 - `git diff --check` passes.
+
+Results:
+- Published privately at `https://github.com/Fountain-Coach/Reframe-Refactoring` with `main` as the default branch.
+- Recorded the integration source at `midi2-gpu-fabric` commit `da22ba0c54e0fff6fb44f66182cecab0dd18759e` and draft PR `#8`.
+- Confirmed guide parity, relative links, synchronization-script syntax, and Git whitespace hygiene.
 
 ---
 
