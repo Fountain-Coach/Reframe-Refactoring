@@ -85,6 +85,10 @@ Read In                     (as semantic indexing)
 
 Matches in explicitly dated historical documents or archival decoders are acceptable only when they cannot influence current runtime behavior and are labeled accordingly. Test fixtures should not keep dead production APIs alive merely to preserve old coverage.
 
+## Copilot acceptance
+
+The conversational Copilot carries its own acceptance surface, defined in the [Copilot implementation extension](10-copilot-implementation-extension.md). Its behavioural scenarios assert application behaviour and persisted state — not exact assistant phrasing — and cover inspecting current state, explaining readiness, retrieving source evidence, inspecting Grounding, running and blocking operations, stale identity, relaunch, and an explicit no-index proof. The same negative-evidence discipline required here applies: before the Copilot migration is accepted, recorded searches must show that no production Copilot path depends on semantic-index documents, index-derived reading completion, semantic-memory priors, index-derived Storify input, deprecated Copilot action names, removed readiness concepts, UI-only confirmation authority, conversation-only project state, or duplicate Copilot persistence.
+
 ## Acceptance statement
 
 The refactor is accepted only when a reviewer can truthfully state: “Reframe has no semantic indexing stage; confirmed Grounding directly governs Storify; Storify alone reads source structure; downstream artifacts carry exact lineage; old index data is archival; and the full journey works from an index-free store.”

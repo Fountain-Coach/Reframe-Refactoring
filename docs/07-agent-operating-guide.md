@@ -67,3 +67,7 @@ Before handing off any phase, answer these questions from evidence:
 9. What transition code remains, and in which recorded phase will it be removed?
 
 An agent should not claim a phase complete until each applicable answer is explicit.
+
+## Copilot work
+
+When the task concerns the conversational Copilot, read the [Copilot implementation extension](10-copilot-implementation-extension.md) before editing, and treat its "Implementation discovery is mandatory" section as a precondition: map the real conversational entry, context-construction, intent, execution, persistence, confirmation, and result-reporting paths from source evidence, and record them in `PLANS.md` with symbol names and paths. Do not design a generic Copilot framework, do not expose internal functions directly to the model, and do not let conversation history become authoritative project state. The same authority precedence, planning discipline, and evidence expectations in this guide apply when an operation is initiated conversationally.

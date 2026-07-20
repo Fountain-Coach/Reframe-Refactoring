@@ -26,6 +26,10 @@ Read the [target architecture](04-target-architecture.md), phase 4 of the [refac
 
 Read the entire [refactoring program](06-refactoring-program.md), especially its deletion gate, followed by the [agent operating guide](07-agent-operating-guide.md) and [validation and acceptance](08-validation-and-acceptance.md). Do not begin from a filename search and delete outward; prove replacement consumption first.
 
+### Copilot implementation
+
+Read the [target architecture](04-target-architecture.md), [Grounding contract](05-grounding-contract.md), and the [Copilot implementation extension](10-copilot-implementation-extension.md), then follow its mandatory discovery procedure before editing. The Copilot must reuse existing application operations and the same authority chain; it is not a second workflow engine. The behavioural, relaunch, and no-index acceptance cases in [validation and acceptance](08-validation-and-acceptance.md) apply.
+
 ### Code review
 
 Read [current state and refactoring problem](03-current-state-and-problem.md), the relevant target contract, and the phase exit criteria in the [refactoring program](06-refactoring-program.md). A review should reject dual authority, hidden index reads, numeric context shaping, or readiness claims that are not persisted.
@@ -47,6 +51,7 @@ Read the [agent operating guide](07-agent-operating-guide.md) first, then follow
 | [Agent operating guide](07-agent-operating-guide.md) | Instructions for `.claude`, `.codex`, and human collaborators. |
 | [Validation and acceptance](08-validation-and-acceptance.md) | Required unit, integration, store, UI, live-provider, and negative evidence. |
 | [Compatibility and evolution](09-compatibility-and-future-evolution.md) | Legacy-store policy, archival behavior, rollback, and rules for future extensions. |
+| [Copilot implementation extension](10-copilot-implementation-extension.md) | Extends the refactor to the conversational Copilot: perception, retrieval, action parity, discovery procedure, and acceptance. |
 
 ## Vocabulary
 

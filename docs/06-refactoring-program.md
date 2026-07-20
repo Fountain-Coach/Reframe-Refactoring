@@ -88,3 +88,7 @@ The following locations are starting points, not an exhaustive deletion list:
 - `schema/modernization-studio-capabilities.json` and generated reasoning manifests: model-facing workflow truth.
 
 Agents must rediscover exact consumers with `rg` at the start of each phase. This list describes known architecture; it is not permission to ignore code added later.
+
+## Copilot extension to this program
+
+This program governs the visible editorial pipeline. The conversational Copilot is migrated onto the same post-indexing authority model by a parallel, evidence-first program defined in the [Copilot implementation extension](10-copilot-implementation-extension.md). That chapter adds its own ordered phases — implementation map and parity matrix, Grounding-first perception, retrieval parity, action migration, action parity, and behavioural acceptance — and its own deletion obligation for indexing-era Copilot behaviour. Its phases are a deliberate addition to this program, not a rewrite of it: the Copilot must reuse the authoritative application operations these phases produce, never reconstruct them. Begin that work from the extension's mandatory discovery procedure, not from a presumed conversational flow.

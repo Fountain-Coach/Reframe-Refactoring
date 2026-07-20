@@ -30,6 +30,7 @@ For implementation work, the minimum safe sequence is:
 6. [Agent operating guide](07-agent-operating-guide.md)
 7. [Validation and acceptance](08-validation-and-acceptance.md)
 8. [Compatibility and future evolution](09-compatibility-and-future-evolution.md)
+9. [Copilot implementation extension](10-copilot-implementation-extension.md)
 
 ## Governing sentence
 

@@ -15,6 +15,7 @@ Start with the [abstract](docs/00-abstract.md), then use the [reading index](doc
 - [Operating guide for `.claude` and `.codex`](docs/07-agent-operating-guide.md)
 - [Validation and acceptance](docs/08-validation-and-acceptance.md)
 - [Compatibility and future evolution](docs/09-compatibility-and-future-evolution.md)
+- [Copilot implementation extension](docs/10-copilot-implementation-extension.md)
 
 ## Source relationship
 
