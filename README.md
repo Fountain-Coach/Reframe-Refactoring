@@ -16,6 +16,7 @@ Start with the [abstract](docs/00-abstract.md), then use the [reading index](doc
 - [Validation and acceptance](docs/08-validation-and-acceptance.md)
 - [Compatibility and future evolution](docs/09-compatibility-and-future-evolution.md)
 - [Copilot implementation extension](docs/10-copilot-implementation-extension.md)
+- [Grounding as a given — the canonical manifesto](docs/11-grounding-as-a-given.md)
 
 ## Source relationship
 

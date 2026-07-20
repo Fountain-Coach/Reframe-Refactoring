@@ -59,3 +59,7 @@ Invalid or internally contradictory Grounding is mediated as a clarification, no
 ## Human-readable projection
 
 Reframe may present the Grounding Profile as a concise “Working Contract” or retain a “Manuscript Guide” label for a combined report. Such a view is a projection, not a separately generated authority. After Storify completes, the projection may add source-grounded structural findings, clearly distinguishing writer-declared policy from model-derived story structure. Regenerating the view must be deterministic from stored artifacts and must not reread the source.
+
+## Authoring model
+
+The persistence, identity, and invalidation semantics above are authoritative. The *authoring model* — how the writer arrives at a confirmed profile — is refined in [Grounding as a given](11-grounding-as-a-given.md): a canonical manifesto ships as the default given, is auto-applied and auto-confirmed on import, and is edited centrally as prose (never dissected into fields by a model, which would violate the deterministic, no-model, no-overreach rule of this contract). That chapter changes only how the profile is authored; every invariant here — confirmed Grounding governs Storify, artifacts carry identity, edits mark downstream stale — is preserved.

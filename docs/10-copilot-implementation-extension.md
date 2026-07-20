@@ -626,3 +626,7 @@ Where current code and this extension differ:
 The desired result is not a Copilot adjacent to Reframe.
 
 The desired result is that the existing Reframe Copilot can truthfully perceive and legitimately operate the Grounding-first Reframe application.
+
+## Conversational Grounding
+
+Grounding is the first place the Copilot earns its keep. [Grounding as a given](11-grounding-as-a-given.md) makes the canonical manifesto the default so the writer is not stopped at a form; the Copilot is the front door for the few who want a different stance, or who want to shape what a particular reframe should *seek*. It proposes and helps refine; the writer reacts and confirms through the application's legitimate confirmation flow. This is governed by the writer-steering rules above: the Copilot must never silently promote ordinary conversation into confirmed Grounding, and it surfaces the one genuine per-piece knob (structural intent) as an offer, never a gate.

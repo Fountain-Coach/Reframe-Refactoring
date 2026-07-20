@@ -31,6 +31,7 @@ For implementation work, the minimum safe sequence is:
 7. [Validation and acceptance](08-validation-and-acceptance.md)
 8. [Compatibility and future evolution](09-compatibility-and-future-evolution.md)
 9. [Copilot implementation extension](10-copilot-implementation-extension.md)
+10. [Grounding as a given — the canonical manifesto](11-grounding-as-a-given.md)
 
 ## Governing sentence
 
