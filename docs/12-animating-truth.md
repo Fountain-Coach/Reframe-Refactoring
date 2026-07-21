@@ -26,6 +26,16 @@ Everywhere else the app must **animate truth**: motion must express something re
 4. **The unknown is foreshadowed as honestly unknown.** Placeholders read as *pending* — dim, quiet, alive — and resolve either to real content or to a visible NOT-READ / failure state. A placeholder that cannot fill must never animate forever.
 5. **Motion carries progress spatially and semantically** — a read-head's position, a structure filling in — not an abstract spinner or a bare percentage.
 6. **The spinner is the last resort**, reserved for the genuinely unknowable short wait alone.
+7. **Nothing that is not the manuscript may delay the manuscript.** Bookkeeping the writer did not ask for — a
+   last-opened pointer, a registry write, a usage record — must never sit between a click and the frame it asks for.
+   Such work runs *behind* the open, never before it. No animation excuses a wait that should not exist, and the first
+   question about any delay is whether it belongs on the path at all.
+8. **Absence must not overwrite a truth already held.** When a slower authority has not yet loaded, its emptiness is
+   not an answer: a surface may not publish "nothing" over structure that is already on screen and correct. Only a
+   loaded authority may clear what a cheaper one established.
+9. **A click lands in the surface it asks for, not in an interim one.** If the destination can be rendered from truth
+   already at hand, it is rendered at once — including its honest not-yet-populated state, which is a state of the
+   destination, not a screen standing in for it. Interim screens between the click and the destination are prohibited.
 
 ## Loading, animated — how truth is animated at each moment
 
@@ -49,6 +59,10 @@ This is the worked case. At the instant Story is shown, the app already knows, c
 
 Prohibited on this surface: a bright accent frame around the pane (it reads as a selection or error box) and an empty box captioned "Navigator ready / Starting…" (it reads as a stall).
 
+Also prohibited: **internal phase names on screen.** "Navigator ready", "Storify running", "Opening store…" name our machinery, not the writer's work, and a status line the writer cannot interpret is no better than a spinner. Every visible status says what is happening to *their manuscript*, in their words.
+
+A manuscript that has not been read into beats is not an empty surface. Its source is a cheap read, so the timeline renders from it immediately and holds the whole scope as **one unanchored span** — a state the timeline already has a name for — which real beats then carve up as they arrive (see [chapter 14](14-the-beat-and-its-arrangements.md)).
+
 ## Honesty (non-goals)
 
 This strategy must not become a lie, and it does not lower any other bar:
@@ -62,6 +76,7 @@ This strategy must not become a lie, and it does not lower any other bar:
 
 - **[Target architecture](04-target-architecture.md)** — the critical-vs-ancillary hydration split is the seam that makes "the frame never waits for everything" real: the Story frame must render at *critical-hydration-complete* and stream the rest, rather than waiting on ancillary hydration.
 - **[Grounding as a given](11-grounding-as-a-given.md)** — the same honesty ethic: show what is truly known now, mark the rest pending, never manufacture.
+- **[The beat and its arrangements](14-the-beat-and-its-arrangements.md)** — what the Story surface renders while it waits, and how a beat settles out of an unanchored span, is that chapter's object under this chapter's doctrine.
 - **App-flow record (`reframe-app-flow-governance.md`)** — this chapter governs how every surface in that flow must *load and feel*.
 
 ## Acceptance
@@ -75,3 +90,9 @@ The doctrine is met when:
 5. **Motion corresponds to real state changes** (a beat settling, the read-head advancing); no decorative-only motion stands in for progress.
 6. **The bright accent frame and the "Navigator ready / Starting…" empty state are removed** from the Story surface.
 7. **Reduce-motion is honored,** and the truth-first ordering holds without movement.
+8. **No bookkeeping write blocks an open.** Opening a manuscript performs no work that the writer did not ask for
+   before the frame appears.
+9. **No surface publishes emptiness over structure it is already showing** while a slower authority loads.
+10. **Clicking a manuscript lands in its destination surface,** rendered from truth already at hand, with no interim
+    screen in between.
+11. **No visible status names an internal phase or subsystem;** every status line is in the writer's terms.
