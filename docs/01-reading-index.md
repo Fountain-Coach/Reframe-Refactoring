@@ -28,7 +28,7 @@ Read the entire [refactoring program](06-refactoring-program.md), especially its
 
 ### Copilot implementation
 
-Read the [target architecture](04-target-architecture.md), [Grounding contract](05-grounding-contract.md), and the [Copilot implementation extension](10-copilot-implementation-extension.md), then follow its mandatory discovery procedure before editing. The Copilot must reuse existing application operations and the same authority chain; it is not a second workflow engine. The behavioural, relaunch, and no-index acceptance cases in [validation and acceptance](08-validation-and-acceptance.md) apply.
+Read the [target architecture](04-target-architecture.md), [Grounding contract](05-grounding-contract.md), the [Copilot implementation extension](10-copilot-implementation-extension.md), and [the situated Copilot](15-the-situated-copilot.md), then follow chapter 10's mandatory discovery procedure before editing. Work that places the Copilot on a surface, or changes what she says when she arrives, is governed by chapter 15 and must satisfy its acceptance as well. The Copilot must reuse existing application operations and the same authority chain; it is not a second workflow engine. The behavioural, relaunch, and no-index acceptance cases in [validation and acceptance](08-validation-and-acceptance.md) apply.
 
 ### Code review
 
@@ -57,6 +57,7 @@ Read the [agent operating guide](07-agent-operating-guide.md) first, then follow
 | [App-flow record](reframe-app-flow-governance.md) | The complete prose account of how the app must flow end to end — the single continuous narrative these numbered chapters refine. |
 | [Storage and performance](13-storage-and-performance.md) | Locks the storage layering — document layer = plain-text bundle + single manifest; musical layer = MIDI 2.0 — and the performance doctrine: reads are fast architecturally (cache-first, one manifest, no serial fan-out), not by encoding. |
 | [The beat and its arrangements](14-the-beat-and-its-arrangements.md) | One beat, three arrangements (timeline, cut canvas, score): a single widget anatomy whose only differing part is its measure; the canvas as a patch graph with a renderer node and a trigger; and the take — one firing that renders the document and musical layers as siblings. |
+| [The situated Copilot](15-the-situated-copilot.md) | One Copilot, differently placed: she perceives the arrangement hosting her and what is wired into the conversation there, opens in words that fit the place, offers nothing whose object the surface does not show, and states an empty situation rather than filling it. |
 
 ## Vocabulary
 

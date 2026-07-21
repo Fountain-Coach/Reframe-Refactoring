@@ -630,3 +630,7 @@ The desired result is that the existing Reframe Copilot can truthfully perceive 
 ## Conversational Grounding
 
 Grounding is the first place the Copilot earns its keep. [Grounding as a given](11-grounding-as-a-given.md) makes the canonical manifesto the default so the writer is not stopped at a form; the Copilot is the front door for the few who want a different stance, or who want to shape what a particular reframe should *seek*. It proposes and helps refine; the writer reacts and confirms through the application's legitimate confirmation flow. This is governed by the writer-steering rules above: the Copilot must never silently promote ordinary conversation into confirmed Grounding, and it surfaces the one genuine per-piece knob (structural intent) as an offer, never a gate.
+
+## Where the Copilot stands
+
+This chapter governs what the Copilot may perceive of the workspace and what it may legitimately do. It does not govern *where it is placed*. Once the Copilot appears on more than one surface — and [the beat and its arrangements](14-the-beat-and-its-arrangements.md) places it on the canvas as a node acting on wired beats — the perception contract above is incomplete: every fact it enumerates is a fact about persisted state, and none is a fact about the arrangement the writer is currently in. [The situated Copilot](15-the-situated-copilot.md) extends the contract with that missing group, and binds the Copilot to the rule that a control offered where its object is not visible is a category error.
