@@ -13,6 +13,32 @@ A cold library open was measured at ~107s on a full library. The cause was not t
 3. **The musical layer is MIDI 2.0.** The Score persists in **UMP / a MIDI 2.0 Clip File** — the native, lossless, round-trippable format for time-based musical events, which the project owns end to end. Property Exchange (JSON) and Flex Data carry structured sidecar metadata where wanted. The document layer is never encoded as MIDI, and the musical layer is never flattened out of it.
 4. **Format is not the performance lever.** Choosing binary over text (or MIDI over JSON) for the document layer buys effectively nothing for load time — parsing a few dozen names is negligible in any encoding. Persist each layer in the format that fits its *meaning*, and win performance architecturally (below), not by re-encoding documents.
 
+## The two layers, and where truth lives
+
+Reframe persists in **two distinct layers**, and confusing them is the mistake this section forbids.
+
+### The document layer — files are the truth
+
+A manuscript's authored content is the **document layer**, and its single source of truth is the **bundle folder on disk**:
+
+- `source.fountain`, `grounding.md`, `beats.json`, `cut-script.fountain`, `chapters.json`, `manuscript.json` — the authored document — and `score.midi2` for the musical layer.
+- The **bundle folders are authoritative.** `library-manifest.json` is a **derived, rebuildable index** — a single-read fast path over the folders, reconstructable at any time by scanning them. On any disagreement the folders win; the manifest is never hand-authored as truth.
+- The document layer is never stored as store documents, and never encoded as MIDI.
+
+### The runtime / working layer — the store stays
+
+Reframe's **machinery** is a separate layer and is **not** swapped to files. It remains in FountainStore and the backplane/corpus service:
+
+- the planner invocation topics the Copilot uses; Storify run intermediates and windows; chat history; session and workflow documents; launcher / last-opened records; and similar transient or index state.
+- This is **working/index state, not the authored document.** It may be rebuilt, re-run, or discarded; losing it never loses the manuscript, because the manuscript is the bundle.
+
+### The invariants
+
+- **The store is never the document truth.** A manuscript's content is read from and written to its bundle; the store must not be consulted for it once the swap is complete.
+- **The files are never the runtime machinery.** Planner topics, run intermediates, and chat are not written into the bundle.
+- **The manifest is an index, not an authority.** It is rebuilt from the folders; deleting it is harmless.
+- **A manuscript is portable on its own.** Copying a bundle folder carries the whole authored document — no store, no manifest required — because the folder is the truth.
+
 ## The performance doctrine (how reads must be shaped)
 
 Read performance is governed by three rules, in order of leverage:
@@ -44,3 +70,5 @@ A corollary: **the store/service is a working/index layer, not the read hot path
 4. The **Score persists as MIDI 2.0** (UMP / Clip File); the document layer is never encoded as MIDI.
 5. Any unavoidable read fan-out is **bounded-concurrent**, never a serial loop.
 6. The cache is reconciled by refresh — stale entries correct and removed manuscripts disappear; nothing in the cache is fabricated.
+7. A manuscript's content resolves from its **bundle folder**; the store is not consulted for the document once swapped. The **manifest is rebuildable** from the folders and is never the sole authority.
+8. Runtime/working state (planner topics, Storify intermediates, chat, session/workflow docs) is **not required to live in files** — it stays in the store/backplane, and losing it never loses a manuscript.
