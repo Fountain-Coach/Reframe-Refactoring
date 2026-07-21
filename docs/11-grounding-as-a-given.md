@@ -18,7 +18,7 @@ This chapter changes the *authoring model* to remove that wall, while preserving
 
 3. **Import goes straight to Story (Storify).** With Grounding pre-supplied, the next surface is the structural read, not a gate.
 
-4. **The Grounding tab becomes a quiet statement of the given, not a form.** It shows the working contract as readable prose plus an escape hatch to read or change it — not a set of empty fields to complete.
+4. **Grounding is not a per-manuscript surface.** The writer does not move *through* Grounding at all: the reading stance is the settled given, held behind every stage, with no per-manuscript form or tab to visit. The writer’s navigation is Story-first (Story · Score); the stance is read and changed centrally in Preferences, or conversationally with the Copilot. (This supersedes an earlier formulation that kept a read-only Grounding tab as "a quiet statement of the given.")
 
 5. **The manifesto is edited centrally, as prose.** The whole stance surfaces as one editable flow-text in the application's Preferences (the natural home, where grounding defaults already resurface). It is the single global default every manuscript inherits.
 
@@ -69,5 +69,5 @@ The refinement is accepted when:
 2. The **whole manifesto is editable as prose** in Preferences, as a single default that every manuscript inherits.
 3. Editing the manifesto **re-identifies Grounding and marks dependent downstream artifacts stale**, per chapter 05.
 4. **No model call** occurs anywhere in the grounding path — the manifesto is never dissected by a model.
-5. The **Grounding tab presents the given** (readable contract + read/change), not an empty form.
+5. **There is no per-manuscript Grounding tab.** Opening a manuscript lands the writer on Story; the reading stance is read and changed centrally in Preferences (the canonical manifesto, as prose) or conversationally with the Copilot — never as a per-manuscript form.
 6. Structural intent is defaulted and hidden; when the Copilot surfaces it, it does so as an **offer**, and confirmed Grounding is never created implicitly from ordinary conversation.
