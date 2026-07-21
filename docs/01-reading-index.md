@@ -54,6 +54,7 @@ Read the [agent operating guide](07-agent-operating-guide.md) first, then follow
 | [Copilot implementation extension](10-copilot-implementation-extension.md) | Extends the refactor to the conversational Copilot: perception, retrieval, action parity, discovery procedure, and acceptance. |
 | [Grounding as a given](11-grounding-as-a-given.md) | Refines the Grounding authoring model: a canonical manifesto shipped as the default given, auto-confirmed on import, edited centrally as prose, never model-dissected. |
 | [Animating truth](12-animating-truth.md) | Perceived performance: never sign a wait with a spinner. Render the frame and cheap/cached truth instantly; foreshadow the unknown as honest, animated structure whose motion maps to real work. Applied first to loading. |
+| [App-flow record](reframe-app-flow-governance.md) | The complete prose account of how the app must flow end to end — the single continuous narrative these numbered chapters refine. |
 
 ## Vocabulary
 
