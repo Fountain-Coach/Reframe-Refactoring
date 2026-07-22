@@ -57,6 +57,7 @@ The Cut Script canvas is a wiring surface in the tradition of Quartz Composer an
 - **[Storage and performance](13-storage-and-performance.md)** — supplies both destinations a take writes to: the cut script in the document bundle and the score as MIDI 2.0. This chapter adds only *when* they are written and by what.
 - **[Grounding as a given](11-grounding-as-a-given.md)** — the same honesty ethic governs the unanchored span: show what is true now, mark the rest as not yet read, manufacture nothing.
 - **[The situated Copilot](15-the-situated-copilot.md)** — the Copilot is a node on this canvas, and rule 9 above binds her as it binds any control. That chapter gives her the perception required to obey it: which arrangement hosts her, and which beats are wired into the conversation there.
+- **[The timeline is the machine room](16-the-timeline-is-the-machine-room.md)** — the timeline, the canvas and the score are *arrangements* of the work. A machine room was never one of them, only a description of it, and that chapter retires the description.
 - **App-flow record (`reframe-app-flow-governance.md`)** — the beat's journey across arrangements is part of that flow and must be narrated there as one object.
 
 ## Acceptance

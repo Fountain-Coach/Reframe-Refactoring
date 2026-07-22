@@ -63,6 +63,8 @@ Also prohibited: **internal phase names on screen.** "Navigator ready", "Storify
 
 A manuscript that has not been read into beats is not an empty surface. Its source is a cheap read, so the timeline renders from it immediately and holds the whole scope as **one unanchored span** — a state the timeline already has a name for — which real beats then carve up as they arrive (see [chapter 14](14-the-beat-and-its-arrangements.md)).
 
+When the surface animates the work faithfully, nothing needs to narrate it — and the places built to hold that narration (a machine room, a run report, a heartbeat line) become second accounts of the same truth. [Chapter 16](16-the-timeline-is-the-machine-room.md) draws that consequence and retires them.
+
 ## Honesty (non-goals)
 
 This strategy must not become a lie, and it does not lower any other bar:

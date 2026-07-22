@@ -58,6 +58,7 @@ Read the [agent operating guide](07-agent-operating-guide.md) first, then follow
 | [Storage and performance](13-storage-and-performance.md) | Locks the storage layering — document layer = plain-text bundle + single manifest; musical layer = MIDI 2.0 — and the performance doctrine: reads are fast architecturally (cache-first, one manifest, no serial fan-out), not by encoding. |
 | [The beat and its arrangements](14-the-beat-and-its-arrangements.md) | One beat, three arrangements (timeline, cut canvas, score): a single widget anatomy whose only differing part is its measure; the canvas as a patch graph with a renderer node and a trigger; and the take — one firing that renders the document and musical layers as siblings. |
 | [The situated Copilot](15-the-situated-copilot.md) | One Copilot, differently placed: she perceives the arrangement hosting her and what is wired into the conversation there, opens in words that fit the place, offers nothing whose object the surface does not show, and states an empty situation rather than filling it. |
+| [The timeline is the machine room](16-the-timeline-is-the-machine-room.md) | Making beats IS the machinery and the timeline is where it is seen: one machinery, one surface. No machine room, factory gate, engine view, run report, or heartbeat line; diagnostics may drive behaviour but never become a surface; unreachable surface is deleted, not kept. |
 
 ## Vocabulary
 
