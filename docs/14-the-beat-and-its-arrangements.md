@@ -31,6 +31,8 @@ Everything else about the beat — its name, its title, its text, its ground, it
 
 ## The canvas is a patch graph
 
+> **Superseded by [chapter 17, The Score](17-the-score.md).** The free-2D patch-graph canvas described in this section (rules 7–9) is **retired**: an infinite canvas of node/wire/port "noodling" serves a machinist, not a writer. The Cut survives as a **lens of the Score** — beats arranged in authored runtime order along the spine — and the trigger/clock and *take* (rules 10–13) relocate to the Score's transport. The beat anatomy, the measure-is-the-transformation rule, and the unanchored span (rules 1–6) are unchanged and inherited by the Score. Read the rules below as the historical design that chapter 17 replaces for the canvas, and retains for the beat.
+
 The Cut Script canvas is a wiring surface in the tradition of Quartz Composer and Vuo, and it must obey that grammar rather than the grammar of a document window:
 
 7. **Output is a node, not a command.** The assembled Cut Script is a **renderer node** on the board with a wired input — permanently present, showing the assembled result live, with its measure (runtime, kept proportion, what spills). "Copy" and "Save" as toolbar verbs are prohibited on this surface: they exist only because the output previously had nowhere to live.
