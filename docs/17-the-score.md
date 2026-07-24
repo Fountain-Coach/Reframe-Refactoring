@@ -47,10 +47,25 @@ Everything absent from this list — additional media participants, remote insta
 
 The distributed stage is real and intended: participants of any medium, each possibly a separate Reframe instance, discovering one another through negotiated presence rather than hard-coded assumption; rehearsal, testing, and performance converging on one field; a simulated instrument later replaced by a physical one without altering the composition that addresses it. **Triggers to expand past the minimum:** a second medium is genuinely rendered (a voice, a light) and needs its own lane and role; two Reframe instances must sustain one work while keeping their individuality; a participant must publish or subscribe to another's state; the musical-layer sibling must actually render rather than bind. Until a trigger is met, the lane, the monitor, or the subscription is not built — because an empty console is a lie about the work's present.
 
+## Where the stage actually is (decided 2026-07-24)
+
+**The Score is not ahead of us. We are standing on it.** The surface a writer already works in — the manuscript surface carrying the beat-spine (Scene/Structure bands), the beats rendered from the source beneath it, the lens selection, the transport's read-head, and the Copilot beside it — **is** the Score. It is not a preview of the stage, nor a step toward it: it is the stage, and **every other view and state must evolve from it**.
+
+This resolves an inversion that had crept in. The "minimum honest Score" was built as **its own view**, reached from a third icon, sitting beside the timeline and the Cut — so the Score appeared as a *destination peer to its own two lenses*. That is exactly the navigation model this chapter retires (decision 1, acceptance 1). A surface that is the whole stage cannot also be one tab of three.
+
+Consequences, binding:
+
+- **The three-icon picker is retired.** A writer never chooses "the Score" as a place, because they are never anywhere else. What remains is the **lens selection** this chapter sanctions — reading by *source position* and reading by *authored runtime order* — chosen in place, animated as a settling (decision 1, acceptance 4). Two lenses of one stage; not three destinations.
+- **The separate Score view is superseded as a destination.** Its Text participant is what the stage already renders — the beats' own source beneath the spine — so nothing is lost by folding it in. Its Music participant does not become a tab: per decision 8 and the honesty rules, a media lane **accrues when a real actor backs it**, and until then is honestly absent.
+- **This surface is the baseline all evolution starts from.** New participants arrive as **lanes beneath the spine**; new ways of reading arrive as **lenses in place**. Neither may arrive as a new destination — a "fourth view" is, by this chapter, already wrong.
+
+The rest of the chapter is unchanged: what the horizon adds is *more kinds of actor under one spine*, never more places to go.
+
 ## What is retired
 
 - **The Cut Script patch-graph canvas** (chapter 14 rules 7–9): the free 2D space, nodes, wires, ports, and the renderer-as-node output. Deprecated and removed as a surface. Its *purpose* — arranging beats in authored runtime order and rendering a cut script continuously to the bundle — survives as the **Cut lens** of the Score and the transport's take.
 - **"Move between Storify / Cut / Score" as a navigation model.** There is one surface with lenses; there is no longer a place the writer is sent to.
+- **The three-icon surface picker, and the Score-as-its-own-view** (see "Where the stage actually is"). The Score is the surface the writer is already in; only its lenses are selectable.
 
 ## Honesty (non-goals)
 
@@ -74,7 +89,7 @@ The distributed stage is real and intended: participants of any medium, each pos
 
 The doctrine is met when:
 
-1. **There is one working surface.** The application presents the Score; the timeline and the Cut are lenses selected in place, and no flow sends the writer to a separate Storify, Cut, or Score destination.
+1. **There is one working surface.** The application presents the Score; the timeline and the Cut are lenses selected in place, and no flow sends the writer to a separate Storify, Cut, or Score destination. **Concretely: there is no surface picker offering "the Score" as a choice** — the writer is already in it, and only its lenses are selectable (see "Where the stage actually is").
 2. **The beat-spine is the structure**, built from the source and carrying each beat's provenance; an un-read manuscript shows one unanchored span, never an empty stage.
 3. **The Text participant renders the source** beneath the spine, grounded, with the beat anatomy of chapter 14 and the measure changing with the lens.
 4. **Lens-crossing is a transformation** (source-position ⟷ runtime-order), animated as a settling, with the beat keeping its anatomy across the crossing.
