@@ -46,6 +46,7 @@ A writer opening Reframe is not operating a mixing desk; they are **doing someth
 - **[Animating truth](12-animating-truth.md)** — progressive disclosure and "show what is true now" are the same ethic in time; this chapter is that ethic in space.
 - **[The beat and its arrangements](14-the-beat-and-its-arrangements.md)** — the beat's anatomy (HEADER · TITLE · BODY · MEASURE) is honored at a size a writer can read; this chapter sets that size.
 - **FCIS-AX (accessibility standard)** — the machine-readable half of accessibility. This chapter is the **human-readable** half: both are required, and passing one never substitutes for the other.
+- **[Apple's Human Interface Guidelines](19-apple-human-interface-guidelines.md)** — the platform baseline beneath this chapter. It supplies the numbers this chapter's floor was guessing (the system text styles — macOS Body is 13 pt; contrast 4.5:1 / 3:1; 44 pt hit targets) and adds Increase-Contrast to "verify by looking". This chapter's rules are Reframe's extension of the HIG for the act of composing; where they meet, the HIG's numbers govern.
 
 ## Acceptance
 

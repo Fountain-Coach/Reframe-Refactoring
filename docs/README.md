@@ -33,7 +33,7 @@ For the Grounding-first transition, the minimum safe sequence is:
 9. [Copilot implementation extension](10-copilot-implementation-extension.md)
 10. [Grounding as a given — the canonical manifesto](11-grounding-as-a-given.md)
 
-For the working surface — the Score, composing a cut, and how it must look — read [the Score (17)](17-the-score.md), [the beat and its arrangements (14)](14-the-beat-and-its-arrangements.md), [animating truth (12)](12-animating-truth.md), and [the stage presents the act (18)](18-the-stage-presents-the-act.md); the [reading index](01-reading-index.md) gives the task-specific routes.
+For the working surface — the Score, composing a cut, and how it must look — read [the Score (17)](17-the-score.md), [the beat and its arrangements (14)](14-the-beat-and-its-arrangements.md), [animating truth (12)](12-animating-truth.md), [the stage presents the act (18)](18-the-stage-presents-the-act.md), and [Apple's Human Interface Guidelines (19)](19-apple-human-interface-guidelines.md) — the platform baseline (system text styles, contrast, hit targets, Reduce Motion) beneath our visual doctrine. The [reading index](01-reading-index.md) gives the task-specific routes.
 
 ## Governing sentence
 

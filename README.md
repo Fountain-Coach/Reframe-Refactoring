@@ -22,8 +22,9 @@ Implementing that transition surfaced deeper truths it *implied* but had not yet
 - **The timeline is the machine room** (16) — one machinery, one surface; no second-account diagnostics view.
 - **The Score** (17) — the consolidated **performance space**: the ONE working surface, of which the timeline and the Cut are *lenses*; the Cut composes a **take**, and once fired that take is the root every projection reads ("has one cut").
 - **The Stage Presents the Act** (18) — the enforceable **visual floor**: a surface presents the writer's act, large and legible (the *glasses test*), not a dense console — and UI is verified by *looking*, of which a machine-readable accessibility tree is the necessary but never sufficient half.
+- **Apple's Human Interface Guidelines** (19) — the platform **baseline** beneath 12/14/17/18, not an alternative: it supplies the numbers our visual floor was guessing (system text styles — macOS Body = 13 pt; contrast 4.5:1 text / 3:1 controls / aim 7:1; 44 pt hit targets; semantic colours; the 8 pt grid; Reduce Motion) and records the gaps we still owe.
 
-So the arc is legible: from **subtracting a stage** (remove indexing) → to naming the **one surface** that remains (the Score, a stage of participants grounded to a beat-spine) → to how that surface must **read to a human** (legibility over density). Reframe's working surface is now governed here as one architectural *and* design doctrine.
+So the arc is legible: from **subtracting a stage** (remove indexing) → to naming the **one surface** that remains (the Score, a stage of participants grounded to a beat-spine) → to how that surface must **read to a human** (legibility over density) → to the **platform baseline** that legibility rests on (Apple's HIG). Reframe's working surface is now governed here as one architectural *and* design doctrine.
 
 The guide is authoritative about the *intended* design. It never claims the work is already done: until a chapter's doctrine is implemented and validated, **live code, live FountainStore state, the MIDI backplane contract, and the generated manifest remain the truth about current behavior.** The precedence rules in the root and app-scoped `AGENTS.md` always apply.
 
@@ -44,7 +45,7 @@ The guide is authoritative about the *intended* design. It never claims the work
 - [Copilot implementation extension](docs/10-copilot-implementation-extension.md) · perception, retrieval, action parity
 - [Grounding as a given](docs/11-grounding-as-a-given.md) · the canonical manifesto, auto-confirmed, edited as prose
 
-**The working surface and its doctrine (12–18)**
+**The working surface and its doctrine (12–19)**
 
 - [Animating truth](docs/12-animating-truth.md) · perceived performance; foreshadow the unknown honestly
 - [Storage and performance](docs/13-storage-and-performance.md) · document + musical layers; fast by architecture
@@ -53,6 +54,7 @@ The guide is authoritative about the *intended* design. It never claims the work
 - [The timeline is the machine room](docs/16-the-timeline-is-the-machine-room.md) · one machinery, one surface
 - [The Score](docs/17-the-score.md) · the ONE surface; lenses; the Cut composes a take; "has one cut"
 - [The Stage Presents the Act](docs/18-the-stage-presents-the-act.md) · legibility over density; verify by looking
+- [Apple's Human Interface Guidelines](docs/19-apple-human-interface-guidelines.md) · the platform baseline — text styles, contrast, hit targets, Reduce Motion
 
 **The continuous account**
 
@@ -68,7 +70,7 @@ Pick the row for your task; read those chapters, then retrieve live code and sta
 | Implementing Grounding | 04 → 05 → 06 (phases 1–3) → 08 |
 | Implementing Storify (the read) | 03 → 05 → 06 (phases 2–4) → 08 |
 | Working on the Score / composing a cut | 17 → 14 → 12, then 18 for how it must look |
-| Doing UI / visual / design work | 18 (the floor) → 12 → 17 → the specific surface's chapter |
+| Doing UI / visual / design work | 18 (the floor) → 19 (the platform baseline) → 12 → 17 → the specific surface's chapter |
 | Placing or changing the Copilot | 10 → 15 (and its discovery procedure) → 08 |
 | Deleting the index | all of 06 (esp. the deletion gate) → 07 → 08 |
 | Reviewing code | 03 → the relevant target contract → 06 exit criteria → 18 (does the writer see it?) |
