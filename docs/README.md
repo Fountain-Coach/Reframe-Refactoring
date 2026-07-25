@@ -35,6 +35,8 @@ For the Grounding-first transition, the minimum safe sequence is:
 
 For the working surface — the Score, composing a cut, and how it must look — read [the Score (17)](17-the-score.md), [the beat and its arrangements (14)](14-the-beat-and-its-arrangements.md), [animating truth (12)](12-animating-truth.md), [the stage presents the act (18)](18-the-stage-presents-the-act.md), and [Apple's Human Interface Guidelines (19)](19-apple-human-interface-guidelines.md) — the platform baseline (system text styles, contrast, hit targets, Reduce Motion) beneath our visual doctrine. The [reading index](01-reading-index.md) gives the task-specific routes.
 
+For **model lanes, cost, and cloud escalation**, read [on-device first, and the writer's key (20)](20-on-device-first-and-the-writers-key.md): the on-device model is the default that must work on its own, cloud is a widening the writer grants in dialogue (never the app's automatic default), and the escalation offer is reasoned on-device over the uncertainty map — never a hard-coded lane table.
+
 ## Governing sentence
 
 Reframe shall read the source structurally once: Grounding determines the writer's declared intent, Storify reads the source under that intent, Cut Script owns authored output, and Continuity audits the result; no semantic indexing stage or index-derived authority remains in the final production path.
