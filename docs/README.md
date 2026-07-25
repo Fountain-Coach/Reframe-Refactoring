@@ -1,26 +1,26 @@
 # Reframe Grounding-First Refactoring Guide
 
-> Chapter summary: This landing page identifies the authority, purpose, and safe reading order of the documentation set that directs Reframe away from semantic indexing and toward a Grounding-first Storify pipeline.
+> Chapter summary: This landing page identifies the authority, purpose, and safe reading order of the documentation set that governs Reframe's working surface — a set that began as the move away from semantic indexing (chapters 00–11) and grew, through implementation, into the doctrine of the one surface it left behind: the Score and how it must read (chapters 12–18).
 
-Status: authoritative refactoring directive
-Published: 2026-07-19
+Status: authoritative design and refactoring directive (a living guide)
+Published: 2026-07-19 · continuously extended as chapters are earned in the code
 Applies to: `apps/modernization-studio` (the Reframe application)
-Audience: Reframe maintainers, product engineers, reviewers, `.claude`, and `.codex`
+Audience: Reframe maintainers, product engineers, reviewers, designers, `.claude`, and `.codex`
 
 Dedicated GitHub repository: [Fountain-Coach/Reframe-Refactoring](https://github.com/Fountain-Coach/Reframe-Refactoring)
 Integration source: [`Fountain-Coach/midi2-gpu-fabric/apps/modernization-studio/docs/reframe-grounding-first-refactor`](https://github.com/Fountain-Coach/midi2-gpu-fabric/tree/main/apps/modernization-studio/docs/reframe-grounding-first-refactor)
 
-This directory is the authoritative design and execution guide for one specific architectural transition: semantic indexing and the index-built Manuscript Guide are to leave the Reframe production pipeline, confirmed Grounding is to become the direct downstream policy contract, and Storify Source Auto is to become the sole structural reader of the canonical source.
+This directory began as the guide for one architectural transition — semantic indexing and the index-built Manuscript Guide leave the production pipeline, confirmed Grounding becomes the direct downstream policy contract, and Storify Source Auto becomes the sole structural reader of the canonical source (chapters 00–11). That founding decision still holds. Implementing it surfaced the deeper doctrine of the surface that remains — one performance space (the Score), the beat and its take, the situated Copilot, and how the surface must read to a human — stated in chapters 12–18. The [root README](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/README.md) tells the full genesis and arc.
 
 The dedicated repository is the publication and FCIS-governance home for this guide. This directory is its integration copy beside the Reframe implementation. A documentation change is maintained only when the two copies agree; the dedicated repository contains the synchronization procedure and provenance record.
 
-The guide is authoritative about the intended refactor. It does not pretend that the refactor has already happened. Until a migration phase is implemented and validated, live code, live FountainStore state, the MIDI backplane contract, and the generated reasoning manifest remain the truth about current behavior. The precedence rules in the root and app-scoped `AGENTS.md` files always apply.
+The guide is authoritative about the intended design. It does not pretend the work has already happened. Until a chapter's doctrine is implemented and validated, live code, live FountainStore state, the MIDI backplane contract, and the generated reasoning manifest remain the truth about current behavior. The precedence rules in the root and app-scoped `AGENTS.md` files always apply.
 
 ## Start here
 
-Read the [abstract](00-abstract.md) for the decision in compact form, then use the [reading index](01-reading-index.md) to choose a route through the remaining chapters.
+Read the [abstract](00-abstract.md) for the founding decision in compact form, then use the [reading index](01-reading-index.md) to choose a route — it carries role-based paths for both humans and agents, and now covers the working-surface chapters (Score, cut, visual) as well as the original transition.
 
-For implementation work, the minimum safe sequence is:
+For the Grounding-first transition, the minimum safe sequence is:
 
 1. [Development history and retained lessons](02-development-history.md)
 2. [Current state and refactoring problem](03-current-state-and-problem.md)
@@ -32,6 +32,8 @@ For implementation work, the minimum safe sequence is:
 8. [Compatibility and future evolution](09-compatibility-and-future-evolution.md)
 9. [Copilot implementation extension](10-copilot-implementation-extension.md)
 10. [Grounding as a given — the canonical manifesto](11-grounding-as-a-given.md)
+
+For the working surface — the Score, composing a cut, and how it must look — read [the Score (17)](17-the-score.md), [the beat and its arrangements (14)](14-the-beat-and-its-arrangements.md), [animating truth (12)](12-animating-truth.md), and [the stage presents the act (18)](18-the-stage-presents-the-act.md); the [reading index](01-reading-index.md) gives the task-specific routes.
 
 ## Governing sentence
 

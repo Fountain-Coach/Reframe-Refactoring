@@ -1,8 +1,8 @@
 # Reading Index
 
-> Chapter summary: This index offers role-based reading paths, chapter descriptions, and a vocabulary map so humans and agents can retrieve only the material relevant to the task at hand.
+> Chapter summary: This index offers role-based reading paths, chapter descriptions, and a vocabulary map so humans and agents can retrieve only the material relevant to the task at hand. It covers both halves of the guide: the founding Grounding-first transition (00–11) and the working-surface doctrine that grew from it — the Score, the beat and its cut, the situated Copilot, and how the surface must read (12–18). See the [root README](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/README.md) for the genesis and full arc.
 
-The suite is intentionally divided into short, stable chapters. Agents should not load the whole directory into every prompt. Select the chapters whose authority is necessary for the current phase, then retrieve live code and state for implementation detail.
+The suite is intentionally divided into short, stable chapters. Agents should not load the whole directory into every prompt. Select the chapters whose authority is necessary for the current task, then retrieve live code and state for implementation detail. A UI claim is not settled by an accessibility-tree query alone — chapter 18 requires *looking* at the rendered view.
 
 ## Reading paths
 
@@ -25,6 +25,14 @@ Read the [target architecture](04-target-architecture.md), phase 4 of the [refac
 ### Index deletion
 
 Read the entire [refactoring program](06-refactoring-program.md), especially its deletion gate, followed by the [agent operating guide](07-agent-operating-guide.md) and [validation and acceptance](08-validation-and-acceptance.md). Do not begin from a filename search and delete outward; prove replacement consumption first.
+
+### The Score, and composing a cut
+
+Read [the Score](17-the-score.md) (the one working surface; the timeline and Cut as lenses; the Cut composes a *take*; every projection reads it — "has one cut"), then [the beat and its arrangements](14-the-beat-and-its-arrangements.md) (the beat anatomy and the take it fires) and [animating truth](12-animating-truth.md) (how the read is felt). Anything the writer sees or operates is also governed by [the stage presents the act](18-the-stage-presents-the-act.md). The Cut is not a return of the retired patch-graph canvas — it is a lens and a second lane of the one surface.
+
+### Visual, UI, or design work
+
+Read [the stage presents the act](18-the-stage-presents-the-act.md) first — it is the enforceable floor (the act is the star; the glasses test for type and hit targets; progressive disclosure; one act in focus; relationships drawn, not implied; verify by *looking* in light and dark). Then [animating truth](12-animating-truth.md), [the Score](17-the-score.md), and the specific surface's chapter. A machine-readable accessibility tree is the necessary but never sufficient half of accessibility; passing it is not passing legibility.
 
 ### Copilot implementation
 
