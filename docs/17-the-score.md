@@ -55,11 +55,30 @@ This resolves an inversion that had crept in. The "minimum honest Score" was bui
 
 Consequences, binding:
 
-- **The three-icon picker is retired.** A writer never chooses "the Score" as a place, because they are never anywhere else. What remains is the **lens selection** this chapter sanctions — reading by *source position* and reading by *authored runtime order* — chosen in place, animated as a settling (decision 1, acceptance 4). Two lenses of one stage; not three destinations.
+- **The surface picker is retired entirely — all of it.** First the "Score" icon went, because it made the stage a destination peer to its own lenses. Then the remaining pair (timeline · cut) went too: **a picker of any size still teaches the writer that the work lives in several places.** A writer never chooses a surface, because there is only one, and they are standing on it. This *revises decision 1*, which had kept the two lenses as an in-place selection: the lenses remain real as *readings*, but they are no longer a control above the stage.
+  - **Honestly stated loss:** removing the picker removes the only route to the **runtime-order (Cut) reading**. The lens is not deleted — the Cut arrangement and its runtime measure remain in the surface — but nothing reaches it today. This is a **deliberate, recorded absence**, not consolidation quietly costing a capability (see the non-goal below): the way to read by runtime order must **evolve from the stage** rather than sit above it as a toggle, and until it does, the absence is stated rather than papered over.
 - **The separate Score view is superseded as a destination.** Its Text participant is what the stage already renders — the beats' own source beneath the spine — so nothing is lost by folding it in. Its Music participant does not become a tab: per decision 8 and the honesty rules, a media lane **accrues when a real actor backs it**, and until then is honestly absent.
 - **This surface is the baseline all evolution starts from.** New participants arrive as **lanes beneath the spine**; new ways of reading arrive as **lenses in place**. Neither may arrive as a new destination — a "fourth view" is, by this chapter, already wrong.
 
 The rest of the chapter is unchanged: what the horizon adds is *more kinds of actor under one spine*, never more places to go.
+
+## The Cut lens, composed (decided 2026-07-25)
+
+The Cut lens is not only a *reading* of the spine — it is where the writer **composes a take**: chooses which beats belong, arranges them in runtime order, and in doing so authors the transformed relationship every other projection then hangs off. This makes concrete what decisions 5–6 named. Four parts:
+
+1. **Selection from the spine.** The writer selects beats. The cut is *what remains* (decision 5) — not every beat need enter it — and the accent means selection and nothing else (ch.14 rule 4). An unselected beat is not deleted; it is simply not in this take.
+
+2. **Placement — movement to a runtime position.** A selected beat is moved to where it plays, which need not be where it sits in the source. This is the "authored runtime order" the Cut lens already reads by; composing it is the writer setting that order. The beat keeps its whole anatomy through the move (ch.14 rule 6) — a settling, not a new object.
+
+3. **The provenance noodle — a grounding thread, NOT a patch wire.** When a beat is placed away from its source position, a **clickable provenance thread** links the placement back to where it came from. This is deliberately *not* the node/wire/port "noodling" ch.14 retired (that was free runtime-wiring on an infinite canvas, a machinist's surface). This noodle carries no runtime order — the placement on the spine already does. What it carries is **grounding made visible**: the beat's `StorifyBeatProvenance` (ch.4 — origin, source hash, confirmed Grounding, operation version) and its source-position origin, so a move can never drift free of the source it came from (decision 4, the Score's one non-negotiable). Clicking it **situates the Copilot on that one cut decision** (ch.15), handing her the cut-script reasoning the writer needs:
+   - **cues** — what this juxtaposition now creates that neither beat did alone;
+   - **questions** — what setup, continuity, or knowledge the move breaks or presumes;
+   - **consequences** — what later beats now assume because this one moved.
+   The noodle is thus the writer's *and* the Copilot's shared handle on a single decision, grounded by construction. (It is honest per ch.11/12: it states a real relationship, never a fabricated one, and shows nothing for a placement that has no provenance to carry.)
+
+4. **The take is the transformed root; projections have one cut.** The selected, arranged beat list, fired, becomes a **take** (ch.14 rule 11 / decision 6): a timestamped render of the arrangement as it stood. The new architectural commitment: **once a take exists, it is the root the other projections read from.** Before a cut, projections hang off the raw spine in source order; after one, each projection binds to the take and reads its *runtime* order and measure. Every downstream projection therefore carries a **"has one cut"** relation — the Text participant renders the take's order, the Music participant scores it, any later medium projects it — each bound to exactly one take as its root, none inventing its own order. A projection with no take falls back to the spine (source order), honestly; it never fabricates a cut it does not have.
+
+This keeps the whole doctrine: one surface (the Cut is a lens, not a place), grounding as the condition of entry (the noodle *is* the visible grounding), the take as the transport's product, and no revival of the retired canvas — the provenance thread is a grounding relationship on the spine, never free wiring in 2D space.
 
 ## What is retired
 
@@ -89,7 +108,7 @@ The rest of the chapter is unchanged: what the horizon adds is *more kinds of ac
 
 The doctrine is met when:
 
-1. **There is one working surface.** The application presents the Score; the timeline and the Cut are lenses selected in place, and no flow sends the writer to a separate Storify, Cut, or Score destination. **Concretely: there is no surface picker offering "the Score" as a choice** — the writer is already in it, and only its lenses are selectable (see "Where the stage actually is").
+1. **There is one working surface.** The application presents the Score; the timeline and the Cut are lenses of it, and no flow sends the writer to a separate Storify, Cut, or Score destination. **Concretely: there is no surface picker at all** — not for the Score, and not for its lenses. The writer is standing on the stage; nothing above it offers a choice of where the work lives (see "Where the stage actually is", which revises decision 1 on this point).
 2. **The beat-spine is the structure**, built from the source and carrying each beat's provenance; an un-read manuscript shows one unanchored span, never an empty stage.
 3. **The Text participant renders the source** beneath the spine, grounded, with the beat anatomy of chapter 14 and the measure changing with the lens.
 4. **Lens-crossing is a transformation** (source-position ⟷ runtime-order), animated as a settling, with the beat keeping its anatomy across the crossing.
@@ -97,3 +116,4 @@ The doctrine is met when:
 6. **Every participant states what it is grounded to;** none appears without a real actor behind it, and no protocol state is shown for a participant that does not declare it.
 7. **The Score opens simple** — text and spine — and media lanes, inspectors, subscriptions, and the protocol monitor appear only when a real participant or trigger calls them.
 8. **The distributed stage is reachable, not present:** nothing in the minimum Score fabricates a participant, a remote instance, or UMP traffic to appear more complete than the work is.
+9. **The Cut lens composes a take** (see "The Cut lens, composed"): the writer selects beats and places them in runtime order; a placement away from source carries a clickable **provenance thread** (grounding, not a patch wire) that situates the Copilot on that one cut decision. Firing produces a take, and **once a take exists the projections read from it** — each carrying a "has one cut" relation to exactly one take, falling back to the source-order spine when there is none, never fabricating a cut.
