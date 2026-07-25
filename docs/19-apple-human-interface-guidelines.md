@@ -41,7 +41,7 @@ A native app that ignores the HIG fights the platform: it loses free Dark Mode, 
 | Contrast ratios | 18 | HIG adds the ratios (4.5 / 3 / 7); we adopt + add Increase Contrast to "verify by looking" |
 | Reduce clutter / prioritise | 18 (progressive disclosure), 16 (one surface) | Agreement |
 | Colour (semantic, not colour-alone) | 18 rule 5, and the "Thinking-red" fix | HIG reinforces; we adopt semantic-only |
-| Motion (purposeful, Reduce Motion) | 12 (animating truth) | Agreement on purposeful; **HIG adds Reduce Motion — a gap to close** |
+| Motion (purposeful, Reduce Motion) | 12 (animating truth) | Agreement on purposeful; HIG adds Reduce Motion — shared `StudioMotion` helper + Cut lane done, other ch.12 animations pending |
 | Accessibility (VoiceOver) | FCIS-AX standard | Two halves of one requirement |
 | Progress indicators | 12 (never sign a wait with a spinner) | **Deliberate departure** — Reframe is *stricter*: the wait is the show, not a spinner |
 
@@ -71,14 +71,21 @@ The doctrine is met when:
 
 ## Known gaps this adoption obliges us to close
 
-Stated honestly, because the app does not meet all of the above today:
+Stated honestly. The first round of compliance (the shared mechanisms + the Cut surface, the surface this chapter governs most directly) is done; the app-wide sweep remains.
 
-- **Reduce Motion is not yet honoured** by the chapter-12 animations (breathing ghosts, settles, the read-head). This is the largest gap.
-- **Hard-coded sizes and colours remain** in places (chapter 18 raised the beat spec, but other surfaces still pick literal sizes and a few hard-coded colours persist — the "Thinking-red" class). Migrate to system text styles and semantic colours.
-- **A contrast audit** in light, dark, and Increase Contrast has not been run against the surfaces.
-- **Materials/vibrancy** are not yet used deliberately for layered surfaces.
+**Closed:**
 
-These are the backlog this chapter creates; they are not claimed as done.
+- **Reduce Motion has a shared, non-View-context-capable helper** (`StudioMotion` reads the process-wide setting via `NSWorkspace`, so a `DropDelegate` or plain method can honour it, not only a `View`). The Cut lane's reorder animations (drag and button) now drop the tween under Reduce Motion while keeping the state change. A named text-style vocabulary (`StudioTheme.beatTitle`/`readingBody`/`controlLabel`/`primaryAction`/`eyebrow`, backed by macOS system text styles) and a named **provenance** colour (the noodle's "moved" meaning, no longer hard-coded orange inline) exist and the Cut surface consumes them.
+- **A contrast audit exists and is enforced** — `StudioThemeContrastAuditTests` computes the real WCAG ratio for the text/ground pairs Reframe owns, in light *and* dark, and fails the build below the 4.5:1 text (3:1 large/control) floor. It caught genuine defects (the status text-on-fill tokens — warning/success/accent/info — sat at ~3:1, worse in dark); their blends were deepened until every owned pair clears 4.5:1. Secondary/tertiary label tiers are measured and held to the 3:1 support floor (they are for supporting captions, never primary reading — Apple's own usage).
+- **Materials** are used on the Cut lane's recessed background (`.regularMaterial`), so it reads as depth beneath the reading rather than a flat wash.
+
+**Still open (app-wide, not the governed surface):**
+
+- **Migrate the remaining hard-coded sizes and colours** on the other surfaces (~460 literal `.system(size:)` sites, a handful of raw colour literals) to the named text styles and semantic/`StudioTheme` colours. The vocabulary now exists; the sweep does not.
+- **Honour Reduce Motion in the other chapter-12 animations** (breathing ghosts, settles, the read-head) using the `StudioMotion` helper — several views already read `accessibilityReduceMotion` piecemeal; converge them on the helper and cover the rest.
+- **Extend the contrast audit** to Increase-Contrast resolution and to more composited pairs as surfaces migrate. Opt-in pixel goldens (`UI_SNAPSHOT=1`) that render status pills will need a one-time `UPDATE_GOLDEN=1` refresh to adopt the deepened status colours.
+
+These remaining items are the backlog; they are not claimed as done.
 
 ## Sources
 
