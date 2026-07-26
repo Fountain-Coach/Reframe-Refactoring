@@ -41,6 +41,8 @@ For **training the on-device model to the writer's work**, read [training perspe
 
 For **preferences, settings, and configuration**, read [no preferences, only reasoning (22)](22-no-preferences-only-reasoning.md): Reframe has no panel where the writer configures how the app decides — the app reasons decisions in context and the writer instructs it in dialogue; the only stored settings are facts the app cannot reason into existence (credentials, storage, account state), on a lean Accounts & Storage surface. It generalizes ch.20 and ch.21 into the rule both instance.
 
+For **turn routing and intent classification**, read [one reasoning (23)](23-one-reasoning.md): a turn is understood by one reasoning over one complete taxonomy, and everything routes from that single decision — no speculative "fast" pre-classifier with a smaller vocabulary that fires first and misroutes. It is what makes ch.20's writer's-key recognition reachable, and the sibling of ch.22.
+
 ## Governing sentence
 
 Reframe shall read the source structurally once: Grounding determines the writer's declared intent, Storify reads the source under that intent, Cut Script owns authored output, and Continuity audits the result; no semantic indexing stage or index-derived authority remains in the final production path.
