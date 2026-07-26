@@ -39,6 +39,8 @@ For **model lanes, cost, and cloud escalation**, read [on-device first, and the 
 
 For **training the on-device model to the writer's work**, read [training perspectives (21)](21-training-perspectives.md): a trained LoRA adapter is a *perspective* (a lens learned from the writer's material), authored by intent, adopted only on evidence, legible, and reversible — the on-device path to quality, the sibling axis to ch.20's lane escalation.
 
+For **preferences, settings, and configuration**, read [no preferences, only reasoning (22)](22-no-preferences-only-reasoning.md): Reframe has no panel where the writer configures how the app decides — the app reasons decisions in context and the writer instructs it in dialogue; the only stored settings are facts the app cannot reason into existence (credentials, storage, account state), on a lean Accounts & Storage surface. It generalizes ch.20 and ch.21 into the rule both instance.
+
 ## Governing sentence
 
 Reframe shall read the source structurally once: Grounding determines the writer's declared intent, Storify reads the source under that intent, Cut Script owns authored output, and Continuity audits the result; no semantic indexing stage or index-derived authority remains in the final production path.
