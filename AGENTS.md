@@ -11,6 +11,7 @@ Scope: the authoritative Grounding-first Reframe refactoring guide and its synch
 - Numeric measurements may be telemetry only. They must not select, clamp, truncate, or rank semantic context.
 - Repository correctness must not depend on MCP or another optional external capability.
 - No secrets, prompts, manuscript content, or semantic artifacts belong in logs or repository telemetry.
+- Live-app acceptance must target the configured attached external display: resolve the live display and Reframe window, place the window there, enter full-screen there, and identify/capture it by window ID rather than display number or coordinates. AX is authoritative for interaction and semantic UI state; persisted FountainStore artifacts are authoritative for behaviour; screenshots are visual evidence; logs are telemetry only.
 
 ## FCIS routing
 

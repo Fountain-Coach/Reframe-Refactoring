@@ -43,6 +43,14 @@ Run this journey with a clean store and assert that no Manuscript Guide generati
 
 UI tests must show no Index tab, Read In action, Generate Manuscript Guide action that triggers inference, semantic repair queue, or index readiness blocker. Grounding should present the next structural action. Truth Center, command help, launcher recommendations, dedicated shells, and empty states must name the same stage order.
 
+## Live-drive acceptance
+
+Live acceptance is an observed, stateful GUI drive, not a request for a writer to act as a test harness. First inspect the existing running application. When a fresh launch is needed, retain the launched process identity and log, resolve the currently attached external display from live macOS state, move the Reframe window to that display, and enter native full-screen there before the scenario begins. Confirm the selected Reframe window by its CoreGraphics window ID and bounds. Do not infer a target from display numbers, screen-coordinate origins, names, Spaces, or prior display arrangements.
+
+Evidence has separate authorities. Drive and inspect semantic UI state through the accessibility tree (role, label, identifier, value, and actions). Capture the resolved window ID for visual evidence of layout and wording. Read the persisted FountainStore artifacts produced by the run for behavioural proof; logs and structured diagnostics are useful telemetry but are not behavioural truth. A coordinate action is permitted only as a documented, temporary bridge for a specific current accessibility gap, derived from current window/AX geometry and accompanied by a defect to remove it.
+
+The Romeo-and-Juliet DraCor import is the canonical end-to-end live-drive. Use the natural application path: Add, DraCor, enter `romeo-and-juliet`, then Import; conduct the writer turns in the Studio chat surface; inspect the accessible reply controls; and read the resulting `chat:<session>:round:*` documents. The grounding-first check asks “how should we proceed?” and must stay situated in segment beats rather than offering the retired Manuscript Guide. Repeat consequential behaviour three times, and change the named turns and persisted assertions in this chapter before accepting a revised demo contract.
+
 ## Legacy-store tests
 
 Open a store that contains historical semantic passages, reading states, published Guides, repair debts, and learned split facts. The application may expose them through an explicitly archival inspector, but readiness and prompts must ignore them. No migration should delete or rewrite them automatically.
