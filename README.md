@@ -24,8 +24,9 @@ Implementing that transition surfaced deeper truths it *implied* but had not yet
 - **The Stage Presents the Act** (18) — the enforceable **visual floor**: a surface presents the writer's act, large and legible (the *glasses test*), not a dense console — and UI is verified by *looking*, of which a machine-readable accessibility tree is the necessary but never sufficient half.
 - **Apple's Human Interface Guidelines** (19) — the platform **baseline** beneath 12/14/17/18, not an alternative: it supplies the numbers our visual floor was guessing (system text styles — macOS Body = 13 pt; contrast 4.5:1 text / 3:1 controls / aim 7:1; 44 pt hit targets; semantic colours; the 8 pt grid; Reduce Motion) and records the gaps we still owe.
 - **On-Device First, and the Writer's Key** (20) — the model-lane doctrine: the on-device model is the **first lane** (the default that must work on its own); cloud is a **widening of perspective** and the writer's money, so the **writer holds the key** (no cloud call without an explicit grant given/revoked *in dialogue*, default local-only); and the escalation *offer* is **reasoned on-device over the uncertainty map** ([UncertaintyScoreKit](https://github.com/Fountain-Coach/UncertaintyScoreKit)), never a hard-coded lane table. Apple's on-device→Private Cloud Compute escalation, with the key in the writer's hand.
+- **Training Perspectives** (21) — the sibling axis to 20: not *which lane*, but *how the on-device lane gets better at this writer's work*. A trained LoRA adapter is a **perspective** — a lens the on-device model wears, learned from the writer's material — authored **by intent**, adopted **only on evidence** (shadow comparison + eval gate), **legible** (provenance), and **reversible** (base never mutated). The on-device path to quality; the alternative to escalating the lane.
 
-So the arc is legible: from **subtracting a stage** (remove indexing) → to naming the **one surface** that remains (the Score, a stage of participants grounded to a beat-spine) → to how that surface must **read to a human** (legibility over density) → to the **platform baseline** that legibility rests on (Apple's HIG) → to **which model does the work and who pays** (on-device first; the writer holds the escalation key). Reframe's working surface is now governed here as one architectural *and* design doctrine.
+So the arc is legible: from **subtracting a stage** (remove indexing) → to naming the **one surface** that remains (the Score, a stage of participants grounded to a beat-spine) → to how that surface must **read to a human** (legibility over density) → to the **platform baseline** that legibility rests on (Apple's HIG) → to **which model does the work and who pays** (on-device first; the writer holds the escalation key) → to **how the on-device model gets better** at this writer's work (trained perspectives, authored and worn). Reframe's working surface is now governed here as one architectural *and* design doctrine.
 
 The guide is authoritative about the *intended* design. It never claims the work is already done: until a chapter's doctrine is implemented and validated, **live code, live FountainStore state, the MIDI backplane contract, and the generated manifest remain the truth about current behavior.** The precedence rules in the root and app-scoped `AGENTS.md` always apply.
 
@@ -60,6 +61,7 @@ The guide is authoritative about the *intended* design. It never claims the work
 **Model lanes, cost, and cloud escalation (20)**
 
 - [On-Device First, and the Writer's Key](docs/20-on-device-first-and-the-writers-key.md) · on-device is the default that must work alone; cloud is a widening the writer grants in dialogue; the escalation offer is reasoned on-device over the uncertainty map, never a hard-coded lane table
+- [Training Perspectives](docs/21-training-perspectives.md) · a trained LoRA adapter is a *perspective* — a lens learned from the writer's material — authored by intent, adopted only on evidence, legible, reversible; the on-device path to quality
 
 **The continuous account**
 
@@ -78,6 +80,7 @@ Pick the row for your task; read those chapters, then retrieve live code and sta
 | Doing UI / visual / design work | 18 (the floor) → 19 (the platform baseline) → 12 → 17 → the specific surface's chapter |
 | Placing or changing the Copilot | 10 → 15 (and its discovery procedure) → 08 |
 | Working on model lanes / cost / cloud escalation | 20 (on-device first, the writer's key) → 15 (the opener names the lane) |
+| Working on training / LoRA / adapters (perspectives) | 21 (training perspectives) → 20 (the sibling lane axis) → 17 (perspectives are lenses) |
 | Deleting the index | all of 06 (esp. the deletion gate) → 07 → 08 |
 | Reviewing code | 03 → the relevant target contract → 06 exit criteria → 18 (does the writer see it?) |
 | An agent picking up any task | 07 first (precedence, evidence, planning), then the row above |

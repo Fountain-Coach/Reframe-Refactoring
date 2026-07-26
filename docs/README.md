@@ -37,6 +37,8 @@ For the working surface — the Score, composing a cut, and how it must look —
 
 For **model lanes, cost, and cloud escalation**, read [on-device first, and the writer's key (20)](20-on-device-first-and-the-writers-key.md): the on-device model is the default that must work on its own, cloud is a widening the writer grants in dialogue (never the app's automatic default), and the escalation offer is reasoned on-device over the uncertainty map — never a hard-coded lane table.
 
+For **training the on-device model to the writer's work**, read [training perspectives (21)](21-training-perspectives.md): a trained LoRA adapter is a *perspective* (a lens learned from the writer's material), authored by intent, adopted only on evidence, legible, and reversible — the on-device path to quality, the sibling axis to ch.20's lane escalation.
+
 ## Governing sentence
 
 Reframe shall read the source structurally once: Grounding determines the writer's declared intent, Storify reads the source under that intent, Cut Script owns authored output, and Continuity audits the result; no semantic indexing stage or index-derived authority remains in the final production path.
