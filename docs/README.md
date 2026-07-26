@@ -43,6 +43,8 @@ For **preferences, settings, and configuration**, read [no preferences, only rea
 
 For **turn routing and intent classification**, read [one reasoning (23)](23-one-reasoning.md): a turn is understood by one reasoning over one complete taxonomy, and everything routes from that single decision — no speculative "fast" pre-classifier with a smaller vocabulary that fires first and misroutes. It is what makes ch.20's writer's-key recognition reachable, and the sibling of ch.22.
 
+For **intent uncertainty, clarification, and the escalation signal**, read [the reasoning is an uncertainty map (24)](24-the-reasoning-is-an-uncertainty-map.md): the one reasoning produces an uncertainty map (settled / ambiguity / thin / failure + why + what would resolve it), not a scalar guess; the app routes from it (dispatch / clarify / fail visibly), it is the signal ch.20's writer's-key escalation reads, and it is inspectable/showable via UncertaintyScoreKit — which is also why the reasoning can run lean.
+
 ## Governing sentence
 
 Reframe shall read the source structurally once: Grounding determines the writer's declared intent, Storify reads the source under that intent, Cut Script owns authored output, and Continuity audits the result; no semantic indexing stage or index-derived authority remains in the final production path.
