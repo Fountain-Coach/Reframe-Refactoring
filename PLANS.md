@@ -45,6 +45,24 @@ Results:
 
 ---
 
+---
+
+Title: Publish the ch.26 execution record (2026-07-27)
+Goal: Restore publication/integration parity for chapter 26 after its retirement log was written in the integration mirror only, and record what executing the chapter actually produced.
+Scope: `docs/26-internals-tune-themselves.md`.
+Non-goals: Reframe runtime changes, edits to other chapters, or re-litigating the ch.26 disposition procedure itself.
+Constraints: preserve the chapter's existing doctrine sections unchanged — the added material is an execution log and an open-debt table, not a change of intent; name the counterpart commit in both repositories; keep the audit's drift-vector-1 closed by publishing in the same session the divergence was found.
+Risks: an execution record can be mistaken for doctrine and then "maintained" as intent; mitigate by keeping it under an explicitly named retirement-log heading, separate from the decision and acceptance sections.
+Plan:
+- Step 1 (status: completed) - Detected the drift with `Scripts/sync-integration-copy --check` (chapter 26 only).
+- Step 2 (status: completed) - Transferred the integration chapter into `docs/` with an explicit direction (--pull).
+- Step 3 (status: completed) - Re-ran the parity check and committed in both repositories naming the counterpart.
+Validation:
+- `Scripts/sync-integration-copy --check <integration-checkout>` reports parity.
+- `git diff --check` passes in both repositories.
+- Counterpart integration commit: `31459df4a9acab9574fab5bbce35cadfa8ebb43e`.
+
+
 ## Plan template
 
 Title:
