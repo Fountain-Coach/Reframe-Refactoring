@@ -42,7 +42,9 @@ cost, what a parser could state exactly and for nothing — and then built machi
 
 **1. Declared.** What the text states about itself, recoverable by a pure function over its characters: episode and
 section markers, paragraph and blank-line structure, opening dashes and quotation marks, line spans, word counts
-and therefore reading time, the literal questions a text asks aloud (`?`). These cannot be wrong about the text,
+and therefore reading AND PERFORMANCE time — a page is a minute, which is the unit an ATOM is measured in
+([ch.28](28-a-beat-is-the-question-it-raises.md)), self-normalising across speech and description where a line
+count gets them backwards — and the literal questions a text asks aloud (`?`). These cannot be wrong about the text,
 cost microseconds, and are available before anything is read.
 
 **2. Measured.** Local, fixed-weight, non-generative tooling — in this app, Apple's NaturalLanguage: named-entity

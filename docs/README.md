@@ -47,6 +47,8 @@ For **intent uncertainty, clarification, and the escalation signal**, read [the 
 
 For **what may be asked of a model at all**, read [parse before you ask (27)](27-parse-before-you-ask.md): structure is parsed, meaning is read, and between them sits local non-generative tooling (named entities, part of speech, sentence boundaries, sentence embeddings) that measures without being able to invent. A question a lower tier can answer is never put to a higher one — the manuscript's own declarations are shown before the reading starts, and what will not parse is marked rather than smoothed. It is the substrate beneath ch.23's one reasoning and ch.24's uncertainty map: both get cheaper and more honest as the parse grows.
 
+For **what a beat IS**, read [a beat is the question it raises (28)](28-a-beat-is-the-question-it-raises.md): a beat is the stretch of story over which one question stays open, found in one forward pass and named by that question; an atom is the reader's local unit — a minute of performance cut at the text's own seam — and is never called a beat nor given a name. Measured on the whole of Telemachus. It fixes the identity ch.14 arranges and shows, and it is why ch.27's parse comes before any model is asked anything.
+
 ## Governing sentence
 
 Reframe shall read the source structurally once: Grounding determines the writer's declared intent, Storify reads the source under that intent, Cut Script owns authored output, and Continuity audits the result; no semantic indexing stage or index-derived authority remains in the final production path.

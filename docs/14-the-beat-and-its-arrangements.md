@@ -2,6 +2,11 @@
 
 > Chapter summary: A beat is **one object**. The Story timeline, the Cut Script canvas, and the Score are not three views that each invent their own beat — they are three **arrangements** of the same widget, and crossing between them must read as a *transformation*, not a replacement. This chapter fixes the beat's anatomy, names the one part that is allowed to differ (its **measure**), states the rules of the canvas as a patch graph (nodes, wires, a renderer, a trigger), and defines the **take** — one firing that renders the document layer and the musical layer as siblings. It defines required behaviour and constraints; it does not prescribe unverified types or call paths.
 
+> What makes a stretch a beat at all is [ch.28](28-a-beat-is-the-question-it-raises.md): a beat is the story unit
+> defined by the open question it raises. This chapter governs how that beat is arranged and shown across surfaces;
+> it presumes the identity ch.28 fixes, and the small units the strip draws are ATOMS — minutes of performance —
+> not beats.
+
 ## Purpose
 
 The beat was two objects. The Story filmstrip drew it in SwiftUI with one corner radius, padding, type scale and colour set; the Cut Script canvas drew it in AppKit with different ones. Crossing between the two surfaces therefore read as a *replacement* — the widget the writer had been working with vanished and an unfamiliar one appeared in its place — which broke the journey at exactly the moment the writer is meant to feel a **transformation**: the same story, re-arranged in time.
