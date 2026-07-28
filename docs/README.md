@@ -45,6 +45,8 @@ For **turn routing and intent classification**, read [one reasoning (23)](23-one
 
 For **intent uncertainty, clarification, and the escalation signal**, read [the reasoning is an uncertainty map (24)](24-the-reasoning-is-an-uncertainty-map.md): the one reasoning produces an uncertainty map (settled / ambiguity / thin / failure + why + what would resolve it), not a scalar guess; the app routes from it (dispatch / clarify / fail visibly), it is the signal ch.20's writer's-key escalation reads, and it is inspectable/showable via UncertaintyScoreKit — which is also why the reasoning can run lean.
 
+For **what may be asked of a model at all**, read [parse before you ask (27)](27-parse-before-you-ask.md): structure is parsed, meaning is read, and between them sits local non-generative tooling (named entities, part of speech, sentence boundaries, sentence embeddings) that measures without being able to invent. A question a lower tier can answer is never put to a higher one — the manuscript's own declarations are shown before the reading starts, and what will not parse is marked rather than smoothed. It is the substrate beneath ch.23's one reasoning and ch.24's uncertainty map: both get cheaper and more honest as the parse grows.
+
 ## Governing sentence
 
 Reframe shall read the source structurally once: Grounding determines the writer's declared intent, Storify reads the source under that intent, Cut Script owns authored output, and Continuity audits the result; no semantic indexing stage or index-derived authority remains in the final production path.
