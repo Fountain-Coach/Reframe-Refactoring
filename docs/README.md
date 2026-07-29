@@ -49,6 +49,8 @@ For **what may be asked of a model at all**, read [parse before you ask (27)](27
 
 For **what a beat IS**, read [a beat is the question it raises (28)](28-a-beat-is-the-question-it-raises.md): a beat is the stretch of story over which one question stays open, found in one forward pass and named by that question; an atom is the reader's local unit — a minute of performance cut at the text's own seam — and is never called a beat nor given a name. Measured on the whole of Telemachus. It fixes the identity ch.14 arranges and shows, and it is why ch.27's parse comes before any model is asked anything.
 
+For **how far the measuring may go**, read [NaturalLanguage measures, Storify interprets (29)](29-natural-language-measures-storify-interprets.md): the framework answers where the text is, what literal form appears there, what resembles it, what changed, and which model claim the text does not support — and never what the story means. Its output is candidates and coordinates, confirmed by the reading or not at all; it may supply REASONS to ch.24's map but never a status, a lane or a turn's target. It is ch.27 read in the other direction: never ask a model what a measurement answers, and never let a measurement answer what only a reading can.
+
 ## Governing sentence
 
 Reframe shall read the source structurally once: Grounding determines the writer's declared intent, Storify reads the source under that intent, Cut Script owns authored output, and Continuity audits the result; no semantic indexing stage or index-derived authority remains in the final production path.
