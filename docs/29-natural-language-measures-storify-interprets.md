@@ -6,7 +6,7 @@
 > stake*, *what is unresolved*. Everything NaturalLanguage produces is a **candidate or a coordinate**, never a
 > fact about the story — it is offered to the reading as evidence and confirmed there, or not at all. Used this
 > way it makes every model call smaller, better grounded, cheaper and more inspectable; used as a second opinion
-> about meaning it becomes exactly the speculative pre-classifier [ch.12](12-the-copilot-is-one-reasoning.md)
+> about meaning it becomes exactly the speculative pre-classifier [ch.12](12-animating-truth.md)
 > forbids. [ch.27](27-parse-before-you-ask.md) establishes the tiers — declared, measured, read — and this chapter
 > governs the measured tier: what may be measured, what must not be concluded from a measurement, and how the
 > evidence reaches the one reasoning.
@@ -61,7 +61,7 @@ what it is not. Names like `SemanticUnderstanding`, `StoryAnalyzer`, `IntentClas
 ## What is measured, and how it is held
 
 **Boundaries.** `NLTokenizer` at paragraph, sentence and word level, stored as ranges against the immutable source
-([ch.13](13-one-immutable-source.md)) — offsets, never copies. This gives exact citation, passage selection,
+([ch.13](13-storage-and-performance.md)) — offsets, never copies. This gives exact citation, passage selection,
 alignment of beats to text, and the ability to show *why* without fabricating a quotation.
 
 **Observations.** Lemmas, lexical classes, personal/place/organisation candidates, language and script, quotation
@@ -111,7 +111,7 @@ The map's reasons may be measured; the map's decisions may not. A concrete reaso
 > **Resolved by:** read the preceding two paragraphs, or drop the kinship claim.
 
 That is a better artefact than a confidence of 0.63, and it is still evidence: the *status* is the one reasoning's
-([ch.12](12-the-copilot-is-one-reasoning.md), [ch.24](24-the-first-reads-product-is-uncertainty.md)), and the
+([ch.12](12-animating-truth.md), [ch.24](24-the-reasoning-is-an-uncertainty-map.md)), and the
 measurement supplied its grounds. What the measured tier must never do is route a turn, choose a lane, pick a
 target, or decide that a reading is wrong.
 

@@ -43,8 +43,8 @@ The difference is not size or storage. It is **authority**:
 
 The Gazetteer's only question is *what has the source already established to exist?* It deliberately does not
 answer *what does this mean*, *why did this happen*, *what is its dramatic function*, or *what did the author
-intend* — those are reading, and reading is [ch.12](12-the-copilot-is-one-reasoning.md)'s single reasoning working
-under [ch.05](05-grounding-first.md)'s declared intent.
+intend* — those are reading, and reading is [ch.12](12-animating-truth.md)'s single reasoning working
+under [ch.05](05-grounding-contract.md)'s declared intent.
 
 Its authority is therefore **linguistic and historical**, never interpretive: it knows that a name occurred, where,
 how often, in what company, and that a reading confirmed those occurrences to be one person — and it knows who
@@ -115,7 +115,7 @@ retrieval after identity returns passages about the same person.
 In FountainStore, with everything else this project remembers — not as an index, but because a work must have **one**
 memory rather than many competing caches. Beats, cuts, continuity audits, the story view, copilot turns and every
 future reading consult the same vocabulary. It is written against the immutable source by coordinate
-([ch.13](13-one-immutable-source.md)): the Gazetteer never materialises text into the manuscript, and the manuscript
+([ch.13](13-storage-and-performance.md)): the Gazetteer never materialises text into the manuscript, and the manuscript
 never depends on the Gazetteer to be readable.
 
 ## Incomplete on purpose
@@ -145,10 +145,10 @@ is right and the correction is recorded as theirs.
 6. **The Gazetteer is consulted, never asked.** It routes no turn, sets no status on the uncertainty map, gates no
    step, and answers no story question — the prohibition that separates it from the index Phase 6 removed.
 7. **Retrieval follows identity**; resemblance never establishes it.
-8. **It never writes into the source** ([ch.13](13-one-immutable-source.md)) and the source never depends on it.
+8. **It never writes into the source** ([ch.13](13-storage-and-performance.md)) and the source never depends on it.
 9. **The writer overrides it**, and the override is recorded with its reason.
 10. **Incompleteness is stated, never filled.** A thin world is reported as thin; nothing is invented to round it
-    out ([ch.24](24-the-first-reads-product-is-uncertainty.md)).
+    out ([ch.24](24-the-reasoning-is-an-uncertainty-map.md)).
 
 ## Acceptance
 
