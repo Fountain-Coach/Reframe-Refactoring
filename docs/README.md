@@ -51,6 +51,8 @@ For **what a beat IS**, read [a beat is the question it raises (28)](28-a-beat-i
 
 For **how far the measuring may go**, read [NaturalLanguage measures, Storify interprets (29)](29-natural-language-measures-storify-interprets.md): the framework answers where the text is, what literal form appears there, what resembles it, what changed, and which model claim the text does not support — and never what the story means. Its output is candidates and coordinates, confirmed by the reading or not at all; it may supply REASONS to ch.24's map but never a status, a lane or a turn's target. It is ch.27 read in the other direction: never ask a model what a measurement answers, and never let a measurement answer what only a reading can.
 
+For **what the work's world remembers**, read [the Living Gazetteer (30)](30-the-living-gazetteer.md): the continuously accumulating record of what the source has established to EXIST — candidates observed by ch.29, confirmed by the reading, held with their provenance and their history, revisable by the writer in a sentence. It is consulted before every later reading and asked nothing: it routes no turn, sets no status, answers no story question, which is exactly what separates it from the semantic index this refactor removed. Measured on Telemachus: 28 names in and 28 identities out is a world nobody has worked out yet, and the state in which a reading invents a conflict between Stephen and Dedalus.
+
 ## Governing sentence
 
 Reframe shall read the source structurally once: Grounding determines the writer's declared intent, Storify reads the source under that intent, Cut Script owns authored output, and Continuity audits the result; no semantic indexing stage or index-derived authority remains in the final production path.
