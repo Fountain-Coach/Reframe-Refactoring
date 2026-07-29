@@ -144,6 +144,24 @@ A changed sentence should re-tag that sentence and its neighbours, not re-read a
 framework pays for itself in time rather than quality: the reading is the expensive thing, and most of it does not
 need to happen again.
 
+## Amendment (2026-07-29) — measure once, and only what changes what the writer sees
+
+Two failures in one day, from the same root, both worth writing down.
+
+**The measurement was built and never given a place to live.** The tier computed its map on demand, so every
+consumer computed it again for itself: the read for its prompt, the Gazetteer for its confirmation, the Spaces
+band on every open, the claim grades on every render. Four full passes over one unchanged chapter, three of them
+on the path the writer was waiting on. The app stalled three times — 99% CPU with the GUI frozen, then 760% with a
+read going nowhere — and each time the fix I reached for was a patch to the pass rather than the missing storage.
+
+A measurement is a pure function of the source. It is computed **once per source version**, held for the session
+and persisted against that version, and every consumer READS it. A consumer that measures is a bug, however cheap
+its own pass looks in isolation.
+
+**And features were shipping because they were possible.** A band of places went onto the stage having earned
+nothing: it re-measured the whole source on every open to show a handful of nouns, some of them wrong. The
+discipline is not "is this measurable" but "does knowing it change what the writer does".
+
 ## Rules
 
 1. **NaturalLanguage measures and organises; Storify interprets.** No component of the measured tier concludes
@@ -164,7 +182,12 @@ need to happen again.
    measurement answer what only a reading can** (this chapter). Both directions are the same error.
 9. **Nothing measured is shown as a doubt the reading holds.** Who is named in a passage is stated by the text; it
    is not a lane on the map.
-10. **Name the component for its authority.** `SourceLinguistics`, `LinguisticEvidenceMap` — never
+10. **Measure once per source version, and store it.** The measurement is a pure function of the source; a
+    consumer that measures rather than reads is a defect, and hot paths take an index over the source rather than
+    walking it per lookup.
+11. **A measured feature ships only when it changes what the writer sees or does.** Being computable is not a
+    reason. What earns nothing goes back in the drawer, with its tests, until it can be shown to.
+12. **Name the component for its authority.** `SourceLinguistics`, `LinguisticEvidenceMap` — never
     `SemanticUnderstanding`, `StoryAnalyzer`, `IntentClassifier`, `BeatDetector`, `TruthIndex`.
 
 ## Acceptance
