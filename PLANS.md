@@ -4,6 +4,27 @@ This file records intent for multi-step or high-risk changes to the Reframe refa
 
 ---
 
+Title: Chapter 32 store-native research compiler (2026-07-30)
+Goal: Extend Referenced Knowledge so web retrieval and frontier reasoning enlarge the manuscript's durable corpus without creating a second knowledge plane beside FountainStore.
+Scope: `docs/32-referenced-knowledge.md`, its exact integration mirror, reciprocal provenance, and documentation validation.
+Non-goals: Reframe runtime implementation, provider selection, new IDL topics, automatic web access, or treating external material as authority over the manuscript.
+Constraints: FountainStore remains the operational account of knowledge and uncertainty; retrieval is persisted before interpretation; frontier models compile stored evidence rather than supply citations from memory; all artefacts remain typed, evidenced, historied, removable, narrowly invalidated, and non-authoritative about meaning; numeric measurements remain telemetry only.
+Risks: a broad "knowledge base" can launder transient web material into project truth, repeat paid research, or let an embedding/index become authority; mitigate with separately owned artefacts, persist-before-interpret, store-first lookup, typed promotion, conflict preservation, and removal/replay tests.
+Plan:
+- Step 1 (status: completed) - Recorded the doctrine and pragmatic artefact flow in chapter 32 without deleting or weakening its existing rules.
+- Step 2 (status: completed) - Synchronized the exact chapter into `Fountain-Coach/midi2-gpu-fabric`.
+- Step 3 (status: completed) - Validated byte parity, relative Markdown links, whitespace, file modes and staged scope; recorded the integration counterpart before publishing both `main` branches.
+Validation:
+- `Scripts/sync-integration-copy --check <integration-checkout>` reports parity.
+- Every relative Markdown link in the guide resolves.
+- `git diff --check` passes in both repositories.
+- The integration commit contains only `PLANS.md` and the mirrored chapter; implementation work remains untouched.
+Results:
+- Integration counterpart commit: `Fountain-Coach/midi2-gpu-fabric@7ffd4166`.
+- Chapter copies have SHA-256 `c34bd823e3bc16e731ab4b182ac0511326ed0357e19548721d310188dfe7fb93`.
+
+---
+
 Title: Live-drive display policy synchronization (2026-07-26)
 Goal: Publish the operational evidence rules for a Reframe live drive, including full-screen launch on the attached display, and synchronize them to the integration guide.
 Scope: `AGENTS.md`, validation guidance, and the exact integration guide mirror.
