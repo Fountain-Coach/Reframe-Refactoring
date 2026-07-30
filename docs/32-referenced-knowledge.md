@@ -140,10 +140,42 @@ It is refused, absolutely, for:
 - **what the writer intends** — no reference outranks the author of the draft;
 - **dramaturgical judgement** — whether a beat works is nobody's citation.
 
+## Amendment — what is not reachable but is knowable
+
+The rule above — retrieved, never recalled — collapses two very different things into nothing, and the writer caught
+it while granting the allowance to fetch:
+
+> *"You are allowed to fetch what's useful, reachable, trustful in a measurable way — and honestly, what is not
+> reachable, but knowable (from books or the world outside) as is and as it happens. And this is an allowance that is
+> given for Reframe, too."*
+
+**Gifford's *Ulysses Annotated* settles Kinch, and it is a book.** No endpoint returns it. Treating that as
+*unknown* is its own dishonesty: the answer exists, its location is known, and the app can say so. What it must not
+do is act as though it had read it.
+
+So there is a third state, and it is neither evidence nor silence:
+
+- **Fetched** — retrieved, quoted, followable. May confirm (rules 1–2).
+- **Named but unreachable** — a work that exists and would settle the question, identified as precisely as it can be,
+  explicitly not consulted. **May be stated; may never confirm.** It is a signpost: it tells a writer where the answer
+  lives so they can go and get it, or decide from their own knowledge of it.
+- **Recalled** — a citation produced from a model's memory. Prohibited, because it is indistinguishable in form from
+  the first and carries none of its warrant.
+
+The line between the second and the third is not what the model knows; it is what the app **claims**. "Gifford's
+annotations gloss the bynames — I have not consulted them" is honest and useful. "Gifford, *Ulysses Annotated*, p.
+14: Kinch is Stephen's byname" is a fabrication unless page 14 was actually read.
+
+And the allowance's other half — **trustful in a measurable way** — is a requirement on what a fetch must record.
+Trust in a source is not asserted; it is made checkable by keeping the retrieval itself: when it happened, what was
+asked, what came back verbatim, and from where. A reference whose retrieval was not recorded is a reference nobody
+can audit, which by this chapter's own standard is not a reference.
+
 ## Rules
 
-1. **References are retrieved, never recalled.** A reference not fetched does not exist, whatever a model says about
-   it. Producing a citation from a model's memory is prohibited outright.
+1. **References are retrieved, never recalled.** Producing a citation from a model's memory is prohibited outright.
+   A work that was not fetched may still be NAMED as where an answer lives — honestly, as unconsulted — and in that
+   state it may inform a question and never confirm an entry.
 2. **A citation carries its work, its locator, and the quotation that bears the claim** — and a way to follow it
    where one exists. Missing the work or the locator, it is not admitted at all.
 3. **Referenced knowledge is marked as referenced, forever.** The three kinds of evidence — the text, a reference,
@@ -164,6 +196,10 @@ It is refused, absolutely, for:
     search being paid for again.
 12. **No spend on retrieval without the writer's yes**, at the call site, per act
     ([ch.26](26-internals-tune-themselves.md)) — a reference is worth paying for, and it is still their money.
+13. **A retrieval records itself** — when, what was asked, what came back verbatim, and from where — because trust in
+    a source is made measurable, never asserted. An unrecorded retrieval yields no admissible reference.
+14. **Reachability is stated, not implied.** Where the app knows a work would settle a question and cannot reach it,
+    it says both: what the work is, and that it has not read it.
 
 ## Acceptance
 
@@ -174,6 +210,8 @@ It is refused, absolutely, for:
 - Two sources disagreeing are both present, quoted, and attributed.
 - Deleting every reference leaves the manuscript readable and every reading performable.
 - A search that found nothing is recorded, and is not repeated without new grounds.
+- Every fetched reference has its retrieval on record: the moment, the request, the response, the origin.
+- A work named but unconsulted is labelled as such wherever it appears, and has confirmed nothing.
 
 ## Governing sentence
 
