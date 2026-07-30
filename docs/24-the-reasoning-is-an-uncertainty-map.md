@@ -98,6 +98,11 @@ honest map possible; an honest map is what makes lean reasoning safe.
 - **UncertaintyScoreKit** — the reasoning's product is expressed in its model (`UncertaintyState`,
   `UncertaintyNote.resolvedBy`, `UncertaintyLane`, `UncertaintyScore`); it must be FCIS-AX so the map is inspectable
   and showable (rule 6).
+- **[A Want Is a Gap in a Ledger](33-a-want-is-a-gap-in-a-ledger.md)** — this chapter maps a *turn*; that one maps
+  the *world*, and says where its marks come from: collected from the ledgers the work keeps, never from an
+  enumerated list of axes. It also types what this chapter left as prose — `resolvedBy` becomes a **want**, named
+  by who can answer it, which is how rule 5's escalation reaches [ch.32](32-referenced-knowledge.md)'s reference
+  lane and not only ch.20's stronger model.
 - **[First read's product is uncertainty]** (the manuscript-read doctrine) — the same principle for reading a
   manuscript, now applied to reading a *turn*: the honest first-pass deliverable is a map of doubt, not a confident
   verdict.

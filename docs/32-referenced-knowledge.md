@@ -444,7 +444,11 @@ The decisive tests are invariants:
 7. **The writer decides on a presented disagreement**, never on a blank prompt. Asking them to supply what could
    have been retrieved is delegating work, not seeking judgement.
 8. **The order of resort is reasoning, then reference, then the writer** — and the writer's word, once given, wins
-   over both and is recorded as theirs ([ch.30](30-the-living-gazetteer.md) rule 9).
+   over both and is recorded as theirs ([ch.30](30-the-living-gazetteer.md) rule 9). *Made mechanical by
+   [ch.33](33-a-want-is-a-gap-in-a-ledger.md): the order is carried as the TYPE of a want on a ledger's gap, so a
+   retrieval is reached for when a want says the manuscript cannot answer — never because a detector noticed a
+   resemblance. Measured: the pattern this replaced could not reach Kinch at all, the very identity this chapter
+   was written to settle.*
 9. **A search result is not a reference** unless it names a work and can be followed. A snippet is a lead.
 10. **Nothing referenced may gate a reading.** The manuscript is readable with no reference at all; references
     improve a world and are never required by one ([ch.31](31-compiled-knowledge.md) rule 4's removability).

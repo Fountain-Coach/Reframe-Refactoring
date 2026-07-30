@@ -144,6 +144,12 @@ is right and the correction is recorded as theirs.
 5. **History is kept.** Merges, splits, namings and retirements supersede; they do not erase.
 6. **The Gazetteer is consulted, never asked.** It routes no turn, sets no status on the uncertainty map, gates no
    step, and answers no story question — the prohibition that separates it from the index Phase 6 removed.
+   *Amended by [ch.33](33-a-want-is-a-gap-in-a-ledger.md): this rule and rule 10 were in conflict — the world was
+   required to state its incompleteness on a map it was forbidden to write to. The distinction they never drew is
+   between DRIVING and CONFESSING. Setting a verdict, routing, gating and answering remain forbidden absolutely.
+   Reporting what it does not hold — its gaps, and the want that would close each — is not authority but the
+   admission of its absence, and the Gazetteer does it, because rule 10 already required it and gave it nowhere to
+   speak.*
 7. **Retrieval follows identity**; resemblance never establishes it.
 8. **It never writes into the source** ([ch.13](13-storage-and-performance.md)) and the source never depends on it.
 9. **The writer overrides it**, and the override is recorded with its reason.
