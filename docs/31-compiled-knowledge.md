@@ -62,7 +62,10 @@ It is therefore, precisely:
 
 - **Authored.** Every entry names the act that produced it — a reading, a measurement, or the writer.
 - **Evidenced.** Every entry cites the passage that put it there. An entry with no evidence is a fabrication with
-  provenance formatting ([ch.28](28-a-beat-is-the-question-it-raises.md)).
+  provenance formatting ([ch.28](28-a-beat-is-the-question-it-raises.md)). *Amended by
+  [ch.32](32-referenced-knowledge.md): a passage of the manuscript is not the only admissible evidence. An entry may
+  rest on a **reference** — a fetched, cited work outside the manuscript — or on the writer's word, and which of the
+  three it rests on travels with it forever. What no entry may rest on is nothing.*
 - **Falsifiable.** Every entry implies what would refute it. Knowledge that cannot be wrong is decoration.
 - **Revisable, and historied.** Supersession, never silent rewriting: what the project believed last week stays
   readable beside what it believes now ([ch.30](30-the-living-gazetteer.md) rule 5).
@@ -186,7 +189,10 @@ is left to guess which of the things on screen are still true.
     theirs, and it wins.
 11. **Anything shown from compiled knowledge is dated.** A reading, a map or a claim drawn from an earlier world or
     build says so on the surface, and offers the act that would refresh it.
-12. **Name artefacts for what they hold, never for authority they lack** ([ch.29](29-natural-language-measures-storify-interprets.md)
+12. **Knowledge from outside the manuscript is admitted only as a retrieved, cited reference**, marked as such
+    for as long as it is held, and never speaking about what the pages contain
+    ([ch.32](32-referenced-knowledge.md)).
+13. **Name artefacts for what they hold, never for authority they lack** ([ch.29](29-natural-language-measures-storify-interprets.md)
     rule 12): `Gazetteer`, `ContinuityLedger` — never `TruthIndex`, `KnowledgeBase`, `WorldModel`.
 
 ## Acceptance
