@@ -161,7 +161,9 @@ carries display and Reframe carries meaning.
    outside the work, or the writer. An untyped want is a complaint and is not admitted.
 6. **The reference lane is triggered by a want of kind "a source outside the work", and by nothing else.**
    Resemblance detectors, pair shapes and keyword rules may not trigger retrieval
-   ([ch.30](30-the-living-gazetteer.md) rule 7: resemblance never establishes identity).
+   ([ch.30](30-the-living-gazetteer.md) rule 7: resemblance never establishes identity). *What the resulting
+   question must CARRY when it leaves is governed by [ch.34](34-a-question-that-leaves-the-work.md): a want names a
+   gap in a work, and a question that travels without that work is a different question.*
 7. **A want authorises nothing.** The writer's yes is still required at the call site, per act
    ([ch.32](32-referenced-knowledge.md) rule 12), and a want may not re-open a search the dead-end ledger has
    closed on the same grounds (rule 11).

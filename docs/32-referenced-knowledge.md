@@ -431,7 +431,10 @@ The decisive tests are invariants:
 
 1. **References are retrieved, never recalled.** Producing a citation from a model's memory is prohibited outright.
    A work that was not fetched may still be NAMED as where an answer lives — honestly, as unconsulted — and in that
-   state it may inform a question and never confirm an entry.
+   state it may inform a question and never confirm an entry. *Applied by
+   [ch.34](34-a-question-that-leaves-the-work.md) to an engine that does both at once: a model with a search tool
+   FINDS documents and WRITES prose about them. What it found is retrieval and may be used; what it said is recall,
+   however well-cited, and is never stored, shown as a source, or quoted.*
 2. **A citation carries its work, its locator, and the quotation that bears the claim** — and a way to follow it
    where one exists. Missing the work or the locator, it is not admitted at all.
 3. **Referenced knowledge is marked as referenced, forever.** The three kinds of evidence — the text, a reference,
@@ -450,6 +453,9 @@ The decisive tests are invariants:
    resemblance. Measured: the pattern this replaced could not reach Kinch at all, the very identity this chapter
    was written to settle.*
 9. **A search result is not a reference** unless it names a work and can be followed. A snippet is a lead.
+   *Extended by [ch.34](34-a-question-that-leaves-the-work.md): a followable document must also be ABOUT THE WORK —
+   mention its title or its author — or it is a lead. Measured: asking "Kinch" without Ulysses returned a Canadian
+   footballer, correctly cited and correct about a different man.*
 10. **Nothing referenced may gate a reading.** The manuscript is readable with no reference at all; references
     improve a world and are never required by one ([ch.31](31-compiled-knowledge.md) rule 4's removability).
 11. **A failed search is recorded.** That a source was sought and not found is knowledge, and it stops the same
