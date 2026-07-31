@@ -23,6 +23,15 @@ The publication copy lives here under `docs/`. Neither copy is permitted to drif
 - Publication path: `docs/`
 - Imported: 2026-07-19
 
+## Current synchronized change
+
+- Change: chapter 36, `Every Gap Keeps Its Address`
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@cfeaa2c1`
+- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/9`
+- Publication branch: `codex/ch36-every-gap-keeps-address`
+- Synchronized: 2026-07-31
+
 ## Maintenance rule
 
 Changes may begin in either repository, but the pull request that publishes them must name the corresponding commit or pull request in the other repository. The documentation sync skill performs comparison and explicit transfer. Its default action is read-only comparison; transfer requires an explicit direction.

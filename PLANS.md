@@ -4,6 +4,27 @@ This file records intent for multi-step or high-risk changes to the Reframe refa
 
 ---
 
+Title: Chapter 36 — every gap keeps its address (2026-07-31)
+Goal: Publish and synchronize the governance for representing an open-ended collection of uncertainty ledgers without flattening it into fixed lanes or detached chat cards.
+Scope: `docs/36-every-gap-keeps-its-address.md`, `docs/README.md`, `docs/01-reading-index.md`, their exact integration mirror, reciprocal provenance, and documentation validation.
+Non-goals: Reframe runtime implementation, a fixed ledger taxonomy, automatic lane ranking, changes to the MIDI/telemetry contract, or moving Reframe domain types into UncertaintyScoreKit.
+Constraints: every gap keeps composite lane/note identity; producer lane order and arbitrary cardinality survive presentation; the generic kit owns map navigation while Reframe owns typed wants and evidence; visual and AX truth agree; synchronization direction is integration to publication (`--pull`).
+Risks: a polished mock can silently reinstate enumerated lanes, collapse detail into an executive summary, confuse uncertainty lanes with Score participants, or let chat become the state store; mitigate with explicit rules, generated large-lane acceptance, a generic-kit/host boundary, and parity checks.
+Plan:
+- Step 1 (status: completed) - Compare the publication and integration guide and review every difference.
+- Step 2 (status: completed) - Pull the intended integration guide into publication, then create separate, narrowly scoped commits and draft PRs in both repositories.
+- Step 3 (status: completed) - Recheck byte parity, relative links, shell syntax, whitespace, staged scope, and reciprocal PR provenance.
+Validation:
+- `Scripts/sync-integration-copy --check <integration-checkout>` reports parity.
+- Every relative Markdown link in the guide resolves.
+- `sh -n Scripts/sync-integration-copy` and `git diff --check` pass.
+- Both PRs contain only the chapter-36 guide change and synchronization governance; unrelated Reframe implementation work remains unstaged.
+Results:
+- Integration counterpart: `Fountain-Coach/midi2-gpu-fabric@cfeaa2c1`, draft PR `#9`.
+- The publication and integration worktrees contain the same 37-file guide; relative links, sync-script syntax and `git diff --check` pass.
+
+---
+
 Title: Chapter 32 store-native research compiler (2026-07-30)
 Goal: Extend Referenced Knowledge so web retrieval and frontier reasoning enlarge the manuscript's durable corpus without creating a second knowledge plane beside FountainStore.
 Scope: `docs/32-referenced-knowledge.md`, its exact integration mirror, reciprocal provenance, and documentation validation.
