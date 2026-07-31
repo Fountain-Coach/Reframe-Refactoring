@@ -153,7 +153,9 @@ encyclopedia.
 7. **What an engine FOUND may be used; what it SAID may not.** URLs are retrieval; generated prose is recall and is
    never stored, shown as a source, or cited ([ch.32](32-referenced-knowledge.md) rule 1).
 8. **A returned document must mention the work or its author**, or it is a lead and not a reference
-   ([ch.32](32-referenced-knowledge.md) rule 9).
+   ([ch.32](32-referenced-knowledge.md) rule 9). *Extended by [ch.35](35-deep-search.md): a document that passes
+   this test may still not be the answer — measured, the cited page was an INDEX whose link label was the subject,
+   with the annotation one hop away. A cited page is where reading starts.*
 9. **The quotation is selected mechanically and verbatim** from the fetched document.
 10. **Where nothing citable is found, the model may name the kind of work that would settle it**, recorded as named
     but unconsulted — stated, never confirming.

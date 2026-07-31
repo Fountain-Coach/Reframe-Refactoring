@@ -464,6 +464,9 @@ The decisive tests are invariants:
     ([ch.26](26-internals-tune-themselves.md)) — a reference is worth paying for, and it is still their money.
 13. **A retrieval records itself** — when, what was asked, what came back verbatim, and from where — because trust in
     a source is made measurable, never asserted. An unrecorded retrieval yields no admissible reference.
+    *Extended by [ch.35](35-deep-search.md): where a search follows a source's own links, each hop also records WHY
+    it was taken. A trail of URLs is not auditable; a trail of reasons is, and it is how a writer tells a search
+    that thought from one that wandered.*
 14. **Reachability is stated, not implied.** Where the app knows a work would settle a question and cannot reach it,
     it says both: what the work is, and that it has not read it.
 15. **FountainStore is the only operational knowledge plane.** Web responses and model outputs are transient until
