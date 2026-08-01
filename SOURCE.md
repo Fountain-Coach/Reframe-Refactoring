@@ -43,6 +43,15 @@ The publication copy lives here under `docs/`. Neither copy is permitted to drif
 
 ## Current synchronized change
 
+- Change: Chapter 38 current audit update for the first `pipeline.status` widening slice
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@77c62a45`
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Synchronized: 2026-08-01
+
+## Current synchronized change
+
 - Change: Refactored Chapter 38, `Copilot Capability Audit Skill`
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
 - Integration commit: `Fountain-Coach/midi2-gpu-fabric@633d110c`

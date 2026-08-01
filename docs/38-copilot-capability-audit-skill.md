@@ -51,8 +51,10 @@ closure ledger. It derives only these statuses:
 - **contract-drift** — registry, generated contract, exposure, or runtime
   binding disagrees and must be repaired before exposure.
 
-The current audit reports 43 registry identities: 9 executable, 34
-unavailable, 0 live-accepted, and 0 drift findings. Those counts describe the
+The current audit reports 43 registry identities: 10 executable, 33
+unavailable, 0 live-accepted, and 0 drift findings. The first widening slice is
+the free read-only `pipeline.status` capability, backed by the live readiness
+snapshot and governed lifecycle proof. Those counts describe the
 evidenced boundary, not the full application surface.
 
 ## The widening workflow
