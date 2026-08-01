@@ -1,6 +1,6 @@
 # Reading Index
 
-> Chapter summary: This index offers role-based reading paths, chapter descriptions, and a vocabulary map so humans and agents can retrieve only the material relevant to the task at hand. It covers the founding Grounding-first transition (00–11) and the working-surface, reasoning, knowledge, retrieval, and uncertainty-representation doctrine that grew from it (12–36). See the [root README](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/README.md) for the genesis and full arc.
+> Chapter summary: This index offers role-based reading paths, chapter descriptions, and a vocabulary map so humans and agents can retrieve only the material relevant to the task at hand. It covers the founding Grounding-first transition (00–11) and the working-surface, reasoning, knowledge, retrieval, uncertainty-representation, and capability-governance doctrine that grew from it (12–37). See the [root README](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/README.md) for the genesis and full arc.
 
 The suite is intentionally divided into short, stable chapters. Agents should not load the whole directory into every prompt. Select the chapters whose authority is necessary for the current task, then retrieve live code and state for implementation detail. A UI claim is not settled by an accessibility-tree query alone — chapter 18 requires *looking* at the rendered view.
 
@@ -36,7 +36,7 @@ Read [the stage presents the act](18-the-stage-presents-the-act.md) first — it
 
 ### Copilot implementation
 
-Read the [target architecture](04-target-architecture.md), [Grounding contract](05-grounding-contract.md), the [Copilot implementation extension](10-copilot-implementation-extension.md), and [the situated Copilot](15-the-situated-copilot.md), then follow chapter 10's mandatory discovery procedure before editing. Work that places the Copilot on a surface, or changes what she says when she arrives, is governed by chapter 15 and must satisfy its acceptance as well. The Copilot must reuse existing application operations and the same authority chain; it is not a second workflow engine. The behavioural, relaunch, and no-index acceptance cases in [validation and acceptance](08-validation-and-acceptance.md) apply.
+Read the [target architecture](04-target-architecture.md), [Grounding contract](05-grounding-contract.md), the [Copilot implementation extension](10-copilot-implementation-extension.md), [the situated Copilot](15-the-situated-copilot.md), and [Copilot capability governance](37-copilot-capability-governance.md), then follow chapter 10's mandatory discovery procedure before editing. Work that places the Copilot on a surface, or changes what she says when she arrives, is governed by chapter 15 and must satisfy its acceptance as well. The Copilot must reuse existing application operations and the same authority chain; it is not a second workflow engine. The behavioural, relaunch, no-index, and capability-parity acceptance cases in [validation and acceptance](08-validation-and-acceptance.md) apply.
 
 ### Model lanes, cost, and cloud escalation
 
@@ -111,6 +111,7 @@ Read the [agent operating guide](07-agent-operating-guide.md) first, then follow
 | [A Question That Leaves the Work](34-a-question-that-leaves-the-work.md) | An outward question carries its work, measured doubt and bounded source passages; generated prose is discarded while fetched documents remain auditable. |
 | [Deep Search](35-deep-search.md) | A cited page begins the source reading; justified local reasoning follows source-internal links, records every reason, and states exactly why the search stopped. |
 | [Every Gap Keeps Its Address](36-every-gap-keeps-its-address.md) | The UI consequence of arbitrary ledgers: every gap keeps a composite lane/note address across an arbitrary-lane rack, shared-spine map, manuscript, typed want, evidence and decision. The kit remains generic; Reframe supplies domain context; complexity is represented at synchronized scales rather than flattened into fixed lanes or expanding chat cards. |
+| [Copilot Capability Governance](37-copilot-capability-governance.md) | Current status and implementation perspective for joining the MIDI backplane IDL, application capabilities, Copilot verbs, runtime actors, contextual availability, and persisted evidence into one checked action contract. |
 
 ## Vocabulary
 

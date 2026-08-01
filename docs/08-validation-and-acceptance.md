@@ -97,6 +97,23 @@ Matches in explicitly dated historical documents or archival decoders are accept
 
 The conversational Copilot carries its own acceptance surface, defined in the [Copilot implementation extension](10-copilot-implementation-extension.md). Its behavioural scenarios assert application behaviour and persisted state — not exact assistant phrasing — and cover inspecting current state, explaining readiness, retrieving source evidence, inspecting Grounding, running and blocking operations, stale identity, relaunch, and an explicit no-index proof. The same negative-evidence discipline required here applies: before the Copilot migration is accepted, recorded searches must show that no production Copilot path depends on semantic-index documents, index-derived reading completion, semantic-memory priors, index-derived Storify input, deprecated Copilot action names, removed readiness concepts, UI-only confirmation authority, conversation-only project state, or duplicate Copilot persistence.
 
+## Capability-parity acceptance
+
+The Copilot is not capability-complete because a prompt, slash catalogue, or reasoning-manifest entry names an action. For every writer-facing capability, the review record must join one capability identity to:
+
+- its writer-facing verb and intent;
+- its IDL topic or explicitly named native application operation;
+- its runtime executor and responsible actor;
+- its stage, placement, and live-state gates;
+- its confirmation, provider, cost, retry, cancellation, and resume policy;
+- its FountainStore persistence effect and telemetry;
+- its AX-visible control and result state;
+- focused tests and at least one integration or live acceptance path.
+
+Parity checks must fail when a taught verb has no executor, an executor has no declared capability, a declared IDL topic has no owning application capability, or a completion response has no persisted or AX-verifiable result. Capability availability must not disappear solely because a provider route has a smaller prompt window; the app may reduce explanatory detail, but it must not teach an action it cannot carry or silently route a real request into an unrelated answer path.
+
+The canonical implementation perspective and actor model are recorded in [Copilot capability governance](37-copilot-capability-governance.md).
+
 ## Acceptance statement
 
 The refactor is accepted only when a reviewer can truthfully state: “Reframe has no semantic indexing stage; confirmed Grounding directly governs Storify; Storify alone reads source structure; downstream artifacts carry exact lineage; old index data is archival; and the full journey works from an index-free store.”
