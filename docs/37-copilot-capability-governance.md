@@ -1,6 +1,6 @@
 # Copilot Capability Governance — From Transport Contract to Trustworthy Action
 
-> Chapter summary: As of 2026-08-01, Reframe has a strong transport and persistence contract, a real intent-mediation path, and several working Copilot actions. It does not yet have one authoritative, executable capability contract joining the MIDI backplane IDL, writer-facing verbs, runtime actors, contextual availability, and persisted evidence. This chapter records that status honestly and defines the pragmatic path to an empowered Copilot: teach from a checked capability registry, act through existing application boundaries, and claim only what FountainStore, telemetry, and AX can prove.
+> Chapter summary: As of 2026-08-01, Reframe has a checked v2 application capability boundary, a real intent-mediation path, and nine executable Copilot capabilities. It does not yet have full capability closure: 34 of the 43 registry identities remain explicitly unavailable because they lack a unified adapter and proof-gated acceptance. This chapter records that moment of truth honestly and defines the path to an empowered Copilot: teach from the checked registry, act through existing application boundaries, and claim only what FountainStore, telemetry, and AX can prove.
 
 ## The decision
 
@@ -22,21 +22,47 @@ The Copilot is taught from that capability contract. It is never taught from a p
 
 ## Current status — what exists and what does not
 
-This is a status report, not a claim of completion.
+This is a status report, not a claim of full completion. Boundary enforcement is
+complete; capability closure is outstanding.
 
 | Layer | Current position | Governance status |
 | --- | --- | --- |
 | MIDI backplane IDL | Defines topics, payloads, capability masks, QoS, budgets, acknowledgements, and telemetry. | Sound and authoritative for transport. |
 | `schema/facts.json` | Generated from the IDL. | Sound when regenerated with the contract. |
 | Reasoning manifest | Generated from IDL, facts, roles, app guidance, overlay, and capability declarations. | Useful orientation; not runtime truth. |
-| Modernization capability file | `schema/modernization-studio-capabilities.json` describes user capabilities, IDL topics, stages, owners, gates, writes, and failure modes. | Closest existing registry, but currently descriptive rather than executable. |
+| Modernization capability file | `schema/modernization-studio-capabilities.json` describes user capabilities, IDL topics, stages, owners, gates, writes, and failure modes. | Authoritative v2 application boundary: 43 identities, 9 executable, 34 explicitly unavailable. |
 | Copilot mediation | A typed model decision passes through a mediation service before planning/execution. | Real boundary; still vulnerable when the model chooses an answer route against resumable live work. |
-| Writer-facing verbs | Distributed across capability JSON, prompts, Swift enums, slash parsers, and runtime switches. | Split authority; the main source of capability drift. |
+| Writer-facing verbs | Generated and checked for the governed capabilities. | The exposed subset is registry-owned; unavailable rows must not be taught. |
 | Runtime execution | Several operations reuse application-level handlers and FountainStore. | Real for selected actions; parity is incomplete. |
 | Contextual availability | Situation and open-manuscript checks exist; route-specific prompt exposure also changes with model capacity. | Partially governed; capability should not disappear because a prompt is short. |
-| Result proof | FountainStore persistence, telemetry, and AX evidence exist in the architecture. | Not yet required uniformly for every Copilot action. |
+| Result proof | FountainStore persistence, telemetry, and AX evidence exist for governed execution. | Required for exposure, but not yet present for every registry identity. |
 
-The practical conclusion is encouraging but firm: Reframe does not lack a foundation. It lacks a single join between foundations that already exist.
+The practical conclusion is encouraging but firm: Reframe now has the join and an
+honest boundary. It does not yet have adapters and evidence for the whole
+application surface.
+
+## The executable boundary today
+
+The available path is the library → Prep → guide → Storify-source workflow:
+
+- open the library;
+- switch the visible Prep frame;
+- confirm Grounding;
+- generate and review a manuscript guide (working lane, with paid-lane consent);
+- adopt or publish a guide (always confirmed); and
+- start or stop source ingestion into Storify beats.
+
+All nine available capabilities accept natural-language mediation. Storify
+source start and stop additionally have generated slash aliases and visible
+button identifiers. The remaining 34 identities are unavailable to Copilot,
+even where related application UI or internal symbols exist, until a unified
+adapter and proof-gated focused test are registered.
+
+An unavailable capability must be refused explicitly, remain absent from
+teaching surfaces, produce no false started/completed message, and perform no
+unverified mutation. Source import is specifically blocked until the
+post-file-picker replacement is observed in persistent state; Storify draft
+start is blocked until a proof-gated draft adapter exists.
 
 ## The source-of-truth chain
 
@@ -89,13 +115,33 @@ The current mess is therefore not the fault of the MIDI backplane. It is an inte
 
 ## Honest examples from the current build
 
-Some capabilities are real today. Grounding confirmation, Storify Source Auto, frame switching, library opening, selected preparation actions, and several screenplay read/write invocations have runtime paths and focused tests.
+Some capabilities are real today. Grounding confirmation, Storify Source Auto,
+frame switching, library opening, and the governed preparation guide actions
+have runtime paths and focused tests.
 
-Some are only partially real. Natural-language continuation, cross-route action parity, contextual availability on every placement, relaunch/resume through dialogue, and uniform persisted-result verification are not yet acceptance-complete.
+Some are only partially real. Natural-language continuation, cross-route action
+parity across the entire application, contextual availability on every
+placement, relaunch/resume through dialogue, successful terminal Storify proof,
+and the full provider/high-risk matrix are not yet acceptance-complete.
 
-Some are stale or misleading. The prompt still describes `readInChapter` and `repairRead`, while the current operation enum and executor do not provide those operations. The on-device prompt also omits important hands when its context is tight and directs the writer toward the retired Index model. A capability that is named but cannot resolve to a typed runtime owner is not an unavailable capability; it is a governance defect and must not be taught.
+Historical stale teaching such as `readInChapter`, `repairRead`, and indexed-passage promises has been retired from the governed teaching surfaces. Any future capability that is named but cannot resolve to a typed runtime owner is a governance defect, not an executable capability, and must not be taught.
 
 The distinction matters. A Copilot that says “I cannot do that here because the current situation does not expose it” is trustworthy. A Copilot that describes an operation whose schema, executor, or evidence path does not exist is not.
+
+## Live moment of truth
+
+The Romeo-and-Juliet fixture drive demonstrated the governed portion of the
+contract on the external full-screen display. It imported the manuscript,
+answered a grounded question, exposed the generated command catalogue and
+status, and drove `storify.source.start` through requested, accepted, running,
+canceled, and resumed states. AX exposed the activity, cancel, and resume
+controls. The fixture store contained the v2 aggregate and append-only event
+records, with GUI telemetry correlated by execution ID.
+
+The drive intentionally stopped the long on-device reading run after proving
+the lifecycle and resume path. It does not claim a successful terminal Storify
+proof, a paid-lane route, or ChatGPT/OpenAI-key provider acceptance. Those are
+remaining acceptance work, not missing documentation.
 
 ## The empowering vision
 
@@ -164,6 +210,9 @@ Copilot capability governance is complete when:
 - completion claims are based on persisted state and AX-visible result, not requested intent;
 - stale index-era capabilities are removed or marked historical and unreachable;
 - the manifest, prompts, slash catalogue, runtime bindings, and tests pass parity validation.
+
+Until those criteria are met, the registry's explicit unavailable rows are the
+correct product behaviour, and this chapter is the authoritative status report.
 
 ## Governing sentence
 
