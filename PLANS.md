@@ -106,6 +106,22 @@ Validation:
 
 ---
 
+Title: Refactor Chapter 38 — complete Copilot capability skill suite (2026-08-01)
+Goal: Publish the refactored governance chapter describing the complete skill suite, widening workflow, evidence contract,
+and Codex↔Claude synchronization.
+Scope: `docs/38-copilot-capability-audit-skill.md`, `SOURCE.md`.
+Non-goals: runtime implementation or capability-registry changes.
+Plan:
+- Step 1 (status: completed) - Compare publication and integration copies with `Scripts/sync-integration-copy --check`.
+- Step 2 (status: completed) - Pull the refactored integration Chapter 38 and restore unrelated historical guide drift.
+- Step 3 (status: completed) - Record reciprocal provenance and verify parity and whitespace hygiene.
+Validation:
+- `Scripts/sync-integration-copy --check /Volumes/NINJA2/Github-Desktop/midi2-gpu-fabric` reports synchronized copies.
+- `git diff --check` passes.
+- Integration counterpart: `Fountain-Coach/midi2-gpu-fabric@633d110c`.
+
+---
+
 Title: Publish the ch.26 execution record (2026-07-27)
 Goal: Restore publication/integration parity for chapter 26 after its retirement log was written in the integration mirror only, and record what executing the chapter actually produced.
 Scope: `docs/26-internals-tune-themselves.md`.
