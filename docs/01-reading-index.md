@@ -112,6 +112,7 @@ Read the [agent operating guide](07-agent-operating-guide.md) first, then follow
 | [Deep Search](35-deep-search.md) | A cited page begins the source reading; justified local reasoning follows source-internal links, records every reason, and states exactly why the search stopped. |
 | [Every Gap Keeps Its Address](36-every-gap-keeps-its-address.md) | The UI consequence of arbitrary ledgers: every gap keeps a composite lane/note address across an arbitrary-lane rack, shared-spine map, manuscript, typed want, evidence and decision. The kit remains generic; Reframe supplies domain context; complexity is represented at synchronized scales rather than flattened into fixed lanes or expanding chat cards. |
 | [Copilot Capability Governance](37-copilot-capability-governance.md) | Current status and implementation perspective for joining the MIDI backplane IDL, application capabilities, Copilot verbs, runtime actors, contextual availability, and persisted evidence into one checked action contract. |
+| [Copilot Capability Audit Skill](38-copilot-capability-audit-skill.md) | Defines the repository-tracked audit skill and closure ledger that distinguish executable, live-accepted, unavailable, and drifted capabilities while planning the next widening batch. |
 
 ## Vocabulary
 

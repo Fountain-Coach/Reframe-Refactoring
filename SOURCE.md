@@ -32,6 +32,15 @@ The publication copy lives here under `docs/`. Neither copy is permitted to drif
 - Publication branch: `codex/ch36-every-gap-keeps-address`
 - Synchronized: 2026-07-31
 
+## Current synchronized change
+
+- Change: Chapter 38, `Copilot Capability Audit Skill`, and the Chapter 37 reading-index entry
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@37231c2e`
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Synchronized: 2026-08-01
+
 ## Maintenance rule
 
 Changes may begin in either repository, but the pull request that publishes them must name the corresponding commit or pull request in the other repository. The documentation sync skill performs comparison and explicit transfer. Its default action is read-only comparison; transfer requires an explicit direction.
