@@ -41,6 +41,15 @@ The publication copy lives here under `docs/`. Neither copy is permitted to drif
 - Publication path: `docs/`
 - Synchronized: 2026-08-01
 
+## Current synchronized change
+
+- Change: Refactored Chapter 38, `Copilot Capability Audit Skill`
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@633d110c`
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Synchronized: 2026-08-01
+
 ## Maintenance rule
 
 Changes may begin in either repository, but the pull request that publishes them must name the corresponding commit or pull request in the other repository. The documentation sync skill performs comparison and explicit transfer. Its default action is read-only comparison; transfer requires an explicit direction.
