@@ -89,6 +89,23 @@ Results:
 
 ---
 
+Title: Publish the Copilot Capability Audit skill (2026-08-01)
+Goal: Synchronize Chapter 38 and its reading-index entry from the integration repository into the publication guide,
+preserving the evidence-backed capability boundary and reciprocal provenance.
+Scope: `docs/38-copilot-capability-audit-skill.md`, `docs/01-reading-index.md`, `SOURCE.md`.
+Non-goals: runtime implementation, registry changes, or copying unrelated historical chapter drift.
+Plan:
+- Step 1 (status: completed) - Compare publication and integration guide copies with `Scripts/sync-integration-copy --check`.
+- Step 2 (status: completed) - Pull the intended integration chapter set, retain only Chapter 38 and its index entry,
+  and restore unrelated publication drift.
+- Step 3 (status: completed) - Record reciprocal source provenance and verify guide parity.
+Validation:
+- `Scripts/sync-integration-copy --check /Volumes/NINJA2/Github-Desktop/midi2-gpu-fabric` reports synchronized copies.
+- `git diff --check` passes.
+- Integration counterpart: `Fountain-Coach/midi2-gpu-fabric@37231c2e`.
+
+---
+
 Title: Publish the ch.26 execution record (2026-07-27)
 Goal: Restore publication/integration parity for chapter 26 after its retirement log was written in the integration mirror only, and record what executing the chapter actually produced.
 Scope: `docs/26-internals-tune-themselves.md`.
