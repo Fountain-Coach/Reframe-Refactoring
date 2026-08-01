@@ -122,6 +122,20 @@ Validation:
 
 ---
 
+Title: Publish the pipeline status widening update (2026-08-01)
+Goal: Keep Chapter 38 aligned with the first governed capability widening slice.
+Scope: `docs/38-copilot-capability-audit-skill.md`, `SOURCE.md`.
+Plan:
+- Step 1 (status: completed) - Compare publication and integration guide copies.
+- Step 2 (status: completed) - Pull the updated Chapter 38 and restore unrelated publication drift.
+- Step 3 (status: completed) - Record reciprocal provenance and verify parity.
+Validation:
+- `Scripts/sync-integration-copy --check /Volumes/NINJA2/Github-Desktop/midi2-gpu-fabric` reports synchronized copies.
+- `git diff --check` passes.
+- Integration counterpart: `Fountain-Coach/midi2-gpu-fabric@77c62a45`.
+
+---
+
 Title: Publish the ch.26 execution record (2026-07-27)
 Goal: Restore publication/integration parity for chapter 26 after its retirement log was written in the integration mirror only, and record what executing the chapter actually produced.
 Scope: `docs/26-internals-tune-themselves.md`.
