@@ -5,9 +5,12 @@
 > permission and the app will train the adapter" — a promise of completion attached to the writer's money.
 > Given an explicit "beyond this app" class to choose, it chose it once in three identical requests. This is not
 > a local defect and not a prompt that needs another sentence: **out-of-scope detection is a named, benchmarked,
-> unsolved problem**, and the published numbers match what this app measured. This chapter records what is
-> established, what was measured here, and the one line that does not move: a claim about what Reframe can do is
-> a FACT THE APP OWNS, and never something a model composes.
+> unsolved problem**, and the published numbers match what this app measured. What finally closed it was not
+> better detection but a ground: every one of the seven fabricating turns happened with nothing yet read, and an
+> answer path that preferred the model's prose to saying so. A claim about the WORK is grounded in the reading, a
+> claim about the APP in the capability registry — each is routed to its ground, and an empty ground is said out
+> loud. The line that does not move: a claim about what Reframe can do is a FACT THE APP OWNS, never something a
+> model composes.
 
 ## Purpose — the failure this exists to end
 
@@ -38,23 +41,34 @@ failed differently:
    The other two produced honest uncertainty — "I couldn't confidently read that", and a two-way clarification —
    which is better than inventing, and is not a refusal.
 
-## What is already known — this is a named problem with numbers
+## What is already known — a named problem, cited properly
 
-The mistake worth not repeating is treating this as a Reframe bug. It is
-**out-of-scope (OOS) intent detection** in task-oriented dialogue, with a standard benchmark (CLINC150) built
-because a system *"cannot assume that every query at inference time belongs to a supported intent class"*.
+The mistake worth not repeating is treating this as a Reframe bug. It is **out-of-scope (OOS) intent detection**
+in task-oriented dialogue, with a standard benchmark built precisely because a system cannot assume every query
+belongs to a supported intent class.[^larson2019]
 
-| finding | measured |
-| --- | --- |
-| Prompted models do not reliably notice they are out of scope: *"all models including LLMs struggle with OOS detection with poor OOS recall across datasets"* | OOS recall **0.0 – 0.615** |
-| An explicit reject/OOS class performs **worse** than the alternatives; threshold- and confidence-based rejection is the established approach | EMNLP 2020 |
-| Best reported shape: predict from IN-SCOPE labels only, then decide out-of-scope from a **second signal** | OOS recall 0.465 → 0.715; 0.205 → **0.950** |
-| Detection *"significantly depends upon the scope of intent labels and the size of the label space"* — system design over prompting | — |
+- **Prompted models do not reliably notice they are out of scope.** Evaluating seven state-of-the-art LLMs,
+  Arora, Jain and Merugu report that all of them "struggle with OOS detection with poor OOS recall across
+  datasets", measuring OOS recall between **0.0 and 0.615**.[^arora2024]
+- **Detection depends on system design more than on prompting.** The same controlled experiments find OOS
+  capability "significantly depends upon the scope of intent labels and the size of the label space".[^arora2024]
+- **The strongest reported shape predicts from in-scope labels only, then decides from a second signal.** Their
+  two-step method, comparing a query against the internal representation of the predicted intent, raises OOS
+  recall from 0.465 to 0.715 on one dataset and from 0.205 to **0.950** on another, without fine-tuning.[^arora2024]
+- **Class representation matters.** Cavalin et al. reach 9.9% error on the same OOS benchmark by representing
+  class labels as word-graph embeddings rather than discrete symbols.[^cavalin2020]
 
-Sources: `arXiv:2410.01627`, `aclanthology.org/2020.emnlp-main.324`, `clinc_oos`.
+### A correction, recorded rather than quietly fixed
 
-Attempts 2 and 3 above are the first two rows of that table, reproduced in this app before the table was read.
-**Reading first would have cost an hour and saved a day.**
+An earlier revision of this chapter stated that "an explicit reject/OOS class performs worse than the
+alternatives", attributed to [^cavalin2020]. **That claim is withdrawn: the cited paper does not make it.** It was
+taken from a search engine's summary of several papers and published without reading the source — in a chapter
+whose subject is not trusting a fluent, confident sentence about something you have not checked. The failure is
+recorded here rather than edited away, because it is the same failure, committed by the author of the rule.
+
+What survives without that claim is unchanged and sufficient: prompting alone does not work,[^arora2024] and in
+this app an explicit out-of-scope class was chosen on **one of three identical requests** — a measurement, not a
+citation.
 
 ## The principle — a fact about the app is not a thing to reason about
 
@@ -88,6 +102,37 @@ no safety property at all.
 What follows is uncomfortable and load-bearing: **Reframe does not currently detect out-of-scope requests
 reliably, and this chapter does not claim it does.** What it claims is narrower and provable — that when such a
 request IS recognised, nothing the app says about itself can be invented.
+
+## What actually closed it — every claim has a ground
+
+Detection was the wrong lever, and the right one was already in the building.
+
+All SEVEN fabricating turns in this investigation shared one condition: `hasReading=false`. The answer path said
+why in as many words — *"with no reading to be grounded in there is nothing to prefer over the planner's prose,
+and silence would be worse"* — and returned the model's prose. That is the door every invention came through,
+while the search for a classifier went on above it.
+
+Reframe has TWO grounds, and they answer different questions. A claim about the WORK is grounded in the reading; a
+claim about the APP is grounded in the capability registry and the manifest that teaches it. Nothing needs to be
+detected: a claim is routed to its ground, and when that ground is empty the app says so.
+
+"Silence would be worse" was a false choice. Naming the missing ground is neither silence nor invention, and it is
+the stance this app already takes everywhere else — Storify fails visibly rather than fabricating beats
+([ch.24](24-the-reasoning-is-an-uncertainty-map.md)), and a reference is retrieved or refused, never recalled
+([ch.32](32-referenced-knowledge.md)).
+
+Measured on an unread manuscript, one session, three kinds of claim:
+
+| asked | ground | answered |
+| --- | --- | --- |
+| train a LoRA adapter and lint the file | the reading — **empty** | "Nothing has been read from this manuscript yet, so I have nothing to answer that from … Segment it into beats and I'll be able to work from the text itself." |
+| what are the main themes of this play? | the reading — empty | an honest transport failure; no invention |
+| what is grounding in this app? | the manifest — **present** | answered properly |
+
+**This closed the case out-of-scope detection never did.** The LoRA request still classifies as a claim about the
+work, and is still not recognised as out of scope — but its ground was empty, so the app had nothing to say and
+said that. Routing to a ground catches what detecting an absence could not, and it asks nothing of the model
+beyond the judgement it already makes well.
 
 ## What may be relied upon
 
@@ -127,8 +172,13 @@ Neither remaining step is more prompt text.
    different failure and is governed elsewhere.
 8. **Measure recall over repeated identical requests**, not once. A mechanism that fires sometimes reads as
    working, and the difference is only visible in repetition.
-9. **Consult the published work before inventing a mechanism.** Two of the three attempts here are the first two
-   rows of a table that already existed.
+9. **Consult the published work before inventing a mechanism** — and read the source, not a summary of it. The
+   withdrawn claim above was published from a search result; the chapter forbidding confident unchecked sentences
+   contained one.
+10. **Every claim is routed to its ground**: the work to the reading, the app to the registry. A claim with no
+    ground is not answered from prose.
+11. **An empty ground is named, never papered over.** "Nothing has been read yet" is an answer; it is not silence,
+    and it is not a fallback to general knowledge.
 
 ## Acceptance
 
@@ -147,3 +197,18 @@ The doctrine is met when:
 Reframe shall let a model judge what the writer means and never let it testify to what Reframe can do — and where
 the app cannot yet tell that a request is beyond it, it shall say so plainly rather than let a confident sentence
 stand in for a capability it does not have.
+
+## Sources
+
+[^larson2019]: Stefan Larson, Anish Mahendran, Joseph J. Peper, Christopher Clarke, Andrew Lee, Parker Hill,
+    Jonathan K. Kummerfeld, Kevin Leach, Michael A. Laurenzano, Lingjia Tang and Jason Mars. *An Evaluation
+    Dataset for Intent Classification and Out-of-Scope Prediction.* EMNLP-IJCNLP 2019.
+    <https://aclanthology.org/D19-1131/> · arXiv:[1909.02027](https://arxiv.org/abs/1909.02027). The CLINC150
+    dataset: 150 intents over 10 domains, plus explicit out-of-scope queries.
+
+[^arora2024]: Gaurav Arora, Shreya Jain and Srujana Merugu. *Intent Detection in the Age of LLMs.* EMNLP 2024
+    Industry Track. arXiv:[2410.01627](https://arxiv.org/abs/2410.01627).
+
+[^cavalin2020]: Paulo Cavalin, Victor Henrique Alves Ribeiro, Ana Appel and Claudio Pinhanez. *Improving
+    Out-of-Scope Detection in Intent Classification by Using Embeddings of the Word Graph Space of the Classes.*
+    EMNLP 2020. <https://aclanthology.org/2020.emnlp-main.324/>.
