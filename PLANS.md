@@ -37,6 +37,27 @@ Validation:
 
 This file records intent for multi-step or high-risk changes to the Reframe refactoring guide. It is not a runbook. Procedures belong in `.codex/skills/`.
 
+Title: Copilot reading surface and typography (2026-08-03)
+Goal: Publish the approved governance chapter defining a situated, legible, Reframe-native Copilot surface and its
+acceptance boundary.
+Scope: `docs/45-copilot-reading-surface-and-typography.md`, its two design-review illustrations, the reading index,
+the exact integration mirror, and reciprocal provenance.
+Non-goals: publishing runtime source, declaring a released App surface, or changing capability policy.
+Plan:
+- Step 1 (status: completed) - Read the binding surface, Copilot, validation, and capability-governance chapters;
+  generate and review the two illustrations before implementation.
+- Step 2 (status: completed) - Implement the approved reading surface and repair the activity-disclosure crash in the
+  integration repository; validate build, focused tests, AX disclosure, and window-ID evidence.
+- Step 3 (status: completed) - Transfer the exact chapter and illustrations integration → publication, update the
+  reading index, and record reciprocal commit provenance.
+Validation:
+- Publication and integration chapter copies are byte-identical; illustration assets are byte-identical.
+- `StudioThemeContrastAuditTests` (2), `StudioChatPanelRenderingTests` (3), product build, and `git diff --check`
+  pass.
+- AX opened `copilot-activity-details`; the managed app remained alive and the bounded history surface appeared.
+- The chapter remains governance/design guidance; it does not claim a released App capability.
+
+
 ---
 
 Title: Chapter 36 — every gap keeps its address (2026-07-31)

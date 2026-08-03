@@ -61,6 +61,16 @@ The publication copy lives here under `docs/`. Neither copy is permitted to drif
 
 ## Maintenance rule
 
+## Current synchronized change
+
+- Change: Chapter 45, `Copilot Reading Surface and Typography`
+- Direction: integration → publication (manual exact transfer; the documented sync helper was absent in this checkout)
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/45-copilot-reading-surface-and-typography.md`
+- Publication path: `docs/45-copilot-reading-surface-and-typography.md`
+- Illustrations: `docs/illustrations/copilot-working-state.png`, `docs/illustrations/copilot-focused-state.png`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@74d84a75`
+- Synchronized: 2026-08-03
+
 Changes may begin in either repository, but the pull request that publishes them must name the corresponding commit or pull request in the other repository. The documentation sync skill performs comparison and explicit transfer. Its default action is read-only comparison; transfer requires an explicit direction.
 
 Runtime implementation, tests, generated reasoning manifests, and application-specific plans remain in `midi2-gpu-fabric`. This repository owns the refactoring guide and its FCIS governance, not the Reframe runtime.
