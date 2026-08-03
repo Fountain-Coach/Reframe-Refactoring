@@ -26,6 +26,7 @@ Validation:
 - Publication and integration chapter copies are byte-identical.
 - Public links resolve; the private runtime is named with an explicit access note rather than a misleading public link.
 - `git diff --check` and repository-specific FCIS validation pass.
+- PRs: org FCIS `#4`, governance `#7`, runtime `#21`, Book `#9`.
 
 This file records intent for multi-step or high-risk changes to the Reframe refactoring guide. It is not a runbook. Procedures belong in `.codex/skills/`.
 
