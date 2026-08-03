@@ -27,6 +27,13 @@ Validation:
 - Public links resolve; the private runtime is named with an explicit access note rather than a misleading public link.
 - `git diff --check` and repository-specific FCIS validation pass.
 - PRs: org FCIS `#4`, governance `#7`, runtime `#21`, Book `#9`.
+- Chapters read: 07 (plan and source authority), 08 (separate AX/VRT/store evidence), 43 (named-build release boundary),
+  and 44 (public projections/private implementation).
+- What they forbid here: treating a command catalog, screenshot, or public link as a release or as permission to expose
+  runtime source; collapsing governance, runtime, acceptance, and release authorities.
+- Conflicts: none; the user's request to publish the policy is consistent with keeping the runtime private by default.
+- Excluded, and why: repository-visibility change, runtime implementation, and release allow-list changes are separate
+  decisions governed by Chapter 44 and were not authorized by this publication task.
 
 This file records intent for multi-step or high-risk changes to the Reframe refactoring guide. It is not a runbook. Procedures belong in `.codex/skills/`.
 
