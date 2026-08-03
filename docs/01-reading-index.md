@@ -77,6 +77,12 @@ acceptance](08-validation-and-acceptance.md), [Copilot capability governance](37
 and [the Copilot capability audit skill](38-copilot-capability-audit-skill.md). The command catalog is an inventory;
 the release manifest is the only authority for what a named build ships.
 
+### Public publication and source-boundary review
+
+Read [public publication and private source policy](44-publication-and-source-policy.md), then [the released surface
+is a named build](43-the-released-surface-is-a-named-build.md) and [validation and acceptance](08-validation-and-acceptance.md).
+Use this path when changing what the Book, governance repository, or a public projection may expose.
+
 ## Chapter catalogue
 
 | Chapter | Purpose |

@@ -12,6 +12,21 @@ Validation:
 
 # PLANS.md
 
+Title: Public publication and private source policy (2026-08-03)
+Goal: Establish the FCIS-governed boundary between public projections, public governance, and private runtime source.
+Scope: `docs/44-publication-and-source-policy.md`, reading index, README, exact integration mirror, org FCIS policy,
+the Book projection, and runtime links.
+Non-goals: changing repository visibility, publishing runtime source, changing release status, or changing runtime
+behaviour.
+Plan:
+- Step 1 (status: in progress) - Publish the governing policy and its reading path.
+- Step 2 (status: pending) - Synchronize the integration copy and add the appropriate public/private projections.
+- Step 3 (status: pending) - Validate links, parity, FCIS layers, and repository visibility statements; open reviewed PRs.
+Validation:
+- Publication and integration chapter copies are byte-identical.
+- Public links resolve; the private runtime is named with an explicit access note rather than a misleading public link.
+- `git diff --check` and repository-specific FCIS validation pass.
+
 This file records intent for multi-step or high-risk changes to the Reframe refactoring guide. It is not a runbook. Procedures belong in `.codex/skills/`.
 
 ---
