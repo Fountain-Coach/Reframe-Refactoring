@@ -70,6 +70,13 @@ Read [current state and refactoring problem](03-current-state-and-problem.md), t
 
 Read the [agent operating guide](07-agent-operating-guide.md) first, then follow the task-specific path above. The guide explains authority precedence, planning discipline, evidence expectations, and the rule that historical documentation is never operational state.
 
+### Release, publication, or “what can the App do?” review
+
+Read [the released surface is a named build](43-the-released-surface-is-a-named-build.md), then [validation and
+acceptance](08-validation-and-acceptance.md), [Copilot capability governance](37-copilot-capability-governance.md),
+and [the Copilot capability audit skill](38-copilot-capability-audit-skill.md). The command catalog is an inventory;
+the release manifest is the only authority for what a named build ships.
+
 ## Chapter catalogue
 
 | Chapter | Purpose |
@@ -113,6 +120,7 @@ Read the [agent operating guide](07-agent-operating-guide.md) first, then follow
 | [Every Gap Keeps Its Address](36-every-gap-keeps-its-address.md) | The UI consequence of arbitrary ledgers: every gap keeps a composite lane/note address across an arbitrary-lane rack, shared-spine map, manuscript, typed want, evidence and decision. The kit remains generic; Reframe supplies domain context; complexity is represented at synchronized scales rather than flattened into fixed lanes or expanding chat cards. |
 | [Copilot Capability Governance](37-copilot-capability-governance.md) | Current status and implementation perspective for joining the MIDI backplane IDL, application capabilities, Copilot verbs, runtime actors, contextual availability, and persisted evidence into one checked action contract. |
 | [Copilot Capability Audit Skill](38-copilot-capability-audit-skill.md) | Defines the repository-tracked audit skill and closure ledger that distinguish executable, live-accepted, unavailable, and drifted capabilities while planning the next widening batch. |
+| [The Released Surface Is a Named Build](43-the-released-surface-is-a-named-build.md) | Separates runtime command inventory, governed capabilities, live acceptance, and the named-build release allow-list. |
 
 ## Vocabulary
 

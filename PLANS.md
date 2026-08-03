@@ -1,3 +1,15 @@
+Title: Define the released Reframe surface (2026-08-03)
+Goal: Separate development command inventory, governed capabilities, live acceptance, and the named-build release allow-list.
+Scope: `docs/43-the-released-surface-is-a-named-build.md`, `docs/01-reading-index.md`, the exact integration mirror, and reciprocal provenance.
+Non-goals: declaring a shipped version, promoting development capabilities, or changing runtime behavior.
+Plan:
+- Step 1 (status: completed) - Add chapter 43 and the release/publication reading path.
+- Step 2 (status: pending) - Synchronize the exact chapter and index into the integration guide and record both counterparts.
+Validation:
+- The publication and integration chapter copies are byte-identical.
+- Relative links, `git diff --check`, and the sync script pass.
+- The release manifest explicitly says `no-released-build` until a named distribution build exists.
+
 # PLANS.md
 
 This file records intent for multi-step or high-risk changes to the Reframe refactoring guide. It is not a runbook. Procedures belong in `.codex/skills/`.
