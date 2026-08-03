@@ -68,6 +68,7 @@ The guide is authoritative about the *intended* design. It never claims the work
 - [No Preferences, Only Reasoning](docs/22-no-preferences-only-reasoning.md) · no panel of behavioural toggles; the app reasons decisions and the writer instructs in dialogue; only facts (credentials, storage, account state) are stored, on a lean Accounts & Storage surface
 - [One Reasoning](docs/23-one-reasoning.md) · a turn is understood by one reasoning over one complete taxonomy, and everything routes from that single decision; no fast pre-classifier that fires first and misroutes
 - [The Reasoning Is an Uncertainty Map](docs/24-the-reasoning-is-an-uncertainty-map.md) · the one reasoning's product is an uncertainty map (settled/ambiguity/thin/failure + why + resolvedBy), not a verdict; route from it, escalate from it, show it — which is also why it runs lean
+- [Public Publication and Private Source Policy](docs/44-publication-and-source-policy.md) · public projections are evidence-backed; private implementation remains private by default
 
 **The continuous account**
 

@@ -66,3 +66,7 @@ Changes may begin in either repository, but the pull request that publishes them
 Runtime implementation, tests, generated reasoning manifests, and application-specific plans remain in `midi2-gpu-fabric`. This repository owns the refactoring guide and its FCIS governance, not the Reframe runtime.
 
 - Release-surface chapter: `docs/43-the-released-surface-is-a-named-build.md`, synchronized with the integration guide and added 2026-08-03.
+- Publication-boundary chapter: `docs/44-publication-and-source-policy.md`, synchronized with the integration guide;
+  it governs the public Book projection, the private runtime boundary, and the org FCIS publication policy.
+- Policy PRs: org FCIS `Fountain-Coach/.github#4`, governance `Fountain-Coach/Reframe-Refactoring#7`, runtime
+  `Fountain-Coach/midi2-gpu-fabric#21`, and Book `Fountain-Coach/book-of-reframe#9`.
