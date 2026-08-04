@@ -18,7 +18,7 @@ Validation:
 - Relative links, `git diff --check`, and repository-specific publication checks pass.
 - This chapter does not claim runtime or live acceptance; those remain in the integration phase plan.
 - Integration commit: `Fountain-Coach/midi2-gpu-fabric@c33615ad`.
-- Publication commit: `Fountain-Coach/Reframe-Refactoring@816a8b3`.
+- Publication commit: pending final provenance commit after the branch rebase.
 
 ---
 
