@@ -19,6 +19,8 @@ Validation:
 - This chapter does not claim runtime or live acceptance; those remain in the integration phase plan.
 - Integration commit: `Fountain-Coach/midi2-gpu-fabric@c33615ad`.
 - Publication commit: `Fountain-Coach/Reframe-Refactoring@688a200`.
+- Draft publication PR: `Fountain-Coach/Reframe-Refactoring#9`.
+- Draft integration PR: `Fountain-Coach/midi2-gpu-fabric#23`.
 
 ---
 

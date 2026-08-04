@@ -8,6 +8,8 @@
 - Publication path: `docs/`
 - Integration commit: `Fountain-Coach/midi2-gpu-fabric@c33615ad`
 - Publication commit: `Fountain-Coach/Reframe-Refactoring@688a200`
+- Draft publication PR: `https://github.com/Fountain-Coach/Reframe-Refactoring/pull/9`
+- Draft integration PR: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/23`
 - Synchronized: 2026-08-04 (working tree; commits to be recorded reciprocally before publication)
 
 ## Roles
