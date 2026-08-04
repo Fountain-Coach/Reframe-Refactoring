@@ -1,3 +1,27 @@
+Title: Situated, mixed-initiative interaction (2026-08-04)
+Goal: Publish the governance contract for Reframe as an open interaction space in which human turns may be corrective,
+interrupted, out of sequence, or unrelated, while only grounded live state and one mediated meaning may authorize a
+persisted transition.
+Scope: `docs/47-situated-mixed-initiative-interaction.md`, `docs/01-reading-index.md`, exact integration mirror, and
+reciprocal provenance.
+Non-goals: runtime implementation, new capability identities, provider policy, or release promotion.
+Plan:
+- Step 1 (completed) - Read the binding chapters and record their rules in the integration plan.
+- Step 2 (completed) - Draft Chapter 47 and its reading-index entry in the integration guide.
+- Step 3 (completed) - Pull the exact guide copy into publication and resolve the pre-existing 01/45 merge drift
+  toward the documented integration-side version.
+- Step 4 (completed) - Record reciprocal commits, validate links/parity/provenance, and prepare reviewed publication
+  commits.
+Validation:
+- Publication and integration chapter copies are byte-identical.
+- `Scripts/sync-integration-copy --check <integration>` passes.
+- Relative links, `git diff --check`, and repository-specific publication checks pass.
+- This chapter does not claim runtime or live acceptance; those remain in the integration phase plan.
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@c33615ad`.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@816a8b3`.
+
+---
+
 Title: Define the released Reframe surface (2026-08-03)
 Goal: Separate development command inventory, governed capabilities, live acceptance, and the named-build release allow-list.
 Scope: `docs/43-the-released-surface-is-a-named-build.md`, `docs/01-reading-index.md`, the exact integration mirror, and reciprocal provenance.

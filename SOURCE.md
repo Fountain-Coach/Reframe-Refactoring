@@ -1,5 +1,15 @@
 # Source and Synchronization Contract
 
+## Current synchronized change
+
+- Change: Chapter 47, `Situated, Mixed-Initiative Interaction`, and its Chapter 47 reading-index entry
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@c33615ad`
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@816a8b3`
+- Synchronized: 2026-08-04 (working tree; commits to be recorded reciprocally before publication)
+
 ## Roles
 
 This repository is the publication and FCIS-governance home of the Reframe Grounding-first refactoring guide.
