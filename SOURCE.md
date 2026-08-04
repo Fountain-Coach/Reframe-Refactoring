@@ -80,3 +80,14 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
   it governs the public Book projection, the private runtime boundary, and the org FCIS publication policy.
 - Policy PRs: org FCIS `Fountain-Coach/.github#4`, governance `Fountain-Coach/Reframe-Refactoring#7`, runtime
   `Fountain-Coach/midi2-gpu-fabric#21`, and Book `Fountain-Coach/book-of-reframe#9`.
+
+## Current synchronized change
+
+- Change: Chapter 46, `Dynamic Grounding: From Default Reading to Writer-Accepted Lens`, plus the reading-index entry
+  and synchronized chapters 44/45.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@aeb03ce3`
+- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/22`
+- Synchronized: 2026-08-04
