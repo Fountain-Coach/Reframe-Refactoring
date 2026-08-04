@@ -6,6 +6,22 @@ Plan:
 - Step 1 (status: completed) - Add chapter 43 and the release/publication reading path.
 - Step 2 (status: pending) - Synchronize the exact chapter and index into the integration guide and record both counterparts.
 Validation:
+
+---
+
+Title: Publish Chapter 46 — Dynamic Grounding (2026-08-04)
+Goal: Publish the governance decision that Grounding is a dynamic, source-authoritative flow rather than a workspace.
+Scope: `docs/46-dynamic-grounding.md`, `docs/01-reading-index.md`, and the synchronized publication copies of chapters
+44/45.
+Non-goals: runtime implementation or live acceptance of `/ground`.
+Plan:
+- Step 1 (status: completed) - Compare the integration and publication guide copies.
+- Step 2 (status: completed) - Pull the intentional integration changes with `Scripts/sync-integration-copy --pull`.
+- Step 3 (status: completed) - Record reciprocal provenance and validate parity and whitespace.
+Validation:
+- Integration governance PR: `Fountain-Coach/midi2-gpu-fabric#22`.
+- Counterpart integration commit: `aeb03ce3`.
+- `Scripts/sync-integration-copy --check` and `git diff --check` must pass before publication.
 - The publication and integration chapter copies are byte-identical.
 - Relative links, `git diff --check`, and the sync script pass.
 - The release manifest explicitly says `no-released-build` until a named distribution build exists.

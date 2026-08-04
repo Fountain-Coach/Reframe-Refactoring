@@ -127,7 +127,7 @@ Use this path when changing what the Book, governance repository, or a public pr
 | [Copilot Capability Governance](37-copilot-capability-governance.md) | Current status and implementation perspective for joining the MIDI backplane IDL, application capabilities, Copilot verbs, runtime actors, contextual availability, and persisted evidence into one checked action contract. |
 | [Copilot Capability Audit Skill](38-copilot-capability-audit-skill.md) | Defines the repository-tracked audit skill and closure ledger that distinguish executable, live-accepted, unavailable, and drifted capabilities while planning the next widening batch. |
 | [The Released Surface Is a Named Build](43-the-released-surface-is-a-named-build.md) | Separates runtime command inventory, governed capabilities, live acceptance, and the named-build release allow-list. |
-| [Copilot Reading Surface and Typography](45-copilot-reading-surface-and-typography.md) | Defines the situated, readable, Reframe-native Copilot surface: sans-serif interface text, source monospace, progressive disclosure, nested activity, and AX/VRT acceptance. |
+| [Dynamic Grounding](46-dynamic-grounding.md) | Defines Grounding as a source-authoritative flow: default non-integrational reading, score-derived proposal, explicit `/ground` acceptance, new lineage, and persisted evidence. |
 
 ## Vocabulary
 
