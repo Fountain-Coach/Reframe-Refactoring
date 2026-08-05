@@ -129,4 +129,24 @@ A revised grounding flow is accepted only when a fresh owned-source drive proves
 - FountainStore lifecycle and effect documents show the accepted terminal result;
 - no retired static Grounding label appears in the transcript, help, AX tree, or generated capability projection.
 
+### Acceptance for the 2026-08-05 amendment (rules 11–15)
+
+The criterion above — *the proposal is derived from the observed score* — is the one that let an unusable lens
+through, because derivation is a fact about provenance and says nothing about whether a reader could adopt the
+result. These are read from the offer itself, on a live drive:
+
+- **the offered lens completes "read it for …" as something a reader could do.** A phrase naming only a mood, a
+  theme, a tension, or the fact that the work is uncertain fails this, however faithfully it was derived;
+- **the proposal names what the reading was attending to and what it suspects it should attend to instead**, and
+  cites the shared pattern of the open questions as its evidence rather than listing them;
+- **a writer's counter-lens is persisted verbatim** as the lens, neither paraphrased into system language nor
+  merged with the proposed one;
+- **the offer is refusable** — a refusal carrying the writer's own lens reaches the Grounding decision, leaves
+  confirmed Grounding unchanged, and returns an offer of the writer's frame. An offer no writer can disagree with
+  has failed rule 11 whatever it says;
+- **a score carrying `failure` gaps produces no proposal at all**: each hole is named with its span and its want,
+  and no pending proposal is persisted;
+- **an accepted re-read is judged by the change in the KIND of uncertainty**, shown by comparing the two readings
+  of the same lines. A smaller number of open questions is not acceptance, and neither is a larger one a failure.
+
 The Book may describe this as a live-accepted development command only after those authorities agree. It must not imply that the command belongs to a named released App build unless the release manifest says so.

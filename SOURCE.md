@@ -103,7 +103,8 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
-- Integration commit: `Fountain-Coach/midi2-gpu-fabric@169e1adf`
+- Integration commits: `Fountain-Coach/midi2-gpu-fabric@169e1adf` (amendment),
+  `Fountain-Coach/midi2-gpu-fabric@7db89198` (acceptance for rules 11–15 + reading-index entry)
 - Synchronized: 2026-08-05
 
 ## Previous synchronized change
