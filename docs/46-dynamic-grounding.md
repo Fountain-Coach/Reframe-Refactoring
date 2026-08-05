@@ -40,6 +40,78 @@ canonical source
 
 The sequence is consequential. A successful command is not proved by the words “grounded” or “reading again.” Acceptance requires the AX-visible result, the changed reading projection, and persisted FountainStore evidence.
 
+## Amendment (2026-08-05) — a lens is a hypothesis about the reader, not a description of the work
+
+The chapter said the score "may reveal a more useful way to attend to the manuscript" and left *how* to the
+implementation. What the implementation built instead was a summary: the first four open questions concatenated,
+offered back as the lens. Driven live it produced, for a manuscript of associative material, this —
+
+> holding the tension of unresolved uncertainty open against the potential for resolution through the
+> protagonist's actions and the story's outcome
+
+— which is not a way of reading anyone can adopt. It is a restatement of the fact that there is uncertainty. No
+test caught it, because a test can check that a lens is *derived* and cannot check that it is *usable*.
+
+### The uncertainty has two origins, and the map cannot tell them apart
+
+A first reading is naive by design ([rule 2](#rules), the non-integrational stance): it does not resolve what the
+source has not resolved, and what it cannot close becomes the UncertaintyScore. But that residue has two entirely
+different origins, and they are drawn identically:
+
+- **the work's** — the piece genuinely holds it open. That is the art, and no reading closes it;
+- **the reading's** — the reader attended to the wrong thing, and the questions are artifacts of that stance.
+
+Separating them is the whole value of the flow. ch.24 already distinguishes `ambiguity` from `thin` from
+`failure`, but no state distinguishes *whose* uncertainty a note is, because nothing in a single reading can.
+
+### What a lens is
+
+**A lens is a hypothesis about the reader's blind spot.** It answers one question: *what would I have to be
+attending to for this not-knowing to stop being not-knowing?* It is not a description of the work, not a summary
+of the open questions, and not a mood.
+
+The standing case is the Polyx Supershow. Its first reading produced fourteen questions of the form *"Will Dad's
+desire for adventure lead to a dangerous situation?"* — causal-narrative questions. The writer's own account of
+the work is that it is associative material, deliberately not coherent in the ordinary sense, "a Schnippel, the
+work of a collecting mind that finds its curiosity in changing things — and every piece is here because of how it
+looks."
+
+Those fourteen questions are not the work's uncertainty. They are the residue of reading associative material as
+though it were plot; a reader looking for causality in a Schnippel will generate that pattern indefinitely. The
+writer's lens does not *resolve* those tensions. It dissolves the question of them, because they were never the
+work's questions.
+
+So the pattern of open questions is **evidence of a stance**, not a set of findings. Fourteen causal questions
+over associative material is a diagnosis of the reader.
+
+### Rules (extending the rules above)
+
+11. **A lens names a way of attending, and must be adoptable.** It has to complete "read it for …" as something a
+    reader could actually do. A phrase that only restates that uncertainty exists, or that names a mood, a theme,
+    or a tension, is not a lens and may not be offered as one.
+12. **The proposal states the reader's suspected blind spot, and cites the pattern as its evidence.** It says what
+    the reading was attending to, what that left it holding, and what it suspects it should have been attending to
+    instead — not what the open questions were.
+13. **The writer's own lens is authoritative and is recorded verbatim.** A writer correcting the reading's stance
+    is the highest-value turn in this flow, because they know their work's mode and no reading can derive it. Their
+    words are the lens; they are never paraphrased into system language, and never merged with the proposed one.
+14. **A lens is proved by a change in the KIND of uncertainty, not its amount.** After an accepted re-read, the
+    honest question is whether the reader's artifacts fell away and the work's own ambiguity remained — which is a
+    comparison between two readings of the same lines (the `/readings` command already exists for exactly this),
+    not a count. A lens that
+    only reduces the number of open questions has not been shown to be right.
+15. **A hole is not a lens problem.** A stretch with no reading behind it is a `failure` gap whose want is the
+    manuscript's ([ch.33](33-a-want-is-a-gap-in-a-ledger.md) rule 5). Re-reading it through a different stance
+    reads the same hole through a new frame and calls the result grounded. When the score carries holes, Grounding
+    says so and proposes nothing.
+
+### Why this also governs the conversation
+
+A lens that is a real proposition is one a writer can refuse. Measured: while the proposal was abstract, a
+refusal carrying the writer's own lens did not reach the Grounding decision at all — there was nothing concrete
+for the mediated turn to relate it to. Vagueness in the offer and misrouting of the answer are the same defect,
+which is why rule 11 is a conversational requirement and not a matter of taste.
+
 ## The governing sentence
 
 Grounding is Reframe’s living, source-authoritative flow of attention: the UncertaintyScore may propose how the reading should change, but only the writer may accept that change, and every accepted lens must leave a persisted, inspectable lineage.

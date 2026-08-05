@@ -95,6 +95,19 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 
 ## Current synchronized change
 
+- Change: Chapter 46 amendment, `a lens is a hypothesis about the reader, not a description of the work` — states
+  that a first reading's residue has two origins (the work's and the reading's), that a lens names the reader's
+  suspected blind spot rather than summarizing the open questions, and adds rules 11–15 (adoptable lens; the
+  proposal cites the pattern as evidence; the writer's own lens is verbatim and authoritative; a lens is proved by
+  a change in the kind of uncertainty across two readings; a hole is not a lens problem).
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@169e1adf`
+- Synchronized: 2026-08-05
+
+## Previous synchronized change
+
 - Change: Chapter 46, `Dynamic Grounding: From Default Reading to Writer-Accepted Lens`, plus the reading-index entry
   and synchronized chapters 44/45.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
