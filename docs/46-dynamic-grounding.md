@@ -129,6 +129,31 @@ A revised grounding flow is accepted only when a fresh owned-source drive proves
 - FountainStore lifecycle and effect documents show the accepted terminal result;
 - no retired static Grounding label appears in the transcript, help, AX tree, or generated capability projection.
 
+### Amendment (2026-08-05b) — the lens is answerable, and Reframe answers it
+
+Rule 14 makes a lens provable by comparing two readings of the same lines. As written, the writer performs that
+comparison: `/readings` diffs the pair and reflects on the difference, but nothing carries the result back to the
+proposal that caused the re-read. A hypothesis nobody returns to is not a hypothesis; it is a claim.
+
+16. **Reframe closes the loop it opened.** When an accepted lens has produced its re-read, Reframe returns to the
+    proposal on its own — without being asked — and states what changed: which of the earlier reading's open
+    questions did not recur, which persisted, and what that suggests about the blind spot the proposal named. The
+    comparison is drawn from the two persisted readings of the same lines, never from the transcript.
+
+17. **It must be able to say the hypothesis did not hold.** *"The questions I expected to dissolve are still
+    here"* is a successful outcome of rule 16 and the honest one. A report that confirms the lens whatever the
+    readings show is the laundering [ch.24](24-the-reasoning-is-an-uncertainty-map.md) rule 3 forbids, and a lens
+    whose count merely fell has not been shown to be right (rule 14).
+
+18. **It reports; it does not revert.** A lens whose hypothesis failed stays confirmed until the writer decides
+    otherwise ([ch.47](47-situated-mixed-initiative-interaction.md) rule 9 — the human remains the mutation
+    authority). Reframe may offer to read differently again; it may not undo the writer's accepted lens because
+    its own hypothesis disappointed it.
+
+19. **A missing comparison is stated, not inferred.** When no second reading covers the same span, the report says
+    so. It may not reason about what would have changed ([ch.30](30-the-living-gazetteer.md) rule 10 —
+    incompleteness is stated, never filled).
+
 ### Acceptance for the 2026-08-05 amendment (rules 11–15)
 
 The criterion above — *the proposal is derived from the observed score* — is the one that let an unusable lens
@@ -148,5 +173,17 @@ result. These are read from the offer itself, on a live drive:
   and no pending proposal is persisted;
 - **an accepted re-read is judged by the change in the KIND of uncertainty**, shown by comparing the two readings
   of the same lines. A smaller number of open questions is not acceptance, and neither is a larger one a failure.
+
+### Acceptance for rules 16–19
+
+- **the proposal is answered without the writer asking.** After an accepted lens produces its re-read, Reframe
+  returns to it and reports, in the same conversation, what the comparison shows;
+- **the report names which earlier open questions did not recur and which persisted**, and each is traceable to
+  both persisted readings — not to the transcript;
+- **a lens that did not change the kind of uncertainty is reported as not having held**, and the reading is left
+  confirmed; a drive in which every accepted lens is reported as a success has failed this;
+- **no revert happens on Reframe's judgement.** Grounding identity after the report is the one the writer
+  accepted, unless the writer changes it in a new turn;
+- **when no comparable pair exists the report says so** rather than describing a change it cannot see.
 
 The Book may describe this as a live-accepted development command only after those authorities agree. It must not imply that the command belongs to a named released App build unless the release manifest says so.
