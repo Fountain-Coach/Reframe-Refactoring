@@ -154,6 +154,54 @@ proposal that caused the re-read. A hypothesis nobody returns to is not a hypoth
     so. It may not reason about what would have changed ([ch.30](30-the-living-gazetteer.md) rule 10 —
     incompleteness is stated, never filled).
 
+### Amendment (2026-08-05c) — the report says what it cannot tell, and ends in the writer's hands
+
+Rule 14 made a lens provable by comparing two readings of the same lines, and rules 16–19 made Reframe deliver
+that comparison unasked. The comparison was then calibrated, which is what rule 14 implies and what
+`ReframeReadingDiff`'s own header warns of — *"the same lens twice mostly measures the model's noise"*:
+
+| | held by both | dissolved | newly opened |
+| --- | --- | --- | --- |
+| **same lens, read twice** | 5 | 19 | 23 |
+| lens changed to the writer's | 1 | 23 | 27 |
+
+The same magnitude. And the control dissolved the very questions the changed-lens report had offered as its
+evidence. The reading also held 28 questions open on one pass and 24 on the next, through an identical lens.
+
+A single pair of readings therefore cannot separate what the lens did from what the reader does differently on a
+second pass. Both surfaces were nonetheless asserting that it could: `/readings` prints its shared questions under
+the heading *"the work's own ambiguity — these survived a change of reading"*, and printed exactly that for two
+readings through an identical lens, where no reading had changed at all.
+
+20. **A reading comparison states what it cannot tell, and attributes nothing it cannot establish.** It may say
+    what differs between two readings. It may not say whose the uncertainty is — the work's or the reader's — on
+    the strength of one pair, and it may not call a difference a survival of "a change of reading" when the lens
+    did not change. The readings carry their own lens identity; the report reads it and says which case it is.
+
+21. **"I cannot tell" is the third honest outcome.** Rule 17 required the report to be able to say the lens did
+    not hold. It must equally be able to say that the evidence does not separate the lens from the instrument.
+    Presenting a noise-level difference as a finding is [ch.24](24-the-reasoning-is-an-uncertainty-map.md) rule 3's
+    laundering, one level up.
+
+22. **The report ends in the writer's action, grounded.** Its product is not a verdict but a call: the questions
+    that survived, named and addressed to their lines, are the material only the writer can judge. It hands them
+    that material and asks, rather than telling them what it means. Every number and every question it shows is
+    traceable to the two persisted readings.
+
+23. **Both surfaces obey this.** The unasked report after an accepted lens and the writer-invoked `/readings` are
+    two triggers over one comparison. A change to how a comparison is narrated belongs where it is narrated, once,
+    so neither surface can drift into claiming more than the other.
+
+### Acceptance for rules 20–23
+
+- **a comparison of two readings through the SAME lens says so**, and describes the difference as the instrument's
+  own variance rather than as anything surviving a change of reading;
+- **no report attributes uncertainty to the work or to the reader** on the strength of a single pair;
+- **a report whose difference is within what the same lens produces says it cannot tell**, in the writer's terms;
+- **every report ends with the surviving questions, addressed to their lines**, and a question to the writer
+  rather than a conclusion about their manuscript;
+- **a drive in which `/readings` and the unasked report describe the same pair differently has failed** rule 23.
+
 ### Acceptance for the 2026-08-05 amendment (rules 11–15)
 
 The criterion above — *the proposal is derived from the observed score* — is the one that let an unusable lens
