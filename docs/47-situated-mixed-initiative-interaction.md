@@ -122,5 +122,43 @@ The doctrine is met when a clean-store drive proves, through AX and FountainStor
 7. three repetitions of the consequential transitions agree across AX semantics, window-ID capture, and FountainStore;
 8. no acceptance claim depends on exact assistant wording, a phrase list, transcript reconstruction, or logs alone.
 
+### Acceptance extension — conversation coherence is part of the proof
+
+The authorities above prove what happened; they do not by themselves prove that the exchange made sense to the
+person who took part in it. A governed drive must therefore inspect the resulting Copilot conversation as a human
+conversation, without promoting the transcript to project-state authority.
+
+For every consequential mixed-initiative scenario, the reviewer records the situated exchange as a sequence of
+meaningful turns:
+
+```text
+live situation + score evidence
+  → Copilot offer or question
+  → human acceptance, decline, correction, interruption, or unrelated turn
+  → Copilot response / clarification / unchanged pending state
+```
+
+The sequence passes only when:
+
+1. the Copilot's offer or question identifies the situation it is asking about; a stock greeting is not treated as
+   the question for a later human reply, and a greeting is not merged with a proposal turn;
+2. a score-derived proposal names the relevant live `UncertaintyScore` evidence in human-readable language, and the
+   reviewer can trace that evidence to the persisted score and proposal-bound state;
+3. the human turn is answered in relation to the question or offer that is actually present, not merely because its
+   wording resembles an expected reply; a bare “yes” or “no” is meaningful only when the live situation makes its
+   object clear;
+4. a decline, correction, side question, interruption, or unrelated turn receives a coherent conversational reply
+   or clarification and leaves the pending artifact unchanged unless the mediated meaning authorizes a transition;
+5. the Copilot does not report a new identity, reread, or completed operation until the corresponding persisted
+   state and lifecycle evidence exists; a fluent acknowledgement is not proof of completion;
+6. the reviewer records the uncertainty map or uncertainty outcome that governed mediation, including ambiguity or
+   failure, rather than replacing it with an unqualified success narrative; and
+7. the same exchange remains coherent across the required repetitions and after relaunch, even though exact prose
+   may vary.
+
+This is a human-legibility and semantic-coherence gate, not a phrase-matching test. The transcript remains evidence
+of the experienced exchange, while FountainStore, AX, lifecycle, identity, and window-ID authorities remain the
+source of truth for what actually changed.
+
 The Book may describe this as a development governance contract only after these authorities agree. It must not imply
 that the interaction space is a named released App capability without the release manifest and live evidence.
