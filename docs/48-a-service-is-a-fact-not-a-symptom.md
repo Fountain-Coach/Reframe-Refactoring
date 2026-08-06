@@ -151,7 +151,9 @@ because only one of them is written by hand.
    holds the key; this chapter holds the receipt.)
 
 8. **No call without a declaration.** A service is callable only if it has bound (above); the register of what
-   Reframe currently calls is GENERATED from those declarations and never hand-maintained. A hand-kept list of
+   Reframe currently calls is GENERATED from those declarations and never hand-maintained. Where a declaration
+   LIVES, and how a third party publishes one, is [ch.49](49-one-definition-two-projections.md): an operation is
+   defined once in the IDL and projected to both a backplane topic and an OpenAPI document. A hand-kept list of
    live infrastructure is stale on the day it is written — measured: the first draft of this chapter omitted
    Ulysses-as-a-Service, which has its own host, its own override and its own in-app fallback.
 
