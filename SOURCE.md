@@ -2,24 +2,27 @@
 
 ## Current synchronized change
 
-- Change: Chapter 48 amended to BIND services rather than list them, and chapter 40 amended with §Showing the
-  source — the Copilot reading surface, governed before it exists. Chapter 48 had shipped with a hand-written
-  register of every service Reframe calls and was wrong within the hour: it omitted Ulysses-as-a-Service, which
-  has its own host (`ULYSSES_BASE_URL` → `http://127.0.0.1:8765`), its own override and its own in-app fallback.
-  The register is replaced by a binding contract — what a service must declare to be callable — with the live list
-  generated from those declarations, following `GeneratedCopilotCapabilities.swift`. Chapter 40 now governs WebKit
-  display of a cited source as a NOT-IMPLEMENTED capability: what is shown is what was retrieved, the quotation is
-  located in the page, rendering is an outward act, the surface is read-only evidence and not a browser, and
-  looking is not verifying.
-- Also: the reading index was missing five chapters — 39, 40, 41, 42 and 45 — including ch.42, "what is already
-  recorded is read", which was unfindable through the index that exists to resolve a task to its doctrine. Added.
+- Change: Chapter 49, `one definition, two projections`. Corpus retrieval is defined twice: the IDL already
+  carries it (`screenplay/get`, `lines.get`, `search`, block and beat access, with corpusId/documentId, QoS,
+  capability masks, budgets, correlation, resume and chunking), and the same operation exists four more times
+  hand-rolled — `ReframeCorpusAPI`, `tools/corpus-api`, `tools/ovid-local-api`, `tools/ulysses-local-api` — none of
+  which references the envelope, a QoS class, a capability, a budget or a correlation id. Because the IDL is
+  generative (midi-schema-to-facts, midi-schema-to-reasoning, the capability generator), an operation defined in
+  `main.swift` is invisible to Copilot: it cannot name the corpus API, price it, or report its failure. The
+  chapter defines an operation ONCE in the IDL and projects it twice — a backplane topic and an OpenAPI document,
+  both generated, never authored — because the web does not speak MIDI 2.0 and that is a reason to project, not to
+  define twice. A service binds by publishing a document.
+- Measured while writing it: the two IDL copies (`midi-backplane`, `midi2-gpu-fabric`) both declare
+  `version: 0.2.0` and differ by ~1,300 lines — 78 topics against 172 — and this copy holds a `web.fetch`
+  capability bit the backplane's lacks. Recorded as ch.49 rule 6: a version is a checked agreement, not a typed
+  number.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
-- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/35`
-- Integration commit: `Fountain-Coach/midi2-gpu-fabric@a80916b2` (merge of #35 to `main`)
+- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/36`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@d2fc4ea7` (merge of #36 to `main`)
 - Publication commit: recorded in the publication pull request for this change
-- Governance first, per ch.07: no implementation accompanies either amendment.
+- Governance first, per ch.07: no implementation accompanies this chapter.
 - Synchronized: 2026-08-06
 
 ## Roles
