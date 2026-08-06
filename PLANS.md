@@ -277,3 +277,16 @@ Validation:
 - `git diff --check` passes in both repositories.
 - All six relative links in chapter 48 resolve inside `docs/`.
 - Counterpart integration commit: `200a431f` (merge of Fountain-Coach/midi2-gpu-fabric#34 to `main`).
+
+## Sync — chapter 48 binding contract, chapter 40 reading surface
+
+Plan:
+- Step 1 (status: completed) - `--check` reported three differing files, all authored in the integration copy.
+  Reviewed each: index and ch.40 purely additive; ch.48 additive plus a deliberate REMOVAL of the hand-written
+  service register, confirmed line by line before transfer so the pull could not destroy unrelated work.
+- Step 2 (status: completed) - Transferred with an explicit direction (--pull), integration → publication.
+- Step 3 (status: completed) - Re-ran parity; validated every relative link in both amended chapters.
+Validation:
+- `Scripts/sync-integration-copy --check <integration-checkout>` reports `guide copies are synchronized`.
+- `git diff --check` passes in both repositories.
+- Counterpart integration commit: `a80916b2` (merge of Fountain-Coach/midi2-gpu-fabric#35 to `main`).

@@ -121,6 +121,54 @@ from the score, the source from the claim, and the withdrawal from both.
    ([ch.20](20-on-device-first-and-the-writers-key.md)).
 10. **An uncitable claim is allowed and unscored.** This governs citations, not assertions.
 
+## Showing the source — the check the writer can make herself
+
+**Status: not implemented.** This section governs a Copilot feature that does not exist yet. It is written before
+the code, and the capability identity it names is declared **unavailable** in the registry
+([ch.37](37-copilot-capability-governance.md)) until it satisfies what is below. Nothing here describes current
+behaviour.
+
+The engine is already in the app, and the writer has never seen it. `WebPageReader` runs a `WKWebView` and takes
+the rendered `innerText`, because a plain fetch of a real Joyce annotation resource returned *948 bytes of
+JavaScript shell with no prose in it at all* — a source the app could point at and could not quote. So Reframe
+already renders pages; it does so headlessly, keeps the text, and throws the page away.
+
+That leaves the writer in the one position this chapter exists to prevent. Rule 2 makes verification an act the
+APP performs, which is right — a person asserting "verified" is what failed. But the writer is then asked to
+accept a receipt she cannot inspect without leaving her work. **A promise someone can check should be checkable by
+the person being asked to trust it**, and the person who most needs to check a citation is the writer who will
+publish on it.
+
+So the Copilot may **show** the source: the retrieved page, rendered, with the quotation found in it.
+
+### What this must not become
+
+- **Not a browser.** The view exists to display a *cited source*, not to navigate. Following a link is a new
+  retrieval and a new outward act, governed by [ch.34](34-a-question-that-leaves-the-work.md) rules 4–6 and
+  [ch.20](20-on-device-first-and-the-writers-key.md) — it may cost money and it certainly leaves the machine.
+- **Not a way to set `checked`.** Looking is not verifying. Rule 2 is unchanged: the act is retrieve-and-find, and
+  a writer who reads the page has still not performed it.
+- **Not a service reporter.** [ch.48](48-a-service-is-a-fact-not-a-symptom.md) governs what happens when a call
+  fails; a rendered page and a dead transport share an idiom and nothing else. A spawned CLI failing over MCP has
+  no page to render, and treating that resemblance as a mechanism is the error ch.48 exists to stop.
+
+### Rules for the reading surface
+
+11. **What is shown is what was retrieved.** The page displayed is the fetch that produced the receipt. If it must
+    be fetched again, the app says so and re-performs the check — a source that changed between the check and the
+    view is itself a finding, not a detail to smooth over.
+12. **The quotation is located in the rendered page**, not merely printed beside it. A citation surface that shows
+    a page and leaves the reader to search it has moved the work, not done it.
+13. **Rendering is an outward act and is bounded as one.** A rendered page executes the source's scripts and loads
+    its third-party resources, so it reveals the writer's network presence and is not private. It runs on the same
+    terms as any other outward act ([ch.34](34-a-question-that-leaves-the-work.md)): the writer's unpublished
+    composition never leaves, and what does leave is bounded and shown.
+14. **The source is read-only.** Nothing on the page may be edited, submitted, or authenticated into from this
+    surface. It is evidence.
+15. **A source that cannot be shown says so, in place** — paywalled, offline, refused, or a shell with no prose —
+    with the same prominence as an unchecked citation gets under rule 3. "Could not display" is a state, never a
+    blank pane.
+
 ## Acceptance
 
 The doctrine is met when:
@@ -134,6 +182,14 @@ The doctrine is met when:
 4. A withdrawal remains in the record with its reason after the claim has been corrected.
 5. No model-supplied reference can enter the work.
 6. Verifying a citation sends the identifier and the source's own words, and nothing of the writer's composition.
+
+**For the reading surface, when it is built** (it does not exist today, and until it does the capability stays
+declared unavailable per [ch.37](37-copilot-capability-governance.md)):
+
+- A checked citation can be opened and the writer sees the retrieved page with the quotation located in it.
+- Opening a source states its lane and any cost before it runs, and never carries the writer's composition.
+- A source that cannot be displayed renders its reason at claim prominence, never an empty pane.
+- Reading the page does not change any citation's checked state.
 
 ## Governing sentence
 
