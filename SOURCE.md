@@ -2,24 +2,24 @@
 
 ## Current synchronized change
 
-- Change: Chapter 48, `a service is a fact, not a symptom` — registers every internal and external service
-  Reframe calls (Codex CLI, OpenAI Responses, DraCor, Wikipedia/arXiv/DOI, Ovid-as-a-Service, the open web via
-  WebKit; internally the on-device model, the loopback corpus API, FountainStore, Writing Tools, the OAuth
-  callback) and requires each call to carry its service, lane, cost and outcome as facts typed at the call site.
-  Written after reading Ulysses' Circe on the paid lane with the Codex CLI transport down: because a failed read
-  is treated as evidence that the window is too big, the reader narrowed 8 atoms to 1 and capped each atom's text
-  at 260 characters, handing the model 65 tokens of Joyce in an 1,810-token prompt — the on-device failure mode at
-  cloud cost, in answer to a dead network, with nothing said to the writer. The load-bearing rule is that a lane
-  which cannot be reached is not a passage that is too dense: narrowing and compaction answer "too big for the
-  window" and nothing else.
+- Change: Chapter 48 amended to BIND services rather than list them, and chapter 40 amended with §Showing the
+  source — the Copilot reading surface, governed before it exists. Chapter 48 had shipped with a hand-written
+  register of every service Reframe calls and was wrong within the hour: it omitted Ulysses-as-a-Service, which
+  has its own host (`ULYSSES_BASE_URL` → `http://127.0.0.1:8765`), its own override and its own in-app fallback.
+  The register is replaced by a binding contract — what a service must declare to be callable — with the live list
+  generated from those declarations, following `GeneratedCopilotCapabilities.swift`. Chapter 40 now governs WebKit
+  display of a cited source as a NOT-IMPLEMENTED capability: what is shown is what was retrieved, the quotation is
+  located in the page, rendering is an outward act, the surface is read-only evidence and not a browser, and
+  looking is not verifying.
+- Also: the reading index was missing five chapters — 39, 40, 41, 42 and 45 — including ch.42, "what is already
+  recorded is read", which was unfindable through the index that exists to resolve a task to its doctrine. Added.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
-- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/34`
-- Integration commit: `Fountain-Coach/midi2-gpu-fabric@200a431f` (merge of #34 to `main`)
+- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/35`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@a80916b2` (merge of #35 to `main`)
 - Publication commit: recorded in the publication pull request for this change
-- Implementation does NOT accompany this chapter: it is governance first, per ch.07. The reading record is in the
-  integration repository's `PLANS.md`.
+- Governance first, per ch.07: no implementation accompanies either amendment.
 - Synchronized: 2026-08-06
 
 ## Roles
