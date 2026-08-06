@@ -303,3 +303,15 @@ Validation:
 - `Scripts/sync-integration-copy --check <integration-checkout>` reports `guide copies are synchronized`.
 - `git diff --check` passes in both repositories.
 - Counterpart integration commit: `d2fc4ea7` (merge of Fountain-Coach/midi2-gpu-fabric#36 to `main`).
+
+## Sync — chapter 49 amendment (MIDI-CI binding; the web speaks midi2 by choice)
+
+Plan:
+- Step 1 (status: completed) - `--check` reported two amended files. Reviewed: the publication-only lines were
+  exactly the superseded chapter summary and principle text, confirmed before transfer.
+- Step 2 (status: completed) - Transferred with an explicit direction (--pull), integration → publication.
+- Step 3 (status: completed) - Re-ran parity; links resolve; every chapter indexed.
+Validation:
+- `Scripts/sync-integration-copy --check <integration-checkout>` reports `guide copies are synchronized`.
+- `git diff --check` passes in both repositories.
+- Counterpart integration commit: `cfa49cfe` (merge of Fountain-Coach/midi2-gpu-fabric#37 to `main`).
