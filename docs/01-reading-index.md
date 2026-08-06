@@ -129,6 +129,7 @@ Use this path when changing what the Book, governance repository, or a public pr
 | [The Released Surface Is a Named Build](43-the-released-surface-is-a-named-build.md) | Separates runtime command inventory, governed capabilities, live acceptance, and the named-build release allow-list. |
 | [Dynamic Grounding](46-dynamic-grounding.md) | Defines Grounding as a source-authoritative flow: default non-integrational reading, score-derived proposal, explicit `/ground` acceptance, new lineage, and persisted evidence. A lens is a hypothesis about the READER's blind spot — what the reading was attending to — not a description of the work or a summary of its open questions; the writer's own lens is authoritative and verbatim, and a hole in the reading is not a lens problem. |
 | [Situated, Mixed-Initiative Interaction](47-situated-mixed-initiative-interaction.md) | Defines Reframe as an open interaction space in which human turns may be corrective, interrupted, out of sequence, or unrelated, while only grounded live state and one mediated meaning may authorize mutation. |
+| [A Service Is a Fact, Not a Symptom](48-a-service-is-a-fact-not-a-symptom.md) | Registers every internal and external service Reframe calls, requires each call to carry its service, lane, cost and outcome as facts typed at the call site, and requires failures to be reported to the writer where she works — never re-inferred downstream from symptoms, and never answered by adapting her text. |
 
 ## Vocabulary
 
