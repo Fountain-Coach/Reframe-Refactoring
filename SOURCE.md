@@ -2,27 +2,27 @@
 
 ## Current synchronized change
 
-- Change: Chapter 49, `one definition, two projections`. Corpus retrieval is defined twice: the IDL already
-  carries it (`screenplay/get`, `lines.get`, `search`, block and beat access, with corpusId/documentId, QoS,
-  capability masks, budgets, correlation, resume and chunking), and the same operation exists four more times
-  hand-rolled — `ReframeCorpusAPI`, `tools/corpus-api`, `tools/ovid-local-api`, `tools/ulysses-local-api` — none of
-  which references the envelope, a QoS class, a capability, a budget or a correlation id. Because the IDL is
-  generative (midi-schema-to-facts, midi-schema-to-reasoning, the capability generator), an operation defined in
-  `main.swift` is invisible to Copilot: it cannot name the corpus API, price it, or report its failure. The
-  chapter defines an operation ONCE in the IDL and projects it twice — a backplane topic and an OpenAPI document,
-  both generated, never authored — because the web does not speak MIDI 2.0 and that is a reason to project, not to
-  define twice. A service binds by publishing a document.
-- Measured while writing it: the two IDL copies (`midi-backplane`, `midi2-gpu-fabric`) both declare
-  `version: 0.2.0` and differ by ~1,300 lines — 78 topics against 172 — and this copy holds a `web.fetch`
-  capability bit the backplane's lacks. Recorded as ch.49 rule 6: a version is a checked agreement, not a typed
-  number.
+- Change: Chapter 49 amended on two points after surveying the `Fountain-Coach/midi2` repository (119 Swift files;
+  the MIDI-CI layer complete — CIHandshake, ProfileInquiry, ProfileSession, PropertyExchange, ProtocolNegotiation,
+  MuidManager; all five MIDI 2.0 spec PDFs vendored; plus `midi2.js`, cross-browser and CoreMIDI-free).
+  (1) A service binds by **MIDI-CI Property Exchange**, not by a format Reframe invents: Capability Inquiry →
+  Protocol Negotiation → Property Exchange → Profiles is exactly the sequence ch.48 describes, proven at hardware
+  level and implemented by this organisation. The generated OpenAPI document is how that declaration reaches an
+  HTTP consumer — a projection of it, never a second form. (2) "The web does not speak MIDI 2.0" was wrong as
+  written: it does not by DEFAULT, and midi2.js exists to teach it, so the HTTP projection is owed to the consumer
+  who will not adopt midi2.js rather than to the web as a category.
+- The question that prompted both: Reframe is future-proofed by MIDI 2.0's NEGOTIATION SEMANTICS held as a
+  projection, not by its wire format. UMP is built for small real-time control events; Circe is 233,151 characters
+  and the IDL already strains at `maxPayloadBytes: 131072` with chunked checksummed transfers. Bound to UMP as
+  *the* transport the pillar becomes a cage; held as one projection of one definition, Reframe keeps the model and
+  stays free of the envelope. Recorded as an explicit non-goal.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
-- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/36`
-- Integration commit: `Fountain-Coach/midi2-gpu-fabric@d2fc4ea7` (merge of #36 to `main`)
+- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/37`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@cfa49cfe` (merge of #37 to `main`)
 - Publication commit: recorded in the publication pull request for this change
-- Governance first, per ch.07: no implementation accompanies this chapter.
+- Governance first, per ch.07: no implementation accompanies this amendment.
 - Synchronized: 2026-08-06
 
 ## Roles
