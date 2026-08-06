@@ -260,3 +260,20 @@ Constraints:
 Risks:
 Plan:
 Validation:
+
+## Sync — chapter 48 (a service is a fact, not a symptom)
+
+Title: Synchronize governance chapter 48 from the integration copy
+Goal: Publication `docs/` carries the chapter authored beside the implementation, with reciprocal provenance.
+Scope: `docs/48-a-service-is-a-fact-not-a-symptom.md`, `docs/01-reading-index.md`, `SOURCE.md`.
+Non-goals: No implementation. The chapter is governance first (ch.07); the code that satisfies it lands separately.
+Plan:
+- Step 1 (status: completed) - `Scripts/sync-integration-copy --check` reported exactly two differences, both new
+  and both authored in the integration copy: the chapter file and its reading-index row. No unrelated drift.
+- Step 2 (status: completed) - Transferred with an explicit direction (--pull), integration → publication.
+- Step 3 (status: completed) - Re-ran the parity check and validated the chapter's six cross-references resolve.
+Validation:
+- `Scripts/sync-integration-copy --check <integration-checkout>` reports `guide copies are synchronized`.
+- `git diff --check` passes in both repositories.
+- All six relative links in chapter 48 resolve inside `docs/`.
+- Counterpart integration commit: `200a431f` (merge of Fountain-Coach/midi2-gpu-fabric#34 to `main`).

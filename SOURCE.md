@@ -2,23 +2,25 @@
 
 ## Current synchronized change
 
-- Change: Chapter 46 amendment, `the report says what it cannot tell, and ends in the writer's hands` — rules
-  20–23 and their acceptance, added after calibrating the comparison rules 16–19 deliver: reading the same lines
-  twice through the SAME lens gives 5 held / 19 dissolved / 23 opened against 1 / 23 / 27 for a real lens change,
-  the same magnitude, with the control dissolving the very questions the changed-lens report had cited as its
-  evidence. A comparison therefore states what it cannot tell, attributes nothing it cannot establish, treats
-  "I cannot tell" as the third honest outcome, ends in the writer's action, and binds both `/readings` and the
-  unasked report because they are two triggers over one comparison.
+- Change: Chapter 48, `a service is a fact, not a symptom` — registers every internal and external service
+  Reframe calls (Codex CLI, OpenAI Responses, DraCor, Wikipedia/arXiv/DOI, Ovid-as-a-Service, the open web via
+  WebKit; internally the on-device model, the loopback corpus API, FountainStore, Writing Tools, the OAuth
+  callback) and requires each call to carry its service, lane, cost and outcome as facts typed at the call site.
+  Written after reading Ulysses' Circe on the paid lane with the Codex CLI transport down: because a failed read
+  is treated as evidence that the window is too big, the reader narrowed 8 atoms to 1 and capped each atom's text
+  at 260 characters, handing the model 65 tokens of Joyce in an 1,810-token prompt — the on-device failure mode at
+  cloud cost, in answer to a dead network, with nothing said to the writer. The load-bearing rule is that a lane
+  which cannot be reached is not a passage that is too dense: narrowing and compaction answer "too big for the
+  window" and nothing else.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
-- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/26`
-- Integration commit: `Fountain-Coach/midi2-gpu-fabric@82d2e054` (merge of #26 to `main`)
-- Publication commit: `Fountain-Coach/Reframe-Refactoring@8662c47`
-- Publication pull request: `https://github.com/Fountain-Coach/Reframe-Refactoring/pull/12`
-- Implementation of these rules landed separately in the integration repository:
-  `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/27`
-- Synchronized: 2026-08-05
+- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/34`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@200a431f` (merge of #34 to `main`)
+- Publication commit: recorded in the publication pull request for this change
+- Implementation does NOT accompany this chapter: it is governance first, per ch.07. The reading record is in the
+  integration repository's `PLANS.md`.
+- Synchronized: 2026-08-06
 
 ## Roles
 
