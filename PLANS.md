@@ -315,3 +315,14 @@ Validation:
 - `Scripts/sync-integration-copy --check <integration-checkout>` reports `guide copies are synchronized`.
 - `git diff --check` passes in both repositories.
 - Counterpart integration commit: `cfa49cfe` (merge of Fountain-Coach/midi2-gpu-fabric#37 to `main`).
+
+## Sync — chapter 49 correction (the definition is the manifest)
+
+Plan:
+- Step 1 (status: completed) - `--check` reported ch.49 and the index. Reviewed: the 14 publication-only lines
+  were exactly the superseded summary and rule 1, confirmed before transfer.
+- Step 2 (status: completed) - Transferred with an explicit direction (--pull), integration → publication.
+- Step 3 (status: completed) - Re-ran parity; links resolve.
+Validation:
+- `Scripts/sync-integration-copy --check <integration-checkout>` reports `guide copies are synchronized`.
+- Counterpart integration commit: `393b15f8` (merge of Fountain-Coach/midi2-gpu-fabric#39 to `main`).

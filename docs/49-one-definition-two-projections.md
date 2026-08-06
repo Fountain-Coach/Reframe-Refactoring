@@ -1,8 +1,11 @@
 # 49. One Definition, Two Projections
 
-> Chapter summary: Reframe stands on the MIDI backplane — the IDL is where an operation is *defined*, with the
-> things HTTP cannot express: quality of service, capability masks, latency and payload budgets, correlation,
-> resume tokens, chunking. The web does not speak MIDI 2.0 **by default** — Fountain Coach ships `midi2.js` to
+> Chapter summary: Reframe stands on the MIDI backplane, and the IDL is where an operation's MECHANICS are
+> defined — the things HTTP cannot express: quality of service, capability masks, latency and payload budgets,
+> correlation, resume tokens, chunking. But mechanics are not the definition. The **reasoning manifest** is, because
+> it composes the IDL with what an operation MEANS — `userMeaning`, `whenToUse`, `neverUseWhen`, `readOnly`,
+> `mutatesState` — under a precedence it declares for itself. The IDL is the first and most authoritative input to
+> that composition; it is not the composition. The web does not speak MIDI 2.0 **by default** — Fountain Coach ships `midi2.js` to
 > teach it — so the HTTP surface is owed to the consumer who will not adopt that, not to "the web" as a category.
 > An operation is therefore **defined once, in the IDL**, and **projected twice**: onto a backplane topic, and onto
 > an OpenAPI-described HTTP route, both generated so neither can drift. A service binds by **MIDI-CI Property
@@ -98,13 +101,57 @@ So the two are not rivals and neither is the other's evolution. They are **proje
 is the move this repository already makes elsewhere: the score is the semantic model, and notation and MIDI 2.0
 are projections of it — neither is the score. An operation is the same. Its definition is not its transport.
 
+## Where the definition actually stands — the manifest, not the IDL
+
+The first draft of this chapter put the IDL in the definition's place. That is wrong, and the manifest says so
+itself. `schema/reasoning-manifest.json` declares its own `sourcePrecedence`:
+
+```
+schema/idl.yaml
+schema/facts.json
+live FountainStore state
+AGENTS.md
+scoped app AGENTS.md
+generated reasoning manifest
+docs and PLANS.md as citations only
+```
+
+The IDL is **first among inputs**, and being first is not being the whole. The manifest holds 169
+`operationMeanings`, one per topic, each pairing `idlOperation` with `userMeaning`, `whenToUse`, `neverUseWhen`,
+`readOnly` and `mutatesState`.
+
+So the two layers divide cleanly, and conflating them is what produced the error:
+
+| | the IDL | the manifest |
+|---|---|---|
+| answers | what this operation IS on the wire | what this operation MEANS |
+| carries | topic, QoS, capability mask, budget, correlation, resume, chunking | userMeaning, whenToUse, neverUseWhen, readOnly, mutatesState |
+| serves | the transport | anything that must reason — Copilot above all |
+
+The giveaway is in [ch.48](48-a-service-is-a-fact-not-a-symptom.md)'s own binding contract. It asks a service to
+declare a **writer-facing name**, its **failure kinds**, its **remedies**, its **cost class** — and the IDL has no
+field for any of them. There is no place in `idl.yaml` to say what to tell the writer when a call fails. Those are
+manifest-level facts, and the chapter demanded they be declared in a file that structurally cannot hold them.
+
+One further thing the manifest had already settled and this chapter had not: **`live FountainStore state` sits
+third in that precedence, above `AGENTS.md`.** That is ch.48's "health is learned from real calls, not only from a
+start-up probe" — written into the architecture before the chapter argued for it.
+
+So: a service binds by publishing its self-description (MIDI-CI Property Exchange, above), **the manifest composes
+it**, and the projections are generated from the composition. The IDL remains the first and most authoritative
+source, and the manifest remains where an operation becomes something anything can reason about.
+
 ## The decision (enforceable rules)
 
-1. **An operation is defined once, in the IDL.** Corpus retrieval, screenplay access, beat access — anything
-   Reframe or a bound service performs — has exactly one definition, carrying what only the IDL can say: QoS,
-   capability mask, budget, correlation, resume, chunking.
+1. **An operation is defined once, and the definition is the MANIFEST.** Corpus retrieval, screenplay access,
+   beat access — anything Reframe or a bound service performs — is composed once, in the reasoning manifest, from
+   its IDL mechanics and its meaning. The IDL is the first source in that composition and carries what only it can
+   say (QoS, capability mask, budget, correlation, resume, chunking); the manifest carries what the IDL cannot
+   (`userMeaning`, `whenToUse`, `neverUseWhen`, `readOnly`, `mutatesState`) and states its own precedence.
 
-2. **Both projections are generated, never authored.** The backplane topic and the OpenAPI document are outputs.
+2. **Both projections are generated from the composition, never authored.** The backplane topic and the OpenAPI
+   document are outputs of the manifest, not of the IDL alone — otherwise the HTTP surface would carry an
+   operation's mechanics and none of its meaning.
    A hand-written OpenAPI file beside a hand-written server is two hand-maintained truths and will diverge; this
    repository has already proven that at schema level, with two copies of the IDL at the same version.
 
@@ -114,8 +161,8 @@ are projections of it — neither is the score. An operation is the same. Its de
 
 4. **A service binds by MIDI-CI Property Exchange, not by an invented format.** ch.48 asks what a service must
    declare to be callable; MIDI 2.0 already answers it, and this organisation implements the answer. A service
-   publishes its structured self-description; Reframe derives the register entry, the capability identity and the
-   failure vocabulary from it. The generated OpenAPI document is how that declaration reaches a consumer speaking
+   publishes its structured self-description; the manifest COMPOSES it, and Reframe derives the register entry, the
+   capability identity and the failure vocabulary from that composition. The generated OpenAPI document is how that declaration reaches a consumer speaking
    HTTP — a projection of the declaration, never a second form of it. "Anything speaking `/v1/episode/{n}` is a
    drop-in" becomes checkable instead of a claim about the current implementation.
 
@@ -148,8 +195,12 @@ are projections of it — neither is the score. An operation is the same. Its de
 
 ## Acceptance
 
-1. Corpus retrieval appears **once** in a definition, and the backplane topic and OpenAPI document are both
-   produced from it by a generator, with no hand-edited copy of either in the tree.
+1. Corpus retrieval appears **once** in the manifest's composition — IDL mechanics plus meaning — and the
+   backplane topic and OpenAPI document are both produced from it by a generator, with no hand-edited copy of
+   either in the tree.
+1b. The manifest carries an `operationMeaning` for it: `userMeaning`, `whenToUse`, `neverUseWhen`, `readOnly`,
+   `mutatesState`. An operation present in the IDL and absent from the manifest is defined mechanically and not at
+   all — it can travel and nothing can reason about it.
 2. `midi-schema-to-facts`, `midi-schema-to-reasoning` and the capability generator include the projected
    operations, so Copilot can name the corpus API, state its lane, and report a failure against it.
 3. A third-party server implementing the published document is reachable via `ULYSSES_BASE_URL` with no change to
@@ -161,6 +212,7 @@ are projections of it — neither is the score. An operation is the same. Its de
 
 ## Governing sentence
 
-An operation is defined once, where the definition can carry everything the operation needs; its transports are
-projections of that definition, generated and never authored — so the backplane and the web can each be served
-faithfully without either becoming a second, quieter truth.
+An operation is defined once, in the composition that can carry both its mechanics and its meaning — the IDL
+first among its sources, the manifest the definition itself; its transports are projections of that composition,
+generated and never authored, so the backplane and the web can each be served faithfully without either becoming a
+second, quieter truth.
