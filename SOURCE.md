@@ -2,26 +2,31 @@
 
 ## Current synchronized change
 
-- Change: **Chapter 50 amended — a unit is a RANGE, not a copy.**
-- The chapter was drafted as though the store were where text lives. Chapter 13 already rules that the authored
-  document is a plain-text bundle folder, that the bundle folders are authoritative, and that "the document layer
-  is never stored as store documents"; chapter 29 already rules that what is measured about the source is held as
-  ranges against it — "offsets, never copies".
-- Measured 2026-08-07: the source IS a single store document, so chapter 13 was already violated before chapter 50
-  existed, and the first draft proposed to deepen the breach by splitting that document into many more. The
-  conflict was found by `governance-read` BEFORE implementation and raised to the writer, whose resolution was to
-  layer the three chapters rather than let any one of them be wrong.
-- Layering: the authoritative source is the bundle folder (ch.13); a unit is a range carrying no text, held as a
-  derived, rebuildable index exactly as `library-manifest.json` is derived over the folders; the pointed fetch
-  reads only the bytes it names and reports them so the budget is proven rather than assumed.
-- Rule 3 and the acceptance cases are amended to match, and "no unit record contains text" is now itself a listed
-  acceptance case — a unit carrying a payload is a ch.29 defect even when every other rule is satisfied.
+- Change: **Chapter 51 — One Decision Decides the Lane.**
+- Measured 2026-08-07 on a single page of one chapter: `[LANES] semantic -> codex`, `[WINDOW] budget 30000
+  tokens`, `[READ-LANE] reading on openai`, and the call landing on Apple Foundation Models, which refused
+  **25,025 tokens into a 4,096-token window**. Four subsystems, four answers, one act — and none of them lying.
+- The same disagreement produced the rest of that day: credential PRESENCE read as permission, so a key that
+  existed but could not be unlocked let the read fall silently to the on-device lane while three surfaces still
+  said cloud; the Copilot's opening sentence constructed a paid client in order to NAME a lane, putting a
+  password dialog in front of the manuscript to write a noun; and a per-window TIMEOUT recorded as a size ceiling
+  ratcheted the budget 30,000 -> 21,929 -> 14,627, after an earlier turn of the same screw left 2,190 and capped
+  every paid call at 261 tokens of manuscript.
+- The ruling: a lane is resolved ONCE into a value, and the budget is a PROPERTY of that value — obtaining a
+  client and obtaining the window it must fit are the same act, which makes the overflow unrepresentable rather
+  than fixed. Gates are ordered and may only narrow; a refusal is a typed value with a reason, never a nil that
+  composes into a silent fallback; a credential has four states and the writer's GRANT initialises a cloud lane;
+  naming a lane may not read a secret; every surface prints the one recorded decision; a failure teaches only what
+  it is evidence of; and the resolver is pure and lives in a kit.
+- New acceptance cases: an exhaustive truth table over
+  `permitted x credentialState x constructible x health x role`, and the property that a decision's budget belongs
+  to its provider — one assertion that fails against the behaviour this chapter replaces.
 - Direction: integration -> publication (`Scripts/sync-integration-copy --pull`)
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
-- Integration commit: `Fountain-Coach/midi2-gpu-fabric@1a68619d` (on `main`)
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@50ed71d3` (on `main`)
 - Publication pull request: recorded below once opened
-- Governance first, per ch.07: the partitioning implementation remains NOT in this change.
+- Governance first, per ch.07: no implementation accompanies this chapter.
 - Synchronized: 2026-08-07
 
 ## Roles

@@ -1,3 +1,15 @@
+Title: One decision decides the lane (2026-08-07)
+Goal: Publish the governance contract for lane resolution, so no part of Reframe can size a window for one lane
+and spend on another, and no sentence about a lane costs the writer their password.
+Scope: `docs/51-one-decision-decides-the-lane.md`, `docs/01-reading-index.md`, `docs/README.md`, exact integration
+mirror, reciprocal provenance.
+Non-goals: the resolver implementation, the gating kit, migrating the four call sites that answer the question today.
+Plan:
+- Step 1 (completed) - Measured four disagreeing answers on one page, and three further incidents from the same fault.
+- Step 2 (completed) - Drafted chapter 51 with ten rules and five acceptance cases.
+- Step 3 (completed) - Pulled into publication; `--check` reports no differences.
+- Step 4 (pending) - Open the publication pull request and record its URL here and in SOURCE.md.
+---
 Title: Chapter 50 amended — a unit is a range, not a copy (2026-08-07)
 Goal: Reconcile chapter 50 with chapters 13 and 29 so no chapter has to be wrong, and record that the first draft
 was written on top of an existing breach rather than noticing it.
