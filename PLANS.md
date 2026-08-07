@@ -1,3 +1,20 @@
+Title: Text is stored so it can be pointed at (2026-08-07)
+Goal: Publish the governance contract for how local text content is stored and fetched, so a client commanded to
+select a chapter fetches that chapter and nothing else.
+Scope: `docs/50-text-is-stored-so-it-can-be-pointed-at.md`, `docs/01-reading-index.md`, `docs/README.md`, the
+carried chapter 20 custody section, exact integration mirror, and reciprocal provenance.
+Non-goals: partitioning the stored source, changing FountainStore, generating the OpenAPI projection, or any
+runtime read-path implementation.
+Plan:
+- Step 1 (completed) - Research the Fountain Coach OpenAPI history: the FountainStore declared API already serves
+  prefix/range scans with paging, `schema/idl.yaml` already declares `screenplay/lines.get` with a range and a
+  65,536-byte budget, and ch.49 already rules that an operation is defined once and projected by generation.
+- Step 2 (completed) - Measure the defect in the writer's own store: one record, 1,519,413 characters, 32,694
+  lines; Circe at 20,051-25,573 reachable only by fetching the whole book.
+- Step 3 (completed) - Draft chapter 50 with ten rules and four acceptance cases, and its reading-index row.
+- Step 4 (completed) - Pull the exact guide copy into publication; `--check` reports no differences.
+- Step 5 (completed) - Opened publication pull request #18 and recorded it here and in SOURCE.md.
+---
 Title: Situated, mixed-initiative interaction (2026-08-04)
 Goal: Publish the governance contract for Reframe as an open interaction space in which human turns may be corrective,
 interrupted, out of sequence, or unrelated, while only grounded live state and one mediated meaning may authorize a
