@@ -75,6 +75,51 @@ implicit and Reframe makes explicit: **the escalation is gated by the person who
    lane, and it does **not** fabricate a result. (This is [no deterministic fallbacks] and [never spend without a
    yes], applied to the lane.)
 
+## Where the key lives — custody, not only consent
+
+Everything above governs WHEN the writer's key is used. It says nothing about where the key is kept, and that gap
+had a measurable answer.
+
+Measured 2026-08-06, the credential Reframe spends with:
+
+```
+-rw-r--r--  ~/.stage-native.config.json
+             chat.openai.apiKey = <164 characters, plaintext>
+```
+
+World-readable, mode 644, on the same account this app charges. Reframe reads a key from three plaintext places —
+that JSON file, `~/.codex/auth.json`, and the `OPENAI_API_KEY` environment variable — and from the Keychain never.
+
+The organisation already owns the answer. `swift-secretstore` ships a `SecretStore` protocol with a `KeychainStore`
+backend, it is used by `Fountain-Store`, `CILocal`, `SDLKit` and `the-fountainai` — and because Reframe depends on
+Fountain-Store, **it is already in Reframe's resolved dependency graph.** The library is compiled into the build
+today and never called. The one application in the estate that actually spends the writer's money is the one
+keeping her credential in a file anything can read.
+
+Consent without custody is a strong door on an open window. A grant the writer gives in dialogue means very little
+if the key it authorises can be copied by any process on the machine — and worse, it makes the app's careful
+account of *when* it spends into a false comfort, because the spending it governs is not the only spending the key
+permits.
+
+### The decision (enforceable rules, continued)
+
+8. **The Keychain is the only place a key is read from.** `SecretStore` is the single custody path. There is no
+   second supported way to supply a credential — not an environment variable, not a config file, not another
+   application's auth file — because a fallback is a plaintext path that the writer believes is closed.
+
+9. **A key found in plaintext is a defect the app reports and helps close.** Reframe does not silently keep using
+   it and does not silently delete the writer's file. It names the file, offers to move the secret into the
+   Keychain, and says what to remove afterwards. A migration the writer did not consent to is its own violation.
+
+10. **A key is never logged, echoed, persisted to the store, or included in any report, telemetry or receipt** —
+    including the diagnostic surfaces this repository is otherwise generous with. Its presence may be stated; its
+    value never leaves the Keychain.
+
+11. **The absence of a key is a lane fact, not an error.** With no credential the paid lane is simply not
+    available, and the app says so with the on-device lane as its remedy
+    ([ch.48](48-a-service-is-a-fact-not-a-symptom.md) rules 4-5) — never a prompt to paste a secret somewhere it
+    would land in plaintext.
+
 ## Honesty (non-goals)
 
 - **This is not "cloud is bad."** Cloud is a real widening and often the better read; the point is that it is the
@@ -115,3 +160,11 @@ The doctrine is met when:
 5. **Every cost-bearing surface names the elected lane**, updates on probe/demotion, and never announces a lane
    the work is not running on.
 6. **The uncertainty map is FCIS-AX inspectable** and the Copilot can show it on request and switch back.
+7. **The key is read from the Keychain and nowhere else.** With the credential in `SecretStore` and every
+   plaintext path removed, the paid lane works; with the Keychain entry deleted, the paid lane is reported
+   unavailable and the on-device lane carries the work. Searching the repository finds no code path that reads a
+   credential from an environment variable or a configuration file.
+8. **A plaintext key on the machine is reported, not consumed.** The app names the file, offers the move, and does
+   not delete anything the writer did not ask it to.
+9. **No log, receipt, telemetry event or store document contains a key value**, verified by searching the run's
+   output and the store after a paid read.

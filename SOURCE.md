@@ -2,27 +2,33 @@
 
 ## Current synchronized change
 
-- Change: Chapter 49 corrected — **the definition is the reasoning manifest, not the IDL**. The chapter had put the
-  IDL in the definition's place; `schema/reasoning-manifest.json` declares its own `sourcePrecedence`
-  (`schema/idl.yaml`, `schema/facts.json`, live FountainStore state, `AGENTS.md`, scoped app AGENTS, the generated
-  manifest, then docs as citations only), so the IDL is FIRST among inputs and first is not whole. The manifest
-  holds 169 `operationMeanings`, each pairing `idlOperation` with `userMeaning`, `whenToUse`, `neverUseWhen`,
-  `readOnly` and `mutatesState`: the IDL answers what an operation IS on the wire, the manifest what it MEANS.
-  The giveaway was inside ch.48's own binding contract, which asks a service to declare a writer-facing name,
-  failure kinds, remedies and a cost class — none of which `idl.yaml` has a field for.
-- New acceptance case: an operation present in the IDL and absent from the manifest is defined mechanically and
-  not at all — it can travel, and nothing can reason about it.
-- Also noted: `live FountainStore state` sits third in that precedence, ABOVE `AGENTS.md` — ch.48's "health is
-  learned from real calls, not only from a start-up probe", written into the architecture before the chapter
-  argued for it.
-- Direction: integration → publication (`Scripts/sync-integration-copy --pull`)
+- Change: **Chapter 50 — Text Is Stored So It Can Be Pointed At**, plus the previously unsynchronized
+  §"Where the key lives" custody section of chapter 20 and its reading-index row.
+- Chapter 50, measured in the writer's own store: Ulysses is ONE record of 1,519,413 characters and 32,694 lines,
+  so "open Circe" cannot be expressed as a fetch — only as *fetch everything, then look at part of it*. Three
+  successive fixes to the library rail each made the SELECTION correct and none changed what was OPENED, because
+  the opening was never the rail's to decide. The declaration already forbade it: `screenplay/lines.get` takes a
+  `range: {startLine, endLine}` under `maxPayloadBytes: 65536`, and answering it from the blob overshoots that
+  budget by 23x on every read — structurally, not by accident, and reported nowhere.
+- FountainStore is not the limitation. Its declared API (`docs/openapi-fountainstore.yaml`) already serves byId,
+  index and prefix/range scans with `nextPageToken` paging, and a range scan over ordered identifiers is exactly
+  "point at this span and nothing else."
+- New acceptance cases: a range fetch returns only the span, within the declared budget; no caller fetches a work
+  to display a chapter; units concatenated in identifier order reproduce the work's stored content hash exactly;
+  and the route traces to `schema/idl.yaml` with regeneration producing no diff.
+- Also carried in this sync (authored 2026-08-06, not previously pulled): chapter 20 gains custody as well as
+  consent — the Keychain via SecretStore is the only place a credential is read from, and a plaintext key found on
+  the machine is reported rather than silently consumed.
+- Direction: integration -> publication (`Scripts/sync-integration-copy --pull`)
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
-- Integration pull request: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/39`
-- Integration commit: `Fountain-Coach/midi2-gpu-fabric@393b15f8` (merge of #39 to `main`)
+- Integration branch: `policy/publication-source-boundary`
+- Integration commits: `cf7f8fc1` (chapter 50 + README pointer), `18f559a1` (reading-index row),
+  `29127802` (chapter 20 custody section)
+- Integration pull request: not yet opened; the branch is unmerged at the time of this sync
 - Publication commit: recorded in the publication pull request for this change
-- Governance first, per ch.07: no implementation accompanies this correction.
-- Synchronized: 2026-08-06
+- Governance first, per ch.07: the partitioning implementation this chapter governs is NOT in this change.
+- Synchronized: 2026-08-07
 
 ## Roles
 
