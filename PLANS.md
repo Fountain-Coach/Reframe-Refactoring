@@ -1,3 +1,15 @@
+Title: Chapter 50 amended — a unit is a range, not a copy (2026-08-07)
+Goal: Reconcile chapter 50 with chapters 13 and 29 so no chapter has to be wrong, and record that the first draft
+was written on top of an existing breach rather than noticing it.
+Scope: `docs/50-text-is-stored-so-it-can-be-pointed-at.md`, `docs/01-reading-index.md`, `docs/README.md`, exact
+integration mirror, reciprocal provenance.
+Non-goals: the partitioning implementation, moving the source out of the store, generating the OpenAPI projection.
+Plan:
+- Step 1 (completed) - `governance-read` resolved ch.13 and ch.29 alongside ch.50 and found them in conflict.
+- Step 2 (completed) - Raised the conflict to the writer before implementing; resolution: layer them.
+- Step 3 (completed) - Amended the chapter, rule 3, and the acceptance cases; corrected the index row and pointer.
+- Step 4 (completed) - Pulled into publication; `--check` reports no differences.
+---
 Title: Text is stored so it can be pointed at (2026-08-07)
 Goal: Publish the governance contract for how local text content is stored and fetched, so a client commanded to
 select a chapter fetches that chapter and nothing else.
