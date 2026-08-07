@@ -13,7 +13,7 @@ Plan:
   lines; Circe at 20,051-25,573 reachable only by fetching the whole book.
 - Step 3 (completed) - Draft chapter 50 with ten rules and four acceptance cases, and its reading-index row.
 - Step 4 (completed) - Pull the exact guide copy into publication; `--check` reports no differences.
-- Step 5 (pending) - Open the publication pull request and record its URL here and in SOURCE.md.
+- Step 5 (completed) - Opened publication pull request #18 and recorded it here and in SOURCE.md.
 ---
 Title: Situated, mixed-initiative interaction (2026-08-04)
 Goal: Publish the governance contract for Reframe as an open interaction space in which human turns may be corrective,

@@ -26,7 +26,8 @@
 - Integration commits: `cf7f8fc1` (chapter 50 + README pointer), `18f559a1` (reading-index row),
   `29127802` (chapter 20 custody section)
 - Integration pull request: not yet opened; the branch is unmerged at the time of this sync
-- Publication commit: recorded in the publication pull request for this change
+- Publication pull request: `https://github.com/Fountain-Coach/Reframe-Refactoring/pull/18`
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@123b15d` (branch `docs/ch50-text-is-pointed-at`)
 - Governance first, per ch.07: the partitioning implementation this chapter governs is NOT in this change.
 - Synchronized: 2026-08-07
 
