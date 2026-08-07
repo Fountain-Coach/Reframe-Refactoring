@@ -8,7 +8,7 @@ Plan:
 - Step 1 (completed) - Measured four disagreeing answers on one page, and three further incidents from the same fault.
 - Step 2 (completed) - Drafted chapter 51 with ten rules and five acceptance cases.
 - Step 3 (completed) - Pulled into publication; `--check` reports no differences.
-- Step 4 (pending) - Open the publication pull request and record its URL here and in SOURCE.md.
+- Step 4 (completed) - Opened publication pull request #20 and recorded it here and in SOURCE.md.
 ---
 Title: Chapter 50 amended — a unit is a range, not a copy (2026-08-07)
 Goal: Reconcile chapter 50 with chapters 13 and 29 so no chapter has to be wrong, and record that the first draft
