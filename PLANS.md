@@ -1,3 +1,19 @@
+Title: The pencil belongs to the writer (2026-08-08)
+Goal: Publish the governance contract for marks made ON the manuscript, so the app can never wear the appearance
+of having attended to a page it has only finished reading, and so the writer's own pencil is not interpreted.
+Scope: `docs/52-the-pencil-belongs-to-the-writer.md`, `docs/01-reading-index.md`, `docs/README.md`, exact
+integration mirror, reciprocal provenance.
+Non-goals: the two visual languages themselves, the writer-mark capture surface, drawing the citation in the text.
+Plan:
+- Step 1 (completed) - Measured the collision: an underline already meant three things here (claim evidence,
+  read-through progress, the new anchor), with the CoPilot's own help text spending a paragraph warning writers
+  not to confuse them, and `BaselineViews.evidenceTint` surviving with nothing mounting the view.
+- Step 2 (completed) - Measured the anchor on a live on-device Circe run: 13 of 15 windows anchored, threads
+  running 20608→20815 against anchors of 15–86 lines, one thread opening 95 lines into its own passage.
+- Step 3 (completed) - Drafted chapter 52 with nine rules, seven prohibitions and six acceptance cases, naming
+  the machine's mark a CITATION (ch.40) and leaving the pencil to the writer (ch.46).
+- Step 4 (completed) - Pulled into publication; `--check` reports no differences.
+---
 Title: One decision decides the lane (2026-08-07)
 Goal: Publish the governance contract for lane resolution, so no part of Reframe can size a window for one lane
 and spend on another, and no sentence about a lane costs the writer their password.
