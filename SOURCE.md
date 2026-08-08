@@ -2,32 +2,38 @@
 
 ## Current synchronized change
 
-- Change: **Chapter 51 — One Decision Decides the Lane.**
-- Measured 2026-08-07 on a single page of one chapter: `[LANES] semantic -> codex`, `[WINDOW] budget 30000
-  tokens`, `[READ-LANE] reading on openai`, and the call landing on Apple Foundation Models, which refused
-  **25,025 tokens into a 4,096-token window**. Four subsystems, four answers, one act — and none of them lying.
-- The same disagreement produced the rest of that day: credential PRESENCE read as permission, so a key that
-  existed but could not be unlocked let the read fall silently to the on-device lane while three surfaces still
-  said cloud; the Copilot's opening sentence constructed a paid client in order to NAME a lane, putting a
-  password dialog in front of the manuscript to write a noun; and a per-window TIMEOUT recorded as a size ceiling
-  ratcheted the budget 30,000 -> 21,929 -> 14,627, after an earlier turn of the same screw left 2,190 and capped
-  every paid call at 261 tokens of manuscript.
-- The ruling: a lane is resolved ONCE into a value, and the budget is a PROPERTY of that value — obtaining a
-  client and obtaining the window it must fit are the same act, which makes the overflow unrepresentable rather
-  than fixed. Gates are ordered and may only narrow; a refusal is a typed value with a reason, never a nil that
-  composes into a silent fallback; a credential has four states and the writer's GRANT initialises a cloud lane;
-  naming a lane may not read a secret; every surface prints the one recorded decision; a failure teaches only what
-  it is evidence of; and the resolver is pure and lives in a kit.
-- New acceptance cases: an exhaustive truth table over
-  `permitted x credentialState x constructible x health x role`, and the property that a decision's budget belongs
-  to its provider — one assertion that fails against the behaviour this chapter replaces.
+- Change: **Chapter 52 — The Pencil Belongs to the Writer.**
+- A reader underlining marks FORWARD, IN IGNORANCE: the pencil moves before she can say why, flagging salience
+  rather than asserting a conclusion, carrying no caption (and often unreconstructable later, which is normal),
+  costing nothing to be wrong about, and layering across readings.
+- The mark Reframe began emitting on 2026-08-08 is the exact inverse in every respect — made backward from a
+  window the model has already finished, asserting "these words raised this question", captioned by that
+  question, and expensive to be wrong about because a machine's mark is read as a finding. It is therefore not an
+  underline but a CITATION (ch.40), and the app was one design review away from drawing it as a pencil stroke,
+  which would have laundered retrospection as attention.
+- The collision this ends: an underline already meant three things here — evidence that a recorded claim cites a
+  line (producer removed with the semantic-index runtime; `BaselineViews.evidenceTint` survives with nothing
+  mounting the view), read-through progress during a run, and the new anchor — and the CoPilot's own help text
+  spent a paragraph warning the writer not to confuse them.
+- Measured on a live on-device Circe run, 2026-08-08: 13 of 15 windows anchored; threads run 20608 -> 20815 while
+  their anchors are 15 to 86 lines; one thread opens 95 lines into its own passage. So the citation marks a
+  beat's HEAD and never its body — marking the body would stripe the chapter three deep and say nothing.
+- The ruling: the two marks have different owners and never share a visual language. The machine's citation is
+  backward-looking, captioned, answerable and bound to its question's lane. The PENCIL IS THE WRITER'S: her mark
+  cites nothing, it says "this matters to me, I do not yet know why" — an instruction with an address (ch.46)
+  that the app may notice and ask about in dialogue, but may never interpret, rank, score, or feed to a prompt as
+  evidence. Absence stays absent; progress leaves nothing behind.
+- New acceptance cases: every drawn citation resolves to a question and back to the same span; unanchored
+  questions draw nothing (the Circe run's 2 unanchored windows are the fixture); and the writer's marks and the
+  app's marks are distinguishable in a rendered image by someone who is not told which is which — pixel evidence
+  in both themes, not a flag.
 - Direction: integration -> publication (`Scripts/sync-integration-copy --pull`)
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
-- Integration commit: `Fountain-Coach/midi2-gpu-fabric@50ed71d3` (on `main`)
-- Publication pull request: `https://github.com/Fountain-Coach/Reframe-Refactoring/pull/20`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@532922df` (on `main`)
+- Publication pull request: pending — recorded here on merge.
 - Governance first, per ch.07: no implementation accompanies this chapter.
-- Synchronized: 2026-08-07
+- Synchronized: 2026-08-08
 
 ## Roles
 
