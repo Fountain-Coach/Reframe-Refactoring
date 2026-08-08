@@ -383,15 +383,3 @@ Plan:
 Validation:
 - `Scripts/sync-integration-copy --check <integration-checkout>` reports `guide copies are synchronized`.
 - Counterpart integration commit: `393b15f8` (merge of Fountain-Coach/midi2-gpu-fabric#39 to `main`).
-
-### Sync — chapter 52 (the pencil belongs to the writer)
-
-Direction: integration → publication (`Scripts/sync-integration-copy --pull`), the standing direction for this
-guide. `--check` reported exactly three changes — the new chapter, its reading-index row, its README pointer —
-and no unrelated drift, which is what made `--pull` safe to run.
-
-- Integration commit: `532922df` (this repository, `main`)
-- Publication pull request: `Fountain-Coach/Reframe-Refactoring#21`, merged as `2d12f6f`
-- Provenance recorded reciprocally in the publication repository's `SOURCE.md` and `PLANS.md` (`64494eb`)
-- `--check` reports `guide copies are synchronized`; `git diff --check` clean in both; all six cross-references
-  in the new chapter resolve inside `docs/`
