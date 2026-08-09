@@ -89,6 +89,34 @@ code changes:
     Reframe window, the real beat/uncertainty state, AX semantics, window-ID capture, and persisted FountainStore
     evidence. No generated wording can be used to claim that a capability ran.
 
+## Amendment (2026-08-08) — the instrument stays Courier; the book setting belongs to what leaves it
+
+Rule 4 was tested against a real page and it holds. The reading column was set as a book — a serif reading face at
+16.3pt, `line-height: 1.72`, a 64-character measure, exactly the specimen's values — and looked at in the running
+app beside the Courier setting it replaced. The decision, on seeing both: **the reading column stays in the
+instrument's register.**
+
+The reason is not that the book setting read badly; it read very well. It is that this page is a **workspace**.
+The writer is not consuming the manuscript here — they are marking it, selecting lines that become beats, running
+Writing Tools over it, composing versions against it. A tool's surface should look like a tool, and the monospaced
+register is what makes the manuscript legible AS MATERIAL: a line is a unit you can point at, count, cite and
+cut. Courier is not a compromise here, it is the working face.
+
+**Where the book setting belongs is the EXPORT path** — what leaves the workspace. A downloaded page, a rendered
+`.fountain`, a social card, a PDF of an annotated passage: those are read by someone who is not working on them,
+on a surface with no editing, no Writing Tools and no accessibility drive to satisfy. Everything that makes book
+typography expensive inside the instrument is free once the artefact is on its way out, and everything that makes
+it valuable — sustained readability — is exactly what an exported page needs.
+
+So the line is drawn by DESTINATION, not by act: inside the instrument, Courier; on the way out, a book. The
+specimen that argued this out lives at `docs/specimens/ch52-two-marks/`, and it is the reference for the export
+renderer rather than for this column.
+
+**What the reading column did take from the specimen**, because none of it is a typeface: the manuscript's own
+line numbers in a gutter, the reading's citations drawn in the margin beside the lines that raised them, an
+apparatus that resolves each mark to its question at that question's own height, generous leading, and no rules
+drawn across the page. A workspace can be quiet and well set without pretending to be a book.
+
 ## Forbidden drift
 
 - Serif “book” typography or literary chapter-title treatment in Copilot.
