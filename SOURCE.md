@@ -33,7 +33,7 @@
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
 - Integration commit: `Fountain-Coach/midi2-gpu-fabric@c147cc7d` (on `main`)
-- Publication pull request: pending — recorded here on merge.
+- Publication pull request: `https://github.com/Fountain-Coach/Reframe-Refactoring/pull/22` (merged)
 - Governance first, per ch.07: the implementation follows this chapter, not the other way round.
 - Synchronized: 2026-08-09
 
