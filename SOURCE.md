@@ -2,38 +2,40 @@
 
 ## Current synchronized change
 
-- Change: **Chapter 52 — The Pencil Belongs to the Writer.**
-- A reader underlining marks FORWARD, IN IGNORANCE: the pencil moves before she can say why, flagging salience
-  rather than asserting a conclusion, carrying no caption (and often unreconstructable later, which is normal),
-  costing nothing to be wrong about, and layering across readings.
-- The mark Reframe began emitting on 2026-08-08 is the exact inverse in every respect — made backward from a
-  window the model has already finished, asserting "these words raised this question", captioned by that
-  question, and expensive to be wrong about because a machine's mark is read as a finding. It is therefore not an
-  underline but a CITATION (ch.40), and the app was one design review away from drawing it as a pencil stroke,
-  which would have laundered retrospection as attention.
-- The collision this ends: an underline already meant three things here — evidence that a recorded claim cites a
-  line (producer removed with the semantic-index runtime; `BaselineViews.evidenceTint` survives with nothing
-  mounting the view), read-through progress during a run, and the new anchor — and the CoPilot's own help text
-  spent a paragraph warning the writer not to confuse them.
-- Measured on a live on-device Circe run, 2026-08-08: 13 of 15 windows anchored; threads run 20608 -> 20815 while
-  their anchors are 15 to 86 lines; one thread opens 95 lines into its own passage. So the citation marks a
-  beat's HEAD and never its body — marking the body would stripe the chapter three deep and say nothing.
-- The ruling: the two marks have different owners and never share a visual language. The machine's citation is
-  backward-looking, captioned, answerable and bound to its question's lane. The PENCIL IS THE WRITER'S: her mark
-  cites nothing, it says "this matters to me, I do not yet know why" — an instruction with an address (ch.46)
-  that the app may notice and ask about in dialogue, but may never interpret, rank, score, or feed to a prompt as
-  evidence. Absence stays absent; progress leaves nothing behind.
-- New acceptance cases: every drawn citation resolves to a question and back to the same span; unanchored
-  questions draw nothing (the Circe run's 2 unanchored windows are the fixture); and the writer's marks and the
-  app's marks are distinguishable in a rendered image by someone who is not told which is which — pixel evidence
-  in both themes, not a flag.
+- Change: **Chapter 53 — A Selection Snaps to Meaning.**
+- The writer's report, on first using the pencil ch.52 introduced: her eyesight is not what it was and marking
+  text is sometimes difficult. Not a preference and not an edge case — the surface asking a person to perform a
+  fine motor task in order to express something coarse (*this bit matters*), then storing the fine motor task as
+  though it were the meaning.
+- The ruling: a selection that becomes a durable act is GROWN outward to the smallest unit of MEANING containing
+  what she indicated — whole words always, the speech or stage direction or sentence when she has barely
+  selected anything — chosen by what the text IS at that point rather than by generic punctuation, which is what
+  makes it contextual rather than mechanical.
+- The naive rule dies on this app's own shipped corpus. Measured over the last 400 lines of Ulysses: **27,287
+  characters, one full stop, no question marks.** Penelope is unpunctuated by design, so "snap to the sentence"
+  there selects the entire episode. So: grow to the nearest boundary the text DECLARES, parse it rather than ask
+  a model (ch.27), measure it rather than conclude it (ch.29), and where the writing declares no boundary, stop
+  at words and SAY SO rather than manufacture a grid (ch.50).
+- The snap only ever grows, never shrinks and never moves off what she touched; it is shown before it is
+  committed; a deliberate precise selection is honoured exactly; and no surface tells the writer her selection
+  was wrong.
+- New acceptance cases: Penelope is the fixture; a partial word never survives (property-tested); the snapped
+  range always contains the raw range; dialogue, stage direction and verse each take their own unit; and
+  evidence that seeds the store instead of performing the gesture does not satisfy the chapter.
+- **Also in this sync, and not to be missed: chapter 45's amendment.** The reading column was set exactly as the
+  specimen — a serif book face, 16.3pt, `line-height: 1.72`, a 64-character measure — built, rendered in the
+  running app and looked at beside the Courier it replaced. The decision on seeing both was that the INSTRUMENT
+  keeps its register: the writer is not consuming the manuscript on that page, she is marking it, selecting lines
+  that become beats, composing against it, and monospace is what makes a manuscript legible AS MATERIAL. ch.45
+  rule 4 stands; the amendment records where the book setting DOES belong — the export path, what leaves the
+  workspace, where there is no editing, no Writing Tools and no accessibility drive to satisfy.
 - Direction: integration -> publication (`Scripts/sync-integration-copy --pull`)
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
-- Integration commit: `Fountain-Coach/midi2-gpu-fabric@532922df` (on `main`)
-- Publication pull request: `https://github.com/Fountain-Coach/Reframe-Refactoring/pull/21` (merged as `2d12f6f`)
-- Governance first, per ch.07: no implementation accompanies this chapter.
-- Synchronized: 2026-08-08
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@c147cc7d` (on `main`)
+- Publication pull request: pending — recorded here on merge.
+- Governance first, per ch.07: the implementation follows this chapter, not the other way round.
+- Synchronized: 2026-08-09
 
 ## Roles
 
