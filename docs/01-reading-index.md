@@ -96,6 +96,7 @@ Use this path when changing what the Book, governance repository, or a public pr
 | [Agent operating guide](07-agent-operating-guide.md) | Instructions for `.claude`, `.codex`, and human collaborators. |
 | [Validation and acceptance](08-validation-and-acceptance.md) | Required unit, integration, store, UI, live-provider, and negative evidence. |
 | [Compatibility and evolution](09-compatibility-and-future-evolution.md) | Legacy-store policy, archival behavior, rollback, and rules for future extensions. |
+| [One Store Authority Across Repositories](55-one-store-authority-across-repositories.md) | The shared Fountain-Store Swift authority for explicit selection, identity, readiness, leases, receipts, recovery, and Reframe's product-specific intents. |
 | [Copilot implementation extension](10-copilot-implementation-extension.md) | Extends the refactor to the conversational Copilot: perception, retrieval, action parity, discovery procedure, and acceptance. |
 | [Grounding as a given](11-grounding-as-a-given.md) | Refines the Grounding authoring model: a canonical manifesto shipped as the default given, auto-confirmed on import, edited centrally as prose, never model-dissected. |
 | [Animating truth](12-animating-truth.md) | Perceived performance: never sign a wait with a spinner. Render the frame and cheap/cached truth instantly; foreshadow the unknown as honest, animated structure whose motion maps to real work. Nothing that is not the manuscript may delay the manuscript; absence may not overwrite a truth already held; a click lands in its destination. |
