@@ -1,0 +1,97 @@
+# The Writer Enters by Intention
+
+The writer does not begin Reframe by learning its provider menu, its internal IDs, or its lane vocabulary. She
+begins with a want: a manuscript to open, a passage to read, a question to pursue, or work already in progress.
+The landing surface is therefore a situated Copilot opening, not an empty canvas with a mysterious `+` control.
+
+This chapter governs the Reframe landing experience and the discovery of the Book Library. It extends chapters 15,
+18, 20, 22, 25, 47, and 56. It does not create a second workflow engine: the Copilot discovers and explains the
+existing catalog and dispatches the existing import operation.
+
+## The decision
+
+1. **The landing asks for intention.** A fresh Reframe window presents a concise, writer-facing prompt such as
+   “What would you like to read or work on?” It offers the Copilot as the primary entry point and does not require
+   the writer to discover a provider menu before she can begin.
+2. **The `+` is not the writer's library vocabulary.** The visible plus/import control may be retired from the
+   primary landing when its operations have a dialogic home. The underlying structured actions remain available to
+   accessibility, tests, and deliberate expert paths; retiring chrome never retires capability.
+3. **The Copilot is grounded in live source state.** For Book Library discovery she receives the current published
+   catalog, not a hand-written list, stale onboarding text, remembered IDs, or a model's general knowledge. Catalog
+   entries expose human-readable title, author, language where available, edition/provenance, publication state, and
+   the stable internal work address.
+4. **The writer addresses works by meaning.** “Find Freud's German Vorlesungen” and “open Circe from Ulysses” are
+   valid writer requests. The provider work ID is an implementation address resolved after catalog retrieval; it is
+   not a prerequisite the writer must know or type.
+5. **Ambiguity is clarified, never guessed.** If several editions or works match, the Copilot presents the candidates
+   with the distinction that matters and asks the writer to choose. If no published work matches, it says so and may
+   offer a governed curation request; it may not fetch arbitrary Gutenberg content or publish it from the dialogue.
+6. **On-device reasoning is the introduction.** Catalog search, explanation of availability, source distinction, and
+   import preparation run on the on-device lane by default. The opening does not announce a paid lane merely because
+   one exists. A paid lane may be offered only when the actual request needs it, with the reason, elected lane, and
+   cost stated before the writer grants access.
+7. **The landing is situated.** With no manuscript open, the Copilot says that the workspace is empty and offers
+   reading/import discovery. With a manuscript already open, she offers relevant continuation or navigation and never
+   proposes opening the work that is already open. Her words and affordances are derived from live application state,
+   as required by chapter 15.
+8. **The act remains central.** Once a work or project is selected, the manuscript or reading act becomes the largest
+   and most central element. Catalog metadata, lane facts, provenance, and import progress recede behind progressive
+   disclosure. The landing is an invitation, not a dashboard.
+9. **AX is semantic truth and operability.** Every landing state and library interaction must expose an accessibility
+   role, stable identifier, label, value/state, and supported action. The AX tree must contain the prompt, current
+   situation, catalog result identity, source/publication status, selection, import action, and failures. A writer or
+   agent must be able to search, choose, clarify, cancel, and retry without coordinates or screenshot interpretation.
+10. **AX readability is separate from visual proof.** AX presence does not prove visual legibility. The rendered
+    landing and catalog must also pass the glasses test in light, dark, Increase Contrast, and Reduce Motion states:
+    readable type, sufficient contrast, clear focus, generous spacing, and no colour-only meaning. Both proofs are
+    required; neither substitutes for the other.
+11. **The source seam stays visible but quiet.** After selection, Reframe identifies the source as Book Library,
+    DraCor, local file, or another governed provider and shows the edition/provenance in a checkable disclosure. The
+    writer is not asked to manage HTTP, releases, hashes, or deployment details.
+12. **Failure teaches the next action.** A catalog outage, unavailable work, ambiguous result, rejected import, or
+    lane refusal appears in the writer's dialogue and AX state with a bounded next step. An empty catalog is not
+    silently treated as “nothing exists,” and a missing ID is not repaired by guessing.
+
+## The writer-facing grammar
+
+The preferred grammar is natural language because the writer knows what she wants, not how the provider stores it:
+
+> Find Freud's German Vorlesungen in the Book Library.
+
+> Open Ulysses at Circe.
+
+> Show me published works by Ovid.
+
+Structured commands may remain as deterministic accessibility and maintenance grammar, for example a catalog search
+operation with an explicit result identity. They are projections of the same capability contract, not a second meaning
+system. The Copilot's answer should return a short candidate card in plain language, with “Import” or “Choose” as the
+action, never a raw ID as the headline.
+
+## Acceptance
+
+The landing/library change is not complete until all of the following are demonstrated:
+
+- a fresh launch presents the intention-led landing and a truthful empty situation;
+- the on-device Copilot retrieves the live Book Library catalog and can answer a title/author request without a paid
+  lane;
+- a catalog result exposes title, author, source, edition/status, and a stable AX identity, while the provider ID is
+  available as inspectable detail rather than required writer input;
+- an ambiguous request produces a clarification with distinct candidates;
+- an unpublished Gutenberg work produces an honest unavailable/curation response and never auto-publishes;
+- confirmation dispatches the existing import operation and persists the selected source and navigation metadata;
+- AX inspection finds and operates the prompt, result cards, selection, import, cancel, retry, status, and failure
+  controls without coordinates;
+- VoiceOver/AX reads the current situation, result title, provenance, selection state, and action outcome in a useful
+  order;
+- rendered screenshots are reviewed at reading size in light, dark, Increase Contrast, and reduced-motion variants;
+- the landing does not introduce a second app window, move the primary act off the external display, or resurrect
+  retired uncertainty/structure panes;
+- persisted FountainStore evidence proves the import and terminal outcome after relaunch; logs and screenshots alone
+  do not count.
+
+## Governing sentence
+
+Reframe opens on the writer's intention, lets the on-device Copilot resolve that intention against live published
+source truth, keeps provider IDs and lane machinery behind the dialogue, and proves every state twice: semantically
+through AX and visibly through the rendered surface.
+
