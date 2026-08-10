@@ -95,6 +95,36 @@ library's publisher or server administrator.
     normalized-content determinism, withdrawal, hash mismatch, migration restore, API compatibility, and failure
     reporting without requiring Reframe or a live FountainStore.
 
+16. **Acquisition and publication are separate operations.** A remote importer may retrieve an explicitly selected
+    upstream edition and create a candidate release, but it may not make that candidate visible in the published
+    catalog. Publication requires a local, governed release action, human approval, a manifest digest, and a recorded
+    rollback target. Reframe is never an acquisition or deployment client.
+
+17. **The local publisher is the deployment authority.** The repository-local `book-library-publish` skill validates
+    the exact provider commit, importer output, provenance, hashes, tests, and host identity before it asks the remote
+    service to promote a candidate. Credentials remain in the approved local/host secret mechanism; no credential or
+    arbitrary upstream URL enters Reframe or a public manifest.
+
+18. **The remote importer is a controlled staging service.** It accepts only an explicit upstream identifier and
+    declared edition metadata, writes into an isolated candidate area, is idempotent for the same upstream and source
+    hash, and emits a candidate receipt. It must not fetch arbitrary URLs supplied by a writer, overwrite `current`,
+    mutate an existing release, or publish content without the promotion protocol.
+
+19. **Promotion is atomic and reversible.** A promoted release is immutable and addressed by its release ID and
+    manifest digest. The service switches `current` only after validation, restarts or reloads the reader safely, and
+    retains the previous release as the rollback target until HTTPS health, catalog, manifest, source, hash, and
+    representative Reframe import checks pass. A rollback is itself recorded as a deployment event.
+
+20. **Upstream adapters are explicit and bounded.** A Gutenberg adapter may use the official mirror/metadata routes
+    and a selected eBook identifier, preserving the Gutenberg license and attribution requirements. It must record
+    the item-level rights and jurisdiction review; availability from Gutenberg alone is not an eligibility decision.
+    Private Ulysses material remains private or authenticated, and a translation/edition of Ovid is a distinct source
+    item—not an implicit canonical work.
+
+21. **Automatic refresh may prepare, never publish.** Scheduled acquisition may produce a candidate and notify the
+    release owner, but only the governed promotion action can widen the public catalog. Content changes, withdrawals,
+    and rights decisions therefore have a visible release boundary and can be reproduced or reversed.
+
 ## Ownership boundary
 
 ```text
@@ -109,6 +139,29 @@ FountainStore — source document, versions, receipts, downstream artifacts
 
 The hosted service does not become a second FountainStore. Reframe does not become a second publisher. The Book site
 does not become an operational dashboard. Each layer reports only the truth it owns.
+
+## Publication control plane
+
+```text
+local repository + book-library-publish skill
+       │ validate exact commit, candidate, approval, rollback
+       ▼
+remote book-library importer
+       │ acquire explicit upstream edition → isolated candidate receipt
+       ▼
+remote promotion endpoint/script
+       │ atomic immutable release → current
+       ▼
+library.fountain.coach
+       │ read-only published catalog and source API
+       ▼
+Reframe → FountainStore
+```
+
+The importer and publisher may run on the same host, but they remain separate authorities and directories. The
+publisher is not a blind deployment wrapper: it verifies the candidate that the importer produced. The minimum
+receipts are the upstream identifier and edition, source and normalized hashes, candidate/release IDs, provider
+commit, approver, promotion time, previous release, and post-promotion probes.
 
 ## Migration package
 
