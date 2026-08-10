@@ -5,12 +5,13 @@
 - Change: **Chapter 56 — The Book Library Is a Portable Source Provider.**
 - The ruling: a separately hosted, provenance-preserving Book Library is a first-class Reframe source beside DraCor
   and local file; it owns curation, publication, OpenAPI delivery, withdrawal, and migration, while Reframe owns the
-  writer-facing import and FountainStore owns native persistence.
+  writer-facing import and FountainStore owns native persistence. Acquisition is a remote candidate operation;
+  governed promotion is a local publisher operation with explicit approval and rollback evidence.
 - Direction: integration → publication (exact transfer of Chapter 56 and the reading-index row).
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
-- Integration commit: `Fountain-Coach/midi2-gpu-fabric@b6a2706c`.
-- Publication commit: pending.
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@fc40c88c`.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@da992f7`.
 - Synchronized: 2026-08-10
 
 ## Current synchronized change

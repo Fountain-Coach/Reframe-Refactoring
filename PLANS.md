@@ -9,8 +9,10 @@ and live acceptance; those follow the chapter.
 Plan:
 - Step 1 (completed) - Read the binding governance and record the rules in the integration plan.
 - Step 2 (completed) - Draft Chapter 56 and its integration reading-index entry.
-- Step 3 (completed) - Push integration commit `b6a2706c` on `main`.
-- Step 4 (in progress) - Transfer the exact chapter and index to this publication repository and record provenance.
+- Step 3 (completed) - Push integration commit `fc40c88c` on `main`.
+- Step 4 (completed) - Transfer the exact chapter to this publication repository and record provenance.
+- Step 5 (completed) - Publication commit `da992f7` pushed to `main`; importer/promotion control is now part of the
+  governing chapter and remains an implementation obligation in the provider repository.
 
 Title: The pencil belongs to the writer (2026-08-08)
 Goal: Publish the governance contract for marks made ON the manuscript, so the app can never wear the appearance
