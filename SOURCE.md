@@ -2,6 +2,22 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 54 — The Writer Does Not Manage the Projection.**
+- The ruling: Reframe contains ledgers, providers, consent, batches, and rendering detail so the writer navigates
+  manuscript questions rather than managing implementation machinery. `/readings`, `/ground`, and `/world` are
+  sibling domains; outside investigation is an offered `/reference` act. Durable uncertainty evidence remains
+  complete while every visual projection is bounded, explicit about its slice, stable under selection, and exposed
+  through AX.
+- Direction: integration → publication (limited transfer; the sync check also found an unrelated Chapter 08
+  integration amendment, which was preserved and not overwritten).
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@fbfa6920`.
+- Publication commit: to be recorded in the follow-up provenance commit.
+- Synchronized: 2026-08-10
+
+## Previous synchronized change
+
 - Change: **Chapter 53 — A Selection Snaps to Meaning.**
 - The writer's report, on first using the pencil ch.52 introduced: her eyesight is not what it was and marking
   text is sometimes difficult. Not a preference and not an edge case — the surface asking a person to perform a

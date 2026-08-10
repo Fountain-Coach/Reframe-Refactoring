@@ -111,6 +111,19 @@ Validation:
 
 # PLANS.md
 
+## Sync — Chapter 54: The Writer Does Not Manage the Projection
+
+Title: Synchronize governance Chapter 54 from the integration copy.
+Goal: publication `docs/` carries the exact writer-facing projection and command-seam contract authored beside the
+implementation.
+Scope: `docs/54-the-writer-does-not-manage-the-projection.md` and its `docs/01-reading-index.md` row.
+Non-goals: do not overwrite the unrelated Chapter 08 integration drift; no runtime implementation or live-acceptance
+claim.
+Direction: integration → publication, limited to the two changed guide files.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@fbfa6920`.
+Validation: chapter links resolve, `git diff --check` passes, and the remaining parity difference is the pre-existing
+integration-only Chapter 08 amendment, intentionally excluded from this sync.
+
 Title: Public publication and private source policy (2026-08-03)
 Goal: Establish the FCIS-governed boundary between public projections, public governance, and private runtime source.
 Scope: `docs/44-publication-and-source-policy.md`, reading index, README, exact integration mirror, org FCIS policy,
