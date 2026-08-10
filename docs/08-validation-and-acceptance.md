@@ -49,6 +49,41 @@ Live acceptance is an observed, stateful GUI drive, not a request for a writer t
 
 Evidence has separate authorities. Drive and inspect semantic UI state through the accessibility tree (role, label, identifier, value, and actions). Capture the resolved window ID for visual evidence of layout and wording. Read the persisted FountainStore artifacts produced by the run for behavioural proof; logs and structured diagnostics are useful telemetry but are not behavioural truth. A coordinate action is permitted only as a documented, temporary bridge for a specific current accessibility gap, derived from current window/AX geometry and accompanied by a defect to remove it.
 
+## A claim names the artifact it was read from
+
+The authorities above say which artifact settles which question. They do not say what to do when none was
+opened — and that gap is where the expensive failures live. Measured, 2026-08-09: a drive record asserted that
+the writer's key had been turned to on-device and that a model reply had run on that lane. Neither had been
+read from anything. Both were inferred from the ABSENCE of a paid-lane telemetry record, in a session where
+the same record correctly cited a capability aggregate, a persisted round and a world document by identity for
+every other claim it made. The difference between the sound claims and the false one was not care. It was that
+the sound ones carried a document id and the false one had nowhere to put it.
+
+1. **Every claim carries its artifact inline.** Not in a summary — attached to the sentence that makes the
+   claim, as the thing a reader can open: a document id, a window id, an AX identifier, a file and line. A
+   claim with no artifact beside it is **not established**, and says so in those words.
+
+2. **A negative observation licenses only a negative statement.** No telemetry record for a call means *no
+   such call was recorded* — never *it ran somewhere else*. An empty query result means *this query found
+   nothing* — never *the thing does not exist*. Absence is evidence about the record, not about the world.
+   This is the single move that produced the failure above, twice in one session, and it is dangerous
+   precisely because it feels like evidence.
+
+3. **Reading the owning code is a precondition for the word "defect."** A symptom may be recorded from
+   observation alone. A CAUSE may not: name the file you read before you name what is broken, or write
+   "symptom seen, cause not established". In the measured case the diagnosis cited a chapter and a subsystem
+   in which no file had been opened, and the repair was about to be attempted in the wrong layer, on top of
+   another agent's in-flight work.
+
+4. **A finding carries its confidence, and only observed findings are precedent.** Every recorded finding is
+   marked **observed** (an artifact was opened), **inferred** (it follows from something else), or **not
+   established**. An inferred finding may not be cited as evidence for a further claim. The 2026-08-09 failure
+   cost what it did not because the guess was wrong but because it was written as fact, then cited by a later
+   entry as a second reproduction — one unverified diagnosis, counted twice.
+
+Withdrawing a claim is cheap and is done in place: strike it, say what was actually observed, and say why the
+rest did not follow. A record that cannot be corrected in public is a record no one can trust.
+
 The Romeo-and-Juliet DraCor import is the canonical end-to-end live-drive. Use the natural application path: Add, DraCor, enter `romeo-and-juliet`, then Import; conduct the writer turns in the Studio chat surface; inspect the accessible reply controls; and read the resulting `chat:<session>:round:*` documents. The grounding-first check asks “how should we proceed?” and must stay situated in segment beats rather than offering the retired Manuscript Guide. Repeat consequential behaviour three times, and change the named turns and persisted assertions in this chapter before accepting a revised demo contract.
 
 ## Legacy-store tests

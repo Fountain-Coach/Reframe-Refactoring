@@ -121,6 +121,12 @@ The practice already exists and is recorded — the generic uncertainty seam was
 `UncertaintyScoreKit v0.8.3`, consumed here by version, and *"the kit receives none of those domain types"*.[^kitprecedent]
 This chapter writes that down as the rule rather than leaving it as one worked example.
 
+The resolved graph is part of that record. A SwiftPM cache can preserve a syntactically valid executable after the
+consumer source or a transitive kit has moved. Therefore a current-source claim is not established until the exact
+executable, committed lockfile revisions, upstream object existence, and negative retired-surface check have all been
+read. The repository runbook `Scripts/verify-dependency-coherence` is the operational projection of FCIS-KIT-10A;
+`Scripts/verify-reader-ui-surface.sh` is its reader-surface negative gate.
+
 ## What this does not license
 
 - **Not a ban on caches.** [ch.13](13-storage-and-performance.md) requires one for the library. What is forbidden
@@ -145,7 +151,8 @@ This chapter writes that down as the rule rather than leaving it as one worked e
 5. **Fountain, prose markup, and typed values are three grammars, not three dialects.** Where their sigils
    collide, the collision is documented at the boundary that owns it.
 6. **A capability we lack is built in a kit we own and released upstream with a version**; consumers take it by
-   semver. A revision pin is a temporary state that must record its reason and its exit.
+   semver. A revision pin is a temporary state that must record its reason and its exit. The executable actually
+   driven must also be checked against the resolved graph; a cache is never its provenance.
 7. **An instructed act is answered once in the conversation; accumulated status is not.** Act history is durable
    in the store and retrieved on request.
 8. **Derived surfaces invalidate from the records they read**, never from a counter a view increments.
@@ -166,7 +173,8 @@ The doctrine is met when:
 3. Every surface that presents a record re-reads it when that record changes, and survives relaunch unchanged.
 4. Capability history is readable from the store on request and is not resident in the transcript.
 5. No text region's grammar is inferred from its contents anywhere in the codebase.
-6. Every dependency on an owned kit is a semver range, or a revision pin carrying its reason and its exit.
+6. Every dependency on an owned kit is a semver range, or a revision pin carrying its reason and its exit; the exact
+   executable used for live/UI/publication evidence passes dependency-coherence and negative retired-surface gates.
 7. A phase closes with [ch.07](07-agent-operating-guide.md)'s review questions answered from evidence, and a
    live-acceptance record that names its authorities and its three repetitions.
 
