@@ -1,3 +1,17 @@
+Title: Chapter 56 — The Book Library is a portable source provider (2026-08-10)
+Goal: Publish the governance contract for a separately hosted curated source provider that Reframe can use beside
+DraCor and local files, with item-level provenance, generated OpenAPI, withdrawal switches, and migration to another
+IP or host without changing Reframe.
+Scope: `docs/56-the-book-library-is-a-portable-source-provider.md`, `docs/01-reading-index.md`, exact integration
+mirror, and reciprocal provenance.
+Non-goals: the external repository, server implementation, content selection, DNS/HTTPS deployment, Reframe client,
+and live acceptance; those follow the chapter.
+Plan:
+- Step 1 (completed) - Read the binding governance and record the rules in the integration plan.
+- Step 2 (completed) - Draft Chapter 56 and its integration reading-index entry.
+- Step 3 (completed) - Push integration commit `b6a2706c` on `main`.
+- Step 4 (in progress) - Transfer the exact chapter and index to this publication repository and record provenance.
+
 Title: The pencil belongs to the writer (2026-08-08)
 Goal: Publish the governance contract for marks made ON the manuscript, so the app can never wear the appearance
 of having attended to a page it has only finished reading, and so the writer's own pencil is not interpreted.
