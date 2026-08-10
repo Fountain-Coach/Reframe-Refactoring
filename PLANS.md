@@ -121,6 +121,7 @@ Non-goals: do not overwrite the unrelated Chapter 08 integration drift; no runti
 claim.
 Direction: integration → publication, limited to the two changed guide files.
 Integration commit: `Fountain-Coach/midi2-gpu-fabric@fbfa6920`.
+Publication commit: `Fountain-Coach/Reframe-Refactoring@353d7c0`.
 Validation: chapter links resolve, `git diff --check` passes, and the remaining parity difference is the pre-existing
 integration-only Chapter 08 amendment, intentionally excluded from this sync.
 
