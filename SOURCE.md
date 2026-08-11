@@ -2,6 +2,18 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 59 — Copilot-Initiated Library Curation**, defining the explicit Copilot-mediated GitHub
+  repository → hosted Book Library candidate/release path, SecretStore custody, no-preference boundary, and
+  provenance/rights/accounting evidence.
+- Direction: integration → publication (exact transfer through `Scripts/sync-integration-copy --pull`).
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@fd1a1352`.
+- Publication content commit: pending.
+- Synchronized: 2026-08-11
+
+## Current synchronized change
+
 - Change: **Chapter 58 — Open-Turn Mediation Protocol**, defining the single reusable mediation boundary for first
   contact, interruption, nonsense, correction, ambiguity, and spontaneous change of mind before an existing
   capability or lane executor acts.

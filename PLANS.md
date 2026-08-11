@@ -1,3 +1,14 @@
+Title: Chapter 59 — Copilot-Initiated Library Curation (2026-08-11)
+Goal: Publish the governance contract for an explicit Copilot operation that acquires a GitHub repository as a
+reviewed Fountain-Coach Library candidate and opens only its verified release in Reframe.
+Scope: `docs/59-copilot-initiated-library-curation.md`, `docs/01-reading-index.md`, exact integration mirror, and
+reciprocal provenance.
+Non-goals: GitHub App provisioning, importer implementation, SecretStore mutation, remote deployment, or Reframe
+capability implementation; those follow the chapter.
+Direction: integration → publication.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@fd1a1352` (includes the post-transfer newline normalization).
+Validation: `Scripts/sync-integration-copy --check`, relative-link review, `git diff --check`, and byte parity.
+
 Title: Open-Turn Mediation Protocol (2026-08-11)
 Goal: Publish governance Chapter 58 and its reading-index entry from the integration repository.
 Scope: `docs/58-open-turn-mediation-protocol.md`, `docs/01-reading-index.md`, exact integration mirror, reciprocal provenance.
