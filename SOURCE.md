@@ -2,6 +2,18 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 58 — Open-Turn Mediation Protocol**, defining the single reusable mediation boundary for first
+  contact, interruption, nonsense, correction, ambiguity, and spontaneous change of mind before an existing
+  capability or lane executor acts.
+- Direction: integration → publication (manual exact transfer; the documented sync helper is absent in this checkout).
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@3ac6a135`.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@4a8abc6`.
+- Synchronized: 2026-08-11
+
+## Current synchronized change
+
 - Change: **Chapter 54 — The Writer Does Not Manage the Projection.**
 - The ruling: Reframe contains ledgers, providers, consent, batches, and rendering detail so the writer navigates
   manuscript questions rather than managing implementation machinery. `/readings`, `/ground`, and `/world` are

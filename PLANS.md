@@ -1,3 +1,11 @@
+Title: Open-Turn Mediation Protocol (2026-08-11)
+Goal: Publish governance Chapter 58 and its reading-index entry from the integration repository.
+Scope: `docs/58-open-turn-mediation-protocol.md`, `docs/01-reading-index.md`, exact integration mirror, reciprocal provenance.
+Non-goals: runtime implementation, provider deployment, or live-acceptance claims.
+Direction: integration → publication; manual exact transfer because `Scripts/sync-integration-copy` is absent in this checkout.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@3ac6a135`.
+Validation: relative links, `git diff --check`, and byte parity for the transferred files.
+
 Title: The pencil belongs to the writer (2026-08-08)
 Goal: Publish the governance contract for marks made ON the manuscript, so the app can never wear the appearance
 of having attended to a page it has only finished reading, and so the writer's own pencil is not interpreted.
