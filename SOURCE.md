@@ -9,8 +9,36 @@
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
 - Integration commit: `Fountain-Coach/midi2-gpu-fabric@3ac6a135`.
-- Publication commit: `Fountain-Coach/Reframe-Refactoring@57ca370`.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@57ca370`.
 - Synchronized: 2026-08-11
+
+## Current synchronized change
+
+- Change: **Chapter 57 — The Writer Enters by Intention.**
+- The ruling: Reframe opens on the writer's intention; on-device Copilot resolves that intention against the live
+  published Book Library; provider IDs remain internal; retired visible controls retain structured accessibility
+  paths; and AX semantic proof plus rendered visual proof are both mandatory.
+- Direction: integration → publication (exact transfer of Chapter 57 and the reading-index row).
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@3271f90f`.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@074cfed` (content); this provenance correction is the
+  following commit.
+- Synchronized: 2026-08-10
+
+## Current synchronized change
+
+- Change: **Chapter 56 — The Book Library Is a Portable Source Provider.**
+- The ruling: a separately hosted, provenance-preserving Book Library is a first-class Reframe source beside DraCor
+  and local file; it owns curation, publication, OpenAPI delivery, withdrawal, and migration, while Reframe owns the
+  writer-facing import and FountainStore owns native persistence. Acquisition is a remote candidate operation;
+  governed promotion is a local publisher operation with explicit approval and rollback evidence.
+- Direction: integration → publication (exact transfer of Chapter 56 and the reading-index row).
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
+- Publication path: `docs/`
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@fc40c88c`.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@da992f7`.
+- Synchronized: 2026-08-10
 
 ## Current synchronized change
 

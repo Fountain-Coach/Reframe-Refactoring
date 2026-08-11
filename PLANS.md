@@ -6,6 +6,39 @@ Direction: integration → publication; manual exact transfer because `Scripts/s
 Integration commit: `Fountain-Coach/midi2-gpu-fabric@3ac6a135`.
 Validation: relative links, `git diff --check`, and byte parity for the transferred files.
 
+Title: Chapter 57 — The writer enters by intention (2026-08-10)
+Goal: Publish the governance contract for a new Reframe landing where writers begin with an intention and the
+on-device Copilot discovers the live Book Library without requiring provider IDs.
+Scope: `docs/57-the-writer-enters-by-intention.md`, `docs/01-reading-index.md`, exact integration mirror, and
+reciprocal provenance.
+Non-goals: landing implementation, catalog-search capability binding, AX implementation, visual redesign, and live
+acceptance; those follow the chapter.
+Plan:
+- Step 1 (completed) - Read ch.07, ch.08, ch.15, ch.18, and ch.25 and record their binding rules in the integration
+  plan.
+- Step 2 (completed) - Draft Chapter 57 with the intention-led landing, on-device discovery, internal-ID boundary,
+  and separate AX/VRT acceptance gates.
+- Step 3 (completed) - Push integration commit `3271f90f` on `main`.
+- Step 4 (completed) - Transfer the exact chapter and index entry to this publication repository; preserve unrelated
+  guide content while synchronizing the previously identified integration drift.
+- Step 5 (pending) - Commit and push the publication mirror, then record the reciprocal publication commit.
+
+Title: Chapter 56 — The Book Library is a portable source provider (2026-08-10)
+Goal: Publish the governance contract for a separately hosted curated source provider that Reframe can use beside
+DraCor and local files, with item-level provenance, generated OpenAPI, withdrawal switches, and migration to another
+IP or host without changing Reframe.
+Scope: `docs/56-the-book-library-is-a-portable-source-provider.md`, `docs/01-reading-index.md`, exact integration
+mirror, and reciprocal provenance.
+Non-goals: the external repository, server implementation, content selection, DNS/HTTPS deployment, Reframe client,
+and live acceptance; those follow the chapter.
+Plan:
+- Step 1 (completed) - Read the binding governance and record the rules in the integration plan.
+- Step 2 (completed) - Draft Chapter 56 and its integration reading-index entry.
+- Step 3 (completed) - Push integration commit `fc40c88c` on `main`.
+- Step 4 (completed) - Transfer the exact chapter to this publication repository and record provenance.
+- Step 5 (completed) - Publication commit `da992f7` pushed to `main`; importer/promotion control is now part of the
+  governing chapter and remains an implementation obligation in the provider repository.
+
 Title: The pencil belongs to the writer (2026-08-08)
 Goal: Publish the governance contract for marks made ON the manuscript, so the app can never wear the appearance
 of having attended to a page it has only finished reading, and so the writer's own pencil is not interpreted.
