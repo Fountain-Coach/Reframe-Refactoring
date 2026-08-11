@@ -164,6 +164,19 @@ Validation:
 
 # PLANS.md
 
+## Sync — Chapter 60: The Fountain Editor Is the Project Surface (2026-08-11)
+
+Title: Synchronize the Fountain editor/project-surface governance chapter from the integration copy.
+Goal: publish the decision that Reframe is the Fountain editor and Copilot mediator, while managed Git versions and
+transports projects and the Book Library owns publication.
+Scope: `docs/60-the-fountain-editor-is-the-project-surface.md`, `docs/01-reading-index.md`, and reciprocal provenance.
+Direction: integration → publication, explicitly selected after `Scripts/sync-integration-copy --check` identified
+only these two guide changes.
+Non-goals: runtime implementation, repository provisioning, writable editor implementation, or live acceptance.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@f72483e8`.
+Validation: guide parity and `git diff --check` must pass in both repositories; skill synchronization remains a
+pre-existing integration-repository drift and is not part of this documentation transfer.
+
 ## Sync — Chapter 54: The Writer Does Not Manage the Projection
 
 Title: Synchronize governance Chapter 54 from the integration copy.
