@@ -2,6 +2,18 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 59 — The Fountain-Coach Git Library and Reframe Project Flow**, replacing the former GitHub-specific
+  curation design with a Fountain-Coach-owned Git project service, an owned Swift Git boundary, Copilot-first project
+  views, explicit Library candidate/release flow, authored export, custody, accounting, and migration.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`.
+- Publication path: `docs/`.
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@93c654f0`.
+- Publication content commit: pending.
+- Synchronized: 2026-08-11.
+
+## Current synchronized change
+
 - Change: **Chapter 58 — Open-Turn Mediation Protocol**, defining the single reusable mediation boundary for first
   contact, interruption, nonsense, correction, ambiguity, and spontaneous change of mind before an existing
   capability or lane executor acts.

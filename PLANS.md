@@ -1,3 +1,15 @@
+Title: Chapter 59 — The Fountain-Coach Git Library and Reframe Project Flow (2026-08-11)
+Goal: Replace the GitHub-specific repository curation design with the Fountain-Coach-owned Git project service and
+its Swift boundary, including Copilot project views, Library candidate/release flow, explicit authored export,
+credential custody, accounting, migration, and acceptance.
+Scope: `docs/59-copilot-initiated-library-curation.md`, `docs/01-reading-index.md`, exact integration mirror, and
+reciprocal provenance.
+Non-goals: GitHub App provisioning, GitHub credentials, runtime implementation, provider deployment, and live
+acceptance; those follow the chapter.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@93c654f0`.
+Validation: guide parity, relative-link review, and `git diff --check`.
+
 Title: Open-Turn Mediation Protocol (2026-08-11)
 Goal: Publish governance Chapter 58 and its reading-index entry from the integration repository.
 Scope: `docs/58-open-turn-mediation-protocol.md`, `docs/01-reading-index.md`, exact integration mirror, reciprocal provenance.
