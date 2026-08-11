@@ -9,7 +9,7 @@
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`
 - Publication path: `docs/`
 - Integration commit: `Fountain-Coach/midi2-gpu-fabric@fd1a1352`.
-- Publication content commit: pending.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@1d460a7`.
 - Synchronized: 2026-08-11
 
 ## Current synchronized change
