@@ -2,6 +2,18 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 61 — The Fountain Project Round Trip**, closing the explicit Library → Reframe → Compose →
+  Fountain Project → managed Git → Library lifecycle with separate identities, provenance, transformation records,
+  and no automatic feedback loop.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`.
+- Publication path: `docs/`.
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@6e352a82`.
+- Publication content commit: pending this commit.
+- Synchronized: 2026-08-11.
+
+## Current synchronized change
+
 - Change: **Chapter 60 — The Fountain Editor Is the Project Surface**, defining Reframe as the writer-facing Fountain
   editor and Copilot project mediator, with managed Git as versioned transport, governed Fountain front matter, and
   the Book Library as publication authority.

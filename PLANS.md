@@ -164,6 +164,18 @@ Validation:
 
 # PLANS.md
 
+## Sync — Chapter 61: The Fountain Project Round Trip (2026-08-11)
+
+Title: Synchronize the closing Fountain Project lifecycle chapter from the integration copy.
+Goal: make the Library → Reframe → Compose → Fountain Project → Git → Library loop explicit without collapsing
+authority boundaries or claiming a complete implementation.
+Scope: `docs/61-the-fountain-project-round-trip.md`, `docs/01-reading-index.md`, and reciprocal provenance.
+Direction: integration → publication, selected after `Scripts/sync-integration-copy --check` identified only these
+two guide changes.
+Non-goals: runtime round-trip implementation, repository provisioning, candidate promotion, or live acceptance.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@6e352a82`.
+Validation: guide parity and `git diff --check` must pass in both repositories.
+
 ## Sync — Chapter 60: The Fountain Editor Is the Project Surface (2026-08-11)
 
 Title: Synchronize the Fountain editor/project-surface governance chapter from the integration copy.
