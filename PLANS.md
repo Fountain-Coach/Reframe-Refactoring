@@ -501,11 +501,15 @@ Plan:
   portable Swift owns the control-plane contract; SecretStore and host facilities remain explicit adapters.
 - Step 2 (status: completed) - Amend Chapter 62 with the declared-profile portability doctrine and add Chapter 63,
   the proposed `Fountain-Coach/FountainMaintenanceKit` package contract. Update the reading index.
-- Step 3 (status: pending) - Synchronize the publication chapter and index into the integration repository with the
+- Step 3 (status: completed) - Synchronize the publication chapter and index into the integration repository with the
   explicit `Scripts/sync-integration-copy --push` direction.
-- Step 4 (status: pending) - Commit and push both repositories on `main`, then record reciprocal provenance and
+- Step 4 (status: completed) - Commit and push both repositories on `main`, then record reciprocal provenance and
   revalidate parity and clean worktrees.
 
 Boundary:
 - Governance only. No Swift package, server adapter, Reframe capability, SecretStore integration, or live-acceptance
   claim is included in this tranche.
+
+Provenance:
+- Publication content/provenance commit: `Reframe-Refactoring@92fa0e7`.
+- Integration content/provenance commit: `midi2-gpu-fabric@60de3ed9`.
