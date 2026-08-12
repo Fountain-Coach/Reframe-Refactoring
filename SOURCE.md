@@ -7,7 +7,7 @@
   matching WebKit snapshot through one retrieval identity.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@71136ea2`.
-- Publication content commit: pending publication commit.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@20375e8e`.
 - Synchronized: 2026-08-12.
 
 ## Current synchronized change

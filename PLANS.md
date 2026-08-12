@@ -534,6 +534,6 @@ Non-goals: runtime web-source removal, bounded research implementation, generate
 those remain the next implementation tranche.
 Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
 Integration commit: `Fountain-Coach/midi2-gpu-fabric@71136ea2`.
-Publication commit: pending.
+Publication commit: `Fountain-Coach/Reframe-Refactoring@20375e8e`.
 Validation: 93 focused Reframe tests, dependency coherence, deprecated reader-surface check, guide parity, and
 `git diff --check`.
