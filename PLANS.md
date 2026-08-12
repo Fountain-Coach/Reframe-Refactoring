@@ -486,8 +486,8 @@ Plan:
   authenticated maintenance control plane without claiming runtime implementation.
 - Step 3 (status: completed) - Synchronize the publication chapter and guide index into the integration repository
   with the explicit `Scripts/sync-integration-copy --push` direction.
-- Step 4 (status: pending) - Commit and push the publication and integration repositories to their `main` branches;
-  record both commits reciprocally.
+- Step 4 (status: completed) - Commit and push the publication and integration repositories to their `main` branches;
+  record both commits reciprocally (`Reframe-Refactoring@e2a1f6b`, `midi2-gpu-fabric@d047292b`).
 
 Validation:
 - `Scripts/sync-integration-copy --check /Volumes/NINJA2/Github-Desktop/midi2-gpu-fabric`

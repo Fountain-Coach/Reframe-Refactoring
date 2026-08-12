@@ -262,3 +262,11 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - Publication path: `docs/62-reframe-maintenance-control-plane.md`
 - Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/62-reframe-maintenance-control-plane.md`
 - Status: synchronized working trees; counterpart commits will be recorded after both main-branch commits
+
+### 10.
+
+- Change: Chapter 62, `Reframe Maintenance Control Plane`, plus its reading-index entry
+- Direction: publication → integration (`Scripts/sync-integration-copy --push`)
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@e2a1f6b`
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@d047292b`
+- Synchronized: 2026-08-12
