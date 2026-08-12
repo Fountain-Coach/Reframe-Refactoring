@@ -140,7 +140,8 @@ all of the following exist:
    filesystem mutation.
 6. Reframe acceptance proves Preferences/SecretStore configuration and denial, confirmation, AX activity,
    FountainStore proof, successful promotion, failed verification with rollback, and host migration. The credential
-   configuration card is shipped; the operation and deployment proofs remain required before completion.
+   configuration card and read-only `maintenance.health.verify` capability are shipped; the operation's live receipt
+   proof and deployment proofs remain required before completion.
 7. Release provenance names the package revision, platform profile, adapter set, and test evidence. Until these gates
    are met, Chapter 62's hosted maintenance API remains a governance target rather than a shipped capability.
 
