@@ -1,14 +1,23 @@
-# The Book Library Is a Portable Source Provider
+# The Book Library Is Reframe's Sole Reading Provider
 
-> Chapter summary: Reframe may read a curated Book of Reframe library from a separately hosted service, just as it
-> reads DraCor. The library owns its publication and delivery boundary; FountainStore owns persistence; Reframe owns
-> the writer-facing choice and import. The service is a portable source authority, not an accidental server attached to
-> one machine.
+> Chapter summary: Reframe reads published works through one governed entrance: the Book Library. The library owns
+> publication and delivery; FountainStore owns persistence; Reframe owns the writer-facing choice and import. DraCor,
+> Gutenberg, local files, and other acquisition inputs may feed a reviewed library release, but they are not reading
+> entrances in Reframe. Open-web browsing is not a production capability. A separate, explicitly requested research
+> or citation call may retrieve bounded evidence with provenance; it never becomes a manuscript source or a browser.
 
 ## The decision
 
 The Book of Reframe may publish a selectable subset of eligible works through a separately versioned Swift service.
-Reframe treats that service as one source provider alongside DraCor and local-file input.
+Reframe treats that service as its sole manuscript and reading provider. A writer opens a work by meaning through
+Copilot; the selected publication and its addressable unit are then imported and persisted through the governed
+FountainStore path.
+
+DraCor, Project Gutenberg, local files, and other upstream material are acquisition inputs for the Book Library's
+reviewed publication workflow. They are not alternate Reframe reading paths. A URL pasted into Reframe is not a source
+selection and may not open a page. Only an explicitly mediated gazetteer, research, or citation request may cause a
+bounded external retrieval, and that retrieval produces an evidence record—not a web view, manuscript, Fountain
+Project, or Book Library candidate.
 
 The provider is a curated, provenance-preserving fork. It may select, normalize, structure, version, and withdraw a
 work, but it may not erase the upstream source, edition, license, jurisdiction, or transformation record. “Our terms”
@@ -21,7 +30,10 @@ library's publisher or server administrator.
 
 ## Rules
 
-1. **A hosted library is a source provider, not a hidden importer.** It has a declared identity, endpoint, version,
+1. **The Book Library is the only Reframe reading provider.** Reframe's source chooser, landing, Copilot offers, and
+   import executors may name and resolve Book Library publications only. DraCor, Gutenberg, local files, and other
+   upstreams enter through library curation or a separately governed acquisition workflow, never by direct reading.
+   A hosted library is a source provider, not a hidden importer. It has a declared identity, endpoint, version,
    lane, cost class, reachability, health, and terminal outcome. Reframe reports those facts where the writer works.
 
 2. **The provider is a separate repository and package.** Its Swift server, source manifest, fixtures, OpenAPI
@@ -71,7 +83,7 @@ library's publisher or server administrator.
    ranges, resolvable parents, and no parent cycle. A whole-work response may not silently replace a requested unit
    or range, and a client must refuse or clarify when the published navigation manifest cannot be verified.
 
-9. **Import follows one honest lifecycle.** Reframe selects a work, fetches a declared representation, validates its
+9. **Import follows one honest lifecycle.** Reframe selects a work from the Book Library, fetches a declared representation, validates its
    manifest and hash, normalizes only according to the declared transformation, persists the source through native
    FountainStore access, verifies the persisted artifact, and only then reports success. A network response or server
    log is not proof that the manuscript landed in FountainStore.
@@ -130,6 +142,17 @@ library's publisher or server administrator.
 21. **Automatic refresh may prepare, never publish.** Scheduled acquisition may produce a candidate and notify the
     release owner, but only the governed promotion action can widen the public catalog. Content changes, withdrawals,
     and rights decisions therefore have a visible release boundary and can be reproduced or reversed.
+
+22. **Research is not reading.** An explicitly requested gazetteer, research, or citation call may retrieve a named,
+    bounded external record or passage for a stated question. The result carries provider, locator, retrieval receipt,
+    quotation or extracted evidence, rights/provenance, and checked/unchecked state. It is read-only evidence beside
+    the work; it cannot populate the manuscript, create a source identity, start Storify, create a library candidate,
+    or navigate to a second page.
+
+23. **No generic web surface exists in production Reframe.** Reframe does not accept arbitrary URLs as import
+    commands, render an open browser, follow links, submit forms, authenticate into pages, or offer web as a fallback
+    when the Book Library has no match. A URL may remain a locator inside a bounded evidence receipt, subject to the
+    research/citation capability's explicit contract and consent, but it is never an executable source instruction.
 
 ## Ownership boundary
 
@@ -190,7 +213,8 @@ content, manifest, API, and Reframe import evidence agree.
 
 The chapter is implemented only when all of the following are observed:
 
-1. Reframe lists the Book Library as a source beside DraCor and local file, with no hidden flagship corpus.
+1. Reframe presents the Book Library as its sole reading source; DraCor, Gutenberg, and local files are absent from
+   the writer-facing reading/import surface and remain acquisition inputs only.
 2. A published work imports through the provider, persists in FountainStore, and is reopened after relaunch with the
    same source identity and content hash.
 3. A published work exposes its provider-defined navigation manifest; Reframe can resolve a named unit without
@@ -203,17 +227,20 @@ The chapter is implemented only when all of the following are observed:
    evidence.
 9. The old host remains a tested rollback target until the new host passes health, TLS, catalog, content, and Reframe
    live-drive checks.
-10. The Book publication exposes only the sanitized contract and evidence permitted by Chapter 44.
+10. An explicitly requested research/citation call produces bounded, provenance-bearing evidence and never opens a
+    generic web page or enters the reading pipeline.
+11. The Book publication exposes only the sanitized contract and evidence permitted by Chapter 44.
 
 ## Relationship to other chapters
 
 Chapter 44 governs what may be published. Chapter 48 governs service identity, failure, and persisted outcomes. Chapter
 49 governs the one definition and generated OpenAPI projection. Chapter 55 governs FountainStore selection and native
-persistence. Chapter 50 governs addressable source units. This chapter adds the public source-provider and migration
-boundary; it does not replace those authorities.
+persistence. Chapter 50 governs addressable source units. Chapters 32, 34, 35, and 40 govern bounded external
+references, research, and citation evidence. This chapter adds the sole-reading-provider and migration boundary; it
+does not replace those authorities.
 
 ## Governing sentence
 
-**The Book Library is a portable, provenance-preserving source provider: it may curate and publish a work under a
-legible service contract, but Reframe reports only what the provider declares and FountainStore proves, and a host may
-change without the source, identity, or evidence changing silently.**
+**The Book Library is Reframe's portable, provenance-preserving reading boundary: it may curate and publish a work
+under a legible service contract, while bounded research may retrieve evidence without becoming reading, and Reframe
+reports only what the provider declares and FountainStore proves.**

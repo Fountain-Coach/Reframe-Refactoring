@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Library-rooted reading boundary and citation evidence bundle**, making the Book Library Reframe's sole
+  reading provider, prohibiting generic web/DraCor/local-file reading, and binding textual citation evidence to its
+  matching WebKit snapshot through one retrieval identity.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@71136ea2`.
+- Publication content commit: pending publication commit.
+- Synchronized: 2026-08-12.
+
+## Current synchronized change
+
 - Change: **Copilot projection/conversation split amendment**, defining the Copilot-controlled projection on the left,
   Copilot mediation and commands on the right, and the two-pane seam across reading, Fountain editing, and round-trip
   handoff.

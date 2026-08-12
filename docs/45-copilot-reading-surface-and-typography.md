@@ -3,7 +3,8 @@
 > Chapter summary: Copilot belongs to Reframe's beat and uncertainty workspace. She is not a website sidebar, a book
 > reader, or a diagnostic console. This chapter fixes the visual and interaction contract for a readable Copilot lane:
 > the left projection remains primary, Copilot is the right-hand conversational authority, typography is a comfortable
-> Courier reading voice, and activity remains nested and quiet until it needs to be inspected.
+> Courier reading voice, and activity remains nested and quiet until it needs to be inspected. The Book Library is the
+> sole reading source; bounded citation evidence is not a browsable page.
 
 ## Purpose
 
@@ -30,14 +31,15 @@ code changes:
 
 ## The decision
 
-1. **The left projection is the act currently in view.** It may show a Book Library publication, a WebKit page,
-   publication structure, source passage, reading/grounding/beat/uncertainty projection, or the Fountain editor. The
-   projection is selected by Copilot from live state; it is not a separate navigation product.
+1. **The left projection is the act currently in view.** It may show a Book Library publication, publication
+   structure, source passage, reading/grounding/beat/uncertainty projection, bounded citation evidence, or the
+   Fountain editor. It never shows a browsable web page. The projection is selected by Copilot from live state; it is
+   not a separate navigation product.
 
 2. **Copilot is the right-hand conversational authority, not a website sidebar.** The window has two panes: the
    left projection and the right Copilot conversation/composer. The right pane names the visible situation and owns
-   mediation, commands, status, and transitions. The left pane may contain WebKit when Copilot opens a web source, but
-   browser navigation and source controls do not become an alternative command surface.
+   mediation, commands, status, and transitions. Bounded citation evidence is read-only and cannot navigate, submit,
+   or authenticate into a web page.
 
 3. **Copilot uses a Courier reading voice.** Copilot prose, proposals, the composer, activity details, labels, and
    structured result text use the platform's installed Courier face (with a documented fallback to a system

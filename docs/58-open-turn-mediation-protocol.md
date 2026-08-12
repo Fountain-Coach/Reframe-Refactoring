@@ -22,8 +22,8 @@ hands a settled request to an existing governed capability.
    turn. A previous offer remains unchanged unless the writer explicitly accepts, replaces, abandons, or cancels it
    under that capability's policy.
 5. **Retired vocabulary is translated, not obeyed literally.** A request such as “open Circe from Ulysses” carries a
-   work reference and provenance context. The mediator resolves the work against the current Book Library or other
-   governed source, explains the current source boundary, and never routes the writer into a retired implementation.
+   work reference and provenance context. The mediator resolves the work against the current Book Library, explains
+   the current source boundary, and never routes the writer into a retired or direct-upstream implementation.
 6. **Discovery precedes identity.** The writer addresses a work by meaning. The mediator retrieves the current
    catalog, presents the human distinction when several entries match, and keeps provider IDs behind the dialogue.
 7. **No guessing across ambiguity.** One match may proceed to the existing importer. Several matches require a short
@@ -67,13 +67,15 @@ likely task and the available route in one sentence before acting:
 
 If the live catalog returns one entry, the existing Book Library import proceeds. If it returns several, the Copilot
 asks which edition matters. If it returns none, she says that the current catalog did not resolve the request and
-offers DraCor, web, or local file where those are actually available. She never fabricates a provider ID or silently
-publishes arbitrary source material.
+offers a bounded next step: refine the library search or explicitly ask for a research/citation lookup. She never
+offers direct DraCor, web, or local-file reading, fabricates a provider ID, or silently publishes arbitrary source
+material.
 
 ## Boundaries with neighboring commands
 
 - `/ground`, `/readings`, `/world`, and `/research` remain capability grammars after mediation has established their
-  target and scope; the protocol does not absorb their semantics.
+  target and scope; the protocol does not absorb their semantics. `/world` and `/research` may request bounded
+  gazetteer/reference evidence, but they may not open generic web pages or turn evidence into a reading source.
 - The launcher, manuscript planner, and cloud-key authority remain executors or specialized decision authorities;
   they do not compete to interpret the initial freeform turn.
 - The transcript is conversational evidence, not project-state authority. Situation, pending offers, source identity,
@@ -89,7 +91,9 @@ The protocol is complete only when a clean-store drive demonstrates, through AX,
 - multiple matches clarify without guessing, and no match explains the available next step;
 - an interruption, nonsense turn, correction, and spontaneous change of mind do not mutate the prior offer silently;
 - a parked task can be resumed after an unrelated turn and after relaunch;
-- a request naming an old provider never invokes its retired implementation;
+- a request naming an old provider never invokes its retired implementation or direct-upstream reading path;
+- an arbitrary URL is declined as a reading source, while an explicit research/citation request yields only bounded,
+  provenance-bearing evidence;
 - the same source request never changes cloud authority;
 - AX exposes the mediator situation, result identity, import action, status, clarification, cancellation, and failure;
 - the two-pane surface shows the mediated projection on the left and the same active situation, status, and next

@@ -121,31 +121,28 @@ from the score, the source from the claim, and the withdrawal from both.
    ([ch.20](20-on-device-first-and-the-writers-key.md)).
 10. **An uncitable claim is allowed and unscored.** This governs citations, not assertions.
 
-## Showing the source — the check the writer can make herself
+## Showing evidence — the check the writer can make herself
 
 **Status: not implemented.** This section governs a Copilot feature that does not exist yet. It is written before
 the code, and the capability identity it names is declared **unavailable** in the registry
 ([ch.37](37-copilot-capability-governance.md)) until it satisfies what is below. Nothing here describes current
 behaviour.
 
-The engine is already in the app, and the writer has never seen it. `WebPageReader` runs a `WKWebView` and takes
-the rendered `innerText`, because a plain fetch of a real Joyce annotation resource returned *948 bytes of
-JavaScript shell with no prose in it at all* — a source the app could point at and could not quote. So Reframe
-already renders pages; it does so headlessly, keeps the text, and throws the page away.
+The writer must be able to inspect the bounded evidence that supports a citation or research result without being
+sent into an open web. The evidence surface is a structured, read-only record: provider, work or record identity,
+locator, retrieval time, content digest, the source's own quotation or extracted passage, provenance, and checked or
+unchecked state. It is not a page browser and it is not a second reading surface.
 
-That leaves the writer in the one position this chapter exists to prevent. Rule 2 makes verification an act the
-APP performs, which is right — a person asserting "verified" is what failed. But the writer is then asked to
-accept a receipt she cannot inspect without leaving her work. **A promise someone can check should be checkable by
-the person being asked to trust it**, and the person who most needs to check a citation is the writer who will
-publish on it.
-
-So the Copilot may **show** the source: the retrieved page, rendered, with the quotation found in it.
+The textual evidence and the rendered evidence are one bundle. When the provider returns a source that can be
+rendered, WebKit may produce a read-only snapshot of that exact retrieved page state. The snapshot is evidence of the
+retrieval, not a new source. It must remain addressable beside the quotation and receipt, so the writer can see the
+words that were cited in the source presentation that produced them.
 
 ### What this must not become
 
-- **Not a browser.** The view exists to display a *cited source*, not to navigate. Following a link is a new
-  retrieval and a new outward act, governed by [ch.34](34-a-question-that-leaves-the-work.md) rules 4–6 and
-  [ch.20](20-on-device-first-and-the-writers-key.md) — it may cost money and it certainly leaves the machine.
+- **Not a browser.** The view exists to display a *bounded evidence record*, not to navigate. Following a link is not
+  available from Reframe. A new retrieval requires a new explicit, mediated research or citation request, governed
+  by [ch.34](34-a-question-that-leaves-the-work.md) rules 4–6 and [ch.20](20-on-device-first-and-the-writers-key.md).
 - **Not a way to set `checked`.** Looking is not verifying. Rule 2 is unchanged: the act is retrieve-and-find, and
   a writer who reads the page has still not performed it.
 - **Not a service reporter.** [ch.48](48-a-service-is-a-fact-not-a-symptom.md) governs what happens when a call
@@ -154,20 +151,26 @@ So the Copilot may **show** the source: the retrieved page, rendered, with the q
 
 ### Rules for the reading surface
 
-11. **What is shown is what was retrieved.** The page displayed is the fetch that produced the receipt. If it must
-    be fetched again, the app says so and re-performs the check — a source that changed between the check and the
-    view is itself a finding, not a detail to smooth over.
-12. **The quotation is located in the rendered page**, not merely printed beside it. A citation surface that shows
-    a page and leaves the reader to search it has moved the work, not done it.
-13. **Rendering is an outward act and is bounded as one.** A rendered page executes the source's scripts and loads
-    its third-party resources, so it reveals the writer's network presence and is not private. It runs on the same
-    terms as any other outward act ([ch.34](34-a-question-that-leaves-the-work.md)): the writer's unpublished
-    composition never leaves, and what does leave is bounded and shown.
-14. **The source is read-only.** Nothing on the page may be edited, submitted, or authenticated into from this
-    surface. It is evidence.
-15. **A source that cannot be shown says so, in place** — paywalled, offline, refused, or a shell with no prose —
-    with the same prominence as an unchecked citation gets under rule 3. "Could not display" is a state, never a
-    blank pane.
+11. **What is shown is what was retrieved.** The evidence record is the retrieval that produced the receipt. If it
+    must be fetched again, the app says so and re-performs the check.
+12. **The quotation is located in the returned evidence.** The record names the locator and preserves the source's
+    own words; the writer is not asked to search an unbounded page.
+13. **Retrieval is an explicit outward act and is bounded as one.** The provider, purpose, scope, lane, and cost are
+    stated before it runs. The writer's unpublished composition never leaves.
+14. **The evidence surface is read-only.** Nothing may be edited, submitted, navigated, or authenticated into from
+    it. It is evidence, not a web client.
+15. **Evidence that cannot be returned says so, in place** — offline, refused, unavailable, or without a checkable
+    quotation — with the same prominence as an unchecked citation. "Could not retrieve" is a state, never a blank pane.
+16. **Text and snapshot share one evidence identity.** A citation bundle binds the claim, provider, locator, retrieval
+    receipt, timestamp, response/content digest, exact quotation, and WebKit snapshot to one retrieval identity. A
+    screenshot from another request, a quotation copied from another response, or a page rendered after navigation
+    cannot satisfy the bundle.
+17. **WebKit is an evidence renderer, never a browser.** The snapshot is read-only and non-navigable: no links,
+    forms, authentication, redirects into a new source, or arbitrary URL entry. A new source requires a new mediated
+    retrieval and a new evidence bundle.
+18. **The bundle is atomic in presentation.** Reframe must not present the quotation as checked while omitting its
+    matching receipt or snapshot when one was available. If any required member is missing or mismatched, the bundle
+    is visibly unchecked or failed, never silently repaired from a different fetch.
 
 ## Acceptance
 
@@ -182,14 +185,19 @@ The doctrine is met when:
 4. A withdrawal remains in the record with its reason after the claim has been corrected.
 5. No model-supplied reference can enter the work.
 6. Verifying a citation sends the identifier and the source's own words, and nothing of the writer's composition.
+7. A citation evidence bundle can be opened and shows its exact quotation, locator, retrieval receipt, content
+   digest, and matching WebKit snapshot, all resolving to the same retrieval identity.
 
 **For the reading surface, when it is built** (it does not exist today, and until it does the capability stays
 declared unavailable per [ch.37](37-copilot-capability-governance.md)):
 
-- A checked citation can be opened and the writer sees the retrieved page with the quotation located in it.
-- Opening a source states its lane and any cost before it runs, and never carries the writer's composition.
-- A source that cannot be displayed renders its reason at claim prominence, never an empty pane.
-- Reading the page does not change any citation's checked state.
+- A checked citation can be opened and the writer sees the bounded retrieved evidence with its quotation and locator.
+- When renderable evidence exists, the writer sees the matching WebKit snapshot in the same evidence bundle; its
+  receipt and digest agree with the quotation, and the snapshot cannot navigate.
+- A new retrieval states its purpose, provider, lane, and any cost before it runs, and never carries the writer's
+  composition.
+- Evidence that cannot be returned renders its reason at claim prominence, never an empty pane.
+- Inspecting evidence does not change any citation's checked state, and no web page can be navigated from Reframe.
 
 ## Governing sentence
 

@@ -526,3 +526,14 @@ release from the still-unimplemented native Git, hosted server, SecretStore adap
 
 **Provenance:** publication content commit `Reframe-Refactoring@7f0a771`; integration content commit
 `midi2-gpu-fabric@3481ac4d`.
+Title: Library-rooted reading boundary and citation evidence bundle (2026-08-12)
+Goal: Publish the revised Chapter 56 reading boundary and Chapter 40 evidence-bundle rule: Book Library is the sole
+Reframe reading provider; WebKit may render only the exact retrieved citation evidence, never an interactive browser.
+Scope: `docs/01-reading-index.md`, chapters 40, 45, 56, and 58, exact integration mirror, reciprocal provenance.
+Non-goals: runtime web-source removal, bounded research implementation, generated contract changes, and live acceptance;
+those remain the next implementation tranche.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@71136ea2`.
+Publication commit: pending.
+Validation: 93 focused Reframe tests, dependency coherence, deprecated reader-surface check, guide parity, and
+`git diff --check`.
