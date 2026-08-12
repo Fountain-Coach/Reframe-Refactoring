@@ -558,3 +558,13 @@ live-acceptance claims.
 Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
 Integration content commit: `Fountain-Coach/midi2-gpu-fabric@5a9e8f93`.
 Validation: guide parity, relative-link review, and `git diff --check`.
+Title: Internal quality routing and invisible delegation (2026-08-12)
+Goal: Publish the amendment to Chapters 20 and 57 so Copilot silently chooses the strongest authorized route and uses
+on-device work for efficient bounded sub-work without presenting provider handoff to the writer.
+Scope: `docs/20-on-device-first-and-the-writers-key.md`, `docs/57-the-writer-enters-by-intention.md`, exact
+integration mirror, and reciprocal provenance.
+Non-goals: changing consent custody, exposing a provider selector, claiming paid live acceptance, or implementing
+provider routing in this governance-only change.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Integration content commit: `Fountain-Coach/midi2-gpu-fabric@60d268f6`.
+Validation: guide parity, relative-link review, and `git diff --check`.

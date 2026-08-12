@@ -1,11 +1,10 @@
 # Reliable Copilot, and the Writer's Key — Quality-First Lane Selection
 
-> Chapter summary: Copilot's conversational quality is a credibility requirement. When a reliable paid lane is
-> available and the writer has authorized it, it is the default for open-ended dialogue and Coaching Mode. The
-> on-device lane remains the preferred optimization for bounded, private, deterministic, and offline work. It is
-> never a silent downgrade that makes a writer repeat herself or accept a visibly weaker conversation. The writer
-> still holds the key: nothing spends her account without explicit grant, and every lane statement describes what
-> actually happened.
+> Chapter summary: Copilot's conversational quality is a credibility requirement. Copilot silently chooses the
+> strongest authorized route for the current work. A reliable paid lane serves open-ended dialogue and Coaching Mode;
+> on-device execution handles bounded, private, deterministic, and offline work wherever it preserves the experience.
+> Delegation is internal: the writer sees one continuous Copilot, not provider handoffs or a weaker-mode offer. The
+> writer still holds the key: nothing spends her account without explicit grant.
 
 ## Purpose — the failure this exists to end
 
@@ -31,17 +30,17 @@ the free local lane it should have relied on, and misreported all of it. This ch
 
 Reframe must feel as capable and fluent as the conversational standard the writer already knows. A reliable paid lane
 is therefore the default for open-ended conversation once the writer has authorized it. On-device execution is a
-first-class optimization—private, fast, inexpensive, and useful for bounded work—not a degraded conversational
-fallback. The writer's key still governs spending: quality preference never becomes permission to charge. If the
-paid lane is not authorized or unavailable, Reframe explains the boundary and offers the local mode without losing
-the turn or pretending that the experience is equivalent.
+first-class optimization—private, fast, inexpensive, and useful for bounded work—selected internally when it
+preserves the required experience. The writer's key still governs spending: quality preference never becomes
+permission to charge. If no paid authorization exists, Reframe remains local until the writer authorizes another
+route; this is a consent state, not a failure offer.
 
 ## The decision (enforceable rules)
 
-1. **Select the lane by the work's quality requirement.** Open-ended conversation, situation-aware coaching, and
-   turns whose quality depends on sustained context default to the reliable paid lane when it is available and the
-   writer has granted access. Bounded catalog lookup, deterministic controls, private preparation, and offline work
-   may default on-device. No universal “on-device first” rule may force a weaker dialogue.
+1. **Select the strongest authorized route.** Open-ended conversation, situation-aware coaching, and turns whose
+   quality depends on sustained context use the reliable paid lane when it is authorized. Bounded catalog lookup,
+   deterministic controls, private preparation, and offline work may run on-device. The route is an internal quality
+   decision; the writer is never asked to choose between providers or offered a weaker mode as a product experience.
 
 2. **The writer holds the key.** No operation spends the writer's cloud account without the writer's **explicit
    grant**. The grant is **given and revoked in dialogue** — "stay on device for this," "you may spend now,"
@@ -52,28 +51,27 @@ the turn or pretending that the experience is equivalent.
 
 3. **The quality class is reasoned, never keyword-matched.** The mediator distinguishes open conversation from
    bounded operations using grounded intent and live state. It must not use a static phrase table or a provider
-   preference to force dialogue onto the local lane. A paid conversational default is a quality policy, not a license
-   to charge: consent remains a separate gate.
+   preference to force dialogue onto the local lane. Cost-aware delegation happens after the quality class is known;
+   consent remains a separate gate.
 
-4. **The route decision may not destroy the turn.** A local mediator may classify a turn, but a local capacity
-   failure must preserve the original turn, current situation, and conversation context. It must hand off to the
-   authorized paid lane or ask for authorization; it may not emit “try again,” silently downgrade, or execute an
-   unrelated operation.
+4. **Internal delegation preserves continuity.** A local mediator may classify a turn, but a local capacity failure
+   must preserve the original turn, current situation, and conversation context while routing internally to the
+   strongest authorized conversational lane. A provider retry or delegation is not a new writer-facing turn and must
+   not execute an unrelated operation.
 
-5. **The app states the lane it actually uses, before spending.** The opener and every cost-bearing surface name
-   the **elected** lane — the one the work will truly run on — not a configured guess, and update the moment the
-   availability probe or a runtime demotion changes it (chapter 15). It never announces a lane it is not using, and
-   it never presents local output as equivalent to a failed or unavailable paid conversation. (This is the honesty
-   half of [state the lane and cost up front].)
+5. **The app states cost only where cost becomes relevant.** The opening conversation does not teach provider
+   machinery. A paid route is disclosed at the consent boundary with its cost and purpose; the writer is not asked to
+   approve an internal optimization or delegation. Any status disclosure names the route actually used, never a
+   configured guess.
 
 6. **The uncertainty substrate is inspectable.** UncertaintyScoreKit is **FCIS-AX compliant**, so the reasoning
    behind an escalation offer is machine-readable and provable, and the Copilot can **show the uncertainty map on
    request** (swapping it onto the surface and back) — the reasoning is made evident, not asserted.
 
-7. **Recover visibly, never silently spend or fabricate.** If the selected paid lane fails, Reframe preserves the
-   turn and offers an honest local continuation or retry. If local mediation fails, Reframe preserves the turn and
-   offers the paid lane when available. Neither failure path may fabricate a result, invoke an unrelated operation,
-   or make the writer repeat herself.
+7. **Recover internally, disclose only an actual boundary.** If a provider fails, Reframe preserves the turn and
+   retries or delegates within the authorized route set. It must not fabricate a result, invoke an unrelated
+   operation, or make the writer repeat herself. Only when no authorized route can complete the work may Copilot
+   explain the service boundary and ask for the one consent or action that would change it.
 
 ## Where the key lives — custody, not only consent
 
@@ -122,14 +120,15 @@ permits.
 
 ## Honesty (non-goals)
 
-- **This is not "cloud is bad."** Cloud is a real widening and often the better read; the point is that it is the
-  writer's to grant, on evidence, not the app's to assume.
+- **This is not "local is bad."** Local execution is an important efficiency, privacy, and offline path; the point
+  is that it is selected internally only when it preserves the required experience.
 - **The writer's key is not a modal nag.** A standing grant is honored until revoked; the Copilot does not re-ask
   what it has already been told. Rule 2 is a gate, not a interruption pattern.
-- **Reasoned is not slow-by-default.** Bounded local work stays local without ceremony. Conversational work uses
-  the reliable paid lane by default after consent; the route is not delayed by an unnecessary local probe.
-- **Quality-first is not a preference toggle.** It is the conversational default once the writer has granted access;
-  local execution remains an implementation optimization, not a weaker preference the writer must defend.
+- **Delegation is not a writer-facing mode.** Bounded local work stays local without ceremony. Conversational work
+  uses the reliable paid lane by default after consent, while internal local sub-work may reduce cost without changing
+  the visible Copilot experience.
+- **Quality-first is not a preference toggle.** It is the internal routing rule: use the strongest authorized route,
+  then optimize within it without making the writer defend a provider choice.
 
 ## Relationship to other chapters
 
@@ -141,23 +140,23 @@ permits.
   privacy and consent principles while making Reframe's separate quality requirement explicit: reliable dialogue
   must not be degraded merely to save a lane call.
 - **FCIS-AX** — rule 6 requires the uncertainty substrate to satisfy it, so the reasoning is inspectable.
-- **Feedback doctrine** — this chapter operationalizes *never spend without a yes*, *state the lane and cost up
-  front*, *reason don't keyword-match* (the grant is recognized by reasoning, not a keyword), and *no
-  deterministic fallbacks* (rule 7), for the specific case of the lane.
+- **Feedback doctrine** — this chapter operationalizes *never spend without a yes*, *state cost at the consent
+  boundary*, *reason don't keyword-match*, and *recover without exposing internal delegation* for the specific case
+  of the lane.
 
 ## Acceptance
 
 The doctrine is met when:
 
-1. **A manuscript can be imported and composed on-device** when the paid lane is unavailable, while open-ended
-   Coaching Mode uses the authorized paid lane by default when it is available; neither path may produce a dead-end
+1. **A manuscript can be imported and composed on-device** when no paid route is authorized, while open-ended
+   Coaching Mode uses the strongest authorized conversational lane by default; neither path may produce a dead-end
    capacity error or silently change the writer's request.
 2. **No cloud call occurs without a writer grant** that the writer set in dialogue; with no grant, the app runs
    local or fails visibly, and never silently spends.
 3. **The writer can say "stay on device"** (or grant/revoke cloud) in conversation and the Copilot honors it,
    recognized by reasoning over meaning, not a keyword.
 4. **Lane selection is quality-aware and grounded**, with no `benefitsFromCloud`-style table anywhere in the routing;
-   conversational quality selects the reliable paid lane after consent, while bounded work may remain on-device.
+   conversational quality selects the strongest authorized route, while bounded work may be delegated on-device.
 5. **Every cost-bearing surface names the elected lane**, updates on probe/demotion, and never announces a lane
    the work is not running on.
 6. **The uncertainty map is FCIS-AX inspectable** and the Copilot can show it on request and switch back.

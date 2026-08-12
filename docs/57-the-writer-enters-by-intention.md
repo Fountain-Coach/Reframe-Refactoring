@@ -26,12 +26,12 @@ existing catalog and dispatches the existing import operation.
 5. **Ambiguity is clarified, never guessed.** If several editions or works match, the Copilot presents the candidates
    with the distinction that matters and asks the writer to choose. If no published work matches, it says so and may
    offer a governed curation request; it may not fetch arbitrary Gutenberg content or publish it from the dialogue.
-6. **The introduction is writer-facing; lane selection protects credibility.** Catalog search, explanation of
-   availability, source distinction, and import preparation may run on-device when that is sufficient. Open-ended
-   Copilot conversation and Coaching Mode use the reliable paid lane by default once the writer has authorized it;
-   the app must not force a visibly weaker local dialogue to save a call. Before any paid use, the reason, elected
-   lane, and cost are stated and the writer's consent is recorded. If the local mediator cannot fit or decode a turn,
-   it preserves the turn and offers the authorized paid route instead of exposing an internal capacity failure.
+6. **The introduction is writer-facing; routing is internal.** Catalog search, explanation of availability, source
+   distinction, and import preparation may run on-device when that is sufficient. Open-ended Copilot conversation and
+   Coaching Mode use the strongest authorized conversational route by default; local delegation may optimize bounded
+   sub-work without changing the visible experience. A paid route is disclosed once at the consent boundary with its
+   purpose and cost. If a local mediator cannot fit or decode a turn, it preserves the turn and delegates internally;
+   the writer is not shown an internal capacity failure or asked to choose a provider.
 7. **The landing is situated.** With no manuscript open, the Copilot says that the workspace is empty and offers
    reading/import discovery. With a manuscript already open, she offers relevant continuation or navigation and never
    proposes opening the work that is already open. Her words and affordances are derived from live application state,
@@ -50,9 +50,10 @@ existing catalog and dispatches the existing import operation.
 11. **The source seam stays visible but quiet.** After selection, Reframe identifies the source as Book Library,
     DraCor, local file, or another governed provider and shows the edition/provenance in a checkable disclosure. The
     writer is not asked to manage HTTP, releases, hashes, or deployment details.
-12. **Failure teaches the next action.** A catalog outage, unavailable work, ambiguous result, rejected import, or
-   lane refusal appears in the writer's dialogue and AX state with a bounded next step. An empty catalog is not
-   silently treated as “nothing exists,” and a missing ID is not repaired by guessing.
+12. **Only actual boundaries teach the next action.** A catalog outage, unavailable work, ambiguous result, rejected
+   import, or absence of any authorized route appears in the writer's dialogue and AX state with a bounded next step.
+   Internal provider retry and delegation remain invisible. An empty catalog is not silently treated as “nothing
+   exists,” and a missing ID is not repaired by guessing.
 13. **Copilot is a semantic library agent.** A writer may describe a work by subject, language, period, form, author,
    provenance, or a combination of those meanings. The Book Library supplies grounded metadata candidates; Copilot
    interprets the writer's intent using the lane that preserves the required conversational quality and explains why
@@ -81,8 +82,8 @@ The preferred grammar is natural language because the writer knows what she want
 Structured commands may remain as deterministic accessibility and maintenance grammar, for example a catalog search
 operation with an explicit result identity. They are projections of the same capability contract, not a second meaning
 system. The Copilot's answer should return a short candidate card in plain language, with “Import” or “Choose” as the
-action, never a raw ID as the headline. Search is on-device-first and does not require a paid lane merely because the
-catalog is large.
+action, never a raw ID as the headline. Search may remain on-device for efficiency and does not require a paid lane
+merely because the catalog is large.
 
 ## Acceptance
 

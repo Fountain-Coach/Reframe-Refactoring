@@ -2,6 +2,15 @@
 
 ## Current synchronized change
 
+- Change: **Internal quality routing and invisible delegation**, amending Chapters 20 and 57 so Copilot silently
+  chooses the strongest authorized route and uses efficient local sub-work without exposing provider handoff.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@60d268f6`.
+- Publication content commit: pending until this publication repository commit is pushed.
+- Synchronized: 2026-08-12.
+
+## Current synchronized change
+
 - Change: **Conversational credibility and quality-first lane policy**, amending Chapters 20 and 57 so reliable
   conversational quality takes precedence over cost-saving local execution while consent remains mandatory.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
