@@ -285,6 +285,6 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - Change: Chapter 63 implementation-status correction: published `FountainMaintenanceKit@0.1.0` core/client/test-kit
   exists; hosted maintenance capability and adapters remain governed targets
 - Direction: publication → integration (`Scripts/sync-integration-copy --push`)
-- Publication content commit: pending
-- Integration content commit: pending
-- Synchronized: 2026-08-12 (working trees; reciprocal commits will be recorded after both main-branch commits)
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@7f0a771`
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@3481ac4d`
+- Synchronized: 2026-08-12

@@ -523,3 +523,6 @@ package did not exist became stale.
 release from the still-unimplemented native Git, hosted server, SecretStore adapter, and full acceptance gates.
 
 **Validation:** synchronize publication → integration, run parity and link checks, and record the resulting commits.
+
+**Provenance:** publication content commit `Reframe-Refactoring@7f0a771`; integration content commit
+`midi2-gpu-fabric@3481ac4d`.
