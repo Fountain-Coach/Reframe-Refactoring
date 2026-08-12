@@ -270,3 +270,12 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - Publication content commit: `Fountain-Coach/Reframe-Refactoring@e2a1f6b`
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@d047292b`
 - Synchronized: 2026-08-12
+
+### 11.
+
+- Change: Chapter 62 amendment, `FountainMaintenanceKit — Portable Swift Maintenance Contract` (Chapter 63), and
+  the Chapter 63 reading-index entry
+- Direction: publication → integration (`Scripts/sync-integration-copy --push`)
+- Publication content commit: pending
+- Integration content commit: pending
+- Synchronized: 2026-08-12 (working trees; reciprocal commits will be recorded after both main-branch commits)

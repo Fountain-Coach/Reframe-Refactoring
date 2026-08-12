@@ -493,3 +493,19 @@ Validation:
 - `Scripts/sync-integration-copy --check /Volumes/NINJA2/Github-Desktop/midi2-gpu-fabric`
 - `git diff --check` in both repositories.
 - No implementation or live-acceptance claim belongs in this chapter change.
+
+## Chapter 62 amendment and Chapter 63 — Portable Swift maintenance boundary
+
+Plan:
+- Step 1 (status: completed) - Resolve the portable maintenance boundary through Chapters 07, 08, 56, and 62:
+  portable Swift owns the control-plane contract; SecretStore and host facilities remain explicit adapters.
+- Step 2 (status: completed) - Amend Chapter 62 with the declared-profile portability doctrine and add Chapter 63,
+  the proposed `Fountain-Coach/FountainMaintenanceKit` package contract. Update the reading index.
+- Step 3 (status: pending) - Synchronize the publication chapter and index into the integration repository with the
+  explicit `Scripts/sync-integration-copy --push` direction.
+- Step 4 (status: pending) - Commit and push both repositories on `main`, then record reciprocal provenance and
+  revalidate parity and clean worktrees.
+
+Boundary:
+- Governance only. No Swift package, server adapter, Reframe capability, SecretStore integration, or live-acceptance
+  claim is included in this tranche.

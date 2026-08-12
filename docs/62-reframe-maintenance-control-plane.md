@@ -119,6 +119,33 @@ It is not a MIDI backplane topic and does not replace native FountainStore acces
     operation at its owning boundary. The writer sees the precise next action. A retry reuses the idempotency identity
     and polls the existing receipt; it does not create a second deployment by default.
 
+## Portable Swift doctrine
+
+The control plane is a Swift package and protocol boundary first. Its honest portability claim is **runs on each
+declared supported Swift toolchain and platform profile**, not an unqualified promise that every Swift runtime can
+operate every host integration. The operational identities, authorization decisions, receipts, release transitions,
+rollback rules, migration manifests, and SecretStore references belong to portable Swift code. A host's supervisor,
+filesystem layout, socket, TLS provider, DNS provider, and edge proxy are replaceable adapters.
+
+This distinction is a release boundary, not a matter of taste:
+
+1. The package core must not embed an IP address, absolute path, launchd/systemd assumption, shell command, or
+   machine-specific lease in an identity or receipt.
+2. Reframe Preferences, Copilot, and local skills are clients of the same typed control-plane contract. None may
+   become an authority by opening SSH, guessing a repository, or mutating a host directly.
+3. SecretStore integration is expressed as a protocol over opaque references. The package may request resolution for
+   an authorized operation; it must never persist or echo the resolved secret.
+4. Native Swift Git is the target for repository and release operations. A `/usr/bin/git` process adapter may exist
+   only as a temporary, explicitly named compatibility implementation; it cannot be the authority or the portability
+   claim.
+5. A supported platform profile names its Swift version, network/TLS facilities, persistent storage adapter,
+   supervisor adapter, and test evidence. Replacing one profile's host adapters must not change the control-plane
+   contract or release identities.
+
+The reusable package contract, module split, profile matrix, and implementation gates are specified in
+[FountainMaintenanceKit — Portable Swift Maintenance Contract](63-fountain-maintenance-kit.md). That chapter is a
+governance target, not an assertion that the package or its native Git implementation already exists.
+
 ## The minimum maintenance surface
 
 The control plane must provide a typed, versioned surface for at least:
@@ -155,8 +182,11 @@ The chapter is implemented only when a reviewer can observe all of the following
 6. The same release identities survive a host/IP migration and the public source API remains read-only.
 7. The local skill and Reframe use the same API contract and cannot silently fall back to guessed SSH or filesystem
    operations.
+8. The control-plane core and its fixtures pass on every declared macOS and Linux profile; host adapters are swapped
+   without changing operation or release identities.
+9. No released package or receipt makes the phrase “pure Swift” do more work than the declared profile matrix proves.
 
 **Governing sentence:** Preferences selects a maintenance endpoint and SecretStore reference; SecretStore supplies
 the credential; the authenticated control plane authorizes and receipts reversible service operations; Reframe and its
-skills are equal clients; and no deployment, promotion, rollback, or migration is real until the owning server and
-FountainStore both prove it.
+skills are equal clients; the portable Swift core owns the contract while host facilities remain replaceable adapters;
+and no deployment, promotion, rollback, or migration is real until the owning server and FountainStore both prove it.
