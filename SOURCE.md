@@ -2,6 +2,17 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 57 amendment — Copilot as semantic Book Library agent**, defining on-device semantic metadata
+  discovery, provider retrieval versus Copilot interpretation, ambiguity preservation, and scale without catalog dumps.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`.
+- Publication path: `docs/`.
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@27fba919`.
+- Publication content/provenance commit: `Fountain-Coach/Reframe-Refactoring@eee0829`.
+- Synchronized: 2026-08-12.
+
+## Current synchronized change
+
 - Change: **Chapter 56 amendment — provider-defined publication navigation**, requiring validated, extensible
   navigation manifests with stable IDs, source ranges, optional kinds/parents, and no silent whole-work fallback.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
