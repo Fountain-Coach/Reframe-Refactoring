@@ -2,12 +2,21 @@
 
 ## Current synchronized change
 
+- Change: **Conversational credibility and quality-first lane policy**, amending Chapters 20 and 57 so reliable
+  conversational quality takes precedence over cost-saving local execution while consent remains mandatory.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@5a9e8f93`.
+- Publication content commit: pending until this publication repository commit is pushed.
+- Synchronized: 2026-08-12.
+
+## Current synchronized change
+
 - Change: **Chapter 64 — FountainProjectKit — Durable Fountain Project Custody**, defining the reusable Swift
   custody boundary around FountainEditorKit: immediate creation persistence, edit flush, interruption and relaunch
   recovery, AX save truth, and the separation of working drafts from Git and Book Library publication.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@af60fca8`.
-- Publication content commit: pending until this publication repository commit is pushed.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@80e718d`.
 - Synchronized: 2026-08-12.
 
 ## Current synchronized change

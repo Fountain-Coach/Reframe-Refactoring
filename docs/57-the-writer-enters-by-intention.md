@@ -26,10 +26,12 @@ existing catalog and dispatches the existing import operation.
 5. **Ambiguity is clarified, never guessed.** If several editions or works match, the Copilot presents the candidates
    with the distinction that matters and asks the writer to choose. If no published work matches, it says so and may
    offer a governed curation request; it may not fetch arbitrary Gutenberg content or publish it from the dialogue.
-6. **On-device reasoning is the introduction.** Catalog search, explanation of availability, source distinction, and
-   import preparation run on the on-device lane by default. The opening does not announce a paid lane merely because
-   one exists. A paid lane may be offered only when the actual request needs it, with the reason, elected lane, and
-   cost stated before the writer grants access.
+6. **The introduction is writer-facing; lane selection protects credibility.** Catalog search, explanation of
+   availability, source distinction, and import preparation may run on-device when that is sufficient. Open-ended
+   Copilot conversation and Coaching Mode use the reliable paid lane by default once the writer has authorized it;
+   the app must not force a visibly weaker local dialogue to save a call. Before any paid use, the reason, elected
+   lane, and cost are stated and the writer's consent is recorded. If the local mediator cannot fit or decode a turn,
+   it preserves the turn and offers the authorized paid route instead of exposing an internal capacity failure.
 7. **The landing is situated.** With no manuscript open, the Copilot says that the workspace is empty and offers
    reading/import discovery. With a manuscript already open, she offers relevant continuation or navigation and never
    proposes opening the work that is already open. Her words and affordances are derived from live application state,
@@ -52,9 +54,9 @@ existing catalog and dispatches the existing import operation.
    lane refusal appears in the writer's dialogue and AX state with a bounded next step. An empty catalog is not
    silently treated as “nothing exists,” and a missing ID is not repaired by guessing.
 13. **Copilot is a semantic library agent.** A writer may describe a work by subject, language, period, form, author,
-   provenance, or a combination of those meanings. The Book Library supplies grounded metadata candidates; the
-   on-device Copilot interprets the writer's intent and explains why candidates fit. General model knowledge is never
-   treated as proof that a work is published.
+   provenance, or a combination of those meanings. The Book Library supplies grounded metadata candidates; Copilot
+   interprets the writer's intent using the lane that preserves the required conversational quality and explains why
+   candidates fit. General model knowledge is never treated as proof that a work is published.
 14. **Retrieval and interpretation are separate.** The provider may retrieve candidates through a searchable metadata
    surface, but it does not decide the writer's meaning. Copilot may ask for clarification, preserve ambiguity, or
    select one explicit candidate; it may not silently turn a relevance score into an import.
@@ -108,6 +110,6 @@ The landing/library change is not complete until all of the following are demons
 
 ## Governing sentence
 
-Reframe opens on the writer's intention, lets the on-device Copilot resolve that intention against live published
-source truth, keeps provider IDs and lane machinery behind the dialogue, and proves every state twice: semantically
-through AX and visibly through the rendered surface.
+Reframe opens on the writer's intention, lets Copilot resolve that intention against live published source truth using
+the lane that preserves conversational credibility, keeps provider IDs and lane machinery behind the dialogue, and
+proves every state twice: semantically through AX and visibly through the rendered surface.

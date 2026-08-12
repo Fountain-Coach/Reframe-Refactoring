@@ -1,12 +1,11 @@
-# On-Device First, and the Writer's Key — Reasoned Cloud Escalation
+# Reliable Copilot, and the Writer's Key — Quality-First Lane Selection
 
-> Chapter summary: The on-device (Apple Foundation Models) lane is the **first lane** — the default that does the
-> work, and it must plainly work on its own. The larger cloud model is a **widening of perspective**, never the
-> automatic default, and it is the **writer's money**. So the writer **holds the key**: nothing spends their cloud
-> account without their explicit grant, which they give and revoke **in dialogue**. When cloud would help, the
-> Copilot may *offer* — a decision **reasoned on-device over the uncertainty map** (UncertaintyScoreKit), never a
-> hard-coded lane table. This is the same shape as Apple's on-device → Private Cloud Compute escalation, with the
-> escalation key in the writer's hand.
+> Chapter summary: Copilot's conversational quality is a credibility requirement. When a reliable paid lane is
+> available and the writer has authorized it, it is the default for open-ended dialogue and Coaching Mode. The
+> on-device lane remains the preferred optimization for bounded, private, deterministic, and offline work. It is
+> never a silent downgrade that makes a writer repeat herself or accept a visibly weaker conversation. The writer
+> still holds the key: nothing spends her account without explicit grant, and every lane statement describes what
+> actually happened.
 
 ## Purpose — the failure this exists to end
 
@@ -28,52 +27,53 @@ A live, in-situ run of the Copilot on *Romeo and Juliet* exposed a coherent, dam
 The through-line: the app decided the writer's spend by *configuration and guessing*, defaulted to cloud, failed
 the free local lane it should have relied on, and misreported all of it. This chapter fixes the model.
 
-## The principle — local is the floor; cloud is the writer's to grant
+## The principle — credibility is the floor; the writer's key governs spend
 
-Reframe stands on the on-device model. It is free, private, always present, and it is the lane the writer's work
-runs on by default. A larger cloud model is a **deliberate widening** — more perspective when a specific piece of
-work genuinely needs it — and it is spent from the **writer's own account**. Therefore the escalation to cloud is
-**the writer's decision**, held on a key only they turn. This is Apple's own pattern — on-device first, escalate
-to Private Cloud Compute only when the task exceeds on-device capacity — with one addition that the platform makes
-implicit and Reframe makes explicit: **the escalation is gated by the person whose money pays for it.**
+Reframe must feel as capable and fluent as the conversational standard the writer already knows. A reliable paid lane
+is therefore the default for open-ended conversation once the writer has authorized it. On-device execution is a
+first-class optimization—private, fast, inexpensive, and useful for bounded work—not a degraded conversational
+fallback. The writer's key still governs spending: quality preference never becomes permission to charge. If the
+paid lane is not authorized or unavailable, Reframe explains the boundary and offers the local mode without losing
+the turn or pretending that the experience is equivalent.
 
 ## The decision (enforceable rules)
 
-1. **On-device is the first lane, for every role.** Planner, semantic read, and writer all default to the
-   on-device model. The local experience must be **100% coherent on its own** — a manuscript can be imported,
-   read into real beats, discussed, and composed with **no cloud lane at all**. "The on-device read failed" is a
-   defect to fix in the read, never an excuse to reach for cloud.
+1. **Select the lane by the work's quality requirement.** Open-ended conversation, situation-aware coaching, and
+   turns whose quality depends on sustained context default to the reliable paid lane when it is available and the
+   writer has granted access. Bounded catalog lookup, deterministic controls, private preparation, and offline work
+   may default on-device. No universal “on-device first” rule may force a weaker dialogue.
 
 2. **The writer holds the key.** No operation spends the writer's cloud account without the writer's **explicit
    grant**. The grant is **given and revoked in dialogue** — "stay on device for this," "you may spend now,"
    "I'll tell you when you're allowed to spend my money." It may be **scoped** (this one work) or **standing**
-   (until revoked). The default is **local-only**. This gate sits in front of **every** cloud call; there is no
-   path that reaches a paid lane around it.
+   (until revoked). The default is **no spend until granted**; once a standing or work-scoped grant exists, the
+   quality-first conversational route may use the paid lane by default. This gate sits in front of **every** cloud
+   call; there is no path that reaches a paid lane around it.
 
-3. **The escalation decision is reasoned, never tabled.** There is **no** static policy that says a role or a
-   task "benefits from cloud." When the on-device pass leaves real uncertainty, the **local model reasons over the
-   uncertainty map** ([UncertaintyScoreKit](https://github.com/Fountain-Coach/UncertaintyScoreKit)) — which lanes
-   are `.thin` or `.failure`, what each note's `resolvedBy` says would close it — and only then may the Copilot
-   **offer** to widen, naming *what cloud would resolve* and *what it costs*. Delete `benefitsFromCloud` and
-   every preference-order heuristic that stands in for this reasoning.
+3. **The quality class is reasoned, never keyword-matched.** The mediator distinguishes open conversation from
+   bounded operations using grounded intent and live state. It must not use a static phrase table or a provider
+   preference to force dialogue onto the local lane. A paid conversational default is a quality policy, not a license
+   to charge: consent remains a separate gate.
 
-4. **The reasoning runs on-device.** You cannot spend a cloud call to decide whether to spend a cloud call. The
-   judgment "is this beyond what I can do locally?" is, by construction, a local-model judgment.
+4. **The route decision may not destroy the turn.** A local mediator may classify a turn, but a local capacity
+   failure must preserve the original turn, current situation, and conversation context. It must hand off to the
+   authorized paid lane or ask for authorization; it may not emit “try again,” silently downgrade, or execute an
+   unrelated operation.
 
 5. **The app states the lane it actually uses, before spending.** The opener and every cost-bearing surface name
    the **elected** lane — the one the work will truly run on — not a configured guess, and update the moment the
-   availability probe or a runtime demotion changes it (chapter 15). When on-device, it says so and states the
-   on-device-first stance: it stays local and will ask before ever widening. It never announces a lane it is not
-   using. (This is the honesty half of [state the lane and cost up front].)
+   availability probe or a runtime demotion changes it (chapter 15). It never announces a lane it is not using, and
+   it never presents local output as equivalent to a failed or unavailable paid conversation. (This is the honesty
+   half of [state the lane and cost up front].)
 
 6. **The uncertainty substrate is inspectable.** UncertaintyScoreKit is **FCIS-AX compliant**, so the reasoning
    behind an escalation offer is machine-readable and provable, and the Copilot can **show the uncertainty map on
    request** (swapping it onto the surface and back) — the reasoning is made evident, not asserted.
 
-7. **Fail visibly, never silently spend or fabricate.** If the on-device lane cannot do a piece of work and the
-   writer has not granted cloud, the app says so plainly and stops — it does **not** silently route to a paid
-   lane, and it does **not** fabricate a result. (This is [no deterministic fallbacks] and [never spend without a
-   yes], applied to the lane.)
+7. **Recover visibly, never silently spend or fabricate.** If the selected paid lane fails, Reframe preserves the
+   turn and offers an honest local continuation or retry. If local mediation fails, Reframe preserves the turn and
+   offers the paid lane when available. Neither failure path may fabricate a result, invoke an unrelated operation,
+   or make the writer repeat herself.
 
 ## Where the key lives — custody, not only consent
 
@@ -126,10 +126,10 @@ permits.
   writer's to grant, on evidence, not the app's to assume.
 - **The writer's key is not a modal nag.** A standing grant is honored until revoked; the Copilot does not re-ask
   what it has already been told. Rule 2 is a gate, not a interruption pattern.
-- **Reasoned is not slow-by-default.** The escalation *offer* is reasoned only when the on-device pass surfaced
-  uncertainty worth widening for — not on every turn. A confident local result is delivered locally, in silence.
-- **On-device-first is not a preference toggle.** It is the architecture. There is no "prefer cloud" setting that
-  reintroduces rule-1 as a checkbox; cloud is reached only through the writer's key (rule 2).
+- **Reasoned is not slow-by-default.** Bounded local work stays local without ceremony. Conversational work uses
+  the reliable paid lane by default after consent; the route is not delayed by an unnecessary local probe.
+- **Quality-first is not a preference toggle.** It is the conversational default once the writer has granted access;
+  local execution remains an implementation optimization, not a weaker preference the writer must defend.
 
 ## Relationship to other chapters
 
@@ -137,8 +137,9 @@ permits.
   anything is spent; rule 5 is that requirement made specific to the elected lane.
 - **[Grounding as a given](11-grounding-as-a-given.md)** / **[Animating truth](12-animating-truth.md)** — the
   local read is the substrate the whole surface is built from; it must work for the app to work.
-- **[Apple's Human Interface Guidelines](19-apple-human-interface-guidelines.md)** — this chapter is Reframe's
-  application of Apple's own on-device-first / Private Cloud Compute escalation model to the writer's account.
+- **[Apple's Human Interface Guidelines](19-apple-human-interface-guidelines.md)** — this chapter applies Apple's
+  privacy and consent principles while making Reframe's separate quality requirement explicit: reliable dialogue
+  must not be degraded merely to save a lane call.
 - **FCIS-AX** — rule 6 requires the uncertainty substrate to satisfy it, so the reasoning is inspectable.
 - **Feedback doctrine** — this chapter operationalizes *never spend without a yes*, *state the lane and cost up
   front*, *reason don't keyword-match* (the grant is recognized by reasoning, not a keyword), and *no
@@ -148,15 +149,15 @@ permits.
 
 The doctrine is met when:
 
-1. **A manuscript can be imported, read into real beats, discussed, and composed entirely on-device**, with every
-   cloud lane unavailable — and the result is coherent, not a wall of "couldn't read."
+1. **A manuscript can be imported and composed on-device** when the paid lane is unavailable, while open-ended
+   Coaching Mode uses the authorized paid lane by default when it is available; neither path may produce a dead-end
+   capacity error or silently change the writer's request.
 2. **No cloud call occurs without a writer grant** that the writer set in dialogue; with no grant, the app runs
    local or fails visibly, and never silently spends.
 3. **The writer can say "stay on device"** (or grant/revoke cloud) in conversation and the Copilot honors it,
    recognized by reasoning over meaning, not a keyword.
-4. **Escalation offers are reasoned over the uncertainty map**, name what cloud would resolve and its cost, and
-   appear only when the on-device pass left uncertainty worth widening for — with no `benefitsFromCloud`-style
-   table anywhere in the routing.
+4. **Lane selection is quality-aware and grounded**, with no `benefitsFromCloud`-style table anywhere in the routing;
+   conversational quality selects the reliable paid lane after consent, while bounded work may remain on-device.
 5. **Every cost-bearing surface names the elected lane**, updates on probe/demotion, and never announces a lane
    the work is not running on.
 6. **The uncertainty map is FCIS-AX inspectable** and the Copilot can show it on request and switch back.

@@ -548,3 +548,13 @@ Integration commit: `Fountain-Coach/midi2-gpu-fabric@71136ea2`.
 Publication commit: `Fountain-Coach/Reframe-Refactoring@20375e8e`.
 Validation: 93 focused Reframe tests, dependency coherence, deprecated reader-surface check, guide parity, and
 `git diff --check`.
+Title: Conversational credibility and quality-first lane policy (2026-08-12)
+Goal: Publish the amendment to Chapters 20 and 57 so reliable paid conversational quality is the default after
+consent, while on-device execution remains a bounded/private/offline optimization.
+Scope: `docs/20-on-device-first-and-the-writers-key.md`, `docs/57-the-writer-enters-by-intention.md`, exact
+integration mirror, and reciprocal provenance.
+Non-goals: provider credential changes, silent spending, sustained Coaching Mode implementation, or unproven paid
+live-acceptance claims.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Integration content commit: `Fountain-Coach/midi2-gpu-fabric@5a9e8f93`.
+Validation: guide parity, relative-link review, and `git diff --check`.
