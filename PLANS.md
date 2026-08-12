@@ -513,3 +513,13 @@ Boundary:
 Provenance:
 - Publication content/provenance commit: `Reframe-Refactoring@92fa0e7`.
 - Integration content/provenance commit: `midi2-gpu-fabric@60de3ed9`.
+
+## Chapter 63 implementation-status correction (2026-08-12)
+
+**Reason:** the first FCIS Kit release now exists and Reframe resolves it remotely, so Chapter 63's statement that the
+package did not exist became stale.
+
+**Change:** update Chapter 63 to distinguish the implemented `FountainMaintenanceKit@0.1.0` core/client/test-kit
+release from the still-unimplemented native Git, hosted server, SecretStore adapter, and full acceptance gates.
+
+**Validation:** synchronize publication → integration, run parity and link checks, and record the resulting commits.

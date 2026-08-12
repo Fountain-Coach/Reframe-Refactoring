@@ -1,8 +1,8 @@
 # FountainMaintenanceKit — Portable Swift Maintenance Contract
 
-> Chapter status: governing target. This chapter defines the reusable package and repository boundary for the
-> authenticated Reframe maintenance control plane. It does not claim that `FountainMaintenanceKit` exists or that
-> any listed adapter has been implemented.
+> Chapter status: package boundary implemented; hosted maintenance capability remains a governing target. The
+> published `Fountain-Coach/FountainMaintenanceKit` `v0.1.0` release provides the core, typed client, and offline
+> test kit. It does not claim that native Git, a real SecretStore adapter, or any hosted maintenance operation exists.
 
 The maintenance seam must not be reimplemented separately in Reframe, a publishing skill, and the Book Library host.
 Those clients need one typed contract, one authority chain, one receipt vocabulary, and one portability boundary. This
@@ -29,7 +29,7 @@ adapters. An adapter may use a host facility; it may not redefine the contract, 
 
 ## Package boundary
 
-The repository must contain these independently testable layers:
+The published repository contains these independently testable layers:
 
 - `FountainMaintenanceCore` — operation IDs, target and scope types, authorization decisions, confirmation policy,
   idempotency, progress phases, terminal receipts, release/candidate identities, rollback state, and migration
@@ -116,9 +116,10 @@ bundles, configuration templates, endpoint indirection, rollback metadata, and i
 references. It never contains secret values. Moving from Hetzner to another host changes profile bindings and endpoint
 configuration, not operation, candidate, release, or receipt identities.
 
-## Implementation and acceptance gates
+## Remaining implementation and acceptance gates
 
-The package is not ready for Reframe integration until all of the following exist:
+The first package release is ready for typed client integration. The full maintenance capability is not ready until
+all of the following exist:
 
 1. Core codec and state-machine tests prove typed validation, idempotency, authorization, redaction, cancellation,
    resume, rollback, and migration behavior.
@@ -130,8 +131,8 @@ The package is not ready for Reframe integration until all of the following exis
    filesystem mutation.
 6. Reframe acceptance proves Preferences/SecretStore denial, confirmation, AX activity, FountainStore proof,
    successful promotion, failed verification with rollback, and host migration.
-7. Release provenance names the package revision, platform profile, adapter set, and test evidence. Until then,
-   Chapter 62's maintenance API remains a governance target rather than a shipped capability.
+7. Release provenance names the package revision, platform profile, adapter set, and test evidence. Until these gates
+   are met, Chapter 62's hosted maintenance API remains a governance target rather than a shipped capability.
 
 **Governing sentence:** `FountainMaintenanceKit` is the portable Swift contract and receipt authority for Reframe's
 authenticated maintenance seam; SecretStore supplies opaque credentials, host facilities are replaceable adapters,
