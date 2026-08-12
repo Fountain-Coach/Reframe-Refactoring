@@ -39,6 +39,9 @@ hands a settled request to an existing governed capability.
 11. **The protocol is observable.** AX exposes the current situation, mediator state, question or offer, available
     choices, progress, and result. FountainStore records consequential transitions; screenshots establish rendered
     truth; logs remain telemetry.
+12. **Mediation owns the split.** The right Copilot pane receives and settles the turn; the left pane shows the
+    resulting projection. A turn that asks to open, read, research, ground, structure, compose, or export changes the
+    left projection only through this mediated handoff. The projection never becomes a competing interpreter.
 
 ## The open-turn shape
 
@@ -89,6 +92,8 @@ The protocol is complete only when a clean-store drive demonstrates, through AX,
 - a request naming an old provider never invokes its retired implementation;
 - the same source request never changes cloud authority;
 - AX exposes the mediator situation, result identity, import action, status, clarification, cancellation, and failure;
+- the two-pane surface shows the mediated projection on the left and the same active situation, status, and next
+  action in the right Copilot pane, with no independent left command authority;
 - three consequential repetitions agree across AX semantics, rendered window-ID evidence, and persisted store records.
 
 ## Governing sentence

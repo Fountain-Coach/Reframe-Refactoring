@@ -68,6 +68,22 @@ The view may show a slice, but a slice is a projection and must say that it is o
    renderer to keep the manuscript workspace alive.
 7. **A failure is not a quiet slice.** If the application cannot contain or expose the projection, it reports a
    visible failure and preserves the durable score. It must not present a partial result as the whole score.
+8. **Projection and conversation share one state.** Changing the active work, section, reading phase, or Fountain
+   document through Copilot updates the left projection and right-hand status as one typed transition. A screenshot
+   showing two panes is not sufficient if AX or FountainStore identifies different active objects.
+
+## The two-pane projection arrangement
+
+The writer-facing window has two coordinated panes:
+
+- **Left — projection:** the current source, publication/web page, publication-defined section, reading result,
+  grounding/uncertainty view, or Fountain editor selected by Copilot.
+- **Right — Copilot:** open-turn mediation, conversation, status, offers, confirmations, and composer.
+
+The left pane is not a second command surface. Its visible selection, editing state, and evidence are projections of
+the live state that Copilot has resolved. A left-pane control may support ordinary reading or text editing, but it must
+not independently import, search the library, commit, publish, or choose a provider. Those intentions return through
+the right pane so the same mediation, accounting, AX state, and persistence rules apply.
 
 ## The seam between manuscript and implementation
 
@@ -110,6 +126,9 @@ offer only the writer's meaningful decision, and keep the implementation state b
 8. **Evidence discipline.** A reading comparison may say that two readings differ, but when the evidence cannot
    establish whether the work or the lens caused the difference it says “I cannot tell” and offers a manuscript-facing
    next action.
+9. **Two-pane agreement.** Live acceptance proves the left projection, right Copilot, AX tree, window-ID capture, and
+   FountainStore identity agree; no retired Manuscripts rail, independent left command surface, or blank substitute
+   pane is present.
 
 ## Governing sentence
 

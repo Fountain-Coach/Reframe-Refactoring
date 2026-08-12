@@ -2,7 +2,7 @@
 
 > Chapter summary: Copilot belongs to Reframe's beat and uncertainty workspace. She is not a website sidebar, a book
 > reader, or a diagnostic console. This chapter fixes the visual and interaction contract for a readable Copilot lane:
-> the beat/uncertainty act remains primary, Copilot is a situated secondary inspector, typography is a comfortable
+> the left projection remains primary, Copilot is the right-hand conversational authority, typography is a comfortable
 > Courier reading voice, and activity remains nested and quiet until it needs to be inspected.
 
 ## Purpose
@@ -30,12 +30,14 @@ code changes:
 
 ## The decision
 
-1. **Reframe's beat and uncertainty surface is the act.** The score/ribbon and beat cards remain the largest and most
-   central working object. Copilot may explain, propose, and act through that context; she may not visually displace it.
+1. **The left projection is the act currently in view.** It may show a Book Library publication, a WebKit page,
+   publication structure, source passage, reading/grounding/beat/uncertainty projection, or the Fountain editor. The
+   projection is selected by Copilot from live state; it is not a separate navigation product.
 
-2. **Copilot is a situated inspector, not a web page.** Her lane is attached to the active Reframe arrangement and
-   names the visible situation. It uses native macOS structure: a window toolbar, split panes, disclosure, keyboard
-   access, and a dismissible or resizable inspector. No browser navigation, hero layout, or promotional framing.
+2. **Copilot is the right-hand conversational authority, not a website sidebar.** The window has two panes: the
+   left projection and the right Copilot conversation/composer. The right pane names the visible situation and owns
+   mediation, commands, status, and transitions. The left pane may contain WebKit when Copilot opens a web source, but
+   browser navigation and source controls do not become an alternative command surface.
 
 3. **Copilot uses a Courier reading voice.** Copilot prose, proposals, the composer, activity details, labels, and
    structured result text use the platform's installed Courier face (with a documented fallback to a system
@@ -53,7 +55,7 @@ code changes:
    use the established system font at the 11–12 pt control tier; primary actions meet the 44 pt target. Near-black
    ink and high-contrast muted text are required in light and dark appearances.
 
-6. **The conversation has a useful reading measure.** Copilot prose is constrained to a readable line length, uses
+6. **The conversation has a useful reading measure within its right pane.** Copilot prose is constrained to a readable line length, uses
    paragraph spacing, and presents multi-item results as visibly separated bullets even when the source format is not
    Fountain screenplay. A response begins near the top of the inspector and occupies only the space needed by its
    actual content. An empty white void is not a focus treatment.
@@ -77,9 +79,9 @@ code changes:
    do now: read the answer, inspect the proposal, and choose the next action. Telemetry, provider detail, lifecycle
    history, and secondary tools remain one obvious disclosure away.
 
-11. **Reduced Copilot is a first-class state.** The writer can collapse or dismiss the inspector and return to the beat
-    structure without losing the conversation or activity state. Reopening restores the same situated context from live
-    application state; it does not invent context from transcript prose.
+11. **The two panes remain one Copilot state.** The writer may resize the split for readability, but collapsing or
+    restoring the right pane must not turn the left projection into an independent workflow. Reopening restores the
+    same projection and conversation from live application state; it does not invent context from transcript prose.
 
 12. **AX and human legibility are both required.** Every Copilot heading, answer, proposal, button, status, disclosure,
     and composer is exposed with role, label, value, and action in the accessibility tree. AX presence does not prove
@@ -122,6 +124,8 @@ drawn across the page. A workspace can be quiet and well set without pretending 
 - Serif “book” typography or literary chapter-title treatment in Copilot.
 - Web navigation, hero copy, browser framing, promotional cards, or dashboard composition.
 - A permanently empty Copilot pane, or a pane so dense that the beat act becomes secondary.
+- A single full-window Copilot canvas when the active workspace requires the governed projection/conversation split.
+- A left pane with its own unmanaged navigation, import, commit, or publication authority.
 - A fresh reading that hides the uncertainty score or its lane rack behind a disclosure before the writer can see the
   reading's saliency.
 - Activity badges detached from the asynchronous work they describe.
@@ -144,7 +148,7 @@ drawn across the page. A workspace can be quiet and well set without pretending 
 
 The chapter is implemented only when a real Reframe build demonstrates:
 
-1. the beat/uncertainty surface remains the dominant act in the working state;
+1. the left projection remains the dominant act and the right Copilot pane remains the sole conversational authority;
 2. Copilot body is smaller than manuscript atoms but meets the 13 pt floor; system labels, headings, and primary
    actions meet the type and contrast floors in light and dark;
 3. Copilot uses the Courier reading voice for prose, composer, and structured command text; labels and surrounding
@@ -160,6 +164,6 @@ The chapter is implemented only when a real Reframe build demonstrates:
 
 ## Governing sentence
 
-Copilot is a situated Mac inspector beside Reframe's beat and uncertainty act: smaller Courier prose, system-font
-labels, generous screenplay spacing, disclosed saliency lanes, and quiet asynchronous activity; AX, rendered pixels,
-and persisted state must agree before the surface or any action is claimed complete.
+Copilot is the right-hand conversational authority beside a Copilot-controlled left projection: Courier prose,
+system-font labels, generous screenplay spacing, disclosed saliency, quiet asynchronous activity, and AX, rendered
+pixels, and persisted state must agree before the surface or any action is claimed complete.

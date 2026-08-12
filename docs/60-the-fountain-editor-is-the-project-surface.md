@@ -124,6 +124,10 @@ Reframe / FountainStore
     front-matter validation, operation phase, confirmation, progress, cancellation/resume, and terminal receipt.
     Visual state and FountainStore events must agree. A spinner cannot stand in for an unknown repository or
     publication state.
+18. **The Fountain editor is a left projection of Copilot.** During composition, the editor occupies the left pane;
+    Copilot remains on the right as the sole mediator for project selection, revision operations, metadata repair,
+    commit, candidate creation, and publication handoff. Editor text editing is direct manipulation of the selected
+    document, not an independent repository or publication workflow.
 
 ## Ownership boundary
 
@@ -183,6 +187,8 @@ This chapter is implemented only when the following are proven:
    FountainStore receipts.
 9. A migration to another host preserves project IDs, revision IDs, metadata-template versions, hashes, release
    manifests, and rollback evidence without a Reframe code change.
+10. The live editor drive proves the Fountain editor is the left projection, Copilot is the right authority, and no
+    retired library/manuscript rail or independent repository action surface is present.
 
 Until these conditions are met, Reframe may claim only the implemented subset: managed-project browsing and
 exact-revision candidate request where the project already exists on the configured service. It may not claim

@@ -108,6 +108,9 @@ started.
 16. **Round-trip migration is host-independent.** Moving the managed Git service or Book Library to another host
     preserves project IDs, revision IDs, release IDs, content digests, transformation versions, and provenance. DNS
     and endpoint configuration change; the round-trip identities do not.
+17. **The round-trip is projected in two panes.** Source and reading phases appear in the left projection; Copilot on
+    the right explains and mediates the next handoff. During composition the Fountain editor replaces the reading
+    projection in the left pane, while export, commit, candidate, and promotion remain right-pane-mediated operations.
 
 ## Identity ledger
 
@@ -168,6 +171,8 @@ This chapter is implemented only when the following are demonstrated:
    promotion cases each produce typed terminal evidence.
 9. AX, window-ID visual capture, service receipts, and FountainStore artifacts agree for a positive round trip.
 10. The same round trip survives managed-service migration without changing project or release identities.
+11. The live round-trip surface keeps the projection on the left and Copilot on the right through reading, editing,
+    export, and handoff, without introducing a third navigation or command pane.
 
 Until then, the system may claim only the individually accepted slices. The existence of import, Git browsing, or
 candidate types does not prove a complete round trip.

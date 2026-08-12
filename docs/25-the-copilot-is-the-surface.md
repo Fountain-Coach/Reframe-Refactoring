@@ -11,6 +11,11 @@
 > (perspectives), and [ch.22](22-no-preferences-only-reasoning.md) (preferences) are the instances; this is the law
 > they share.
 
+The surface is conversational in authority, not necessarily single-pane in geometry. The governed writer workspace is
+an intentional two-pane arrangement: the **left projection pane** shows the object Copilot has selected, while the
+**right Copilot pane** carries mediation, conversation, status, and composition of the next request. Both panes belong
+to the same Copilot turn; the left pane is not an independent product surface.
+
 ## Purpose — the failure this exists to end
 
 [ch.22](22-no-preferences-only-reasoning.md) said *no preferences* — retire the toggles. True, but stated as a
@@ -84,6 +89,10 @@ any place. They experience one continuous conversation.
    may remain reachable behind an explicit maintainer disclosure; they are not writer capabilities and are never
    taught to the writer.
 
+7. **Copilot owns the two-pane arrangement.** The left pane is a read/write projection selected by Copilot; the right
+   pane is the sole conversational and command surface. A projection may be a source, web page, reading, analysis,
+   or Fountain editor, but it may not grow its own unrelated navigation or command grammar.
+
 ## Instances (where this rules today)
 
 - **Grounding / lenses (new).** Retire the baseline/grounding editor — `BaselineDualEditorView`,
@@ -139,3 +148,5 @@ The doctrine is met when:
 5. **A standing instruction is remembered as the writer's instruction** (legible, attributed, revisable), not a
    hidden flag ([ch.22](22-no-preferences-only-reasoning.md) rule 5).
 6. **Expert machinery, if kept, lives behind maintainer disclosure** — never taught to the writer, never on their path.
+7. **The current writer window is a two-pane Copilot workspace** — projection on the left, Copilot interaction on the
+   right — and no visible control may imply that the left projection is an independent authority.
