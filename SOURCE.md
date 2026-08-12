@@ -2,6 +2,17 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 56 amendment — provider-defined publication navigation**, requiring validated, extensible
+  navigation manifests with stable IDs, source ranges, optional kinds/parents, and no silent whole-work fallback.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/`.
+- Publication path: `docs/`.
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@9f46f862`.
+- Book Library implementation: `Fountain-Coach/book-library@8054cf9`.
+- Synchronized: 2026-08-12.
+
+## Current synchronized change
+
 - Change: **Chapter 61 — The Fountain Project Round Trip**, closing the explicit Library → Reframe → Compose →
   Fountain Project → managed Git → Library lifecycle with separate identities, provenance, transformation records,
   and no automatic feedback loop.

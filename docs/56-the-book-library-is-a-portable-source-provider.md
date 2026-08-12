@@ -32,6 +32,10 @@ library's publisher or server administrator.
    retrieval time, edition, checksum, copyright/jurisdiction review, license, attribution, and any required notices.
    The Reframe publication record contains the selected work ID, normalized representation, chapter/unit map, content
    hash, transformation version, publication state, and provider release. Neither record may substitute for the other.
+   A published work also has a validated navigation manifest. Its nodes have stable IDs, human-readable labels, valid
+   source ranges, and optional provider-defined `kind` and `parentID` fields. The vocabulary is open: a provider may
+   publish episodes, books, myths, scenes, sections, movements, or another structure without Reframe learning a new
+   literary taxonomy.
 
 4. **Eligibility is item-specific and jurisdiction-aware.** “Available from Gutenberg” is not by itself a sufficient
    publication decision. A work may be published only after its upstream notice and the intended audience's relevant
@@ -62,8 +66,10 @@ library's publisher or server administrator.
    GET /v1/health
    ```
 
-   Source responses name the work, provider release, content hash, unit/range, and provenance. A whole-work response
-   may not silently replace a requested chapter or range.
+   Source responses name the work, provider release, content hash, unit/range, and provenance. The navigation
+   response is a publication acceptance artifact, not an optional hint: it must be non-empty, have unique IDs, valid
+   ranges, resolvable parents, and no parent cycle. A whole-work response may not silently replace a requested unit
+   or range, and a client must refuse or clarify when the published navigation manifest cannot be verified.
 
 9. **Import follows one honest lifecycle.** Reframe selects a work, fetches a declared representation, validates its
    manifest and hash, normalizes only according to the declared transformation, persists the source through native
@@ -187,15 +193,17 @@ The chapter is implemented only when all of the following are observed:
 1. Reframe lists the Book Library as a source beside DraCor and local file, with no hidden flagship corpus.
 2. A published work imports through the provider, persists in FountainStore, and is reopened after relaunch with the
    same source identity and content hash.
-3. A withdrawn work is absent from fresh selection and produces a typed, writer-visible terminal outcome.
-4. A deliberate manifest or content-hash mismatch prevents import and leaves no false success artifact.
-5. The provider's OpenAPI projection and Swift implementation pass contract parity checks from one definition.
-6. A fresh-host restore reproduces catalog, manifests, hashes, publication switches, and representative API responses.
-7. DNS cutover to the fresh host requires no Reframe code change and preserves the provider's identity and release
+3. A published work exposes its provider-defined navigation manifest; Reframe can resolve a named unit without
+   assuming that the unit is a chapter, book, or myth.
+4. A withdrawn work is absent from fresh selection and produces a typed, writer-visible terminal outcome.
+5. A deliberate navigation, manifest, or content-hash mismatch prevents import and leaves no false success artifact.
+6. The provider's OpenAPI projection and Swift implementation pass contract parity checks from one definition.
+7. A fresh-host restore reproduces catalog, manifests, hashes, publication switches, and representative API responses.
+8. DNS cutover to the fresh host requires no Reframe code change and preserves the provider's identity and release
    evidence.
-8. The old host remains a tested rollback target until the new host passes health, TLS, catalog, content, and Reframe
+9. The old host remains a tested rollback target until the new host passes health, TLS, catalog, content, and Reframe
    live-drive checks.
-9. The Book publication exposes only the sanitized contract and evidence permitted by Chapter 44.
+10. The Book publication exposes only the sanitized contract and evidence permitted by Chapter 44.
 
 ## Relationship to other chapters
 
