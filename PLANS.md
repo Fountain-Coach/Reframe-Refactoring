@@ -475,3 +475,21 @@ Plan:
 Validation:
 - `Scripts/sync-integration-copy --check <integration-checkout>` reports `guide copies are synchronized`.
 - Counterpart integration commit: `393b15f8` (merge of Fountain-Coach/midi2-gpu-fabric#39 to `main`).
+
+## Chapter 62 — Reframe Maintenance Control Plane
+
+Plan:
+- Step 1 (status: completed) - Resolve the maintenance/API, Preferences, SecretStore, deployment, promotion,
+  rollback, migration, and remote-host boundary through Chapters 07, 08, 56, 59, and 61; record the implementation
+  boundary before editing.
+- Step 2 (status: completed) - Add the publication chapter and reading-index entry. The chapter defines the
+  authenticated maintenance control plane without claiming runtime implementation.
+- Step 3 (status: completed) - Synchronize the publication chapter and guide index into the integration repository
+  with the explicit `Scripts/sync-integration-copy --push` direction.
+- Step 4 (status: pending) - Commit and push the publication and integration repositories to their `main` branches;
+  record both commits reciprocally.
+
+Validation:
+- `Scripts/sync-integration-copy --check /Volumes/NINJA2/Github-Desktop/midi2-gpu-fabric`
+- `git diff --check` in both repositories.
+- No implementation or live-acceptance claim belongs in this chapter change.

@@ -254,3 +254,11 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - Draft publication PR: `https://github.com/Fountain-Coach/Reframe-Refactoring/pull/9`
 - Draft integration PR: `https://github.com/Fountain-Coach/midi2-gpu-fabric/pull/23`
 - Synchronized: 2026-08-04 (working tree; commits to be recorded reciprocally before publication)
+
+### 9.
+
+- Change: Chapter 62, `Reframe Maintenance Control Plane`, plus its reading-index entry
+- Direction: publication → integration (`Scripts/sync-integration-copy --push`)
+- Publication path: `docs/62-reframe-maintenance-control-plane.md`
+- Integration path: `apps/modernization-studio/docs/reframe-grounding-first-refactor/62-reframe-maintenance-control-plane.md`
+- Status: synchronized working trees; counterpart commits will be recorded after both main-branch commits
