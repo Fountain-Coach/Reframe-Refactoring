@@ -49,8 +49,18 @@ existing catalog and dispatches the existing import operation.
     DraCor, local file, or another governed provider and shows the edition/provenance in a checkable disclosure. The
     writer is not asked to manage HTTP, releases, hashes, or deployment details.
 12. **Failure teaches the next action.** A catalog outage, unavailable work, ambiguous result, rejected import, or
-    lane refusal appears in the writer's dialogue and AX state with a bounded next step. An empty catalog is not
-    silently treated as “nothing exists,” and a missing ID is not repaired by guessing.
+   lane refusal appears in the writer's dialogue and AX state with a bounded next step. An empty catalog is not
+   silently treated as “nothing exists,” and a missing ID is not repaired by guessing.
+13. **Copilot is a semantic library agent.** A writer may describe a work by subject, language, period, form, author,
+   provenance, or a combination of those meanings. The Book Library supplies grounded metadata candidates; the
+   on-device Copilot interprets the writer's intent and explains why candidates fit. General model knowledge is never
+   treated as proof that a work is published.
+14. **Retrieval and interpretation are separate.** The provider may retrieve candidates through a searchable metadata
+   surface, but it does not decide the writer's meaning. Copilot may ask for clarification, preserve ambiguity, or
+   select one explicit candidate; it may not silently turn a relevance score into an import.
+15. **Scale does not become a catalog dump.** Reframe must not load an ever-growing library into the left rail or into
+   one prompt. Search returns compact, grounded candidate records; only the selected work's manifest and source are
+   fetched. Candidate selection remains inspectable through title, author, edition, provenance, and stable AX state.
 
 ## The writer-facing grammar
 
@@ -62,10 +72,15 @@ The preferred grammar is natural language because the writer knows what she want
 
 > Show me published works by Ovid.
 
+> Find a German introduction to psychoanalysis by Freud.
+
+> I want a short Greek tragedy about exile.
+
 Structured commands may remain as deterministic accessibility and maintenance grammar, for example a catalog search
 operation with an explicit result identity. They are projections of the same capability contract, not a second meaning
 system. The Copilot's answer should return a short candidate card in plain language, with “Import” or “Choose” as the
-action, never a raw ID as the headline.
+action, never a raw ID as the headline. Search is on-device-first and does not require a paid lane merely because the
+catalog is large.
 
 ## Acceptance
 
@@ -74,6 +89,8 @@ The landing/library change is not complete until all of the following are demons
 - a fresh launch presents the intention-led landing and a truthful empty situation;
 - the on-device Copilot retrieves the live Book Library catalog and can answer a title/author request without a paid
   lane;
+- a semantic request by subject, language, period, form, or provenance returns grounded candidates without importing;
+- a large-catalog request does not dump the catalog into the left rail or a single prompt;
 - a catalog result exposes title, author, source, edition/status, and a stable AX identity, while the provider ID is
   available as inspectable detail rather than required writer input;
 - an ambiguous request produces a clarification with distinct candidates;
