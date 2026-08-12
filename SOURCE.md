@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 64 — FountainProjectKit — Durable Fountain Project Custody**, defining the reusable Swift
+  custody boundary around FountainEditorKit: immediate creation persistence, edit flush, interruption and relaunch
+  recovery, AX save truth, and the separation of working drafts from Git and Book Library publication.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@af60fca8`.
+- Publication content commit: pending until this publication repository commit is pushed.
+- Synchronized: 2026-08-12.
+
+## Current synchronized change
+
 - Change: **Library-rooted reading boundary and citation evidence bundle**, making the Book Library Reframe's sole
   reading provider, prohibiting generic web/DraCor/local-file reading, and binding textual citation evidence to its
   matching WebKit snapshot through one retrieval identity.

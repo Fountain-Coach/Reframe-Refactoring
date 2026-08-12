@@ -1,3 +1,14 @@
+Title: Chapter 64 — FountainProjectKit — Durable Fountain Project Custody (2026-08-12)
+Goal: Publish the reusable Swift custody boundary around FountainEditorKit so jump-start projects persist before
+editing, survive interruption and relaunch, and remain distinct from Git and Book Library publication.
+Scope: `docs/64-fountain-project-kit-durable-draft-custody.md`, `docs/01-reading-index.md`, exact integration mirror,
+and reciprocal provenance.
+Non-goals: editor rendering, remote maintenance, Git server operations, Book Library promotion, and Reframe live
+implementation; those follow the chapter.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@af60fca8`.
+Validation: guide parity, relative-link review, and `git diff --check`.
+
 Title: Chapter 59 — The Fountain-Coach Git Library and Reframe Project Flow (2026-08-11)
 Goal: Replace the GitHub-specific repository curation design with the Fountain-Coach-owned Git project service and
 its Swift boundary, including Copilot project views, Library candidate/release flow, explicit authored export,
