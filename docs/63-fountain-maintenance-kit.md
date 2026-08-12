@@ -4,7 +4,8 @@
 > remains incomplete. The published `Fountain-Coach/FountainMaintenanceKit` `v0.2.0` release provides the core, typed
 > client, ephemeral secret-provider boundary, and offline test kit. Reframe's macOS adapter reads the configured
 > maintenance credential through `swift-secretstore` and releases it only while the authenticated request is sent.
-> The Book Library server-side credential verifier, native Git, and production deployment operation are still open gates.
+> The Book Library now has a digest-backed server verifier; production deployment binding, native Git, and remote
+> rollout evidence remain open gates.
 
 The maintenance seam must not be reimplemented separately in Reframe, a publishing skill, and the Book Library host.
 Those clients need one typed contract, one authority chain, one receipt vocabulary, and one portability boundary. This
@@ -84,8 +85,10 @@ permission. A SecretStore prompt, denial, expiry, or rotation is a visible state
 
 `FountainMaintenanceKit` receives a `MaintenanceSecretProvider`, not a platform Keychain object. Reframe now supplies
 the macOS implementation through `swift-secretstore`; tests supply a deterministic denial/redaction fixture. The Book
-Library still needs its Linux/server-side verifier and provider binding before authenticated hosted maintenance is a
-production claim. The same operation contract and redaction rules apply in every profile.
+Library now supplies a host-side digest verifier: production configuration provides the SHA-256 digest, while the
+incoming bearer value is compared in constant time and never persisted. The server labels an absent verifier as
+fixture-only mode; hosted deployment must configure it. The same operation contract and redaction rules apply in every
+profile.
 
 ## FCIS and repository requirements
 
@@ -131,7 +134,8 @@ all of the following exist:
 3. Native Swift Git or the explicitly named transitional adapter proves commit/ref/object verification and atomic
    release transitions without directory guessing.
 4. A local fixture server and the hosted Book Library server return the same typed receipts for the same scenario.
-5. Reframe and the maintenance skill consume the same client contract; Reframe's provider does not leak the secret;
+5. Reframe and the maintenance skill consume the same client contract; Reframe's provider and the Book Library
+   verifier do not leak the secret;
    no normal path uses guessed SSH, shell, or
    filesystem mutation.
 6. Reframe acceptance proves Preferences/SecretStore denial, confirmation, AX activity, FountainStore proof,
