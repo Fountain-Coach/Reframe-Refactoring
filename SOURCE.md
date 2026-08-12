@@ -6,7 +6,7 @@
   conversational quality takes precedence over cost-saving local execution while consent remains mandatory.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@5a9e8f93`.
-- Publication content commit: pending until this publication repository commit is pushed.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@5d3fea9`.
 - Synchronized: 2026-08-12.
 
 ## Current synchronized change
