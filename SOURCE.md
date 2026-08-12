@@ -6,7 +6,7 @@
   chooses the strongest authorized route and uses efficient local sub-work without exposing provider handoff.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@60d268f6`.
-- Publication content commit: pending until this publication repository commit is pushed.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@0caad01`.
 - Synchronized: 2026-08-12.
 
 ## Current synchronized change
