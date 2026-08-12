@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Copilot projection/conversation split amendment**, defining the Copilot-controlled projection on the left,
+  Copilot mediation and commands on the right, and the two-pane seam across reading, Fountain editing, and round-trip
+  handoff.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@02a50b0a`.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@120787e`.
+- Synchronized: 2026-08-12.
+
+## Current synchronized change
+
 - Change: **Chapter 57 amendment — Copilot as semantic Book Library agent**, defining on-device semantic metadata
   discovery, provider retrieval versus Copilot interpretation, ambiguity preservation, and scale without catalog dumps.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
