@@ -7,7 +7,8 @@
   references; structured Copilot context; and typed evidence across the cycle.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@29032509`.
-- Publication content/provenance commit: pending; recorded after this mirror commit.
+- Publication content/provenance commit: `Fountain-Coach/Reframe-Refactoring@45c24a8` (mirror merge; final provenance
+  update follows).
 - Synchronized: 2026-08-13.
 
 ## Current synchronized change
