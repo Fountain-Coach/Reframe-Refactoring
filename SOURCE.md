@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 67 — FountainComposerKit — Remote Attachment Custody**, defining the Copilot composer as the one
+  typed ingress for text, images, and files; remote Attachment Cloud admission before pipeline use; minimal local
+  references; structured Copilot context; and typed evidence across the cycle.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@29032509`.
+- Publication content/provenance commit: pending; recorded after this mirror commit.
+- Synchronized: 2026-08-13.
+
+## Current synchronized change
+
 - Change: **Chapter 66 amendment — official ReframeICloudKit seam**, distinguishing native PhotoKit placement from the
   embedded iCloud Photos WebKit handoff, typed placement receipts, generation/staging/placement states, package
   provenance, and Apple credential custody.

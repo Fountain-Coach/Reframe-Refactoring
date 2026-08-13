@@ -1,3 +1,16 @@
+## Chapter 67 — FountainComposerKit — Remote Attachment Custody (2026-08-13)
+
+Goal: Publish the reusable composer boundary for text, image, and file turns: one Copilot ingress, remote Attachment
+Cloud admission before pipeline use, minimal local references, structured Copilot context, and typed evidence.
+Scope: `docs/67-fountain-composer-kit-remote-attachment-custody.md`, `docs/25-the-copilot-is-the-surface.md`,
+`docs/66-fountain-image-publication-kit.md`, `docs/01-reading-index.md`, exact integration mirror, and reciprocal
+provenance.
+Non-goals: runtime composer implementation, cloud deployment, provider selection, image rights implementation, and
+live acceptance; those follow the chapter.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@29032509`.
+Validation: guide parity, relative-link review, and `git diff --check`.
+
 ## Chapter 66 — Reframe Image Sources, Prompting, and Generation (2026-08-13)
 
 Goal: Publish the compound governance boundary for PhotoKit/iCloud image references, Fountain image directives,

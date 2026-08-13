@@ -93,6 +93,10 @@ any place. They experience one continuous conversation.
    pane is the sole conversational and command surface. A projection may be a source, web page, reading, analysis,
    or Fountain editor, but it may not grow its own unrelated navigation or command grammar.
 
+8. **The composer is the one writer ingress.** Text, images, and files are attached from the Copilot composer. Beat
+   controls and projections may display the resulting work, but may not become alternate attachment or upload
+   surfaces. Remote custody and evidence follow [Chapter 67](67-fountain-composer-kit-remote-attachment-custody.md).
+
 ## Instances (where this rules today)
 
 - **Grounding / lenses (new).** Retire the baseline/grounding editor — `BaselineDualEditorView`,
