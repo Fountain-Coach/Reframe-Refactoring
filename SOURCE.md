@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 65 — The Copilot as Writing Coach**, defining the writer-facing Copilot persona that carries the
+  default Grounding stance and invokes the internal Dramaturg realization discipline without exposing Dramaturg as a
+  writer-facing control.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@bb27ec70`.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@3dac8f9`.
+- Synchronized: 2026-08-13.
+
+## Current synchronized change
+
 - Change: **Internal quality routing and invisible delegation**, amending Chapters 20 and 57 so Copilot silently
   chooses the strongest authorized route and uses efficient local sub-work without exposing provider handoff.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).

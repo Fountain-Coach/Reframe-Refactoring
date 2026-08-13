@@ -9,6 +9,24 @@ Direction: integration → publication; exact transfer through `Scripts/sync-int
 Integration commit: `Fountain-Coach/midi2-gpu-fabric@af60fca8`.
 Validation: guide parity, relative-link review, and `git diff --check`.
 
+## Chapter 65 — The Copilot as Writing Coach
+
+Plan:
+- Step 1 (status: completed) - Resolve Grounding as the source-authoritative reading stance and Dramaturg as the
+  downstream realization discipline through Chapters 07, 08, 25, 46, and 60.
+- Step 2 (status: completed) - Add Chapter 65 and its reading-index entry, describing the Writing Coach as the
+  writer-facing merge while retaining separate Grounding and Dramaturg authorities.
+- Step 3 (status: completed) - Synchronize integration → publication with the explicit `--pull` direction.
+- Step 4 (status: completed) - Commit both repositories; add reciprocal provenance and revalidate parity.
+
+Boundary:
+- Governance only. Removing the Dramaturg button, changing runtime names, and implementing the Writing Coach are
+  subsequent phases.
+
+Provenance:
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@bb27ec70`.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@3dac8f9`.
+
 Title: Chapter 59 — The Fountain-Coach Git Library and Reframe Project Flow (2026-08-11)
 Goal: Replace the GitHub-specific repository curation design with the Fountain-Coach-owned Git project service and
 its Swift boundary, including Copilot project views, Library candidate/release flow, explicit authored export,
