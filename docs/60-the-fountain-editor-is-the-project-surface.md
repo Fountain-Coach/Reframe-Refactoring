@@ -20,6 +20,12 @@ The managed Git service owns repository objects, refs, revisions, access, import
 receipts. The Book Library owns candidate review, publication, release identity, withdrawal, and promotion. FountainStore
 owns the Reframe working document, source identity, versions, and handoff evidence. These authorities remain distinct.
 
+Jump-start is deliberately not a second project surface. “Jump-start a new Fountain Project” creates the durable
+working project and opens the same empty-beat/Compose projection used when a writer creates an empty beat in an
+existing work. The empty beat is a truthful writing unit with no source text and no UncertaintyScore cue yet; Copilot
+responds to that live situation rather than manufacturing a reading result or an uncertainty explanation. The
+Fountain editor is reached from that beat state when the writer begins authoring or asks Copilot to edit.
+
 The intended flow is:
 
 ```text
