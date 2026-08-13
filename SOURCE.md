@@ -6,8 +6,8 @@
   embedded iCloud Photos WebKit handoff, typed placement receipts, generation/staging/placement states, package
   provenance, and Apple credential custody.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
-- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@bb38aeed`.
-- Publication content/provenance commit: pending this commit.
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@11b1237e` (content `bb38aeed`).
+- Publication content/provenance commit: `Fountain-Coach/Reframe-Refactoring@7a1a517`.
 - Synchronized: 2026-08-13.
 
 ## Current synchronized change
