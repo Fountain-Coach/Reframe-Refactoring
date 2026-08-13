@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 66 — Reframe Image Sources, Prompting, and Generation**, defining the compound PhotoKit/iCloud →
+  Fountain image directive → writer prompt → OpenAI generation/editing boundary, including privacy, provider
+  custody, visual projection, and source-to-result lineage.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@f044d3c4`.
+- Publication content commit: pending provenance commit.
+- Synchronized: 2026-08-13.
+
+## Current synchronized change
+
 - Change: **Chapter 65 — The Copilot as Writing Coach**, defining the writer-facing Copilot persona that carries the
   default Grounding stance and invokes the internal Dramaturg realization discipline without exposing Dramaturg as a
   writer-facing control.

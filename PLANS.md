@@ -1,3 +1,16 @@
+## Chapter 66 — Reframe Image Sources, Prompting, and Generation (2026-08-13)
+
+Goal: Publish the compound governance boundary for PhotoKit/iCloud image references, Fountain image directives,
+writer-authored image prompting, direct Reframe/OpenAI generation and editing, visual projection, privacy, and
+source-to-result lineage.
+Scope: `docs/66-reframe-image-sources-prompting-and-generation.md`, `docs/01-reading-index.md`, exact integration
+mirror, and reciprocal provenance.
+Non-goals: PhotoKit probe implementation, parser implementation, provider adapter implementation, and live image
+generation; those follow the chapter.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@f044d3c4`.
+Validation: guide parity, relative-link review, and `git diff --check`.
+
 Title: Chapter 64 — FountainProjectKit — Durable Fountain Project Custody (2026-08-12)
 Goal: Publish the reusable Swift custody boundary around FountainEditorKit so jump-start projects persist before
 editing, survive interruption and relaunch, and remain distinct from Git and Book Library publication.
