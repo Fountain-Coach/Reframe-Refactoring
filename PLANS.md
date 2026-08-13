@@ -599,3 +599,13 @@ provider routing in this governance-only change.
 Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
 Integration content commit: `Fountain-Coach/midi2-gpu-fabric@60d268f6`.
 Validation: guide parity, relative-link review, and `git diff --check`.
+## Chapter 66 — Official ReframeICloudKit seam (2026-08-13)
+
+Goal: Align the published Chapter 66 and reading index with the released Fountain-Coach `ReframeICloudKit` Swift
+package: explicit PhotoKit placement, embedded iCloud Photos WebKit handoff, typed placement receipts, credential
+custody, package provenance, and the separation of generation from placement.
+Scope: `docs/66-reframe-image-sources-prompting-and-generation.md`, `docs/01-reading-index.md`, exact integration
+mirror, and reciprocal provenance.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@bb38aeed`.
+Validation: guide parity, relative-link review, and `git diff --check`.

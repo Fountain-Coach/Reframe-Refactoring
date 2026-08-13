@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 66 amendment — official ReframeICloudKit seam**, distinguishing native PhotoKit placement from the
+  embedded iCloud Photos WebKit handoff, typed placement receipts, generation/staging/placement states, package
+  provenance, and Apple credential custody.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@bb38aeed`.
+- Publication content/provenance commit: pending this commit.
+- Synchronized: 2026-08-13.
+
+## Current synchronized change
+
 - Change: **Chapter 66 — Reframe Image Sources, Prompting, and Generation**, defining the compound PhotoKit/iCloud →
   Fountain image directive → writer prompt → OpenAI generation/editing boundary, including privacy, provider
   custody, visual projection, and source-to-result lineage.

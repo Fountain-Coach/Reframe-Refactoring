@@ -1,9 +1,10 @@
 # Reframe Image Sources, Prompting, and Generation
 
 > Chapter summary: Reframe treats images as authored, referenced, and generated material alongside Fountain text.
-> Apple Photos/iCloud is accessed only through PhotoKit; Fountain remains portable text; and OpenAI image generation
-> is a governed Copilot capability whose prompt, source references, result, cost, and lineage are all visible and
-> recoverable.
+> `ReframeICloudKit` is the official FCIS-Kit boundary: it provides the native PhotoKit route and the persistent,
+> user-controlled iCloud Photos WebKit route without pretending that either is an undocumented cloud API. Fountain
+> remains portable text; OpenAI image generation is a governed Copilot capability whose prompt, source references,
+> result, cost, placement state, and lineage are visible and recoverable.
 
 ## Purpose
 
@@ -14,7 +15,7 @@ The correct design is a compound boundary:
 ```text
 Fountain text and image directives
         +
-PhotoKit references selected by the writer
+ReframeICloudKit references and placement receipts
         +
 writer-authored image prompt
         ↓
@@ -33,35 +34,73 @@ This chapter governs the compound capability. It does not replace Chapter 60's F
 1. **Reframe does not own the Photos archive.** Apple Photos/iCloud remains the canonical photo archive. Reframe
    stores references, selected working material, prompt text, generated results, and lineage. It does not duplicate
    the user's catalogue.
-2. **PhotoKit is the Apple boundary.** Production code must use public PhotoKit authorization, fetch, thumbnail, and
-   resource APIs. Reframe must not read or write `Photos.sqlite`, walk a `.photoslibrary` package, assume a library
-   path, use private iCloud endpoints, or repair/reconfigure Photos.
-3. **The probe precedes production integration.** A read-only native PhotoKit probe must establish authorization,
+2. **The Apple boundary has two explicitly different routes.** `ReframeICloudKit` is the only supported Reframe
+   integration boundary. Its `.photoKit` route uses Apple's native Photos framework for the System Photo Library;
+   iCloud synchronization remains a Photos system responsibility. Its `.webKit` route embeds the visible
+   `https://www.icloud.com/photos` session for a cloud library that is not exposed through the accepted local
+   PhotoKit catalogue. Neither route is an iCloud cloud API, and neither may read or write `Photos.sqlite`, walk a
+   `.photoslibrary` package, assume a library path, use private iCloud endpoints, or repair/reconfigure Photos.
+3. **The official kit owns route selection and typed truth.** Reframe supplies an explicit placement request and
+   receives an `ICloudPlacementReceipt`; it must not duplicate backend code or infer success from a file existing in
+   temporary storage. `.photoKit` may return `.placed` only after the native Photos change completes. `.webKit`
+   returns `.awaitingUser` while a staged file awaits the writer's visible upload action; it becomes `.placed` only
+   after the host observes supported completion evidence. A staged handoff is never reported as cloud placement.
+4. **The probe precedes production integration.** A read-only native PhotoKit probe must establish authorization,
    catalogue scale, metadata, thumbnail retrieval, resource retrieval, and—where an appropriate asset exists—
    network-enabled retrieval of a cloud-resident original. A wrong or stale catalogue blocks integration; it does
    not authorize a filesystem workaround.
-4. **The Fountain document remains text-first.** Images are represented by structured, portable directives or
+5. **The Fountain document remains text-first.** Images are represented by structured, portable directives or
    references. Image bytes do not enter the Fountain text document. The editor renders the directive as a visual
    projection while preserving the underlying text and metadata.
-5. **The writer's prompt remains primary.** The prompt the writer types is preserved verbatim. Reframe may add
+6. **The writer's prompt remains primary.** The prompt the writer types is preserved verbatim. Reframe may add
    explicit operational context—selected references, output medium, size, format, or safety-required preparation—
    but must distinguish writer text from generated or inferred instruction. It may not silently replace the prompt
    with an internal prompt.
-6. **Image generation is a Copilot capability.** The writer may ask the Copilot to create, edit, vary, compare, or
+7. **Image generation is a Copilot capability.** The writer may ask the Copilot to create, edit, vary, compare, or
    place an image. The Copilot mediates the turn, resolves the current selection and Fountain context, states what
    will be sent, and hands the operation to the existing provider executor. There is no second image command router.
-7. **PhotoKit and OpenAI are separated by Reframe.** PhotoKit materializes only the selected representation into
-   Reframe-owned temporary storage. Reframe then sends the minimum required image and prompt payload to the current
-   OpenAI image API. PhotoKit never communicates with OpenAI directly.
-8. **A generated image is not an edit of the source by default.** The original Photos asset remains unchanged. A
-   generated result is a new Reframe object and may be saved as a new Photos asset only through a later explicit
-   writer action.
-9. **Every result carries lineage.** Reframe records the prompt, source references, selected resource form, provider
-   operation, result identity, and relevant preparation facts. A result without source/prompt lineage is incomplete
-   and must not be presented as publishable evidence.
-10. **The visual projection is not the authority.** The left projection shows the selected source, prompt, progress,
-    and result; the right Copilot mediates and explains. FountainStore and the durable Fountain project remain the
-    behavioural authorities.
+8. **PhotoKit, WebKit, and OpenAI are separated by ReframeICloudKit and the host.** The kit materializes only the
+   selected representation into Reframe-owned temporary storage. Reframe then sends the minimum required image and
+   prompt payload to the current OpenAI image API. Neither Apple route communicates with OpenAI directly.
+9. **Placement is a separate lifecycle from generation.** An OpenAI result is first a Reframe-staged result. It may
+   be projected immediately and may be offered to the selected iCloud route, but it is not an iCloud asset until the
+   route's receipt says so. A writer can cancel or leave a result staged without losing the Fountain project.
+10. **A generated image is not an edit of the source by default.** The original Photos asset remains unchanged. A
+   generated result is a new Reframe object and may be placed as a new Photos asset only through an explicit request.
+11. **Every result carries lineage.** Reframe records the prompt, source references, selected resource form, provider
+   operation, placement route/state, result identity, and relevant preparation facts. A result without source/prompt
+   lineage is incomplete and must not be presented as publishable evidence.
+12. **The visual projection is not the authority.** The left projection shows the selected source, prompt, progress,
+   placement state, and result; the right Copilot mediates and explains. FountainStore and the durable Fountain
+   project remain the behavioural authorities.
+
+## The official ReframeICloudKit seam
+
+`ReframeICloudKit` is a separately versioned, public Fountain-Coach Swift package. Reframe consumes its released
+product through the committed SwiftPM graph; it must not copy the package into `ReframeCore`, reintroduce a local
+PhotoKit/WebKit implementation, or resolve an uncommitted cache. The package is intentionally independent of
+Reframe, FountainStore, SecretStore, OpenAI, and the remote Book Library.
+
+The host-facing contract is deliberately small:
+
+```text
+placement request(sourceFile, albumTitle, lineageID)
+  → explicit route: PhotoKit or WebKit
+  → typed state: requesting / staging / awaitingUser / placed / blocked / failed
+  → receipt with route, album, asset identity when known, and evidence
+```
+
+The kit's native PhotoKit backend may create a Photos asset and album through public PhotoKit change requests. That
+is the supported native placement path; it does not guarantee that a particular external `.photoslibrary` is
+accepted by macOS or that iCloud synchronization has completed. The WebKit backend is the compensating cloud route:
+it owns a persistent website-data session, stages the generated file, and exposes it to the visible iCloud Photos
+upload chooser. The host must observe the page's supported completion evidence before promoting `.awaitingUser` to
+`.placed`.
+
+The kit does not provide an Apple credential API. Apple Account sign-in, passkeys, two-factor authentication, cookies,
+and session state stay inside PhotoKit/TCC or the persistent WebKit data store. `SecretStore` may hold Reframe-owned
+provider or maintenance credentials only. There is no supported direct iCloud Photos cloud API that Reframe can use
+instead of these Apple surfaces, and Reframe must not invent one.
 
 ## The prompt contract
 
@@ -145,6 +184,39 @@ Full originals are never fetched merely because the writer browses. Network-enab
 an explicit operation requiring the selected asset. Progress and cancellation must be surfaced where PhotoKit
 supports them.
 
+## iCloud Photos WebKit boundary and credential custody
+
+The iCloud gallery is a website, not a Reframe API credential. Reframe may create a persistent `WKWebView` session
+whose origin is `https://www.icloud.com/photos`; the writer completes Apple Account sign-in, passkey, two-factor
+authentication, and any consent screens in that session. Reframe may report the web session's visible navigation
+state, but it never reads Apple passwords, cookies, session tokens, or page-private data into its own store.
+
+The session contract is deliberately narrow:
+
+```text
+Reframe → persistent WebKit session → Apple sign-in UI → iCloud Photos gallery
+```
+
+`SecretStore` is not part of that chain. It stores Reframe-owned OpenAI or maintenance credentials only. Preferences
+may expose the integration fact and actions such as “Open iCloud Photos” and “Clear iCloud web session”; they must not
+offer an Apple-password field or call the web session a connected API account.
+
+Generated images use one of two explicit placement lifecycles:
+
+```text
+OpenAI result → ReframeICloudKit(.photoKit) → native Photos change completes → .placed
+
+OpenAI result → ReframeICloudKit(.webKit) → visible iCloud Photos session
+             → writer chooses Library or album → writer chooses Upload → host observes completion → .placed
+```
+
+For the WebKit route, Reframe may make the staged file available to the visible upload chooser and explain the next
+action. It must not inject a file into an HTML input, automate an upload click, call undocumented iCloud endpoints, or
+claim that the image reached iCloud until the writer and the visible web page establish that fact. For the PhotoKit
+route, the native change receipt is the placement evidence; later iCloud synchronization is outside Reframe's control.
+In both routes, the staged file is temporary, lineage-bearing, and cleaned up according to the result's custody policy
+after the handoff completes or is cancelled.
+
 ## OpenAI image boundary
 
 Reframe's image capability may use the current OpenAI image-generation/editing API, including image inputs and
@@ -169,6 +241,10 @@ resolve selected PhotoKit assets
 distributable client embeds an uncontrolled long-lived privileged key. Provider credentials remain governed by
 Chapter 20 and the existing Reframe maintenance/SecretStore boundary. A cloud image call requires the same explicit
 writer authority as any other paid or cloud operation.
+
+The current official OpenAI Images API response is decoded into a Reframe-owned staged result. The API credential is
+read only at the governed provider call, from SecretStore, and is never passed to WebKit. The generated result is not
+an iCloud/Photos asset until the selected `ReframeICloudKit` route returns placement evidence.
 
 ## User-visible states
 
@@ -251,7 +327,7 @@ cleanup. Duplicate requests for the same asset and prompt must be coordinated ra
 
 ## Phased implementation and acceptance
 
-### Phase 1 — PhotoKit probe
+### Phase 1 — PhotoKit probe and package admission
 
 Build a native, read-only probe with the correct Photos usage description. Record authorization, catalogue counts,
 collections, representative metadata, thumbnail access, local-only retrieval, network-enabled retrieval, resource
@@ -259,18 +335,22 @@ inventory, progress, and repeated-launch stability. Do not create, move, repair,
 
 Phase 1 is a pass only when the visible catalogue is the expected one and selected resources can be retrieved through
 PhotoKit. If no cloud-only asset can be identified, record a conditional pass rather than claiming cloud retrieval
-proof.
+proof. Verify that the app resolves the released `ReframeICloudKit` revision from the committed SwiftPM graph and that
+no local replacement or stale transitive package supplies the image surface.
 
-### Phase 2 — Fountain image directives and Reframe adapter
+### Phase 2 — Fountain image directives and ReframeICloudKit host adapter
 
-Add versioned parser support for image references/prompts, implement the `PhotoLibraryBackend`, add bounded thumbnail
-and temporary-resource services, and persist references without copying the archive. Verify parser round-trip,
-unknown-directive preservation, AX projection, cancellation, relaunch, and cleanup.
+Add versioned parser support for image references/prompts, use the package's typed source and placement contracts, add
+bounded thumbnail and temporary-resource services, and persist references without copying the archive. Verify parser
+round-trip, unknown-directive preservation, AX projection, cancellation, relaunch, package provenance, and cleanup.
 
-### Phase 3 — one OpenAI image operation
+### Phase 3 — one OpenAI image operation and one placement route
 
 Prove one selected PhotoKit asset plus one writer prompt through preparation, current OpenAI generation/editing,
-result projection, Fountain reference, Store lineage, and cleanup. The original Photos asset must remain unchanged.
+result projection, Fountain reference, Store lineage, bounded staging, and cleanup. Then prove the native PhotoKit
+placement route with a typed `.placed` receipt, and separately prove the WebKit route's `.awaitingUser` boundary and
+writer-observed completion when the iCloud web session is used. The original Photos asset must remain unchanged. A
+generated response alone is never placement proof.
 
 ### Phase 4 — production breadth
 
@@ -283,13 +363,17 @@ The capability is accepted only when all of the following are observed and attri
 
 - PhotoKit authorization and catalogue state from the native probe;
 - selected asset identity and resource form from PhotoKit diagnostics;
+- released `ReframeICloudKit` package revision and route selected;
 - composed prompt and writer text through AX and the persisted prompt record;
 - provider lifecycle and result identity through FountainStore;
 - window-ID screenshot showing the source/prompt/result projection;
 - Fountain parse/serialize round-trip preserving image directives;
 - source Photos asset unchanged;
 - temporary material cleaned up;
+- WebKit iCloud session state and writer-confirmed handoff state distinguished;
+- PhotoKit `.placed` receipts distinguished from WebKit `.awaitingUser` and `.placed` receipts;
 - no `.photoslibrary` filesystem access, Photos database access, library creation, or automatic Photos export;
+- no Apple credential, cookie, or private iCloud endpoint access by Reframe;
 - clear failure attribution for authorization, cloud retrieval, preparation, provider, cancellation, and result
   handling.
 
