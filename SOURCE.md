@@ -7,7 +7,7 @@
   custody, visual projection, and source-to-result lineage.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@f044d3c4`.
-- Publication content commit: pending provenance commit.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@be743e4`.
 - Synchronized: 2026-08-13.
 
 ## Current synchronized change
