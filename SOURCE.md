@@ -6,8 +6,8 @@
   into Copilot with media-specific image, PDF, Fountain, and Markdown projections; retiring the left-side attachment
   projection while keeping reference custody distinct from source ingestion.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
-- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@57d927e5`.
-- Publication mirror commit: pending this synchronization commit; recorded in the next provenance amendment.
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@46407e56` (content `d8a60e23`).
+- Publication mirror commit: `Fountain-Coach/Reframe-Refactoring@5571dab`.
 - Synchronized: 2026-08-14.
 
 ## Current synchronized change
