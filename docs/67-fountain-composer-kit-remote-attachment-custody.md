@@ -104,6 +104,18 @@ The boundaries remain separate:
     custody state, error, retry/remove action, and terminal receipt through AX. A spinner or preview without semantic
     state is not acceptance evidence.
 
+12a. **Copilot owns attachment introspection.** An admitted attachment is projected inside Copilot as a readable,
+     self-aware representation of the current turn. It is not a left-pane attachment list, icon strip, or second
+     staging surface. Copilot states what she received, how it is classified, its custody state, and what she may do.
+
+12b. **Visual form follows media meaning.** Images appear as visual images or galleries; PDFs as readable page-shaped
+     projections; Fountain text as screenplay-page text; Markdown as rendered document-page text; unsupported types
+     as honest metadata/error projections. File icons alone are insufficient when readable projection is available.
+
+12c. **Self-awareness is not ingestion.** A visual projection proves that Copilot can identify and inspect the
+     admitted reference; it does not imply manuscript import, beat creation, publication, or provider use. Reference,
+     evidence, source candidate, and promoted source remain visibly distinct.
+
 13. **Evidence is bound across seams.** One attachment receipt binds the composer turn, cloud object, digest,
     policy/provenance decision, pipeline admission, and any later Fountain or publication effect. Reframe may project
     a human-readable summary, but cannot manufacture a success state from a partial event.
@@ -190,12 +202,15 @@ The chapter is implemented only when evidence proves:
 3. Remote admission is idempotent and returns a durable reference and receipt before pipeline use.
 4. Copilot receives structured attachment context and can distinguish image, file, source candidate, evidence, and
    unsupported intent without phrase-list authority.
-5. FountainStore contains the turn/reference/receipt/evidence aggregate but no attachment bytes or local path.
-6. Offline, unauthorized, rejected, duplicate, and interrupted flows are visible through AX and terminal receipts.
-7. A relaunch resolves an admitted attachment from the remote reference without requiring the original local file.
-8. Image-specific rights and provenance still pass Chapter 66's gates; generic files cannot bypass source admission.
-9. The portable core, local adapter, remote service, and fixtures use the same typed contract and migration tests.
-10. The exact package revisions, executable provenance, AX surface, and FountainStore proof are recorded for acceptance.
+5. Copilot renders each supported attachment class inside its conversation/projection surface as a readable visual
+   form with metadata, custody, interpretation, and allowed operation available through AX. No separate left-pane
+   attachment projection is presented.
+6. FountainStore contains the turn/reference/receipt/evidence aggregate but no attachment bytes or local path.
+7. Offline, unauthorized, rejected, duplicate, and interrupted flows are visible through AX and terminal receipts.
+8. A relaunch resolves an admitted attachment from the remote reference without requiring the original local file.
+9. Image-specific rights and provenance still pass Chapter 66's gates; generic files cannot bypass source admission.
+10. The portable core, local adapter, remote service, and fixtures use the same typed contract and migration tests.
+11. The exact package revisions, executable provenance, AX surface, and FountainStore proof are recorded for acceptance.
 
 ## Relationship to existing governance
 
@@ -204,6 +219,10 @@ The chapter is implemented only when evidence proves:
 - Chapter 64 protects the Fountain project text and separates working custody from publication.
 - Chapter 65 defines the Writing Coach's plain-language role; attachment infrastructure stays invisible plumbing.
 - Chapter 66 governs image-specific rights, provenance, and publication after generic composer admission.
+
+The former compact left-side attachment projection is retired. Copilot is the single writer-facing place for
+attachment self-awareness and introspection; the manuscript/beat surface remains reserved for actual reading and
+writing state.
 
 **Governing sentence:** `FountainComposerKit` makes the Copilot composer the one typed ingress into Reframe's cycle;
 remote Attachment Cloud custody is established before use, while Reframe retains only the minimum references and

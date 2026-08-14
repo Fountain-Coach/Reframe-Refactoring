@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 67 amendment — Copilot-native attachment visual introspection**, moving attachment self-awareness
+  into Copilot with media-specific image, PDF, Fountain, and Markdown projections; retiring the left-side attachment
+  projection while keeping reference custody distinct from source ingestion.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@57d927e5`.
+- Publication mirror commit: pending this synchronization commit; recorded in the next provenance amendment.
+- Synchronized: 2026-08-14.
+
+## Current synchronized change
+
 - Change: **Chapter 67 amendment — explicit composer upload ceiling**, defining the 8-attachment, 50 MiB-per-file,
   200 MiB-per-turn limit, complete-batch preflight, AX-visible rejection, and independent Attachment Cloud guard.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
