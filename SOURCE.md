@@ -2,6 +2,18 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 67 amendment — explicit composer upload ceiling**, defining the 8-attachment, 50 MiB-per-file,
+  200 MiB-per-turn limit, complete-batch preflight, AX-visible rejection, and independent Attachment Cloud guard.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@c90da666`.
+- FountainComposerKit contract/deployment: `Fountain-Coach/FountainComposerKit@4178190` (v0.3.5), deployed to
+  `library.fountain.coach` from the same revision.
+- Publication mirror commit: the publication commit containing this synchronization record; see `git log` for its
+  immutable hash.
+- Synchronized: 2026-08-14.
+
+## Current synchronized change
+
 - Change: **Chapter 67 — FountainComposerKit — Remote Attachment Custody**, defining the Copilot composer as the one
   typed ingress for text, images, and files; remote Attachment Cloud admission before pipeline use; minimal local
   references; structured Copilot context; and typed evidence across the cycle.

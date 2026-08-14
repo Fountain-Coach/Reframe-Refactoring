@@ -87,6 +87,12 @@ The boundaries remain separate:
    policy-blocked, and storage-failed states are distinct. The composer leaves the writer's text available for retry,
    but does not claim that the attachment entered the cycle.
 
+9a. **The intake ceiling is explicit and generous.** One composer turn accepts at most 8 attachments, each up to
+    50 MiB, with a 200 MiB total batch ceiling. Reframe validates the complete selected batch before making the first
+    admission call, so a rejected batch cannot partially overfill the turn. The Attachment Cloud independently
+    enforces the 50 MiB per-object ceiling and its transport allowance. These are intake limits, not model-context
+    limits, and they must be exposed as a clear AX-visible terminal explanation when exceeded.
+
 10. **No hidden lane election.** Attachment transport may use an authorized service lane, but composer custody does
     not elect a model provider or grant paid reasoning. Lane and consent rules remain those of Chapters 20 and 51.
 

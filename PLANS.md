@@ -622,3 +622,13 @@ mirror, and reciprocal provenance.
 Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
 Integration commit: `Fountain-Coach/midi2-gpu-fabric@bb38aeed`.
 Validation: guide parity, relative-link review, and `git diff --check`.
+## Chapter 67 amendment — Composer intake ceiling (2026-08-14)
+
+Goal: publish the explicit, generous upload ceiling required by the composer custody contract: 8 attachments per
+turn, 50 MiB per attachment, and 200 MiB total per turn, with full-batch preflight, AX-visible rejection, and
+independent remote enforcement.
+Scope: `docs/67-fountain-composer-kit-remote-attachment-custody.md`, exact integration mirror, and reciprocal
+provenance; implementation is in `FountainComposerKit@4178190` and Reframe `midi2-gpu-fabric@c90da666`.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Validation: FountainComposerKit tests, Reframe focused attachment tests, dependency coherence, deprecated-surface
+check, remote deployment of the matching service revision, guide parity, and `git diff --check`.
