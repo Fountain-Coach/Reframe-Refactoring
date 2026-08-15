@@ -1,6 +1,6 @@
 # Copilot Capability Governance — From Transport Contract to Trustworthy Action
 
-> Chapter summary: As of 2026-08-15, Reframe has a checked v2 application capability boundary and the governing contract for one grounded mediation decision, paid-first lane selection, and typed handoff. The contract already exists; runtime adoption is incomplete. A mediation service exists, but workflow selection, reference resolution, and lane resolution still retain decision authority after mediation in some paths. Reframe also does not yet have full capability closure: 34 of the 43 registry identities remain explicitly unavailable because they lack a unified adapter and proof-gated acceptance. This chapter records that distinction honestly and defines the path to an empowered Copilot: teach from the checked registry, act through existing application boundaries, and claim only what FountainStore, telemetry, and AX can prove.
+> Chapter summary: As of 2026-08-15, Reframe has a checked v2 application capability boundary and the governing contract for one grounded mediation decision, paid-first lane selection, and typed handoff. The contract already exists; runtime adoption is incomplete. A mediation service exists, but workflow selection, reference resolution, and lane resolution still retain decision authority after mediation in some paths. The current registry contains 55 identities: 24 executable and 31 explicitly unavailable. This chapter records that distinction honestly and defines the path to an empowered Copilot: teach from the checked registry, act through existing application boundaries, and claim only what FountainStore, telemetry, and AX can prove.
 
 ## The decision
 
@@ -30,7 +30,7 @@ complete; capability closure is outstanding.
 | MIDI backplane IDL | Defines topics, payloads, capability masks, QoS, budgets, acknowledgements, and telemetry. | Sound and authoritative for transport. |
 | `schema/facts.json` | Generated from the IDL. | Sound when regenerated with the contract. |
 | Reasoning manifest | Generated from IDL, facts, roles, app guidance, overlay, and capability declarations. | Useful orientation; not runtime truth. |
-| Modernization capability file | `schema/modernization-studio-capabilities.json` describes user capabilities, IDL topics, stages, owners, gates, writes, and failure modes. | Authoritative v2 application boundary: 43 identities, 9 executable, 34 explicitly unavailable. |
+| Modernization capability file | `schema/modernization-studio-capabilities.json` describes user capabilities, IDL topics, stages, owners, gates, writes, and failure modes. | Authoritative v2 application boundary. The generated audit currently reports 55 identities, 24 executable, and 31 explicitly unavailable. |
 | Copilot mediation | A typed model decision passes through a mediation service before planning/execution. | The contract is governed; runtime adoption is incomplete because later workflow/lane stages can still re-decide or discard the mediated route. |
 | Writer-facing verbs | Generated and checked for the governed capabilities. | The exposed subset is registry-owned; unavailable rows must not be taught. |
 | Runtime execution | Several operations reuse application-level handlers and FountainStore. | Real for selected actions; parity is incomplete. |
@@ -73,26 +73,23 @@ provider call alone does not establish semantic-router completion.
 
 ## The executable boundary today
 
-The available path is the library → Prep → guide → Storify-source workflow:
+The available boundary is the generated registry, not a prose workflow. It currently includes maintenance and command
+discovery, library/project operations, preparation and grounding, pipeline status, Storify source/run controls,
+citations, and world/reference actions. The complete list and status are generated in `docs/copilot-capability-audit.md`.
+The audit currently reports 24 executable identities and 31 unavailable identities. An executable identity is not a
+live-accepted or released identity: each must still acquire its own adapter, policy, focused tests, persisted proof,
+telemetry, AX result, and required live matrix.
 
-- open the library;
-- switch the visible Prep frame;
-- confirm Grounding;
-- generate and review a manuscript guide (working lane, with paid-lane consent);
-- adopt or publish a guide (always confirmed); and
-- start or stop source ingestion into Storify beats.
-
-All nine available capabilities accept natural-language mediation. Storify
-source start and stop additionally have generated slash aliases and visible
-button identifiers. The remaining 34 identities are unavailable to Copilot,
-even where related application UI or internal symbols exist, until a unified
-adapter and proof-gated focused test are registered.
+The retired Manuscript Guide offer is not a current Copilot next step. After source import or preparation, writer-facing
+offers use the current structural actions: confirm Grounding Inputs, map the manuscript into beats with Storify, read a
+chapter, or make one focused draft change. Legacy guide artifacts may remain for migration and storage compatibility,
+but they are not a current teaching surface.
 
 An unavailable capability must be refused explicitly, remain absent from
 teaching surfaces, produce no false started/completed message, and perform no
-unverified mutation. Source import is specifically blocked until the
-post-file-picker replacement is observed in persistent state; Storify draft
-start is blocked until a proof-gated draft adapter exists.
+unverified mutation. Source import remains unavailable in the registry until its adapter and proof-gated acceptance are
+recorded, even though the current isolated DraCor drive has demonstrated an execution path. Storify draft start remains
+blocked until a proof-gated draft adapter exists.
 
 ## The source-of-truth chain
 

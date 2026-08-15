@@ -424,6 +424,13 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@d047292b`
 - Synchronized: 2026-08-12
 
+### 13.
+
+- Change: Chapter 37 capability census and paid-first publication reconciliation
+- Direction: integration → publication (`midi2-gpu-fabric` runtime copy → `docs/37-copilot-capability-governance.md`)
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@ef756360d5493872680c82724ecafc6bd5098df4`
+- Status: synchronized working tree; counterpart commits are recorded after coordinated commit/push
+
 ### 11.
 
 - Change: Chapter 62 amendment, `FountainMaintenanceKit — Portable Swift Maintenance Contract` (Chapter 63), and

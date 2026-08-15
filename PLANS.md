@@ -648,3 +648,11 @@ Direction: integration → publication; exact transfer through `Scripts/sync-int
 Non-goals: semantic-router implementation, provider acceptance, or a live-acceptance claim.
 Validation: sync check and `git diff --check` in both repositories; implementation validation remains in the
 integration repository's active phase.
+
+## Capability census and paid-first publication reconciliation (2026-08-15)
+
+Goal: synchronize Chapter 37 with the generated 55-identity runtime boundary and remove the stale guide-workflow
+census while preserving the distinction between executable, live-accepted, and released capability.
+Direction: integration → publication; exact chapter transfer, with reciprocal provenance recorded after commits.
+Integration content: `Fountain-Coach/midi2-gpu-fabric@ef756360d5493872680c82724ecafc6bd5098df4`.
+Validation: chapter parity, integration capability governance (`55 identities; 24 available`), and `git diff --check`.
