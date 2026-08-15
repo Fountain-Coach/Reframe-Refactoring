@@ -1,10 +1,12 @@
-# Reliable Copilot, and the Writer's Key — Quality-First Lane Selection
+# Paid-First Copilot, and the Writer's Key — Quality-First Lane Selection
 
-> Chapter summary: Copilot's conversational quality is a credibility requirement. Copilot silently chooses the
-> strongest authorized route for the current work. A reliable paid lane serves open-ended dialogue and Coaching Mode;
+> Chapter summary: Copilot's conversational quality is a credibility requirement. Copilot silently chooses the best
+> eligible route for the current work from live capability, credential, budget, and health facts. A reliable paid lane
+> serves open-ended dialogue and Coaching Mode by default when available;
 > on-device execution handles bounded, private, deterministic, and offline work wherever it preserves the experience.
 > Delegation is internal: the writer sees one continuous Copilot, not provider handoffs or a weaker-mode offer. The
-> writer still holds the key: nothing spends her account without explicit grant.
+> writer still controls the route: paid is preferred when available, and an explicit local-only instruction keeps the
+> current work on-device.
 
 ## Purpose — the failure this exists to end
 
@@ -29,25 +31,25 @@ the free local lane it should have relied on, and misreported all of it. This ch
 ## The principle — credibility is the floor; the writer's key governs spend
 
 Reframe must feel as capable and fluent as the conversational standard the writer already knows. A reliable paid lane
-is therefore the default for open-ended conversation once the writer has authorized it. On-device execution is a
-first-class optimization—private, fast, inexpensive, and useful for bounded work—selected internally when it
-preserves the required experience. The writer's key still governs spending: quality preference never becomes
-permission to charge. If no paid authorization exists, Reframe remains local until the writer authorizes another
-route; this is a consent state, not a failure offer.
+is therefore the default for open-ended conversation and economically meaningful work whenever it is available.
+On-device execution is a first-class optimization—private, fast, inexpensive, and useful for bounded work—selected
+internally when it preserves the required experience and yields an economic benefit. The writer may explicitly say
+"stay on device" or otherwise revoke paid use; that instruction is remembered as the local-only override. Paid
+unavailability is a typed boundary, not a reason to discard the request.
 
 ## The decision (enforceable rules)
 
-1. **Select the strongest authorized route.** Open-ended conversation, situation-aware coaching, and turns whose
-   quality depends on sustained context use the reliable paid lane when it is authorized. Bounded catalog lookup,
+1. **Select the best eligible route for the task.** Open-ended conversation, situation-aware coaching, and turns whose
+   quality depends on sustained context use the best available paid model when available. Bounded catalog lookup,
    deterministic controls, private preparation, and offline work may run on-device. The route is an internal quality
    decision; the writer is never asked to choose between providers or offered a weaker mode as a product experience.
 
-2. **The writer holds the key.** No operation spends the writer's cloud account without the writer's **explicit
-   grant**. The grant is **given and revoked in dialogue** — "stay on device for this," "you may spend now,"
-   "I'll tell you when you're allowed to spend my money." It may be **scoped** (this one work) or **standing**
-   (until revoked). The default is **no spend until granted**; once a standing or work-scoped grant exists, the
-   quality-first conversational route may use the paid lane by default. This gate sits in front of **every** cloud
-   call; there is no path that reaches a paid lane around it.
+2. **Paid is the default when available.** The best eligible paid model serves the writer-facing request by default
+   when its capability, credential, account, transport, context budget, and health are available. The writer may **revoke** paid use in dialogue—
+   "stay on device for this," "keep this local," or an equivalent meaning—and that instruction is remembered as the
+   local-only override. There is no requirement that the writer learn a spend-specific phrase before Reframe can
+   understand a direct request to use the paid lane. Paid unavailability remains a typed refusal and the app may use
+   a local route only when it can preserve the requested outcome.
 
 3. **The quality class is reasoned, never keyword-matched.** The mediator distinguishes open conversation from
    bounded operations using grounded intent and live state. It must not use a static phrase table or a provider
@@ -56,7 +58,7 @@ route; this is a consent state, not a failure offer.
 
 4. **Internal delegation preserves continuity.** A local mediator may classify a turn, but a local capacity failure
    must preserve the original turn, current situation, and conversation context while routing internally to the
-   strongest authorized conversational lane. A provider retry or delegation is not a new writer-facing turn and must
+   reliable paid lane when it is available. A provider retry or delegation is not a new writer-facing turn and must
    not execute an unrelated operation.
 
 5. **The app states cost only where cost becomes relevant.** The opening conversation does not teach provider
@@ -122,13 +124,13 @@ permits.
 
 - **This is not "local is bad."** Local execution is an important efficiency, privacy, and offline path; the point
   is that it is selected internally only when it preserves the required experience.
-- **The writer's key is not a modal nag.** A standing grant is honored until revoked; the Copilot does not re-ask
-  what it has already been told. Rule 2 is a gate, not a interruption pattern.
+- **The writer's local-only instruction is not a modal nag.** A local-only instruction is honored until revised; the
+  Copilot does not re-ask what it has already been told. Rule 2 is a policy boundary, not an interruption pattern.
 - **Delegation is not a writer-facing mode.** Bounded local work stays local without ceremony. Conversational work
   uses the reliable paid lane by default after consent, while internal local sub-work may reduce cost without changing
   the visible Copilot experience.
-- **Quality-first is not a preference toggle.** It is the internal routing rule: use the strongest authorized route,
-  then optimize within it without making the writer defend a provider choice.
+- **Quality-first is not a preference toggle.** It is the internal routing rule: use the reliable paid route when
+  available, then optimize bounded sub-work locally without making the writer defend a provider choice.
 
 ## Relationship to other chapters
 
@@ -151,8 +153,8 @@ The doctrine is met when:
 1. **A manuscript can be imported and composed on-device** when no paid route is authorized, while open-ended
    Coaching Mode uses the strongest authorized conversational lane by default; neither path may produce a dead-end
    capacity error or silently change the writer's request.
-2. **No cloud call occurs without a writer grant** that the writer set in dialogue; with no grant, the app runs
-   local or fails visibly, and never silently spends.
+2. **A paid call uses the elected eligible paid route** when paid policy is available; with an explicit local-only
+   instruction, the app runs local or fails visibly. A missing or unhealthy paid route is reported plainly.
 3. **The writer can say "stay on device"** (or grant/revoke cloud) in conversation and the Copilot honors it,
    recognized by reasoning over meaning, not a keyword.
 4. **Lane selection is quality-aware and grounded**, with no `benefitsFromCloud`-style table anywhere in the routing;

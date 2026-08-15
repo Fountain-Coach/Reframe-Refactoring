@@ -8,8 +8,9 @@
 > fit are the same act, which makes the overflow above unrepresentable rather than merely fixed. Resolution is a
 > pipeline of ordered gates — configured, permitted, credentialed, constructible, healthy — each of which may only
 > NARROW, and each refusal is typed and carries its reason. A credential has four states, not two: absent,
-> present-but-unverified, authorised, refused; **the writer's GRANT is what initialises a cloud lane**, presence
-> never elects one, and naming a lane must never read a secret. Every surface prints the one recorded decision
+> present-but-unverified, authorised, refused; **paid availability is the default election for writer-facing work**,
+> while an explicit local-only instruction remains authoritative; presence never elects a lane, and naming a lane
+> must never read a secret. Every surface prints the one recorded decision
 > instead of re-deriving it. The resolver is pure — configuration, consent, credential state, health, clock in; a
 > resolution out — so its small finite state space is tested exhaustively rather than by example, and it lives in
 > a kit of its own.
@@ -70,9 +71,9 @@ parties who cannot see each other's answers.**
    `authorised` (the data was read), `refused` (the writer or the Keychain said no). Any code that treats this as
    a boolean is wrong by construction.
 
-6. **The GRANT initialises the cloud lane.** Before the writer's grant a cloud lane is not unhealthy — it does not
-   exist, no client is constructed, and every surface says "on device" because that is the truth. `presentUnverified`
-   may light an affordance ("you have a key — use it?"); it may never elect a lane.
+6. **Paid availability elects the paid lane by default.** For writer-facing work, a configured, credentialed,
+   constructible and healthy paid lane is selected without requiring exact consent wording. An explicit local-only
+   instruction is the only route override. `presentUnverified` may not elect a lane; it remains an unavailable gate.
 
 7. **Naming a lane must not read a secret.** Any surface that states which lane will answer resolves the NAME
    through a path that unlocks nothing. A sentence is not a spend, and it must not cost the writer a password.
@@ -110,7 +111,7 @@ A change lands under this chapter only with all five:
 2. **Budget belongs to provider.** A property test over every reachable decision:
    `decision.budget.contextWindow == decision.provider.contextWindow`. This one assertion fails today's defect.
 3. **No gate widens.** A property test: the candidate set after each stage is a subset of the set before it.
-4. **No prompt without a grant.** With consent `localOnly`, resolution never reaches `authorised` — proven with a
+4. **No prompt after a local-only instruction.** With consent `localOnly`, resolution never reaches `authorised` — proven with a
    fake credential store that RECORDS whether a data read was attempted, not merely what it returned.
 5. **A regression per incident.** Presence falling silently to on-device; the window budgeted for one lane and
    executed on another; the timeout written as a size ceiling; the greeting that read the key to name a lane. Each
