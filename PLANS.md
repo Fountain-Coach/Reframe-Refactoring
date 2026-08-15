@@ -632,3 +632,9 @@ provenance; implementation is in `FountainComposerKit@4178190` and Reframe `midi
 Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
 Validation: FountainComposerKit tests, Reframe focused attachment tests, dependency coherence, deprecated-surface
 check, remote deployment of the matching service revision, guide parity, and `git diff --check`.
+## Paid-first, task-based model selection (2026-08-15)
+
+Goal: publish the integration's corrected Chapter 20/51 policy and reading-index entry.
+Direction: integration → publication.
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@73bd20c7`.
+Validation: sync check and `git diff --check` passed.

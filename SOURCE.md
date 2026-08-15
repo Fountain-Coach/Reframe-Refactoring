@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Paid-first, task-based model selection**, amending Chapters 20 and 51 and the reading index so Reframe
+  selects the best eligible model from live facts, keeps bounded local delegation internal, and honors explicit
+  local-only instructions without requiring exact wording.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@73bd20c7`.
+- Publication content commit: this synchronization commit; see `git log` for its immutable hash.
+- Synchronized: 2026-08-15.
+
+## Current synchronized change
+
 - Change: **Chapter 67 amendment — Copilot-native attachment visual introspection**, moving attachment self-awareness
   into Copilot with media-specific image, PDF, Fountain, and Markdown projections; retiring the left-side attachment
   projection while keeping reference custody distinct from source ingestion.
