@@ -656,3 +656,19 @@ census while preserving the distinction between executable, live-accepted, and r
 Direction: integration → publication; exact chapter transfer, with reciprocal provenance recorded after commits.
 Integration content: `Fountain-Coach/midi2-gpu-fabric@ef756360d5493872680c82724ecafc6bd5098df4`.
 Validation: chapter parity, integration capability governance (`55 identities; 24 available`), and `git diff --check`.
+
+## Chapter 68 — Governed Reframe E2E scenarios and Book publication (2026-08-15)
+
+Goal: make the versioned E2E scenario the first artifact for every command proposed for The Book of Reframe, so live
+drives are reusable, prerequisite-complete, AX/Store/window-ID bound, and publication-safe.
+
+Scope: new Chapter 68, reading-index entry, exact integration mirror, and reciprocal provenance. The doctrine covers
+scenario identity and coverage, source/setup prerequisites, state-based waits, paid-lane consent, evidence binding,
+result statuses, and the Book projection.
+
+Non-goals: no new runtime capability, provider route, release allow-list entry, private Store/manuscript publication,
+or claim that the `/storify! source auto` → `/world` scenario is already live-accepted.
+
+Direction: publication → integration through `Scripts/sync-integration-copy --push` after chapter review.
+
+Validation: guide parity, relative-link review, `git diff --check`, and the integration governance validator.

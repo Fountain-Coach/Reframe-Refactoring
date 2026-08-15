@@ -1,5 +1,15 @@
 # Source and Synchronization Contract
 
+## Current planned change
+
+- Change: **Chapter 68 — Governed Reframe E2E scenarios and Book publication**, making a versioned, prerequisite-
+  complete scenario the first artifact for every Book command and binding AX, window-ID, FountainStore, paid-lane,
+  and provenance evidence to one run.
+- Direction: publication → integration (`Scripts/sync-integration-copy --push`).
+- Integration content/provenance commit: to be recorded after synchronization.
+- Publication content/provenance commit: to be recorded after review and commit.
+- Synchronized: pending.
+
 ## Current synchronized change
 
 - Change: **Semantic turn-router governance status correction**, making explicit that the one-reasoning, paid-first,
