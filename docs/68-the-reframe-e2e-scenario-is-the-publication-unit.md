@@ -23,6 +23,21 @@ For every command proposed for the Book, maintenance begins by resolving its sce
 An absent or imprecise scenario is a publication blocker. The remedy is to make the journey precise, not to weaken the
 evidence requirement.
 
+## The scenario is the first implementation artifact
+
+The complete scenario contract is written before implementation begins. It is not a post-hoc test script, a prompt
+to be tried against the application, or a record reconstructed from a successful drive. The contract declares the
+ordered setup and dependent steps, the executor for each prerequisite, the AX and FountainStore terminal predicates
+that permit the next step, the paid-lane decision where applicable, the failure and unavailable outcomes, and the
+evidence binding tuple. A scenario whose setup is represented only by prose is not executable and remains `draft` or
+`blocked`.
+
+The checked-in serialization may be YAML or a lossless machine-readable projection of the YAML-shaped contract, but it
+must pass the repository's scenario validator before source implementation or Live Drive. The validator and internal
+scenario capability are the enforcement seam: they reject missing executors, missing terminal predicates, unbound
+Stores, and dependent steps that have no established predecessor. The external Live Drive remains a separate witness;
+it does not supply missing scenario semantics by operator improvisation.
+
 ## What a scenario means
 
 A scenario is a versioned acceptance specification for one writer-facing outcome. It names:
