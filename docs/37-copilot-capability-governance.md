@@ -1,6 +1,6 @@
 # Copilot Capability Governance — From Transport Contract to Trustworthy Action
 
-> Chapter summary: As of 2026-08-01, Reframe has a checked v2 application capability boundary, a real intent-mediation path, and nine executable Copilot capabilities. It does not yet have full capability closure: 34 of the 43 registry identities remain explicitly unavailable because they lack a unified adapter and proof-gated acceptance. This chapter records that moment of truth honestly and defines the path to an empowered Copilot: teach from the checked registry, act through existing application boundaries, and claim only what FountainStore, telemetry, and AX can prove.
+> Chapter summary: As of 2026-08-15, Reframe has a checked v2 application capability boundary and the governing contract for one grounded mediation decision, paid-first lane selection, and typed handoff. The contract already exists; runtime adoption is incomplete. A mediation service exists, but workflow selection, reference resolution, and lane resolution still retain decision authority after mediation in some paths. Reframe also does not yet have full capability closure: 34 of the 43 registry identities remain explicitly unavailable because they lack a unified adapter and proof-gated acceptance. This chapter records that distinction honestly and defines the path to an empowered Copilot: teach from the checked registry, act through existing application boundaries, and claim only what FountainStore, telemetry, and AX can prove.
 
 ## The decision
 
@@ -31,7 +31,7 @@ complete; capability closure is outstanding.
 | `schema/facts.json` | Generated from the IDL. | Sound when regenerated with the contract. |
 | Reasoning manifest | Generated from IDL, facts, roles, app guidance, overlay, and capability declarations. | Useful orientation; not runtime truth. |
 | Modernization capability file | `schema/modernization-studio-capabilities.json` describes user capabilities, IDL topics, stages, owners, gates, writes, and failure modes. | Authoritative v2 application boundary: 43 identities, 9 executable, 34 explicitly unavailable. |
-| Copilot mediation | A typed model decision passes through a mediation service before planning/execution. | Real boundary; still vulnerable when the model chooses an answer route against resumable live work. |
+| Copilot mediation | A typed model decision passes through a mediation service before planning/execution. | The contract is governed; runtime adoption is incomplete because later workflow/lane stages can still re-decide or discard the mediated route. |
 | Writer-facing verbs | Generated and checked for the governed capabilities. | The exposed subset is registry-owned; unavailable rows must not be taught. |
 | Runtime execution | Several operations reuse application-level handlers and FountainStore. | Real for selected actions; parity is incomplete. |
 | Contextual availability | Situation and open-manuscript checks exist; route-specific prompt exposure also changes with model capacity. | Partially governed; capability should not disappear because a prompt is short. |
@@ -40,6 +40,36 @@ complete; capability closure is outstanding.
 The practical conclusion is encouraging but firm: Reframe now has the join and an
 honest boundary. It does not yet have adapters and evidence for the whole
 application surface.
+
+## Contract already pinned down; implementation not yet singular
+
+The semantic-router contract is not a new design introduced by the implementation
+phase. It is already distributed across the governing chapters:
+
+- Chapter 23 requires one complete reasoning over the full intent taxonomy, with
+  deterministic dispatch from that decision and no competing classifier.
+- Chapter 24 defines the decision's uncertainty-map product and distinguishes
+  settled, ambiguity, thin, and failure states.
+- Chapter 20 requires the mediator to recognize the quality class, prefer the best
+  eligible paid route when available, preserve the original turn during internal
+  delegation, and expose only an actual service boundary.
+- Chapter 51 requires lane resolution once into a value that carries its client
+  and budget; no later surface may re-resolve it.
+- Chapter 58 requires one open-turn handoff to a typed capability while existing
+  executors retain mutation, persistence, and terminal-proof authority.
+
+The current implementation contains pieces of this contract, but they are not yet
+one runtime authority. `ManuscriptTurnIntentMediationService` performs a typed
+mediation pass; downstream workflow selection, reference resolution, and lane
+resolution can still make consequential choices or lose the original request.
+Those are implementation seams, not additional governance authorities. The
+required migration is therefore to make the mediated decision the sole semantic
+route, then let deterministic planning and execution consume it without
+reinterpreting writer meaning.
+
+Until that migration is complete, the correct status is **contract governed,
+implementation partial**. A passing mediation decode, a selected workflow, or a
+provider call alone does not establish semantic-router completion.
 
 ## The executable boundary today
 

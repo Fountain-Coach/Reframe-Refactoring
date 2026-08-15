@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Semantic turn-router governance status correction**, making explicit that the one-reasoning, paid-first,
+  typed-handoff contract already exists in Chapters 20, 23, 24, 37, 51, and 58, while runtime adoption remains
+  partial because downstream workflow, reference, and lane stages can still re-decide or discard a mediated turn.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@9aaeb347`.
+- Publication content/provenance commit: this synchronization commit; see `git log` for its immutable hash.
+- Synchronized: 2026-08-15.
+
+## Current synchronized change
+
 - Change: **Paid-first, task-based model selection**, amending Chapters 20 and 51 and the reading index so Reframe
   selects the best eligible model from live facts, keeps bounded local delegation internal, and honors explicit
   local-only instructions without requiring exact wording.

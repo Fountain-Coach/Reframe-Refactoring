@@ -638,3 +638,13 @@ Goal: publish the integration's corrected Chapter 20/51 policy and reading-index
 Direction: integration → publication.
 Integration commit: `Fountain-Coach/midi2-gpu-fabric@73bd20c7`.
 Validation: sync check and `git diff --check` passed.
+## Semantic turn-router governance status correction (2026-08-15)
+
+Goal: publish the integration's correction that the semantic-router contract already exists in governance while
+runtime adoption is still partial; do not describe the implementation as complete.
+
+Scope: `docs/37-copilot-capability-governance.md`, exact integration mirror, and reciprocal provenance.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Non-goals: semantic-router implementation, provider acceptance, or a live-acceptance claim.
+Validation: sync check and `git diff --check` in both repositories; implementation validation remains in the
+integration repository's active phase.
