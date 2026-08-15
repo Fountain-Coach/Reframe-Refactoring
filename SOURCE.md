@@ -6,9 +6,9 @@
   complete scenario the first artifact for every Book command and binding AX, window-ID, FountainStore, paid-lane,
   and provenance evidence to one run.
 - Direction: publication → integration (`Scripts/sync-integration-copy --push`).
-- Integration content/provenance commit: to be recorded after synchronization.
-- Publication content/provenance commit: to be recorded after review and commit.
-- Synchronized: pending.
+- Integration content/provenance commit: `Fountain-Coach/midi2-gpu-fabric@706d022a`.
+- Publication content/provenance commit: `Fountain-Coach/Reframe-Refactoring@acff230`.
+- Synchronized: 2026-08-15.
 
 ## Current synchronized change
 

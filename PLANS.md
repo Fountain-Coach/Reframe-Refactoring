@@ -672,3 +672,5 @@ or claim that the `/storify! source auto` → `/world` scenario is already live-
 Direction: publication → integration through `Scripts/sync-integration-copy --push` after chapter review.
 
 Validation: guide parity, relative-link review, `git diff --check`, and the integration governance validator.
+
+Provenance: publication `Reframe-Refactoring@acff230`; integration `midi2-gpu-fabric@706d022a`.
