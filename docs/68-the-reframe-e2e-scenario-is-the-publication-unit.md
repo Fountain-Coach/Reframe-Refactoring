@@ -102,6 +102,36 @@ Every assertion is classified:
 Only observed terminal evidence can promote a scenario to `live-accepted`. A screenshot without AX and Store proof is
 visual context, not behavioral acceptance. Assistant prose without a persisted artifact is not acceptance.
 
+## Reframe owns the scenario semantics; the witness stays independent
+
+The scenario system is also an internal maintainer capability of Reframe. Its registry and typed contract are not
+writer-facing commands. They let Reframe inspect a scenario, validate its prerequisites, execute the application's
+typed behavioral path, persist a run receipt, and report the result without re-deriving the journey from prompt prose.
+
+The internal capability is deliberately not a self-approval loop. Reframe may prove behavioral facts from its own
+runtime and FountainStore, but an independent Live Drive witness must still prove the accessibility tree, the
+CoreGraphics window-ID capture, and rendered visual fidelity. The two authorities meet in one bound evidence bundle:
+
+```text
+Reframe internal capability:
+  registry → prerequisites → typed execution → Store receipt
+
+Independent witness:
+  AX interaction/state → CoreGraphics window ID → VRT capture
+
+Publication:
+  only the intersection of both evidence sets
+```
+
+The internal capability has a maintainer-only audience, uses a fresh or explicitly named managed Store, cannot target
+the writer's current Store by default, and cannot mark itself `live-accepted`. Its machine-readable contract records
+the external-witness requirement and the prohibition on circular proof. The external runner is therefore reduced to an
+independent witness adapter over a reusable internal scenario definition, not a second source of scenario meaning.
+
+This is the governed development loop: author once, validate once, execute repeatedly, retain receipts, and publish
+only after independent surface evidence agrees with internal behavioral proof. It simplifies repetition and drift
+control without weakening the distinction between runtime truth and visual acceptance.
+
 ## Scenario statuses
 
 The scenario manifest uses these statuses:
