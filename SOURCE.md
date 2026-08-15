@@ -428,8 +428,9 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 
 - Change: Chapter 37 capability census and paid-first publication reconciliation
 - Direction: integration → publication (`midi2-gpu-fabric` runtime copy → `docs/37-copilot-capability-governance.md`)
-- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@ef756360d5493872680c82724ecafc6bd5098df4`
-- Status: synchronized working tree; counterpart commits are recorded after coordinated commit/push
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@767f75ec0d969313586c55a75b6b9c10a054af9d`
+- Publication projection commit: `Fountain-Coach/book-of-reframe@6c78d8d`
+- Status: synchronized and pushed to the three main branches
 
 ### 11.
 
