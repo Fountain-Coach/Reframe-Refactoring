@@ -38,6 +38,16 @@ scenario capability are the enforcement seam: they reject missing executors, mis
 Stores, and dependent steps that have no established predecessor. The external Live Drive remains a separate witness;
 it does not supply missing scenario semantics by operator improvisation.
 
+### Launch admission is part of the contract
+
+An executable scenario MUST also declare a machine-readable `launch` object with exactly the admission values that the
+external launcher must inherit: `storeIntent`, `corpus`, and `scene`. `launch.corpus` MUST equal the prepared corpus
+(the single `managed-store-seed` corpus when one exists, otherwise `store.corpus`). Preparation emits these values in
+its proof; the scenario runner verifies the same values in the target PID's inherited environment before it performs
+the first AX action. A prepared fresh Store may therefore be admitted as `explicit`, but that transition is declared
+in YAML rather than chosen interactively. Missing, conflicting, or manually substituted launch values fail the
+scenario before execution; a validator pass cannot be claimed if this binding is absent.
+
 ## What a scenario means
 
 A scenario is a versioned acceptance specification for one writer-facing outcome. It names:
