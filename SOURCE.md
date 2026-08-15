@@ -2,6 +2,16 @@
 
 ## Current planned change
 
+- Change: **Chapter 46 amendment — semantic carry-forward for iterative readings**, requiring a second Storify run to
+  remember persisted findings and evidence under the same confirmed lens, with explicit lineage and no manufactured
+  divergence.
+- Direction: publication → integration (`Scripts/sync-integration-copy --push`).
+- Publication content commit: pending.
+- Integration content/provenance commit: pending synchronization.
+- Synchronized: pending.
+
+## Current planned change
+
 - Change: **Chapter 68 — Governed Reframe E2E scenarios and Book publication**, making a versioned, prerequisite-
   complete scenario the first artifact for every Book command and binding AX, window-ID, FountainStore, paid-lane,
   and provenance evidence to one run.

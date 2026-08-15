@@ -674,3 +674,21 @@ Direction: publication → integration through `Scripts/sync-integration-copy --
 Validation: guide parity, relative-link review, `git diff --check`, and the integration governance validator.
 
 Provenance: publication `Reframe-Refactoring@acff230`; integration `midi2-gpu-fabric@706d022a`.
+## Chapter 46 amendment — semantic carry-forward for iterative readings (2026-08-15)
+
+Goal: define the missing contract between a persisted Storify reading and a human-like rereading: the second run
+remembers findings, unresolved questions, and evidence anchors without silently changing the confirmed lens.
+
+Scope: `docs/46-dynamic-grounding.md`, exact integration mirror, reciprocal provenance, and the subsequent runtime
+implementation in `midi2-gpu-fabric`.
+
+Non-goals: automatic lens mutation, artificial uncertainty divergence, transcript persistence, or Book live-acceptance
+promotion before a fresh independent witness.
+
+Direction: publication → integration (`Scripts/sync-integration-copy --push`).
+
+Governance result: rules 24–27 and their acceptance criteria now require Store-backed continuation lineage,
+semantically selected carry-forward context, preserved Grounding identity, and an honest no-difference outcome.
+
+Next: synchronize the exact chapter into integration, implement the runtime and scenario contract there, then return
+the runtime commit and independent evidence for the Book projection.

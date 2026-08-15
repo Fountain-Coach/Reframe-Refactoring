@@ -234,4 +234,38 @@ result. These are read from the offer itself, on a live drive:
   accepted, unless the writer changes it in a new turn;
 - **when no comparable pair exists the report says so** rather than describing a change it cannot see.
 
+### Amendment (2026-08-15) — a reading remembers what it found
+
+The comparison rules correctly reject two isolated same-lens passes as proof of a lens effect. That does not mean a
+human rereading begins with an empty mind. An iterative reading returns to the source with what the previous reading
+left open. The remembered material changes the act of attention without changing the writer's confirmed lens.
+
+24. **A continuation reading carries semantic history.** When Storify rereads the same source under the same
+    confirmed Grounding identity, the runtime must provide the prior reading's persisted findings, unresolved
+    questions, and source evidence anchors as semantically selected continuation context. It must not reconstruct
+    that context from transcript prose or from an in-memory snapshot.
+
+25. **Remembered findings are not a lens change.** Carry-forward context may cause a question to be revisited,
+    resolved, replaced, or deepened, but it must preserve the confirmed lens identity. A new lens identity requires
+    the explicit writer-controlled Grounding acceptance boundary in rules 4–6.
+
+26. **Lineage names the kind of second reading.** Every persisted continuation run records its parent reading run,
+    the confirmed Grounding identity, and the carried semantic artifacts. A comparison must distinguish a
+    history-aware continuation from an independent control pass; neither may be presented as the other.
+
+27. **No difference is manufactured.** A continuation may produce the same questions when the source warrants that
+    result. The acceptance result is the honest semantic account—confirmed, resolved, newly opened, or still
+    indeterminate—not a requirement that wording or uncertainty counts change.
+
+### Acceptance for the 2026-08-15 amendment (rules 24–27)
+
+- **the second run is visibly and durably linked to the first** by a FountainStore parent-reading identity;
+- **the second run keeps the same confirmed Grounding identity** unless the writer explicitly accepts `/ground`;
+- **the carried context consists of persisted findings, unresolved questions, and evidence anchors**, selected for
+  the current reading, and no prompt or transcript is persisted as a substitute;
+- **the comparison states whether it is comparing a continuation or an independent control**, and reports semantic
+  development without requiring artificial divergence;
+- **a fresh owned-source drive can read back the lineage and carried-context proof from FountainStore**, while AX and
+  the window-ID capture expose the corresponding reading state.
+
 The Book may describe this as a live-accepted development command only after those authorities agree. It must not imply that the command belongs to a named released App build unless the release manifest says so.
