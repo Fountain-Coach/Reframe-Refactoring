@@ -725,3 +725,15 @@ Non-goals: transport-specific capacity guarantees, physical hardware claims, a s
 authority over provider/model/lane selection or Store writes.
 Direction: publication → integration (`Scripts/sync-integration-copy --push`).
 Next: add the projection contract to `reframe-to-reframe-storify-source` before implementing the projection view.
+
+## Chapter 73 — The Reframe Scenario Development Cycle (2026-08-16)
+
+Goal: finalize the scenario as the reusable development unit for commands, capabilities, system boundaries,
+projections, and failure/recovery paths.
+Scope: `docs/73-reframe-scenario-development-cycle.md`, the reading index, the exact integration mirror, scenario
+kind enforcement, and the Codex/Claude scenario and Book maintenance skills.
+Non-goals: a second scenario repository, a new command vocabulary, release promotion, or changing the runtime IDL.
+Decision: executable YAML remains beside the implementation; the Book publishes sanitized projections; a separate
+scenario repository requires a future independently governed conformance authority.
+Validation: scenario validator, scenario contract/work-session tests, skill parity, docs parity, and focused
+publication checks.
