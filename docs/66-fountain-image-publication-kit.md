@@ -150,7 +150,9 @@ The Image Cloud is the canonical Reframe image store. It is not a mounted drive 
 - The manifest records source hash, recipe hash, tool identity/version, output hash, rights grant, AI provenance,
   disclosure, policy versions, destination, and terminal receipts.
 - Reframe may retain a bounded preview cache for responsiveness; a cache is disposable and never authority.
-- FountainStore persists references, manifests, decisions, and receipts, never image bytes.
+- FountainStore persists references, manifests, decisions, and receipts, never image bytes. Exact authored image prompts
+  remain excluded from those records except for the private, access-controlled `image.prompt.history` artifact governed
+  by [Chapter 74](74-private-image-prompt-history.md); lifecycle receipts and public projections remain digest-only.
 - Server storage, queues, databases, policy bundles, and object stores are configured by deployment identity, not baked
   into the client. Migration to another host changes an endpoint and authenticated deployment identity, not the data
   model or evidence rules.
@@ -285,7 +287,8 @@ The first release is accepted only when evidence shows:
 6. Server outage, retry, and duplicate submission remain truthful and idempotent.
 7. `staged`, `uploaded`, `admitted`, `accepted`, `published`, `rejected`, and `failed` are distinct AX-visible and
    persisted states.
-8. Public manifests and logs contain no private images, prompts, manuscripts, credentials, or personal data.
+8. Public manifests and logs contain no private images, prompts, manuscripts, credentials, or personal data. The
+   private prompt-history exception is governed separately by Chapter 74 and is never promoted into these artifacts.
 9. Reframe's AX tree exposes image state, review requirements, disclosure, and terminal delivery results.
 10. Local and remote Swift implementations pass the same contract, fixture, receipt, and migration tests.
 11. Qualified legal review has approved the initial policy profiles and user-facing claims.
