@@ -91,10 +91,17 @@ AX is the interaction authority. Scenarios address controls by semantic identifi
 and actions. Coordinates may exist only as a separately recorded temporary bridge for a demonstrated AX gap; they are
 never the scenario's meaning or acceptance authority.
 
-Waiting is state-based. A scenario waits for a declared AX or Store predicate, with a bounded timeout and a typed
-failure. Arbitrary sleeps, visual guesses, and operator intervention are not evidence. If the predicate does not
-arrive, the scenario is failed, blocked, unavailable, or not-established according to the observed artifact; it does
-not continue by assumption.
+Waiting is state-based and event-driven. A Store predicate is armed before the action that can produce it and is
+satisfied from a durable cross-process Store change notification, followed by a read of the authoritative
+FountainStore document; it is not repeatedly taking snapshots until a timer expires. The released
+`ReframeStoreClient.changes()` feed is process-local, so an external witness must use the managed Store's
+cross-process notification adapter rather than pretending that an in-process stream reaches another entity. AX is
+still the interaction and surface-state authority; where the platform exposes no AX event feed, the witness may
+re-read the named AX predicate after the Store terminal event. A scenario may declare one root-level `watchdogSec`
+solely to stop a hung process. That watchdog is not a success criterion and no individual wait may carry a semantic
+`timeoutSec`. Arbitrary sleeps, visual guesses, and operator intervention are not evidence. If the predicate does not
+arrive before the watchdog, the scenario is failed, blocked, unavailable, or not-established according to the
+observed artifact; it does not continue by assumption.
 
 ## Lane and consent
 
