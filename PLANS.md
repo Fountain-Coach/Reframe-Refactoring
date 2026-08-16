@@ -737,3 +737,11 @@ Decision: executable YAML remains beside the implementation; the Book publishes 
 scenario repository requires a future independently governed conformance authority.
 Validation: scenario validator, scenario contract/work-session tests, skill parity, docs parity, and focused
 publication checks.
+## Chapter 75 — Scenario Run Ownership and Non-Interference (2026-08-16)
+
+- Goal: make scenario acceptance logically closed under one owned run, so intermediate observations cannot be promoted
+  to failure and any intervention invalidates the claim.
+- Scope: `docs/75-scenario-run-ownership-and-non-interference.md`, its reading-index entry, and the Chapter 73 link.
+- Direction: integration → publication; exact source `Fountain-Coach/midi2-gpu-fabric@b6f510a9`.
+- Validation: integration `git diff --check`; counterpart parity and relative-link review; publication commit records
+  the reciprocal provenance.

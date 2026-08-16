@@ -1,5 +1,15 @@
 # Source and Synchronization Contract
 
+## Current synchronized change
+
+- Change: **Chapter 75 — Scenario Run Ownership and Non-Interference**, defining single-run ownership, event-driven
+  waiting, intervention invalidation, and the terminal evidence boundary for truthful scenario acceptance.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`; this checkout has no sync helper, so
+  the three governed files were transferred explicitly).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@b6f510a9`.
+- Publication content/provenance commit: this synchronization commit; see `git log` for its immutable hash.
+- Synchronized: 2026-08-16.
+
 ## Current planned change
 
 - Change: **Chapter 72 — MIDI2 Peer Projections and Capacity Admission**, defining the generic peer projection surface,

@@ -5,6 +5,9 @@ MIDI2 software-peer and projection surfaces. This chapter closes the loop: a Ref
 development unit for writer journeys, governed capabilities, system boundaries, projections, and failure/recovery
 paths.
 
+Run ownership and non-interference are governed by [Chapter 75](75-scenario-run-ownership-and-non-interference.md),
+which is part of this cycle rather than an optional operator convention.
+
 It is a development contract, not merely a test script and not merely a Book-documentation artifact.
 
 ## The scenario has a wider scope than a command
