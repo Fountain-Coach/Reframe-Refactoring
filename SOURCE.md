@@ -7,8 +7,8 @@
   evidence requirements.
 - Direction: publication → integration (`Scripts/sync-integration-copy --push`).
 - Publication content commit: pending.
-- Integration content/provenance commit: pending synchronization.
-- Synchronized: pending.
+- Integration content/provenance commit: `Fountain-Coach/midi2-gpu-fabric@7a8fe4d5`.
+- Synchronized: 2026-08-16.
 
 ## Current planned change
 
