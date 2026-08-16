@@ -2,6 +2,16 @@
 
 ## Current synchronized change
 
+- Change: **Chapter 76 — Beat Movement and the Uncertainty Overlay**, reconciling grounded dramatic beats with the
+  optional uncertainty-question lifecycle across Storify, UncertaintyScoreKit, Score projections, and image
+  participants.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@10692fef`.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@f97e590`.
+- Synchronized: 2026-08-16.
+
+## Current synchronized change
+
 - Change: **Chapter 75 — Scenario Run Ownership and Non-Interference**, defining single-run ownership, event-driven
   waiting, intervention invalidation, and the terminal evidence boundary for truthful scenario acceptance.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`; this checkout has no sync helper, so

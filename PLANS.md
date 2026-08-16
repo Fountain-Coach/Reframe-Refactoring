@@ -1,3 +1,12 @@
+## Current gate — Chapter 76 beat movement and uncertainty overlay (2026-08-16)
+
+Goal: publish the reconciled semantic contract in which grounded dramatic movement is the beat and question movement
+is an optional UncertaintyScoreKit overlay.
+Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+Integration content commit: `Fountain-Coach/midi2-gpu-fabric@10692fef`.
+Publication content commit: `Fountain-Coach/Reframe-Refactoring@f97e590`.
+Runtime implementation and live acceptance remain pending in the integration repository.
+
 ## Chapter 67 — FountainComposerKit — Remote Attachment Custody (2026-08-13)
 
 Goal: Publish the reusable composer boundary for text, image, and file turns: one Copilot ingress, remote Attachment
