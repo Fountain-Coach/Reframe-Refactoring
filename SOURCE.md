@@ -1,5 +1,25 @@
 # Source and Synchronization Contract
 
+## Current planned change
+
+- Change: **Chapter 72 — MIDI2 Peer Projections and Capacity Admission**, defining the generic peer projection surface,
+  clonable endpoint identity, Reframe's default software-peer fixture, capacity-governed admission, and AX/Store/MIDI2
+  evidence requirements.
+- Direction: publication → integration (`Scripts/sync-integration-copy --push`).
+- Publication content commit: pending.
+- Integration content/provenance commit: pending synchronization.
+- Synchronized: pending.
+
+## Current planned change
+
+- Change: **Chapter 71 — Reframe-to-Reframe Software-Peer Acceptance**, defining the two-process software-peer
+  conformance topology, independent witness, separate Store authority, scenario-first gates, and the boundary between
+  software-peer acceptance and hardware interoperability.
+- Direction: publication → integration (`Scripts/sync-integration-copy --push`).
+- Publication content commit: pending.
+- Integration content/provenance commit: pending synchronization.
+- Synchronized: pending.
+
 ## Current synchronized change
 
 - Change: **Chapter 70 — External MIDI2 Control of Reframe**, defining negotiated external operation ingress, internal

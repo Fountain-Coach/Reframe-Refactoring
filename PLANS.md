@@ -704,3 +704,24 @@ live-acceptance claims; those follow the chapter and a scenario-first implementa
 Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
 Integration content commit: `Fountain-Coach/midi2-gpu-fabric@49e96076`.
 Publication content/provenance commit: this synchronization commit; see `git log` for its immutable hash.
+## Chapter 71 — Reframe-to-Reframe Software-Peer Acceptance (2026-08-16)
+
+Goal: define and later prove a two-process Reframe software peer through the MIDI2 contract, without claiming physical
+hardware interoperability.
+Scope: `docs/71-reframe-to-reframe-software-peer-acceptance.md`, `docs/01-reading-index.md`, exact integration mirror,
+and the scenario-first runtime work in `midi2-gpu-fabric`.
+Non-goals: same-process loopback, direct Store access, a second command vocabulary, provider selection by the peer, or
+hardware claims without hardware evidence.
+Direction: publication → integration (`Scripts/sync-integration-copy --push`).
+Next: author `reframe-to-reframe-storify-source` YAML/JSON in the integration repository before implementing the
+two-process peer executor.
+## Chapter 72 — MIDI2 Peer Projections and Capacity Admission (2026-08-16)
+
+Goal: govern the visible projections surface and generic, clonable MIDI2 peer instances without hard-coding Reframe
+as the only peer or claiming unlimited remote capacity.
+Scope: `docs/72-midi2-peer-projections-and-capacity-admission.md`, `docs/01-reading-index.md`, exact integration
+mirror, and the projection scenario/runtime work in `midi2-gpu-fabric`.
+Non-goals: transport-specific capacity guarantees, physical hardware claims, a second Copilot persona, or peer
+authority over provider/model/lane selection or Store writes.
+Direction: publication → integration (`Scripts/sync-integration-copy --push`).
+Next: add the projection contract to `reframe-to-reframe-storify-source` before implementing the projection view.
