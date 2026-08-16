@@ -1,5 +1,15 @@
 # Source and Synchronization Contract
 
+## Current synchronized change
+
+- Change: **Chapter 70 — External MIDI2 Control of Reframe**, defining negotiated external operation ingress, internal
+  mediation and lane policy, FountainStore lifecycle authority, MIDI2 event projection, AX/window-ID evidence, and
+  scenario-first gates for claiming full live drivability.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@49e96076`.
+- Publication content/provenance commit: this synchronization commit; see `git log` for its immutable hash.
+- Synchronized: 2026-08-16.
+
 ## Current planned change
 
 - Change: **Chapter 46 amendment — semantic carry-forward for iterative readings**, requiring a second Storify run to

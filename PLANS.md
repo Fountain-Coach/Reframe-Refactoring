@@ -692,3 +692,15 @@ semantically selected carry-forward context, preserved Grounding identity, and a
 
 Next: synchronize the exact chapter into integration, implement the runtime and scenario contract there, then return
 the runtime commit and independent evidence for the Book projection.
+## Chapter 70 — External MIDI2 Control of Reframe (2026-08-16)
+
+Goal: define Reframe as a negotiated MIDI2 peer that an external entity can discover, authorize, drive, observe, and
+resume through one capability contract, with FountainStore as behavioral authority and AX/window-ID evidence as the
+independent writer-surface witness.
+Scope: `docs/70-external-midi2-control-of-reframe.md`, `docs/01-reading-index.md`, exact integration mirror, and
+reciprocal provenance.
+Non-goals: runtime MIDI2 adapter implementation, new IDL topics, external device selection, transport choice, or Book
+live-acceptance claims; those follow the chapter and a scenario-first implementation phase.
+Direction: integration → publication; exact transfer through `Scripts/sync-integration-copy --pull`.
+Integration content commit: `Fountain-Coach/midi2-gpu-fabric@49e96076`.
+Publication content/provenance commit: this synchronization commit; see `git log` for its immutable hash.
