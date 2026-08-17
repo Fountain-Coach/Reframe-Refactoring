@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Copilot Implementation Extension — Reframe Governance</title>
+  <meta name="description" content="The public Reframe Governance book: reviewed architectural doctrine, validation rules, and publication boundaries.">
+  <link rel="canonical" href="https://governance.fountain.coach/chapters/10-copilot-implementation-extension/">
+  <link rel="stylesheet" href="/assets/governance.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to chapter</a>
+  <header class="topbar"><a class="wordmark" href="/"><span class="mark">R</span><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
+  <div class="workspace">
+    <aside class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home" href="/">Governance overview</a><a class="chapter-link" href="/chapters/00-abstract/"><span>00</span>Abstract</a><a class="chapter-link" href="/chapters/01-reading-index/"><span>01</span>Reading Index</a><a class="chapter-link" href="/chapters/02-development-history/"><span>02</span>Development History and Retained Lessons</a><a class="chapter-link" href="/chapters/03-current-state-and-problem/"><span>03</span>Current State and Refactoring Problem</a><a class="chapter-link" href="/chapters/04-target-architecture/"><span>04</span>Target Architecture</a><a class="chapter-link" href="/chapters/05-grounding-contract/"><span>05</span>Extended Grounding Contract</a><a class="chapter-link" href="/chapters/06-refactoring-program/"><span>06</span>Refactoring Program</a><a class="chapter-link" href="/chapters/07-agent-operating-guide/"><span>07</span>Operating Guide for `.claude` and `.codex`</a><a class="chapter-link" href="/chapters/08-validation-and-acceptance/"><span>08</span>Validation and Acceptance</a><a class="chapter-link" href="/chapters/09-compatibility-and-future-evolution/"><span>09</span>Compatibility and Future Evolution</a><a class="chapter-link active" href="/chapters/10-copilot-implementation-extension/"><span>10</span>Copilot Implementation Extension</a><a class="chapter-link" href="/chapters/11-grounding-as-a-given/"><span>11</span>Grounding as a Given — the Canonical Manifesto and Conversational Authoring</a><a class="chapter-link" href="/chapters/12-animating-truth/"><span>12</span>Animating Truth — Foreshadowing and Perceived Performance</a><a class="chapter-link" href="/chapters/13-storage-and-performance/"><span>13</span>Storage and Performance — What Persists Where, and Why Reads Are Fast</a><a class="chapter-link" href="/chapters/14-the-beat-and-its-arrangements/"><span>14</span>The Beat and Its Arrangements — One Object, Three Views, One Firing</a><a class="chapter-link" href="/chapters/15-the-situated-copilot/"><span>15</span>The Situated Copilot — One Copilot, Differently Placed</a><a class="chapter-link" href="/chapters/16-the-timeline-is-the-machine-room/"><span>16</span>The Timeline Is the Machine Room — What You See Is What You Get</a><a class="chapter-link" href="/chapters/17-the-score/"><span>17</span>The Score — Reframe&#x27;s Performance Space, and the One Surface That Folds the Others</a><a class="chapter-link" href="/chapters/18-the-stage-presents-the-act/"><span>18</span>The Stage Presents the Act — Legibility Over Density</a><a class="chapter-link" href="/chapters/19-apple-human-interface-guidelines/"><span>19</span>Apple&#x27;s Human Interface Guidelines — the Baseline We Build On</a><a class="chapter-link" href="/chapters/20-on-device-first-and-the-writers-key/"><span>20</span>Paid-First Copilot, and the Writer&#x27;s Key — Quality-First Lane Selection</a><a class="chapter-link" href="/chapters/21-training-perspectives/"><span>21</span>Training Perspectives — Teaching the On-Device Model the Writer&#x27;s Work</a><a class="chapter-link" href="/chapters/22-no-preferences-only-reasoning/"><span>22</span>No Preferences, Only Reasoning</a><a class="chapter-link" href="/chapters/23-one-reasoning/"><span>23</span>One Reasoning — The Single Front Door of a Turn</a><a class="chapter-link" href="/chapters/24-the-reasoning-is-an-uncertainty-map/"><span>24</span>The Reasoning Is an Uncertainty Map</a><a class="chapter-link" href="/chapters/25-the-copilot-is-the-surface/"><span>25</span>The CoPilot Is the Surface</a><a class="chapter-link" href="/chapters/26-internals-tune-themselves/"><span>26</span>Internals Tune Themselves — the Disposition of the Preferences Panel</a><a class="chapter-link" href="/chapters/27-parse-before-you-ask/"><span>27</span>Parse Before You Ask</a><a class="chapter-link" href="/chapters/28-a-beat-is-the-question-it-raises/"><span>28</span>A Beat Is the Question It Raises</a><a class="chapter-link" href="/chapters/29-natural-language-measures-storify-interprets/"><span>29</span>NaturalLanguage Measures, Storify Interprets</a><a class="chapter-link" href="/chapters/30-the-living-gazetteer/"><span>30</span>The Living Gazetteer</a><a class="chapter-link" href="/chapters/31-compiled-knowledge/"><span>31</span>Compiled Knowledge — the Cloud Teaches, the Device Remembers</a><a class="chapter-link" href="/chapters/32-referenced-knowledge/"><span>32</span>Referenced Knowledge — What the World Knows Outside the Book</a><a class="chapter-link" href="/chapters/33-a-want-is-a-gap-in-a-ledger/"><span>33</span>A Want Is a Gap in a Ledger</a><a class="chapter-link" href="/chapters/34-a-question-that-leaves-the-work/"><span>34</span>A Question That Leaves the Work</a><a class="chapter-link" href="/chapters/35-deep-search/"><span>35</span>Deep Search</a><a class="chapter-link" href="/chapters/36-every-gap-keeps-its-address/"><span>36</span>Every Gap Keeps Its Address</a><a class="chapter-link" href="/chapters/37-copilot-capability-governance/"><span>37</span>Copilot Capability Governance — From Transport Contract to Trustworthy Action</a><a class="chapter-link" href="/chapters/38-copilot-capability-audit-skill/"><span>38</span>Copilot Capability Audit Skill — From Boundary to Empowerment</a><a class="chapter-link" href="/chapters/39-a-model-cannot-be-told-what-it-cannot-do/"><span>39</span>A Model Cannot Be Told What It Cannot Do</a><a class="chapter-link" href="/chapters/40-a-citation-is-a-promise-someone-can-check/"><span>40</span>A Citation Is a Promise Someone Can Check</a><a class="chapter-link" href="/chapters/41-one-retrieval-two-directions/"><span>41</span>One Retrieval, Two Directions</a><a class="chapter-link" href="/chapters/42-what-is-already-recorded-is-read/"><span>42</span>What Is Already Recorded Is Read, Never Re-Derived</a><a class="chapter-link" href="/chapters/43-the-released-surface-is-a-named-build/"><span>43</span>The Released Surface Is a Named Build</a><a class="chapter-link" href="/chapters/44-publication-and-source-policy/"><span>44</span>Public Publication and Private Source Policy</a><a class="chapter-link" href="/chapters/45-copilot-reading-surface-and-typography/"><span>45</span>Copilot Reading Surface and Typography — Situated, Legible, and Reframe-Native</a><a class="chapter-link" href="/chapters/46-dynamic-grounding/"><span>46</span>Dynamic Grounding: From Default Reading to Writer-Accepted Lens</a><a class="chapter-link" href="/chapters/47-situated-mixed-initiative-interaction/"><span>47</span>Situated, Mixed-Initiative Interaction</a><a class="chapter-link" href="/chapters/48-a-service-is-a-fact-not-a-symptom/"><span>48</span>48. A Service Is a Fact, Not a Symptom</a><a class="chapter-link" href="/chapters/49-one-definition-two-projections/"><span>49</span>49. One Definition, Two Projections</a><a class="chapter-link" href="/chapters/50-text-is-stored-so-it-can-be-pointed-at/"><span>50</span>50. Text Is Stored So It Can Be Pointed At</a><a class="chapter-link" href="/chapters/51-one-decision-decides-the-lane/"><span>51</span>51. One Decision Decides the Lane</a><a class="chapter-link" href="/chapters/52-the-pencil-belongs-to-the-writer/"><span>52</span>52. The Pencil Belongs to the Writer</a><a class="chapter-link" href="/chapters/53-a-selection-snaps-to-meaning/"><span>53</span>53. A Selection Snaps to Meaning</a><a class="chapter-link" href="/chapters/54-the-writer-does-not-manage-the-projection/"><span>54</span>The Writer Does Not Manage the Projection</a><a class="chapter-link" href="/chapters/55-one-store-authority-across-repositories/"><span>55</span>One Store Authority Across Repositories</a><a class="chapter-link" href="/chapters/56-the-book-library-is-a-portable-source-provider/"><span>56</span>The Book Library Is Reframe&#x27;s Sole Reading Provider</a><a class="chapter-link" href="/chapters/57-the-writer-enters-by-intention/"><span>57</span>The Writer Enters by Intention</a><a class="chapter-link" href="/chapters/58-open-turn-mediation-protocol/"><span>58</span>Open-Turn Mediation Protocol</a><a class="chapter-link" href="/chapters/59-copilot-initiated-library-curation/"><span>59</span>The Fountain-Coach Git Library and Reframe Project Flow</a><a class="chapter-link" href="/chapters/60-the-fountain-editor-is-the-project-surface/"><span>60</span>The Fountain Editor Is the Project Surface</a><a class="chapter-link" href="/chapters/61-the-fountain-project-round-trip/"><span>61</span>The Fountain Project Round Trip</a><a class="chapter-link" href="/chapters/62-reframe-maintenance-control-plane/"><span>62</span>Reframe Maintenance Control Plane</a><a class="chapter-link" href="/chapters/63-fountain-maintenance-kit/"><span>63</span>FountainMaintenanceKit — Portable Swift Maintenance Contract</a><a class="chapter-link" href="/chapters/64-fountain-project-kit-durable-draft-custody/"><span>64</span>FountainProjectKit — Durable Fountain Project Custody</a><a class="chapter-link" href="/chapters/65-the-copilot-as-writing-coach/"><span>65</span>The Copilot as Writing Coach</a><a class="chapter-link" href="/chapters/66-fountain-image-publication-kit/"><span>66</span>FountainImagePublicationKit — Reframe Image Cloud and Publication Boundary</a><a class="chapter-link" href="/chapters/67-fountain-composer-kit-remote-attachment-custody/"><span>67</span>FountainComposerKit — Remote Attachment Custody and the Composer Boundary</a><a class="chapter-link" href="/chapters/68-the-reframe-e2e-scenario-is-the-publication-unit/"><span>68</span>68 — The Reframe E2E Scenario Is the Publication Unit</a><a class="chapter-link" href="/chapters/69-the-book-of-reframe-is-a-dual-projection/"><span>69</span>The Book of Reframe Is a Dual Projection</a><a class="chapter-link" href="/chapters/70-external-midi2-control-of-reframe/"><span>70</span>70 — External MIDI2 Control of Reframe</a><a class="chapter-link" href="/chapters/71-reframe-to-reframe-software-peer-acceptance/"><span>71</span>71 — Reframe-to-Reframe Software-Peer Acceptance</a><a class="chapter-link" href="/chapters/72-midi2-peer-projections-and-capacity-admission/"><span>72</span>72 — MIDI2 Peer Projections and Capacity Admission</a><a class="chapter-link" href="/chapters/73-reframe-scenario-development-cycle/"><span>73</span>73 — The Reframe Scenario Development Cycle</a><a class="chapter-link" href="/chapters/74-private-image-prompt-history/"><span>74</span>Private Image Prompt History</a><a class="chapter-link" href="/chapters/75-scenario-run-ownership-and-non-interference/"><span>75</span>75 — Scenario Run Ownership and Non-Interference</a><a class="chapter-link" href="/chapters/76-beat-movement-and-uncertainty-overlay/"><span>76</span>Beat Movement and the Uncertainty Overlay</a><a class="chapter-link" href="/chapters/77-swift-midi2-scenario-runtime/"><span>77</span>77 — The Scenario Runtime Is Swift and MIDI2-Native</a><a class="chapter-link" href="/chapters/78-scenario-driven-development-as-org-infrastructure/"><span>78</span>78 — Scenario-Driven Development Is Org Infrastructure</a><a class="chapter-link" href="/chapters/79-default-semantic-manuscript-projection/"><span>79</span>79 — The Default Semantic Manuscript Projection</a><a class="chapter-link" href="/chapters/80-independent-governance-publication/"><span>80</span>80 — Independent Governance Publication</a><a class="chapter-link" href="/chapters/reframe-app-flow-governance/"><span>·</span>Reframe — How the App Must Flow</a></aside>
+    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div><article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · 10</div><h1 id="copilot-implementation-extension">Copilot Implementation Extension</h1>
+<blockquote>
+<p>Chapter summary: This chapter extends the Grounding-first Reframe refactor to the application Copilot. It defines the required product behaviour, authority boundaries, implementation-discovery procedure, migration rules, and acceptance evidence. It does not prescribe unverified types, files, protocols, or call paths.</p>
+</blockquote>
+<h2 id="purpose">Purpose</h2>
+<p>Reframe contains a conversational Copilot intended to operate with the same legitimate access to the active Reframe workspace that the writer has through the application.</p>
+<p>The Grounding-first refactor must therefore extend beyond the visible editorial pipeline. The Copilot must be migrated onto the same post-indexing authority model as the rest of Reframe.</p>
+<p>The Copilot is not a separate source of truth, a second workflow engine, or an independent interpretation layer. It is the conversational means by which the writer may inspect, understand, direct, and operate the existing Reframe application.</p>
+<p>The implementation objective is:</p>
+<p>Every Reframe operation that the writer may legitimately perform through the application should be available to the Copilot through the same authoritative application behaviour, subject to explicit safety, cost, confirmation, and identity rules.</p>
+<p>This does not mean that the Copilot may silently act without limits. It means that the Copilot must no longer be artificially weaker because it lacks access to application state or because its action vocabulary reflects obsolete architecture.</p>
+<h2 id="relationship-to-the-grounding-first-refactor">Relationship to the Grounding-first refactor</h2>
+<p>All authority rules defined by the Grounding-first refactor apply equally when an operation is initiated conversationally.</p>
+<p>The Copilot must respect the same authority chain:</p>
+<ol type="1">
+<li>canonical source text remains factual authority;</li>
+<li>confirmed Grounding provides the writer-confirmed interpretive and policy contract;</li>
+<li>Storify Source Auto is the sole structural reader of canonical source text;</li>
+<li>downstream artifacts remain derived artifacts with explicit identity and readiness;</li>
+<li>FountainStore persistence remains authoritative over transient UI state;</li>
+<li>source evidence must remain distinguishable from Grounding, derived interpretation, and model inference;</li>
+<li>removed semantic-index artifacts must not remain hidden Copilot dependencies.</li>
+</ol>
+<p>A Copilot request must not bypass these contracts merely because it originates in natural language.</p>
+<h2 id="required-end-state">Required end state</h2>
+<p>After this extension is complete, the Copilot must be able to:</p>
+<ul>
+<li>inspect the active Reframe project and explain its current state;</li>
+<li>retrieve the same canonical source and persisted Reframe artifacts available through the application;</li>
+<li>distinguish current, stale, missing, failed, incomplete, and unreadable artifacts;</li>
+<li>explain what operations are currently available and why;</li>
+<li>invoke legitimate Reframe operations through the application's existing operational boundaries;</li>
+<li>request confirmation where the corresponding user operation requires confirmation;</li>
+<li>expose cost-bearing or provider-bearing work before execution;</li>
+<li>report the persisted result of an operation rather than merely claiming that it ran;</li>
+<li>recover its understanding of the workspace after application relaunch;</li>
+<li>refuse or visibly fail when required authority, evidence, readiness, provider access, or writer confirmation is absent.</li>
+</ul>
+<p>The Copilot must not depend on semantic indexing, published semantic-memory objects, historical reading state, or obsolete index-derived readiness.</p>
+<h2 id="non-goals">Non-goals</h2>
+<p>This extension does not authorize the coding agent to:</p>
+<ul>
+<li>invent a new Copilot architecture before inspecting the existing one;</li>
+<li>replace the application workflow with a generic agent framework;</li>
+<li>create a second store beside FountainStore;</li>
+<li>introduce a parallel command bus solely for the Copilot;</li>
+<li>make conversation history authoritative application state;</li>
+<li>infer writer confirmation from conversational tone;</li>
+<li>expose every internal function directly to the model;</li>
+<li>preserve semantic indexing as a private Copilot-only subsystem;</li>
+<li>redesign unrelated UI, model-provider, or persistence systems;</li>
+<li>assume that filenames or currently documented symbols still identify the implementation.</li>
+</ul>
+<h2 id="implementation-discovery-is-mandatory">Implementation discovery is mandatory</h2>
+<p>Before proposing or editing the Copilot implementation, inspect the current Reframe source tree.</p>
+<p>Do not begin from a presumed flow such as:</p>
+<pre><code>chat view
+→ planner
+→ interpreter
+→ command
+→ view model
+→ store</code></pre>
+<p>That flow may or may not describe the current implementation.</p>
+<p>Instead, establish the real implementation from evidence.</p>
+<h3 id="required-discovery-questions">Required discovery questions</h3>
+<p>The coding agent must determine:</p>
+<ol type="1">
+<li>Where does a writer's conversational turn enter the application?</li>
+<li>Which component constructs model context?</li>
+<li>Which persisted sources are available to that context?</li>
+<li>Which source or artifact retrieval paths already exist?</li>
+<li>How is intent represented after model inference?</li>
+<li>Is intent typed, textual, enumerated, generated, or interpreted dynamically?</li>
+<li>Which component decides whether an action may execute?</li>
+<li>Which component requests confirmation?</li>
+<li>Which component performs the operation?</li>
+<li>Which component persists the resulting state?</li>
+<li>How is success verified?</li>
+<li>How are failure and uncertainty returned to the conversation?</li>
+<li>Which Copilot operations still invoke indexing-era behaviour?</li>
+<li>Which application operations are currently unavailable to the Copilot?</li>
+<li>Which Copilot-specific paths duplicate behaviour already implemented elsewhere?</li>
+<li>Which generated manifests, capability declarations, IDL definitions, facts, or reasoning artifacts describe Copilot access?</li>
+<li>Which tests currently exercise the live conversational path?</li>
+<li>Which state survives relaunch, and which state exists only in memory?</li>
+</ol>
+<p>Record the answers in PLANS.md with symbol names, source paths, and evidence.</p>
+<h3 id="required-searches">Required searches</h3>
+<p>Search by behaviour and symbols, not only by guessed filenames.</p>
+<p>At minimum, search for:</p>
+<ul>
+<li>Copilot</li>
+<li>chat</li>
+<li>conversation</li>
+<li>planner</li>
+<li>intent</li>
+<li>command</li>
+<li>capability</li>
+<li>operation</li>
+<li>confirmation</li>
+<li>approval</li>
+<li>inference cost</li>
+<li>provider</li>
+<li>Grounding</li>
+<li>Storify</li>
+<li>Continuity</li>
+<li>Cut Script</li>
+<li>publish</li>
+<li>FountainStore</li>
+<li>semantic index</li>
+<li>reading state</li>
+<li>semantic memory</li>
+<li>readiness</li>
+<li>resume</li>
+<li>failure</li>
+<li>relaunch</li>
+<li>generated reasoning</li>
+<li>manifest</li>
+<li>IDL</li>
+<li>facts</li>
+</ul>
+<p>Also search for user-facing strings corresponding to currently visible Copilot actions.</p>
+<h2 id="implementation-principle-reuse-before-extension">Implementation principle: reuse before extension</h2>
+<p>The Copilot must operate Reframe through the application's existing authoritative use cases wherever those use cases already exist.</p>
+<p>For every Copilot action, determine whether Reframe already has an application-level operation used by the visible UI or another legitimate caller.</p>
+<p>If it exists:</p>
+<ul>
+<li>reuse it;</li>
+<li>expose it through the existing intent or capability mechanism;</li>
+<li>preserve its validation, persistence, telemetry, provider, cost, and failure behaviour;</li>
+<li>do not reconstruct the operation inside the Copilot layer.</li>
+</ul>
+<p>If it does not exist:</p>
+<ul>
+<li>first determine whether the missing boundary is an application defect independent of the Copilot;</li>
+<li>add the smallest reusable application-level operation;</li>
+<li>use that operation from both the normal interface and the Copilot where appropriate;</li>
+<li>do not create an operation callable only through model-generated text unless the behaviour is genuinely conversational.</li>
+</ul>
+<p>The Copilot should add conversational access, not duplicate business logic.</p>
+<h2 id="copilot-perception-contract">Copilot perception contract</h2>
+<p>The Copilot requires a truthful representation of the current Reframe workspace.</p>
+<p>This representation must be assembled from authoritative application and persisted state. It must not be reconstructed from prior assistant messages.</p>
+<p>The coding agent must identify the current mechanism by which workspace state enters Copilot context and extend or replace that mechanism only as necessary.</p>
+<p>The resulting perception contract must allow the Copilot to determine, where relevant:</p>
+<ul>
+<li>active project identity;</li>
+<li>canonical source identity;</li>
+<li>source availability;</li>
+<li>confirmed Grounding identity and status;</li>
+<li>Storify identity, progress, readiness, and failure;</li>
+<li>Cut Script identity and readiness;</li>
+<li>Continuity identity, readiness, and findings;</li>
+<li>publication state;</li>
+<li>provider availability and provenance;</li>
+<li>incomplete or resumable operations;</li>
+<li>stale derived artifacts;</li>
+<li>operations currently available;</li>
+<li>operations currently blocked;</li>
+<li>reasons for blocking;</li>
+<li>whether confirmation is required;</li>
+<li>whether an operation may incur inference cost.</li>
+</ul>
+<p>Do not prescribe a new aggregate type merely to satisfy this document. First inspect whether the application already has snapshots, projections, manifests, readiness structures, or store queries that provide these facts.</p>
+<p>Any new representation must be derived from existing authority rather than becoming authority itself.</p>
+<h2 id="retrieval-parity">Retrieval parity</h2>
+<p>The Copilot must have legitimate read access to the same project materials the writer can access through Reframe.</p>
+<p>This includes, where applicable:</p>
+<ul>
+<li>canonical source text;</li>
+<li>source chapters, scenes, or line ranges;</li>
+<li>confirmed Grounding;</li>
+<li>Storify results and progress;</li>
+<li>Cut Script artifacts;</li>
+<li>Continuity findings;</li>
+<li>publication state;</li>
+<li>operational failures;</li>
+<li>provider and telemetry information exposed by the application.</li>
+</ul>
+<p>Retrieval must use current native application and FountainStore access.</p>
+<p>Do not inject the entire project into every prompt merely to claim parity. Retrieval may remain scoped, selective, resumable, or mediated according to the existing model architecture.</p>
+<p>Parity means that the Copilot can obtain the relevant material when needed, not that all material must always occupy model context.</p>
+<p>The retrieval implementation must preserve distinctions between:</p>
+<ul>
+<li>canonical source evidence;</li>
+<li>writer-confirmed Grounding;</li>
+<li>derived artifacts;</li>
+<li>operational metadata;</li>
+<li>model inference.</li>
+</ul>
+<p>The Copilot must not report an inference as source fact.</p>
+<h2 id="action-parity">Action parity</h2>
+<p>The coding agent must compare:</p>
+<ol type="1">
+<li>operations the writer can initiate through Reframe;</li>
+<li>operations currently available to the Copilot;</li>
+<li>operations that should remain unavailable conversationally for safety or product reasons.</li>
+</ol>
+<p>Create an evidence-based parity matrix in PLANS.md.</p>
+<p>For each operation, record:</p>
+<ul>
+<li>user-visible name;</li>
+<li>current UI entry point;</li>
+<li>current application operation;</li>
+<li>current Copilot entry point, if any;</li>
+<li>required persisted artifacts;</li>
+<li>readiness conditions;</li>
+<li>confirmation behaviour;</li>
+<li>cost behaviour;</li>
+<li>provider behaviour;</li>
+<li>persistence effect;</li>
+<li>telemetry effect;</li>
+<li>failure result;</li>
+<li>relaunch behaviour;</li>
+<li>migration requirement.</li>
+</ul>
+<p>Do not automatically expose low-level internal functions. Expose legitimate application operations at the level of writer intent.</p>
+<h2 id="intent-mediation">Intent mediation</h2>
+<p>Natural-language requests must pass through Reframe's existing grounded intent-mediation architecture.</p>
+<p>The coding agent must first inspect how Reframe currently converts a writer turn into executable application behaviour.</p>
+<p>Extend that system rather than adding an unrelated model-to-function mechanism.</p>
+<p>The final implementation must ensure:</p>
+<ul>
+<li>model prose is not executed directly;</li>
+<li>ambiguous intent remains ambiguous until resolved;</li>
+<li>unavailable actions are not fabricated;</li>
+<li>required targets are grounded in the active project;</li>
+<li>destructive or expensive actions cannot be smuggled through descriptive language;</li>
+<li>writer confirmation remains explicit where required;</li>
+<li>the same writer wording produces behaviour consistent with current application state;</li>
+<li>unsupported requests receive an accurate explanation rather than a false success response.</li>
+</ul>
+<p>If the current implementation uses generated intents, capabilities, IDL, facts, manifests, command schemas, or interpreters, update the authoritative source and regenerate all tracked derivatives.</p>
+<p>Do not manually patch generated artifacts as though they were source.</p>
+<h2 id="confirmation-and-cost">Confirmation and cost</h2>
+<p>The Copilot must not invent its own cost or confirmation policy.</p>
+<p>For every operation initiated by the Copilot, preserve the application's existing rules for:</p>
+<ul>
+<li>confirmation;</li>
+<li>destructive effects;</li>
+<li>model-provider invocation;</li>
+<li>inference cost;</li>
+<li>retries;</li>
+<li>cancellation;</li>
+<li>resume;</li>
+<li>visible failure.</li>
+</ul>
+<p>Where equivalent UI behaviour currently lacks an explicit reusable policy boundary, introduce the smallest shared boundary necessary so that UI and Copilot cannot diverge.</p>
+<p>The model may explain known cost or provider information supplied by the application. It must not estimate, waive, or authorize application cost by itself.</p>
+<p>Writer confirmation must be persisted or represented according to the existing Reframe authority contract. A transient sentence in conversation must not become a hidden global permission.</p>
+<h2 id="execution-and-verification">Execution and verification</h2>
+<p>A Copilot-initiated action is not complete when a model emits an intent.</p>
+<p>Completion requires the same application evidence required for a user-initiated action.</p>
+<p>The implementation must distinguish:</p>
+<ul>
+<li>intent recognized;</li>
+<li>action available;</li>
+<li>confirmation requested;</li>
+<li>confirmation accepted;</li>
+<li>execution started;</li>
+<li>execution progressing;</li>
+<li>execution resumable;</li>
+<li>execution succeeded;</li>
+<li>execution failed;</li>
+<li>persisted result verified;</li>
+<li>resulting artifact stale or current.</li>
+</ul>
+<p>The conversational response must be generated from the observed result, not from the requested result.</p>
+<p>For persisted operations, verify the resulting artifact or state through the same store authority used after relaunch.</p>
+<p>Do not report "completed" merely because an asynchronous task was launched.</p>
+<h2 id="removal-of-indexing-era-copilot-behaviour">Removal of indexing-era Copilot behaviour</h2>
+<p>The Copilot migration must explicitly discover and remove dependencies on the architecture eliminated by this refactor.</p>
+<p>Search for Copilot-accessible operations, context fields, readiness rules, prompts, tests, user-facing strings, and generated capabilities related to:</p>
+<ul>
+<li>semantic indexing;</li>
+<li>chapter read-in as an index-building operation;</li>
+<li>repair of semantic reading state;</li>
+<li>index-derived beats;</li>
+<li>semantic-memory priors;</li>
+<li>published semantic objects used as structural authority;</li>
+<li>index-derived manuscript guides;</li>
+<li>legacy reading completion;</li>
+<li>index-based readiness.</li>
+</ul>
+<p>For each dependency:</p>
+<ol type="1">
+<li>identify the current Copilot behaviour;</li>
+<li>identify the legitimate writer intention behind it;</li>
+<li>map that intention to the Grounding-first architecture;</li>
+<li>implement the replacement;</li>
+<li>migrate or remove the visible Copilot operation;</li>
+<li>prove no live Copilot caller remains;</li>
+<li>remove temporary transition code in the recorded phase.</li>
+</ol>
+<p>Do not merely rename indexing-era actions.</p>
+<p>A conversational command such as "read this chapter" may still represent a legitimate writer intention, but it must be reinterpreted through the new architecture rather than routed to a removed index producer.</p>
+<h2 id="writer-steering">Writer steering</h2>
+<p>Conversation may contain project direction, corrections, preferences, or decisions.</p>
+<p>The implementation must distinguish conversational steering from persisted Grounding and other authoritative project state.</p>
+<p>The Copilot may:</p>
+<ul>
+<li>propose a Grounding change;</li>
+<li>help formulate a Grounding change;</li>
+<li>show the effect a proposed change would have;</li>
+<li>invoke the application's legitimate Grounding confirmation flow.</li>
+</ul>
+<p>The Copilot must not silently promote ordinary conversation into confirmed Grounding.</p>
+<p>Where Reframe already supports persisted writer instructions outside Grounding, use that mechanism according to its authority. Do not invent a new steering artifact without first establishing that no suitable current mechanism exists.</p>
+<h2 id="relaunch-parity">Relaunch parity</h2>
+<p>The Copilot must not depend on unrecoverable session memory for its understanding of project state.</p>
+<p>After application relaunch, the Copilot must be able to reconstruct:</p>
+<ul>
+<li>the active persisted project state;</li>
+<li>confirmed Grounding;</li>
+<li>available and blocked operations;</li>
+<li>resumable work;</li>
+<li>completed artifacts;</li>
+<li>failures that remain relevant;</li>
+<li>current artifact identity.</li>
+</ul>
+<p>Conversation history may improve continuity, but it must not be the sole source for operational truth.</p>
+<p>Acceptance tests must include at least one relaunch boundary.</p>
+<h2 id="implementation-phases">Implementation phases</h2>
+<p>The exact source files and symbols must be determined during discovery. Do not convert these phases into guessed file edits.</p>
+<h3 id="phase-1--current-copilot-implementation-map">Phase 1 — Current Copilot implementation map</h3>
+<p>Produce an implementation map and parity matrix.</p>
+<p>No architectural rewrite is permitted in this phase.</p>
+<p>Deliver:</p>
+<ul>
+<li>actual conversational entry path;</li>
+<li>actual context-construction path;</li>
+<li>actual intent representation;</li>
+<li>actual execution path;</li>
+<li>actual persistence path;</li>
+<li>actual confirmation path;</li>
+<li>actual result-reporting path;</li>
+<li>all indexing-era dependencies;</li>
+<li>operation parity matrix;</li>
+<li>relevant tests;</li>
+<li>affected generated artifacts.</li>
+</ul>
+<p>Update PLANS.md.</p>
+<h3 id="phase-2--grounding-first-copilot-perception">Phase 2 — Grounding-first Copilot perception</h3>
+<p>Make the current authoritative Grounding-first workspace state available to the existing Copilot reasoning path.</p>
+<p>Do not add mutation capability in this phase unless required to preserve an already working operation.</p>
+<p>Prove that the Copilot can correctly distinguish:</p>
+<ul>
+<li>source;</li>
+<li>confirmed Grounding;</li>
+<li>derived artifacts;</li>
+<li>stale state;</li>
+<li>missing state;</li>
+<li>failed state;</li>
+<li>blocked operations.</li>
+</ul>
+<h3 id="phase-3--retrieval-parity">Phase 3 — Retrieval parity</h3>
+<p>Connect the Copilot's existing retrieval mechanism to current canonical source and persisted Grounding-first artifacts.</p>
+<p>Remove retrieval dependence on semantic indexes and historical reading state.</p>
+<p>Prove source attribution and identity handling.</p>
+<h3 id="phase-4--existing-action-migration">Phase 4 — Existing action migration</h3>
+<p>Migrate currently exposed Copilot actions away from indexing-era operations.</p>
+<p>For each action:</p>
+<ul>
+<li>preserve the writer intention;</li>
+<li>route through the current application operation;</li>
+<li>preserve confirmation and cost policy;</li>
+<li>verify persisted effects;</li>
+<li>update user-facing language;</li>
+<li>update generated capabilities or manifests;</li>
+<li>add focused tests.</li>
+</ul>
+<h3 id="phase-5--legitimate-action-parity">Phase 5 — Legitimate action parity</h3>
+<p>Add missing conversational access to legitimate Reframe operations identified by the parity matrix.</p>
+<p>Reuse existing application operations.</p>
+<p>Do not expose arbitrary internal functions.</p>
+<h3 id="phase-6--relaunch-failure-and-behavioural-acceptance">Phase 6 — Relaunch, failure, and behavioural acceptance</h3>
+<p>Add end-to-end tests covering natural writer language, persisted effects, failure, stale state, confirmation, cost, and relaunch.</p>
+<p>Remove remaining transition seams whose exit criteria are satisfied.</p>
+<h2 id="behavioural-acceptance-scenarios">Behavioural acceptance scenarios</h2>
+<p>Tests must assert application behaviour and persisted state, not exact assistant phrasing.</p>
+<p>At minimum, cover scenarios equivalent to the following.</p>
+<h3 id="inspect-current-state">Inspect current state</h3>
+<p>The writer asks:</p>
+<blockquote>
+<p>Where are we?</p>
+</blockquote>
+<p>The Copilot reports the actual current project state, including incomplete, stale, failed, or blocked work, without using conversation history as authority.</p>
+<h3 id="explain-readiness">Explain readiness</h3>
+<p>The writer asks:</p>
+<blockquote>
+<p>Why can't I continue?</p>
+</blockquote>
+<p>The Copilot identifies the actual blocking condition from application state and does not invent a missing index requirement.</p>
+<h3 id="retrieve-source-evidence">Retrieve source evidence</h3>
+<p>The writer asks about a source passage.</p>
+<p>The Copilot retrieves canonical source evidence and distinguishes it from Grounding and derived interpretation.</p>
+<h3 id="inspect-grounding">Inspect Grounding</h3>
+<p>The writer asks what Reframe has been told to preserve or prioritize.</p>
+<p>The Copilot reports confirmed Grounding and does not silently include unconfirmed conversational suggestions.</p>
+<h3 id="run-a-legitimate-operation">Run a legitimate operation</h3>
+<p>The writer asks to run a currently available Reframe operation.</p>
+<p>The Copilot resolves the target, exposes confirmation or cost where required, invokes the existing application operation, and reports the verified result.</p>
+<h3 id="block-an-unavailable-operation">Block an unavailable operation</h3>
+<p>The writer asks for an operation whose prerequisites are absent.</p>
+<p>The Copilot explains the real missing prerequisite and does not claim execution.</p>
+<h3 id="handle-stale-identity">Handle stale identity</h3>
+<p>A source or Grounding identity changes after a derived artifact exists.</p>
+<p>The Copilot identifies the derived artifact as stale and does not present it as current.</p>
+<h3 id="survive-relaunch">Survive relaunch</h3>
+<p>An operation completes or pauses, the application relaunches, and the writer asks to continue.</p>
+<p>The Copilot reconstructs state from persisted authority and resumes only where the application contract permits.</p>
+<h3 id="no-index-proof">No-index proof</h3>
+<p>Run the Copilot path with semantic-index inputs, semantic-memory priors, and legacy reading-state inputs unavailable.</p>
+<p>The supported Grounding-first inspection, retrieval, and action scenarios must still work.</p>
+<h2 id="validation-requirements">Validation requirements</h2>
+<p>Each phase must document exact commands and outcomes in PLANS.md.</p>
+<p>Validation must include, as applicable:</p>
+<ul>
+<li>focused unit tests;</li>
+<li>application-operation tests;</li>
+<li>FountainStore persistence tests;</li>
+<li>intent-mediation tests;</li>
+<li>generated-artifact consistency;</li>
+<li>UI or executable build validation;</li>
+<li>behavioural Copilot tests;</li>
+<li>relaunch tests;</li>
+<li>explicit no-index tests;</li>
+<li>opt-in live-provider tests where provider behaviour itself is under test.</li>
+</ul>
+<p>Do not claim live model behaviour from mocks alone.</p>
+<p>Do not require live-provider tests for deterministic authority, persistence, identity, or routing behaviour that can be tested without inference.</p>
+<h2 id="required-negative-evidence">Required negative evidence</h2>
+<p>Before declaring the Copilot migration complete, provide searches showing that no production Copilot path still depends on:</p>
+<ul>
+<li>semantic-index documents;</li>
+<li>index-derived reading completion;</li>
+<li>semantic-memory priors;</li>
+<li>index-derived Storify input;</li>
+<li>deprecated Copilot action names;</li>
+<li>removed readiness concepts;</li>
+<li>UI-only confirmation authority;</li>
+<li>conversation-only project state;</li>
+<li>duplicate Copilot persistence.</li>
+</ul>
+<p>Negative search evidence must be recorded with the exact searched symbols and paths.</p>
+<h2 id="documentation-updates">Documentation updates</h2>
+<p>When implementation changes are complete, update:</p>
+<ul>
+<li>the reading index;</li>
+<li>the current-state chapter;</li>
+<li>the target-architecture chapter where Copilot behaviour materially affects it;</li>
+<li>the refactoring program;</li>
+<li>validation and acceptance;</li>
+<li>compatibility and migration notes;</li>
+<li>the operating guide for <code>.claude</code> and <code>.codex</code>;</li>
+<li>generated reasoning orientation and capability documentation where applicable.</li>
+</ul>
+<p>Do not modify historical claims to pretend the Copilot migration always existed. Record the extension as a deliberate addition to the program.</p>
+<h2 id="completion-criteria">Completion criteria</h2>
+<p>The Copilot implementation extension is complete only when all of the following are true:</p>
+<ol type="1">
+<li>The real Copilot implementation path is documented from source evidence.</li>
+<li>The Copilot receives current Grounding-first workspace state.</li>
+<li>The Copilot can retrieve canonical source and current persisted artifacts without semantic indexing.</li>
+<li>Existing Copilot actions no longer route to removed indexing-era behaviour.</li>
+<li>Legitimate conversational operations reuse authoritative application behaviour.</li>
+<li>Confirmation, provider, cost, retry, resume, telemetry, and failure behaviour remain consistent with direct application use.</li>
+<li>Copilot responses report verified results rather than requested outcomes.</li>
+<li>Confirmed Grounding cannot be created implicitly from ordinary conversation.</li>
+<li>State and operational understanding recover after relaunch.</li>
+<li>Generated capability, IDL, fact, role, manifest, and reasoning artifacts agree with runtime behaviour.</li>
+<li>No production semantic-index dependency remains in the Copilot path.</li>
+<li>Behavioural acceptance tests pass through the actual conversational integration surface.</li>
+<li>Remaining transition code, if any, has a recorded removal phase and explicit exit criteria.</li>
+</ol>
+<h2 id="instruction-to-the-implementing-agent">Instruction to the implementing agent</h2>
+<p>Do not begin by designing a generic Copilot framework.</p>
+<p>Begin by reading the repository authority files, then map the implementation that exists.</p>
+<p>Do not infer architecture from this chapter's conceptual language. This chapter defines required behaviour and migration constraints, not unverified source structure.</p>
+<p>Where current code and this extension differ:</p>
+<ul>
+<li>describe the code as current state;</li>
+<li>describe this chapter as required migration;</li>
+<li>identify the smallest phase-sized change;</li>
+<li>implement through existing Reframe authority and application boundaries;</li>
+<li>prove the result from persisted state and tests.</li>
+</ul>
+<p>The desired result is not a Copilot adjacent to Reframe.</p>
+<p>The desired result is that the existing Reframe Copilot can truthfully perceive and legitimately operate the Grounding-first Reframe application.</p>
+<h2 id="conversational-grounding">Conversational Grounding</h2>
+<p>Grounding is the first place the Copilot earns its keep. <a href="/chapters/11-grounding-as-a-given/">Grounding as a given</a> makes the canonical manifesto the default so the writer is not stopped at a form; the Copilot is the front door for the few who want a different stance, or who want to shape what a particular reframe should <em>seek</em>. It proposes and helps refine; the writer reacts and confirms through the application's legitimate confirmation flow. This is governed by the writer-steering rules above: the Copilot must never silently promote ordinary conversation into confirmed Grounding, and it surfaces the one genuine per-piece knob (structural intent) as an offer, never a gate.</p>
+<h2 id="where-the-copilot-stands">Where the Copilot stands</h2>
+<p>This chapter governs what the Copilot may perceive of the workspace and what it may legitimately do. It does not govern <em>where it is placed</em>. Once the Copilot appears on more than one surface — and <a href="/chapters/14-the-beat-and-its-arrangements/">the beat and its arrangements</a> places it on the canvas as a node acting on wired beats — the perception contract above is incomplete: every fact it enumerates is a fact about persisted state, and none is a fact about the arrangement the writer is currently in. <a href="/chapters/15-the-situated-copilot/">The situated Copilot</a> extends the contract with that missing group, and binds the Copilot to the rule that a control offered where its object is not visible is a category error.</p>
+</article><footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="https://github.com/Fountain-Coach/Reframe-Refactoring">Reframe-Refactoring</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
+  </div>
+  <script src="/assets/governance.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Every Gap Keeps Its Address — Reframe Governance</title>
+  <meta name="description" content="The public Reframe Governance book: reviewed architectural doctrine, validation rules, and publication boundaries.">
+  <link rel="canonical" href="https://governance.fountain.coach/chapters/36-every-gap-keeps-its-address/">
+  <link rel="stylesheet" href="/assets/governance.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to chapter</a>
+  <header class="topbar"><a class="wordmark" href="/"><span class="mark">R</span><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
+  <div class="workspace">
+    <aside class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home" href="/">Governance overview</a><a class="chapter-link" href="/chapters/00-abstract/"><span>00</span>Abstract</a><a class="chapter-link" href="/chapters/01-reading-index/"><span>01</span>Reading Index</a><a class="chapter-link" href="/chapters/02-development-history/"><span>02</span>Development History and Retained Lessons</a><a class="chapter-link" href="/chapters/03-current-state-and-problem/"><span>03</span>Current State and Refactoring Problem</a><a class="chapter-link" href="/chapters/04-target-architecture/"><span>04</span>Target Architecture</a><a class="chapter-link" href="/chapters/05-grounding-contract/"><span>05</span>Extended Grounding Contract</a><a class="chapter-link" href="/chapters/06-refactoring-program/"><span>06</span>Refactoring Program</a><a class="chapter-link" href="/chapters/07-agent-operating-guide/"><span>07</span>Operating Guide for `.claude` and `.codex`</a><a class="chapter-link" href="/chapters/08-validation-and-acceptance/"><span>08</span>Validation and Acceptance</a><a class="chapter-link" href="/chapters/09-compatibility-and-future-evolution/"><span>09</span>Compatibility and Future Evolution</a><a class="chapter-link" href="/chapters/10-copilot-implementation-extension/"><span>10</span>Copilot Implementation Extension</a><a class="chapter-link" href="/chapters/11-grounding-as-a-given/"><span>11</span>Grounding as a Given — the Canonical Manifesto and Conversational Authoring</a><a class="chapter-link" href="/chapters/12-animating-truth/"><span>12</span>Animating Truth — Foreshadowing and Perceived Performance</a><a class="chapter-link" href="/chapters/13-storage-and-performance/"><span>13</span>Storage and Performance — What Persists Where, and Why Reads Are Fast</a><a class="chapter-link" href="/chapters/14-the-beat-and-its-arrangements/"><span>14</span>The Beat and Its Arrangements — One Object, Three Views, One Firing</a><a class="chapter-link" href="/chapters/15-the-situated-copilot/"><span>15</span>The Situated Copilot — One Copilot, Differently Placed</a><a class="chapter-link" href="/chapters/16-the-timeline-is-the-machine-room/"><span>16</span>The Timeline Is the Machine Room — What You See Is What You Get</a><a class="chapter-link" href="/chapters/17-the-score/"><span>17</span>The Score — Reframe&#x27;s Performance Space, and the One Surface That Folds the Others</a><a class="chapter-link" href="/chapters/18-the-stage-presents-the-act/"><span>18</span>The Stage Presents the Act — Legibility Over Density</a><a class="chapter-link" href="/chapters/19-apple-human-interface-guidelines/"><span>19</span>Apple&#x27;s Human Interface Guidelines — the Baseline We Build On</a><a class="chapter-link" href="/chapters/20-on-device-first-and-the-writers-key/"><span>20</span>Paid-First Copilot, and the Writer&#x27;s Key — Quality-First Lane Selection</a><a class="chapter-link" href="/chapters/21-training-perspectives/"><span>21</span>Training Perspectives — Teaching the On-Device Model the Writer&#x27;s Work</a><a class="chapter-link" href="/chapters/22-no-preferences-only-reasoning/"><span>22</span>No Preferences, Only Reasoning</a><a class="chapter-link" href="/chapters/23-one-reasoning/"><span>23</span>One Reasoning — The Single Front Door of a Turn</a><a class="chapter-link" href="/chapters/24-the-reasoning-is-an-uncertainty-map/"><span>24</span>The Reasoning Is an Uncertainty Map</a><a class="chapter-link" href="/chapters/25-the-copilot-is-the-surface/"><span>25</span>The CoPilot Is the Surface</a><a class="chapter-link" href="/chapters/26-internals-tune-themselves/"><span>26</span>Internals Tune Themselves — the Disposition of the Preferences Panel</a><a class="chapter-link" href="/chapters/27-parse-before-you-ask/"><span>27</span>Parse Before You Ask</a><a class="chapter-link" href="/chapters/28-a-beat-is-the-question-it-raises/"><span>28</span>A Beat Is the Question It Raises</a><a class="chapter-link" href="/chapters/29-natural-language-measures-storify-interprets/"><span>29</span>NaturalLanguage Measures, Storify Interprets</a><a class="chapter-link" href="/chapters/30-the-living-gazetteer/"><span>30</span>The Living Gazetteer</a><a class="chapter-link" href="/chapters/31-compiled-knowledge/"><span>31</span>Compiled Knowledge — the Cloud Teaches, the Device Remembers</a><a class="chapter-link" href="/chapters/32-referenced-knowledge/"><span>32</span>Referenced Knowledge — What the World Knows Outside the Book</a><a class="chapter-link" href="/chapters/33-a-want-is-a-gap-in-a-ledger/"><span>33</span>A Want Is a Gap in a Ledger</a><a class="chapter-link" href="/chapters/34-a-question-that-leaves-the-work/"><span>34</span>A Question That Leaves the Work</a><a class="chapter-link" href="/chapters/35-deep-search/"><span>35</span>Deep Search</a><a class="chapter-link active" href="/chapters/36-every-gap-keeps-its-address/"><span>36</span>Every Gap Keeps Its Address</a><a class="chapter-link" href="/chapters/37-copilot-capability-governance/"><span>37</span>Copilot Capability Governance — From Transport Contract to Trustworthy Action</a><a class="chapter-link" href="/chapters/38-copilot-capability-audit-skill/"><span>38</span>Copilot Capability Audit Skill — From Boundary to Empowerment</a><a class="chapter-link" href="/chapters/39-a-model-cannot-be-told-what-it-cannot-do/"><span>39</span>A Model Cannot Be Told What It Cannot Do</a><a class="chapter-link" href="/chapters/40-a-citation-is-a-promise-someone-can-check/"><span>40</span>A Citation Is a Promise Someone Can Check</a><a class="chapter-link" href="/chapters/41-one-retrieval-two-directions/"><span>41</span>One Retrieval, Two Directions</a><a class="chapter-link" href="/chapters/42-what-is-already-recorded-is-read/"><span>42</span>What Is Already Recorded Is Read, Never Re-Derived</a><a class="chapter-link" href="/chapters/43-the-released-surface-is-a-named-build/"><span>43</span>The Released Surface Is a Named Build</a><a class="chapter-link" href="/chapters/44-publication-and-source-policy/"><span>44</span>Public Publication and Private Source Policy</a><a class="chapter-link" href="/chapters/45-copilot-reading-surface-and-typography/"><span>45</span>Copilot Reading Surface and Typography — Situated, Legible, and Reframe-Native</a><a class="chapter-link" href="/chapters/46-dynamic-grounding/"><span>46</span>Dynamic Grounding: From Default Reading to Writer-Accepted Lens</a><a class="chapter-link" href="/chapters/47-situated-mixed-initiative-interaction/"><span>47</span>Situated, Mixed-Initiative Interaction</a><a class="chapter-link" href="/chapters/48-a-service-is-a-fact-not-a-symptom/"><span>48</span>48. A Service Is a Fact, Not a Symptom</a><a class="chapter-link" href="/chapters/49-one-definition-two-projections/"><span>49</span>49. One Definition, Two Projections</a><a class="chapter-link" href="/chapters/50-text-is-stored-so-it-can-be-pointed-at/"><span>50</span>50. Text Is Stored So It Can Be Pointed At</a><a class="chapter-link" href="/chapters/51-one-decision-decides-the-lane/"><span>51</span>51. One Decision Decides the Lane</a><a class="chapter-link" href="/chapters/52-the-pencil-belongs-to-the-writer/"><span>52</span>52. The Pencil Belongs to the Writer</a><a class="chapter-link" href="/chapters/53-a-selection-snaps-to-meaning/"><span>53</span>53. A Selection Snaps to Meaning</a><a class="chapter-link" href="/chapters/54-the-writer-does-not-manage-the-projection/"><span>54</span>The Writer Does Not Manage the Projection</a><a class="chapter-link" href="/chapters/55-one-store-authority-across-repositories/"><span>55</span>One Store Authority Across Repositories</a><a class="chapter-link" href="/chapters/56-the-book-library-is-a-portable-source-provider/"><span>56</span>The Book Library Is Reframe&#x27;s Sole Reading Provider</a><a class="chapter-link" href="/chapters/57-the-writer-enters-by-intention/"><span>57</span>The Writer Enters by Intention</a><a class="chapter-link" href="/chapters/58-open-turn-mediation-protocol/"><span>58</span>Open-Turn Mediation Protocol</a><a class="chapter-link" href="/chapters/59-copilot-initiated-library-curation/"><span>59</span>The Fountain-Coach Git Library and Reframe Project Flow</a><a class="chapter-link" href="/chapters/60-the-fountain-editor-is-the-project-surface/"><span>60</span>The Fountain Editor Is the Project Surface</a><a class="chapter-link" href="/chapters/61-the-fountain-project-round-trip/"><span>61</span>The Fountain Project Round Trip</a><a class="chapter-link" href="/chapters/62-reframe-maintenance-control-plane/"><span>62</span>Reframe Maintenance Control Plane</a><a class="chapter-link" href="/chapters/63-fountain-maintenance-kit/"><span>63</span>FountainMaintenanceKit — Portable Swift Maintenance Contract</a><a class="chapter-link" href="/chapters/64-fountain-project-kit-durable-draft-custody/"><span>64</span>FountainProjectKit — Durable Fountain Project Custody</a><a class="chapter-link" href="/chapters/65-the-copilot-as-writing-coach/"><span>65</span>The Copilot as Writing Coach</a><a class="chapter-link" href="/chapters/66-fountain-image-publication-kit/"><span>66</span>FountainImagePublicationKit — Reframe Image Cloud and Publication Boundary</a><a class="chapter-link" href="/chapters/67-fountain-composer-kit-remote-attachment-custody/"><span>67</span>FountainComposerKit — Remote Attachment Custody and the Composer Boundary</a><a class="chapter-link" href="/chapters/68-the-reframe-e2e-scenario-is-the-publication-unit/"><span>68</span>68 — The Reframe E2E Scenario Is the Publication Unit</a><a class="chapter-link" href="/chapters/69-the-book-of-reframe-is-a-dual-projection/"><span>69</span>The Book of Reframe Is a Dual Projection</a><a class="chapter-link" href="/chapters/70-external-midi2-control-of-reframe/"><span>70</span>70 — External MIDI2 Control of Reframe</a><a class="chapter-link" href="/chapters/71-reframe-to-reframe-software-peer-acceptance/"><span>71</span>71 — Reframe-to-Reframe Software-Peer Acceptance</a><a class="chapter-link" href="/chapters/72-midi2-peer-projections-and-capacity-admission/"><span>72</span>72 — MIDI2 Peer Projections and Capacity Admission</a><a class="chapter-link" href="/chapters/73-reframe-scenario-development-cycle/"><span>73</span>73 — The Reframe Scenario Development Cycle</a><a class="chapter-link" href="/chapters/74-private-image-prompt-history/"><span>74</span>Private Image Prompt History</a><a class="chapter-link" href="/chapters/75-scenario-run-ownership-and-non-interference/"><span>75</span>75 — Scenario Run Ownership and Non-Interference</a><a class="chapter-link" href="/chapters/76-beat-movement-and-uncertainty-overlay/"><span>76</span>Beat Movement and the Uncertainty Overlay</a><a class="chapter-link" href="/chapters/77-swift-midi2-scenario-runtime/"><span>77</span>77 — The Scenario Runtime Is Swift and MIDI2-Native</a><a class="chapter-link" href="/chapters/78-scenario-driven-development-as-org-infrastructure/"><span>78</span>78 — Scenario-Driven Development Is Org Infrastructure</a><a class="chapter-link" href="/chapters/79-default-semantic-manuscript-projection/"><span>79</span>79 — The Default Semantic Manuscript Projection</a><a class="chapter-link" href="/chapters/80-independent-governance-publication/"><span>80</span>80 — Independent Governance Publication</a><a class="chapter-link" href="/chapters/reframe-app-flow-governance/"><span>·</span>Reframe — How the App Must Flow</a></aside>
+    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div><article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · 36</div><h1 id="every-gap-keeps-its-address">Every Gap Keeps Its Address</h1>
+<blockquote>
+<p>Chapter summary: <a href="/chapters/33-a-want-is-a-gap-in-a-ledger/">Chapter 33</a> made uncertainty open-ended: the map is collected from whatever ledgers the work keeps, and a new ledger appears by registering, never by editing an enumerated axis list. The surface must now honour that architecture. It may not turn an arbitrary collection back into three named rows, a fixed card, or a ranking that silently drops what does not fit. <strong>Every gap keeps its address</strong> — the lane that presents it and the note that locates it — across the shared spine, the manuscript, its originating ledger, its typed want, any reference search, and the writer's decision. <code>UncertaintyScoreKit</code> owns the provider-independent map and its navigation; Reframe binds a selected address to domain meaning. Complexity is neither flattened nor hidden: it is represented at three synchronized resolutions — the rack of all lanes, the map over the work, and the complete account of the selected thread — so a large reading can be dense without becoming shapeless, and detailed without making the conversation jump around it.</p>
+</blockquote>
+<h2 id="purpose--the-failure-this-exists-to-end">Purpose — the failure this exists to end</h2>
+<p><strong>The data model learned that it could have any number of ledgers. The renderer still behaves as though the answer were one chart somebody already knew how to name.</strong></p>
+<p>Measured on the integration source, 2026-07-31. The core now does the right thing: a <code>ReframeUncertaintyLedgerRegistry</code> collects arbitrary reports; each report emits a lane; each assessment emits a note; a ledger that failed or never arrived reports that absence as a failure rather than disappearing. No shared function contains the final list of things the work may be uncertain about. That is chapter 33's central repair.</p>
+<p>The production UI reverses it at the last metre. <code>UncertaintyScoreView</code> is one fixed-width vertical composition. It contains, in order, its own title, a paragraph explaining itself, a four-state legend, an aggregate ribbon, every lane, one-letter solo/mute controls, and the selected note's detail. Reframe places the entire composition inside a second disclosure above the Story surface. The consequences are structural:</p>
+<ul>
+<li>another ledger means another full row in an already tall card;</li>
+<li>a braided lane means as many additional rows as its overlaps require;</li>
+<li>selecting a note adds prose beneath the map and changes the map's height;</li>
+<li>the fixed gutter is too small to be a navigator and too large to be merely an axis label;</li>
+<li>the map has no scalable way to search, traverse or hold selection among many lanes;</li>
+<li>the selected note is addressed by note ID alone, even though independent ledgers may issue the same local ID;</li>
+<li>the typed want that can close the gap remains in Reframe while the visible mark retains only flattened <code>resolvedBy</code> prose;</li>
+<li>a reference lookup then reappears as a large chat card, visually detached from the mark and ledger that caused it, and its arrival moves the transcript between the top and bottom of competing blocks.</li>
+</ul>
+<p>Nothing here is a request for less information. The failure is that <strong>all information has been given the same spatial job</strong>. A legend, a corpus-scale map, a lane index, a selected diagnosis, a retrieval receipt and a writer's decision are not peers. Stacking them as peers does not preserve complexity; it destroys the relationships that make complexity intelligible.</p>
+<p>The standing case makes the loss visible. The reading raises <em>who “Kinch” is</em> from one ledger. That gap wants a source outside the work. The writer widens the world, the search follows a source, a quotation returns, and the Gazetteer still awaits the writer's judgement. Those are not five cards. They are <strong>one thread changing state</strong>. When the interface cannot point from the result back to the exact gap, the writer is asked to remember the architecture the surface was meant to show.</p>
+<h2 id="the-principle--preserve-complexity-by-preserving-address">The principle — preserve complexity by preserving address</h2>
+<p>A gap is not identified by its wording. Two ledgers may ask the same sentence for different reasons; one ledger may ask the same sentence again after its evidence changed. A gap's minimum address is therefore:</p>
+<pre class="text"><code>(laneID, noteID)</code></pre>
+<p>In Reframe today the lane is emitted from a ledger report and the note from one of its assessments, so the address also names the report that raised the gap. A host may bind more identity behind it — corpus, reading, ledger generation, persisted question thread — but it may never bind less. Matching the prose of a title, detail or chat turn is not identity and may not reconnect the thread.</p>
+<p>The same address is read at three resolutions:</p>
+<ol type="1">
+<li><strong>The lane rack — what kinds of account this reading actually has.</strong> Every producer-supplied lane appears in producer order. The rack can contain none, one, dozens, hundreds, or lanes that arrive while a reading is live. It is a virtualized, searchable outline, not a fixed illustration of the ledgers known when the UI was written.</li>
+<li><strong>The shared-spine map — where their assessments live together.</strong> Every visible lane is drawn against one source coordinate. This is where overlap, duration, absence, accumulation and continuation become perceptible. Panning or zooming changes one spine, not a private scale per lane.</li>
+<li><strong>The selected-thread account — what this particular mark means and what can change it.</strong> Its full wording, state, span, originating lane, closure cue and host-provided evidence live in a stable contextual region. Detail does not grow the map or become a second copy of it in chat.</li>
+</ol>
+<p>These are not three datasets and not a summary followed by the real thing. They are three views of the same addresses. Selection, colour/shape identity, source range and AX identity remain continuous between them.</p>
+<h2 id="lanes-are-open-ended--and-their-two-meanings-must-not-be-confused">Lanes are open-ended — and their two meanings must not be confused</h2>
+<p>This guide uses <em>lane</em> in two related geometries and two different ontologies:</p>
+<ul>
+<li>In <a href="/chapters/17-the-score/">the Score</a>, a lane is a <strong>participant</strong> — a text, voice, light, instrument, algorithm or other actor present in the performance.</li>
+<li>In the uncertainty map, as chapter 33 already states, a lane is a <strong>drawing of one ledger's assessments</strong> over a spine. It is not a participant and not a predeclared kind of doubt.</li>
+</ul>
+<p>Putting an uncertainty artifact on the Score does not turn its ledger lanes into performance participants. The map is a reading of the work, situated on the one surface, just as a provenance line is a relationship on the surface and not an actor. UI naming, AX roles and documentation must keep this distinction explicit. A generic <code>UncertaintyLane</code> may never be assumed to be Text, Identity, Structure, Reference, or any other domain category. Those names belong only to the producer that emitted them.</p>
+<p>This follows directly from chapter 33: <strong>a new ledger must become visible by existing</strong>. If adding it requires an <code>if</code>, a new tab, a case in a sidebar enum, a colour assigned by hand, or a revision to a fixed list of lane titles, the renderer has reintroduced the enumerated architecture that chapter removed.</p>
+<h2 id="the-lane-rack--all-instruments-of-doubt-in-producer-order">The lane rack — all instruments of doubt, in producer order</h2>
+<p>The leading region of the uncertainty artifact is a <strong>rack</strong>, paired row-for-row with the shared-spine map. It is not a catalogue of three preferred lanes and not a set of dashboard cards. Its rows are materialized from <code>score.lanes</code> and preserve their supplied order.</p>
+<p>A lane row owes, generically:</p>
+<ul>
+<li>the producer-supplied title, readable in full by wrapping, expansion or an equivalent non-destructive treatment;</li>
+<li>a state mark that is not colour alone;</li>
+<li>counts or distribution derived from the lane's actual notes, never a host-invented quality score;</li>
+<li>a compact view of its marks on the same spine where space permits;</li>
+<li>selection and an explicit, named way to focus, solo or mute it;</li>
+<li>disclosure into its notes, with each note carrying its title (or honest fallback), state and span;</li>
+<li>a stable AX identifier composed from the lane and note address, with the same activation as pointer and keyboard.</li>
+</ul>
+<p>The outline is at most two semantic levels — lane, then note — no matter how many of either exist. Optional grouping may be supplied by a producer as data; the kit may not infer groups from lane names, state, order or count. Search and state filters are generic transformations over the collection and preserve the remaining producer order. They are entered by the writer and visibly active. There is no automatic “top”, “important”, “relevant” or “first N” selection, because that would be a new reasoning pretending to be layout.</p>
+<p>Large collections are handled by virtualization and adaptive row detail, not omission. A strip can remain one row; a braid can disclose the packed rows its simultaneous threads require; the selected lane may receive more vertical resolution while keeping every other lane addressable. The viewport may show only part of a long collection at once, as every scroll view does, but the model and the navigation continue to contain all of it.</p>
+<h2 id="the-shared-spine--one-coordinate-several-scales">The shared spine — one coordinate, several scales</h2>
+<p>The map's competitive advantage is not that it draws coloured bars. It is that <strong>unrelated ledgers become comparable without becoming the same thing</strong> because they share one coordinate from the work.</p>
+<p>The axis is therefore stable across:</p>
+<ul>
+<li>the aggregate openness ribbon;</li>
+<li>compact lane thumbnails;</li>
+<li>full lane rows;</li>
+<li>selected-note emphasis;</li>
+<li>the corresponding manuscript highlight.</li>
+</ul>
+<p>Zoom and pan change the common viewport. They do not recompute the meaning of a note, reorder lanes, or silently drop marks. A gap remains located in the source range it reported. A question continuing beyond the observation keeps its open ending; an unread stretch remains different in shape and language from an ambiguity; settled means assessed and settled, never blank.</p>
+<p>The map supports three scales without changing visual grammar:</p>
+<ul>
+<li><strong>whole-reading scale</strong> — density, coverage, failures, overlap and the number of ledgers are perceivable;</li>
+<li><strong>lane scale</strong> — the assessments from one ledger and their relationship to neighbours are legible;</li>
+<li><strong>note scale</strong> — the exact thread, source span, account and closure path are inspectable.</li>
+</ul>
+<p>Moving among scales preserves mark type, status shape, selection and wording. A miniature is not allowed to invent a different summary than the expanded view. Complexity remains learnable because the same thing looks like itself at every resolution.</p>
+<h2 id="the-selected-thread--detail-has-a-stable-home">The selected thread — detail has a stable home</h2>
+<p>Selection is state, not layout. The complete account of a selected address belongs in a stable contextual region attached to the conversation surface. It may adapt beside or above the conversation with window size, but it does not become a tall message inserted into transcript history and it does not extend the score beneath the writer's current viewport.</p>
+<p>The generic kit can show only what it owns:</p>
+<ul>
+<li>lane and note identity;</li>
+<li>state and state meaning;</li>
+<li>source span and continuation;</li>
+<li>title, detail and generic closure cue.</li>
+</ul>
+<p>The Reframe host may then bind the same address to:</p>
+<ul>
+<li>the registered ledger report and its generation;</li>
+<li>the typed want — manuscript, stronger reasoning, outside source, or writer;</li>
+<li>the reference question and exact consent, where one exists;</li>
+<li>search attempts, hop reasons, receipts, answering document and verbatim quotation;</li>
+<li>the current writer-decision state and any resulting Gazetteer revision.</li>
+</ul>
+<p>This is where the relationship absent from the live interface becomes explicit:</p>
+<pre class="text"><code>ledger gap
+    → typed want
+        → writer-granted act
+            → retrieval and evidence
+                → writer decision
+                    → ledger redraw</code></pre>
+<p>Every node keeps the originating address. A result can therefore say which gap it bears on without a model reconstructing that relationship from transcript prose. When the writer records or refuses a conclusion, the same ledger changes and the map redraws; no chat sentence is treated as the state authority.</p>
+<h2 id="what-the-kit-owns-and-what-reframe-owns">What the kit owns, and what Reframe owns</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Boundary</th>
+<th><code>UncertaintyScoreKit</code> owns</th>
+<th>Reframe owns</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model</td>
+<td>score, ordered lanes, notes, states, shared spine</td>
+<td>registered ledger reports, persisted generations, typed wants</td>
+</tr>
+<tr class="even">
+<td>Identity</td>
+<td>composite lane/note selection</td>
+<td>corpus/reading/thread identity behind that address</td>
+</tr>
+<tr class="odd">
+<td>Navigation</td>
+<td>rack, search, explicit state filters, zoom/pan, selection</td>
+<td>which reading is current and where its manuscript source lives</td>
+</tr>
+<tr class="even">
+<td>Representation</td>
+<td>strip/braid geometry, state shapes, continuation, aggregate view</td>
+<td>domain wording beyond supplied fields, source/evidence lifecycle</td>
+</tr>
+<tr class="odd">
+<td>Interaction</td>
+<td>generic activation, focus/solo/mute, callbacks, keyboard and AX</td>
+<td>permitted acts, consent, spending, retrieval, Gazetteer decisions</td>
+</tr>
+<tr class="even">
+<td>Explanation</td>
+<td>note detail and generic closure cue</td>
+<td>why this ledger raised it, who can answer, what happened after asking</td>
+</tr>
+</tbody>
+</table>
+<p>The boundary is enforceable in both directions. <code>UncertaintyScoreKit</code> may not import Reframe types or learn about Gazetteers, <code>/world</code>, providers, citations or paid lanes. Reframe may not fork the kit's map into a private, hard-coded lane renderer in order to show its domain. It supplies structured context for a selected address through the host seam and continues to use the kit's arbitrary collection and selection semantics.</p>
+<p>Typed meaning must not be reconstructed from prose. <code>resolvedBy == "a source outside the work"</code> is suitable copy and unsuitable authority. Reframe already has a typed <code>ReframeUncertaintyWant</code>; the address joins the visible note back to that value. Natural-language labels remain presentation, never routing.</p>
+<h2 id="conversation-and-scroll--the-dialogue-is-not-the-database">Conversation and scroll — the dialogue is not the database</h2>
+<p><a href="/chapters/25-the-copilot-is-the-surface/">The CoPilot Is the Surface</a> does not require every artifact to become a chat bubble. It explicitly permits a visual artifact where a picture is clearer. The uncertainty map is such an artifact: it is the first reading's visible account of what it knows and does not know. The Copilot teaches it, refers to it, and acts with the selected thread; the transcript records the dialogue around those acts.</p>
+<p>Therefore:</p>
+<ul>
+<li>chat holds turns and event summaries, not the only copy of ledger state or retrieval evidence;</li>
+<li>a message that refers to a gap carries its address and can focus the artifact;</li>
+<li>selecting a mark situates the Copilot on that thread without synthesizing a new command from its label;</li>
+<li>an arriving assistant turn is revealed once at a stable anchor;</li>
+<li>a user turn followed by its assistant result is one arrival sequence, not two competing scroll targets;</li>
+<li>if the writer has moved away from the live edge, the app announces a new turn and does not take the viewport;</li>
+<li>expanding a lane, receipt or quotation may change its own contextual region but may not repeatedly re-anchor the transcript.</li>
+</ul>
+<p>This is not less chat-native. It makes the conversation truthful about what it is: a collaboration around durable objects, not the container that must redraw every durable object as prose whenever anything changes.</p>
+<h2 id="state-language--one-word-one-meaning">State language — one word, one meaning</h2>
+<p>The four states are part of the contract, not palette names. Before the surface can teach them, every producer and renderer must agree on their meaning:</p>
+<ul>
+<li><code>settled</code> — assessed and held, visibly different from no assessment;</li>
+<li><code>ambiguity</code> — the evidence genuinely sustains competing readings;</li>
+<li><code>thin</code> — a reading is present but under-supported;</li>
+<li><code>failure</code> — the assessment did not happen or cannot be trusted.</li>
+</ul>
+<p>The definitions in <a href="/chapters/24-the-reasoning-is-an-uncertainty-map/">chapter 24</a>, the core type documentation, Reframe's projections, visible legend, spoken AX labels and routing consequences must agree. If a producer uses <code>ambiguity</code> for what the kit calls <code>thin</code>, colour can make the disagreement prettier and no less false. The vocabulary is audited as one contract before visual polish is accepted.</p>
+<p>State and thread identity use separate visual channels. State is carried by shape, line treatment, words and an accessible value, with colour as reinforcement. A thread in a braid may carry a stable identity hue across the map, manuscript and inspector, but selection is a distinct halo/focus treatment and failure remains distinguishable without hue. No single colour is asked to mean lane, state, identity and selection at once.</p>
+<h2 id="the-decision-enforceable-rules">The decision (enforceable rules)</h2>
+<ol type="1">
+<li><strong>No renderer enumerates uncertainty lanes.</strong> It consumes the complete ordered collection supplied by the score and assumes neither domain names nor a maximum count.</li>
+<li><strong>Every gap is selected by a composite address.</strong> At minimum <code>(laneID, noteID)</code>; note prose and note ID alone are not sufficient identity.</li>
+<li><strong>A registered ledger appears by existing.</strong> Adding one requires no new UI case. A missing, stale or failed ledger remains visible as the failure chapter 33 requires.</li>
+<li><strong>The rack, map and selected-thread account are synchronized resolutions of one dataset.</strong> Selection, source range, state and AX identity remain continuous between them.</li>
+<li><strong>The shared spine is shared.</strong> All lane and manuscript location views use the same source coordinate and viewport; private axes may not make unrelated spans look aligned.</li>
+<li><strong>Large collections scale by virtualization, navigation and explicit filtering, never silent omission or an automatic top-N ranking.</strong> Producer order is retained among visible lanes.</li>
+<li><strong>Detail has a stable contextual home.</strong> Selecting a note or receiving evidence may not grow the map or insert the durable state as a transcript-sized card that changes the writer's place.</li>
+<li><strong>The kit stays provider- and domain-independent.</strong> Reframe meaning enters through structured host bindings for a selected address, never imports or hard-coded lane knowledge.</li>
+<li><strong>Typed wants remain typed across the presentation seam.</strong> Copy may explain them; copy may not recreate them or decide an act.</li>
+<li><strong>Uncertainty lanes are ledger projections, not chapter 17 participants.</strong> Sharing the Score's geometry does not merge their ontology.</li>
+<li><strong>Chat records collaboration around the map; it is not the map's state store.</strong> Messages may focus an address; FountainStore and registered ledger state remain behavioural truth.</li>
+<li><strong>Scroll follows a deterministic arrival policy.</strong> One reveal per completed assistant arrival; no command/result double jump; no forced return when the writer has left the live edge; disclosure does not re-anchor history.</li>
+<li><strong>State words have one meaning across core, projection, pixels, AX and routing.</strong> A vocabulary mismatch is a contract failure, not a copy defect.</li>
+<li><strong>Every visible mark is machine-readable and every machine-readable mark is visibly present.</strong> Lane/note counts, selection and actions satisfy FCIS-AX pixel parity; Canvas is never the only representation.</li>
+<li><strong>Visual polish is validated as behaviour.</strong> Light, dark, Increase Contrast, Reduce Motion, keyboard-only, VoiceOver, narrow/resized windows and external-display full screen are acceptance contexts, not screenshots saved for the end.</li>
+</ol>
+<h2 id="honesty-non-goals">Honesty (non-goals)</h2>
+<ul>
+<li><strong>Not simplification by subtraction.</strong> No receipt, lane, note, state, reason or history is discarded to make the surface calm. Information is given a stable role and resolution.</li>
+<li><strong>Not a preferred-lane dashboard.</strong> The host may not nominate three familiar ledgers and call them the map.</li>
+<li><strong>Not a fourth destination.</strong> The uncertainty artifact belongs to the current reading on the one Score surface; it is not an Analysis room, machine room, settings panel or separate workflow.</li>
+<li><strong>Not a configuration console.</strong> Search, focus, zoom and disclosure are ways to read the artifact. They do not configure how Reframe reasons or which ledgers are allowed to exist.</li>
+<li><strong>Not a generated executive summary standing above evidence.</strong> Aggregate views are literal projections of the same notes. They never replace or reinterpret them.</li>
+<li><strong>Not a generic-kit takeover of the domain.</strong> The kit draws uncertainty; Reframe knows what its ledgers, wants, sources and writer decisions mean.</li>
+<li><strong>Not a visual metaphor exempt from accessibility.</strong> A beautiful braid with no AX notes is absent to the machine and to the writer who reads through it.</li>
+</ul>
+<h2 id="relationship-to-other-chapters">Relationship to other chapters</h2>
+<ul>
+<li><strong><a href="/chapters/24-the-reasoning-is-an-uncertainty-map/">The Reasoning Is an Uncertainty Map</a></strong> — fixes the states and the map as a first-class product. This chapter governs how that product remains legible and addressable at scale.</li>
+<li><strong><a href="/chapters/33-a-want-is-a-gap-in-a-ledger/">A Want Is a Gap in a Ledger</a></strong> — makes the set of ledgers open-ended and types who can close each gap. This chapter is its necessary UI consequence: the renderer is collected, too.</li>
+<li><strong><a href="/chapters/17-the-score/">The Score</a></strong> — supplies the one-surface and shared-spine discipline, while this chapter keeps uncertainty ledger lanes distinct from performance participants.</li>
+<li><strong><a href="/chapters/18-the-stage-presents-the-act/">The Stage Presents the Act</a></strong> — requires focus, legibility and drawn relationships. Here the act is inspecting one reading without losing its full field of uncertainty.</li>
+<li><strong><a href="/chapters/19-apple-human-interface-guidelines/">Apple Human Interface Guidelines</a></strong> — supplies system typography, contrast, motion and native split/outline behaviour beneath this chapter's information architecture.</li>
+<li><strong><a href="/chapters/25-the-copilot-is-the-surface/">The CoPilot Is the Surface</a></strong> — the Copilot teaches and acts with the map; the map is the permitted visual artifact, not a standing configuration panel.</li>
+<li><strong><a href="/chapters/32-referenced-knowledge/">Referenced Knowledge</a>, <a href="/chapters/34-a-question-that-leaves-the-work/">A Question That Leaves the Work</a>, and <a href="/chapters/35-deep-search/">Deep Search</a></strong> — supply the outward lifecycle that must remain visibly attached to the gap whose want began it.</li>
+</ul>
+<h2 id="acceptance">Acceptance</h2>
+<p>The doctrine is met when:</p>
+<ol type="1">
+<li>Generated and live fixtures with empty, singleton, numerous, densely overlapping and dynamically added ledgers render through the same code path, with no lane-name cases or cardinality assumptions.</li>
+<li>The rack contains every supplied lane in producer order, and expanding one exposes every note; search or state filtering is explicit, visibly active and preserves the remaining order.</li>
+<li>A lane registered after the artifact is visible appears without resetting the writer's selection, horizontal viewport or transcript position; AX announces the addition without taking focus.</li>
+<li>Selection is <code>(laneID, noteID)</code> end to end. Duplicate local note IDs in different lanes remain distinct in pixels, AX, callbacks and host context.</li>
+<li>The aggregate, lane row, note inspection and manuscript highlight use the same spine and preserve the same selected identity through zoom, pan, resize and relaunch.</li>
+<li>The definitions and consequences of <code>settled</code>, <code>ambiguity</code>, <code>thin</code> and <code>failure</code> agree in the core model, Reframe projections, visible key, AX labels and tests.</li>
+<li>A failed or unavailable ledger is louder than a healthy empty ledger, never absent, satisfying chapter 33's standing negative case.</li>
+<li>On the Telemachus standing case, the Kinch mark, external-source want, consent, retrieval trail, answering source, verbatim quotation and unresolved writer decision are inspectable as one addressed thread; no Gazetteer change is implied before the writer makes it.</li>
+<li>The same Telemachus drive can widen the world and receive the result without a command/result double jump, bottom-to-top flip, or disclosure-induced transcript re-anchoring.</li>
+<li>Removing Reframe's host context leaves a complete generic uncertainty map; removing the generic map leaves Reframe's ledgers and FountainStore truth intact. Neither layer is the other's hidden authority.</li>
+<li>Every visible lane and note is queryable and activatable through AX with its composite identity, and every AX mark corresponds to a visible mark (FCIS-AX pixel parity).</li>
+<li>The large-lane and dense-braid fixtures remain usable and visually coherent in light, dark, Increase Contrast, Reduce Motion, keyboard-only, VoiceOver, narrow/resized windows and the governed external-display live drive.</li>
+</ol>
+<h2 id="design-references">Design references</h2>
+<ul>
+<li><a href="https://developer.apple.com/design/human-interface-guidelines/sidebars">Apple Human Interface Guidelines — Sidebars</a></li>
+<li><a href="https://developer.apple.com/design/human-interface-guidelines/lists-and-tables">Apple Human Interface Guidelines — Lists and tables</a></li>
+<li><a href="https://developer.apple.com/design/human-interface-guidelines/charting-data">Apple Human Interface Guidelines — Charting data</a></li>
+<li><a href="https://spectrum.adobe.com/page/side-navigation/">Adobe Spectrum — Side navigation</a></li>
+<li><a href="https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/visualizations/state-timeline/">Grafana — State timeline</a></li>
+</ul>
+<p>These references supply platform and competitive interaction precedents — adaptive side navigation, outline selection, shared-axis state regions, multiple levels of chart detail, pan/zoom and accessibility. They do not define Reframe's ontology; the ledger, want and writer-authority rules above do.</p>
+<h2 id="governing-sentence">Governing sentence</h2>
+<p>Reframe shall preserve every uncertainty the work can report by giving each gap a stable lane-and-note address, showing every producer-supplied lane against one shared spine, and carrying the selected thread intact through its ledger, want, evidence and writer decision — so complexity gains shape and continuity, never a fixed taxonomy, a silent ranking, or another card in a conversation that has lost its place.</p>
+</article><footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="https://github.com/Fountain-Coach/Reframe-Refactoring">Reframe-Refactoring</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
+  </div>
+  <script src="/assets/governance.js" defer></script>
+</body>
+</html>

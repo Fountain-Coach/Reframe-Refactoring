@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple&#x27;s Human Interface Guidelines — the Baseline We Build On — Reframe Governance</title>
+  <meta name="description" content="The public Reframe Governance book: reviewed architectural doctrine, validation rules, and publication boundaries.">
+  <link rel="canonical" href="https://governance.fountain.coach/chapters/19-apple-human-interface-guidelines/">
+  <link rel="stylesheet" href="/assets/governance.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to chapter</a>
+  <header class="topbar"><a class="wordmark" href="/"><span class="mark">R</span><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
+  <div class="workspace">
+    <aside class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home" href="/">Governance overview</a><a class="chapter-link" href="/chapters/00-abstract/"><span>00</span>Abstract</a><a class="chapter-link" href="/chapters/01-reading-index/"><span>01</span>Reading Index</a><a class="chapter-link" href="/chapters/02-development-history/"><span>02</span>Development History and Retained Lessons</a><a class="chapter-link" href="/chapters/03-current-state-and-problem/"><span>03</span>Current State and Refactoring Problem</a><a class="chapter-link" href="/chapters/04-target-architecture/"><span>04</span>Target Architecture</a><a class="chapter-link" href="/chapters/05-grounding-contract/"><span>05</span>Extended Grounding Contract</a><a class="chapter-link" href="/chapters/06-refactoring-program/"><span>06</span>Refactoring Program</a><a class="chapter-link" href="/chapters/07-agent-operating-guide/"><span>07</span>Operating Guide for `.claude` and `.codex`</a><a class="chapter-link" href="/chapters/08-validation-and-acceptance/"><span>08</span>Validation and Acceptance</a><a class="chapter-link" href="/chapters/09-compatibility-and-future-evolution/"><span>09</span>Compatibility and Future Evolution</a><a class="chapter-link" href="/chapters/10-copilot-implementation-extension/"><span>10</span>Copilot Implementation Extension</a><a class="chapter-link" href="/chapters/11-grounding-as-a-given/"><span>11</span>Grounding as a Given — the Canonical Manifesto and Conversational Authoring</a><a class="chapter-link" href="/chapters/12-animating-truth/"><span>12</span>Animating Truth — Foreshadowing and Perceived Performance</a><a class="chapter-link" href="/chapters/13-storage-and-performance/"><span>13</span>Storage and Performance — What Persists Where, and Why Reads Are Fast</a><a class="chapter-link" href="/chapters/14-the-beat-and-its-arrangements/"><span>14</span>The Beat and Its Arrangements — One Object, Three Views, One Firing</a><a class="chapter-link" href="/chapters/15-the-situated-copilot/"><span>15</span>The Situated Copilot — One Copilot, Differently Placed</a><a class="chapter-link" href="/chapters/16-the-timeline-is-the-machine-room/"><span>16</span>The Timeline Is the Machine Room — What You See Is What You Get</a><a class="chapter-link" href="/chapters/17-the-score/"><span>17</span>The Score — Reframe&#x27;s Performance Space, and the One Surface That Folds the Others</a><a class="chapter-link" href="/chapters/18-the-stage-presents-the-act/"><span>18</span>The Stage Presents the Act — Legibility Over Density</a><a class="chapter-link active" href="/chapters/19-apple-human-interface-guidelines/"><span>19</span>Apple&#x27;s Human Interface Guidelines — the Baseline We Build On</a><a class="chapter-link" href="/chapters/20-on-device-first-and-the-writers-key/"><span>20</span>Paid-First Copilot, and the Writer&#x27;s Key — Quality-First Lane Selection</a><a class="chapter-link" href="/chapters/21-training-perspectives/"><span>21</span>Training Perspectives — Teaching the On-Device Model the Writer&#x27;s Work</a><a class="chapter-link" href="/chapters/22-no-preferences-only-reasoning/"><span>22</span>No Preferences, Only Reasoning</a><a class="chapter-link" href="/chapters/23-one-reasoning/"><span>23</span>One Reasoning — The Single Front Door of a Turn</a><a class="chapter-link" href="/chapters/24-the-reasoning-is-an-uncertainty-map/"><span>24</span>The Reasoning Is an Uncertainty Map</a><a class="chapter-link" href="/chapters/25-the-copilot-is-the-surface/"><span>25</span>The CoPilot Is the Surface</a><a class="chapter-link" href="/chapters/26-internals-tune-themselves/"><span>26</span>Internals Tune Themselves — the Disposition of the Preferences Panel</a><a class="chapter-link" href="/chapters/27-parse-before-you-ask/"><span>27</span>Parse Before You Ask</a><a class="chapter-link" href="/chapters/28-a-beat-is-the-question-it-raises/"><span>28</span>A Beat Is the Question It Raises</a><a class="chapter-link" href="/chapters/29-natural-language-measures-storify-interprets/"><span>29</span>NaturalLanguage Measures, Storify Interprets</a><a class="chapter-link" href="/chapters/30-the-living-gazetteer/"><span>30</span>The Living Gazetteer</a><a class="chapter-link" href="/chapters/31-compiled-knowledge/"><span>31</span>Compiled Knowledge — the Cloud Teaches, the Device Remembers</a><a class="chapter-link" href="/chapters/32-referenced-knowledge/"><span>32</span>Referenced Knowledge — What the World Knows Outside the Book</a><a class="chapter-link" href="/chapters/33-a-want-is-a-gap-in-a-ledger/"><span>33</span>A Want Is a Gap in a Ledger</a><a class="chapter-link" href="/chapters/34-a-question-that-leaves-the-work/"><span>34</span>A Question That Leaves the Work</a><a class="chapter-link" href="/chapters/35-deep-search/"><span>35</span>Deep Search</a><a class="chapter-link" href="/chapters/36-every-gap-keeps-its-address/"><span>36</span>Every Gap Keeps Its Address</a><a class="chapter-link" href="/chapters/37-copilot-capability-governance/"><span>37</span>Copilot Capability Governance — From Transport Contract to Trustworthy Action</a><a class="chapter-link" href="/chapters/38-copilot-capability-audit-skill/"><span>38</span>Copilot Capability Audit Skill — From Boundary to Empowerment</a><a class="chapter-link" href="/chapters/39-a-model-cannot-be-told-what-it-cannot-do/"><span>39</span>A Model Cannot Be Told What It Cannot Do</a><a class="chapter-link" href="/chapters/40-a-citation-is-a-promise-someone-can-check/"><span>40</span>A Citation Is a Promise Someone Can Check</a><a class="chapter-link" href="/chapters/41-one-retrieval-two-directions/"><span>41</span>One Retrieval, Two Directions</a><a class="chapter-link" href="/chapters/42-what-is-already-recorded-is-read/"><span>42</span>What Is Already Recorded Is Read, Never Re-Derived</a><a class="chapter-link" href="/chapters/43-the-released-surface-is-a-named-build/"><span>43</span>The Released Surface Is a Named Build</a><a class="chapter-link" href="/chapters/44-publication-and-source-policy/"><span>44</span>Public Publication and Private Source Policy</a><a class="chapter-link" href="/chapters/45-copilot-reading-surface-and-typography/"><span>45</span>Copilot Reading Surface and Typography — Situated, Legible, and Reframe-Native</a><a class="chapter-link" href="/chapters/46-dynamic-grounding/"><span>46</span>Dynamic Grounding: From Default Reading to Writer-Accepted Lens</a><a class="chapter-link" href="/chapters/47-situated-mixed-initiative-interaction/"><span>47</span>Situated, Mixed-Initiative Interaction</a><a class="chapter-link" href="/chapters/48-a-service-is-a-fact-not-a-symptom/"><span>48</span>48. A Service Is a Fact, Not a Symptom</a><a class="chapter-link" href="/chapters/49-one-definition-two-projections/"><span>49</span>49. One Definition, Two Projections</a><a class="chapter-link" href="/chapters/50-text-is-stored-so-it-can-be-pointed-at/"><span>50</span>50. Text Is Stored So It Can Be Pointed At</a><a class="chapter-link" href="/chapters/51-one-decision-decides-the-lane/"><span>51</span>51. One Decision Decides the Lane</a><a class="chapter-link" href="/chapters/52-the-pencil-belongs-to-the-writer/"><span>52</span>52. The Pencil Belongs to the Writer</a><a class="chapter-link" href="/chapters/53-a-selection-snaps-to-meaning/"><span>53</span>53. A Selection Snaps to Meaning</a><a class="chapter-link" href="/chapters/54-the-writer-does-not-manage-the-projection/"><span>54</span>The Writer Does Not Manage the Projection</a><a class="chapter-link" href="/chapters/55-one-store-authority-across-repositories/"><span>55</span>One Store Authority Across Repositories</a><a class="chapter-link" href="/chapters/56-the-book-library-is-a-portable-source-provider/"><span>56</span>The Book Library Is Reframe&#x27;s Sole Reading Provider</a><a class="chapter-link" href="/chapters/57-the-writer-enters-by-intention/"><span>57</span>The Writer Enters by Intention</a><a class="chapter-link" href="/chapters/58-open-turn-mediation-protocol/"><span>58</span>Open-Turn Mediation Protocol</a><a class="chapter-link" href="/chapters/59-copilot-initiated-library-curation/"><span>59</span>The Fountain-Coach Git Library and Reframe Project Flow</a><a class="chapter-link" href="/chapters/60-the-fountain-editor-is-the-project-surface/"><span>60</span>The Fountain Editor Is the Project Surface</a><a class="chapter-link" href="/chapters/61-the-fountain-project-round-trip/"><span>61</span>The Fountain Project Round Trip</a><a class="chapter-link" href="/chapters/62-reframe-maintenance-control-plane/"><span>62</span>Reframe Maintenance Control Plane</a><a class="chapter-link" href="/chapters/63-fountain-maintenance-kit/"><span>63</span>FountainMaintenanceKit — Portable Swift Maintenance Contract</a><a class="chapter-link" href="/chapters/64-fountain-project-kit-durable-draft-custody/"><span>64</span>FountainProjectKit — Durable Fountain Project Custody</a><a class="chapter-link" href="/chapters/65-the-copilot-as-writing-coach/"><span>65</span>The Copilot as Writing Coach</a><a class="chapter-link" href="/chapters/66-fountain-image-publication-kit/"><span>66</span>FountainImagePublicationKit — Reframe Image Cloud and Publication Boundary</a><a class="chapter-link" href="/chapters/67-fountain-composer-kit-remote-attachment-custody/"><span>67</span>FountainComposerKit — Remote Attachment Custody and the Composer Boundary</a><a class="chapter-link" href="/chapters/68-the-reframe-e2e-scenario-is-the-publication-unit/"><span>68</span>68 — The Reframe E2E Scenario Is the Publication Unit</a><a class="chapter-link" href="/chapters/69-the-book-of-reframe-is-a-dual-projection/"><span>69</span>The Book of Reframe Is a Dual Projection</a><a class="chapter-link" href="/chapters/70-external-midi2-control-of-reframe/"><span>70</span>70 — External MIDI2 Control of Reframe</a><a class="chapter-link" href="/chapters/71-reframe-to-reframe-software-peer-acceptance/"><span>71</span>71 — Reframe-to-Reframe Software-Peer Acceptance</a><a class="chapter-link" href="/chapters/72-midi2-peer-projections-and-capacity-admission/"><span>72</span>72 — MIDI2 Peer Projections and Capacity Admission</a><a class="chapter-link" href="/chapters/73-reframe-scenario-development-cycle/"><span>73</span>73 — The Reframe Scenario Development Cycle</a><a class="chapter-link" href="/chapters/74-private-image-prompt-history/"><span>74</span>Private Image Prompt History</a><a class="chapter-link" href="/chapters/75-scenario-run-ownership-and-non-interference/"><span>75</span>75 — Scenario Run Ownership and Non-Interference</a><a class="chapter-link" href="/chapters/76-beat-movement-and-uncertainty-overlay/"><span>76</span>Beat Movement and the Uncertainty Overlay</a><a class="chapter-link" href="/chapters/77-swift-midi2-scenario-runtime/"><span>77</span>77 — The Scenario Runtime Is Swift and MIDI2-Native</a><a class="chapter-link" href="/chapters/78-scenario-driven-development-as-org-infrastructure/"><span>78</span>78 — Scenario-Driven Development Is Org Infrastructure</a><a class="chapter-link" href="/chapters/79-default-semantic-manuscript-projection/"><span>79</span>79 — The Default Semantic Manuscript Projection</a><a class="chapter-link" href="/chapters/80-independent-governance-publication/"><span>80</span>80 — Independent Governance Publication</a><a class="chapter-link" href="/chapters/reframe-app-flow-governance/"><span>·</span>Reframe — How the App Must Flow</a></aside>
+    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div><article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · 19</div><h1 id="apples-human-interface-guidelines--the-baseline-we-build-on">Apple's Human Interface Guidelines — the Baseline We Build On</h1>
+<blockquote>
+<p>Chapter summary: Reframe is a native macOS application, and Apple's <strong>Human Interface Guidelines (HIG)</strong> are its baseline visual and interaction standard — not an alternative to our doctrine but the floor beneath it. This chapter adopts the HIG specifics our own chapters implied but never numbered (system text styles, contrast ratios, hit targets, the 8-point grid, semantic system colours, materials, purposeful motion that honours Reduce Motion, SF Symbols, VoiceOver), maps them onto chapters 12/14/17/18, states where Reframe deliberately goes <em>further</em> than the HIG, and records the gaps between the current app and the HIG that this adoption obliges us to close. It states enforceable rules; it does not restate the whole HIG.</p>
+</blockquote>
+<h2 id="purpose">Purpose</h2>
+<p>Chapters 12–18 arrived at good visual doctrine by hitting walls in the code — "the act is the star", "the glasses test", "verify by looking". Much of what they found is exactly what Apple already publishes in the HIG, arrived at from the other direction. Rather than keep re-deriving it, Reframe <strong>adopts the HIG as its baseline</strong> and reconciles our earned doctrine with it: where they agree, the HIG supplies the numbers we were guessing; where we go further, we say so; and where the current app falls short of the HIG, we name the gap.</p>
+<p>Adopting the HIG is also the honest completion of the accessibility work. FCIS-AX gave us the machine-readable half; chapter 18 gave us the human-legible half; the HIG is where Apple states both together, for the platform Reframe actually ships on.</p>
+<h2 id="the-principle--the-hig-is-the-floor-our-chapters-are-the-extension">The principle — the HIG is the floor; our chapters are the extension</h2>
+<p>A native app that ignores the HIG fights the platform: it loses free Dark Mode, Dynamic Type, Increase Contrast, VoiceOver, Reduce Motion, and the muscle memory of every Mac user. So the HIG is the <strong>baseline</strong> — Reframe conforms by default and departs only deliberately, for a stated reason. Chapters 12 (animating truth), 14 (the beat's anatomy), 17 (the Score), and 18 (the stage presents the act) are Reframe's <strong>extensions</strong> of the HIG for the specific act of reading a manuscript into a story and composing from it — never contradictions of it.</p>
+<h2 id="the-decision-adopted-hig-specifics-enforceable">The decision (adopted HIG specifics, enforceable)</h2>
+<ol type="1">
+<li><p><strong>Type comes from the system text styles, not hand-picked point sizes.</strong> Use the built-in styles (Body, Title/Headline, Footnote, Caption) rendered in the system font (SF Pro; SF Pro Text ≤ 19 pt, Display ≥ 20 pt, dynamic optical sizing on macOS 11+). On macOS the <strong>Body style is 13 pt Regular</strong> — which is exactly chapter 18's body floor, arrived at independently. Chapter 18's floor is therefore restated as: <strong>body = Body (13 pt), a beat/section title ≥ Headline/emphasized (~15 pt), a label ≥ Footnote/Caption (≥ 11–12 pt)</strong> — and prefer the named style over a literal size so Dynamic Type and optical sizing come for free.</p></li>
+<li><p><strong>Contrast meets the HIG ratios, verified in every appearance.</strong> Text ≥ <strong>4.5:1</strong> against its background (the WCAG AA / App Store "Sufficient Contrast" floor), non-text controls and meaningful graphics ≥ <strong>3:1</strong>, and <strong>aim for 7:1</strong> on primary reading text. Verify in <strong>light, dark, AND Increase Contrast</strong> — chapter 18's "verify by looking" now explicitly includes the Increase-Contrast setting, not only the two themes.</p></li>
+<li><p><strong>Hit targets honour 44 pt where touch or accessibility reach; macOS pointer may be finer, never cramped.</strong> The HIG floor is <strong>44 × 44 pt</strong> for touch and for Full-Keyboard-Access / Switch-Control reach. macOS is pointer-first, so secondary controls may be smaller — but chapter 18's rule stands and is reconciled: <strong>secondary controls ≥ 28 pt, a primary action ≥ 44 pt</strong>, and nothing a writer must hit is a sub-12 px glyph.</p></li>
+<li><p><strong>Colour is semantic and system-supplied; a colour meaning is never hard-coded.</strong> Use the semantic system colours (<code>.primary</code>, <code>.secondary</code>, <code>.accentColor</code>, label/fill/background roles) so light/dark and Increase-Contrast adapt for free. Never hard-code a colour that carries meaning — the "Thinking… in red" defect (a working state painted as an error) is exactly this rule broken. And per the HIG, <strong>never rely on colour alone</strong> to convey state — pair it with text, shape, or a symbol (chapter 18 rule 5 is the same idea for relationships).</p></li>
+<li><p><strong>Layout is an 8-point grid that defers to content.</strong> Space in multiples of 8; give content generous margins and whitespace; establish hierarchy by size and weight; group related elements. "Defer to content" is the HIG's own phrasing of chapter 18's "the act is the star."</p></li>
+<li><p><strong>Depth and grouping use system materials, not hand-rolled panels.</strong> Prefer the platform's materials/vibrancy for sidebars, popovers, and layered surfaces so the app reads as native and adapts to appearance and Increase-Contrast automatically.</p></li>
+<li><p><strong>Motion is purposeful AND honours Reduce Motion.</strong> Chapter 12's animated truth — breathing ghosts, the read-head, the settle of a beat — is HIG-aligned <em>purposeful</em> motion, but the HIG also requires respecting the <strong>Reduce Motion</strong> accessibility setting. Every chapter-12 animation must have a reduced, non-animated (or cross-fade) form when Reduce Motion is on; the <em>information</em> the motion carried (progress, arrival) must survive without the movement.</p></li>
+<li><p><strong>Icons are SF Symbols, scaling with the text.</strong> Use SF Symbols for iconography; size and weight them to match the adjacent text style so they scale with Dynamic Type. A custom-drawn glyph (e.g. the noodle thread) is legitimate only where no symbol expresses the meaning.</p></li>
+<li><p><strong>Accessibility is both halves, per the HIG.</strong> VoiceOver labels and accessibility identifiers on every control (FCIS-AX); Dynamic Type honoured; contrast met; colour never the sole signal; Reduce Motion respected. The HIG is where Apple states the machine-readable and human-legible halves as one requirement.</p></li>
+</ol>
+<h2 id="reconciliation--our-chapters-against-the-hig">Reconciliation — our chapters against the HIG</h2>
+<table>
+<thead>
+<tr class="header">
+<th>HIG topic</th>
+<th>Reframe chapter</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Defer to content</td>
+<td>18 (the act is the star)</td>
+<td>Agreement — same idea, ours names the <em>act</em> specifically</td>
+</tr>
+<tr class="even">
+<td>Typography / text styles</td>
+<td>18 (glasses test)</td>
+<td>HIG supplies the numbers; our floor == macOS Body 13 pt</td>
+</tr>
+<tr class="odd">
+<td>Contrast ratios</td>
+<td>18</td>
+<td>HIG adds the ratios (4.5 / 3 / 7); we adopt + add Increase Contrast to "verify by looking"</td>
+</tr>
+<tr class="even">
+<td>Reduce clutter / prioritise</td>
+<td>18 (progressive disclosure), 16 (one surface)</td>
+<td>Agreement</td>
+</tr>
+<tr class="odd">
+<td>Colour (semantic, not colour-alone)</td>
+<td>18 rule 5, and the "Thinking-red" fix</td>
+<td>HIG reinforces; we adopt semantic-only</td>
+</tr>
+<tr class="even">
+<td>Motion (purposeful, Reduce Motion)</td>
+<td>12 (animating truth)</td>
+<td>Agreement on purposeful; HIG adds Reduce Motion — shared <code>StudioMotion</code> helper + Cut lane done, other ch.12 animations pending</td>
+</tr>
+<tr class="odd">
+<td>Accessibility (VoiceOver)</td>
+<td>FCIS-AX standard</td>
+<td>Two halves of one requirement</td>
+</tr>
+<tr class="even">
+<td>Progress indicators</td>
+<td>12 (never sign a wait with a spinner)</td>
+<td><strong>Deliberate departure</strong> — Reframe is <em>stricter</em>: the wait is the show, not a spinner</td>
+</tr>
+</tbody>
+</table>
+<h2 id="honesty-non-goals">Honesty (non-goals)</h2>
+<ul>
+<li><strong>The HIG is a baseline, not a straitjacket.</strong> Where Reframe deliberately exceeds it — the no-spinner rule (ch.12), "the act is the star" as a hard rule (ch.18), relationships drawn as lines (the noodle) — that is stricter conformance to the <em>spirit</em> (clarity, deference to content), stated as a departure, not an accident.</li>
+<li><strong>Adopting the HIG is not a reskin.</strong> It is meeting the platform's floor for legibility, contrast, motion, and accessibility — function, not veneer.</li>
+<li><strong>Numbers are a floor, not a target.</strong> 4.5:1 and 13 pt are minimums; primary reading text should sit comfortably above them.</li>
+</ul>
+<h2 id="relationship-to-other-chapters">Relationship to other chapters</h2>
+<ul>
+<li><strong><a href="/chapters/18-the-stage-presents-the-act/">The stage presents the act</a></strong> — the human-legibility floor; this chapter supplies its numbers from the HIG and adds contrast + Increase-Contrast.</li>
+<li><strong><a href="/chapters/12-animating-truth/">Animating truth</a></strong> — purposeful motion; this chapter binds it to Reduce Motion.</li>
+<li><strong><a href="/chapters/14-the-beat-and-its-arrangements/">The beat and its arrangements</a></strong> — the one beat spec now reads from system text styles at the HIG floor.</li>
+<li><strong>FCIS-AX standard</strong> — the machine-readable half of the HIG's accessibility requirement; this chapter is where it meets the human half.</li>
+</ul>
+<h2 id="acceptance">Acceptance</h2>
+<p>The doctrine is met when:</p>
+<ol type="1">
+<li><strong>Text uses the system text styles</strong> (or matches their sizes) and meets the chapter-18 floor, in the system font.</li>
+<li><strong>Contrast meets 4.5:1 (text) / 3:1 (controls)</strong>, verified in light, dark, and Increase Contrast; primary reading text aims for 7:1.</li>
+<li><strong>Hit targets meet 44 pt where touch/accessibility reach</strong>, and no writer-facing control is a sub-12 px glyph.</li>
+<li><strong>Colours are semantic and adapt to appearance automatically;</strong> no colour carries meaning alone, and none is hard-coded.</li>
+<li><strong>Motion honours Reduce Motion</strong> — every animation has a reduced form that preserves the information it carried.</li>
+<li><strong>Every control has a VoiceOver label and an accessibility identifier</strong> (FCIS-AX), and Dynamic Type is honoured.</li>
+</ol>
+<h2 id="known-gaps-this-adoption-obliges-us-to-close">Known gaps this adoption obliges us to close</h2>
+<p>Stated honestly. The first round of compliance (the shared mechanisms + the Cut surface, the surface this chapter governs most directly) is done; the app-wide sweep remains.</p>
+<p><strong>Closed:</strong></p>
+<ul>
+<li><strong>Reduce Motion has a shared, non-View-context-capable helper</strong> (<code>StudioMotion</code> reads the process-wide setting via <code>NSWorkspace</code>, so a <code>DropDelegate</code> or plain method can honour it, not only a <code>View</code>). The Cut lane's reorder animations (drag and button) now drop the tween under Reduce Motion while keeping the state change. A named text-style vocabulary (<code>StudioTheme.beatTitle</code>/<code>readingBody</code>/<code>controlLabel</code>/<code>primaryAction</code>/<code>eyebrow</code>, backed by macOS system text styles) and a named <strong>provenance</strong> colour (the noodle's "moved" meaning, no longer hard-coded orange inline) exist and the Cut surface consumes them.</li>
+<li><strong>A contrast audit exists and is enforced</strong> — <code>StudioThemeContrastAuditTests</code> computes the real WCAG ratio for the text/ground pairs Reframe owns, in light <em>and</em> dark, and fails the build below the 4.5:1 text (3:1 large/control) floor. It caught genuine defects (the status text-on-fill tokens — warning/success/accent/info — sat at ~3:1, worse in dark); their blends were deepened until every owned pair clears 4.5:1. Secondary/tertiary label tiers are measured and held to the 3:1 support floor (they are for supporting captions, never primary reading — Apple's own usage).</li>
+<li><strong>Materials</strong> are used on the Cut lane's recessed background (<code>.regularMaterial</code>), so it reads as depth beneath the reading rather than a flat wash.</li>
+</ul>
+<p><strong>Still open (app-wide, not the governed surface):</strong></p>
+<ul>
+<li><strong>Migrate the remaining hard-coded sizes and colours</strong> on the other surfaces (~460 literal <code>.system(size:)</code> sites, a handful of raw colour literals) to the named text styles and semantic/<code>StudioTheme</code> colours. The vocabulary now exists; the sweep does not.</li>
+<li><strong>Honour Reduce Motion in the other chapter-12 animations</strong> (breathing ghosts, settles, the read-head) using the <code>StudioMotion</code> helper — several views already read <code>accessibilityReduceMotion</code> piecemeal; converge them on the helper and cover the rest.</li>
+<li><strong>Extend the contrast audit</strong> to Increase-Contrast resolution and to more composited pairs as surfaces migrate. Opt-in pixel goldens (<code>UI_SNAPSHOT=1</code>) that render status pills will need a one-time <code>UPDATE_GOLDEN=1</code> refresh to adopt the deepened status colours.</li>
+</ul>
+<p>These remaining items are the backlog; they are not claimed as done.</p>
+<h2 id="sources">Sources</h2>
+<p>Apple Human Interface Guidelines and related developer documentation:</p>
+<ul>
+<li><a href="https://developer.apple.com/design/human-interface-guidelines">Human Interface Guidelines</a></li>
+<li><a href="https://developer.apple.com/design/human-interface-guidelines/accessibility">Accessibility</a></li>
+<li><a href="https://developer.apple.com/design/human-interface-guidelines/typography">Typography</a></li>
+<li><a href="https://developer.apple.com/design/human-interface-guidelines/color">Color</a></li>
+<li><a href="https://developer.apple.com/design/human-interface-guidelines/layout">Layout</a></li>
+<li><a href="https://developer.apple.com/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria/">Sufficient Contrast evaluation criteria — App Store Connect</a></li>
+<li><a href="https://developer.apple.com/design/tips/">UI Design Dos and Don'ts</a></li>
+</ul>
+</article><footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="https://github.com/Fountain-Coach/Reframe-Refactoring">Reframe-Refactoring</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
+  </div>
+  <script src="/assets/governance.js" defer></script>
+</body>
+</html>

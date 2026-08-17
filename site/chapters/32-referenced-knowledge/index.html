@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Referenced Knowledge — What the World Knows Outside the Book — Reframe Governance</title>
+  <meta name="description" content="The public Reframe Governance book: reviewed architectural doctrine, validation rules, and publication boundaries.">
+  <link rel="canonical" href="https://governance.fountain.coach/chapters/32-referenced-knowledge/">
+  <link rel="stylesheet" href="/assets/governance.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to chapter</a>
+  <header class="topbar"><a class="wordmark" href="/"><span class="mark">R</span><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
+  <div class="workspace">
+    <aside class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home" href="/">Governance overview</a><a class="chapter-link" href="/chapters/00-abstract/"><span>00</span>Abstract</a><a class="chapter-link" href="/chapters/01-reading-index/"><span>01</span>Reading Index</a><a class="chapter-link" href="/chapters/02-development-history/"><span>02</span>Development History and Retained Lessons</a><a class="chapter-link" href="/chapters/03-current-state-and-problem/"><span>03</span>Current State and Refactoring Problem</a><a class="chapter-link" href="/chapters/04-target-architecture/"><span>04</span>Target Architecture</a><a class="chapter-link" href="/chapters/05-grounding-contract/"><span>05</span>Extended Grounding Contract</a><a class="chapter-link" href="/chapters/06-refactoring-program/"><span>06</span>Refactoring Program</a><a class="chapter-link" href="/chapters/07-agent-operating-guide/"><span>07</span>Operating Guide for `.claude` and `.codex`</a><a class="chapter-link" href="/chapters/08-validation-and-acceptance/"><span>08</span>Validation and Acceptance</a><a class="chapter-link" href="/chapters/09-compatibility-and-future-evolution/"><span>09</span>Compatibility and Future Evolution</a><a class="chapter-link" href="/chapters/10-copilot-implementation-extension/"><span>10</span>Copilot Implementation Extension</a><a class="chapter-link" href="/chapters/11-grounding-as-a-given/"><span>11</span>Grounding as a Given — the Canonical Manifesto and Conversational Authoring</a><a class="chapter-link" href="/chapters/12-animating-truth/"><span>12</span>Animating Truth — Foreshadowing and Perceived Performance</a><a class="chapter-link" href="/chapters/13-storage-and-performance/"><span>13</span>Storage and Performance — What Persists Where, and Why Reads Are Fast</a><a class="chapter-link" href="/chapters/14-the-beat-and-its-arrangements/"><span>14</span>The Beat and Its Arrangements — One Object, Three Views, One Firing</a><a class="chapter-link" href="/chapters/15-the-situated-copilot/"><span>15</span>The Situated Copilot — One Copilot, Differently Placed</a><a class="chapter-link" href="/chapters/16-the-timeline-is-the-machine-room/"><span>16</span>The Timeline Is the Machine Room — What You See Is What You Get</a><a class="chapter-link" href="/chapters/17-the-score/"><span>17</span>The Score — Reframe&#x27;s Performance Space, and the One Surface That Folds the Others</a><a class="chapter-link" href="/chapters/18-the-stage-presents-the-act/"><span>18</span>The Stage Presents the Act — Legibility Over Density</a><a class="chapter-link" href="/chapters/19-apple-human-interface-guidelines/"><span>19</span>Apple&#x27;s Human Interface Guidelines — the Baseline We Build On</a><a class="chapter-link" href="/chapters/20-on-device-first-and-the-writers-key/"><span>20</span>Paid-First Copilot, and the Writer&#x27;s Key — Quality-First Lane Selection</a><a class="chapter-link" href="/chapters/21-training-perspectives/"><span>21</span>Training Perspectives — Teaching the On-Device Model the Writer&#x27;s Work</a><a class="chapter-link" href="/chapters/22-no-preferences-only-reasoning/"><span>22</span>No Preferences, Only Reasoning</a><a class="chapter-link" href="/chapters/23-one-reasoning/"><span>23</span>One Reasoning — The Single Front Door of a Turn</a><a class="chapter-link" href="/chapters/24-the-reasoning-is-an-uncertainty-map/"><span>24</span>The Reasoning Is an Uncertainty Map</a><a class="chapter-link" href="/chapters/25-the-copilot-is-the-surface/"><span>25</span>The CoPilot Is the Surface</a><a class="chapter-link" href="/chapters/26-internals-tune-themselves/"><span>26</span>Internals Tune Themselves — the Disposition of the Preferences Panel</a><a class="chapter-link" href="/chapters/27-parse-before-you-ask/"><span>27</span>Parse Before You Ask</a><a class="chapter-link" href="/chapters/28-a-beat-is-the-question-it-raises/"><span>28</span>A Beat Is the Question It Raises</a><a class="chapter-link" href="/chapters/29-natural-language-measures-storify-interprets/"><span>29</span>NaturalLanguage Measures, Storify Interprets</a><a class="chapter-link" href="/chapters/30-the-living-gazetteer/"><span>30</span>The Living Gazetteer</a><a class="chapter-link" href="/chapters/31-compiled-knowledge/"><span>31</span>Compiled Knowledge — the Cloud Teaches, the Device Remembers</a><a class="chapter-link active" href="/chapters/32-referenced-knowledge/"><span>32</span>Referenced Knowledge — What the World Knows Outside the Book</a><a class="chapter-link" href="/chapters/33-a-want-is-a-gap-in-a-ledger/"><span>33</span>A Want Is a Gap in a Ledger</a><a class="chapter-link" href="/chapters/34-a-question-that-leaves-the-work/"><span>34</span>A Question That Leaves the Work</a><a class="chapter-link" href="/chapters/35-deep-search/"><span>35</span>Deep Search</a><a class="chapter-link" href="/chapters/36-every-gap-keeps-its-address/"><span>36</span>Every Gap Keeps Its Address</a><a class="chapter-link" href="/chapters/37-copilot-capability-governance/"><span>37</span>Copilot Capability Governance — From Transport Contract to Trustworthy Action</a><a class="chapter-link" href="/chapters/38-copilot-capability-audit-skill/"><span>38</span>Copilot Capability Audit Skill — From Boundary to Empowerment</a><a class="chapter-link" href="/chapters/39-a-model-cannot-be-told-what-it-cannot-do/"><span>39</span>A Model Cannot Be Told What It Cannot Do</a><a class="chapter-link" href="/chapters/40-a-citation-is-a-promise-someone-can-check/"><span>40</span>A Citation Is a Promise Someone Can Check</a><a class="chapter-link" href="/chapters/41-one-retrieval-two-directions/"><span>41</span>One Retrieval, Two Directions</a><a class="chapter-link" href="/chapters/42-what-is-already-recorded-is-read/"><span>42</span>What Is Already Recorded Is Read, Never Re-Derived</a><a class="chapter-link" href="/chapters/43-the-released-surface-is-a-named-build/"><span>43</span>The Released Surface Is a Named Build</a><a class="chapter-link" href="/chapters/44-publication-and-source-policy/"><span>44</span>Public Publication and Private Source Policy</a><a class="chapter-link" href="/chapters/45-copilot-reading-surface-and-typography/"><span>45</span>Copilot Reading Surface and Typography — Situated, Legible, and Reframe-Native</a><a class="chapter-link" href="/chapters/46-dynamic-grounding/"><span>46</span>Dynamic Grounding: From Default Reading to Writer-Accepted Lens</a><a class="chapter-link" href="/chapters/47-situated-mixed-initiative-interaction/"><span>47</span>Situated, Mixed-Initiative Interaction</a><a class="chapter-link" href="/chapters/48-a-service-is-a-fact-not-a-symptom/"><span>48</span>48. A Service Is a Fact, Not a Symptom</a><a class="chapter-link" href="/chapters/49-one-definition-two-projections/"><span>49</span>49. One Definition, Two Projections</a><a class="chapter-link" href="/chapters/50-text-is-stored-so-it-can-be-pointed-at/"><span>50</span>50. Text Is Stored So It Can Be Pointed At</a><a class="chapter-link" href="/chapters/51-one-decision-decides-the-lane/"><span>51</span>51. One Decision Decides the Lane</a><a class="chapter-link" href="/chapters/52-the-pencil-belongs-to-the-writer/"><span>52</span>52. The Pencil Belongs to the Writer</a><a class="chapter-link" href="/chapters/53-a-selection-snaps-to-meaning/"><span>53</span>53. A Selection Snaps to Meaning</a><a class="chapter-link" href="/chapters/54-the-writer-does-not-manage-the-projection/"><span>54</span>The Writer Does Not Manage the Projection</a><a class="chapter-link" href="/chapters/55-one-store-authority-across-repositories/"><span>55</span>One Store Authority Across Repositories</a><a class="chapter-link" href="/chapters/56-the-book-library-is-a-portable-source-provider/"><span>56</span>The Book Library Is Reframe&#x27;s Sole Reading Provider</a><a class="chapter-link" href="/chapters/57-the-writer-enters-by-intention/"><span>57</span>The Writer Enters by Intention</a><a class="chapter-link" href="/chapters/58-open-turn-mediation-protocol/"><span>58</span>Open-Turn Mediation Protocol</a><a class="chapter-link" href="/chapters/59-copilot-initiated-library-curation/"><span>59</span>The Fountain-Coach Git Library and Reframe Project Flow</a><a class="chapter-link" href="/chapters/60-the-fountain-editor-is-the-project-surface/"><span>60</span>The Fountain Editor Is the Project Surface</a><a class="chapter-link" href="/chapters/61-the-fountain-project-round-trip/"><span>61</span>The Fountain Project Round Trip</a><a class="chapter-link" href="/chapters/62-reframe-maintenance-control-plane/"><span>62</span>Reframe Maintenance Control Plane</a><a class="chapter-link" href="/chapters/63-fountain-maintenance-kit/"><span>63</span>FountainMaintenanceKit — Portable Swift Maintenance Contract</a><a class="chapter-link" href="/chapters/64-fountain-project-kit-durable-draft-custody/"><span>64</span>FountainProjectKit — Durable Fountain Project Custody</a><a class="chapter-link" href="/chapters/65-the-copilot-as-writing-coach/"><span>65</span>The Copilot as Writing Coach</a><a class="chapter-link" href="/chapters/66-fountain-image-publication-kit/"><span>66</span>FountainImagePublicationKit — Reframe Image Cloud and Publication Boundary</a><a class="chapter-link" href="/chapters/67-fountain-composer-kit-remote-attachment-custody/"><span>67</span>FountainComposerKit — Remote Attachment Custody and the Composer Boundary</a><a class="chapter-link" href="/chapters/68-the-reframe-e2e-scenario-is-the-publication-unit/"><span>68</span>68 — The Reframe E2E Scenario Is the Publication Unit</a><a class="chapter-link" href="/chapters/69-the-book-of-reframe-is-a-dual-projection/"><span>69</span>The Book of Reframe Is a Dual Projection</a><a class="chapter-link" href="/chapters/70-external-midi2-control-of-reframe/"><span>70</span>70 — External MIDI2 Control of Reframe</a><a class="chapter-link" href="/chapters/71-reframe-to-reframe-software-peer-acceptance/"><span>71</span>71 — Reframe-to-Reframe Software-Peer Acceptance</a><a class="chapter-link" href="/chapters/72-midi2-peer-projections-and-capacity-admission/"><span>72</span>72 — MIDI2 Peer Projections and Capacity Admission</a><a class="chapter-link" href="/chapters/73-reframe-scenario-development-cycle/"><span>73</span>73 — The Reframe Scenario Development Cycle</a><a class="chapter-link" href="/chapters/74-private-image-prompt-history/"><span>74</span>Private Image Prompt History</a><a class="chapter-link" href="/chapters/75-scenario-run-ownership-and-non-interference/"><span>75</span>75 — Scenario Run Ownership and Non-Interference</a><a class="chapter-link" href="/chapters/76-beat-movement-and-uncertainty-overlay/"><span>76</span>Beat Movement and the Uncertainty Overlay</a><a class="chapter-link" href="/chapters/77-swift-midi2-scenario-runtime/"><span>77</span>77 — The Scenario Runtime Is Swift and MIDI2-Native</a><a class="chapter-link" href="/chapters/78-scenario-driven-development-as-org-infrastructure/"><span>78</span>78 — Scenario-Driven Development Is Org Infrastructure</a><a class="chapter-link" href="/chapters/79-default-semantic-manuscript-projection/"><span>79</span>79 — The Default Semantic Manuscript Projection</a><a class="chapter-link" href="/chapters/80-independent-governance-publication/"><span>80</span>80 — Independent Governance Publication</a><a class="chapter-link" href="/chapters/reframe-app-flow-governance/"><span>·</span>Reframe — How the App Must Flow</a></aside>
+    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div><article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · 32</div><h1 id="referenced-knowledge--what-the-world-knows-outside-the-book">Referenced Knowledge — What the World Knows Outside the Book</h1>
+<blockquote>
+<p>Chapter summary: Some things a manuscript needs known are not in it. <em>Kinch is Stephen Dedalus</em> is a settled fact of Joyce scholarship that Telemachus never states, so a world built only from what the text says cannot work it out — and <a href="/chapters/31-compiled-knowledge/">ch.31</a> rule 4, which requires every entry to cite the passage that put it there, makes such knowledge structurally impossible. This chapter admits a third kind of evidence and governs it: a <strong>reference</strong> — another book, an edition, a link, a scientific source — cited well enough that a reader who doubts it can follow it. Its first-class rule is the one that answers the question every student asks about AI and citation: <strong>references are retrieved, never recalled.</strong> A model may say what kind of source would settle a question; it may not produce the source from memory. A citation is a claim about an external work's existence and content — verifiable, and therefore to be verified. And referenced knowledge may never pass as textual evidence: the manuscript remains the only authority on what the manuscript says.</p>
+</blockquote>
+<h2 id="purpose--the-failure-this-exists-to-end">Purpose — the failure this exists to end</h2>
+<p><strong>Two failures, opposite in shape, and this chapter sits between them.</strong></p>
+<p><strong>A world that can only know what the text spells out.</strong> Measured on Telemachus, after a full reading with everything this refactor has built: the world holds <em>Kinch</em> and <em>Stephen Dedalus</em> as <strong>two people</strong>. Both are correct entries — each name occurs, each is evidenced, each was confirmed by a reading. And they are one man. The chapter never says so; Mulligan simply calls him Kinch. No amount of closer reading of these 1,118 lines fixes it, because the fact is not in them. It is in the scholarship — Gifford's <em>Ulysses Annotated</em> settles it in an entry — and the app had no way to hold a fact of that kind at all.</p>
+<p>The correction path built for this (<a href="/chapters/30-the-living-gazetteer/">ch.30</a> rule 9) assumed the writer would supply what the text withholds. The writer's own objection to that, and it is decisive:</p>
+<blockquote>
+<p><em>"I do see the writer's willingness to edit in corrections very critical — in almost all situations people let the best model decide, and maybe Google it. Knowledge from people's understanding is to be referenced, too — and this reference is another book, a link, a clear scientific reference."</em></p>
+</blockquote>
+<p>Writers do not curate. Asked to adjudicate identities, they will delegate — to the best model available, or to a search — and they are right to, because <em>Kinch is Stephen</em> is not a judgement anyone needs to make. It is something known, by other people, in named places.</p>
+<p><strong>And the failure that admitting references invites, which is worse.</strong> A language model asked for a reference will produce one: a plausible author, a plausible title, a page number of the right shape. This is the most documented failure of the technology and the most damaging, because a footnote <strong>reads as authority</strong>. An invented citation does not merely state something false; it states it in the register of things that have been checked, and it defeats the reader who would otherwise have doubted. A world that admitted such citations would be worse than the world that could not know Kinch is Stephen — it would be a world that could not be trusted about anything.</p>
+<p>So the question is not whether to allow referenced knowledge. It is what a reference has to be before it counts.</p>
+<h2 id="the-principle--retrieved-never-recalled">The principle — retrieved, never recalled</h2>
+<p><strong>A citation is a claim about an external work: that it exists, and that it says a particular thing.</strong> Both halves are verifiable. Anything verifiable must be verified rather than generated.</p>
+<p>Therefore:</p>
+<ul>
+<li>The system may <strong>retrieve</strong> a reference — fetch the work, the record, the entry, the page — and cite what it fetched, with the words that bear the claim.</li>
+<li>The system may <strong>not recall</strong> a reference. A model's memory of a bibliography is not a bibliography. Where the work was not fetched, there is no reference, however confident the account of it.</li>
+<li>A model may legitimately say <em>what kind of source would settle this</em> — "an annotated edition would list this byname" — and that is a research plan, not a citation. The distinction is not stylistic. One can be followed; the other only sounds as though it could.</li>
+</ul>
+<p>This is the whole of the honest answer to <em>how does AI handle scientific referencing</em>: it does not produce references. It produces the <strong>retrieval of</strong> references, and shows its work.</p>
+<h2 id="what-a-reference-has-to-carry">What a reference has to carry</h2>
+<p>A citation is admitted when a reader who doubts it can check it without asking anyone. That requires, at minimum:</p>
+<ul>
+<li><strong>The work</strong>, named as a reader would name it — author, title, edition. "The literature" is not a work; "as is well known" is not a work.</li>
+<li><strong>A locator</strong> — the page, entry, line, section, DOI, or identifier that addresses the claim inside the work. A reference to a 600-page book with no address is a gesture.</li>
+<li><strong>The quotation that bears the claim</strong>, in the source's own words. This is the part usually omitted and the part that matters most: it lets a reader judge the <em>inference</em> from the source, not merely trust that one was made. A citation without it asks to be believed about two things at once.</li>
+<li><strong>A way to follow it, where one exists</strong> — a URL, an archive identifier, a library record. A link is not required; being followable is. Links rot, so the locator must survive the URL's death.</li>
+</ul>
+<p>A reference missing the work or the locator is not a weak reference. It is not a reference.</p>
+<h2 id="precedence--who-wins-about-what">Precedence — who wins, about what</h2>
+<p>Three authorities now speak, and conflating them is how scholarship comes to overrule the page it is about:</p>
+<table>
+<thead>
+<tr class="header">
+<th>The question</th>
+<th>Who is authoritative</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>What does the manuscript <em>contain</em>?</td>
+<td><strong>The text</strong>, at coordinates</td>
+<td>It is the only immutable source (<a href="/chapters/13-storage-and-performance/">ch.13</a>)</td>
+</tr>
+<tr class="even">
+<td>What does this <em>world</em> hold — a byname, a date, a usage, a place</td>
+<td><strong>A reference</strong>, cited</td>
+<td>It is where such things are known</td>
+</tr>
+<tr class="odd">
+<td>What is <em>true for this work</em> when these disagree</td>
+<td><strong>The writer</strong>, having been shown both</td>
+<td>It is their manuscript (<a href="/chapters/30-the-living-gazetteer/">ch.30</a> rule 9)</td>
+</tr>
+</tbody>
+</table>
+<p>Two consequences follow, and both are rules below. A reference may never assert what a passage contains — if a source says a scene contains a milkman's shop and the lines do not, the lines are right and the source is about something else. And the writer's authority is exercised <strong>on a presented disagreement</strong>, not on a blank prompt: the difference between "who is Kinch?" and "Gifford's annotations say Kinch is Stephen Dedalus — shall I record that?" is the difference between delegating work to the writer and asking them to decide.</p>
+<p>That reorders the human's role, deliberately. The writer is not the <strong>curator</strong> of the world's knowledge — asked to type in what the app lacks. They are its <strong>arbiter of last resort</strong>: best reasoning first, then reference, and their judgement invoked when those disagree or fail, on a question already made small enough to answer in a word.</p>
+<h2 id="scholarship-disagrees-with-itself">Scholarship disagrees with itself</h2>
+<p>A reference is not a fact. It is a record of what a source says, and sources conflict, revise and go out of date. So a referenced entry holds the <strong>reference</strong>, not the truth — and a second source that disagrees is recorded <strong>beside</strong> the first, not instead of it (<a href="/chapters/30-the-living-gazetteer/">ch.30</a> rule 5 applies unchanged).</p>
+<p>This is why the quotation is required rather than encouraged. Two annotators disagreeing about a byname is a fact about the scholarship, useful to a writer, and invisible unless both were quoted rather than summarised.</p>
+<p>An editorial consensus may be stated as one — "every annotated edition glosses this the same way" — only when the editions were fetched and can be listed. Otherwise it is recall wearing a plural.</p>
+<h2 id="no-laundering">No laundering</h2>
+<p>The failure that will actually happen, if nothing forbids it: a fact enters through a reference, is compiled into project memory, is read by a later pass as part of the world, and three passes later the app <strong>knows</strong> it with no account of where it came from. Provenance decays into confidence.</p>
+<p>So: <strong>the kind of evidence an entry rests on travels with it forever, and is never flattened.</strong> Nothing in the app says "confirmed" where it could say which of the three confirmed it. A surface that shows the world shows, for each thing in it, whether the manuscript said so, a source said so, or the writer said so — because those are three different reasons to believe something and a writer's response to each is different.</p>
+<p>Negative results are knowledge too: <em>"I looked for a source for this and found none"</em> belongs beside what was found, for the same reason an unresolved name is a result rather than an absence (<a href="/chapters/24-the-reasoning-is-an-uncertainty-map/">ch.24</a>, <a href="/chapters/31-compiled-knowledge/">ch.31</a> rule 2).</p>
+<h2 id="what-may-be-referenced-and-what-may-not">What may be referenced, and what may not</h2>
+<p>Referenced knowledge is admitted for <strong>facts about the world the work belongs to</strong> that a source can settle:</p>
+<ul>
+<li>an established byname, alias, patronymic or title (<em>Kinch</em> for Stephen; <em>Buck</em> for Malachi Mulligan);</li>
+<li>a place, institution, currency, custom, or dating a reader of the period would know;</li>
+<li>a language, a quotation's origin, a liturgical or scientific term;</li>
+<li>an editorial or textual fact about the work — variants, editions, published emendations.</li>
+</ul>
+<p>It is refused, absolutely, for:</p>
+<ul>
+<li><strong>what a passage contains</strong> — that is measurement and reading (<a href="/chapters/29-natural-language-measures-storify-interprets/">ch.29</a>);</li>
+<li><strong>what the work means</strong> — a source may inform an interpretation; it may never become one (<a href="/chapters/12-animating-truth/">ch.12</a>);</li>
+<li><strong>what the writer intends</strong> — no reference outranks the author of the draft;</li>
+<li><strong>dramaturgical judgement</strong> — whether a beat works is nobody's citation.</li>
+</ul>
+<h2 id="amendment--what-is-not-reachable-but-is-knowable">Amendment — what is not reachable but is knowable</h2>
+<p>The rule above — retrieved, never recalled — collapses two very different things into nothing, and the writer caught it while granting the allowance to fetch:</p>
+<blockquote>
+<p><em>"You are allowed to fetch what's useful, reachable, trustful in a measurable way — and honestly, what is not reachable, but knowable (from books or the world outside) as is and as it happens. And this is an allowance that is given for Reframe, too."</em></p>
+</blockquote>
+<p><strong>Gifford's <em>Ulysses Annotated</em> settles Kinch, and it is a book.</strong> No endpoint returns it. Treating that as <em>unknown</em> is its own dishonesty: the answer exists, its location is known, and the app can say so. What it must not do is act as though it had read it.</p>
+<p>So there is a third state, and it is neither evidence nor silence:</p>
+<ul>
+<li><strong>Fetched</strong> — retrieved, quoted, followable. May confirm (rules 1–2).</li>
+<li><strong>Named but unreachable</strong> — a work that exists and would settle the question, identified as precisely as it can be, explicitly not consulted. <strong>May be stated; may never confirm.</strong> It is a signpost: it tells a writer where the answer lives so they can go and get it, or decide from their own knowledge of it.</li>
+<li><strong>Recalled</strong> — a citation produced from a model's memory. Prohibited, because it is indistinguishable in form from the first and carries none of its warrant.</li>
+</ul>
+<p>The line between the second and the third is not what the model knows; it is what the app <strong>claims</strong>. "Gifford's annotations gloss the bynames — I have not consulted them" is honest and useful. "Gifford, <em>Ulysses Annotated</em>, p. 14: Kinch is Stephen's byname" is a fabrication unless page 14 was actually read.</p>
+<p>And the allowance's other half — <strong>trustful in a measurable way</strong> — is a requirement on what a fetch must record. Trust in a source is not asserted; it is made checkable by keeping the retrieval itself: when it happened, what was asked, what came back verbatim, and from where. A reference whose retrieval was not recorded is a reference nobody can audit, which by this chapter's own standard is not a reference.</p>
+<h2 id="fountainstore-is-the-knowledge-plane">FountainStore is the knowledge plane</h2>
+<p>The web is not a second memory, and a frontier model is not a second store. <strong>FountainStore is the operational account of what this project knows, does not know, fetched, failed to fetch, inferred, accepted and superseded.</strong> Anything outside it is transient input. Anything a later pass may rely on must first have become an explicit FountainStore artefact.</p>
+<p>This does not mean that every statement in the store is declared true. It means the store tells the truth about the project's epistemic state:</p>
+<table>
+<thead>
+<tr class="header">
+<th>What is held</th>
+<th>What it is authoritative about</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The canonical source, at coordinates</td>
+<td>What the manuscript contains</td>
+</tr>
+<tr class="even">
+<td>A retrieval record</td>
+<td>What was asked, what came back, when and from where</td>
+</tr>
+<tr class="odd">
+<td>A referenced claim</td>
+<td>What a named source supports, contradicts or does not settle</td>
+</tr>
+<tr class="even">
+<td>A writer revision</td>
+<td>What is true for this work because its writer decided it</td>
+</tr>
+<tr class="odd">
+<td>A failed search</td>
+<td>What was sought on these grounds and not found</td>
+</tr>
+<tr class="even">
+<td>A named but unconsulted work</td>
+<td>Where an answer may live, and that Reframe has not read it</td>
+</tr>
+</tbody>
+</table>
+<p>The distinction is load-bearing. A web response may be wrong, a source may conflict with another, and a model may misread a quotation. FountainStore need not hide any of that to remain the source of operational truth; it must hold each state under the right name, with the act and evidence that produced it.</p>
+<p>So there is no artefact called <code>TruthIndex</code>, <code>WorldModel</code> or generic <code>KnowledgeBase</code> (<a href="/chapters/31-compiled-knowledge/">ch.31</a> rule 13). There are narrowly owned artefacts whose names say what they hold. An index or embedding may retrieve their identifiers. It may never become their authority.</p>
+<h2 id="the-store-native-research-compiler">The store-native research compiler</h2>
+<p>The maximum useful place for an elevated model lane is neither free-running web research nor recurring runtime chat. It is a <strong>research compiler</strong>: given a durable question the project has actually failed to settle, it plans a bounded retrieval, reads only what was fetched and persisted, and compiles a typed, evidenced result that the local lane can consult thereafter without paying again.</p>
+<p>The flow is:</p>
+<pre class="text"><code>FountainStore corpus + existing artefacts
+                  |
+                  v
+        persisted knowledge gap
+                  |
+        store-first resolution
+                  |
+                  v
+      scoped research act + writer&#39;s yes
+                  |
+                  v
+       discovery -&gt; fetch -&gt; persist
+         leads       evidence   receipt
+                  |
+                  v
+     frontier compiler reads stored evidence
+                  |
+                  v
+ referenced claims / conflicts / negative result
+                  |
+                  v
+ Gazetteer or another narrowly owned projection
+                  |
+                  v
+       on-device runtime consults it locally</code></pre>
+<p>The order contains the principal drift control: <strong>persist before interpretation</strong>. A model never receives a transient browser page as operational context and then leaves only its summary behind. Retrieval writes the source record first. The compiler reads that record from FountainStore. If the record was never written, nothing downstream may act as though the page was seen.</p>
+<p>The model response is not the citation. Work, locator, quotation, retrieval moment and origin are assembled from the retrieval artefact. The model may state the inference between quotation and claim; it may not author or repair the quotation, locator or source identity.</p>
+<h3 id="query-the-project-before-querying-the-world">Query the project before querying the world</h3>
+<p>Every research act begins inside FountainStore:</p>
+<ol type="1">
+<li>Consult the current Gazetteer and the other compiled artefacts that own this concern.</li>
+<li>Consult prior referenced claims and retrieval records.</li>
+<li>Consult writer revisions, which already win.</li>
+<li>Consult failed searches and named-but-unreachable works.</li>
+<li>Consult the current knowledge gap and the evidence generation that left it open.</li>
+<li>Only when none of these settles the question may an external retrieval be proposed.</li>
+</ol>
+<p>This is <a href="/chapters/31-compiled-knowledge/">ch.31</a>'s ratchet applied to research. A fact the project has settled is read, not researched again. A failed search is not repeated on identical grounds. A source already fetched is not fetched again merely because another model turn began.</p>
+<p>Similarity search and embeddings may nominate stored artefacts for this consultation. They remain measured retrieval aids: the returned artefact and its evidence decide whether it bears on the question, never the similarity score (<a href="/chapters/29-natural-language-measures-storify-interprets/">ch.29</a>).</p>
+<h3 id="a-research-act-is-claim-shaped-and-bounded">A research act is claim-shaped and bounded</h3>
+<p>An unresolved token is not yet a web query. The reasoning first turns it into a claim-shaped research act:</p>
+<blockquote>
+<p>Determine whether an attributable external source identifies the manuscript name “Kinch” with the established project entity “Stephen Dedalus.”</p>
+</blockquote>
+<p>The act carries:</p>
+<ul>
+<li>the question and corpus scope;</li>
+<li>the FountainStore artefacts and source coordinates that left it open;</li>
+<li>why this is external-world knowledge rather than something the manuscript can answer;</li>
+<li>the kinds of source that could settle it;</li>
+<li>what would support, contradict or fail to address it;</li>
+<li>the writer's grant for this act;</li>
+<li>what invalidates the result narrowly.</li>
+</ul>
+<p>This is a structured project artefact, not a stored provider prompt. A model's remembered bibliography may suggest a source <em>class</em> or search vocabulary. A proper name it recalls remains a named-but-unconsulted work until retrieval establishes otherwise.</p>
+<p>The grant is to this research act, not a general payment gateway and not a permanent web preference. Every cost-bearing fetch or compiler call checks the act at its call site. If the question or scope materially widens, the old grant does not cover it and the Copilot asks again (<a href="/chapters/20-on-device-first-and-the-writers-key/">ch.20</a>, <a href="/chapters/26-internals-tune-themselves/">ch.26</a>).</p>
+<h3 id="discovery-retrieval-and-compilation-are-different-acts">Discovery, retrieval and compilation are different acts</h3>
+<p>Web search is useful precisely because it is broad, and dangerous for the same reason. Its stages therefore remain separate:</p>
+<ol type="1">
+<li><strong>Discovery</strong> finds candidates. Search results, snippets, model suggestions and catalogue hits are leads.</li>
+<li><strong>Retrieval</strong> opens a work, record, edition, entry or page and records what actually came back.</li>
+<li><strong>Compilation</strong> determines what the persisted source material supports about the project question.</li>
+<li><strong>Promotion</strong> changes a project artefact only under the precedence and conflict rules below.</li>
+</ol>
+<p>A source adapter may address an annotated edition, institutional archive, library catalogue, DOI record, encyclopaedia, Wikipedia/Wikidata, period dictionary, scientific reference or writer-supplied work. Wikipedia is a useful adapter and often a useful discovery source; it is not the architecture. Source fitness is reasoned for the question and made inspectable through provenance. There is no global numerical trust score that silently crowns one domain authoritative.</p>
+<p>The open web is untrusted data. Text fetched from it cannot issue tools, change the research act, widen the grant or instruct the compiler to ignore project rules. It is presented to reasoning as quoted source material with an origin, never as an instruction.</p>
+<h2 id="artefacts--one-owner-for-each-fact">Artefacts — one owner for each fact</h2>
+<p>The pragmatic implementation is a small family of FountainStore document kinds. Names may follow the repository's document-id grammar, but their ownership does not vary:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Artefact</th>
+<th>Owns</th>
+<th>Must not own</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>KnowledgeGap</code></td>
+<td>The durable open question, its grounds and what would resolve it</td>
+<td>A speculative answer</td>
+</tr>
+<tr class="even">
+<td><code>ResearchAct</code></td>
+<td>Scope, purpose, grant, state and invalidation</td>
+<td>Retrieved content</td>
+</tr>
+<tr class="odd">
+<td><code>SearchAttempt</code></td>
+<td>Query, source, moment and found/lead/failed outcome</td>
+<td>A citation</td>
+</tr>
+<tr class="even">
+<td><code>RetrievalReceipt</code></td>
+<td>Request, resolved origin, response identity and retrieval moment</td>
+<td>The model's inference</td>
+</tr>
+<tr class="odd">
+<td><code>ReferenceExcerpt</code></td>
+<td>Work, edition/revision, locator and verbatim bearing words</td>
+<td>A project conclusion</td>
+</tr>
+<tr class="even">
+<td><code>ReferencedClaim</code></td>
+<td>Source S supports/contradicts/does not settle claim C</td>
+<td>Unattributed truth</td>
+</tr>
+<tr class="odd">
+<td><code>ConflictSet</code></td>
+<td>The relation among cited claims that disagree</td>
+<td>A synthetic winner</td>
+</tr>
+<tr class="even">
+<td>Gazetteer revision</td>
+<td>The current project identity/world state and what it rests on</td>
+<td>Retrieval history it merely links</td>
+</tr>
+</tbody>
+</table>
+<p>The retrieval receipt keeps, at minimum, the request, retrieval moment, resolved origin and a stable content identity. The reference excerpt keeps the exact bearing words, work and locator. Where rights and source behaviour permit, a content-addressed snapshot may also be retained; otherwise the exact excerpt, response metadata, content hash and durable locator preserve the audit trail without silently warehousing a work.</p>
+<p>These artefacts are stored, not cached. Their projections may be rebuilt, but the acts and evidence are never silently discarded or regenerated. No two artefacts gain authority over the same fact: a receipt owns what was fetched, a referenced claim owns what the source says, and the Gazetteer owns the project's current entity state.</p>
+<h2 id="promotion-without-drift">Promotion without drift</h2>
+<p>Fetching is not promotion. The safe sequence is:</p>
+<ol type="1">
+<li>Persist the retrieval receipt and source excerpt automatically.</li>
+<li>Compile an atomic referenced claim from those persisted artefacts.</li>
+<li>Check it against the canonical source, existing referenced claims and writer revisions.</li>
+<li>If it settles an uncontested external-world gap, the reading may promote it with <code>.reference</code> evidence attached.</li>
+<li>If it conflicts with the manuscript <em>about the manuscript</em>, the text wins and the contradiction remains visible.</li>
+<li>If it conflicts with another source, both enter a conflict set; neither replaces the other.</li>
+<li>If it conflicts with the writer, the writer wins and both prior grounds remain in history.</li>
+<li>Ask the writer only for the remaining presented disagreement, never to repeat the research.</li>
+</ol>
+<p>This preserves the writer's role as arbiter rather than curator. A retrieved source that plainly fills an open world-level gap does not turn the writer into a confirmation queue. A genuine conflict reaches them already reduced to the smallest decision and carrying the words on both sides.</p>
+<p>A source about interpretation follows a different path. Reframe may hold the attributed proposition <em>“critic S reads this as X”</em> in an artefact that owns critical perspectives; it may not promote <em>“the work means X”</em> into the Gazetteer. Editorial variants, chronology, places, institutions, terms and aliases likewise belong in artefacts whose scope says exactly what they can claim. A new artefact joins the family only when it changes what the writer sees or does (<a href="/chapters/31-compiled-knowledge/">ch.31</a> rule 9).</p>
+<p>Every consumer receives a semantically selected FountainStore packet for its present question — the relevant project entities, claims, conflicts and provenance — rather than a full web transcript or undifferentiated corpus. Selection is reasoned from artefact dependencies and current phase. Numeric token or byte measurements remain telemetry and transport observation; they never decide which semantic evidence is included.</p>
+<h2 id="how-the-frontier-lane-earns-its-cost">How the frontier lane earns its cost</h2>
+<p>An elevated model is valuable here for work a weaker local pass should not repeat:</p>
+<ul>
+<li>turning a persisted uncertainty into a precise research question;</li>
+<li>choosing source classes and query vocabulary without asserting a remembered citation;</li>
+<li>refining a query from recorded failures, variant names, editions and aliases;</li>
+<li>judging whether a fetched quotation actually bears the claim;</li>
+<li>distinguishing support, contradiction, non-address and ambiguity;</li>
+<li>comparing sources without flattening disagreement;</li>
+<li>compiling the durable result into the project's typed artefacts.</li>
+</ul>
+<p>It is not valuable as a recurring oracle over the same manuscript. Once the durable result is compiled, the local lane reads it forever after. Frontier and local compilers may produce the same kinds of artefact at different rates; the project memory, not the provider, is the durable capability.</p>
+<p>The useful measure is therefore not how many pages were searched or how many tokens were spent. It is whether a cost-bearing act left one reusable, evidenced, falsifiable result that later work no longer re-derives. Retrieval reuse, avoided duplicate searches, unsupported-claim rejection, conflict frequency, provenance depth, invalidation scope and cost per durable result may be observed as telemetry. They do not set semantic thresholds.</p>
+<h2 id="pragmatic-realization">Pragmatic realization</h2>
+<p>The implementation should arrive in slices that are independently removable and testable:</p>
+<ol type="1">
+<li><strong>Persist the research ledger.</strong> Store research acts, search attempts, retrieval receipts and negative results in FountainStore before adding another live source.</li>
+<li><strong>Enforce persist-before-interpret.</strong> The compiler accepts FountainStore artefact identifiers, not transient page bodies. A missing receipt is a hard refusal.</li>
+<li><strong>Make retrieval adapter-shaped.</strong> Keep the current reachable source as one adapter behind the common finding contract; add archives, catalogues or scholarly sources without changing the evidence rules.</li>
+<li><strong>Compile typed claims.</strong> Produce support/contradiction/non-address/ambiguity against one explicit project question. Citation fields come from receipts, never model output.</li>
+<li><strong>Promote through one choke point.</strong> Only the Gazetteer or the other owning artefact can accept a compiled claim, and only when its evidence kind is admissible.</li>
+<li><strong>Keep conflict and revision.</strong> Additions append or supersede with history; they never overwrite a contrary source or writer act.</li>
+<li><strong>Project locally.</strong> Later readings receive the relevant compiled knowledge and provenance from FountainStore and do no web work of their own.</li>
+<li><strong>Expose the account.</strong> Through the Copilot and FCIS-AX, the writer can inspect what was asked, fetched, inferred, not found, disputed and adopted, and can correct it in a sentence.</li>
+</ol>
+<p>The persistence path uses native FountainStore access when available. It introduces no shadow database, provider memory or HTTP backplane, and correctness with the web capability absent remains the acceptance floor.</p>
+<h2 id="validation--prove-the-boundary-not-the-demo">Validation — prove the boundary, not the demo</h2>
+<p>The decisive tests are invariants:</p>
+<ul>
+<li>A compiler cannot receive or cite web material that has no persisted retrieval receipt.</li>
+<li>A quotation must be present verbatim in the recorded response material; a model cannot repair or complete it.</li>
+<li>A snippet, generated bibliography and named-but-unconsulted work cannot promote a claim.</li>
+<li>Restarting the app preserves successful, failed and refused searches and prevents identical paid work.</li>
+<li>New evidence reopens only the affected research question; unrelated knowledge remains valid.</li>
+<li>Two conflicting sources survive compilation, persistence and projection side by side.</li>
+<li>A writer correction supersedes referenced evidence without deleting its history.</li>
+<li>Refreshing a changed source creates a new dated retrieval and never rewrites the old one.</li>
+<li>Referenced provenance survives repeated read, compile and projection cycles without becoming plain “confirmed.”</li>
+<li>Deleting all referenced artefacts leaves import, reading, beats, composition and correction functional.</li>
+<li>A recorded research act can be replayed offline from FountainStore without touching the network.</li>
+<li>Adversarial source text cannot invoke tools, change scope, spend or become an instruction.</li>
+<li>AX exposes source, locator, quotation, evidence kind, research state, conflict and available writer actions.</li>
+<li>A live acceptance fetch proves the real adapter and persisted artefacts; deterministic fixtures prove the doctrine without depending on network availability.</li>
+</ul>
+<h2 id="rules">Rules</h2>
+<ol type="1">
+<li><strong>References are retrieved, never recalled.</strong> Producing a citation from a model's memory is prohibited outright. A work that was not fetched may still be NAMED as where an answer lives — honestly, as unconsulted — and in that state it may inform a question and never confirm an entry. <em>Applied by <a href="/chapters/34-a-question-that-leaves-the-work/">ch.34</a> to an engine that does both at once: a model with a search tool FINDS documents and WRITES prose about them. What it found is retrieval and may be used; what it said is recall, however well-cited, and is never stored, shown as a source, or quoted.</em></li>
+<li><strong>A citation carries its work, its locator, and the quotation that bears the claim</strong> — and a way to follow it where one exists. Missing the work or the locator, it is not admitted at all.</li>
+<li><strong>Referenced knowledge is marked as referenced, forever.</strong> The three kinds of evidence — the text, a reference, the writer — are never flattened into "confirmed", on any surface or in any store.</li>
+<li><strong>A reference may never assert what a passage contains.</strong> Where a source and the lines disagree about the text, the lines are right.</li>
+<li><strong>A referenced entry holds the reference, not the truth.</strong> A conflicting source is recorded beside it; neither silently replaces the other.</li>
+<li><strong>A consensus may be claimed only from sources that were fetched and can be listed.</strong></li>
+<li><strong>The writer decides on a presented disagreement</strong>, never on a blank prompt. Asking them to supply what could have been retrieved is delegating work, not seeking judgement.</li>
+<li><strong>The order of resort is reasoning, then reference, then the writer</strong> — and the writer's word, once given, wins over both and is recorded as theirs (<a href="/chapters/30-the-living-gazetteer/">ch.30</a> rule 9). <em>Made mechanical by <a href="/chapters/33-a-want-is-a-gap-in-a-ledger/">ch.33</a>: the order is carried as the TYPE of a want on a ledger's gap, so a retrieval is reached for when a want says the manuscript cannot answer — never because a detector noticed a resemblance. Measured: the pattern this replaced could not reach Kinch at all, the very identity this chapter was written to settle.</em></li>
+<li><strong>A search result is not a reference</strong> unless it names a work and can be followed. A snippet is a lead. <em>Extended by <a href="/chapters/34-a-question-that-leaves-the-work/">ch.34</a>: a followable document must also be ABOUT THE WORK — mention its title or its author — or it is a lead. Measured: asking "Kinch" without Ulysses returned a Canadian footballer, correctly cited and correct about a different man.</em></li>
+<li><strong>Nothing referenced may gate a reading.</strong> The manuscript is readable with no reference at all; references improve a world and are never required by one (<a href="/chapters/31-compiled-knowledge/">ch.31</a> rule 4's removability).</li>
+<li><strong>A failed search is recorded.</strong> That a source was sought and not found is knowledge, and it stops the same search being paid for again.</li>
+<li><strong>No spend on retrieval without the writer's yes</strong>, at the call site, per act (<a href="/chapters/26-internals-tune-themselves/">ch.26</a>) — a reference is worth paying for, and it is still their money.</li>
+<li><strong>A retrieval records itself</strong> — when, what was asked, what came back verbatim, and from where — because trust in a source is made measurable, never asserted. An unrecorded retrieval yields no admissible reference. <em>Extended by <a href="/chapters/35-deep-search/">ch.35</a>: where a search follows a source's own links, each hop also records WHY it was taken. A trail of URLs is not auditable; a trail of reasons is, and it is how a writer tells a search that thought from one that wandered.</em></li>
+<li><strong>Reachability is stated, not implied.</strong> Where the app knows a work would settle a question and cannot reach it, it says both: what the work is, and that it has not read it.</li>
+<li><strong>FountainStore is the only operational knowledge plane.</strong> Web responses and model outputs are transient until typed, attributed artefacts record them; no later pass may rely on provider memory or an unpersisted page.</li>
+<li><strong>Persist before interpretation.</strong> Retrieval records itself before a compiler reads it, and the compiler consumes the stored artefact rather than a transient browser response.</li>
+<li><strong>Query the project before the world.</strong> Existing artefacts, writer revisions, prior retrievals and failed searches are consulted before a new external act is proposed.</li>
+<li><strong>Discovery, retrieval, compilation and promotion remain distinct.</strong> A lead cannot become evidence, and evidence cannot mutate project memory without the owning artefact's admission rule.</li>
+<li><strong>Frontier reasoning compiles; it does not become authority.</strong> It may plan, compare and infer from fetched material, but citations are assembled from retrieval records and durable knowledge lives in FountainStore.</li>
+<li><strong>Each artefact owns one kind of fact.</strong> Receipts own what was fetched; claims own what a source says; the Gazetteer owns current world identity; projections and indexes are rebuildable and own none of them.</li>
+<li><strong>External content is untrusted data.</strong> It cannot issue tools, alter scope, widen a grant, override doctrine or become an instruction merely because a model can read it.</li>
+<li><strong>Promotion is typed, historied and conflict-preserving.</strong> An uncontested admissible reference may fill an external-world gap; contradiction appends or supersedes visibly and never silently overwrites.</li>
+<li><strong>Every cost-bearing lookup belongs to a scoped research act.</strong> The writer's yes covers that act and no materially wider one; credentials or a prior grant are not standing permission.</li>
+<li><strong>Research artefacts are narrowly invalidated and reusable.</strong> A later pass reads them; a source refresh creates a new dated retrieval; new grounds reopen only the question they actually affect.</li>
+</ol>
+<h2 id="acceptance">Acceptance</h2>
+<ul>
+<li>No citation exists in the store that was not fetched; each carries work, locator and quotation.</li>
+<li>Every surface that shows a fact from the world shows which of the three kinds of evidence it rests on.</li>
+<li>A source contradicting the text about the text loses, visibly, with both recorded.</li>
+<li>A writer is never asked to identify something a fetched reference would have settled.</li>
+<li>Two sources disagreeing are both present, quoted, and attributed.</li>
+<li>Deleting every reference leaves the manuscript readable and every reading performable.</li>
+<li>A search that found nothing is recorded, and is not repeated without new grounds.</li>
+<li>Every fetched reference has its retrieval on record: the moment, the request, the response, the origin.</li>
+<li>A work named but unconsulted is labelled as such wherever it appears, and has confirmed nothing.</li>
+<li>No operational model context contains web material that does not first exist as a FountainStore retrieval artefact.</li>
+<li>A complete recorded research act replays offline from FountainStore and performs no network or frontier call.</li>
+<li>Search, retrieval, claim compilation and promotion are separately inspectable; no lead crosses the boundary by sharing a convenient response shape with evidence.</li>
+<li>The same stored evidence can be consumed by local and frontier reasoning without changing its citation or provenance.</li>
+<li>Prompt injection in a fetched source cannot change tools, scope, grants, routing or persisted project state.</li>
+<li>Every research-derived surface is FCIS-AX inspectable and offers the relevant follow, refresh, adjudicate or correct action.</li>
+<li>Publication and integration copies of this chapter remain byte-identical, with reciprocal commit or pull-request provenance recorded whenever the doctrine changes.</li>
+</ul>
+<h2 id="governing-sentence">Governing sentence</h2>
+<p>Reframe shall admit knowledge from outside the manuscript only as a reference it has actually fetched, cited well enough for a doubting reader to follow, marked as referenced for as long as it is held — and shall never let such knowledge speak about what the pages themselves contain.</p>
+</article><footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="https://github.com/Fountain-Coach/Reframe-Refactoring">Reframe-Refactoring</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
+  </div>
+  <script src="/assets/governance.js" defer></script>
+</body>
+</html>

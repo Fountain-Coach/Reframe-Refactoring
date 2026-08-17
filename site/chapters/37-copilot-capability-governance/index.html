@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Copilot Capability Governance — From Transport Contract to Trustworthy Action — Reframe Governance</title>
+  <meta name="description" content="The public Reframe Governance book: reviewed architectural doctrine, validation rules, and publication boundaries.">
+  <link rel="canonical" href="https://governance.fountain.coach/chapters/37-copilot-capability-governance/">
+  <link rel="stylesheet" href="/assets/governance.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to chapter</a>
+  <header class="topbar"><a class="wordmark" href="/"><span class="mark">R</span><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
+  <div class="workspace">
+    <aside class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home" href="/">Governance overview</a><a class="chapter-link" href="/chapters/00-abstract/"><span>00</span>Abstract</a><a class="chapter-link" href="/chapters/01-reading-index/"><span>01</span>Reading Index</a><a class="chapter-link" href="/chapters/02-development-history/"><span>02</span>Development History and Retained Lessons</a><a class="chapter-link" href="/chapters/03-current-state-and-problem/"><span>03</span>Current State and Refactoring Problem</a><a class="chapter-link" href="/chapters/04-target-architecture/"><span>04</span>Target Architecture</a><a class="chapter-link" href="/chapters/05-grounding-contract/"><span>05</span>Extended Grounding Contract</a><a class="chapter-link" href="/chapters/06-refactoring-program/"><span>06</span>Refactoring Program</a><a class="chapter-link" href="/chapters/07-agent-operating-guide/"><span>07</span>Operating Guide for `.claude` and `.codex`</a><a class="chapter-link" href="/chapters/08-validation-and-acceptance/"><span>08</span>Validation and Acceptance</a><a class="chapter-link" href="/chapters/09-compatibility-and-future-evolution/"><span>09</span>Compatibility and Future Evolution</a><a class="chapter-link" href="/chapters/10-copilot-implementation-extension/"><span>10</span>Copilot Implementation Extension</a><a class="chapter-link" href="/chapters/11-grounding-as-a-given/"><span>11</span>Grounding as a Given — the Canonical Manifesto and Conversational Authoring</a><a class="chapter-link" href="/chapters/12-animating-truth/"><span>12</span>Animating Truth — Foreshadowing and Perceived Performance</a><a class="chapter-link" href="/chapters/13-storage-and-performance/"><span>13</span>Storage and Performance — What Persists Where, and Why Reads Are Fast</a><a class="chapter-link" href="/chapters/14-the-beat-and-its-arrangements/"><span>14</span>The Beat and Its Arrangements — One Object, Three Views, One Firing</a><a class="chapter-link" href="/chapters/15-the-situated-copilot/"><span>15</span>The Situated Copilot — One Copilot, Differently Placed</a><a class="chapter-link" href="/chapters/16-the-timeline-is-the-machine-room/"><span>16</span>The Timeline Is the Machine Room — What You See Is What You Get</a><a class="chapter-link" href="/chapters/17-the-score/"><span>17</span>The Score — Reframe&#x27;s Performance Space, and the One Surface That Folds the Others</a><a class="chapter-link" href="/chapters/18-the-stage-presents-the-act/"><span>18</span>The Stage Presents the Act — Legibility Over Density</a><a class="chapter-link" href="/chapters/19-apple-human-interface-guidelines/"><span>19</span>Apple&#x27;s Human Interface Guidelines — the Baseline We Build On</a><a class="chapter-link" href="/chapters/20-on-device-first-and-the-writers-key/"><span>20</span>Paid-First Copilot, and the Writer&#x27;s Key — Quality-First Lane Selection</a><a class="chapter-link" href="/chapters/21-training-perspectives/"><span>21</span>Training Perspectives — Teaching the On-Device Model the Writer&#x27;s Work</a><a class="chapter-link" href="/chapters/22-no-preferences-only-reasoning/"><span>22</span>No Preferences, Only Reasoning</a><a class="chapter-link" href="/chapters/23-one-reasoning/"><span>23</span>One Reasoning — The Single Front Door of a Turn</a><a class="chapter-link" href="/chapters/24-the-reasoning-is-an-uncertainty-map/"><span>24</span>The Reasoning Is an Uncertainty Map</a><a class="chapter-link" href="/chapters/25-the-copilot-is-the-surface/"><span>25</span>The CoPilot Is the Surface</a><a class="chapter-link" href="/chapters/26-internals-tune-themselves/"><span>26</span>Internals Tune Themselves — the Disposition of the Preferences Panel</a><a class="chapter-link" href="/chapters/27-parse-before-you-ask/"><span>27</span>Parse Before You Ask</a><a class="chapter-link" href="/chapters/28-a-beat-is-the-question-it-raises/"><span>28</span>A Beat Is the Question It Raises</a><a class="chapter-link" href="/chapters/29-natural-language-measures-storify-interprets/"><span>29</span>NaturalLanguage Measures, Storify Interprets</a><a class="chapter-link" href="/chapters/30-the-living-gazetteer/"><span>30</span>The Living Gazetteer</a><a class="chapter-link" href="/chapters/31-compiled-knowledge/"><span>31</span>Compiled Knowledge — the Cloud Teaches, the Device Remembers</a><a class="chapter-link" href="/chapters/32-referenced-knowledge/"><span>32</span>Referenced Knowledge — What the World Knows Outside the Book</a><a class="chapter-link" href="/chapters/33-a-want-is-a-gap-in-a-ledger/"><span>33</span>A Want Is a Gap in a Ledger</a><a class="chapter-link" href="/chapters/34-a-question-that-leaves-the-work/"><span>34</span>A Question That Leaves the Work</a><a class="chapter-link" href="/chapters/35-deep-search/"><span>35</span>Deep Search</a><a class="chapter-link" href="/chapters/36-every-gap-keeps-its-address/"><span>36</span>Every Gap Keeps Its Address</a><a class="chapter-link active" href="/chapters/37-copilot-capability-governance/"><span>37</span>Copilot Capability Governance — From Transport Contract to Trustworthy Action</a><a class="chapter-link" href="/chapters/38-copilot-capability-audit-skill/"><span>38</span>Copilot Capability Audit Skill — From Boundary to Empowerment</a><a class="chapter-link" href="/chapters/39-a-model-cannot-be-told-what-it-cannot-do/"><span>39</span>A Model Cannot Be Told What It Cannot Do</a><a class="chapter-link" href="/chapters/40-a-citation-is-a-promise-someone-can-check/"><span>40</span>A Citation Is a Promise Someone Can Check</a><a class="chapter-link" href="/chapters/41-one-retrieval-two-directions/"><span>41</span>One Retrieval, Two Directions</a><a class="chapter-link" href="/chapters/42-what-is-already-recorded-is-read/"><span>42</span>What Is Already Recorded Is Read, Never Re-Derived</a><a class="chapter-link" href="/chapters/43-the-released-surface-is-a-named-build/"><span>43</span>The Released Surface Is a Named Build</a><a class="chapter-link" href="/chapters/44-publication-and-source-policy/"><span>44</span>Public Publication and Private Source Policy</a><a class="chapter-link" href="/chapters/45-copilot-reading-surface-and-typography/"><span>45</span>Copilot Reading Surface and Typography — Situated, Legible, and Reframe-Native</a><a class="chapter-link" href="/chapters/46-dynamic-grounding/"><span>46</span>Dynamic Grounding: From Default Reading to Writer-Accepted Lens</a><a class="chapter-link" href="/chapters/47-situated-mixed-initiative-interaction/"><span>47</span>Situated, Mixed-Initiative Interaction</a><a class="chapter-link" href="/chapters/48-a-service-is-a-fact-not-a-symptom/"><span>48</span>48. A Service Is a Fact, Not a Symptom</a><a class="chapter-link" href="/chapters/49-one-definition-two-projections/"><span>49</span>49. One Definition, Two Projections</a><a class="chapter-link" href="/chapters/50-text-is-stored-so-it-can-be-pointed-at/"><span>50</span>50. Text Is Stored So It Can Be Pointed At</a><a class="chapter-link" href="/chapters/51-one-decision-decides-the-lane/"><span>51</span>51. One Decision Decides the Lane</a><a class="chapter-link" href="/chapters/52-the-pencil-belongs-to-the-writer/"><span>52</span>52. The Pencil Belongs to the Writer</a><a class="chapter-link" href="/chapters/53-a-selection-snaps-to-meaning/"><span>53</span>53. A Selection Snaps to Meaning</a><a class="chapter-link" href="/chapters/54-the-writer-does-not-manage-the-projection/"><span>54</span>The Writer Does Not Manage the Projection</a><a class="chapter-link" href="/chapters/55-one-store-authority-across-repositories/"><span>55</span>One Store Authority Across Repositories</a><a class="chapter-link" href="/chapters/56-the-book-library-is-a-portable-source-provider/"><span>56</span>The Book Library Is Reframe&#x27;s Sole Reading Provider</a><a class="chapter-link" href="/chapters/57-the-writer-enters-by-intention/"><span>57</span>The Writer Enters by Intention</a><a class="chapter-link" href="/chapters/58-open-turn-mediation-protocol/"><span>58</span>Open-Turn Mediation Protocol</a><a class="chapter-link" href="/chapters/59-copilot-initiated-library-curation/"><span>59</span>The Fountain-Coach Git Library and Reframe Project Flow</a><a class="chapter-link" href="/chapters/60-the-fountain-editor-is-the-project-surface/"><span>60</span>The Fountain Editor Is the Project Surface</a><a class="chapter-link" href="/chapters/61-the-fountain-project-round-trip/"><span>61</span>The Fountain Project Round Trip</a><a class="chapter-link" href="/chapters/62-reframe-maintenance-control-plane/"><span>62</span>Reframe Maintenance Control Plane</a><a class="chapter-link" href="/chapters/63-fountain-maintenance-kit/"><span>63</span>FountainMaintenanceKit — Portable Swift Maintenance Contract</a><a class="chapter-link" href="/chapters/64-fountain-project-kit-durable-draft-custody/"><span>64</span>FountainProjectKit — Durable Fountain Project Custody</a><a class="chapter-link" href="/chapters/65-the-copilot-as-writing-coach/"><span>65</span>The Copilot as Writing Coach</a><a class="chapter-link" href="/chapters/66-fountain-image-publication-kit/"><span>66</span>FountainImagePublicationKit — Reframe Image Cloud and Publication Boundary</a><a class="chapter-link" href="/chapters/67-fountain-composer-kit-remote-attachment-custody/"><span>67</span>FountainComposerKit — Remote Attachment Custody and the Composer Boundary</a><a class="chapter-link" href="/chapters/68-the-reframe-e2e-scenario-is-the-publication-unit/"><span>68</span>68 — The Reframe E2E Scenario Is the Publication Unit</a><a class="chapter-link" href="/chapters/69-the-book-of-reframe-is-a-dual-projection/"><span>69</span>The Book of Reframe Is a Dual Projection</a><a class="chapter-link" href="/chapters/70-external-midi2-control-of-reframe/"><span>70</span>70 — External MIDI2 Control of Reframe</a><a class="chapter-link" href="/chapters/71-reframe-to-reframe-software-peer-acceptance/"><span>71</span>71 — Reframe-to-Reframe Software-Peer Acceptance</a><a class="chapter-link" href="/chapters/72-midi2-peer-projections-and-capacity-admission/"><span>72</span>72 — MIDI2 Peer Projections and Capacity Admission</a><a class="chapter-link" href="/chapters/73-reframe-scenario-development-cycle/"><span>73</span>73 — The Reframe Scenario Development Cycle</a><a class="chapter-link" href="/chapters/74-private-image-prompt-history/"><span>74</span>Private Image Prompt History</a><a class="chapter-link" href="/chapters/75-scenario-run-ownership-and-non-interference/"><span>75</span>75 — Scenario Run Ownership and Non-Interference</a><a class="chapter-link" href="/chapters/76-beat-movement-and-uncertainty-overlay/"><span>76</span>Beat Movement and the Uncertainty Overlay</a><a class="chapter-link" href="/chapters/77-swift-midi2-scenario-runtime/"><span>77</span>77 — The Scenario Runtime Is Swift and MIDI2-Native</a><a class="chapter-link" href="/chapters/78-scenario-driven-development-as-org-infrastructure/"><span>78</span>78 — Scenario-Driven Development Is Org Infrastructure</a><a class="chapter-link" href="/chapters/79-default-semantic-manuscript-projection/"><span>79</span>79 — The Default Semantic Manuscript Projection</a><a class="chapter-link" href="/chapters/80-independent-governance-publication/"><span>80</span>80 — Independent Governance Publication</a><a class="chapter-link" href="/chapters/reframe-app-flow-governance/"><span>·</span>Reframe — How the App Must Flow</a></aside>
+    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div><article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · 37</div><h1 id="copilot-capability-governance--from-transport-contract-to-trustworthy-action">Copilot Capability Governance — From Transport Contract to Trustworthy Action</h1>
+<blockquote>
+<p>Chapter summary: As of 2026-08-15, Reframe has a checked v2 application capability boundary and the governing contract for one grounded mediation decision, paid-first lane selection, and typed handoff. The contract already exists; runtime adoption is incomplete. A mediation service exists, but workflow selection, reference resolution, and lane resolution still retain decision authority after mediation in some paths. The current registry contains 55 identities: 24 executable and 31 explicitly unavailable. This chapter records that distinction honestly and defines the path to an empowered Copilot: teach from the checked registry, act through existing application boundaries, and claim only what FountainStore, telemetry, and AX can prove.</p>
+</blockquote>
+<h2 id="the-decision">The decision</h2>
+<p>The MIDI 2.0 backplane IDL remains the sole contract for transportable operations, payloads, capabilities, QoS, budgets, resume, and telemetry. It is not replaced by OpenAPI, and it is not expanded into a writer-facing vocabulary it was never designed to contain.</p>
+<p>The Copilot needs one governed layer above that transport contract: the <strong>application capability contract</strong>. A capability is the smallest writer-meaningful action Reframe can honestly teach and perform. It joins:</p>
+<ul>
+<li>the writer-facing verb and explanation;</li>
+<li>the intent it satisfies;</li>
+<li>the IDL topics or native application operation it uses;</li>
+<li>the responsible runtime actor;</li>
+<li>the visible situations in which it is available;</li>
+<li>its state and readiness gates;</li>
+<li>confirmation, provider, and cost rules;</li>
+<li>its persistence effect and failure modes;</li>
+<li>the AX and FountainStore evidence that proves its result.</li>
+</ul>
+<p>The Copilot is taught from that capability contract. It is never taught from a prompt paragraph, a stale slash-command list, or an enum that has no runtime owner.</p>
+<h2 id="current-status--what-exists-and-what-does-not">Current status — what exists and what does not</h2>
+<p>This is a status report, not a claim of full completion. Boundary enforcement is complete; capability closure is outstanding.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Current position</th>
+<th>Governance status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MIDI backplane IDL</td>
+<td>Defines topics, payloads, capability masks, QoS, budgets, acknowledgements, and telemetry.</td>
+<td>Sound and authoritative for transport.</td>
+</tr>
+<tr class="even">
+<td><code>schema/facts.json</code></td>
+<td>Generated from the IDL.</td>
+<td>Sound when regenerated with the contract.</td>
+</tr>
+<tr class="odd">
+<td>Reasoning manifest</td>
+<td>Generated from IDL, facts, roles, app guidance, overlay, and capability declarations.</td>
+<td>Useful orientation; not runtime truth.</td>
+</tr>
+<tr class="even">
+<td>Modernization capability file</td>
+<td><code>schema/modernization-studio-capabilities.json</code> describes user capabilities, IDL topics, stages, owners, gates, writes, and failure modes.</td>
+<td>Authoritative v2 application boundary. The generated audit currently reports 55 identities, 24 executable, and 31 explicitly unavailable.</td>
+</tr>
+<tr class="odd">
+<td>Copilot mediation</td>
+<td>A typed model decision passes through a mediation service before planning/execution.</td>
+<td>The contract is governed; runtime adoption is incomplete because later workflow/lane stages can still re-decide or discard the mediated route.</td>
+</tr>
+<tr class="even">
+<td>Writer-facing verbs</td>
+<td>Generated and checked for the governed capabilities.</td>
+<td>The exposed subset is registry-owned; unavailable rows must not be taught.</td>
+</tr>
+<tr class="odd">
+<td>Runtime execution</td>
+<td>Several operations reuse application-level handlers and FountainStore.</td>
+<td>Real for selected actions; parity is incomplete.</td>
+</tr>
+<tr class="even">
+<td>Contextual availability</td>
+<td>Situation and open-manuscript checks exist; route-specific prompt exposure also changes with model capacity.</td>
+<td>Partially governed; capability should not disappear because a prompt is short.</td>
+</tr>
+<tr class="odd">
+<td>Result proof</td>
+<td>FountainStore persistence, telemetry, and AX evidence exist for governed execution.</td>
+<td>Required for exposure, but not yet present for every registry identity.</td>
+</tr>
+</tbody>
+</table>
+<p>The practical conclusion is encouraging but firm: Reframe now has the join and an honest boundary. It does not yet have adapters and evidence for the whole application surface.</p>
+<h2 id="contract-already-pinned-down-implementation-not-yet-singular">Contract already pinned down; implementation not yet singular</h2>
+<p>The semantic-router contract is not a new design introduced by the implementation phase. It is already distributed across the governing chapters:</p>
+<ul>
+<li>Chapter 23 requires one complete reasoning over the full intent taxonomy, with deterministic dispatch from that decision and no competing classifier.</li>
+<li>Chapter 24 defines the decision's uncertainty-map product and distinguishes settled, ambiguity, thin, and failure states.</li>
+<li>Chapter 20 requires the mediator to recognize the quality class, prefer the best eligible paid route when available, preserve the original turn during internal delegation, and expose only an actual service boundary.</li>
+<li>Chapter 51 requires lane resolution once into a value that carries its client and budget; no later surface may re-resolve it.</li>
+<li>Chapter 58 requires one open-turn handoff to a typed capability while existing executors retain mutation, persistence, and terminal-proof authority.</li>
+</ul>
+<p>The current implementation contains pieces of this contract, but they are not yet one runtime authority. <code>ManuscriptTurnIntentMediationService</code> performs a typed mediation pass; downstream workflow selection, reference resolution, and lane resolution can still make consequential choices or lose the original request. Those are implementation seams, not additional governance authorities. The required migration is therefore to make the mediated decision the sole semantic route, then let deterministic planning and execution consume it without reinterpreting writer meaning.</p>
+<p>Until that migration is complete, the correct status is <strong>contract governed, implementation partial</strong>. A passing mediation decode, a selected workflow, or a provider call alone does not establish semantic-router completion.</p>
+<h2 id="the-executable-boundary-today">The executable boundary today</h2>
+<p>The available boundary is the generated registry, not a prose workflow. It currently includes maintenance and command discovery, library/project operations, preparation and grounding, pipeline status, Storify source/run controls, citations, and world/reference actions. The complete list and status are generated in <code>docs/copilot-capability-audit.md</code>. The audit currently reports 24 executable identities and 31 unavailable identities. An executable identity is not a live-accepted or released identity: each must still acquire its own adapter, policy, focused tests, persisted proof, telemetry, AX result, and required live matrix.</p>
+<p>The retired Manuscript Guide offer is not a current Copilot next step. After source import or preparation, writer-facing offers use the current structural actions: confirm Grounding Inputs, map the manuscript into beats with Storify, read a chapter, or make one focused draft change. Legacy guide artifacts may remain for migration and storage compatibility, but they are not a current teaching surface.</p>
+<p>An unavailable capability must be refused explicitly, remain absent from teaching surfaces, produce no false started/completed message, and perform no unverified mutation. Source import remains unavailable in the registry until its adapter and proof-gated acceptance are recorded, even though the current isolated DraCor drive has demonstrated an execution path. Storify draft start remains blocked until a proof-gated draft adapter exists.</p>
+<h2 id="the-source-of-truth-chain">The source-of-truth chain</h2>
+<p>The intended chain is:</p>
+<pre class="text"><code>MIDI backplane IDL
+    ↓ generated
+facts and transport operation catalogue
+    ↓ declared by the app
+Modernization Studio capability registry
+    ↓ generated/validated
+Copilot intent vocabulary, slash catalogue, and runtime bindings
+    ↓ selected by grounded mediation
+typed application operation
+    ↓ executed
+FountainStore / native runtime / telemetry
+    ↓ verified
+AX-visible and writer-facing result</code></pre>
+<p>Each layer has a distinct authority:</p>
+<ol type="1">
+<li><code>schema/idl.yaml</code> is authoritative for transportable operations and their protocol obligations.</li>
+<li>Generated facts are authoritative projections of that IDL, never a second contract.</li>
+<li>The Modernization Studio capability registry is authoritative for the application meaning of an operation: what the writer can ask for and what Reframe promises to do.</li>
+<li>Live FountainStore and runtime state are authoritative for whether a capability is currently ready, blocked, incomplete, stale, running, or resumable.</li>
+<li>The runtime executor is authoritative for whether an action actually ran.</li>
+<li>FountainStore, telemetry, and AX together are the evidence authorities for completion: persisted behaviour, operational trace, and perceivable UI state.</li>
+<li>The prompt is a generated or selected teaching surface. It has no authority to create a capability.</li>
+</ol>
+<p>This is why the old OpenAPI instinct was understandable. An operation catalogue is necessary. The missing fact is that transport operations are not yet writer capabilities. <code>screenplay/patch</code> is a protocol operation; “rewrite this passage” is a capability with a target, policy, confirmation rule, actor, and result proof. The second must be bound to the first without pretending they are the same thing.</p>
+<h2 id="actors-and-responsibility">Actors and responsibility</h2>
+<p>The system becomes legible when responsibility is explicit:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Actor</th>
+<th>Responsibility</th>
+<th>May not do</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Writer</td>
+<td>Supplies intent, chooses scope, and confirms guarded or costly work.</td>
+<td>Cannot be replaced by model confidence.</td>
+</tr>
+<tr class="even">
+<td>Copilot mediator</td>
+<td>Resolves freeform meaning into a typed capability request using live context.</td>
+<td>Cannot execute model prose or invent an action.</td>
+</tr>
+<tr class="odd">
+<td>Planner</td>
+<td>Selects an available capability and resolves grounded references.</td>
+<td>Cannot bypass readiness, confirmation, or target checks.</td>
+</tr>
+<tr class="even">
+<td>Application runtime</td>
+<td>Owns the reusable operation and its policy boundary.</td>
+<td>Cannot report success from task launch alone.</td>
+</tr>
+<tr class="odd">
+<td>MIDI/FountainStore boundary</td>
+<td>Carries validated operations and persists the resulting state.</td>
+<td>Cannot become a substitute for application meaning.</td>
+</tr>
+<tr class="even">
+<td>Telemetry</td>
+<td>Records errors, timing, resource, and lifecycle facts.</td>
+<td>Cannot serve as behavioural proof by itself.</td>
+</tr>
+<tr class="odd">
+<td>AX projection</td>
+<td>Exposes the state and actions the writer and driver can reach.</td>
+<td>Cannot claim a result absent from runtime/state authority.</td>
+</tr>
+<tr class="even">
+<td>Capability registry owner</td>
+<td>Keeps the writer verb, actor, IDL mapping, gates, and evidence contract coherent.</td>
+<td>Cannot mark a capability implemented without executable and tested ownership.</td>
+</tr>
+</tbody>
+</table>
+<p>The current mess is therefore not the fault of the MIDI backplane. It is an integration-governance failure: the application capability registry, Copilot teaching surface, and runtime executor were allowed to evolve as parallel lists.</p>
+<h2 id="honest-examples-from-the-current-build">Honest examples from the current build</h2>
+<p>Some capabilities are real today. Grounding confirmation, Storify Source Auto, frame switching, library opening, and the governed preparation guide actions have runtime paths and focused tests.</p>
+<p>Some are only partially real. Natural-language continuation, cross-route action parity across the entire application, contextual availability on every placement, relaunch/resume through dialogue, successful terminal Storify proof, and the full provider/high-risk matrix are not yet acceptance-complete.</p>
+<p>Historical stale teaching such as <code>readInChapter</code>, <code>repairRead</code>, and indexed-passage promises has been retired from the governed teaching surfaces. Any future capability that is named but cannot resolve to a typed runtime owner is a governance defect, not an executable capability, and must not be taught.</p>
+<p>The distinction matters. A Copilot that says “I cannot do that here because the current situation does not expose it” is trustworthy. A Copilot that describes an operation whose schema, executor, or evidence path does not exist is not.</p>
+<h2 id="live-moment-of-truth">Live moment of truth</h2>
+<p>The Romeo-and-Juliet fixture drive demonstrated the governed portion of the contract on the external full-screen display. It imported the manuscript, answered a grounded question, exposed the generated command catalogue and status, and drove <code>storify.source.start</code> through requested, accepted, running, canceled, and resumed states. AX exposed the activity, cancel, and resume controls. The fixture store contained the v2 aggregate and append-only event records, with GUI telemetry correlated by execution ID.</p>
+<p>The drive intentionally stopped the long on-device reading run after proving the lifecycle and resume path. It does not claim a successful terminal Storify proof, a paid-lane route, or ChatGPT/OpenAI-key provider acceptance. Those are remaining acceptance work, not missing documentation.</p>
+<h2 id="the-empowering-vision">The empowering vision</h2>
+<p>The goal is not to turn Copilot into a generic autonomous agent. The goal is to make her a clear conversational front door to the operations Reframe already owns.</p>
+<p>When the writer says “continue reading,” Copilot should:</p>
+<ol type="1">
+<li>inspect the live Storify state;</li>
+<li>recognize whether there is incomplete or resumable work;</li>
+<li>resolve the current source and reading scope;</li>
+<li>state what will happen and who pays, if applicable;</li>
+<li>request confirmation when required;</li>
+<li>call the same application operation as the visible UI or structured command;</li>
+<li>expose real progress without inventing completion;</li>
+<li>verify the persisted result;</li>
+<li>answer from that result, including failure or partial completion.</li>
+</ol>
+<p>The same pattern should govern opening a manuscript, importing a source, confirming Grounding, running review, revising a beat, patching a draft, or asking for source evidence. Copilot becomes empowered not by having more prose, but by having fewer ambiguous seams.</p>
+<h2 id="concrete-implementation-perspective">Concrete implementation perspective</h2>
+<p>The existing <code>schema/modernization-studio-capabilities.json</code> should become the starting point for the executable capability registry, rather than introducing a competing framework.</p>
+<p>Each entry needs a checked binding with at least:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;capabilityId&quot;</span><span class="fu">:</span> <span class="st">&quot;storify.source.auto&quot;</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;writerVerb&quot;</span><span class="fu">:</span> <span class="st">&quot;read the manuscript into beats&quot;</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;idlTopics&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;screenplay/beat.put&quot;</span><span class="ot">,</span> <span class="st">&quot;fountainstore/document.put&quot;</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;nativeOperation&quot;</span><span class="fu">:</span> <span class="st">&quot;ReframeViewModel.startCopilotStorifySourceAuto&quot;</span><span class="fu">,</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;actors&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;writer&quot;</span><span class="ot">,</span> <span class="st">&quot;copilot.mediator&quot;</span><span class="ot">,</span> <span class="st">&quot;runtime&quot;</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;allowedStages&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;source&quot;</span><span class="ot">,</span> <span class="st">&quot;storify&quot;</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;requiresConfirmation&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;cost&quot;</span><span class="fu">:</span> <span class="st">&quot;may use the writer&#39;s configured reading lane&quot;</span><span class="fu">,</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;reads&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;live Storify run state&quot;</span><span class="ot">,</span> <span class="st">&quot;canonical source&quot;</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;writes&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;persisted beats and run state&quot;</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;evidence&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;FountainStore run result&quot;</span><span class="ot">,</span> <span class="st">&quot;AX activity and result state&quot;</span><span class="ot">]</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<p>The implementation sequence is deliberately modest:</p>
+<ol type="1">
+<li>Inventory every current writer verb, slash command, <code>PrepIntentOperationKind</code>, planner executor, and IDL topic.</li>
+<li>Promote the capability JSON into the reviewed registry and remove entries that have no runtime owner.</li>
+<li>Add a parity validator: every registry entry must resolve to an IDL topic or explicitly named native operation, an executor, a policy, and tests; every prompt or slash verb must resolve back to a registry entry.</li>
+<li>Generate or derive the Copilot teaching vocabulary and command catalogue from the registry. Keep natural-language interpretation model-mediated; only structured slash grammar remains deterministic.</li>
+<li>Make contextual availability a runtime projection of live state, not a prompt-size decision.</li>
+<li>Make every guarded operation use the same confirmation and cost policy whether invoked by button, slash command, or natural language.</li>
+<li>Require persisted-result verification before the Copilot can say an action completed.</li>
+<li>Add acceptance by capability × placement × provider route × failure/resume state, with FountainStore and AX evidence.</li>
+</ol>
+<p>This does not require changing the MIDI backplane IDL for every new writer phrase. It requires binding each meaningful writer capability to the IDL and to the existing application operation that owns its semantics.</p>
+<h2 id="completion-criteria">Completion criteria</h2>
+<p>Copilot capability governance is complete when:</p>
+<ul>
+<li>every taught capability has exactly one registry identity;</li>
+<li>every registry identity has an executable owner or is explicitly unavailable;</li>
+<li>every transport operation is IDL-valid and carries the required telemetry/persistence obligations;</li>
+<li>every writer-facing verb resolves by grounded mediation to a typed capability;</li>
+<li>current state, placement, readiness, cost, and confirmation are supplied by live authority;</li>
+<li>the model cannot create a new operation through prose or JSON alone;</li>
+<li>every action has focused tests and at least one integration or live acceptance path;</li>
+<li>completion claims are based on persisted state and AX-visible result, not requested intent;</li>
+<li>stale index-era capabilities are removed or marked historical and unreachable;</li>
+<li>the manifest, prompts, slash catalogue, runtime bindings, and tests pass parity validation.</li>
+</ul>
+<p>Until those criteria are met, the registry's explicit unavailable rows are the correct product behaviour, and this chapter is the authoritative status report.</p>
+<h2 id="governing-sentence">Governing sentence</h2>
+<p>The MIDI backplane tells Reframe how an operation travels; the capability registry tells Copilot what the writer means; the runtime and FountainStore prove what happened. Copilot may teach only the intersection of those three truths, and may claim no more than the evidence can show.</p>
+</article><footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="https://github.com/Fountain-Coach/Reframe-Refactoring">Reframe-Refactoring</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
+  </div>
+  <script src="/assets/governance.js" defer></script>
+</body>
+</html>

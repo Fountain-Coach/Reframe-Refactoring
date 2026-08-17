@@ -1,5 +1,17 @@
 # Reframe Refactoring
 
+## Public governance projection
+
+The reviewed governance book is published independently of GitHub at
+[`governance.fountain.coach`](https://governance.fountain.coach/). The site is generated from `docs/` with the
+maintainer/editorial projection in `site/`; it is intentionally visually distinct from the light, writer-facing
+[Book of Reframe](https://book.fountain.coach/). GitHub remains the source and provenance mirror, not the public
+delivery surface.
+
+Build the projection locally with `python3 site/build-governance-site.py`. Publication is governed by the
+`governance-book-publish` skill in the integration repository and requires local route/asset checks, HTTPS
+verification, deployment provenance, and an explicit rollback target.
+
 The Fountain Coach publication and FCIS-governance home for the design and architectural doctrine of **Reframe** — the on-device screenwriting studio that reads a manuscript into a story structure and lets a writer compose from it.
 
 This repository is a **living guide**, not a one-time spec. It is written to be read by both **humans** (maintainers, reviewers, designers) and **agents** (`.claude`, `.codex`): short, stable, numbered chapters, each stating enforceable doctrine for one part of the work, so a reader — of either kind — loads only what the task needs.
