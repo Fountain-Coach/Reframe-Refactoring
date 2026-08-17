@@ -174,6 +174,7 @@ classification; intermediate observations do not establish failure; and any unre
 
 | [Scenario Run Ownership and Non-Interference](75-scenario-run-ownership-and-non-interference.md) | An executable scenario has one owner and one bound run identity; Store/AX observations remain provisional while it runs; only declared terminal predicates classify it; and any unrecorded intervention invalidates acceptance. |
 | [The Scenario Runtime Is Swift and MIDI2-Native](77-swift-midi2-scenario-runtime.md) | Makes the scenario executor, Store preparation, lifecycle waits, evidence binding, and terminal classification an owned Swift capability using the same typed MIDI2 operation boundary as production peers; Python is transitional only, while AX/CoreGraphics remain independent witnesses. |
+| [Scenario-Driven Development Is Org Infrastructure](78-scenario-driven-development-as-org-infrastructure.md) | Names the organizational consequence of the scenario cycle: a portable, released Swift/MIDI2 seam with product-local authority, independent evidence, public/maintainer projections, historical context, and a future of negotiated software peers. |
 
 ## Vocabulary
 

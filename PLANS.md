@@ -773,3 +773,20 @@ Integration commit: `Fountain-Coach/midi2-gpu-fabric@53a07e78`.
 Publication commit: pending this commit.
 
 Validation: synchronization check, relative-link review, and `git diff --check`.
+## Current gate — Chapter 78: Scenario-Driven Development as org infrastructure (2026-08-17)
+
+Goal: name the organizational consequence of Chapters 68, 73, and 77: a versioned scenario is a portable,
+event-driven development contract; its generic Swift/MIDI2 seam may be released as an FCIS-governed kit while product
+meaning, Store adapters, UI witnesses, and acceptance claims remain with each consumer.
+
+Scope: `docs/78-scenario-driven-development-as-org-infrastructure.md`, `docs/01-reading-index.md`, exact integration
+mirror, public Book explanation, and reciprocal provenance.
+
+Non-goals: runtime behavior changes, hardware interoperability claims, or self-approval of live acceptance.
+
+Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+
+Integration content commit: `Fountain-Coach/midi2-gpu-fabric@9fef1e66`.
+
+Validation: guide parity, relative-link review, `git diff --check`, FCIS-KIT repository evidence, Book prepublication,
+and site AX/VRT acceptance.

@@ -1,5 +1,17 @@
 # Source and Synchronization Contract
 
+## Current synchronized change — Chapter 78 (2026-08-17)
+
+- Change: **Chapter 78 — Scenario-Driven Development Is Org Infrastructure**, naming the portable scenario contract,
+  the Swift/MIDI2 event-driven seam, independent evidence authorities, historical context, and future negotiated-peer
+  infrastructure.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@9fef1e66`.
+- Publication content commit: pending this commit.
+- Claim boundary: governance and public method only; the public `FountainScenarioKit` package is reusable infrastructure,
+  while Reframe-specific runtime, Store, AX, and live-acceptance claims remain separately governed.
+- Synchronized: 2026-08-17.
+
 ## Current synchronized change — Chapter 77 (2026-08-17)
 
 - Change: **Chapter 77 — The Scenario Runtime Is Swift and MIDI2-Native**, making scenario preparation, execution,
