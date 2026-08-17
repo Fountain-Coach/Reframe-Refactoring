@@ -7,9 +7,10 @@
   boundary between a design illustration and acceptance evidence.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@48a46501`.
-- Publication governance commit: pending this commit.
+- Publication governance commit: `Fountain-Coach/Reframe-Refactoring@2b91e87`.
 - Claim boundary: the chapter and signature image govern presentation intent only; no runtime or live-acceptance claim
   is promoted by publication.
+- Synchronized: 2026-08-17; guide parity passed after transfer.
 
 ## Current synchronized change — Questions / Movements vocabulary (2026-08-17)
 
