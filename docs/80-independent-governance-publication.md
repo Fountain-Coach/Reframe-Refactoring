@@ -7,9 +7,10 @@ source and provenance mirror; it is not the public delivery surface.
 ## Two projections, two jobs
 
 The [Book of Reframe](https://book.fountain.coach/) is the light, writer-facing product reference. The governance
-book at [governance.fountain.coach](https://governance.fountain.coach/) is the dark, source-oriented maintainer
+book at [governance.fountain.coach](https://governance.fountain.coach/) is the OS-aware, source-oriented maintainer
 projection: it exposes the chapter rail, source-oriented typography, chapter provenance, and the boundary between
-public doctrine and private implementation evidence. The two sites may link to one another, but one must not silently
+public doctrine and private implementation evidence. Its light and dark palettes follow the reader's operating-system
+appearance preference. The two sites may link to one another, but one must not silently
 inherit the other's shell or claim its evidence.
 
 ## Publication contract

@@ -4,7 +4,7 @@ This directory is the public publication projection of `Reframe-Refactoring`. It
 source repository's GitHub presentation and from the human-facing Book of Reframe:
 
 - the Book is a light, writer-facing product reference;
-- this site is a dark, source-oriented maintainer/governance reader with a chapter rail;
+- this site is an OS-aware, source-oriented maintainer/governance reader with a chapter rail;
 - both projections use the Fountain Coach logo; this site uses a transparent dark-surface derivative of the reviewed
   logo asset from the Book publication;
 - `docs/` remains the governance source of truth; `site/` is generated output;

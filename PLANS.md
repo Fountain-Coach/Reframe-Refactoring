@@ -259,6 +259,12 @@ available in this session.
 
 **Work card:** `governance-fountain-coach-identity` / generated site asset and guarded deployment.
 
+**Validation:** shared Chrome CDP acceptance passed against the local generated site. AX observed the banner, main,
+`Governance chapters` navigation, `Reframe Governance` heading, skip-link focus, 82 chapter links, and the labeled
+Fountain Coach logo. VRT captures passed for desktop light, desktop dark, and mobile menu-open states under
+`/tmp/governance-site-acceptance-2/`. Browser evidence is local acceptance evidence; HTTPS deployment remains a
+separate gate.
+
 ## Sync — Chapter 61: The Fountain Project Round Trip (2026-08-11)
 
 Title: Synchronize the closing Fountain Project lifecycle chapter from the integration copy.
