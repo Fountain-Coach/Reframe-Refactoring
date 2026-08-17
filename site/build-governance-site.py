@@ -15,6 +15,7 @@ REPO = ROOT.parent
 DOCS = REPO / "docs"
 CHAPTERS = ROOT / "chapters"
 ASSETS = ROOT / "assets"
+LOGO = ASSETS / "fountain-coach-logo-transparent.png"
 
 
 def title_for(path: Path) -> str:
@@ -58,12 +59,14 @@ def shell(page_title: str, content: str, active: str = "") -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html.escape(page_title)} — Reframe Governance</title>
   <meta name="description" content="The public Reframe Governance book: reviewed architectural doctrine, validation rules, and publication boundaries.">
+  <link rel="icon" type="image/png" href="/assets/fountain-coach-logo-transparent.png">
+  <link rel="apple-touch-icon" href="/assets/fountain-coach-logo-transparent.png">
   <link rel="canonical" href="https://governance.fountain.coach{active}">
   <link rel="stylesheet" href="/assets/governance.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to chapter</a>
-  <header class="topbar"><a class="wordmark" href="/"><span class="mark">R</span><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
+  <header class="topbar"><a class="wordmark" href="/"><img class="wordmark-logo" src="/assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
   <div class="workspace">
     <aside class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home" href="/">Governance overview</a>{chapter_nav(active)}</aside>
     <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div>{content}<footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="https://github.com/Fountain-Coach/Reframe-Refactoring">Reframe-Refactoring</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
@@ -94,6 +97,8 @@ def main() -> None:
     target_illustrations = ASSETS / "illustrations"
     if source_illustrations.exists():
         shutil.copytree(source_illustrations, target_illustrations, dirs_exist_ok=True)
+    if not LOGO.exists():
+        raise FileNotFoundError(f"missing reviewed Fountain Coach logo asset: {LOGO}")
     files = chapter_files()
     index_items = "".join(f'<a href="/chapters/{slug(path)}/"><span>{path.stem[:2] if path.stem[:2].isdigit() else "·"}</span>{html.escape(title_for(path))}</a>' for path in files)
     overview = f'''<section class="overview"><div class="eyebrow">PUBLIC FCIS PROJECTION</div><h1>Reframe Governance</h1><p class="lede">The architectural book behind the Reframe writing instrument: one readable source of doctrine for humans, maintainers, and implementation agents.</p><div class="overview-rule"></div><p class="muted">Choose a chapter from the semantic rail. The public projection explains intent and validation boundaries; the runtime, MIDI backplane, and live Store remain operational authority.</p></section><section class="chapter-index" aria-labelledby="index-title"><div class="section-label">CHAPTER INDEX</div><h2 id="index-title">Read by chapter.</h2><div class="index-grid">{index_items}</div></section>'''

@@ -240,6 +240,25 @@ Validation:
 
 # PLANS.md
 
+## Current gate — Fountain Coach identity on the governance projection (2026-08-17)
+
+**Goal:** add the reviewed Fountain Coach logo to the generated governance site without collapsing its visual
+distinction from the Book of Reframe.
+
+**Chapters read:** 07 (bounded edits and focused validation); 08 (source, HTTPS, AX, and visual evidence remain
+separate); 44 (public asset provenance and publication boundary); 80 (independent governance publication contract).
+
+**What they forbid here:** hand-editing generated HTML, inventing a new brand mark, copying the Book shell, or
+promoting an asset check to visual acceptance.
+
+**Conflicts:** none. The Book's reviewed logo is reused through a transparent dark-surface derivative while the
+governance projection keeps its own shell.
+
+**Excluded, and why:** no runtime change, no Book redesign, and no AX/VRT promotion because browser evidence is not
+available in this session.
+
+**Work card:** `governance-fountain-coach-identity` / generated site asset and guarded deployment.
+
 ## Sync — Chapter 61: The Fountain Project Round Trip (2026-08-11)
 
 Title: Synchronize the closing Fountain Project lifecycle chapter from the integration copy.
