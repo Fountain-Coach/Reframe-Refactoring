@@ -856,3 +856,12 @@ Integration content commit: `Fountain-Coach/midi2-gpu-fabric@9fef1e66`.
 
 Validation: guide parity, relative-link review, `git diff --check`, FCIS-KIT repository evidence, Book prepublication,
 and site AX/VRT acceptance.
+## Current planned change — Chapter 82 Remote MIDI2 Reading Room (2026-08-17)
+
+- Change: **Chapter 82 — Remote MIDI2 Reading Rooms**, defining the multi-user Reading Room product boundary,
+  writer authority, shared semantic projections, secure WSS transport, human roles, and the read-only acceptance gate.
+- Direction: publication → integration (`Scripts/sync-integration-copy --push`).
+- Publication content commit: pending.
+- Integration content/provenance commit: pending synchronization.
+- Claim boundary: governance and design reference only; no remote transport, authentication, or live multi-user
+  acceptance is claimed by this chapter.

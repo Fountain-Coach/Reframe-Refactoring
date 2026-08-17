@@ -564,3 +564,13 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - Publication content commit: `Fountain-Coach/Reframe-Refactoring@7f0a771`
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@3481ac4d`
 - Synchronized: 2026-08-12
+## Current planned change — Chapter 82 Remote MIDI2 Reading Room (2026-08-17)
+
+- Change: **Chapter 82 — Remote MIDI2 Reading Rooms**, defining the useful multi-user product boundary over the
+  existing MIDI2 peer infrastructure: shared semantic projections, human roles, writer authority, secure web
+  transport, privacy, reconnect, and the first read-only acceptance gate.
+- Direction: publication → integration (`Scripts/sync-integration-copy --push`).
+- Publication content commit: pending.
+- Integration content/provenance commit: pending synchronization.
+- Claim boundary: governance and design reference only; no remote transport, authentication, or live multi-user
+  acceptance is claimed by this chapter.

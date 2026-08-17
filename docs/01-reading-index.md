@@ -177,6 +177,7 @@ classification; intermediate observations do not establish failure; and any unre
 | [Scenario-Driven Development Is Org Infrastructure](78-scenario-driven-development-as-org-infrastructure.md) | Names the organizational consequence of the scenario cycle: a portable, released Swift/MIDI2 seam with product-local authority, independent evidence, public/maintainer projections, historical context, and a future of negotiated software peers. |
 | [The Default Semantic Manuscript Projection](79-default-semantic-manuscript-projection.md) | Fixes the default Reframe workspace as a continuous Courier/Fountain manuscript with semantic Questions, Movements, and Read coverage navigation, Copilot on the right, MIDI2 peers below, and no A4 cards, horizontal timeline, or Slugline application chrome. The signature illustration is design evidence only. |
 | [The Universal MIDI2 Command Plane](81-universal-midi2-command-plane.md) | Makes MIDI2 the common command and lifecycle boundary for every Reframe capability, distinguishing MIDI-CI peer discovery from operation execution, preserving mediation and FountainStore authority, and requiring all clients to converge on one typed operation contract. |
+| [Remote MIDI2 Reading Rooms](82-remote-midi2-reading-room.md) | Defines the useful multi-user product boundary over Reframe's MIDI2 peer infrastructure: shared semantic projections, human roles, writer authority, secure web transport, privacy, reconnect, and the read-only acceptance gate. |
 
 ## Vocabulary
 
