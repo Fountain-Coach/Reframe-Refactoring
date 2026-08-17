@@ -1,5 +1,14 @@
 # Source and Synchronization Contract
 
+## Current synchronized change — Questions / Movements vocabulary (2026-08-17)
+
+- Change: Chapters 28 and 76 now distinguish the `Questions`, `Movements`, and `Read coverage` lanes. The historical
+  `beat` term remains a compatibility alias only; writer-facing projections must not use it for either lane.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@47df9e44`.
+- Publication content/provenance commit: `Fountain-Coach/Reframe-Refactoring@ad6ce7b`.
+- Synchronized: 2026-08-17; parity check passed after transfer.
+
 ## Current synchronized change — Chapter 78 (2026-08-17)
 
 - Change: **Chapter 78 — Scenario-Driven Development Is Org Infrastructure**, naming the portable scenario contract,
