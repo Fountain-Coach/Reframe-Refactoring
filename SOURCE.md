@@ -7,7 +7,7 @@
   infrastructure.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@9fef1e66`.
-- Publication content commit: pending this commit.
+- Publication content commit: `Fountain-Coach/book-of-reframe@9946725`.
 - Claim boundary: governance and public method only; the public `FountainScenarioKit` package is reusable infrastructure,
   while Reframe-specific runtime, Store, AX, and live-acceptance claims remain separately governed.
 - Synchronized: 2026-08-17.
