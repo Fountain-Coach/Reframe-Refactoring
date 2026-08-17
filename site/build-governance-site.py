@@ -159,7 +159,7 @@ def main() -> None:
         f'<span>{html.escape(title_for(path))} {status_badge(chapter_status(path))}</span></a>' for path in files
     )
     status_content = markdown_html(SITE_CONTENT / "status-quo.md")
-    landing_status_content = re.sub(r"<h1>.*?</h1>", "", status_content, count=1, flags=re.DOTALL)
+    landing_status_content = re.sub(r"<h1[^>]*>.*?</h1>", "", status_content, count=1, flags=re.DOTALL)
     overview = f'''<section class="overview"><div class="eyebrow">PUBLIC FCIS PROJECTION · STATUS QUO</div><h1>Reframe Governance</h1>{landing_status_content}<p class="landing-note"><a href="/status-quo/">Open the stable status-quo page</a> · <a href="#index-title">Browse every retained chapter</a></p></section><section class="chapter-index" aria-labelledby="index-title"><div class="section-label">CHAPTER INDEX</div><h2 id="index-title">Read by chapter.</h2><p class="muted">Every chapter remains available. Labels describe its relationship to the current operating position; they do not erase the historical record.</p><div class="index-grid">{index_items}</div></section>'''
     (ROOT / "index.html").write_text(shell("Reframe Governance", overview, "/"), encoding="utf-8")
     status_page = f'<article class="status-quo-page"><div class="chapter-meta">PUBLICATION STATUS · CURRENT POSITION</div>{status_content}<p class="status-disclaimer">This page is a navigational status statement, not a replacement for the governed chapters or runtime evidence.</p></article>'
