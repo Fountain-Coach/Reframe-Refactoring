@@ -16,6 +16,7 @@
     "77-swift-midi2-runtime-and-scenario-seam": {"key": "current", "label": "Current runtime seam", "description": "The maintained Swift/MIDI2 scenario infrastructure boundary."},
     "78-scenario-driven-development-as-org-infrastructure": {"key": "current", "label": "Current infrastructure", "description": "The maintained organizational development model."},
     "79-default-semantic-manuscript-projection": {"key": "current", "label": "Current product projection", "description": "The maintained default Reframe manuscript projection."},
-    "80-independent-governance-publication": {"key": "current", "label": "Current publication target", "description": "The maintained independent governance publication boundary."}
+    "80-independent-governance-publication": {"key": "current", "label": "Current publication target", "description": "The maintained independent governance publication boundary."},
+    "81-universal-midi2-command-plane": {"key": "current", "label": "Current MIDI2 migration boundary", "description": "The implemented universal MIDI2 ingress and its remaining acceptance boundary."}
   }
 }

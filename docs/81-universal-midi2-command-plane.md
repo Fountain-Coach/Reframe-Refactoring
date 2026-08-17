@@ -9,6 +9,18 @@ This is a governance target and migration rule. It does not claim that every cap
 capability is not universal-MIDI2 complete until its registry identity, IDL contract, executor, lifecycle, Store
 receipt, AX surface, and acceptance scenario agree.
 
+## Current implementation status
+
+The first universal-ingress slice is implemented. `reframe/capability.invoke` is declared in the MIDI2 IDL; discovery
+enumerates the generated `CopilotCapabilityID` registry; the Swift adapter resolves the requested identity through
+that registry and enters the existing mediation, consent, lane, and capability executor; and the Swift scenario
+runner can emit the generic topic. The scenario contract is `universal-midi2-capability-ingress`.
+
+The focused contract suite passes and the scenario projection is executable. This establishes the generic transport
+and dispatch boundary, not registry-wide capability availability or live acceptance. The remaining acceptance gate is
+an independent software-peer run with matching FountainStore, AX, and window-ID evidence; the chapter remains honest
+about that boundary until it exists.
+
 ## The decision
 
 A Reframe command is a writer-facing expression of intent. A capability is the registered operation that can satisfy
