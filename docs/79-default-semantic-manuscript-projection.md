@@ -11,7 +11,7 @@ scroll through it naturally, and see where the current reading found Questions, 
 leaving the text. Copilot remains the right-hand conversational authority. The MIDI2 peer projection remains the
 bottom system boundary. These surfaces compose one Reframe window; none is a second application shell.
 
-![Signature illustration: Reframe's combined semantic manuscript workspace](illustrations/reframe-default-semantic-workspace.png)
+![Signature illustration: Reframe's combined semantic manuscript workspace](illustrations/reframe-default-semantic-workspace.jpg)
 
 *Design reference for the governed direction. This generated illustration is not runtime, AX, FountainStore, or visual
 regression evidence.*
