@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "default": {
+    "key": "reference",
+    "label": "Reference",
+    "description": "Retained for architectural history and context; it is not, by itself, the current operational authority."
+  },
+  "chapters": {
+    "01-reading-index": {"key": "current", "label": "Current index", "description": "The maintained retrieval map for choosing the chapters that bind a task."},
+    "07-agent-operating-guide": {"key": "current", "label": "Current operating guide", "description": "The maintained collaboration and evidence rules for agents and maintainers."},
+    "08-validation-and-acceptance": {"key": "current", "label": "Current acceptance", "description": "The maintained validation and evidence boundary."},
+    "43-the-released-surface-is-a-named-build": {"key": "current", "label": "Current release boundary", "description": "The named-build rule for public capability claims."},
+    "44-publication-and-source-policy": {"key": "current", "label": "Current publication boundary", "description": "The source, private-data, and public-projection boundary."},
+    "69-the-book-of-reframe-is-a-dual-projection": {"key": "current", "label": "Current publication model", "description": "The public and maintainer projections of reviewed governance."},
+    "73-reframe-scenario-development-cycle": {"key": "current", "label": "Current development cycle", "description": "The maintained scenario-first development contract."},
+    "77-swift-midi2-runtime-and-scenario-seam": {"key": "current", "label": "Current runtime seam", "description": "The maintained Swift/MIDI2 scenario infrastructure boundary."},
+    "78-scenario-driven-development-as-org-infrastructure": {"key": "current", "label": "Current infrastructure", "description": "The maintained organizational development model."},
+    "79-default-semantic-manuscript-projection": {"key": "current", "label": "Current product projection", "description": "The maintained default Reframe manuscript projection."},
+    "80-independent-governance-publication": {"key": "current", "label": "Current publication target", "description": "The maintained independent governance publication boundary."}
+  }
+}

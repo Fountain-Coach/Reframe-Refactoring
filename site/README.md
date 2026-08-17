@@ -18,4 +18,6 @@ python3 site/build-governance-site.py
 
 The generator uses the installed `pandoc` executable, copies reviewed chapter illustrations, creates a chapter route
 for every top-level governance Markdown file, includes the reviewed Fountain Coach identity asset, and emits no runtime
-or Store data.
+or Store data. The homepage and stable `/status-quo/` route are generated from `content/status-quo.md`; the
+machine-readable `chapter-status.json` labels current orientation chapters without deleting or silently rewriting
+historical material. Every page emits canonical metadata, JSON-LD, keyboard navigation, and an accessible chapter rail.
