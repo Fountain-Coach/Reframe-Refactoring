@@ -1,3 +1,15 @@
+## 2026-08-17 — Chapter 79 default semantic manuscript projection
+
+- Publish the governed default Reframe workspace: a continuous Courier/Fountain manuscript with semantic Questions,
+  Movements, and Read coverage navigation; Copilot on the right; MIDI2 peers below; and no A4 cards, horizontal
+  timeline, or Slugline application chrome.
+- Include the approved combined workspace mock as a sanitized signature illustration, explicitly marked as design
+  reference rather than runtime, AX, Store, or visual-regression proof.
+- Direction: integration → publication through `Scripts/sync-integration-copy --pull`.
+- Integration source commit: `Fountain-Coach/midi2-gpu-fabric@48a46501`.
+- Publication commit: pending.
+- Runtime implementation and live acceptance remain separate gates.
+
 ## Current gate — Chapter 76 beat movement and uncertainty overlay (2026-08-16)
 
 Goal: publish the reconciled semantic contract in which grounded dramatic movement is the beat and question movement

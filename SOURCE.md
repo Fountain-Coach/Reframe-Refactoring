@@ -1,5 +1,16 @@
 # Source and Synchronization Contract
 
+## Current synchronized change — Chapter 79 default semantic manuscript projection (2026-08-17)
+
+- Change: **Chapter 79 — The Default Semantic Manuscript Projection**, defining the continuous Courier/Fountain
+  manuscript, semantic Questions/Movements/Read coverage navigation, right Copilot, bottom MIDI2 peers, and the
+  boundary between a design illustration and acceptance evidence.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@48a46501`.
+- Publication governance commit: pending this commit.
+- Claim boundary: the chapter and signature image govern presentation intent only; no runtime or live-acceptance claim
+  is promoted by publication.
+
 ## Current synchronized change — Questions / Movements vocabulary (2026-08-17)
 
 - Change: Chapters 28 and 76 now distinguish the `Questions`, `Movements`, and `Read coverage` lanes. The historical
