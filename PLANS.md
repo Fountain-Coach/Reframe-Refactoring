@@ -861,7 +861,7 @@ and site AX/VRT acceptance.
 - Change: **Chapter 82 — Remote MIDI2 Reading Rooms**, defining the multi-user Reading Room product boundary,
   writer authority, shared semantic projections, secure WSS transport, human roles, and the read-only acceptance gate.
 - Direction: publication → integration (`Scripts/sync-integration-copy --push`).
-- Publication content commit: pending.
-- Integration content/provenance commit: pending synchronization.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@a168353`.
+- Integration content/provenance commit: `Fountain-Coach/midi2-gpu-fabric@dee3d52a`.
 - Claim boundary: governance and design reference only; no remote transport, authentication, or live multi-user
   acceptance is claimed by this chapter.

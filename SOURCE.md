@@ -81,8 +81,8 @@
   conformance topology, independent witness, separate Store authority, scenario-first gates, and the boundary between
   software-peer acceptance and hardware interoperability.
 - Direction: publication → integration (`Scripts/sync-integration-copy --push`).
-- Publication content commit: pending.
-- Integration content/provenance commit: pending synchronization.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@a168353`.
+- Integration content/provenance commit: `Fountain-Coach/midi2-gpu-fabric@dee3d52a`.
 - Synchronized: pending.
 
 ## Current synchronized change
