@@ -105,3 +105,16 @@ keeps authority over its own behavior and user surface.
 Scenario-Driven Development is Fountain Coach's governed extension of BDD/ATDD for event-driven, stateful systems: a
 versioned scenario enters through a typed MIDI2 boundary, carries its identity and lifecycle through the run, is judged
 by independent evidence, and becomes public only as a sanitized projection of what the owning product actually proved.
+
+## Evidence and terminology boundary
+
+BDD and ATDD are neighboring established practices, not claims invented by Fountain Coach. The BDD research literature
+is still developing: a 2023 systematic mapping study identified 166 papers but reported limited industry insight and a
+shortage of process and artifact metrics ([Journal of Systems and Software](https://doi.org/10.1016/j.jss.2023.111749)).
+Research on TDD likewise reports context-dependent and often small effects rather than a universal productivity law
+([Information and Software Technology](https://doi.org/10.1016/j.infsof.2011.02.002)). Cucumber is a tool for executing
+BDD specifications, not a scientific authority ([Cucumber documentation](https://cucumber.io/docs/bdd/)).
+
+Accordingly, Fountain Coach may claim a governed Scenario-Driven Development architecture and report its own measured
+results, but MUST NOT imply that BDD, ATDD, TDD, Cucumber, or MIDI2 has been scientifically superseded. Comparative
+claims require named measures, a defined baseline, and reproducible evidence.
