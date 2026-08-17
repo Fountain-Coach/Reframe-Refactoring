@@ -42,10 +42,12 @@ test scripts were valuable but often imperative and timing-shaped: launch, sleep
 buses and CI systems improved repeatability, but a test runner could still speak a private command language that the
 product itself did not understand.
 
-MIDI 2.0 supplies a different foundation for this class of system. Its Universal MIDI Packet transport, negotiated
-peer model, typed operation vocabulary, correlation, and event-oriented exchange let the scenario actor participate as
-a software peer. The scenario invokes the same governed operation boundary as an external device or Reframe process;
-the target emits a correlated lifecycle instead of forcing the runner to infer progress from delay or console text.
+For Fountain Coach systems, MIDI 2.0 provides an owned event-driven peer protocol for this class of system. Its
+Universal MIDI Packet transport, negotiated peer model, typed operation vocabulary, correlation, and event-oriented
+exchange let the scenario actor participate as a software peer. The scenario invokes the same governed operation
+boundary as an external device or Reframe process; the target emits a correlated lifecycle instead of forcing the
+runner to infer progress from delay or console text. This complements BDD/ATDD, contract testing, and CI; it does not
+replace them or claim to be a universal test-orchestration standard.
 
 The architectural gain is therefore not “MIDI2 makes tests pass.” It is that development communication becomes an
 owned protocol surface. Admission, running, terminal success, typed refusal, failure, reconnect, duplicate, resume,
@@ -93,13 +95,13 @@ discovery between software peers; and Book projections that teach humans what a 
 implementation. Scenario repositories remain unnecessary unless an independently governed cross-product conformance
 authority is created.
 
-The longer-term direction is a network of cooperating development peers. A Reframe instance, a stage, a service, or a
-future physical MIDI2 device can advertise a typed role, negotiate capabilities, exchange correlated lifecycle events,
-and retain independent witnesses. The organization gains a reusable conformance vocabulary while each product keeps
-authority over its own behavior and user surface.
+The longer-term direction is an ecosystem of cooperating development peers. A Reframe instance, a stage, a service, or
+a future physical MIDI2 device could advertise a typed role, negotiate capabilities, exchange correlated lifecycle
+events, and retain independent witnesses. The organization gains a reusable conformance vocabulary while each product
+keeps authority over its own behavior and user surface.
 
 ## Governing sentence
 
-Scenario-Driven Development is Fountain Coach's event-driven development infrastructure: a versioned scenario enters
-through a typed MIDI2 boundary, carries its identity and lifecycle through the run, is judged by independent evidence,
-and becomes public only as a sanitized projection of what the owning product actually proved.
+Scenario-Driven Development is Fountain Coach's governed extension of BDD/ATDD for event-driven, stateful systems: a
+versioned scenario enters through a typed MIDI2 boundary, carries its identity and lifecycle through the run, is judged
+by independent evidence, and becomes public only as a sanitized projection of what the owning product actually proved.
