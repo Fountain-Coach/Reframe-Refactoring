@@ -261,6 +261,10 @@ publisher register. The governance pages inherit the reviewed static-publication
 requirements, 0 errors, and 0 warnings. Governance AX acceptance passed all five legal routes and the footer link
 set; local light/dark/mobile VRT passed.
 
+**Production result:** `https://governance.fountain.coach/`, `/legal/`, `/privacy/`, `/accessibility/`, `/copyright/`,
+and `/compliance/` returned HTTPS 200. The same shared Chrome CDP runner passed the live footer/legal-route AX checks
+and light/dark/mobile VRT under `/tmp/governance-legal-live-acceptance/`.
+
 ## Current gate — Fountain Coach identity on the governance projection (2026-08-17)
 
 **Goal:** add the reviewed Fountain Coach logo to the generated governance site without collapsing its visual
