@@ -74,6 +74,10 @@ def markdown_html(path: Path) -> str:
     ).stdout
     result = re.sub(r'href="(?!https?://)(?:\.\./)?(?:docs/)?([^\"]+?)\.md(#[^\"]+)?"',
                     lambda m: f'href="/chapters/{m.group(1)}/{m.group(2) or ""}"', result)
+    result = result.replace('href="https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/README.md"', 'href="/"')
+    result = result.replace('href="https://github.com/Fountain-Coach/Reframe-Refactoring"', 'href="/"')
+    result = result.replace('href="https://github.com/Fountain-Coach/midi2-gpu-fabric/tree/main/apps/modernization-studio/docs/reframe-grounding-first-refactor"', 'href="/status-quo/"')
+    result = re.sub(r'<a href="https://github.com/Fountain-Coach/UncertaintyScoreKit">([^<]+)</a>', r'\1', result)
     result = result.replace('src="illustrations/', 'src="/assets/illustrations/')
     result = result.replace('src="assets/', 'src="/assets/')
     return result
@@ -116,7 +120,7 @@ def shell(page_title: str, content: str, active: str = "", canonical: str | None
   <header class="topbar"><a class="wordmark" href="/"><img class="wordmark-logo" src="/assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
   <div class="workspace">
     <nav class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home{home_active}" href="/"{home_current}>Governance overview</a><a class="rail-status{status_active}" href="/status-quo/"{status_current}>Current status</a>{chapter_nav(active)}</nav>
-    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div>{content}<footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="https://github.com/Fountain-Coach/Reframe-Refactoring">Reframe-Refactoring</a></span><span><a href="/legal/">Legal notices</a> · <a href="/privacy/">Privacy</a> · <a href="/accessibility/">Accessibility</a> · <a href="/copyright/">Copyright</a> · <a href="/compliance/">EU compliance</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
+    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div>{content}<footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="/status-quo/">reviewed governance projection</a></span><span><a href="/legal/">Legal notices</a> · <a href="/privacy/">Privacy</a> · <a href="/accessibility/">Accessibility</a> · <a href="/copyright/">Copyright</a> · <a href="/compliance/">EU compliance</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
   </div>
   <script src="/assets/governance.js" defer></script>
 </body>
