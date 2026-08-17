@@ -16,6 +16,14 @@ DOCS = REPO / "docs"
 CHAPTERS = ROOT / "chapters"
 ASSETS = ROOT / "assets"
 LOGO = ASSETS / "fountain-coach-logo-transparent.png"
+LEGAL_CONTENT = ROOT / "legal-content"
+LEGAL_ROUTES = {
+    "legal": ("Legal notices", "legal-notices.md"),
+    "privacy": ("Privacy", "privacy.md"),
+    "accessibility": ("Accessibility", "accessibility.md"),
+    "copyright": ("Copyright", "copyright.md"),
+    "compliance": ("EU compliance scope", "compliance.md"),
+}
 
 
 def title_for(path: Path) -> str:
@@ -51,6 +59,10 @@ def markdown_html(path: Path) -> str:
     return result
 
 
+def legal_files() -> list[tuple[str, str, Path]]:
+    return [(route, title, LEGAL_CONTENT / filename) for route, (title, filename) in LEGAL_ROUTES.items()]
+
+
 def shell(page_title: str, content: str, active: str = "") -> str:
     return f'''<!doctype html>
 <html lang="en">
@@ -70,7 +82,7 @@ def shell(page_title: str, content: str, active: str = "") -> str:
   <header class="topbar"><a class="wordmark" href="/"><img class="wordmark-logo" src="/assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
   <div class="workspace">
     <nav class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home" href="/">Governance overview</a>{chapter_nav(active)}</nav>
-    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div>{content}<footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="https://github.com/Fountain-Coach/Reframe-Refactoring">Reframe-Refactoring</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
+    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div>{content}<footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="https://github.com/Fountain-Coach/Reframe-Refactoring">Reframe-Refactoring</a></span><span><a href="/legal/">Legal notices</a> · <a href="/privacy/">Privacy</a> · <a href="/accessibility/">Accessibility</a> · <a href="/copyright/">Copyright</a> · <a href="/compliance/">EU compliance</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
   </div>
   <script src="/assets/governance.js" defer></script>
 </body>
@@ -110,6 +122,12 @@ def main() -> None:
         target = CHAPTERS / slug(path)
         target.mkdir(exist_ok=True)
         (target / "index.html").write_text(shell(title_for(path), content, current), encoding="utf-8")
+    for route, title, path in legal_files():
+        current = f"/{route}/"
+        content = f'<article class="legal-page"><div class="chapter-meta">PUBLICATION POLICY · {route.upper()}</div>{markdown_html(path)}</article>'
+        target = ROOT / route
+        target.mkdir(exist_ok=True)
+        (target / "index.html").write_text(shell(title, content, current), encoding="utf-8")
     print(f"built {len(files)} governance chapters")
 
 

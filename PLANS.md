@@ -240,6 +240,27 @@ Validation:
 
 # PLANS.md
 
+## Current gate — governance legal publication surface (2026-08-17)
+
+**Goal:** expose the same legal/publication boundary as the Book of Reframe on every governance route through a
+generated, governance-styled footer and dedicated legal, privacy, accessibility, copyright, and compliance pages.
+
+**Chapters/readings:** 07 (bounded generated-site change); 08 (AX/VRT and HTTPS remain separate authorities); 43
+(named public surface); 44 (public/private and rights boundary); 80 (independent governance publication).
+
+**What they forbid here:** a footer-only legal claim, hand-edited generated pages, or claiming legal conformity from
+engineering evidence alone.
+
+**Conflicts:** none. The legal content follows the reviewed Book scope while retaining the governance site's own
+OS-aware shell.
+
+**Excluded, and why:** no runtime change, no new data processing, no legal advice, and no change to the Book's
+publisher register. The governance pages inherit the reviewed static-publication scope and explicitly link to it.
+
+**Validation:** local generated route/link checks passed; the shared European publication gate returned GO with 8
+requirements, 0 errors, and 0 warnings. Governance AX acceptance passed all five legal routes and the footer link
+set; local light/dark/mobile VRT passed.
+
 ## Current gate — Fountain Coach identity on the governance projection (2026-08-17)
 
 **Goal:** add the reviewed Fountain Coach logo to the generated governance site without collapsing its visual
