@@ -265,6 +265,10 @@ Fountain Coach logo. VRT captures passed for desktop light, desktop dark, and mo
 `/tmp/governance-site-acceptance-2/`. Browser evidence is local acceptance evidence; HTTPS deployment remains a
 separate gate.
 
+**Production result:** the same shared runner passed against `https://governance.fountain.coach/` after deployment;
+the live overview, Chapter 80, stylesheet, and Fountain Coach logo asset returned HTTPS 200. Light, dark, and mobile
+menu-open captures are recorded under `/tmp/governance-live-acceptance-4/`.
+
 ## Sync — Chapter 61: The Fountain Project Round Trip (2026-08-11)
 
 Title: Synchronize the closing Fountain Project lifecycle chapter from the integration copy.
