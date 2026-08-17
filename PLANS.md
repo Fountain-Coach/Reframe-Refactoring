@@ -754,3 +754,22 @@ publication checks.
 - Direction: integration → publication; exact source `Fountain-Coach/midi2-gpu-fabric@b6f510a9`.
 - Validation: integration `git diff --check`; counterpart parity and relative-link review; publication commit records
   the reciprocal provenance.
+## Chapter 77 — The Scenario Runtime Is Swift and MIDI2-Native (2026-08-17)
+
+Goal: make Reframe's scenario development and acceptance stack an owned Swift capability using the same typed MIDI2
+operation boundary as production peers; remove Python from the acceptance path without weakening AX, CoreGraphics, or
+FountainStore evidence.
+
+Scope: `docs/77-swift-midi2-scenario-runtime.md`, `docs/01-reading-index.md`, the exact integration mirror, and
+reciprocal provenance. The synchronized Chapter 70 operation-boundary correction is included because Chapter 77
+depends on it.
+
+Non-goals: implementing the Swift scenario executor, changing the IDL, claiming live acceptance, or claiming physical
+hardware interoperability. Those are subsequent implementation and acceptance gates.
+
+Direction: integration → publication; synchronized with `Scripts/sync-integration-copy --pull`.
+
+Integration commit: `Fountain-Coach/midi2-gpu-fabric@53a07e78`.
+Publication commit: pending this commit.
+
+Validation: synchronization check, relative-link review, and `git diff --check`.

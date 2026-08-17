@@ -138,6 +138,26 @@ failure classes include malformed envelope, schema mismatch, unknown capability,
 resume, unavailable lane, provider failure, Store admission failure, and surface-not-established. A transport timeout
 is a transport observation, not a semantic success or failure until the authoritative Store state is read.
 
+## Every command enters the same operation boundary
+
+MIDI2 is not an optional second route reserved for external peers. A Reframe command is a request for one registered
+operation, whether initiated through Copilot, a slash grammar, a button, an internal scenario actor, or an external
+MIDI2 peer. These surfaces may differ in how intent is expressed, but they MUST converge before execution on the same
+typed operation identity, admission policy, correlation identity, and lifecycle.
+
+The local implementation MUST NOT use a notification handoff, callback-only task, or Store-document polling loop as a
+substitute for that operation boundary. A local surface may use an in-process adapter to the same MIDI2 executor, but
+it must receive the same admitted, progress, terminal-success, and terminal-failure events. FountainStore persists
+those events and results; it is not the command bus.
+
+This does not require an external MIDI-CI exchange for every local turn. MIDI-CI discovers and negotiates the operation
+when a peer is external. Local surfaces use the already-registered operation definition while preserving the same
+payload, lifecycle, correlation, idempotency, and failure vocabulary.
+
+The first migration target is Book Library import. Its current notification handoff is a compatibility seam only until
+`library.import` has a declared IDL topic, generated facts/manifest entry, typed executor, correlated lifecycle, and an
+event-driven scenario proving both success and provider failure.
+
 ## Implementation gates
 
 No capability becomes externally driver-capable by editing this chapter. The implementation gate is:

@@ -1,5 +1,17 @@
 # Source and Synchronization Contract
 
+## Current synchronized change — Chapter 77 (2026-08-17)
+
+- Change: **Chapter 77 — The Scenario Runtime Is Swift and MIDI2-Native**, making scenario preparation, execution,
+  lifecycle waits, evidence binding, and terminal classification an owned Swift capability using the production MIDI2
+  operation boundary.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@53a07e78`.
+- Publication content commit: pending this commit.
+- Claim boundary: governance only; the Swift executor and scenario MIDI2 operation remain unimplemented and
+  unaccepted. Python is transitional, and no hardware-interoperability claim is made.
+- Synchronized: 2026-08-17.
+
 ## Current synchronized change
 
 - Change: **Chapter 76 — Beat Movement and the Uncertainty Overlay**, reconciling grounded dramatic beats with the
