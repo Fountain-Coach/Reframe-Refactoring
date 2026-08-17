@@ -1,5 +1,10 @@
 # A Beat Is the Question It Raises
 
+> **Vocabulary amendment (2026-08-17):** The historical term “beat” in this chapter names the open-question span.
+> The current Reframe projection presents that record as **Questions**. **Movements** are a separate lane for
+> grounded dramatic changes. Existing `beat` identifiers remain compatibility aliases only; writer-facing surfaces
+> must use Questions, Movements, and Read coverage.
+
 > Chapter summary: A **beat** is a story unit defined by the open question it raises — it begins where the question
 > is raised and ends where the story stops holding it. An **atom** is something else entirely: the reader's local
 > choice about where one close-read stretch ends, measured in **a minute of performance** and cut at the text's own
