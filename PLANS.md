@@ -966,3 +966,14 @@ prepublish scan remains blocked by its pre-existing missing PyYAML EU-compliance
 
 **Deployment:** publication commit `203feb2` is pushed; release `release-20260818T054125Z` is live. Governance overview,
 Chapter 83, and Chapter 84 return HTTPS 200; Chapter 83 exposes the new pager in production.
+## Follow-up gate — Repair broken Reading Index table rendering (2026-08-18)
+
+**Finding:** the Chapter 01 Markdown table contained blank lines between rows. Pandoc therefore ended the table early
+and rendered later catalogue rows as detached paragraphs, producing the apparent split shown in the browser.
+
+**Fix:** removed only the blank separators inside the reviewed catalogue table; no chapter content or navigation meaning
+changed.
+
+**Validation:** generated Chapter 01 contains one 84-row table and no stray pipe paragraphs; its content and body do
+not exceed the reading column at 1200px; governance AX/VRT acceptance passed; publication and integration guide copies
+are synchronized.

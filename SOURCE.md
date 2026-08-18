@@ -1,5 +1,14 @@
 # Source and Synchronization Contract
 
+## Current planned change — Repair broken Reading Index table rendering (2026-08-18)
+
+- Finding: blank lines between Markdown table rows in Chapter 01 caused Pandoc to terminate the table and emit the
+  remaining catalogue entries as detached paragraphs, creating the split visible in the browser.
+- Fix: removed the four blank separators within that table only; chapter wording and navigation semantics are unchanged.
+- Validation: generated output contains one 84-row table, zero stray pipe paragraphs, no body overflow at 1200px, and
+  local governance AX/VRT acceptance passed. The publication copy was synchronized to integration with `--push`.
+- Claim boundary: publication rendering repair only; no runtime, scenario, Store, or capability claim changes.
+
 ## Current planned change — Chapter navigation and desktop arrow reading (2026-08-18)
 
 - Change: generated chapter pages now expose explicit previous/next links, chapter position, and desktop Left/Right
