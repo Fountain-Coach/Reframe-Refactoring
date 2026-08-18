@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">Reframe design mock for a semantic illustration scenario</title>
+  <desc id="desc">A deterministic design reference showing the current manuscript workspace and a proposed illustration participant attached to a movement and source location. It is not live evidence.</desc>
+  <rect width="1600" height="980" fill="#111827"/>
+  <rect x="34" y="28" width="1532" height="924" rx="24" fill="#f5f2ea"/>
+  <rect x="34" y="28" width="1532" height="64" rx="24" fill="#252b36"/>
+  <text x="72" y="68" fill="#f5f2ea" font-family="Arial, sans-serif" font-size="22" font-weight="700">REFRAME</text>
+  <text x="1270" y="67" fill="#f4c95d" font-family="Arial, sans-serif" font-size="15" font-weight="700">DESIGN MOCK · NOT LIVE EVIDENCE</text>
+  <rect x="58" y="116" width="950" height="690" rx="16" fill="#fffdf8" stroke="#d8d1c4"/>
+  <text x="90" y="158" fill="#27313b" font-family="Arial, sans-serif" font-size="17" font-weight="700">CURRENT DESIGN · SEMANTIC MANUSCRIPT</text>
+  <text x="90" y="188" fill="#59636b" font-family="Arial, sans-serif" font-size="15">The source remains the readable, addressable project surface.</text>
+  <rect x="90" y="220" width="886" height="238" rx="12" fill="#f1eee6"/>
+  <text x="122" y="260" fill="#26323b" font-family="Georgia, serif" font-size="25" font-weight="700">Pyramus and Thisbe</text>
+  <text x="122" y="302" fill="#3f4a50" font-family="Georgia, serif" font-size="19">The wall keeps what the lovers cannot say aloud.</text>
+  <text x="122" y="336" fill="#3f4a50" font-family="Georgia, serif" font-size="19">Their question survives the passage without being resolved.</text>
+  <rect x="122" y="372" width="610" height="3" fill="#d59a36"/>
+  <text x="122" y="412" fill="#7e5e22" font-family="Arial, sans-serif" font-size="14">SOURCE LOCATION · lines 118–132 · proposed attachment point</text>
+  <rect x="90" y="486" width="280" height="258" rx="12" fill="#e8f0ee"/>
+  <text x="116" y="524" fill="#245b55" font-family="Arial, sans-serif" font-size="16" font-weight="700">MOVEMENTS</text>
+  <text x="116" y="562" fill="#315c58" font-family="Arial, sans-serif" font-size="15">The wall becomes a witness.</text>
+  <text x="116" y="590" fill="#315c58" font-family="Arial, sans-serif" font-size="13">source lines 118–132</text>
+  <rect x="394" y="486" width="280" height="258" rx="12" fill="#f4e9ed"/>
+  <text x="420" y="524" fill="#7e3f55" font-family="Arial, sans-serif" font-size="16" font-weight="700">QUESTIONS</text>
+  <text x="420" y="562" fill="#704458" font-family="Arial, sans-serif" font-size="15">What remains unsaid?</text>
+  <text x="420" y="590" fill="#704458" font-family="Arial, sans-serif" font-size="13">uncertainty retained</text>
+  <rect x="698" y="486" width="278" height="258" rx="12" fill="#e9edf4"/>
+  <text x="724" y="524" fill="#385273" font-family="Arial, sans-serif" font-size="16" font-weight="700">READ COVERAGE</text>
+  <text x="724" y="562" fill="#45617d" font-family="Arial, sans-serif" font-size="15">Settled source window</text>
+  <text x="724" y="590" fill="#45617d" font-family="Arial, sans-serif" font-size="13">design state only</text>
+  <rect x="1032" y="116" width="500" height="690" rx="16" fill="#202936"/>
+  <text x="1068" y="158" fill="#f5f2ea" font-family="Arial, sans-serif" font-size="17" font-weight="700">SCENARIO ROLLOUT · COPILOT</text>
+  <text x="1068" y="188" fill="#b7c1ca" font-family="Arial, sans-serif" font-size="15">A future semantic handoff, shown without claiming execution.</text>
+  <rect x="1068" y="226" width="428" height="174" rx="12" fill="#2c3745" stroke="#4a5968"/>
+  <text x="1096" y="264" fill="#f5f2ea" font-family="Arial, sans-serif" font-size="15" font-weight="700">STORIFY OUTPUT</text>
+  <text x="1096" y="300" fill="#d5dee5" font-family="Arial, sans-serif" font-size="14">Movement + question + source passage</text>
+  <text x="1096" y="332" fill="#d5dee5" font-family="Arial, sans-serif" font-size="14">would compose the prompt here.</text>
+  <text x="1096" y="372" fill="#f4c95d" font-family="Arial, sans-serif" font-size="12">PROPOSED · NO STORE RECEIPT</text>
+  <rect x="1068" y="426" width="428" height="232" rx="12" fill="#3b2f28" stroke="#b97c42"/>
+  <text x="1096" y="466" fill="#f7e7d2" font-family="Arial, sans-serif" font-size="15" font-weight="700">ILLUSTRATION PARTICIPANT</text>
+  <rect x="1096" y="490" width="136" height="112" rx="8" fill="#765b4c"/>
+  <path d="M1112 576 Q1164 512 1218 576" fill="none" stroke="#f4c95d" stroke-width="5"/>
+  <circle cx="1150" cy="535" r="12" fill="#f4c95d"/>
+  <text x="1254" y="522" fill="#f7e7d2" font-family="Arial, sans-serif" font-size="14">placeholder only</text>
+  <text x="1254" y="550" fill="#f7e7d2" font-family="Arial, sans-serif" font-size="14">attached to:</text>
+  <text x="1254" y="578" fill="#f4c95d" font-family="Arial, sans-serif" font-size="14">movement · lines 118–132</text>
+  <text x="1068" y="704" fill="#f4c95d" font-family="Arial, sans-serif" font-size="13">IMAGE CLOUD RECEIPT · NOT ESTABLISHED</text>
+  <rect x="58" y="840" width="1474" height="74" rx="12" fill="#e6dfd1"/>
+  <text x="88" y="872" fill="#3c474d" font-family="Arial, sans-serif" font-size="14" font-weight="700">MIDI2 PEER SURFACE</text>
+  <text x="300" y="872" fill="#59636b" font-family="Arial, sans-serif" font-size="14">typed scenario operation · consent · lifecycle · independent evidence</text>
+  <text x="88" y="896" fill="#8b5c27" font-family="Arial, sans-serif" font-size="12">DESIGN REFERENCE · current layout plus proposed rollout · no live acceptance claim</text>
+</svg>
