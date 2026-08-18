@@ -1020,10 +1020,11 @@ governance authority or claiming whole-app MIDI2 adoption.
 
 **Integration source commit:** `Fountain-Coach/midi2-gpu-fabric@32e68292`.
 
-**Publication commit:** `Fountain-Coach/Reframe-Refactoring@3b4043a` plus the generated-route follow-up below.
+**Publication commits:** `Fountain-Coach/Reframe-Refactoring@3b4043a` and `@11bd280`.
 
 **Scope:** `docs/70-external-midi2-control-of-reframe.md` and reciprocal provenance only. Runtime coordinator
 implementation, scenario live acceptance, and capability status promotion remain separate integration phases.
 
 **Validation:** guide parity, relative-link review, `git diff --check`, governance site generation, local governance
-AX/VRT acceptance, and deployment verification.
+AX/VRT acceptance, and deployment verification. The deployed root, status-quo route, Chapter 70, and Chapter 83 all
+returned HTTPS 200; release `release-20260818T153714Z` is live at `governance.fountain.coach`.

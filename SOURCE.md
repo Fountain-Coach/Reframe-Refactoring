@@ -690,4 +690,6 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
   full capability migration, or live acceptance is claimed.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration commit: `Fountain-Coach/midi2-gpu-fabric@32e68292`.
-- Publication source commit: `Fountain-Coach/Reframe-Refactoring@3b4043a`; generated-route follow-up pending.
+- Publication commits: `Fountain-Coach/Reframe-Refactoring@3b4043a` and `Fountain-Coach/Reframe-Refactoring@11bd280`.
+- Production result: release `release-20260818T153714Z` is live at `governance.fountain.coach`; the root,
+  `/status-quo/`, Chapter 70, and Chapter 83 returned HTTPS 200 and Chapter 70 contains the coordinator section.
