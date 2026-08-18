@@ -898,10 +898,15 @@ illustration rollout without fabricating a successful Teatro scenario run.
 
 **Claim boundary:** design reference only; the Teatro scenario remains executable-not-live-accepted.
 
-**Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@a59b69b4`.
+**Publication commits:** `Fountain-Coach/Reframe-Refactoring@c622ab6` and
+`Fountain-Coach/Reframe-Refactoring@0f8133f`.
 
 **Validation:** deterministic SVG parsed and rendered; governance generator produced 86 chapters; AppleDouble
 metadata is excluded at generation, validation, and deployment; local Chrome/CDP AX/VRT passed for light, dark, and
 mobile menu-open states.
 
 **Deployment:** rebuild and publish the governance projection after local XML, link, safety, and AX/VRT checks pass.
+
+**Production result:** release `release-20260818T045623Z-41188` was promoted to
+`/var/www/reframe-governance/current`; Chapter 84 and its SVG asset return HTTPS 200 and the prior release is retained
+for rollback.

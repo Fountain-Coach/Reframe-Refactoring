@@ -7,10 +7,13 @@
   Store, AX, MIDI2, or Image Cloud evidence.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@a59b69b4`.
-- Publication governance commit: pending.
+- Publication governance commits: `Fountain-Coach/Reframe-Refactoring@c622ab6` (chapter, generator, and site) and
+  `Fountain-Coach/Reframe-Refactoring@0f8133f` (published illustration asset).
 - Claim boundary: design reference only; `teatro-score-myth-illustrations` remains executable-not-live-accepted.
 - The governance publisher and generator now exclude macOS AppleDouble metadata without rejecting valid generated
   content; local design-mock render and governance AX/VRT passed.
+- Production result: release `release-20260818T045623Z-41188` was promoted to
+  `/var/www/reframe-governance/current`; HTTPS returned 200 for Chapter 84 and the deployed asset is present.
 
 ## Current planned change — Chapter 83 conversational scenario authoring (2026-08-18)
 
