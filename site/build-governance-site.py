@@ -8,6 +8,7 @@ import json
 import re
 import shutil
 import subprocess
+import tempfile
 from pathlib import Path
 
 
@@ -16,6 +17,7 @@ REPO = ROOT.parent
 DOCS = REPO / "docs"
 CHAPTERS = ROOT / "chapters"
 ASSETS = ROOT / "assets"
+SOCIAL_ASSETS = ASSETS / "social"
 LOGO = ASSETS / "fountain-coach-logo-transparent.png"
 LEGAL_CONTENT = ROOT / "legal-content"
 SITE_CONTENT = ROOT / "content"
@@ -65,6 +67,45 @@ def status_description(status: dict) -> str:
     return html.escape(status["description"])
 
 
+def illustration_for(path: Path) -> str | None:
+    match = re.search(r"!\[[^\]]*\]\(illustrations/([^\)]+)\)", path.read_text(encoding="utf-8"))
+    return match.group(1) if match else None
+
+
+def social_card_for(path: Path) -> str | None:
+    illustration = illustration_for(path)
+    return f"/assets/social/{path.stem}.jpg" if illustration else None
+
+
+def build_social_card(path: Path, title: str) -> str | None:
+    illustration = illustration_for(path)
+    if not illustration:
+        return None
+    source = DOCS / "illustrations" / illustration
+    if not source.exists():
+        raise FileNotFoundError(f"missing illustration for social card: {source}")
+    SOCIAL_ASSETS.mkdir(parents=True, exist_ok=True)
+    destination = SOCIAL_ASSETS / f"{path.stem}.jpg"
+    with tempfile.TemporaryDirectory(prefix="reframe-social-card-") as temp_dir:
+        rendered_source = Path(temp_dir) / "source.png"
+        if source.suffix.lower() == ".svg":
+            subprocess.run(["rsvg-convert", "-o", str(rendered_source), str(source)], check=True)
+        else:
+            rendered_source = source
+        subprocess.run([
+            "magick", "-size", "1200x630", "xc:#17212b",
+            "(", str(rendered_source), "-auto-orient", "-resize", "1120x500>",
+            "-background", "#17212b", "-gravity", "center", "-extent", "1120x500", ")",
+            "-gravity", "center", "-composite",
+            "-fill", "white", "-font", "Helvetica", "-pointsize", "22",
+            "-gravity", "southwest", "-annotate", "+40+30", "REFRAME GOVERNANCE",
+            "-fill", "#9fd4ff", "-pointsize", "18", "-gravity", "southeast",
+            "-annotate", "+40+30", title,
+            "-strip", "-quality", "90", str(destination),
+        ], check=True)
+    return social_card_for(path)
+
+
 def markdown_html(path: Path) -> str:
     result = subprocess.run(
         ["pandoc", "--from=gfm", "--to=html", "--wrap=none", str(path)],
@@ -87,7 +128,8 @@ def legal_files() -> list[tuple[str, str, Path]]:
     return [(route, title, LEGAL_CONTENT / filename) for route, (title, filename) in LEGAL_ROUTES.items()]
 
 
-def shell(page_title: str, content: str, active: str = "", canonical: str | None = None) -> str:
+def shell(page_title: str, content: str, active: str = "", canonical: str | None = None,
+          social_image: str | None = None) -> str:
     canonical = canonical or active
     home_active = ' active' if active == '/' else ''
     home_current = ' aria-current="page"' if active == '/' else ''
@@ -101,6 +143,10 @@ def shell(page_title: str, content: str, active: str = "", canonical: str | None
         "isPartOf": {"@type": "Book", "name": "Reframe Governance", "url": "https://governance.fountain.coach/"},
         "publisher": {"@type": "Organization", "name": "Fountain Coach", "url": "https://fountain.coach/"},
     })
+    social_tags = ""
+    if social_image:
+        social_url = f"https://governance.fountain.coach{social_image}"
+        social_tags = f'''\n  <meta property="og:type" content="article">\n  <meta property="og:title" content="{html.escape(page_title)}">\n  <meta property="og:image" content="{social_url}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="{social_url}">'''
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -112,6 +158,7 @@ def shell(page_title: str, content: str, active: str = "", canonical: str | None
   <link rel="icon" type="image/png" href="/assets/fountain-coach-logo-transparent.png">
   <link rel="apple-touch-icon" href="/assets/fountain-coach-logo-transparent.png">
   <link rel="canonical" href="https://governance.fountain.coach{canonical}">
+{social_tags}
   <script type="application/ld+json">{structured}</script>
   <link rel="stylesheet" href="/assets/governance.css">
 </head>
@@ -158,6 +205,9 @@ def main() -> None:
     CHAPTERS.mkdir(exist_ok=True)
     for old in CHAPTERS.glob("*/index.html"):
         old.unlink()
+    SOCIAL_ASSETS.mkdir(exist_ok=True)
+    for old in SOCIAL_ASSETS.glob("*.jpg"):
+        old.unlink()
     source_illustrations = DOCS / "illustrations"
     target_illustrations = ASSETS / "illustrations"
     if source_illustrations.exists():
@@ -184,16 +234,23 @@ def main() -> None:
     for path in files:
         current = f"/chapters/{slug(path)}/"
         status = chapter_status(path)
-        content = f'<article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · {path.stem[:2] if path.stem[:2].isdigit() else "—"}</div><p class="chapter-state"><strong>{html.escape(status["label"])}</strong> · {status_description(status)}</p>{markdown_html(path)}</article>'
+        title = title_for(path)
+        social_image = build_social_card(path, title)
+        social_link = (f'<p class="social-preview-link"><a href="{social_image}">Open social post illustration (1200×630)</a></p>'
+                       if social_image else "")
+        content = f'<article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · {path.stem[:2] if path.stem[:2].isdigit() else "—"}</div><p class="chapter-state"><strong>{html.escape(status["label"])}</strong> · {status_description(status)}</p>{social_link}{markdown_html(path)}</article>'
         target = CHAPTERS / slug(path)
         target.mkdir(exist_ok=True)
-        (target / "index.html").write_text(shell(title_for(path), content, current), encoding="utf-8")
+        (target / "index.html").write_text(shell(title, content, current, social_image=social_image), encoding="utf-8")
     for route, title, path in legal_files():
         current = f"/{route}/"
         content = f'<article class="legal-page"><div class="chapter-meta">PUBLICATION POLICY · {route.upper()}</div>{markdown_html(path)}</article>'
         target = ROOT / route
         target.mkdir(exist_ok=True)
         (target / "index.html").write_text(shell(title, content, current), encoding="utf-8")
+    for sidecar in ROOT.rglob("._*"):
+        if sidecar.is_file() or sidecar.is_symlink():
+            sidecar.unlink()
     print(f"built {len(files)} governance chapters")
 
 

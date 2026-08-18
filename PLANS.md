@@ -240,6 +240,21 @@ Validation:
 
 # PLANS.md
 
+## Current gate — Mandatory illustration social-post template (2026-08-18)
+
+**Goal:** make every reviewed chapter illustration publishable as a deterministic 1200×630 social-post image, with
+Open Graph/Twitter metadata and an accessible page link, while preserving the original illustration and its evidence
+boundary.
+
+**Scope:** `site/build-governance-site.py`, `site/assets/governance.css`, generated social assets, chapter HTML, and
+the synchronized governance publication skill contract.
+
+**Non-goals:** no external social posting, no fake live evidence, no prompt/manuscript copying, and no change to the
+Reframe runtime or chapter illustration source assets.
+
+**Validation:** deterministic card generation, dimensions, metadata, local link checks, `git diff --check`, and local
+AX/VRT acceptance; external publishing remains separately authorized.
+
 ## Current gate — governance legal publication surface (2026-08-17)
 
 **Goal:** expose the same legal/publication boundary as the Book of Reframe on every governance route through a
