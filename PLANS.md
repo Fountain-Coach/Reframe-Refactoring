@@ -996,3 +996,7 @@ projection improvement.
 
 **Validation:** desktop and mobile table screenshots, AX table semantics, overflow measurement, governance acceptance,
 `git diff --check`, and deployment HTTPS checks.
+
+**Result:** Chapter 01 table reviewed at desktop and mobile widths; AX exposed one table, 84 rows, and two column
+headers; desktop body overflow measured at zero. Governance acceptance passed. Publication commit `5be704e` is live as
+release `release-20260818T055902Z`; overview and Chapter 01 return HTTPS 200.

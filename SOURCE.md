@@ -7,7 +7,9 @@
 - Claim boundary: CSS projection only; Markdown meaning, runtime behavior, scenario evidence, and navigation semantics are
   unchanged.
 - Validation: desktop/mobile visual review, browser AX table semantics, overflow measurement, and governance acceptance
-  are required before deployment.
+  passed: one table, 84 rows, two column headers, and zero desktop body overflow.
+- Production result: publication commit `Fountain-Coach/Reframe-Refactoring@5be704e` is live as release
+  `release-20260818T055902Z`; overview and Chapter 01 return HTTPS 200.
 
 ## Current planned change — Repair broken Reading Index table rendering (2026-08-18)
 
