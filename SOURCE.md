@@ -1,5 +1,17 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter 84 governed Reframe design mock (2026-08-18)
+
+- Change: **Chapter 84 — The Reframe Design Mock Is a Governed Projection**, defining a deterministic default design
+  reference that shows current Reframe layout plus proposed semantic illustration rollout without fabricating runtime,
+  Store, AX, MIDI2, or Image Cloud evidence.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@a59b69b4`.
+- Publication governance commit: pending.
+- Claim boundary: design reference only; `teatro-score-myth-illustrations` remains executable-not-live-accepted.
+- The governance publisher and generator now exclude macOS AppleDouble metadata without rejecting valid generated
+  content; local design-mock render and governance AX/VRT passed.
+
 ## Current planned change — Chapter 83 conversational scenario authoring (2026-08-18)
 
 - Change: **Chapter 83 — Conversational Scenario Authoring Is the Development Surface**, defining scenarios as

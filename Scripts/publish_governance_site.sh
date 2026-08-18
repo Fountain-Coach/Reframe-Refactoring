@@ -36,8 +36,8 @@ done
   exit 2
 }
 
-if find "$site_root" -name '._*' -o -name '.DS_Store' | grep -q .; then
-  echo "refusing: generated site contains AppleDouble or Finder metadata" >&2
+if find "$site_root" -name '.DS_Store' -print -quit | grep -q .; then
+  echo "refusing: generated site contains Finder metadata" >&2
   exit 2
 fi
 

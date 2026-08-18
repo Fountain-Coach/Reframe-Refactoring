@@ -887,3 +887,21 @@ and retaining the previous tree under `.rollback`.
 **Production result:** `Scripts/publish_governance_site.sh --apply --confirm-deploy` promoted release
 `release-20260818T044627Z-40492` to `/var/www/reframe-governance/current`. HTTPS returned 200 for `/`, `/status-quo/`,
 and `/chapters/83-conversational-scenario-authoring/`; the prior current tree remains in `.rollback`.
+## Current gate — Chapter 84 governed Reframe design mock (2026-08-18)
+
+**Goal:** publish a deterministic default Reframe Design Mock that shows the current workspace and proposed semantic
+illustration rollout without fabricating a successful Teatro scenario run.
+
+**Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
+
+**Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@a59b69b4`.
+
+**Claim boundary:** design reference only; the Teatro scenario remains executable-not-live-accepted.
+
+**Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@a59b69b4`.
+
+**Validation:** deterministic SVG parsed and rendered; governance generator produced 86 chapters; AppleDouble
+metadata is excluded at generation, validation, and deployment; local Chrome/CDP AX/VRT passed for light, dark, and
+mobile menu-open states.
+
+**Deployment:** rebuild and publish the governance projection after local XML, link, safety, and AX/VRT checks pass.

@@ -39,7 +39,7 @@ def title_for(path: Path) -> str:
 
 def chapter_files() -> list[Path]:
     return sorted(
-        (path for path in DOCS.glob("*.md") if path.name not in {"README.md"}),
+        (path for path in DOCS.glob("*.md") if path.name not in {"README.md"} and not path.name.startswith("._")),
         key=lambda path: (int(path.name[:2]) if path.name[:2].isdigit() else 999, path.name),
     )
 
@@ -148,13 +148,25 @@ def chapter_nav(active: str) -> str:
 
 
 def main() -> None:
+    # Finder/AppleDouble sidecars are not publication content. Remove stale sidecars from prior macOS copies
+    # before generating so validators never mistake them for UTF-8 HTML or Markdown.
+    for sidecar in ROOT.rglob("._*"):
+        if sidecar.is_file() or sidecar.is_symlink():
+            sidecar.unlink()
+        elif sidecar.is_dir():
+            shutil.rmtree(sidecar)
     CHAPTERS.mkdir(exist_ok=True)
     for old in CHAPTERS.glob("*/index.html"):
         old.unlink()
     source_illustrations = DOCS / "illustrations"
     target_illustrations = ASSETS / "illustrations"
     if source_illustrations.exists():
-        shutil.copytree(source_illustrations, target_illustrations, dirs_exist_ok=True)
+        shutil.copytree(
+            source_illustrations,
+            target_illustrations,
+            dirs_exist_ok=True,
+            ignore=shutil.ignore_patterns("._*", ".DS_Store", "__pycache__"),
+        )
     if not LOGO.exists():
         raise FileNotFoundError(f"missing reviewed Fountain Coach logo asset: {LOGO}")
     files = chapter_files()
