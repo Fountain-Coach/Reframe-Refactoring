@@ -18,6 +18,7 @@
     "79-default-semantic-manuscript-projection": {"key": "current", "label": "Current product projection", "description": "The maintained default Reframe manuscript projection."},
     "80-independent-governance-publication": {"key": "current", "label": "Current publication target", "description": "The maintained independent governance publication boundary."},
     "81-universal-midi2-command-plane": {"key": "current", "label": "Current MIDI2 migration boundary", "description": "The implemented universal MIDI2 ingress and its remaining acceptance boundary."},
-    "82-remote-midi2-reading-room": {"key": "current", "label": "Current collaboration boundary", "description": "The governed multi-user Reading Room product boundary and its remote software-peer acceptance gate."}
+    "82-remote-midi2-reading-room": {"key": "current", "label": "Current collaboration boundary", "description": "The governed multi-user Reading Room product boundary and its remote software-peer acceptance gate."},
+    "83-conversational-scenario-authoring": {"key": "current", "label": "Current authoring boundary", "description": "The maintained conversational scenario prompt-contract and its compiled runtime projections."}
   }
 }

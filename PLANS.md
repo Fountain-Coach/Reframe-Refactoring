@@ -865,3 +865,17 @@ and site AX/VRT acceptance.
 - Integration content/provenance commit: `Fountain-Coach/midi2-gpu-fabric@dee3d52a`.
 - Claim boundary: governance and design reference only; no remote transport, authentication, or live multi-user
   acceptance is claimed by this chapter.
+## Current gate — Chapter 83 conversational scenario authoring (2026-08-18)
+
+**Goal:** publish the governance contract that treats a scenario as a conversational executable prompt-contract,
+with YAML/JSON as compiled projections and semantic lineage preserved through movements, questions, passages, image
+receipts, and text locations.
+
+**Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
+
+**Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@9c8fb561`.
+
+**Publication commit:** pending.
+
+**Claim boundary:** governance only; conversational authoring, compilation, and live acceptance remain unimplemented
+or unestablished until their own evidence gates pass.

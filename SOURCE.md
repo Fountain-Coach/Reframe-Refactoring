@@ -1,5 +1,16 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter 83 conversational scenario authoring (2026-08-18)
+
+- Change: **Chapter 83 — Conversational Scenario Authoring Is the Development Surface**, defining scenarios as
+  executable prompt-contracts authored conversationally and compiled to YAML/JSON, with semantic movement/question
+  dependencies, typed execution, evidence lineage, and a clear boundary between governance and implementation.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@9c8fb561`.
+- Publication governance commit: pending.
+- Claim boundary: governance only; the conversational authoring surface and compiler are not yet implemented or
+  live-accepted by this chapter.
+
 ## Current synchronized change — Chapter 79 default semantic manuscript projection (2026-08-17)
 
 - Change: **Chapter 79 — The Default Semantic Manuscript Projection**, defining the continuous Courier/Fountain
