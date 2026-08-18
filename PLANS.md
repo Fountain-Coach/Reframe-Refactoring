@@ -1035,6 +1035,7 @@ returned HTTPS 200; release `release-20260818T153714Z` is live at `governance.fo
 - Direction: publication → integration (`Scripts/sync-integration-copy --push`); the publication copy is authoritative
   for this governance chapter and its reading-index entry.
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@92d0094f`.
+- Publication source commit: `Fountain-Coach/Reframe-Refactoring@f137376`.
 - Claim boundary: governance contract only. The current runtime has deterministic three-read admission and declared
   resource topics, but the Swift resource adapter, range-only runtime path, semantic quality gate, and live acceptance
   remain unestablished.
@@ -1042,3 +1043,5 @@ returned HTTPS 200; release `release-20260818T153714Z` is live at `governance.fo
   prepublish scan where applicable, exact integration parity, and reciprocal provenance.
 - Deployment: guarded governance publication only after both repositories are clean, committed, synchronized, and all
   local gates pass.
+- Production result: release `release-20260818T162600Z-84510` is promoted to
+  `/var/www/reframe-governance/current`; the overview, status-quo route, and Chapter 85 return HTTPS 200.
