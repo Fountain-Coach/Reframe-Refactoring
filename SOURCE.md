@@ -6,6 +6,7 @@
 - Fix: generated illustrated chapters now have a cache-safe full-content `/chapters/<slug>/share/<asset>/` route; social
   packages use that route as `publicUrl` while retaining the 1200×630 card as `og:image`.
 - Claim boundary: publication/social packaging only; no external post is claimed until Facebook returns a post record.
+- Result: Chapter 84 packages now use `https://governance.fountain.coach/chapters/84-governed-reframe-design-mock/share/84-governed-reframe-design-mock-0132f2b1aae8/` as the Facebook `publicUrl`. That route serves the full chapter and declares the 1200×630 card as `og:image`; the image-only `/social/` route is no longer an allowed Facebook target. Integration skill commit `Fountain-Coach/midi2-gpu-fabric@ad19f054`; publication commit `Fountain-Coach/Reframe-Refactoring@fd24cde`.
 
 ## Current planned change — Improve governance table readability (2026-08-18)
 
