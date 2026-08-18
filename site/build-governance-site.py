@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import html
+import hashlib
 import json
 import re
 import shutil
@@ -72,11 +73,6 @@ def illustration_for(path: Path) -> str | None:
     return match.group(1) if match else None
 
 
-def social_card_for(path: Path) -> str | None:
-    illustration = illustration_for(path)
-    return f"/assets/social/{path.stem}.jpg" if illustration else None
-
-
 def build_social_card(path: Path, title: str) -> str | None:
     illustration = illustration_for(path)
     if not illustration:
@@ -130,7 +126,14 @@ def build_social_card(path: Path, title: str) -> str | None:
             "-draw", "text 700,565 'SOCIAL POST ILLUSTRATION'",
             "-strip", "-quality", "90", str(destination),
         ], check=True)
-    return social_card_for(path)
+    digest = hashlib.sha256(destination.read_bytes()).hexdigest()[:12]
+    versioned = SOCIAL_ASSETS / f"{path.stem}-{digest}.jpg"
+    destination.replace(versioned)
+    return f"/assets/social/{versioned.name}"
+
+
+def social_share_for(social_image: str) -> str:
+    return f"/social/{Path(social_image).stem}/"
 
 
 def markdown_html(path: Path) -> str:
@@ -173,7 +176,7 @@ def shell(page_title: str, content: str, active: str = "", canonical: str | None
     social_tags = ""
     if social_image:
         social_url = f"https://governance.fountain.coach{social_image}"
-        social_tags = f'''\n  <meta property="og:type" content="article">\n  <meta property="og:title" content="{html.escape(page_title)}">\n  <meta property="og:image" content="{social_url}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="{social_url}">'''
+        social_tags = f'''\n  <meta property="og:type" content="article">\n  <meta property="og:title" content="{html.escape(page_title)}">\n  <meta property="og:url" content="https://governance.fountain.coach{canonical}">\n  <meta property="og:image" content="{social_url}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="{social_url}">'''
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -235,6 +238,9 @@ def main() -> None:
     SOCIAL_ASSETS.mkdir(exist_ok=True)
     for old in SOCIAL_ASSETS.glob("*.jpg"):
         old.unlink()
+    social_routes = ROOT / "social"
+    if social_routes.exists():
+        shutil.rmtree(social_routes)
     source_illustrations = DOCS / "illustrations"
     target_illustrations = ASSETS / "illustrations"
     if source_illustrations.exists():
@@ -263,12 +269,21 @@ def main() -> None:
         status = chapter_status(path)
         title = title_for(path)
         social_image = build_social_card(path, title)
-        social_link = (f'<p class="social-preview-link"><a href="{social_image}">Open social post illustration (1200×630)</a></p>'
+        social_route = social_share_for(social_image) if social_image else None
+        social_link = (f'<p class="social-preview-link"><a href="{social_route}">Open cache-safe social share URL</a> · '
+                       f'<a href="{social_image}">1200×630 image</a></p>'
                        if social_image else "")
         content = f'<article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · {path.stem[:2] if path.stem[:2].isdigit() else "—"}</div><p class="chapter-state"><strong>{html.escape(status["label"])}</strong> · {status_description(status)}</p>{social_link}{markdown_html(path)}</article>'
         target = CHAPTERS / slug(path)
         target.mkdir(exist_ok=True)
         (target / "index.html").write_text(shell(title, content, current, social_image=social_image), encoding="utf-8")
+        if social_route:
+            share_content = (f'<article class="social-share-page"><div class="chapter-meta">SOCIAL SHARE ILLUSTRATION</div>'
+                             f'<h1>{html.escape(title)}</h1><img src="{social_image}" alt="Social illustration for {html.escape(title)}">'
+                             f'<p><a href="{current}">Read the governed chapter</a></p></article>')
+            share_target = ROOT / social_route.strip("/")
+            share_target.mkdir(parents=True, exist_ok=True)
+            (share_target / "index.html").write_text(shell(title, share_content, social_route, social_image=social_image), encoding="utf-8")
     for route, title, path in legal_files():
         current = f"/{route}/"
         content = f'<article class="legal-page"><div class="chapter-meta">PUBLICATION POLICY · {route.upper()}</div>{markdown_html(path)}</article>'

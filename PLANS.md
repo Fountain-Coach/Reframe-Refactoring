@@ -264,6 +264,10 @@ unified spacing, and the reviewed illustration placed in a consistent left media
 **Deployment result:** visual correction commit `a9f4fee` is live as release `release-20260818T051717Z-44014`; remote
 Chapter 84 social image is 1200×630 and byte-identical to the committed card.
 
+**Cache-safe route:** each generated card now has a digest-named `/social/<asset>/` share page and digest-named image.
+Sharing that new URL gives social crawlers a new URL identity, so Facebook's debugger/cache workflow is not required.
+Local route metadata, 1200×630 dimensions, AX/VRT acceptance, and link checks passed; publication is pending.
+
 ## Current gate — governance legal publication surface (2026-08-17)
 
 **Goal:** expose the same legal/publication boundary as the Book of Reframe on every governance route through a

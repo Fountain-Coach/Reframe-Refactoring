@@ -15,6 +15,15 @@
 - Corrected release: `release-20260818T051717Z-44014`; Chapter 84 social image returns HTTPS 200 and matches the
   committed digest `0132f2b1aae884fee414f97e00af6f2a8a2ad631100d8ef9d1d2b50ca3462a9f`.
 
+## Current planned change — Cache-safe social share routes (2026-08-18)
+
+- Change: every generated social illustration receives a digest-named image and a matching `/social/<asset>/` page
+  whose canonical and Open Graph URL is the new share URL.
+- Claim boundary: this changes publication URL identity only; it does not claim that Facebook has fetched or published
+  the preview, and no external post was created by the publisher.
+- Validation: local generator build, route metadata, 1200×630 image dimensions, link checks, and independent AX/VRT
+  acceptance passed; deployment is pending.
+
 ## Current planned change — Chapter 84 governed Reframe design mock (2026-08-18)
 
 - Change: **Chapter 84 — The Reframe Design Mock Is a Governed Projection**, defining a deterministic default design
