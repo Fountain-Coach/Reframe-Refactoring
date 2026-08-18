@@ -1,51 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
-  <title id="title">Reframe design mock for a semantic illustration scenario</title>
-  <desc id="desc">A deterministic design reference showing the current manuscript workspace and a proposed illustration participant attached to a movement and source location. It is not live evidence.</desc>
-  <rect width="1600" height="980" fill="#111827"/>
-  <rect x="34" y="28" width="1532" height="924" rx="24" fill="#f5f2ea"/>
-  <rect x="34" y="28" width="1532" height="64" rx="24" fill="#252b36"/>
-  <text x="72" y="68" fill="#f5f2ea" font-family="Arial, sans-serif" font-size="22" font-weight="700">REFRAME</text>
-  <text x="1270" y="67" fill="#f4c95d" font-family="Arial, sans-serif" font-size="15" font-weight="700">DESIGN MOCK · NOT LIVE EVIDENCE</text>
-  <rect x="58" y="116" width="950" height="690" rx="16" fill="#fffdf8" stroke="#d8d1c4"/>
-  <text x="90" y="158" fill="#27313b" font-family="Arial, sans-serif" font-size="17" font-weight="700">CURRENT DESIGN · SEMANTIC MANUSCRIPT</text>
-  <text x="90" y="188" fill="#59636b" font-family="Arial, sans-serif" font-size="15">The source remains the readable, addressable project surface.</text>
-  <rect x="90" y="220" width="886" height="238" rx="12" fill="#f1eee6"/>
-  <text x="122" y="260" fill="#26323b" font-family="Georgia, serif" font-size="25" font-weight="700">Pyramus and Thisbe</text>
-  <text x="122" y="302" fill="#3f4a50" font-family="Georgia, serif" font-size="19">The wall keeps what the lovers cannot say aloud.</text>
-  <text x="122" y="336" fill="#3f4a50" font-family="Georgia, serif" font-size="19">Their question survives the passage without being resolved.</text>
-  <rect x="122" y="372" width="610" height="3" fill="#d59a36"/>
-  <text x="122" y="412" fill="#7e5e22" font-family="Arial, sans-serif" font-size="14">SOURCE LOCATION · lines 118–132 · proposed attachment point</text>
-  <rect x="90" y="486" width="280" height="258" rx="12" fill="#e8f0ee"/>
-  <text x="116" y="524" fill="#245b55" font-family="Arial, sans-serif" font-size="16" font-weight="700">MOVEMENTS</text>
-  <text x="116" y="562" fill="#315c58" font-family="Arial, sans-serif" font-size="15">The wall becomes a witness.</text>
-  <text x="116" y="590" fill="#315c58" font-family="Arial, sans-serif" font-size="13">source lines 118–132</text>
-  <rect x="394" y="486" width="280" height="258" rx="12" fill="#f4e9ed"/>
-  <text x="420" y="524" fill="#7e3f55" font-family="Arial, sans-serif" font-size="16" font-weight="700">QUESTIONS</text>
-  <text x="420" y="562" fill="#704458" font-family="Arial, sans-serif" font-size="15">What remains unsaid?</text>
-  <text x="420" y="590" fill="#704458" font-family="Arial, sans-serif" font-size="13">uncertainty retained</text>
-  <rect x="698" y="486" width="278" height="258" rx="12" fill="#e9edf4"/>
-  <text x="724" y="524" fill="#385273" font-family="Arial, sans-serif" font-size="16" font-weight="700">READ COVERAGE</text>
-  <text x="724" y="562" fill="#45617d" font-family="Arial, sans-serif" font-size="15">Settled source window</text>
-  <text x="724" y="590" fill="#45617d" font-family="Arial, sans-serif" font-size="13">design state only</text>
-  <rect x="1032" y="116" width="500" height="690" rx="16" fill="#202936"/>
-  <text x="1068" y="158" fill="#f5f2ea" font-family="Arial, sans-serif" font-size="17" font-weight="700">SCENARIO ROLLOUT · COPILOT</text>
-  <text x="1068" y="188" fill="#b7c1ca" font-family="Arial, sans-serif" font-size="15">A future semantic handoff, shown without claiming execution.</text>
-  <rect x="1068" y="226" width="428" height="174" rx="12" fill="#2c3745" stroke="#4a5968"/>
-  <text x="1096" y="264" fill="#f5f2ea" font-family="Arial, sans-serif" font-size="15" font-weight="700">STORIFY OUTPUT</text>
-  <text x="1096" y="300" fill="#d5dee5" font-family="Arial, sans-serif" font-size="14">Movement + question + source passage</text>
-  <text x="1096" y="332" fill="#d5dee5" font-family="Arial, sans-serif" font-size="14">would compose the prompt here.</text>
-  <text x="1096" y="372" fill="#f4c95d" font-family="Arial, sans-serif" font-size="12">PROPOSED · NO STORE RECEIPT</text>
-  <rect x="1068" y="426" width="428" height="232" rx="12" fill="#3b2f28" stroke="#b97c42"/>
-  <text x="1096" y="466" fill="#f7e7d2" font-family="Arial, sans-serif" font-size="15" font-weight="700">ILLUSTRATION PARTICIPANT</text>
-  <rect x="1096" y="490" width="136" height="112" rx="8" fill="#765b4c"/>
-  <path d="M1112 576 Q1164 512 1218 576" fill="none" stroke="#f4c95d" stroke-width="5"/>
-  <circle cx="1150" cy="535" r="12" fill="#f4c95d"/>
-  <text x="1254" y="522" fill="#f7e7d2" font-family="Arial, sans-serif" font-size="14">placeholder only</text>
-  <text x="1254" y="550" fill="#f7e7d2" font-family="Arial, sans-serif" font-size="14">attached to:</text>
-  <text x="1254" y="578" fill="#f4c95d" font-family="Arial, sans-serif" font-size="14">movement · lines 118–132</text>
-  <text x="1068" y="704" fill="#f4c95d" font-family="Arial, sans-serif" font-size="13">IMAGE CLOUD RECEIPT · NOT ESTABLISHED</text>
-  <rect x="58" y="840" width="1474" height="74" rx="12" fill="#e6dfd1"/>
-  <text x="88" y="872" fill="#3c474d" font-family="Arial, sans-serif" font-size="14" font-weight="700">MIDI2 PEER SURFACE</text>
-  <text x="300" y="872" fill="#59636b" font-family="Arial, sans-serif" font-size="14">typed scenario operation · consent · lifecycle · independent evidence</text>
-  <text x="88" y="896" fill="#8b5c27" font-family="Arial, sans-serif" font-size="12">DESIGN REFERENCE · current layout plus proposed rollout · no live acceptance claim</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Measured Reframe surface with a proposed illustration feature</title>
+  <desc id="desc">A light 1920 by 1080 projection matching the current Swift Reframe window: manuscript and navigation on the left, Copilot on the right, MIDI2 peers below. A proposed illustration card is shown inside the Copilot conversation region and is explicitly not live evidence.</desc>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <rect x="0" y="0" width="1010" height="1080" fill="#fbfbfb"/>
+  <text x="24" y="35" fill="#858585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="23">Import source text to begin working on this manuscript.</text>
+  <line x1="0" y1="55" x2="1010" y2="55" stroke="#dedede"/>
+  <text x="28" y="100" fill="#858585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="22" font-weight="700" letter-spacing="3">MANUSCRIPT</text>
+  <text x="232" y="100" fill="#858585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="21">Questions · Movements · Read coverage</text>
+  <text x="920" y="100" text-anchor="end" fill="#858585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="22">Read source</text>
+  <line x1="0" y1="123" x2="1010" y2="123" stroke="#dedede"/>
+  <rect x="0" y="123" width="312" height="926" fill="#fafafa"/>
+  <text x="36" y="172" fill="#858585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="19" font-weight="700" letter-spacing="2">READING NAVIGATION</text>
+  <text x="36" y="222" fill="#858585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="18">Semantic findings will appear here after the source is read.</text>
+  <rect x="312" y="123" width="1" height="926" fill="#e3e3e3"/>
+  <text x="388" y="185" fill="#858585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="20">1</text>
+  <rect x="1010" y="0" width="10" height="1080" fill="#f1f1f1"/>
+  <rect x="1020" y="0" width="900" height="1080" fill="#ffffff"/>
+  <text x="1068" y="58" fill="#18212b" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="31">✦</text>
+  <rect x="1780" y="38" width="26" height="27" rx="3" fill="none" stroke="#536171" stroke-width="2"/>
+  <path d="M1818 61l17-17M1818 43l4 18 18-4" fill="none" stroke="#536171" stroke-width="2"/>
+  <circle cx="1874" cy="52" r="14" fill="none" stroke="#536171" stroke-width="2"/>
+  <text x="1874" y="59" text-anchor="middle" fill="#536171" font-family="Georgia, serif" font-size="20">i</text>
+  <line x1="1020" y1="104" x2="1920" y2="104" stroke="#dedede"/>
+  <rect x="1070" y="205" width="800" height="375" rx="8" fill="#fcfcfc" stroke="#c8ced5" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="1100" y="244" fill="#52606e" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="18" font-weight="700" letter-spacing="1.2">PROPOSED FEATURE · NOT LIVE</text>
+  <text x="1100" y="278" fill="#7d8791" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="17">This card occupies the existing Copilot conversation region.</text>
+  <rect x="1100" y="307" width="250" height="214" rx="6" fill="#f0f1f2" stroke="#d3d7db"/>
+  <path d="M1130 475 Q1225 350 1320 475" fill="none" stroke="#9da7b0" stroke-width="5"/>
+  <circle cx="1188" cy="400" r="22" fill="#b7bec5"/>
+  <text x="1380" y="352" fill="#52606e" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="17" font-weight="700">ILLUSTRATION PARTICIPANT</text>
+  <text x="1380" y="388" fill="#6d7882" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="16">placeholder only</text>
+  <text x="1380" y="424" fill="#6d7882" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="16">future input:</text>
+  <text x="1380" y="456" fill="#6d7882" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="16">movement + question</text>
+  <text x="1380" y="488" fill="#6d7882" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="16">+ source passage</text>
+  <text x="1100" y="555" fill="#9a5d28" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="14">NO IMAGE CLOUD RECEIPT · NO STORE RESULT · NO AX CLAIM</text>
+  <line x1="1020" y1="806" x2="1920" y2="806" stroke="#dedede"/>
+  <text x="1068" y="848" fill="#536171" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="22">Aᴵ</text>
+  <rect x="1070" y="884" width="800" height="150" fill="#ffffff" stroke="#c8ced5" stroke-width="2"/>
+  <circle cx="1105" cy="920" r="6" fill="#e7e8e9"/><rect x="1125" y="914" width="230" height="10" rx="5" fill="#e1e3e5"/>
+  <circle cx="1105" cy="950" r="6" fill="#e7e8e9"/><rect x="1125" y="944" width="370" height="10" rx="5" fill="#e1e3e5"/>
+  <circle cx="1105" cy="980" r="6" fill="#e7e8e9"/><rect x="1125" y="974" width="290" height="10" rx="5" fill="#e1e3e5"/>
+  <rect x="1068" y="1048" width="48" height="33" fill="#ffffff" stroke="#c8ced5"/>
+  <path d="M1081 1068l16-16c8-8 18 2 10 10l-16 16c-8 8-19-2-11-10l15-15" fill="none" stroke="#536171" stroke-width="3"/>
+  <rect x="1838" y="1048" width="48" height="33" fill="#a9c8ef" stroke="#8daed8"/><path d="M1853 1062l19 8-19 8 5-8z" fill="#6c8fb9"/>
+  <rect x="0" y="1049" width="1010" height="31" fill="#f5f5f5"/><line x1="0" y1="1049" x2="1010" y2="1049" stroke="#dedede"/>
+  <circle cx="44" cy="1064" r="8" fill="none" stroke="#7d8791" stroke-width="2"/>
+  <text x="80" y="1073" fill="#20262c" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="22" font-weight="700">MIDI2 peers</text>
+  <text x="250" y="1073" fill="#858585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="20">· projections and operations</text>
+  <text x="975" y="1073" fill="#858585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="28">›</text>
 </svg>

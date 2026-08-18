@@ -9,25 +9,32 @@ workspace. This chapter defines the honest answer: a deterministic Reframe Desig
 *Design reference only. This mock is not an AX observation, FountainStore receipt, MIDI2 lifecycle trace, Image Cloud
 receipt, generated image, or live acceptance of `teatro-score-myth-illustrations`.*
 
+The current-workspace layer is grounded in a live isolated observation: a 1920×1080 light Reframe window with a
+1010-pixel manuscript projection, 10-pixel divider, 900-pixel Copilot projection, and 31-pixel MIDI2 peers strip.
+At capture time the source was empty, so the navigation reported “Semantic findings will appear here after the source
+is read” and the manuscript exposed only blank line 1. The proposed illustration card is therefore drawn inside the
+existing Copilot conversation bounds; it is not a claim that the current app renders that card.
+
 ## The decision
 
 The default governance illustration is a reviewed design projection with two visible layers:
 
-1. the current Reframe design — the continuous manuscript, distinct Questions, Movements, Read coverage, Copilot,
-   and MIDI2 peer surfaces; and
-2. the proposed scenario rollout — the semantic handoff from a persisted movement/question/source context to an
-   illustration participant at its corresponding text location.
+1. the measured current Reframe surface — its light full-screen split layout, empty manuscript state, Copilot
+   conversation surface, and bottom MIDI2 peers strip; and
+2. the proposed scenario rollout — a future illustration result placed inside the existing Copilot conversation
+   region, with no claim that the feature exists in the current build.
 
 The mock may show the intended relationship before the live scenario succeeds. It must never make the proposed layer
-look like a completed provider call or a persisted result. The mock therefore labels its boundary in the image itself,
-and uses a placeholder for the illustration participant rather than fabricated artwork or a fake receipt.
+look like a completed provider call or a persisted result. The mock therefore copies the current live shell geometry,
+labels the proposed feature in the conversation surface, and uses a placeholder rather than fabricated artwork or a
+fake receipt.
 
 ## What the mock answers
 
 The mock answers the design questions a publication reader has:
 
 - What is the current Reframe workspace shape?
-- Where are the manuscript and semantic Questions/Movements/Read coverage lanes?
+- Where will manuscript and semantic Questions/Movements/Read coverage appear when source material exists?
 - Where does Copilot mediate a scenario?
 - Where would a source-grounded illustration participant appear?
 - How does the MIDI2 lifecycle sit below the writer-facing surface?
@@ -46,6 +53,8 @@ Those questions remain open until the owned scenario run and its independent evi
 ## The design-mock engine
 
 The mock is generated from a declarative visual state, not from a provider call or a screenshot of an unverified run.
+The current-workspace state is measured from the live AX tree and window-ID capture; the proposed-feature state is
+declarative.
 The engine input has four parts:
 
 ```text
