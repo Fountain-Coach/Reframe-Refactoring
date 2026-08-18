@@ -958,3 +958,11 @@ change is in scope.
 
 **Validation:** generated route/link checks, desktop Left/Right keyboard drive, browser AX assertions, desktop and mobile
 VRT screenshots, `git diff --check`, and prepublish scan.
+
+**Result:** generated 86 chapter pages with explicit previous/next links and chapter position; Chrome CDP AX exposed
+`Governance chapters` and `Chapter navigation`; ArrowRight moved Chapter 83 → 84 and ArrowLeft returned 84 → 83.
+Desktop pager VRT was reviewed at 1440×1000; existing light/dark/mobile governance acceptance passed. The separate Book
+prepublish scan remains blocked by its pre-existing missing PyYAML EU-compliance dependency and canonical-host warning.
+
+**Deployment:** publication commit `203feb2` is pushed; release `release-20260818T054125Z` is live. Governance overview,
+Chapter 83, and Chapter 84 return HTTPS 200; Chapter 83 exposes the new pager in production.

@@ -6,7 +6,12 @@
   keyboard navigation; the active chapter rail entry is brought into view on load.
 - Claim boundary: publication navigation only; no runtime, scenario, Store, or capability claim is changed.
 - Validation: local generated route/link checks, browser AX/keyboard drive, desktop/mobile VRT, and prepublish scan are
-  required before deployment.
+  required before deployment. Governance-specific checks passed: 86 pager routes, AX names for both navigation regions,
+  ArrowRight/ArrowLeft round trip between Chapters 83 and 84, and 1440×1000 visual review. The separate Book scan is
+  blocked by missing PyYAML for `compliance/register.yaml` and reports its existing canonical-host warning.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@203feb2`.
+- Production result: release `release-20260818T054125Z` is live at `governance.fountain.coach`; overview, Chapter 83,
+  and Chapter 84 return HTTPS 200.
 
 ## Current planned change — Mandatory illustration social-post template (2026-08-18)
 
