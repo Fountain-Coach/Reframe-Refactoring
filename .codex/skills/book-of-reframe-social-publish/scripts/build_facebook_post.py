@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import re
 import shutil
+from urllib.parse import urlparse
 
 
 def main() -> int:
@@ -73,6 +74,13 @@ def main() -> int:
 
     if not args.book_url:
         raise SystemExit("--book-url is required for a command post")
+    public_url = args.book_url.rstrip("/") + "/"
+    parsed_url = urlparse(public_url)
+    if (parsed_url.scheme != "https" or not parsed_url.netloc or
+            parsed_url.netloc in {"github.com", "raw.githubusercontent.com"} or
+            parsed_url.path.startswith("/assets/") or parsed_url.path.startswith("/social/") or
+            Path(parsed_url.path).suffix.lower() in {".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"}):
+        raise SystemExit("--book-url must be the full Book site page, never an image or image-only route")
 
     page = args.command_page if args.command_page.is_absolute() else args.book_root / args.command_page
     text = page.read_text(encoding="utf-8")
@@ -99,7 +107,7 @@ def main() -> int:
     release_doc = json.loads((args.book_root / "evidence/2026-08-03/reframe-release-surface.json").read_text(encoding="utf-8"))
     release_status = release_doc.get("status", "unknown")
     status_line = "Development/evidence preview — no released App surface is recorded." if release_status != "released" else "From a named Reframe release."
-    caption = f"{args.teaser.strip()}\n\n{command} — {status_line}\nRead the evidence-backed story in The Book of Reframe: {args.book_url}"
+    caption = f"{args.teaser.strip()}\n\n{command} — {status_line}\nRead the evidence-backed story in The Book of Reframe: {public_url}"
     args.output.mkdir(parents=True, exist_ok=True)
     output_image = args.output / image.name
     shutil.copy2(image, output_image)
@@ -107,6 +115,7 @@ def main() -> int:
         "command": command,
         "image": output_image.name,
         "caption": caption,
+        "publicUrl": public_url,
         "evidence": command_evidence,
         "releaseStatus": release_status,
         "externalPublish": False,
@@ -115,7 +124,8 @@ def main() -> int:
     (args.output / "README.md").write_text(
         "# Facebook post package\n\n"
         f"Command: `{command}`\n\n"
-        "The image is the command page's own live-drive GUI snapshot. This package has not been posted externally.\n",
+        "The public URL is the full Book page; its Open Graph image is the command page's own live-drive GUI snapshot. "
+        "This package has not been posted externally.\n",
         encoding="utf-8",
     )
     print(f"built Facebook package for {command}: {args.output}")

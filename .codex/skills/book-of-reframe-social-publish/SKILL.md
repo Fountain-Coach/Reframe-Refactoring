@@ -31,6 +31,8 @@ evidence or a governed projection. External posting requires separate explicit c
 1. Resolve the command page and its evidence manifest. Confirm the first non-empty page line is the command's own
    alt-texted image and that the referenced file exists.
 2. For a live command, run `scripts/build_facebook_post.py <book-root> <command-page> --teaser "..." --book-url "..."`.
+   The Book URL MUST be the full HTTPS command page whose `og:image` is the command's own GUI snapshot; never use an
+   `/assets/` image URL, an image-only route, or a raw GitHub file URL as the Facebook link.
    For a governed chapter illustration, run `scripts/build_facebook_post.py <integration-root> --chapter-page
    <publication-root>/site/chapters/<slug>/index.html --publication-root <publication-root> --teaser "..."
    --public-url https://governance.fountain.coach/chapters/<slug>/share/<asset>/`.
