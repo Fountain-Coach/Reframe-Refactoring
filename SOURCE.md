@@ -11,6 +11,8 @@
 - Synchronized: 2026-08-18; guide parity, local governance build, and independent local AX/VRT acceptance passed.
 - Claim boundary: governance only; the conversational authoring surface and compiler are not yet implemented or
   live-accepted by this chapter.
+- Deployment repair: guarded publisher added at `scripts/publish_governance_site.sh`; dry-run passed against the
+  fixed host/root tuple. Production apply is the next explicit operation.
 
 ## Current synchronized change — Chapter 79 default semantic manuscript projection (2026-08-17)
 
