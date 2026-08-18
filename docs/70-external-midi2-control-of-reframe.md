@@ -154,6 +154,38 @@ This does not require an external MIDI-CI exchange for every local turn. MIDI-CI
 when a peer is external. Local surfaces use the already-registered operation definition while preserving the same
 payload, lifecycle, correlation, idempotency, and failure vocabulary.
 
+## The local AX/MIDI2 coordinator
+
+The local adapter is a Swift-owned coordinator, not a second command router. Its job is to bind the machine-readable
+AX surface to the same registered MIDI2 operation that an external peer would invoke. AX does not become a transport
+implementation, and MIDI2 does not become a replacement for accessibility semantics. The coordinator owns the join:
+
+```text
+AX action or local intent
+  → typed operation admission
+  → one execution identity
+  → MIDI2 lifecycle events
+  → AX state/progress/result projection
+  → FountainStore lifecycle and terminal proof
+```
+
+Every admitted execution MUST carry one stable binding containing, at minimum, `scenarioId` when applicable,
+operation identity and version, `executionId`, `correlationId`, source commit, Store intent/path identity, and the
+selected capability policy. The same `executionId` and lifecycle sequence MUST be observable in the MIDI2 event
+projection, the AX activity surface, and the persisted FountainStore lifecycle/result documents. A surface may expose
+different labels or controls, but it may not create a private lifecycle, infer progress from elapsed time, or call an
+executor directly while presenting itself as the MIDI2 operation.
+
+The coordinator MUST admit before an AX action can claim that work is running, publish explicit admitted/running/
+progress/terminal states, route cancellation and resume through the same operation boundary, and fail closed when
+the MIDI2 readiness or Store binding is absent. The scenario runner may drive AX and observe the independent surface,
+but it must use MIDI2 for the operation handoff and must reconcile the same execution identity across MIDI2, AX, and
+Store evidence. Subprocesses may collect evidence; they may not coordinate runtime execution.
+
+This rule applies equally to Copilot, slash commands, buttons, internal scenario actors, Book Library operations,
+Storify, semantic search, image generation, and external MIDI2 peers. The first implementation target remains one
+complete capability; naming the coordinator does not establish that every capability has migrated.
+
 The first migration target is Book Library import. Its current notification handoff is a compatibility seam only until
 `library.import` has a declared IDL topic, generated facts/manifest entry, typed executor, correlated lifecycle, and an
 event-driven scenario proving both success and provider failure.

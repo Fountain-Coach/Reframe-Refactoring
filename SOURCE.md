@@ -681,3 +681,13 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - Integration content/provenance commit: pending synchronization.
 - Claim boundary: governance and design reference only; no remote transport, authentication, or live multi-user
   acceptance is claimed by this chapter.
+## Current planned change — Chapter 70 local AX/MIDI2 coordinator clarification (2026-08-18)
+
+- Change: Chapter 70 now makes the Swift-owned local AX/MIDI2 coordinator explicit: one operation identity,
+  execution identity, lifecycle projection, Store proof, and scenario evidence binding across local and external
+  entry points.
+- Claim boundary: governance clarification only. Reframe remains partially MIDI2-drivable; no runtime coordinator,
+  full capability migration, or live acceptance is claimed.
+- Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@32e68292`.
+- Publication commit: pending.

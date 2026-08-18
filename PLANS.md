@@ -1010,3 +1010,18 @@ must put that chapter/share URL in `publicUrl`; the 1200×630 image remains only
 
 **Validation:** generated share page contains the full chapter surface and OG image metadata; skill rejects `/assets/`
 and image-only `/social/` URLs; Chapter 84 package must be regenerated and reviewed before deployment.
+## Current gate — Chapter 70 local AX/MIDI2 coordinator clarification (2026-08-18)
+
+**Goal:** make Chapter 70's existing one-operation boundary explicit for local AX, Copilot, slash, button, scenario,
+Book Library, Storify, semantic-search, image-generation, and external-peer entry points without creating a new
+governance authority or claiming whole-app MIDI2 adoption.
+
+**Direction:** integration → publication (`Scripts/sync-integration-copy --pull`).
+
+**Integration source commit:** `Fountain-Coach/midi2-gpu-fabric@32e68292`.
+
+**Scope:** `docs/70-external-midi2-control-of-reframe.md` and reciprocal provenance only. Runtime coordinator
+implementation, scenario live acceptance, and capability status promotion remain separate integration phases.
+
+**Validation:** guide parity, relative-link review, `git diff --check`, governance site generation, local governance
+AX/VRT acceptance, and deployment verification.
