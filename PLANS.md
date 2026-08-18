@@ -910,3 +910,6 @@ mobile menu-open states.
 **Production result:** release `release-20260818T045623Z-41188` was promoted to
 `/var/www/reframe-governance/current`; Chapter 84 and its SVG asset return HTTPS 200 and the prior release is retained
 for rollback.
+
+**Correction result:** the live Reframe capture established the light 1920×1080 shell; publication commit `4cc121d`
+rebuilt the SVG against those bounds and release `release-20260818T050417Z-42416` is now promoted.

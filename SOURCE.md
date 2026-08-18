@@ -14,6 +14,11 @@
   content; local design-mock render and governance AX/VRT passed.
 - Production result: release `release-20260818T045623Z-41188` was promoted to
   `/var/www/reframe-governance/current`; HTTPS returned 200 for Chapter 84 and the deployed asset is present.
+- Live-derived correction: integration commit `Fountain-Coach/midi2-gpu-fabric@51b7be1c` and publication commit
+  `Fountain-Coach/Reframe-Refactoring@4cc121d` replace the prior invented dark composition with the measured light
+  Reframe shell and a proposed Copilot-region feature.
+- Corrected production result: release `release-20260818T050417Z-42416` is promoted; Chapter 84 and its SVG asset
+  return HTTPS 200, with rollback retained.
 
 ## Current planned change — Chapter 83 conversational scenario authoring (2026-08-18)
 
