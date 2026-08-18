@@ -1,5 +1,16 @@
 # Source and Synchronization Contract
 
+## Current planned change — Mandatory illustration social-post template (2026-08-18)
+
+- Change: the publication generator now creates deterministic 1200×630 social-post derivatives for every chapter with
+  a reviewed illustration, and emits matching Open Graph/Twitter metadata plus an accessible page link.
+- Integration governance skill commit: `Fountain-Coach/midi2-gpu-fabric@87ebf934`.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@951bf9c`.
+- Claim boundary: social derivative and metadata are publication projections only; no external post was created and no
+  scenario, AX, Store, image-generation, or placement evidence is implied.
+- Production result: release `release-20260818T050939Z-43273` is promoted; Chapter 84 metadata and its 1200×630 card
+  return HTTPS 200.
+
 ## Current planned change — Chapter 84 governed Reframe design mock (2026-08-18)
 
 - Change: **Chapter 84 — The Reframe Design Mock Is a Governed Projection**, defining a deterministic default design
