@@ -880,6 +880,10 @@ receipts, and text locations.
 **Claim boundary:** governance only; conversational authoring, compilation, and live acceptance remain unimplemented
 or unestablished until their own evidence gates pass.
 
-**Deployment repair:** added `scripts/publish_governance_site.sh`, scoped to the fixed governance tuple, dry-run by
+**Deployment repair:** added `Scripts/publish_governance_site.sh`, scoped to the fixed governance tuple, dry-run by
 default, requiring `--apply --confirm-deploy`, excluding metadata, staging a release, atomically promoting `current`,
 and retaining the previous tree under `.rollback`.
+
+**Production result:** `Scripts/publish_governance_site.sh --apply --confirm-deploy` promoted release
+`release-20260818T044627Z-40492` to `/var/www/reframe-governance/current`. HTTPS returned 200 for `/`, `/status-quo/`,
+and `/chapters/83-conversational-scenario-authoring/`; the prior current tree remains in `.rollback`.

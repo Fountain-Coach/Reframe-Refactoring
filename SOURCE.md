@@ -11,8 +11,10 @@
 - Synchronized: 2026-08-18; guide parity, local governance build, and independent local AX/VRT acceptance passed.
 - Claim boundary: governance only; the conversational authoring surface and compiler are not yet implemented or
   live-accepted by this chapter.
-- Deployment repair: guarded publisher added at `scripts/publish_governance_site.sh`; dry-run passed against the
-  fixed host/root tuple. Production apply is the next explicit operation.
+- Deployment repair: guarded publisher added at `Scripts/publish_governance_site.sh`; dry-run passed against the
+  fixed host/root tuple.
+- Production result: release `release-20260818T044627Z-40492` was promoted to
+  `/var/www/reframe-governance/current`; HTTPS returned 200 for the overview, status-quo route, and Chapter 83.
 
 ## Current synchronized change — Chapter 79 default semantic manuscript projection (2026-08-17)
 
