@@ -875,7 +875,7 @@ receipts, and text locations.
 
 **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@9c8fb561`.
 
-**Publication commit:** pending.
+**Publication commit:** `Fountain-Coach/Reframe-Refactoring@04f258d`.
 
 **Claim boundary:** governance only; conversational authoring, compilation, and live acceptance remain unimplemented
 or unestablished until their own evidence gates pass.

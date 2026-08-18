@@ -7,7 +7,8 @@
   dependencies, typed execution, evidence lineage, and a clear boundary between governance and implementation.
 - Direction: integration → publication (`Scripts/sync-integration-copy --pull`).
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@9c8fb561`.
-- Publication governance commit: pending.
+- Publication governance commit: `Fountain-Coach/Reframe-Refactoring@04f258d`.
+- Synchronized: 2026-08-18; guide parity, local governance build, and independent local AX/VRT acceptance passed.
 - Claim boundary: governance only; the conversational authoring surface and compiler are not yet implemented or
   live-accepted by this chapter.
 
