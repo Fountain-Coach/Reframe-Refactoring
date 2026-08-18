@@ -1,5 +1,13 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter navigation and desktop arrow reading (2026-08-18)
+
+- Change: generated chapter pages now expose explicit previous/next links, chapter position, and desktop Left/Right
+  keyboard navigation; the active chapter rail entry is brought into view on load.
+- Claim boundary: publication navigation only; no runtime, scenario, Store, or capability claim is changed.
+- Validation: local generated route/link checks, browser AX/keyboard drive, desktop/mobile VRT, and prepublish scan are
+  required before deployment.
+
 ## Current planned change — Mandatory illustration social-post template (2026-08-18)
 
 - Change: the publication generator now creates deterministic 1200×630 social-post derivatives for every chapter with

@@ -942,3 +942,19 @@ for rollback.
 
 **Correction result:** the live Reframe capture established the light 1920×1080 shell; publication commit `4cc121d`
 rebuilt the SVG against those bounds and release `release-20260818T050417Z-42416` is now promoted.
+## Current gate — Chapter navigation and desktop arrow reading (2026-08-18)
+
+**Goal:** make chapter selection deterministic and let desktop readers move chapter-by-chapter with visible previous/
+next controls and Left/Right arrow keys.
+
+**Chapters read:** 07 (record the bounded change and validation); 08 (AX semantics and VRT are separate authorities);
+80 (the governance site is an independent public projection).
+
+**What they forbid here:** treating a screenshot or a visually plausible rail as proof of keyboard operability; changing
+runtime or scenario semantics for a publication navigation defect.
+
+**Excluded, and why:** mobile keeps the existing menu interaction; no runtime, Store, scenario, or deployment-target
+change is in scope.
+
+**Validation:** generated route/link checks, desktop Left/Right keyboard drive, browser AX assertions, desktop and mobile
+VRT screenshots, `git diff --check`, and prepublish scan.

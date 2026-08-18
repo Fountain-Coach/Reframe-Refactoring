@@ -158,8 +158,23 @@ def legal_files() -> list[tuple[str, str, Path]]:
     return [(route, title, LEGAL_CONTENT / filename) for route, (title, filename) in LEGAL_ROUTES.items()]
 
 
+def chapter_pager(path: Path, files: list[Path]) -> str:
+    index = files.index(path)
+    previous = files[index - 1] if index else None
+    following = files[index + 1] if index + 1 < len(files) else None
+    previous_link = (f'<a class="chapter-pager-link" data-chapter-prev rel="prev" href="/chapters/{slug(previous)}/" '
+                    f'aria-label="Previous chapter: {html.escape(title_for(previous))}">'
+                    f'<span aria-hidden="true">←</span><span><small>PREVIOUS CHAPTER</small>{html.escape(title_for(previous))}</span></a>'
+                    if previous else '<span class="chapter-pager-link chapter-pager-disabled" aria-hidden="true"><span>←</span><span><small>PREVIOUS CHAPTER</small>Beginning of book</span></span>')
+    next_link = (f'<a class="chapter-pager-link chapter-pager-next" data-chapter-next rel="next" href="/chapters/{slug(following)}/" '
+                 f'aria-label="Next chapter: {html.escape(title_for(following))}"><span><small>NEXT CHAPTER</small>{html.escape(title_for(following))}</span><span aria-hidden="true">→</span></a>'
+                 if following else '<span class="chapter-pager-link chapter-pager-disabled chapter-pager-next" aria-hidden="true"><span><small>NEXT CHAPTER</small>End of book</span><span>→</span></span>')
+    return (f'<nav class="chapter-pager" data-chapter-pager aria-label="Chapter navigation">'
+            f'{previous_link}<span class="chapter-pager-position">CHAPTER {index + 1} OF {len(files)}</span>{next_link}</nav>')
+
+
 def shell(page_title: str, content: str, active: str = "", canonical: str | None = None,
-          social_image: str | None = None) -> str:
+          social_image: str | None = None, pager: str = "") -> str:
     canonical = canonical or active
     home_active = ' active' if active == '/' else ''
     home_current = ' aria-current="page"' if active == '/' else ''
@@ -197,7 +212,7 @@ def shell(page_title: str, content: str, active: str = "", canonical: str | None
   <header class="topbar"><a class="wordmark" href="/"><img class="wordmark-logo" src="/assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
   <div class="workspace">
     <nav class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home{home_active}" href="/"{home_current}>Governance overview</a><a class="rail-status{status_active}" href="/status-quo/"{status_current}>Current status</a>{chapter_nav(active)}</nav>
-    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div>{content}<footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="/status-quo/">reviewed governance projection</a></span><span><a href="/legal/">Legal notices</a> · <a href="/privacy/">Privacy</a> · <a href="/accessibility/">Accessibility</a> · <a href="/copyright/">Copyright</a> · <a href="/compliance/">EU compliance</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
+    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div>{pager}{content}<footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="/status-quo/">reviewed governance projection</a></span><span><a href="/legal/">Legal notices</a> · <a href="/privacy/">Privacy</a> · <a href="/accessibility/">Accessibility</a> · <a href="/copyright/">Copyright</a> · <a href="/compliance/">EU compliance</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
   </div>
   <script src="/assets/governance.js" defer></script>
 </body>
@@ -276,7 +291,8 @@ def main() -> None:
         content = f'<article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · {path.stem[:2] if path.stem[:2].isdigit() else "—"}</div><p class="chapter-state"><strong>{html.escape(status["label"])}</strong> · {status_description(status)}</p>{social_link}{markdown_html(path)}</article>'
         target = CHAPTERS / slug(path)
         target.mkdir(exist_ok=True)
-        (target / "index.html").write_text(shell(title, content, current, social_image=social_image), encoding="utf-8")
+        (target / "index.html").write_text(shell(title, content, current, social_image=social_image,
+                                                  pager=chapter_pager(path, files)), encoding="utf-8")
         if social_route:
             share_content = (f'<article class="social-share-page"><div class="chapter-meta">SOCIAL SHARE ILLUSTRATION</div>'
                              f'<h1>{html.escape(title)}</h1><img src="{social_image}" alt="Social illustration for {html.escape(title)}">'
