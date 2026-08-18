@@ -8,6 +8,8 @@
 - Validation: generated output contains one 84-row table, zero stray pipe paragraphs, no body overflow at 1200px, and
   local governance AX/VRT acceptance passed. The publication copy was synchronized to integration with `--push`.
 - Claim boundary: publication rendering repair only; no runtime, scenario, Store, or capability claim changes.
+- Production result: publication commit `Fountain-Coach/Reframe-Refactoring@a6785a5` is live as release
+  `release-20260818T054618Z`; Chapter 01 returns HTTPS 200 with the repaired table.
 
 ## Current planned change — Chapter navigation and desktop arrow reading (2026-08-18)
 

@@ -977,3 +977,6 @@ changed.
 **Validation:** generated Chapter 01 contains one 84-row table and no stray pipe paragraphs; its content and body do
 not exceed the reading column at 1200px; governance AX/VRT acceptance passed; publication and integration guide copies
 are synchronized.
+
+**Deployment:** publication commit `a6785a5` is live as release `release-20260818T054618Z`; Chapter 01 returns HTTPS
+200 with one 84-row table and no detached pipe paragraphs.
