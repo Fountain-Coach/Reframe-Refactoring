@@ -1028,3 +1028,17 @@ implementation, scenario live acceptance, and capability status promotion remain
 **Validation:** guide parity, relative-link review, `git diff --check`, governance site generation, local governance
 AX/VRT acceptance, and deployment verification. The deployed root, status-quo route, Chapter 70, and Chapter 83 all
 returned HTTPS 200; release `release-20260818T153714Z` is live at `governance.fountain.coach`.
+## Current planned change — Chapter 85 Storify Source Auto reads a defined whole (2026-08-18)
+
+- Change: **Chapter 85 — Storify Source Auto Reads a Defined Whole**, defining immutable resource admission, named
+  source ranges, structural measurement, hierarchical reasoning, MIDI2 receipts, and terminal evidence.
+- Direction: publication → integration (`Scripts/sync-integration-copy --push`); the publication copy is authoritative
+  for this governance chapter and its reading-index entry.
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@92d0094f`.
+- Claim boundary: governance contract only. The current runtime has deterministic three-read admission and declared
+  resource topics, but the Swift resource adapter, range-only runtime path, semantic quality gate, and live acceptance
+  remain unestablished.
+- Validation: governance generator, local route/link/metadata checks, independent governance AX/VRT acceptance,
+  prepublish scan where applicable, exact integration parity, and reciprocal provenance.
+- Deployment: guarded governance publication only after both repositories are clean, committed, synchronized, and all
+  local gates pass.
