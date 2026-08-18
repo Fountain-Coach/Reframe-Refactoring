@@ -33,11 +33,13 @@ def main() -> int:
         image = publication_root / "site" / "assets" / "social" / Path(image_match.group(1)).name
         if not image.is_file():
             raise SystemExit(f"social image missing: {image}")
-        share_match = re.search(r'href="(/social/[^\"]+/)"', text)
+        share_match = re.search(r'href="(/chapters/[^\"]+/share/[^\"]+/)"', text)
         if not share_match:
             raise SystemExit("chapter page has no cache-safe social share URL")
         if not args.public_url:
             raise SystemExit("--public-url is required for a chapter post")
+        if "/chapters/" not in args.public_url or "/assets/" in args.public_url or "/social/" in args.public_url:
+            raise SystemExit("--public-url must be the chapter site/share URL, never an image or image-only route")
         chapter_title = re.search(r'<h1[^>]*>(.*?)</h1>', text, re.S)
         title = re.sub(r"<[^>]+>", "", chapter_title.group(1)).strip() if chapter_title else page.parent.name
         caption = (
@@ -52,6 +54,7 @@ def main() -> int:
             "imageUrl": image_match.group(1),
             "caption": caption,
             "publicUrl": args.public_url.rstrip("/") + "/",
+            "chapterUrl": f"https://governance.fountain.coach/chapters/{page.parent.name}/",
             "sharePath": share_match.group(1),
             "externalPublish": False,
         }
@@ -61,8 +64,8 @@ def main() -> int:
         (args.output / "README.md").write_text(
             "# Facebook post package\n\n"
             f"Chapter: `{page.parent.name}`\n\n"
-            "The image is the publication's generated social illustration. The caption labels it as a governed "
-            "projection. This package has not been posted externally.\n",
+            "The public URL is a chapter page whose Open Graph image is the publication's generated social illustration. "
+            "The caption labels it as a governed projection. This package has not been posted externally.\n",
             encoding="utf-8",
         )
         print(f"built Facebook package for {page.parent.name}: {args.output}")

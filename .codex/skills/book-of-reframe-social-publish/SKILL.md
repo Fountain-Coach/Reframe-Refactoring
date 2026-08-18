@@ -33,7 +33,9 @@ evidence or a governed projection. External posting requires separate explicit c
 2. For a live command, run `scripts/build_facebook_post.py <book-root> <command-page> --teaser "..." --book-url "..."`.
    For a governed chapter illustration, run `scripts/build_facebook_post.py <integration-root> --chapter-page
    <publication-root>/site/chapters/<slug>/index.html --publication-root <publication-root> --teaser "..."
-   --public-url https://governance.fountain.coach/social/<asset>/`.
+   --public-url https://governance.fountain.coach/chapters/<slug>/share/<asset>/`.
+   The public URL MUST be the chapter/share page. Never use the `/assets/` image URL or the image-only `/social/` route
+   as the Facebook link: those are preview assets, not the story site.
    Use the canonical site URL from `site/site-config.json` (the interim GitHub Pages URL until a custom domain is
    selected), not a raw GitHub file URL.
 3. Inspect the generated `facebook-post.json` and image visually. Every package must contain `image`, `caption`, a

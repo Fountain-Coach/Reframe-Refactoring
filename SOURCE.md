@@ -1,5 +1,12 @@
 # Source and Synchronization Contract
 
+## Current planned change — Correct Facebook link versus preview image (2026-08-18)
+
+- Finding: the prior Facebook handoff linked the image-only `/social/<asset>/` route instead of the chapter site.
+- Fix: generated illustrated chapters now have a cache-safe full-content `/chapters/<slug>/share/<asset>/` route; social
+  packages use that route as `publicUrl` while retaining the 1200×630 card as `og:image`.
+- Claim boundary: publication/social packaging only; no external post is claimed until Facebook returns a post record.
+
 ## Current planned change — Improve governance table readability (2026-08-18)
 
 - Change: publication tables now use readable spacing, restrained header hierarchy, alternating row surfaces, safe prose

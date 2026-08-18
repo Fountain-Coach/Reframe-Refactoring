@@ -136,6 +136,10 @@ def social_share_for(social_image: str) -> str:
     return f"/social/{Path(social_image).stem}/"
 
 
+def chapter_share_for(current: str, social_image: str) -> str:
+    return f"{current}share/{Path(social_image).stem}/"
+
+
 def markdown_html(path: Path) -> str:
     result = subprocess.run(
         ["pandoc", "--from=gfm", "--to=html", "--wrap=none", str(path)],
@@ -285,7 +289,8 @@ def main() -> None:
         title = title_for(path)
         social_image = build_social_card(path, title)
         social_route = social_share_for(social_image) if social_image else None
-        social_link = (f'<p class="social-preview-link"><a href="{social_route}">Open cache-safe social share URL</a> · '
+        chapter_share_route = chapter_share_for(current, social_image) if social_image else None
+        social_link = (f'<p class="social-preview-link"><a href="{chapter_share_route}">Open cache-safe chapter share URL</a> · '
                        f'<a href="{social_image}">1200×630 image</a></p>'
                        if social_image else "")
         content = f'<article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · {path.stem[:2] if path.stem[:2].isdigit() else "—"}</div><p class="chapter-state"><strong>{html.escape(status["label"])}</strong> · {status_description(status)}</p>{social_link}{markdown_html(path)}</article>'
@@ -300,6 +305,11 @@ def main() -> None:
             share_target = ROOT / social_route.strip("/")
             share_target.mkdir(parents=True, exist_ok=True)
             (share_target / "index.html").write_text(shell(title, share_content, social_route, social_image=social_image), encoding="utf-8")
+            chapter_share_target = CHAPTERS / slug(path) / "share" / Path(social_image).stem
+            chapter_share_target.mkdir(parents=True, exist_ok=True)
+            (chapter_share_target / "index.html").write_text(
+                shell(title, content, chapter_share_route, social_image=social_image,
+                      pager=chapter_pager(path, files)), encoding="utf-8")
     for route, title, path in legal_files():
         current = f"/{route}/"
         content = f'<article class="legal-page"><div class="chapter-meta">PUBLICATION POLICY · {route.upper()}</div>{markdown_html(path)}</article>'

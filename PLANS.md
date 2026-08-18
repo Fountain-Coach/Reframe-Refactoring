@@ -1000,3 +1000,13 @@ projection improvement.
 **Result:** Chapter 01 table reviewed at desktop and mobile widths; AX exposed one table, 84 rows, and two column
 headers; desktop body overflow measured at zero. Governance acceptance passed. Publication commit `5be704e` is live as
 release `release-20260818T055902Z`; overview and Chapter 01 return HTTPS 200.
+## Current gate — Correct Facebook link versus preview image (2026-08-18)
+
+**Finding:** the previous handoff gave the image-only `/social/<asset>/` route as the Facebook link. That displayed the
+illustration itself instead of linking Facebook to the chapter site whose `og:image` supplies the illustration.
+
+**Fix:** generated chapters now expose a cache-safe full-content `/chapters/<slug>/share/<asset>/` page. The social skill
+must put that chapter/share URL in `publicUrl`; the 1200×630 image remains only `og:image` and the uploaded post image.
+
+**Validation:** generated share page contains the full chapter surface and OG image metadata; skill rejects `/assets/`
+and image-only `/social/` URLs; Chapter 84 package must be regenerated and reviewed before deployment.
