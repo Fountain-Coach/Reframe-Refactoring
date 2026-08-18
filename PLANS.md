@@ -1020,6 +1020,8 @@ governance authority or claiming whole-app MIDI2 adoption.
 
 **Integration source commit:** `Fountain-Coach/midi2-gpu-fabric@32e68292`.
 
+**Publication commit:** `Fountain-Coach/Reframe-Refactoring@3b4043a` plus the generated-route follow-up below.
+
 **Scope:** `docs/70-external-midi2-control-of-reframe.md` and reciprocal provenance only. Runtime coordinator
 implementation, scenario live acceptance, and capability status promotion remain separate integration phases.
 
