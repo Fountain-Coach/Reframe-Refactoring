@@ -1,5 +1,14 @@
 # Source and Synchronization Contract
 
+## Current planned change — Improve governance table readability (2026-08-18)
+
+- Change: publication tables now use readable spacing, restrained header hierarchy, alternating row surfaces, safe prose
+  wrapping, and mobile-only horizontal scrolling for tables wider than the viewport.
+- Claim boundary: CSS projection only; Markdown meaning, runtime behavior, scenario evidence, and navigation semantics are
+  unchanged.
+- Validation: desktop/mobile visual review, browser AX table semantics, overflow measurement, and governance acceptance
+  are required before deployment.
+
 ## Current planned change — Repair broken Reading Index table rendering (2026-08-18)
 
 - Finding: blank lines between Markdown table rows in Chapter 01 caused Pandoc to terminate the table and emit the

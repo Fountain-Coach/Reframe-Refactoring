@@ -980,3 +980,19 @@ are synchronized.
 
 **Deployment:** publication commit `a6785a5` is live as release `release-20260818T054618Z`; Chapter 01 returns HTTPS
 200 with one 84-row table and no detached pipe paragraphs.
+## Current gate — Improve governance table readability (2026-08-18)
+
+**Goal:** make publication tables readable rather than dense blocks: give headers and rows clear hierarchy, increase cell
+breathing room, wrap long prose safely, and allow horizontal scrolling only for genuinely wide tables on small screens.
+
+**Chapters read:** 07 (bounded publication edit and evidence record); 08 (rendered visual truth must be inspected);
+18 (legibility over density); 19 (typography, spacing, and contrast floor); 80 (independent governance projection).
+
+**What they forbid here:** relying on source-table correctness alone or using sticky/opaque table behavior as a substitute
+for readable presentation.
+
+**Excluded, and why:** no Markdown content, runtime, scenario, Store, or navigation semantics change; this is a CSS-only
+projection improvement.
+
+**Validation:** desktop and mobile table screenshots, AX table semantics, overflow measurement, governance acceptance,
+`git diff --check`, and deployment HTTPS checks.
