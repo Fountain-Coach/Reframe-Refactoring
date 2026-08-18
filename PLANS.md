@@ -6,6 +6,10 @@ runtime evidence.
 
 **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
 
+**Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@672ae622`.
+
+**Publication content commit:** `Fountain-Coach/Reframe-Refactoring@7358d3a`.
+
 **Claim boundary:** design reference only; the SVG contains no fabricated Store IDs, MIDI2 correlation, provider
 receipt, semantic result, AX identifier, window ID, or terminal status.
 
