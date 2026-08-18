@@ -1,3 +1,20 @@
+## Current gate — Chapter 85 Storify Source Auto design mock (2026-08-18)
+
+**Goal:** publish a deterministic Chapter 85 design mock that uses the measured Chapter 84 Reframe shell and makes
+the proposed resource-admission, named-range, semantic-packet, and whole-work synthesis flow legible without claiming
+runtime evidence.
+
+**Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+
+**Claim boundary:** design reference only; the SVG contains no fabricated Store IDs, MIDI2 correlation, provider
+receipt, semantic result, AX identifier, window ID, or terminal status.
+
+**Asset:** `docs/illustrations/reframe-storify-defined-whole-mock.svg`, declarative SVG renderer v1, SHA-256
+`f73de08e7d7bdc04312170d8c1a4e9c367ca76dc06cd7765076ad5273921b6ff`.
+
+**Validation:** SVG render and visual inspection, governance generator, local route/link/metadata checks, independent
+AX/VRT acceptance, exact integration parity, and guarded governance deployment.
+
 ## 2026-08-17 — Chapter 79 default semantic manuscript projection
 
 - Publish the governed default Reframe workspace: a continuous Courier/Fountain manuscript with semantic Questions,

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Reframe design mock for Storify Source Auto reading a defined whole</title>
+  <desc id="desc">A deterministic design projection of the current Reframe split workspace showing a proposed
+  Storify source admission, named range reading, semantic packet, and whole-work synthesis flow. It is not live evidence.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#738394" flood-opacity=".16"/>
+    </filter>
+    <linearGradient id="paper" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f3f6f8"/>
+    </linearGradient>
+    <style>
+      .courier { font-family: 'Courier New', Courier, monospace; }
+      .ink { fill: #243140; }
+      .muted { fill: #6b7b89; }
+      .blue { fill: #2d6f9f; }
+      .small { font-size: 16px; letter-spacing: 1.7px; }
+      .label { font-size: 18px; letter-spacing: 2px; font-weight: 700; }
+      .body { font-size: 21px; }
+      .tiny { font-size: 14px; letter-spacing: 1px; }
+      .rule { stroke: #cbd5dd; stroke-width: 2; }
+      .dash { stroke: #8aa6b9; stroke-width: 2; stroke-dasharray: 8 8; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#e9eef2"/>
+  <rect x="0" y="0" width="1920" height="64" fill="#ffffff"/>
+  <line x1="0" y1="64" x2="1920" y2="64" class="rule"/>
+  <text x="42" y="39" class="courier ink label">REFRAME</text>
+  <text x="182" y="39" class="courier muted small">GOVERNANCE DESIGN REFERENCE</text>
+  <text x="1578" y="38" class="courier muted small">DESIGN MOCK · NOT LIVE EVIDENCE</text>
+
+  <!-- measured current Reframe shell: 1010 manuscript / 10 divider / 900 Copilot / 31 peers -->
+  <rect x="0" y="65" width="1010" height="984" fill="url(#paper)"/>
+  <rect x="1010" y="65" width="10" height="984" fill="#d7e0e6"/>
+  <rect x="1020" y="65" width="900" height="984" fill="#fbfcfd"/>
+
+  <text x="40" y="112" class="courier ink label">MANUSCRIPT</text>
+  <text x="240" y="112" class="courier muted small">Questions · Movements · Read coverage</text>
+  <circle cx="842" cy="104" r="7" fill="#4389ba"/>
+  <text x="864" y="111" class="courier ink body">Reading source</text>
+
+  <text x="40" y="168" class="courier muted label">READING NAVIGATION</text>
+  <circle cx="54" cy="212" r="8" fill="#ea777c"/>
+  <text x="80" y="219" class="courier ink body">Read coverage</text>
+  <text x="80" y="251" class="courier muted body">Lines 1–whole resource</text>
+  <circle cx="54" cy="304" r="8" fill="#55b978"/>
+  <text x="80" y="311" class="courier ink body">Movements</text>
+  <text x="80" y="343" class="courier muted body">evidence-backed passages</text>
+  <circle cx="54" cy="396" r="8" fill="#4c91d8"/>
+  <text x="80" y="403" class="courier ink body">Questions</text>
+  <text x="80" y="435" class="courier muted body">open questions with addresses</text>
+  <line x1="40" y1="482" x2="950" y2="482" class="rule"/>
+  <text x="80" y="535" class="courier muted small">SOURCE RANGE · 001–024</text>
+  <text x="80" y="580" class="courier ink body">The defined whole remains one work.</text>
+  <text x="80" y="617" class="courier ink body">The read-head points to one named part.</text>
+  <text x="80" y="654" class="courier muted body">[ structural map · no meaning assigned ]</text>
+  <line x1="80" y1="690" x2="950" y2="690" class="rule"/>
+  <text x="80" y="737" class="courier muted small">SOURCE TEXT PROJECTION</text>
+  <text x="80" y="780" class="courier ink body">01  Title: published work</text>
+  <text x="80" y="814" class="courier ink body">02  Source: immutable release</text>
+  <text x="80" y="848" class="courier ink body">03  Digest: sha256 · verified</text>
+  <text x="80" y="908" class="courier muted body">Current design shell · proposed reading state</text>
+
+  <!-- proposed Copilot rollout -->
+  <text x="1060" y="112" class="courier ink label">COPILOT</text>
+  <text x="1220" y="112" class="courier muted small">Storify Source Auto · defined whole</text>
+  <rect x="1058" y="140" width="824" height="52" rx="8" fill="#f0e7dc"/>
+  <text x="1082" y="173" class="courier ink small">PROPOSED ROLLOUT · current shell, future semantic flow</text>
+
+  <g filter="url(#shadow)">
+    <rect x="1060" y="220" width="392" height="170" rx="12" fill="#ffffff" stroke="#bccbd5" stroke-width="2"/>
+    <rect x="1480" y="220" width="402" height="170" rx="12" fill="#ffffff" stroke="#bccbd5" stroke-width="2"/>
+    <rect x="1060" y="432" width="392" height="170" rx="12" fill="#ffffff" stroke="#bccbd5" stroke-width="2"/>
+    <rect x="1480" y="432" width="402" height="170" rx="12" fill="#ffffff" stroke="#bccbd5" stroke-width="2"/>
+    <rect x="1060" y="644" width="822" height="178" rx="12" fill="#ffffff" stroke="#bccbd5" stroke-width="2"/>
+  </g>
+
+  <text x="1088" y="257" class="courier blue label">01 · ADMIT</text>
+  <text x="1088" y="295" class="courier ink body">Published resource</text>
+  <text x="1088" y="328" class="courier muted body">release · manifest</text>
+  <text x="1088" y="362" class="courier muted body">content digest · 3 reads</text>
+
+  <text x="1508" y="257" class="courier blue label">02 · ADDRESS</text>
+  <text x="1508" y="295" class="courier ink body">Named range receipt</text>
+  <text x="1508" y="328" class="courier muted body">lines 001–024 · source hash</text>
+  <text x="1508" y="362" class="courier muted body">MIDI2 request · Store</text>
+
+  <text x="1088" y="469" class="courier blue label">03 · MEASURE</text>
+  <text x="1088" y="507" class="courier ink body">Structural map</text>
+  <text x="1088" y="540" class="courier muted body">units · boundaries</text>
+  <text x="1088" y="574" class="courier muted body">no story meaning assigned</text>
+
+  <text x="1508" y="469" class="courier blue label">04 · INTERPRET</text>
+  <text x="1508" y="507" class="courier ink body">Semantic packet</text>
+  <text x="1508" y="540" class="courier muted body">movement · question</text>
+  <text x="1508" y="574" class="courier muted body">each claim keeps its address</text>
+
+  <text x="1088" y="681" class="courier blue label">05 · RECONCILE AND SYNTHESIZE</text>
+  <text x="1088" y="722" class="courier ink body">Adjacent packets become a reading of the defined whole.</text>
+  <text x="1088" y="757" class="courier muted body">covered ranges · open questions · gaps · downstream prompt</text>
+  <rect x="1088" y="780" width="320" height="24" rx="12" fill="#e6eef3"/>
+  <text x="1102" y="798" class="courier blue tiny">PLACEHOLDER · NOT A LIVE RESULT</text>
+
+  <!-- flow connectors -->
+  <path d="M1452 305 H1480" class="dash"/>
+  <path d="M1660 390 V432" class="dash"/>
+  <path d="M1452 517 H1480" class="dash"/>
+  <path d="M1660 602 V644" class="dash"/>
+  <path d="M1256 390 V432" class="dash"/>
+  <text x="1060" y="870" class="courier muted small">MIDI2 peers · projections and operations</text>
+  <text x="1590" y="870" class="courier muted small">DESIGN REFERENCE ONLY</text>
+
+  <rect x="0" y="1049" width="1920" height="31" fill="#f3f5f6"/>
+  <line x1="0" y1="1049" x2="1920" y2="1049" class="rule"/>
+  <text x="40" y="1071" class="courier ink small">MIDI2 peers</text>
+  <text x="180" y="1071" class="courier muted small">· projections and operations</text>
+  <text x="1440" y="1071" class="courier muted small">Fountain Coach · Chapter 85</text>
+</svg>

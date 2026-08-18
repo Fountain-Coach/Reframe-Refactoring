@@ -4,6 +4,14 @@ Storify Source Auto is not a text dump, a web scraper, or a model prompt with a 
 governed reading pipeline: a named, immutable text resource is admitted, addressed by ranges, measured for structure,
 interpreted in bounded semantic passages, and reconciled into a reading of the defined whole.
 
+![Reframe design mock: Storify Source Auto reading a defined whole](illustrations/reframe-storify-defined-whole-mock.svg)
+
+*Design reference only. This mock uses the measured Chapter 84 Reframe shell and proposes the Chapter 85 reading flow;
+it is not an AX observation, FountainStore receipt, MIDI2 lifecycle trace, semantic result, or live acceptance.*
+
+*Mock provenance: declarative SVG renderer v1; input identity `chapter-84-shell + chapter-85-defined-whole-flow`;
+asset SHA-256 `f73de08e7d7bdc04312170d8c1a4e9c367ca76dc06cd7765076ad5273921b6ff`.*
+
 This chapter joins the source-provider boundary of Chapter 56, the addressable text contract of Chapter 50, the
 measurement/interpretation separation of Chapter 29, the lane decision of Chapter 51, and the MIDI2 command boundary
 of Chapter 81. It defines their joint behavior for Storify Source Auto. It does not override the MIDI2 IDL, live
