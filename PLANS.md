@@ -19,6 +19,9 @@ receipt, semantic result, AX identifier, window ID, or terminal status.
 **Validation:** SVG render and visual inspection, governance generator, local route/link/metadata checks, independent
 AX/VRT acceptance, exact integration parity, and guarded governance deployment.
 
+**Production result:** release `release-20260818T163120Z-85078` is promoted to
+`/var/www/reframe-governance/current`; Chapter 85, its share route, SVG, and 1200×630 derivative are deployed.
+
 ## 2026-08-17 — Chapter 79 default semantic manuscript projection
 
 - Publish the governed default Reframe workspace: a continuous Courier/Fountain manuscript with semantic Questions,
