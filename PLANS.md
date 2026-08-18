@@ -261,6 +261,9 @@ deployed as release `release-20260818T050939Z-43273`; Chapter 84 card and metada
 **Visual correction:** rebuilt the derivative as a white Fountain Coach/Courier composition with muted blue-grey ink,
 unified spacing, and the reviewed illustration placed in a consistent left media frame.
 
+**Deployment result:** visual correction commit `a9f4fee` is live as release `release-20260818T051717Z-44014`; remote
+Chapter 84 social image is 1200×630 and byte-identical to the committed card.
+
 ## Current gate — governance legal publication surface (2026-08-17)
 
 **Goal:** expose the same legal/publication boundary as the Book of Reframe on every governance route through a

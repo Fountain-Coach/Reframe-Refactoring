@@ -10,6 +10,10 @@
   scenario, AX, Store, image-generation, or placement evidence is implied.
 - Production result: release `release-20260818T050939Z-43273` is promoted; Chapter 84 metadata and its 1200×630 card
   return HTTPS 200.
+- Visual correction commit: `Fountain-Coach/Reframe-Refactoring@a9f4fee` and integration skill commit
+  `Fountain-Coach/midi2-gpu-fabric@b7fb34a7` establish the white Fountain Coach/Courier visual system.
+- Corrected release: `release-20260818T051717Z-44014`; Chapter 84 social image returns HTTPS 200 and matches the
+  committed digest `0132f2b1aae884fee414f97e00af6f2a8a2ad631100d8ef9d1d2b50ca3462a9f`.
 
 ## Current planned change — Chapter 84 governed Reframe design mock (2026-08-18)
 
