@@ -1,0 +1,4 @@
+interface:
+  display_name: "Book of Reframe Social Publish"
+  short_description: "Package verified command snapshots for Facebook"
+  default_prompt: "Prepare a Facebook post package for this verified Book of Reframe command."
