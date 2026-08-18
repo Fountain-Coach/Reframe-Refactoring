@@ -22,7 +22,10 @@
 - Claim boundary: this changes publication URL identity only; it does not claim that Facebook has fetched or published
   the preview, and no external post was created by the publisher.
 - Validation: local generator build, route metadata, 1200×630 image dimensions, link checks, and independent AX/VRT
-  acceptance passed; deployment is pending.
+  acceptance passed.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@eaf1ddb`.
+- Production result: release `release-20260818T052802Z-44948` is live; the cache-safe Chapter 84 route and its 1200×630
+  image return HTTPS 200.
 
 ## Current planned change — Chapter 84 governed Reframe design mock (2026-08-18)
 

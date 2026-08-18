@@ -266,7 +266,8 @@ Chapter 84 social image is 1200×630 and byte-identical to the committed card.
 
 **Cache-safe route:** each generated card now has a digest-named `/social/<asset>/` share page and digest-named image.
 Sharing that new URL gives social crawlers a new URL identity, so Facebook's debugger/cache workflow is not required.
-Local route metadata, 1200×630 dimensions, AX/VRT acceptance, and link checks passed; publication is pending.
+Local route metadata, 1200×630 dimensions, AX/VRT acceptance, and link checks passed. Publication commit `eaf1ddb`
+is pushed and release `release-20260818T052802Z-44948` is live.
 
 ## Current gate — governance legal publication surface (2026-08-17)
 
