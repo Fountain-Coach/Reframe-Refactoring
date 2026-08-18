@@ -92,15 +92,42 @@ def build_social_card(path: Path, title: str) -> str | None:
             subprocess.run(["rsvg-convert", "-o", str(rendered_source), str(source)], check=True)
         else:
             rendered_source = source
+        image_panel = Path(temp_dir) / "image-panel.png"
         subprocess.run([
-            "magick", "-size", "1200x630", "xc:#17212b",
-            "(", str(rendered_source), "-auto-orient", "-resize", "1120x500>",
-            "-background", "#17212b", "-gravity", "center", "-extent", "1120x500", ")",
-            "-gravity", "center", "-composite",
-            "-fill", "white", "-font", "Helvetica", "-pointsize", "22",
-            "-gravity", "southwest", "-annotate", "+40+30", "REFRAME GOVERNANCE",
-            "-fill", "#9fd4ff", "-pointsize", "18", "-gravity", "southeast",
-            "-annotate", "+40+30", title,
+            "magick", str(rendered_source), "-auto-orient", "-resize", "600x370>",
+            "-background", "#edf2f4", "-gravity", "center", "-extent", "600x370", str(image_panel),
+        ], check=True)
+        logo = Path(temp_dir) / "logo.png"
+        subprocess.run([
+            "magick", str(LOGO), "-resize", "52x52", "-fill", "#607985", "-colorize", "100%", str(logo),
+        ], check=True)
+        title_image = Path(temp_dir) / "title.png"
+        subprocess.run([
+            "magick", "-background", "none", "-fill", "#3d5664", "-font", "Courier-Bold",
+            "-pointsize", "28", "-size", "430x160", f"caption:{title}", str(title_image),
+        ], check=True)
+        subprocess.run([
+            "magick", "-size", "1200x630", "xc:#f6f8f9",
+            "-stroke", "#c6d1d7", "-strokewidth", "2", "-fill", "none",
+            "-draw", "rectangle 24,24 1176,606",
+            str(image_panel), "-geometry", "+42+122", "-composite",
+            str(logo), "-geometry", "+42+36", "-composite",
+            "-stroke", "none",
+            "-font", "Courier-Bold", "-fill", "#3d5664", "-pointsize", "22",
+            "-draw", "text 112,58 'FOUNTAIN COACH'",
+            "-font", "Courier", "-fill", "#72848e", "-pointsize", "14",
+            "-draw", "text 112,82 'REFRAME GOVERNANCE'",
+            "-font", "Courier-Bold", "-fill", "#477a88", "-pointsize", "15",
+            "-draw", f"text 700,125 'CHAPTER {path.stem[:2] if path.stem[:2].isdigit() else '—'}'",
+            str(title_image), "-geometry", "+700+150", "-composite",
+            "-stroke", "#c6d1d7", "-strokewidth", "2", "-draw", "line 700,390 1140,390",
+            "-stroke", "none",
+            "-font", "Courier-Bold", "-fill", "#3d5664", "-pointsize", "16",
+            "-draw", "text 700,425 'REVIEWED ILLUSTRATION'",
+            "-font", "Courier", "-fill", "#72848e", "-pointsize", "15",
+            "-draw", "text 700,465 'PUBLIC GOVERNANCE PROJECTION'",
+            "-draw", "text 700,495 'SOURCE ARTWORK PRESERVED'",
+            "-draw", "text 700,565 'SOCIAL POST ILLUSTRATION'",
             "-strip", "-quality", "90", str(destination),
         ], check=True)
     return social_card_for(path)

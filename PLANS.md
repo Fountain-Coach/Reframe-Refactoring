@@ -258,6 +258,9 @@ AX/VRT acceptance; external publishing remains separately authorized.
 **Result:** generated cards for chapters 45, 79, 82, and 84; local AX/VRT passed; publication commit `951bf9c` was
 deployed as release `release-20260818T050939Z-43273`; Chapter 84 card and metadata return HTTPS 200.
 
+**Visual correction:** rebuilt the derivative as a white Fountain Coach/Courier composition with muted blue-grey ink,
+unified spacing, and the reviewed illustration placed in a consistent left media frame.
+
 ## Current gate — governance legal publication surface (2026-08-17)
 
 **Goal:** expose the same legal/publication boundary as the Book of Reframe on every governance route through a
