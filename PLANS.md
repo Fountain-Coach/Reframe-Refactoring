@@ -9,6 +9,8 @@
   browser acceptance, guide parity, and `git diff --check` passed.
 - **Claim boundary:** Chapter 86 governs the refactoring. The typed IDL and pre-release kit are implementation
   evidence only; the complete executor graph and live scenario acceptance remain pending.
+- **Production result:** release `release-20260819T100116Z` is promoted to `/var/www/reframe-governance/current`;
+  HTTPS 200 verified for overview, status-quo, Chapters 85 and 86; DNS resolves to `65.109.14.71`.
 
 ## Current gate — Chapter 85 Storify Source Auto design mock (2026-08-18)
 

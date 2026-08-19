@@ -10,6 +10,8 @@
   and tested pre-release `FountainSemanticPipelineKit` implementation boundary.
 - Claim boundary: governance and contract publication only; no complete semantic executor graph or live scenario
   acceptance is claimed.
+- Production result: release `release-20260819T100116Z` is live at `governance.fountain.coach`; overview, status-quo,
+  Chapters 85 and 86 return HTTPS 200 and DNS resolves to `65.109.14.71`.
 
 ## Current planned change — Correct Facebook link versus preview image (2026-08-18)
 
