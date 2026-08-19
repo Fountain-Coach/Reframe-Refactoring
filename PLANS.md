@@ -1,3 +1,15 @@
+## Current planned change — Chapter 86 Apple-native semantic pipeline refactoring (2026-08-19)
+
+- **Goal:** make governance writing the first slice: define the composed local-Apple plus paid semantic pipeline
+  before further runtime implementation.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Publication commit:** `Fountain-Coach/Reframe-Refactoring@862f036`.
+- **Integration content:** synchronized; integration implementation commit pending.
+- **Validation:** 88 generated chapter routes, Chapter 86 canonical metadata/status, independent light/dark/mobile
+  browser acceptance, guide parity, and `git diff --check` passed.
+- **Claim boundary:** Chapter 86 governs the refactoring. The typed IDL and pre-release kit are implementation
+  evidence only; the complete executor graph and live scenario acceptance remain pending.
+
 ## Current gate — Chapter 85 Storify Source Auto design mock (2026-08-18)
 
 **Goal:** publish a deterministic Chapter 85 design mock that uses the measured Chapter 84 Reframe shell and makes
