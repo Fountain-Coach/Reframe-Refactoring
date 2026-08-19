@@ -21,6 +21,7 @@
     "82-remote-midi2-reading-room": {"key": "current", "label": "Current collaboration boundary", "description": "The governed multi-user Reading Room product boundary and its remote software-peer acceptance gate."},
     "83-conversational-scenario-authoring": {"key": "current", "label": "Current authoring boundary", "description": "The maintained conversational scenario prompt-contract and its compiled runtime projections."},
     "84-governed-reframe-design-mock": {"key": "current", "label": "Current design-reference boundary", "description": "The maintained boundary between Reframe design intent, proposed scenario rollout, and live evidence."},
-    "85-storify-source-auto-reads-a-defined-whole": {"key": "current", "label": "Current Storify reading boundary", "description": "The maintained source-admission, named-range, reasoning, MIDI2, and terminal-evidence contract for Storify Source Auto."}
+    "85-storify-source-auto-reads-a-defined-whole": {"key": "current", "label": "Current Storify reading boundary", "description": "The maintained source-admission, named-range, reasoning, MIDI2, and terminal-evidence contract for Storify Source Auto."},
+    "86-apple-native-semantic-pipeline-is-one-midi2-graph": {"key": "current", "label": "Current semantic pipeline refactoring", "description": "The maintained Apple-native, paid-extension, MIDI2 graph boundary and implementation acceptance order."}
   }
 }

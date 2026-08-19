@@ -84,6 +84,30 @@ corpus and source document. For a reading it can name the reading receipt and co
 name the asset-cloud receipt. For a project write it can name the durable revision. A consumer follows those returned
 identities; it never guesses a fixture corpus, scans for the newest document, or waits on an unrelated default.
 
+## The semantic pipeline is a chain of MIDI2 operations
+
+Chapter 85's composed reading pipeline is not an internal callback chain. Its declared operations are:
+
+```text
+reframe/semantic.measure
+  → reframe/semantic.embed
+  → reframe/semantic.interpret
+  → reframe/semantic.enrich
+  → reframe/semantic.reconcile
+  → reframe/semantic.synthesize
+  → reframe/illustration.prompt
+```
+
+The first two stages may use Apple-native local instruments such as Natural Language tokenization, tagging,
+language recognition, and embeddings. The later stages may extend that evidence through the paid lane under Chapter
+51. Every stage still enters the same MIDI2 command plane, carries the immutable source digest and receipt
+dependencies, and returns a typed lifecycle/terminal event. The local and paid stages therefore form one composed
+pipeline rather than two competing lanes.
+
+The IDL identities and generated facts for this chain are declared. The portable Swift contract is currently a tested
+pre-release extraction boundary in `FountainSemanticPipelineKit`; that package is not yet an upstream FCIS-KIT
+release, and no runtime or live-acceptance claim follows from its existence.
+
 ## The single router remains Reframe mediation
 
 Making every command MIDI2 does not create a second semantic router. Mediation still reasons over the complete
@@ -149,6 +173,8 @@ the rest of the registry has migrated.
 - A MIDI2 envelope does not replace semantic mediation, consent, lane policy, Store authority, or AX.
 - A software-peer test does not establish interoperability with physical MIDI2 hardware.
 - A capability is not universal-MIDI2 complete merely because one adapter or scenario exists.
+- Declaring the semantic pipeline identities is not the same as executing every stage through the plane. Each stage
+  needs its own executor, Store receipt, lifecycle proof, and acceptance scenario.
 - The public governance book exposes the contract and evidence boundary, never private Store data, credentials,
   manuscript material, runtime source, or deployment secrets.
 

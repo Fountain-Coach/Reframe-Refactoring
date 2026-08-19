@@ -178,6 +178,7 @@ classification; intermediate observations do not establish failure; and any unre
 | [The Universal MIDI2 Command Plane](81-universal-midi2-command-plane.md) | Makes MIDI2 the common command and lifecycle boundary for every Reframe capability, distinguishing MIDI-CI peer discovery from operation execution, preserving mediation and FountainStore authority, and requiring all clients to converge on one typed operation contract. |
 | [Remote MIDI2 Reading Rooms](82-remote-midi2-reading-room.md) | Defines the useful multi-user product boundary over Reframe's MIDI2 peer infrastructure: shared semantic projections, human roles, writer authority, secure web transport, privacy, reconnect, and the read-only acceptance gate. |
 | [Storify Source Auto Reads a Defined Whole](85-storify-source-auto-reads-a-defined-whole.md) | Governs immutable Book Library admission, named source ranges, structural measurement, hierarchical semantic reasoning, MIDI2 resource receipts, and terminal evidence for Storify Source Auto. |
+| [The Apple-Native Semantic Pipeline Is One MIDI2 Graph](86-apple-native-semantic-pipeline-is-one-midi2-graph.md) | Governs the refactoring boundary before implementation: Apple-native measurement, paid extension, typed MIDI2 stage identities, portable kit ownership, receipt lineage, and the acceptance order for the composed Storify pipeline. |
 ## Vocabulary
 
 **Canonical source** means the imported manuscript stored under the source document identity. It is evidence, not a work surface for generated analysis.

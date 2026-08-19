@@ -91,6 +91,13 @@ parties who cannot see each other's answers.**
     clock. Output: a resolution. No I/O, no Keychain, no network. It is a package of its own — nothing in the app
     resolves a lane, it asks the kit and receives a decision or a typed refusal.
 
+11. **A composed pipeline carries one decision per declared role, not one accidental decision for the whole graph.**
+    A local linguistic measurement may be followed by paid interpretation, enrichment, reconciliation, or synthesis,
+    but each paid-capable operation receives its own recorded lane decision, budget, model revision, and idempotency
+    identity. The downstream operation may not re-elect a lane or silently fall back. The decision is composed into the
+    operation handoff before execution, so local processing is foundational and paid processing is the default
+    extension when the governed writer-facing policy selects it.
+
 ## What this forbids, stated plainly
 
 - Asking "which lane?" in more than one place.

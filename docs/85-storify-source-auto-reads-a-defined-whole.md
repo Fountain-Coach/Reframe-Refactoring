@@ -51,6 +51,32 @@ One Source Auto run has these governed stages:
 7. **Terminal projection** — persist the run, range packets, coverage, job lifecycle, and capability receipt as one
    reconciled Store result. A model response, UI progress line, or log is not terminal proof.
 
+## Apple-native local reasoning, paid extension
+
+The pipeline is deliberately composed rather than split into an exclusive local lane and paid lane. Apple-native
+Natural Language instruments provide the deterministic local foundation: language recognition, token and sentence
+boundaries, lexical and name observations, and embedding continuity where the selected framework supports it. A
+paid model may then enrich or synthesize those grounded packets when the Chapter 51 decision selects the paid
+writer-facing lane. The paid stage receives the local receipts; it does not replace source admission or invent a new
+source copy.
+
+The seven stage boundaries are typed MIDI2 operations:
+
+| Stage | Operation | Contractual result |
+| --- | --- | --- |
+| measure | `reframe/semantic.measure` | source-addressed structural and linguistic evidence |
+| embed | `reframe/semantic.embed` | source-addressed embedding continuity receipt |
+| interpret | `reframe/semantic.interpret` | bounded semantic packet with cited range |
+| enrich | `reframe/semantic.enrich` | paid-lane enrichment linked to interpretation receipts |
+| reconcile | `reframe/semantic.reconcile` | boundary comparison and explicit unresolved gaps |
+| synthesize | `reframe/semantic.synthesize` | whole-work reading from reconciled packets |
+| prompt | `reframe/illustration.prompt` | grounded movement/question prompt with placement relation |
+
+The operation handoff carries the immutable source reference, prior receipt identities, lane decision where required,
+framework/model revision, and idempotency key. Payload custody remains in FountainStore. The portable operation
+contract is being extracted into `FountainSemanticPipelineKit`; until that boundary is released upstream and wired to
+Reframe executors, this chapter governs the target architecture rather than claiming that the complete chain is live.
+
 ## Fast reading without a content cache
 
 The fastest correct path is:
@@ -140,10 +166,12 @@ the same idempotency key return the same admitted result or the same typed failu
 ## Current implementation boundary
 
 The deterministic Book Library reader and the resource-read topics establish part of this contract: provider and
-content digests are checked across three reads, and the IDL names the resource request and data receipt. The current
-Swift adapter does not yet exercise the new resource topics through an external MIDI2 peer and Store receipt. The
-existing Source Auto path still contains whole-source acquisition and fit-driven window mutation. Semantic quality
-gates that reject dump-like interpretations before illustration generation are not yet live-accepted.
+content digests are checked across three reads, and the IDL names the resource request and data receipt. The seven
+semantic operation identities and generated facts are now declared, and the portable handoff contract has a tested
+pre-release package boundary. The current Swift adapter does not yet execute the complete chain through external MIDI2
+and matching Store receipts. The existing Source Auto path still contains whole-source acquisition and fit-driven
+window mutation. Semantic quality gates that reject dump-like interpretations before illustration generation are not
+yet live-accepted.
 
 Those are implementation slices governed by this chapter, not claims established by publishing it.
 
