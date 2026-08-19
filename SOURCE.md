@@ -6,7 +6,7 @@
   graph, with seven typed stage identities, portable FCIS-KIT boundary, and implementation acceptance order.
 - Direction: publication → integration through `Scripts/sync-integration-copy --push`.
 - Publication commit: `Fountain-Coach/Reframe-Refactoring@862f036`.
-- Integration commit: pending; the synchronized integration tree also contains the typed IDL, generated contracts,
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@1248ed54`; the synchronized integration tree also contains the typed IDL, generated contracts,
   and tested pre-release `FountainSemanticPipelineKit` implementation boundary.
 - Claim boundary: governance and contract publication only; no complete semantic executor graph or live scenario
   acceptance is claimed.
