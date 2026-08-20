@@ -7,8 +7,8 @@
 - Claim boundary: publication projection and social metadata only; no external Facebook post is claimed.
 - Link rule: the semantic `/chapters/<slug>/` route is the post link and readable chapter, while the direct illustration
   fit is its `og:image` and uploaded post image. No extra share route is generated.
-- Publishing procedure: `Fountain-Coach/midi2-gpu-fabric@cec70f98` updates the governance publishing skill with this
-  principal-illustration rule.
+- Publishing procedure: `Fountain-Coach/midi2-gpu-fabric@9ed043e8` updates the governance publishing skill with this
+  principal-illustration and semantic-route rule.
 
 ## Current planned change — Chapter 87 MIDI2 Monitor foundational boundary (2026-08-20)
 
