@@ -1,5 +1,16 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter 87 MIDI2 Monitor foundational boundary (2026-08-20)
+
+- Change: Chapter 87 defines the Swift-owned MIDI2 Monitor as the live event boundary between negotiated transport,
+  durable FountainStore proof, the AX-visible peer mirror, and independent scenario witnesses.
+- Direction: publication → integration through `Scripts/sync-integration-copy --push`.
+- Publication commit: pending.
+- Integration commit: pending.
+- Claim boundary: governance and deterministic design mock only; no runtime monitor implementation, hardware
+  interoperability, or live-acceptance claim is made.
+- Local validation: 89 generated routes, SVG render, guide parity, and independent light/dark/mobile AX/VRT acceptance.
+
 ## Current synchronized change — Chapter 86 Apple-native semantic pipeline refactoring (2026-08-19)
 
 - Change: Chapter 86 defines Storify's local Apple measurement plus paid extension as one source-addressed MIDI2

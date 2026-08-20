@@ -179,6 +179,7 @@ classification; intermediate observations do not establish failure; and any unre
 | [Remote MIDI2 Reading Rooms](82-remote-midi2-reading-room.md) | Defines the useful multi-user product boundary over Reframe's MIDI2 peer infrastructure: shared semantic projections, human roles, writer authority, secure web transport, privacy, reconnect, and the read-only acceptance gate. |
 | [Storify Source Auto Reads a Defined Whole](85-storify-source-auto-reads-a-defined-whole.md) | Governs immutable Book Library admission, named source ranges, structural measurement, hierarchical semantic reasoning, MIDI2 resource receipts, and terminal evidence for Storify Source Auto. |
 | [The Apple-Native Semantic Pipeline Is One MIDI2 Graph](86-apple-native-semantic-pipeline-is-one-midi2-graph.md) | Governs the refactoring boundary before implementation: Apple-native measurement, paid extension, typed MIDI2 stage identities, portable kit ownership, receipt lineage, and the acceptance order for the composed Storify pipeline. |
+| [The MIDI2 Monitor Is the Live Event Mirror](87-midi2-monitor-is-the-live-event-mirror.md) | Defines the Swift-owned MIDI2 Monitor as the live event boundary between negotiated transport, durable FountainStore proof, the AX-visible peer mirror, and independent scenario evidence. |
 ## Vocabulary
 
 **Canonical source** means the imported manuscript stored under the source document identity. It is evidence, not a work surface for generated analysis.

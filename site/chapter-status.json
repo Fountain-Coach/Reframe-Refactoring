@@ -23,5 +23,6 @@
     "84-governed-reframe-design-mock": {"key": "current", "label": "Current design-reference boundary", "description": "The maintained boundary between Reframe design intent, proposed scenario rollout, and live evidence."},
     "85-storify-source-auto-reads-a-defined-whole": {"key": "current", "label": "Current Storify reading boundary", "description": "The maintained source-admission, named-range, reasoning, MIDI2, and terminal-evidence contract for Storify Source Auto."},
     "86-apple-native-semantic-pipeline-is-one-midi2-graph": {"key": "current", "label": "Current semantic pipeline refactoring", "description": "The maintained Apple-native, paid-extension, MIDI2 graph boundary and implementation acceptance order."}
+    ,"87-midi2-monitor-is-the-live-event-mirror": {"key": "current", "label": "Current MIDI2 monitor boundary", "description": "The maintained Swift-owned live event mirror between MIDI2 observation, FountainStore proof, AX projection, and independent witnesses."}
   }
 }

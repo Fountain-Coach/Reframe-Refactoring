@@ -1083,3 +1083,21 @@ returned HTTPS 200; release `release-20260818T153714Z` is live at `governance.fo
   local gates pass.
 - Production result: release `release-20260818T162600Z-84510` is promoted to
   `/var/www/reframe-governance/current`; the overview, status-quo route, and Chapter 85 return HTTPS 200.
+## Current planned change — Chapter 87 MIDI2 Monitor foundational boundary (2026-08-20)
+
+- **Goal:** establish the MIDI2 Monitor as the foundational live event boundary for all system actors, with the
+  Reframe peer section as its AX-visible mirror rather than a competing state machine.
+- **Scope:** Chapter 87, reading index, current status map, deterministic Reframe-style SVG architecture mock, exact
+  integration copy, local governance build, and independent local site acceptance.
+- **Non-goals:** runtime monitor implementation, physical MIDI2 hardware acceptance, provider promotion, or deployment.
+- **Chapters read:** 07 planning/evidence discipline; 08 separate authorities and live-drive evidence; 70 one typed
+  MIDI2 operation boundary and independent witnesses; 72 generic peer projection and AX/Store/MIDI2 agreement; 77
+  Swift-owned scenario execution and event-driven waits.
+- **What they forbid here:** treating the GUI as lifecycle authority, using Store polling or callbacks to infer live
+  state, presenting the SVG as runtime evidence, or collapsing software-peer proof into hardware interoperability.
+- **Conflicts:** none found between the resolved chapters and the request to make Chapter 87 foundational; the
+  existing chapters require the new monitor to remain a boundary definition rather than a runtime claim.
+- **Excluded, and why:** runtime monitor code and live acceptance are excluded because this slice establishes the
+  governing authority first; deployment is explicitly deferred until the localhost review.
+- **Claim boundary:** Chapter 87 and its SVG establish governance and design placement only. The monitor remains an
+  implementation slice governed by this chapter.
