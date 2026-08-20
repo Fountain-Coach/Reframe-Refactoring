@@ -1,3 +1,31 @@
+## Current planned phase — CodexKit FCIS-KIT governance boundary (2026-08-20)
+
+**Goal:** govern the pasted production-quality Swift CodexKit request before implementation, preserving the boundary
+between the official Codex app-server protocol, the reusable kit, the Reframe MIDI2 adapter, and the authorities that
+can prove execution.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (planning discipline and no unbounded work); 08 (independent acceptance and evidence); 63
+  (reusable Swift kit boundary and upstream-first release); 81 (one universal MIDI2 command plane); 86 (portable
+  stage ownership, lane identity, and receipt lineage).
+- **What they forbid here:** treating a child process, SDK façade, log, or model response as a Reframe result;
+  inventing a second command vocabulary; placing product/UI/Store types in a reusable kit; or publishing intent as
+  runtime truth.
+- **Conflicts:** the pasted prompt requests a generic Codex façade, while Chapters 81 and 86 require all Reframe
+  execution to remain behind the existing MIDI2 and Store authorities. The chapter resolves this by making CodexKit
+  itself a reusable IDL-bound MIDI2 instrument, while keeping product meaning and host Store/AX evidence outside the
+  kit; it does not merge vocabularies.
+- **Excluded, and why:** Chapters 87 and 44 were not added to the five-chapter record; the monitor and public/private
+  publication rules are treated as downstream acceptance and publication gates, not as additional kit design scope.
+
+**Slice:** Chapter 88 is the governance slice. Implementation notes, the proposed repository boundary, upstream
+revision, protocol schema, security review, and FCIS-KIT declaration remain pending until the official Codex source and
+current app-server protocol are inspected in the implementation repository.
+
+**Claim boundary:** this phase claims a governed work item only. It does not claim that CodexKit exists, that a Codex
+runtime is bundled, that login/account/thread/turn streaming works, or that any Reframe capability is live-accepted.
+
 ## Current planned change — Chapter 86 Apple-native semantic pipeline refactoring (2026-08-19)
 
 - **Goal:** make governance writing the first slice: define the composed local-Apple plus paid semantic pipeline
@@ -1115,3 +1143,24 @@ returned HTTPS 200; release `release-20260818T153714Z` is live at `governance.fo
   governing authority first; deployment is explicitly deferred until the localhost review.
 - **Claim boundary:** Chapter 87 and its SVG establish governance and design placement only. The monitor remains an
   implementation slice governed by this chapter.
+## Current planned phase — Chapter 89 Codex Auth Instrument and Copilot login surface (2026-08-20)
+
+**Goal:** govern the replacement of the Preferences-based Codex login path with a Swift-owned, MIDI2-instrumented
+auth lifecycle and a Copilot/WebKit projection, without making the projection a second authority.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (authority and phased work); 08 (independent acceptance and claim evidence); 22 (no
+  preferences, facts only); 25 (the Copilot is the conversational surface); 87 (MIDI2 Monitor as live event mirror).
+- **What they forbid here:** a writer-facing login/settings panel, polling or inferred completion, credentials in a
+  web view, a GUI-owned lifecycle reducer, or a claim based only on a browser page, log, screenshot, or process exit.
+- **Conflicts:** none found. Chapter 88 remains the adjacent kit boundary; this chapter narrows the host-facing auth
+  surface and does not redefine CodexKit's protocol or the MIDI2 IDL.
+- **Excluded, and why:** provider implementation, credential migration, and live acceptance are separate bounded
+  implementation slices; this chapter defines their authority and evidence gates only.
+
+**Slice:** write Chapter 89 and its deterministic Reframe design mock, add the reading-index route, build the local
+governance projection, and stop at localhost for proofreading.
+
+**Claim boundary:** the chapter and SVG govern a proposed surface. They do not prove that a WebKit view, Codex login,
+MIDI2 event stream, Store receipt, AX state, or released build exists.
