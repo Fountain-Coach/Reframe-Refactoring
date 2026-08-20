@@ -73,13 +73,13 @@ def illustration_for(path: Path) -> str | None:
     return match.group(1) if match else None
 
 
-def build_social_card(path: Path, title: str) -> str | None:
+def build_social_illustration(path: Path, title: str) -> str | None:
     illustration = illustration_for(path)
     if not illustration:
         return None
     source = DOCS / "illustrations" / illustration
     if not source.exists():
-        raise FileNotFoundError(f"missing illustration for social card: {source}")
+        raise FileNotFoundError(f"missing principal illustration for social post: {source}")
     SOCIAL_ASSETS.mkdir(parents=True, exist_ok=True)
     destination = SOCIAL_ASSETS / f"{path.stem}.jpg"
     with tempfile.TemporaryDirectory(prefix="reframe-social-card-") as temp_dir:
@@ -88,43 +88,13 @@ def build_social_card(path: Path, title: str) -> str | None:
             subprocess.run(["rsvg-convert", "-o", str(rendered_source), str(source)], check=True)
         else:
             rendered_source = source
-        image_panel = Path(temp_dir) / "image-panel.png"
+        # Facebook's post image is the chapter's principal reviewed illustration.
+        # Fit it into the stable 1200×630 transport canvas without adding a second
+        # branded/card composition that could be mistaken for the source artwork.
         subprocess.run([
-            "magick", str(rendered_source), "-auto-orient", "-resize", "600x370>",
-            "-background", "#edf2f4", "-gravity", "center", "-extent", "600x370", str(image_panel),
-        ], check=True)
-        logo = Path(temp_dir) / "logo.png"
-        subprocess.run([
-            "magick", str(LOGO), "-resize", "52x52", "-fill", "#607985", "-colorize", "100%", str(logo),
-        ], check=True)
-        title_image = Path(temp_dir) / "title.png"
-        subprocess.run([
-            "magick", "-background", "none", "-fill", "#3d5664", "-font", "Courier-Bold",
-            "-pointsize", "28", "-size", "430x160", f"caption:{title}", str(title_image),
-        ], check=True)
-        subprocess.run([
-            "magick", "-size", "1200x630", "xc:#f6f8f9",
-            "-stroke", "#c6d1d7", "-strokewidth", "2", "-fill", "none",
-            "-draw", "rectangle 24,24 1176,606",
-            str(image_panel), "-geometry", "+42+122", "-composite",
-            str(logo), "-geometry", "+42+36", "-composite",
-            "-stroke", "none",
-            "-font", "Courier-Bold", "-fill", "#3d5664", "-pointsize", "22",
-            "-draw", "text 112,58 'FOUNTAIN COACH'",
-            "-font", "Courier", "-fill", "#72848e", "-pointsize", "14",
-            "-draw", "text 112,82 'REFRAME GOVERNANCE'",
-            "-font", "Courier-Bold", "-fill", "#477a88", "-pointsize", "15",
-            "-draw", f"text 700,125 'CHAPTER {path.stem[:2] if path.stem[:2].isdigit() else '—'}'",
-            str(title_image), "-geometry", "+700+150", "-composite",
-            "-stroke", "#c6d1d7", "-strokewidth", "2", "-draw", "line 700,390 1140,390",
-            "-stroke", "none",
-            "-font", "Courier-Bold", "-fill", "#3d5664", "-pointsize", "16",
-            "-draw", "text 700,425 'REVIEWED ILLUSTRATION'",
-            "-font", "Courier", "-fill", "#72848e", "-pointsize", "15",
-            "-draw", "text 700,465 'PUBLIC GOVERNANCE PROJECTION'",
-            "-draw", "text 700,495 'SOURCE ARTWORK PRESERVED'",
-            "-draw", "text 700,565 'SOCIAL POST ILLUSTRATION'",
-            "-strip", "-quality", "90", str(destination),
+            "magick", str(rendered_source), "-auto-orient", "-background", "#f6f8f9",
+            "-alpha", "remove", "-alpha", "off", "-resize", "1200x630",
+            "-gravity", "center", "-extent", "1200x630", "-strip", "-quality", "92", str(destination),
         ], check=True)
     digest = hashlib.sha256(destination.read_bytes()).hexdigest()[:12]
     versioned = SOCIAL_ASSETS / f"{path.stem}-{digest}.jpg"
@@ -195,7 +165,7 @@ def shell(page_title: str, content: str, active: str = "", canonical: str | None
     social_tags = ""
     if social_image:
         social_url = f"https://governance.fountain.coach{social_image}"
-        social_tags = f'''\n  <meta property="og:type" content="article">\n  <meta property="og:title" content="{html.escape(page_title)}">\n  <meta property="og:url" content="https://governance.fountain.coach{canonical}">\n  <meta property="og:image" content="{social_url}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="{social_url}">'''
+        social_tags = f'''\n  <meta property="og:type" content="article">\n  <meta property="og:title" content="{html.escape(page_title)}">\n  <meta property="og:url" content="https://governance.fountain.coach{canonical}">\n  <meta property="og:image" content="{social_url}">\n  <meta property="og:image:alt" content="Principal reviewed illustration for {html.escape(page_title)}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="{social_url}">'''
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -287,7 +257,7 @@ def main() -> None:
         current = f"/chapters/{slug(path)}/"
         status = chapter_status(path)
         title = title_for(path)
-        social_image = build_social_card(path, title)
+        social_image = build_social_illustration(path, title)
         social_route = social_share_for(social_image) if social_image else None
         chapter_share_route = chapter_share_for(current, social_image) if social_image else None
         social_link = (f'<p class="social-preview-link"><a href="{chapter_share_route}">Open cache-safe chapter share URL</a> · '
@@ -300,7 +270,7 @@ def main() -> None:
                                                   pager=chapter_pager(path, files)), encoding="utf-8")
         if social_route:
             share_content = (f'<article class="social-share-page"><div class="chapter-meta">SOCIAL SHARE ILLUSTRATION</div>'
-                             f'<h1>{html.escape(title)}</h1><img src="{social_image}" alt="Social illustration for {html.escape(title)}">'
+                             f'<h1>{html.escape(title)}</h1><img src="{social_image}" alt="Principal reviewed illustration for {html.escape(title)}">'
                              f'<p><a href="{current}">Read the governed chapter</a></p></article>')
             share_target = ROOT / social_route.strip("/")
             share_target.mkdir(parents=True, exist_ok=True)

@@ -21,3 +21,7 @@ for every top-level governance Markdown file, includes the reviewed Fountain Coa
 or Store data. The homepage and stable `/status-quo/` route are generated from `content/status-quo.md`; the
 machine-readable `chapter-status.json` labels current orientation chapters without deleting or silently rewriting
 historical material. Every page emits canonical metadata, JSON-LD, keyboard navigation, and an accessible chapter rail.
+A chapter with a reviewed principal illustration emits a deterministic 1200×630 social illustration derived from that
+artwork: the principal illustration itself is the Facebook/OG post image, fitted to the social canvas without a
+competing title card. The chapter/share URL remains the link destination; the image URL is never used as the Facebook
+link.

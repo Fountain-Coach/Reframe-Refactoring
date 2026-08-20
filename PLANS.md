@@ -1038,6 +1038,20 @@ projection improvement.
 **Result:** Chapter 01 table reviewed at desktop and mobile widths; AX exposed one table, 84 rows, and two column
 headers; desktop body overflow measured at zero. Governance acceptance passed. Publication commit `5be704e` is live as
 release `release-20260818T055902Z`; overview and Chapter 01 return HTTPS 200.
+## Current gate — Principal illustration is the Facebook post image (2026-08-20)
+
+**Finding:** the governance generator created a branded composite social card. That made the Facebook preview an
+additional composition instead of making the chapter's principal reviewed illustration the post illustration.
+
+**Fix:** the generated 1200×630 social asset now derives directly from the principal chapter illustration, preserving
+the artwork on a stable social canvas without a competing title card. The chapter/share URL remains the Facebook link;
+the social asset is its `og:image` and uploaded post image. `og:image:alt` identifies it as the principal reviewed
+illustration.
+
+**Validation:** regenerate the site, verify every illustrated chapter has a 1200×630 derivative whose pixels come from
+the corresponding principal illustration, check canonical/share links and metadata, run governance AX/VRT acceptance,
+and deploy only after the generated tree is clean.
+
 ## Current gate — Correct Facebook link versus preview image (2026-08-18)
 
 **Finding:** the previous handoff gave the image-only `/social/<asset>/` route as the Facebook link. That displayed the

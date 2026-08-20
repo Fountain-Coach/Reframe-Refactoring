@@ -1,5 +1,13 @@
 # Source and Synchronization Contract
 
+## Current planned change — Principal illustration is the Facebook post image (2026-08-20)
+
+- Change: governance social assets are now direct 1200×630 fits of each chapter's principal reviewed illustration;
+  the generator no longer creates a competing branded title-card composition.
+- Claim boundary: publication projection and social metadata only; no external Facebook post is claimed.
+- Link rule: the cache-safe chapter/share URL is the post link, while the direct illustration fit is `og:image` and
+  the uploaded post image.
+
 ## Current planned change — Chapter 87 MIDI2 Monitor foundational boundary (2026-08-20)
 
 - Change: Chapter 87 defines the Swift-owned MIDI2 Monitor as the live event boundary between negotiated transport,
