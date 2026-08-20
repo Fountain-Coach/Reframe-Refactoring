@@ -5,8 +5,8 @@
 - Change: Chapter 87 defines the Swift-owned MIDI2 Monitor as the live event boundary between negotiated transport,
   durable FountainStore proof, the AX-visible peer mirror, and independent scenario witnesses.
 - Direction: publication → integration through `Scripts/sync-integration-copy --push`.
-- Publication commit: pending.
-- Integration commit: pending.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@e7194ed`.
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@e04d312d`.
 - Claim boundary: governance and deterministic design mock only; no runtime monitor implementation, hardware
   interoperability, or live-acceptance claim is made.
 - Local validation: 89 generated routes, SVG render, guide parity, and independent light/dark/mobile AX/VRT acceptance.
