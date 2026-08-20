@@ -7,6 +7,8 @@
 - Claim boundary: publication projection and social metadata only; no external Facebook post is claimed.
 - Link rule: the cache-safe chapter/share URL is the post link, while the direct illustration fit is `og:image` and
   the uploaded post image.
+- Publishing procedure: `Fountain-Coach/midi2-gpu-fabric@cec70f98` updates the governance publishing skill with this
+  principal-illustration rule.
 
 ## Current planned change — Chapter 87 MIDI2 Monitor foundational boundary (2026-08-20)
 
