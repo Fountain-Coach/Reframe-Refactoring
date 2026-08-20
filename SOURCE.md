@@ -5,8 +5,8 @@
 - Change: governance social assets are now direct 1200×630 fits of each chapter's principal reviewed illustration;
   the generator no longer creates a competing branded title-card composition.
 - Claim boundary: publication projection and social metadata only; no external Facebook post is claimed.
-- Link rule: the cache-safe chapter/share URL is the post link, while the direct illustration fit is `og:image` and
-  the uploaded post image.
+- Link rule: the semantic `/chapters/<slug>/` route is the post link and readable chapter, while the direct illustration
+  fit is its `og:image` and uploaded post image. No extra share route is generated.
 - Publishing procedure: `Fountain-Coach/midi2-gpu-fabric@cec70f98` updates the governance publishing skill with this
   principal-illustration rule.
 

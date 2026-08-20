@@ -1044,9 +1044,9 @@ release `release-20260818T055902Z`; overview and Chapter 01 return HTTPS 200.
 additional composition instead of making the chapter's principal reviewed illustration the post illustration.
 
 **Fix:** the generated 1200×630 social asset now derives directly from the principal chapter illustration, preserving
-the artwork on a stable social canvas without a competing title card. The chapter/share URL remains the Facebook link;
-the social asset is its `og:image` and uploaded post image. `og:image:alt` identifies it as the principal reviewed
-illustration.
+the artwork on a stable social canvas without a competing title card. The semantic `/chapters/<slug>/` route remains
+both the Facebook link and the readable chapter; the social asset is its `og:image` and uploaded post image.
+`og:image:alt` identifies it as the principal reviewed illustration. No extra share page is generated.
 
 **Validation:** regenerate the site, verify every illustrated chapter has a 1200×630 derivative whose pixels come from
 the corresponding principal illustration, check canonical/share links and metadata, run governance AX/VRT acceptance,
