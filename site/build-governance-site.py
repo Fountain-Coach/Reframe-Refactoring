@@ -266,6 +266,11 @@ def main() -> None:
         content = f'<article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · {path.stem[:2] if path.stem[:2].isdigit() else "—"}</div><p class="chapter-state"><strong>{html.escape(status["label"])}</strong> · {status_description(status)}</p>{social_link}{markdown_html(path)}</article>'
         target = CHAPTERS / slug(path)
         target.mkdir(exist_ok=True)
+        # A changed principal illustration changes the digest-named share route.
+        # Remove superseded routes so generated output cannot retain stale Facebook targets.
+        chapter_share_root = target / "share"
+        if chapter_share_root.exists():
+            shutil.rmtree(chapter_share_root)
         (target / "index.html").write_text(shell(title, content, current, social_image=social_image,
                                                   pager=chapter_pager(path, files)), encoding="utf-8")
         if social_route:
