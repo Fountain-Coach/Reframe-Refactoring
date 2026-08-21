@@ -1280,3 +1280,18 @@ publication procedure after provenance commits.
 `main`. Guarded release `release-20260821T164502Z-91468` is live at `governance.fountain.coach`; the Chapter 92 page,
 estate stylesheet/script, and principal social image returned HTTPS 200. Live HTML exposes the breadcrumb, persistent
 theme control, published-projection state, and Instruments estate edge.
+
+## Visual correction — governance shell spacing (2026-08-21)
+
+**Governance read record:** Chapters 07 and 08 (bounded site change and independent VRT/AX evidence); Chapter 92 rules
+2, 3, and 10 (shared header, semantic breadcrumbs, readable specialization, and accessibility).
+
+**What they forbid here:** accepting a technically present but visually collapsed estate header or breadcrumb as a
+usable publication contract.
+
+**Conflicts:** none. The correction preserves the minimal line-based visual language while making spacing explicit.
+
+**Excluded, and why:** no content, runtime, domain, or publication-role change; only shared governance shell CSS.
+
+**Validation:** local VRT screenshot inspection, estate validator, `git diff --check`, browser AX/VRT acceptance, and
+guarded HTTPS deployment.
