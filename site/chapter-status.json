@@ -26,6 +26,7 @@
     ,"87-midi2-monitor-is-the-live-event-mirror": {"key": "current", "label": "Current MIDI2 monitor boundary", "description": "The maintained Swift-owned live event mirror between MIDI2 observation, FountainStore proof, AX projection, and independent witnesses."},
     "88-codexkit-is-a-governed-codex-app-server-boundary": {"key": "current", "label": "Current CodexKit boundary", "description": "The proposed reusable Swift boundary for a pinned Codex app-server runtime and its FCIS-KIT, MIDI2, Store, AX, and release evidence."},
     "89-codex-auth-instrument-is-the-copilot-login-surface": {"key": "current", "label": "Current auth-instrument boundary", "description": "The maintained host-facing Codex login boundary: Copilot intent, MIDI2 lifecycle, provider-approved auth projection, Store proof, and AX-visible terminal state."}
-    ,"90-independent-security-review-is-a-separate-acceptance-boundary": {"key": "current", "label": "Current security-review boundary", "description": "The maintained separation between local tests, independent security review, live acceptance, and named-build release for Codex auth."}
+    ,"90-independent-security-review-is-a-separate-acceptance-boundary": {"key": "current", "label": "Current security-review boundary", "description": "The maintained separation between local tests, independent security review, live acceptance, and named-build release for Codex auth."},
+    "91-fcis-kit-instrument-store-is-the-capability-plane": {"key": "current", "label": "Current capability-plane boundary", "description": "The maintained FCIS-KIT Instrument Store architecture: Reframe host, MIDI2 capability contract, scenario-first admission, local/remote instruments, and evidence-bound release."}
   }
 }

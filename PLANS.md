@@ -1206,3 +1206,27 @@ and parity with the integration copy.
 
 **Provenance:** publication commit `Fountain-Coach/Reframe-Refactoring@aea38eb`; integration commit
 `Fountain-Coach/midi2-gpu-fabric@a1a0e7fd`.
+## Current planned change — Chapter 91 FCIS-KIT Instrument Store capability plane (2026-08-21)
+
+**Goal:** publish the FCIS-KIT Instrument Store milestone as a governed architectural authority and add a concise,
+non-destructive organisation-README projection without replacing FCIS RFC 0001.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (AGENTS/PLANS/Skills/MCP orthogonality and phase-sized work); 08 (independent evidence,
+  live acceptance, and claim artifacts); 63 (reusable FCIS-governed Swift kit boundary); 73 (scenario as the
+  reusable development unit); 81 (one universal MIDI2 command plane).
+- **What they forbid here:** treating the README as a second law layer; presenting an instrument catalogue as runtime
+  truth; treating compilation, discovery, or a model response as admission; or collapsing Store, MIDI2, scenario,
+  AX, and independent evidence authorities.
+- **Conflicts:** the proposal describes a broad target ecosystem while current runtime evidence is narrower. The
+  chapter resolves this by separating governed architecture, current evidence, and future implementation; no
+  proposed marketplace or instrument is promoted to released status.
+- **Excluded, and why:** runtime Store implementation, public registry operations, third-party instrument admission,
+  commercial billing, and live acceptance; these require their own implementation and evidence phases.
+
+**Scope:** Chapter 91, deterministic Reframe mock, reading index/status map, synchronized integration projection, and
+the additive Fountain Coach organisation profile README section.
+
+**Validation:** governance generation, route/link/metadata checks, SVG render inspection, `git diff --check`, exact
+publication/integration parity, additive README diff, and local site acceptance where browser tooling is available.
