@@ -77,6 +77,62 @@ The public chapter may link to the review scope and to a later approved report s
 private findings, exploit material, provider account data, Store data, prompts, manuscript material, or an assertion
 that a review exists before the engagement authority and report are actually available.
 
+## An internal adversarial instrument is not a conformity-assessment body
+
+Fountain Coach may operate its own bounded adversarial-security instrument. It may use creative attack generation,
+malformed protocol input, replay, boundary probing, fixture mutation, and other authorized red-team techniques to find
+and reproduce weaknesses. Its MIDI2 and FountainStore receipts can make the internal assessment reproducible and
+valuable for engineering.
+
+That instrument remains **self-assessment**. It is not an independent penetration service, an accredited laboratory,
+a certification body, an EUCC certificate, or an approval authority. Its strongest honest result is:
+
+> internal adversarial assessment executed against the declared scope, with the recorded findings and limitations.
+
+It must not publish “EU-accredited,” “independently penetration-tested,” “secure,” or “release-approved” merely because
+the agent found no issue or because its run was MIDI2-instrumented. A self-operated agent may prepare an external
+engagement; it cannot supply the independence required for that engagement.
+
+## The European legal and notification chain
+
+The governing legal chain is not a Fountain Coach label:
+
+1. [Regulation (EU) 2019/881 (Cybersecurity Act)](https://eur-lex.europa.eu/eli/reg/2019/881/oj) establishes the
+   European cybersecurity certification framework, the national cybersecurity certification authorities, and the
+   notification model.
+2. [Commission Implementing Regulation (EU) 2024/482](https://eur-lex.europa.eu/eli/reg_impl/2024/482/oj) establishes
+   the EU Common Criteria-based cybersecurity certification scheme (EUCC).
+3. [Regulation (EC) No 765/2008](https://eur-lex.europa.eu/eli/reg/2008/765/oj) supplies the EU accreditation framework
+   for conformity-assessment bodies through the national accreditation system.
+4. [ENISA's EU cybersecurity certification framework](https://www.enisa.europa.eu/topics/product-security-and-certification/cybersecurity-certification-framework)
+   explains the scheme and assurance-level boundary; [ENISA's official CAB directory](https://certification.enisa.europa.eu/take-action/find-conformity-assessment-body_en)
+   is the Union-level discovery route.
+5. For a Germany-based engagement, the [BSI list of notified conformity-assessment bodies](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Zertifizierung-und-Anerkennung/Listen/Liste-KBS/liste-KBS_dvl.html)
+   is the operative public register to check before contracting.
+
+The register is the authority. A chapter entry is never proof that a body remains notified, that its scope covers a
+particular product, or that it accepts a particular engagement. Scope, assurance level, independence, validity dates,
+and the intended target of evaluation must be checked in the current register and contract.
+
+For the current German EUCC register, the realistic roles are:
+
+| Body | EUCC role shown by the official German register | Boundary |
+| --- | --- | --- |
+| [Bundesamt für Sicherheit in der Informationstechnik (BSI), EUCC Zertifizierungsstelle](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Zertifizierung-und-Anerkennung/Listen/Liste-KBS/liste-KBS_dvl.html) | notified **Certification Body (CB)**; also Germany's national cybersecurity certification authority (NCCA) role | certification decision and national supervision; not a generic outsourced penetration-test promise |
+| [atsec information security GmbH](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Zertifizierung-und-Anerkennung/Listen/Liste-KBS/liste-KBS_dvl.html) | notified **ITSEF** for EUCC, with the scope and validity shown in the register | technical evaluation only within its current notified scope and engagement |
+| [SRC Security Research & Consulting GmbH](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Zertifizierung-und-Anerkennung/Listen/Liste-KBS/liste-KBS_dvl.html) | notified **ITSEF** for EUCC, with the scope and validity shown in the register | technical evaluation only within its current notified scope and engagement |
+| [TÜV Informationstechnik GmbH](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Zertifizierung-und-Anerkennung/Listen/Liste-KBS/liste-KBS_dvl.html) | notified **ITSEF** for EUCC, with the scope and validity shown in the register | technical evaluation only within its current notified scope and engagement |
+
+These names are candidate conformity-assessment routes, not endorsements or evidence of a Fountain Coach review. The
+current register must be rechecked at procurement time. A provider can also be a competent independent AppSec reviewer
+without being an EUCC body; that engagement may be valuable, but it must not be described as EUCC conformity
+assessment unless the exact scheme, body, scope, and certificate authority all apply.
+
+EUCC is a product-certification route, not a universal macOS application penetration-test label. Whether a Reframe
+build, Codex auth instrument, or MIDI2/Store boundary is an eligible target of evaluation must be confirmed with the
+chosen body. If the requested work is a security review outside EUCC scope, the report must be identified as an
+independent security review—not as an EUCC certificate or Commission accreditation.
+
 ## Findings, remediation, and release
 
 The reviewer’s report is a reviewed input, not an automatic release decision. Every finding receives a Fountain Coach
@@ -118,6 +174,11 @@ Stop rather than claim or promote when:
 - a runtime defect would be inferred without checking the owning implementation;
 - MIDI2, Store, AX, window-ID, provenance, or terminal evidence is missing for a live-acceptance claim; or
 - a named, verified build is missing for a release claim.
+- a self-operated adversarial agent is presented as an independent conformity-assessment body or EU-accredited service;
+- the chosen body's current EUCC notification, technical scope, independence, validity, or certificate authority was
+  not checked in the official register before an EUCC claim; or
+- an EUCC product-certification result is generalized into security assurance for unassessed macOS, WebKit, AX,
+  Keychain/TCC, local IPC, FountainStore, or MIDI2 surfaces.
 
 ## Governing sentence
 

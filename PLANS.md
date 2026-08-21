@@ -1182,3 +1182,24 @@ local fixtures, Apple distribution gates, or a design mock into a security certi
 
 The chapter, principal design mock, and exact integration copy are the governed writing slice. Runtime test
 implementation and external review remain subsequent work.
+## Current planned change — Chapter 90 EU conformity-assessment boundary and internal adversarial instrument (2026-08-21)
+
+**Goal:** append the legally grounded distinction between Fountain Coach's internal adversarial security instrument
+and independent European conformity assessment, naming only bodies and registers whose status is attributable to the
+EUCC notification chain.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (phase planning, source authority, and claim discipline); 08 (independent evidence and
+  claim artifacts); 44 (public/private publication boundary); 90 (separate security-review acceptance boundary).
+- **What they forbid here:** treating a self-operated adversarial agent, local test, Apple platform gate, or vendor
+  service as an independent security review, EU accreditation, live acceptance, or release authority.
+- **Conflicts:** none. The request to name conformity-assessment bodies is bounded by Chapter 90's rule that the
+  engagement and report—not a badge or directory entry—authorise a claim.
+- **Excluded, and why:** no provider engagement, EUCC certification application, runtime instrument implementation,
+  or security claim; those require separate authority and evidence.
+
+**Scope:** Chapter 90, its reading-index description, exact integration mirror, and reciprocal provenance.
+
+**Validation:** official EU/ENISA/BSI links, Markdown/link checks, `git diff --check`, generated governance build,
+and parity with the integration copy.

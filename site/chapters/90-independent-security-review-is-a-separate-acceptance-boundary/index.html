@@ -106,6 +106,57 @@
 </ul>
 <p>Apple notarization and App Store review are valuable platform distribution gates, but they are not a substitute for this engagement. They do not give Fountain Coach a source-level security assessment of its implementation, protocol adapter, local Store boundary, or product-specific authentication flow. Apple’s Security Bounty is likewise a channel for vulnerabilities in Apple products and services, not a review service for Fountain Coach.</p>
 <p>The public chapter may link to the review scope and to a later approved report summary. It must not publish credentials, private findings, exploit material, provider account data, Store data, prompts, manuscript material, or an assertion that a review exists before the engagement authority and report are actually available.</p>
+<h2 id="an-internal-adversarial-instrument-is-not-a-conformity-assessment-body">An internal adversarial instrument is not a conformity-assessment body</h2>
+<p>Fountain Coach may operate its own bounded adversarial-security instrument. It may use creative attack generation, malformed protocol input, replay, boundary probing, fixture mutation, and other authorized red-team techniques to find and reproduce weaknesses. Its MIDI2 and FountainStore receipts can make the internal assessment reproducible and valuable for engineering.</p>
+<p>That instrument remains <strong>self-assessment</strong>. It is not an independent penetration service, an accredited laboratory, a certification body, an EUCC certificate, or an approval authority. Its strongest honest result is:</p>
+<blockquote>
+<p>internal adversarial assessment executed against the declared scope, with the recorded findings and limitations.</p>
+</blockquote>
+<p>It must not publish “EU-accredited,” “independently penetration-tested,” “secure,” or “release-approved” merely because the agent found no issue or because its run was MIDI2-instrumented. A self-operated agent may prepare an external engagement; it cannot supply the independence required for that engagement.</p>
+<h2 id="the-european-legal-and-notification-chain">The European legal and notification chain</h2>
+<p>The governing legal chain is not a Fountain Coach label:</p>
+<ol type="1">
+<li><a href="https://eur-lex.europa.eu/eli/reg/2019/881/oj">Regulation (EU) 2019/881 (Cybersecurity Act)</a> establishes the European cybersecurity certification framework, the national cybersecurity certification authorities, and the notification model.</li>
+<li><a href="https://eur-lex.europa.eu/eli/reg_impl/2024/482/oj">Commission Implementing Regulation (EU) 2024/482</a> establishes the EU Common Criteria-based cybersecurity certification scheme (EUCC).</li>
+<li><a href="https://eur-lex.europa.eu/eli/reg/2008/765/oj">Regulation (EC) No 765/2008</a> supplies the EU accreditation framework for conformity-assessment bodies through the national accreditation system.</li>
+<li><a href="https://www.enisa.europa.eu/topics/product-security-and-certification/cybersecurity-certification-framework">ENISA's EU cybersecurity certification framework</a> explains the scheme and assurance-level boundary; <a href="https://certification.enisa.europa.eu/take-action/find-conformity-assessment-body_en">ENISA's official CAB directory</a> is the Union-level discovery route.</li>
+<li>For a Germany-based engagement, the <a href="https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Zertifizierung-und-Anerkennung/Listen/Liste-KBS/liste-KBS_dvl.html">BSI list of notified conformity-assessment bodies</a> is the operative public register to check before contracting.</li>
+</ol>
+<p>The register is the authority. A chapter entry is never proof that a body remains notified, that its scope covers a particular product, or that it accepts a particular engagement. Scope, assurance level, independence, validity dates, and the intended target of evaluation must be checked in the current register and contract.</p>
+<p>For the current German EUCC register, the realistic roles are:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Body</th>
+<th>EUCC role shown by the official German register</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Zertifizierung-und-Anerkennung/Listen/Liste-KBS/liste-KBS_dvl.html">Bundesamt für Sicherheit in der Informationstechnik (BSI), EUCC Zertifizierungsstelle</a></td>
+<td>notified <strong>Certification Body (CB)</strong>; also Germany's national cybersecurity certification authority (NCCA) role</td>
+<td>certification decision and national supervision; not a generic outsourced penetration-test promise</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Zertifizierung-und-Anerkennung/Listen/Liste-KBS/liste-KBS_dvl.html">atsec information security GmbH</a></td>
+<td>notified <strong>ITSEF</strong> for EUCC, with the scope and validity shown in the register</td>
+<td>technical evaluation only within its current notified scope and engagement</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Zertifizierung-und-Anerkennung/Listen/Liste-KBS/liste-KBS_dvl.html">SRC Security Research &amp; Consulting GmbH</a></td>
+<td>notified <strong>ITSEF</strong> for EUCC, with the scope and validity shown in the register</td>
+<td>technical evaluation only within its current notified scope and engagement</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Zertifizierung-und-Anerkennung/Listen/Liste-KBS/liste-KBS_dvl.html">TÜV Informationstechnik GmbH</a></td>
+<td>notified <strong>ITSEF</strong> for EUCC, with the scope and validity shown in the register</td>
+<td>technical evaluation only within its current notified scope and engagement</td>
+</tr>
+</tbody>
+</table>
+<p>These names are candidate conformity-assessment routes, not endorsements or evidence of a Fountain Coach review. The current register must be rechecked at procurement time. A provider can also be a competent independent AppSec reviewer without being an EUCC body; that engagement may be valuable, but it must not be described as EUCC conformity assessment unless the exact scheme, body, scope, and certificate authority all apply.</p>
+<p>EUCC is a product-certification route, not a universal macOS application penetration-test label. Whether a Reframe build, Codex auth instrument, or MIDI2/Store boundary is an eligible target of evaluation must be confirmed with the chosen body. If the requested work is a security review outside EUCC scope, the report must be identified as an independent security review—not as an EUCC certificate or Commission accreditation.</p>
 <h2 id="findings-remediation-and-release">Findings, remediation, and release</h2>
 <p>The reviewer’s report is a reviewed input, not an automatic release decision. Every finding receives a Fountain Coach owner, severity and disposition, remediation or documented risk acceptance, and a retest or rationale. A public claim must identify the report or approved summary that authorizes it without exposing private material.</p>
 <p>The status vocabulary remains strict:</p>
@@ -126,6 +177,9 @@
 <li>a runtime defect would be inferred without checking the owning implementation;</li>
 <li>MIDI2, Store, AX, window-ID, provenance, or terminal evidence is missing for a live-acceptance claim; or</li>
 <li>a named, verified build is missing for a release claim.</li>
+<li>a self-operated adversarial agent is presented as an independent conformity-assessment body or EU-accredited service;</li>
+<li>the chosen body's current EUCC notification, technical scope, independence, validity, or certificate authority was not checked in the official register before an EUCC claim; or</li>
+<li>an EUCC product-certification result is generalized into security assurance for unassessed macOS, WebKit, AX, Keychain/TCC, local IPC, FountainStore, or MIDI2 surfaces.</li>
 </ul>
 <h2 id="governing-sentence">Governing sentence</h2>
 <p>Fountain Coach treats independent security review as its own acceptance boundary: local fixtures prepare the question, the reviewer assesses the agreed security scope, FountainStore/AX/MIDI2 prove Reframe behavior, and only the owning release authority may turn those separate witnesses into a public named-build claim.</p>
