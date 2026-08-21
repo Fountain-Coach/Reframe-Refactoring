@@ -1258,3 +1258,20 @@ HTTPS promotion check pass.
 integration commit `4cee3c4acfed8917ed02dc5342233968577fb5ed` were pushed to `main`. Guarded release
 `release-20260821T162715Z-88206` is live at `governance.fountain.coach`; the root, status page, Chapter 92 route,
 deterministic illustration, and social image returned HTTPS 200.
+
+## Implementation — Chapter 92 estate contract enforcement (2026-08-21)
+
+**Governance read record:** Chapters 07 and 08 (bounded implementation and independent evidence); Chapter 92 rules
+1–7 (shared identity/template, semantic edges, graph CI, claim boundaries, and private-source safety).
+
+**What they forbid here:** treating a site-local green build as estate compliance, using a social image route as the
+share destination, or presenting sibling links as evidence of release or acceptance.
+
+**Conflicts:** none. The existing social-publish `/share/` guidance contradicted Chapter 92 and was corrected.
+
+**Excluded, and why:** no runtime, DNS, domain migration, or sibling-site content migration; this slice adds reusable
+skill guidance, deterministic contract validation, and governance-template enforcement only.
+
+**Validation:** skill quick-validation, Python compilation, generated-site build, 101-page estate contract validator,
+`git diff --check`, and independent light/dark/mobile browser acceptance. Deployment follows the guarded governance
+publication procedure after provenance commits.

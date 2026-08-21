@@ -1,4 +1,24 @@
 (() => {
+  const root = document.documentElement;
+  const themeButton = document.querySelector('[data-theme-toggle]');
+  const savedTheme = window.localStorage.getItem('fountain-coach-theme');
+  const setTheme = (theme) => {
+    if (theme === 'light' || theme === 'dark') root.dataset.theme = theme;
+    else delete root.dataset.theme;
+    if (themeButton) {
+      themeButton.textContent = `Theme: ${theme || 'system'}`;
+      themeButton.setAttribute('aria-pressed', theme !== 'system' ? 'true' : 'false');
+    }
+  };
+  setTheme(savedTheme || 'system');
+  themeButton?.addEventListener('click', () => {
+    const current = root.dataset.theme || 'system';
+    const next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
+    if (next === 'system') window.localStorage.removeItem('fountain-coach-theme');
+    else window.localStorage.setItem('fountain-coach-theme', next);
+    setTheme(next);
+  });
+
   const button = document.querySelector('[data-menu-button]');
   const nav = document.querySelector('[data-chapter-nav]');
   if (!button || !nav) return;

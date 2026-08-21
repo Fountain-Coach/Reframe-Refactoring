@@ -30,6 +30,7 @@ LEGAL_ROUTES = {
     "copyright": ("Copyright", "copyright.md"),
     "compliance": ("EU compliance scope", "compliance.md"),
 }
+DEFAULT_SOCIAL_IMAGE = "/assets/social/92-fountain-coach-publication-estate-3682394af134.jpg"
 
 
 def title_for(path: Path) -> str:
@@ -142,6 +143,7 @@ def chapter_pager(path: Path, files: list[Path]) -> str:
 def shell(page_title: str, content: str, active: str = "", canonical: str | None = None,
           social_image: str | None = None, pager: str = "") -> str:
     canonical = canonical or active
+    social_image = social_image or DEFAULT_SOCIAL_IMAGE
     home_active = ' active' if active == '/' else ''
     home_current = ' aria-current="page"' if active == '/' else ''
     status_active = ' active' if active == '/status-quo/' else ''
@@ -152,12 +154,10 @@ def shell(page_title: str, content: str, active: str = "", canonical: str | None
         "name": page_title,
         "url": f"https://governance.fountain.coach{canonical}",
         "isPartOf": {"@type": "Book", "name": "Reframe Governance", "url": "https://governance.fountain.coach/"},
-        "publisher": {"@type": "Organization", "name": "Fountain Coach", "url": "https://fountain.coach/"},
+        "publisher": {"@type": "Organization", "name": "Fountain Coach", "url": "https://fountain.coach/", "logo": "https://fountain.coach/assets/fountain-coach-logo.png"},
     })
-    social_tags = ""
-    if social_image:
-        social_url = f"https://governance.fountain.coach{social_image}"
-        social_tags = f'''\n  <meta property="og:type" content="article">\n  <meta property="og:title" content="{html.escape(page_title)}">\n  <meta property="og:url" content="https://governance.fountain.coach{canonical}">\n  <meta property="og:image" content="{social_url}">\n  <meta property="og:image:alt" content="Principal reviewed illustration for {html.escape(page_title)}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="{social_url}">'''
+    social_url = f"https://governance.fountain.coach{social_image}"
+    social_tags = f'''\n  <meta property="og:type" content="article">\n  <meta property="og:title" content="{html.escape(page_title)}">\n  <meta property="og:url" content="https://governance.fountain.coach{canonical}">\n  <meta property="og:image" content="{social_url}">\n  <meta property="og:image:alt" content="Fountain Coach publication estate illustration for {html.escape(page_title)}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="{social_url}">'''
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -166,6 +166,7 @@ def shell(page_title: str, content: str, active: str = "", canonical: str | None
   <meta name="color-scheme" content="light dark">
   <title>{html.escape(page_title)} — Reframe Governance</title>
   <meta name="description" content="The public Reframe Governance book: reviewed architectural doctrine, validation rules, and publication boundaries.">
+  <meta name="fountain:publication-role" content="Rules and authority">
   <link rel="icon" type="image/png" href="/assets/fountain-coach-logo-transparent.png">
   <link rel="apple-touch-icon" href="/assets/fountain-coach-logo-transparent.png">
   <link rel="canonical" href="https://governance.fountain.coach{canonical}">
@@ -175,10 +176,10 @@ def shell(page_title: str, content: str, active: str = "", canonical: str | None
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to chapter</a>
-  <header class="topbar"><a class="wordmark" href="/"><img class="wordmark-logo" src="/assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>REFRAME <small>GOVERNANCE BOOK</small></span></a><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></header>
+  <header class="topbar"><a class="wordmark" href="https://fountain.coach/" aria-label="Fountain Coach home"><img class="wordmark-logo" src="/assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>FOUNTAIN COACH <small>GOVERNANCE · RULES AND AUTHORITY</small></span></a><nav class="estate-nav" aria-label="Fountain Coach publications"><a href="https://fountain.coach/">Estate</a><a href="https://book.fountain.coach/">Book</a><a href="https://governance.fountain.coach/" aria-current="page">Governance</a><a href="https://instruments.fountain.coach/">Instruments</a><a href="https://status.fountain.coach/">Status</a></nav><div class="topbar-actions"><button class="theme-button" type="button" data-theme-toggle aria-pressed="false">Theme: system</button><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></div></header>
   <div class="workspace">
     <nav class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home{home_active}" href="/"{home_current}>Governance overview</a><a class="rail-status{status_active}" href="/status-quo/"{status_current}>Current status</a>{chapter_nav(active)}</nav>
-    <main id="main" class="chapter-canvas"><div class="canvas-kicker">FCIS · REFRAME REFACTORING · PUBLIC PROJECTION</div>{pager}{content}<footer class="footer"><a href="/">Reframe Governance</a><span>Source: <a href="/status-quo/">reviewed governance projection</a></span><span><a href="/legal/">Legal notices</a> · <a href="/privacy/">Privacy</a> · <a href="/accessibility/">Accessibility</a> · <a href="/copyright/">Copyright</a> · <a href="/compliance/">EU compliance</a></span><span>Public projection · implementation truth remains in the governed runtime</span></footer></main>
+    <main id="main" class="chapter-canvas"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://fountain.coach/">Fountain Coach</a><span aria-hidden="true">›</span><a href="https://governance.fountain.coach/">Governance</a><span aria-hidden="true">›</span><span aria-current="page">{html.escape(page_title)}</span></nav><div class="canvas-kicker"><span>FCIS · REFRAME REFACTORING · <span class="publication-state">PUBLISHED PROJECTION</span></span></div>{pager}{content}<footer class="footer"><div class="footer-estate"><strong>Fountain Coach publication estate</strong><a href="https://fountain.coach/">Identity</a><a href="https://book.fountain.coach/">Book · human reference</a><a href="https://governance.fountain.coach/">Governance · rules and authority</a><a href="https://instruments.fountain.coach/">Instruments · MIDI2 catalog</a><a href="https://status.fountain.coach/">Status · company and legal context</a></div><div class="footer-legal"><a href="/legal/">Legal notices</a><a href="/privacy/">Privacy</a><a href="/accessibility/">Accessibility</a><a href="/copyright/">Copyright</a><a href="/compliance/">EU compliance</a><a href="/status-quo/">Source and provenance</a></div><span>Public projection · governance establishes doctrine, not runtime state or live acceptance.</span></footer></main>
   </div>
   <script src="/assets/governance.js" defer></script>
 </body>
