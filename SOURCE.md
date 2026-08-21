@@ -1,5 +1,17 @@
 # Source and Synchronization Contract
 
+## Current synchronized change — Chapter 92 Fountain Coach publication estate (2026-08-21)
+
+- Change: Chapter 92 defines semantic roles for the TLD and specialized subdomains, a shared publication-template
+  contract, cross-domain authority links, and CI/deployment gates, with a deterministic SVG design mock.
+- Direction: publication → integration through `Scripts/sync-integration-copy --push`.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@9da9b59`.
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@4cee3c4a`.
+- Claim boundary: governance and publication-template proposal only; the SVG is explicitly `DESIGN MOCK · NOT LIVE
+  EVIDENCE`, and this chapter does not claim that every domain or CI gate has already converged.
+- Production result: release `release-20260821T162715Z-88206` is live at `governance.fountain.coach`; the root,
+  status page, Chapter 92 route, illustration, and social image returned HTTPS 200.
+
 ## Current synchronized change — Chapter 90 EU conformity-assessment boundary (2026-08-21)
 
 - Change: Chapter 90 now distinguishes Fountain Coach's internal adversarial instrument from independent security

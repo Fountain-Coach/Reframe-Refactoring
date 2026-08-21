@@ -1244,8 +1244,8 @@ subdomains, with a shared template contract and CI publication gates.
   authority, or publishing private source, Store data, credentials, or fabricated acceptance evidence.
 - **Conflicts:** none. The writer request asks for a local governance proposal; Chapter 84 requires the illustration to
   remain a deterministic, visibly labeled design reference.
-- **Excluded, and why:** no deployment, CI implementation, domain migration, runtime change, or live acceptance claim;
-  those require a reviewed implementation phase after this chapter receives GO.
+- **Excluded from the chapter implementation:** no CI implementation, domain migration, runtime change, or live
+  acceptance claim; those require a reviewed implementation phase after this chapter receives GO.
 
 **Scope:** Chapter 92, reading-index/status-map entries, deterministic publication-estate SVG, generated local site,
 and localhost presentation only.
@@ -1253,3 +1253,8 @@ and localhost presentation only.
 **Validation:** governance site generation, route/link/metadata checks, SVG inspection, `git diff --check`, and local
 browser acceptance where available. Deployment is authorized only after publication/integration parity and the guarded
 HTTPS promotion check pass.
+
+**Publication result (2026-08-21):** publication commit `9da9b5934034c59e8ace2e6416841add860dec06` and synchronized
+integration commit `4cee3c4acfed8917ed02dc5342233968577fb5ed` were pushed to `main`. Guarded release
+`release-20260821T162715Z-88206` is live at `governance.fountain.coach`; the root, status page, Chapter 92 route,
+deterministic illustration, and social image returned HTTPS 200.
