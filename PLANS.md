@@ -1275,3 +1275,8 @@ skill guidance, deterministic contract validation, and governance-template enfor
 **Validation:** skill quick-validation, Python compilation, generated-site build, 101-page estate contract validator,
 `git diff --check`, and independent light/dark/mobile browser acceptance. Deployment follows the guarded governance
 publication procedure after provenance commits.
+
+**Publication result (2026-08-21):** Governance commit `b1225f9` and integration skill commit `a26fc781` are pushed to
+`main`. Guarded release `release-20260821T164502Z-91468` is live at `governance.fountain.coach`; the Chapter 92 page,
+estate stylesheet/script, and principal social image returned HTTPS 200. Live HTML exposes the breadcrumb, persistent
+theme control, published-projection state, and Instruments estate edge.
