@@ -1164,3 +1164,21 @@ governance projection, and stop at localhost for proofreading.
 
 **Claim boundary:** the chapter and SVG govern a proposed surface. They do not prove that a WebKit view, Codex login,
 MIDI2 event stream, Store receipt, AX state, or released build exists.
+## Current bounded change — Chapter 90 independent security review boundary (2026-08-21)
+
+**Goal:** govern the missing independent-security-review scenarios for the Codex auth instrument without promoting
+local fixtures, Apple distribution gates, or a design mock into a security certification.
+
+- **Chapters read** — 07 (bounded work and explicit stop conditions); 08 (independent witnesses and acceptance); 43
+  (named-release boundary); 44 (public/private publication); 63 (reusable-kit evidence); 88 (CodexKit boundary); 89
+  (host auth instrument and credential boundary).
+- **What this chapter forbids** — calling a fixture run a real-provider review, treating notarization or App Store
+  review as source-code assurance, exposing credentials, or promoting executable/live-accepted evidence into released
+  security.
+- **Authorities** — Apple distribution security remains a platform gate; an independent review is commissioned from a
+  qualified security-testing provider; Fountain Coach retains product release authority.
+- **Excluded, and why** — vendor engagement, provider authorization, credentials, and a security certification are
+  external decisions and are not invented by this publication slice.
+
+The chapter, principal design mock, and exact integration copy are the governed writing slice. Runtime test
+implementation and external review remain subsequent work.
