@@ -1230,3 +1230,26 @@ the additive Fountain Coach organisation profile README section.
 
 **Validation:** governance generation, route/link/metadata checks, SVG render inspection, `git diff --check`, exact
 publication/integration parity, additive README diff, and local site acceptance where browser tooling is available.
+## Current planned change — Chapter 92 Fountain Coach publication estate (2026-08-21)
+
+**Goal:** establish a governance chapter for the semantic relationship between `fountain.coach` and its specialized
+subdomains, with a shared template contract and CI publication gates.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (planning discipline and repository hygiene); 08 (independent visual/behavioral evidence and
+  claim artifacts); 44 (public/private publication boundary); 80 (independent governance publication contract); 84
+  (deterministic design-mock boundary and explicit non-evidence label).
+- **What they forbid here:** presenting a cross-domain mock as live integration, treating shared templates as runtime
+  authority, or publishing private source, Store data, credentials, or fabricated acceptance evidence.
+- **Conflicts:** none. The writer request asks for a local governance proposal; Chapter 84 requires the illustration to
+  remain a deterministic, visibly labeled design reference.
+- **Excluded, and why:** no deployment, CI implementation, domain migration, runtime change, or live acceptance claim;
+  those require a reviewed implementation phase after this chapter receives GO.
+
+**Scope:** Chapter 92, reading-index/status-map entries, deterministic publication-estate SVG, generated local site,
+and localhost presentation only.
+
+**Validation:** governance site generation, route/link/metadata checks, SVG inspection, `git diff --check`, and local
+browser acceptance where available. Deployment is authorized only after publication/integration parity and the guarded
+HTTPS promotion check pass.
