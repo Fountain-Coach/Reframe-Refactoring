@@ -1,5 +1,15 @@
 # Source and Synchronization Contract
 
+## Current synchronized change — Chapter 92 estate contract enforcement (2026-08-21)
+
+- Change: the publication template now exposes estate navigation, breadcrumbs, publication state, persistent theme
+  control, canonical metadata, sibling/legal/provenance footer links, and the shared contract is enforced by a
+  deterministic validator in the integration skill bundle.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@98700ae`.
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@a89d7576`.
+- Claim boundary: template and publication-gate enforcement only; cross-domain links do not establish sibling release,
+  admission, security, legal status, runtime truth, or live acceptance.
+
 ## Current synchronized change — Chapter 92 Fountain Coach publication estate (2026-08-21)
 
 - Change: Chapter 92 defines semantic roles for the TLD and specialized subdomains, a shared publication-template
