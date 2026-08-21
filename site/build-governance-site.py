@@ -31,6 +31,7 @@ LEGAL_ROUTES = {
     "compliance": ("EU compliance scope", "compliance.md"),
 }
 DEFAULT_SOCIAL_IMAGE = "/assets/social/92-fountain-coach-publication-estate-3682394af134.jpg"
+DEFAULT_SOCIAL_IMAGE_NAME = "fountain-coach-governance-estate.jpg"
 
 
 def title_for(path: Path) -> str:
@@ -46,6 +47,10 @@ def chapter_files() -> list[Path]:
         (path for path in DOCS.glob("*.md") if path.name not in {"README.md"} and not path.name.startswith("._")),
         key=lambda path: (int(path.name[:2]) if path.name[:2].isdigit() else 999, path.name),
     )
+
+
+def is_numbered_chapter(path: Path) -> bool:
+    return path.name[:2].isdigit()
 
 
 def slug(path: Path) -> str:
@@ -103,6 +108,18 @@ def build_social_illustration(path: Path, title: str) -> str | None:
     return f"/assets/social/{versioned.name}"
 
 
+def build_default_social_image() -> str:
+    """Create one neutral estate image for pages without a principal illustration."""
+    SOCIAL_ASSETS.mkdir(parents=True, exist_ok=True)
+    destination = SOCIAL_ASSETS / DEFAULT_SOCIAL_IMAGE_NAME
+    subprocess.run([
+        "magick", str(LOGO), "-background", "#f6f8f9", "-alpha", "background",
+        "-resize", "420x420", "-gravity", "center", "-extent", "1200x630",
+        "-strip", "-quality", "92", str(destination),
+    ], check=True)
+    return f"/assets/social/{destination.name}"
+
+
 def markdown_html(path: Path) -> str:
     result = subprocess.run(
         ["pandoc", "--from=gfm", "--to=html", "--wrap=none", str(path)],
@@ -129,21 +146,27 @@ def chapter_pager(path: Path, files: list[Path]) -> str:
     index = files.index(path)
     previous = files[index - 1] if index else None
     following = files[index + 1] if index + 1 < len(files) else None
+    numbered = [candidate for candidate in files if is_numbered_chapter(candidate)]
+    numeric_position = numbered.index(path) + 1 if is_numbered_chapter(path) else None
+    numeric_total = len(numbered)
+    following_is_reference = following is not None and not is_numbered_chapter(following)
     previous_link = (f'<a class="chapter-pager-link" data-chapter-prev rel="prev" href="/chapters/{slug(previous)}/" '
                     f'aria-label="Previous chapter: {html.escape(title_for(previous))}">'
                     f'<span aria-hidden="true">←</span><span><small>PREVIOUS CHAPTER</small>{html.escape(title_for(previous))}</span></a>'
                     if previous else '<span class="chapter-pager-link chapter-pager-disabled" aria-hidden="true"><span>←</span><span><small>PREVIOUS CHAPTER</small>Beginning of book</span></span>')
     next_link = (f'<a class="chapter-pager-link chapter-pager-next" data-chapter-next rel="next" href="/chapters/{slug(following)}/" '
-                 f'aria-label="Next chapter: {html.escape(title_for(following))}"><span><small>NEXT CHAPTER</small>{html.escape(title_for(following))}</span><span aria-hidden="true">→</span></a>'
+                 f'aria-label="Next {"reference route" if following_is_reference else "chapter"}: {html.escape(title_for(following))}"><span><small>{"NEXT REFERENCE" if following_is_reference else "NEXT CHAPTER"}</small>{html.escape(title_for(following))}</span><span aria-hidden="true">→</span></a>'
                  if following else '<span class="chapter-pager-link chapter-pager-disabled chapter-pager-next" aria-hidden="true"><span><small>NEXT CHAPTER</small>End of book</span><span>→</span></span>')
+    position = f'CHAPTER {numeric_position} OF {numeric_total}' if numeric_position else 'REFERENCE ROUTE'
     return (f'<nav class="chapter-pager" data-chapter-pager aria-label="Chapter navigation">'
-            f'{previous_link}<span class="chapter-pager-position">CHAPTER {index + 1} OF {len(files)}</span>{next_link}</nav>')
+            f'{previous_link}<span class="chapter-pager-position">{position}</span>{next_link}</nav>')
 
 
 def shell(page_title: str, content: str, active: str = "", canonical: str | None = None,
-          social_image: str | None = None, pager: str = "") -> str:
+          social_image: str | None = None, pager: str = "", description: str | None = None) -> str:
     canonical = canonical or active
     social_image = social_image or DEFAULT_SOCIAL_IMAGE
+    description = description or f"{page_title}: public Reframe Governance publication projection, with reviewed doctrine, boundaries, and provenance."
     home_active = ' active' if active == '/' else ''
     home_current = ' aria-current="page"' if active == '/' else ''
     status_active = ' active' if active == '/status-quo/' else ''
@@ -165,7 +188,7 @@ def shell(page_title: str, content: str, active: str = "", canonical: str | None
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>{html.escape(page_title)} — Reframe Governance</title>
-  <meta name="description" content="The public Reframe Governance book: reviewed architectural doctrine, validation rules, and publication boundaries.">
+  <meta name="description" content="{html.escape(description)}">
   <meta name="fountain:publication-role" content="Rules and authority">
   <link rel="icon" type="image/png" href="/assets/fountain-coach-logo-transparent.png">
   <link rel="apple-touch-icon" href="/assets/fountain-coach-logo-transparent.png">
@@ -242,10 +265,14 @@ def main() -> None:
     status_content = markdown_html(SITE_CONTENT / "status-quo.md")
     landing_status_content = re.sub(r"<h1[^>]*>.*?</h1>", "", status_content, count=1, flags=re.DOTALL)
     overview = f'''<section class="overview"><div class="eyebrow">PUBLIC FCIS PROJECTION · STATUS QUO</div><h1>Reframe Governance</h1>{landing_status_content}<p class="landing-note"><a href="/status-quo/">Open the stable status-quo page</a> · <a href="#index-title">Browse every retained chapter</a></p></section><section class="chapter-index" aria-labelledby="index-title"><div class="section-label">CHAPTER INDEX</div><h2 id="index-title">Read by chapter.</h2><p class="muted">Every chapter remains available. Labels describe its relationship to the current operating position; they do not erase the historical record.</p><div class="index-grid">{index_items}</div></section>'''
-    (ROOT / "index.html").write_text(shell("Reframe Governance", overview, "/"), encoding="utf-8")
+    default_social_image = build_default_social_image()
+    (ROOT / "index.html").write_text(shell("Reframe Governance", overview, "/", social_image=default_social_image,
+                                             description="Reframe Governance: the public Fountain Coach authority for reviewed doctrine, validation rules, and publication boundaries."), encoding="utf-8")
     status_page = f'<article class="status-quo-page"><div class="chapter-meta">PUBLICATION STATUS · CURRENT POSITION</div>{status_content}<p class="status-disclaimer">This page is a navigational status statement, not a replacement for the governed chapters or runtime evidence.</p></article>'
     (ROOT / "status-quo").mkdir(exist_ok=True)
-    (ROOT / "status-quo" / "index.html").write_text(shell("Current Reframe Governance Status", status_page, "/status-quo/"), encoding="utf-8")
+    (ROOT / "status-quo" / "index.html").write_text(shell("Current Reframe Governance Status", status_page, "/status-quo/",
+                                                         social_image=default_social_image,
+                                                         description="Current Reframe Governance status: the maintained public operating position and provenance boundary."), encoding="utf-8")
     for path in files:
         current = f"/chapters/{slug(path)}/"
         status = chapter_status(path)
@@ -262,14 +289,16 @@ def main() -> None:
         chapter_share_root = target / "share"
         if chapter_share_root.exists():
             shutil.rmtree(chapter_share_root)
-        (target / "index.html").write_text(shell(title, content, current, social_image=social_image,
-                                                  pager=chapter_pager(path, files)), encoding="utf-8")
+        (target / "index.html").write_text(shell(title, content, current, social_image=social_image or default_social_image,
+                                                  pager=chapter_pager(path, files),
+                                                  description=f"{title}: reviewed Reframe Governance chapter and public publication boundary."), encoding="utf-8")
     for route, title, path in legal_files():
         current = f"/{route}/"
         content = f'<article class="legal-page"><div class="chapter-meta">PUBLICATION POLICY · {route.upper()}</div>{markdown_html(path)}</article>'
         target = ROOT / route
         target.mkdir(exist_ok=True)
-        (target / "index.html").write_text(shell(title, content, current), encoding="utf-8")
+        (target / "index.html").write_text(shell(title, content, current, social_image=default_social_image,
+                                                  description=f"{title}: Reframe Governance publication policy and public claim boundary."), encoding="utf-8")
     for sidecar in ROOT.rglob("._*"):
         if sidecar.is_file() or sidecar.is_symlink():
             sidecar.unlink()
