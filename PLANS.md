@@ -1203,3 +1203,6 @@ EUCC notification chain.
 
 **Validation:** official EU/ENISA/BSI links, Markdown/link checks, `git diff --check`, generated governance build,
 and parity with the integration copy.
+
+**Provenance:** publication commit `Fountain-Coach/Reframe-Refactoring@aea38eb`; integration commit
+`Fountain-Coach/midi2-gpu-fabric@a1a0e7fd`.

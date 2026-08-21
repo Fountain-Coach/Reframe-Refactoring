@@ -1,5 +1,15 @@
 # Source and Synchronization Contract
 
+## Current synchronized change — Chapter 90 EU conformity-assessment boundary (2026-08-21)
+
+- Change: Chapter 90 now distinguishes Fountain Coach's internal adversarial instrument from independent security
+  review and EUCC conformity assessment, and routes procurement to the official EU/ENISA/BSI authorities.
+- Direction: publication → integration through `Scripts/sync-integration-copy --push`.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@aea38eb`.
+- Integration commit: `Fountain-Coach/midi2-gpu-fabric@a1a0e7fd`.
+- Claim boundary: governance only; no EUCC certification, independent review, provider engagement, or security claim
+  is established by this publication.
+
 ## Current planned change — Principal illustration is the Facebook post image (2026-08-20)
 
 - Change: governance social assets are now direct 1200×630 fits of each chapter's principal reviewed illustration;
