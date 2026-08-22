@@ -1295,3 +1295,24 @@ usable publication contract.
 
 **Validation:** local VRT screenshot inspection, estate validator, `git diff --check`, browser AX/VRT acceptance, and
 guarded HTTPS deployment.
+## Current planned change — Chapter 93 instrument creation governance (2026-08-22)
+
+**Goal:** define instrument creation as a generic governed promotion path rather than a catalog-only operation or a
+workflow tied to one example instrument.
+
+**Scope:** `docs/93-instrument-creation-is-a-governed-promotion-path.md`, the reading-index path and catalogue entry,
+`site/chapter-status.json`, the exact integration mirror under
+`apps/modernization-studio/docs/reframe-grounding-first-refactor/`, generated local governance routes, and local
+acceptance evidence.
+
+**Governing sources:** Chapters 07, 08, 43, 44, 68, 73, 77, 78, 81, 89, 90, 91, and 92. Chapter 91 establishes
+the FCIS-KIT capability plane and scenario-first admission; Chapter 92 establishes the publication-estate and CI
+boundary. Chapter 93 turns those existing decisions into the reusable creation/promotion contract.
+
+**Claim boundary:** this preview establishes a reviewed governance draft and generated local projection only. It does
+not establish that any specific instrument is implemented, live-accepted, released, hardware-interoperable, or
+published in production.
+
+**Validation:** generator output, route/index/status-map checks, `git diff --check`, local broken-link and metadata
+checks, and independent governance site acceptance where browser tooling is available. Deployment and commit remain
+separate approval steps.

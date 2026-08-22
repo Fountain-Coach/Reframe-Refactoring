@@ -90,6 +90,14 @@ and [scenario run ownership and non-interference](75-scenario-run-ownership-and-
 when a live scenario is being driven, resumed, interrupted, diagnosed, or promoted. The runner owns terminal
 classification; intermediate observations do not establish failure; and any unrecorded intervention invalidates the run.
 
+### Instrument creation, kit promotion, or capability publication
+
+Read [the FCIS-KIT Instrument Store](91-fcis-kit-instrument-store-is-the-capability-plane.md), [instrument creation](93-instrument-creation-is-a-governed-promotion-path.md),
+[the Reframe scenario development cycle](73-reframe-scenario-development-cycle.md), and [validation and acceptance](08-validation-and-acceptance.md).
+Use this path when creating, extracting, releasing, consuming, admitting, or publishing any bounded instrument.
+The instrument-creation chapter is the generic governance contract; the agent skill with the same semantic role is
+the procedure that applies it. A particular instrument is an instance, not the workflow definition.
+
 ## Chapter catalogue
 
 | Chapter | Purpose |
@@ -185,6 +193,7 @@ classification; intermediate observations do not establish failure; and any unre
 | [Independent Security Review Is a Separate Acceptance Boundary](90-independent-security-review-is-a-separate-acceptance-boundary.md) | Separates local fixture and boundary tests, the internal adversarial instrument, independent security review, European conformity-assessment routes, Reframe live acceptance, and named-build release; defines the public/private boundary, evidence states, and stop conditions for the Codex auth instrument. |
 | [The FCIS-KIT Instrument Store Is the Capability Plane](91-fcis-kit-instrument-store-is-the-capability-plane.md) | Defines the governed capability distribution model: Reframe as host, FCIS-KIT as construction and admission boundary, MIDI2 as operational language, scenario-first creation, local/remote instruments, evidence lineage, and the boundary between architectural milestone and released marketplace. |
 | [Fountain Coach Publication Estate](92-fountain-coach-publication-estate.md) | Defines the semantic relationship between the TLD and specialized subdomains, the shared publication-template contract, cross-domain authority edges, and CI/deployment gates. |
+| [Instrument Creation Is a Governed Promotion Path](93-instrument-creation-is-a-governed-promotion-path.md) | Defines the generic scenario-first lifecycle for creating, testing, admitting, releasing, consuming, and publishing any bounded Fountain Coach instrument; examples remain instances of the workflow. |
 ## Vocabulary
 
 **Canonical source** means the imported manuscript stored under the source document identity. It is evidence, not a work surface for generated analysis.

@@ -28,3 +28,7 @@ html[data-theme="dark"] { color-scheme:dark; --ink:#e8edf2; --muted:#9ba7b3; --p
 .chapter-state { padding:.7rem .9rem; border-left:3px solid var(--green); background:var(--panel); color:var(--muted); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:.9rem; }
 .status-quo-page { max-width:68rem; padding:2.5rem 0 5rem; } .status-quo-page h1 { max-width:18ch; font-size:clamp(2.6rem,6vw,5.5rem); } .status-quo-page h2 { border-top:1px solid var(--line); padding-top:1.7rem; } .status-quo-page p,.status-quo-page li { max-width:72ch; color:var(--body-copy); } .status-disclaimer,.landing-note { color:var(--muted); font-size:.84rem; }
 .index-grid a > span:first-child { color:var(--green); }
+/* Semantic breadcrumb list: the source is an ordered hierarchy, not a loose string of links. */
+.breadcrumbs ol { display:flex; flex-wrap:wrap; align-items:center; gap:.45rem; list-style:none; padding:0; margin:0; }
+.breadcrumbs li + li::before { content:"/"; color:var(--line); margin-right:.45rem; }
+.breadcrumbs [aria-current="page"] { color:var(--ink); }
