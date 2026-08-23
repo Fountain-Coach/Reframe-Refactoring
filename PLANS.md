@@ -1388,3 +1388,11 @@ credential changes, and deployment remain subsequent work.
 **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@4829567b`.
 
 **Claim boundary:** governance only; no host has been enrolled and no provider or production mutation is claimed.
+
+**Deployment result (2026-08-23):** Local generation built 99 governance chapters; the Chapter 92 estate validator
+passed all 106 generated HTML pages. Guarded deployment promoted release `release-20260823T211528Z-89869` to
+`governance.fountain.coach` at `/var/www/reframe-governance/current`, retaining the previous tree under the exact
+`.rollback` directory. The deployed source was publication commit `d16e158`, generated-site digest
+`34a33cd4febbb8195919e7709846f12cb4b6a43200438ae55e548619cfbcddb2`. DNS resolved to `65.109.14.71`; the overview,
+status route, Chapter 83, and Chapter 97 returned HTTPS 200 with Caddy. AX/VRT browser acceptance was not run because
+the repository's independent browser acceptance script is unavailable in this checkout; it remains unestablished.
