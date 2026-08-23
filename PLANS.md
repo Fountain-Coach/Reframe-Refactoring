@@ -1328,3 +1328,30 @@ published in production.
 **Validation:** generator output, route/index/status-map checks, `git diff --check`, local broken-link and metadata
 checks, and independent governance site acceptance where browser tooling is available. Deployment and commit remain
 separate approval steps.
+## Current planned phase — SwiftACMEKit ACME governance boundary (2026-08-23)
+
+**Goal:** govern the proposed standalone, pluggable Swift ACME package before implementation, preserving the
+boundary between RFC 8555 protocol automation, protected account/certificate custody, host TLS operations, and
+provider/deployment authority.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (phase-sized planning, rediscovery, and explicit validation); 08 (artifact-owned evidence,
+  separate unit/mock/live claims, and no unrun live path); 63 (portable Swift kit boundary, SecretStore custody,
+  platform profiles, and release evidence); 94 (provider-neutral authorization, host promotion, rollback, and
+  credential redaction); 95 (headless Linux lifecycle, OpenAPI parity, and release readiness).
+- **What they forbid here:** treating a Swift package or ACME API response as secure deployment; putting provider
+  credentials or private keys in kit artifacts; making host TLS/scheduling authority implicit; or claiming Linux,
+  staging, production, or security support without the corresponding evidence.
+- **Conflicts:** none identified. The attached ACME prompt requires a provider-neutral Swift package while Chapter 94
+  keeps provider and host authority outside the reusable kit; this chapter preserves that split and makes Let's Encrypt
+  a directory preset/test authority, not the core identity.
+- **Excluded, and why:** Chapters 92 and public-estate deployment gates are downstream publication concerns; no public
+  site or live deployment is being changed in this local governance slice.
+
+**Slice:** Chapter 96 is the governance slice. Package scaffolding, implementation, mock server, platform builds,
+staging tests, repository creation, and release `0.1.0` remain subsequent implementation and acceptance phases.
+
+**Claim boundary:** this phase claims a governed proposal and local publication draft only. It does not claim that
+SwiftACMEKit exists, that ACME issuance works, that a CA account is provisioned, or that any Fountain Coach host has
+been secured by an ACME certificate.
