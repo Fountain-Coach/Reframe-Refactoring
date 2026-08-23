@@ -774,6 +774,7 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
   production state while preserving provider, SecretStore, exact-target, signed-release, TLS/host, rollback,
   revocation, and bounded live-acceptance gates.
 - Direction: publication → integration through `Scripts/sync-integration-copy --push`.
-- Integration content: synchronized in the working checkout; publication and integration commits are pending.
+- Publication commit: `Fountain-Coach/Reframe-Refactoring@137b73f`.
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@33528d4a`.
 - Claim boundary: governance wording only. No real provider adapter, remote host, production deployment, or external
   security review is established.
