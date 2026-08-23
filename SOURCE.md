@@ -1,5 +1,15 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter 97 provider-neutral host bootstrap and enrollment (2026-08-23)
+
+- Change: synchronize the provider-neutral first-boot bootstrap and explicit host enrollment boundary, including
+  cloud-init/provider adapters, no writer-facing SSH, scoped SecretStore credentials, existing-host migration,
+  host-agent operations, revocation, rollback, and evidence.
+- Direction: integration → publication through `Scripts/sync-integration-copy --pull`.
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@4829567b`.
+- Claim boundary: governance only. No host agent, provider adapter, enrollment transaction, credential change, or
+  production deployment is established by the chapter.
+
 ## Current planned change — Chapter 94 credentialed infrastructure operations (2026-08-23)
 
 - Change: add the provider-neutral governance chapter for SecretStore/Copilot authorization, Hetzner/AWS provider

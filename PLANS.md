@@ -1374,3 +1374,17 @@ external review remains later evidence for security-reviewed/public claims.
 
 **Claim boundary:** no real provider adapter, remote host, production deployment, or external security review is
 claimed by this chapter update.
+## Current planned phase — Chapter 97 provider-neutral host bootstrap and enrollment (2026-08-23)
+
+**Goal:** publish the provider-neutral bootstrap and enrollment boundary that removes SSH from normal Mac writer
+operations while preserving exact-host identity, scoped credentials, signed artifacts, rollback, and revocation.
+
+**Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
+
+**Scope:** `docs/97-provider-neutral-host-bootstrap-and-enrollment.md`, the reading-index entry, and reciprocal
+provenance only. Hetzner/AWS adapters, cloud-init implementation, host-agent implementation, enrollment transactions,
+credential changes, and deployment remain subsequent work.
+
+**Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@4829567b`.
+
+**Claim boundary:** governance only; no host has been enrolled and no provider or production mutation is claimed.
