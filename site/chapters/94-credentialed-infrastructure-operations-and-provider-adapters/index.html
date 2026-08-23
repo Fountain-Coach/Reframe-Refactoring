@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Credentialed Infrastructure Operations and Provider Adapters — Reframe Governance</title>
+  <meta name="description" content="Credentialed Infrastructure Operations and Provider Adapters: reviewed Reframe Governance chapter and public publication boundary.">
+  <meta name="fountain:publication-role" content="Rules and authority">
+  <link rel="icon" type="image/png" href="/assets/fountain-coach-logo-transparent.png">
+  <link rel="apple-touch-icon" href="/assets/fountain-coach-logo-transparent.png">
+  <link rel="canonical" href="https://governance.fountain.coach/chapters/94-credentialed-infrastructure-operations-and-provider-adapters/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Credentialed Infrastructure Operations and Provider Adapters">
+  <meta property="og:description" content="Credentialed Infrastructure Operations and Provider Adapters: reviewed Reframe Governance chapter and public publication boundary.">
+  <meta property="og:url" content="https://governance.fountain.coach/chapters/94-credentialed-infrastructure-operations-and-provider-adapters/">
+  <meta property="og:image" content="https://governance.fountain.coach/assets/social/fountain-coach-governance-estate.jpg">
+  <meta property="og:image:alt" content="Fountain Coach publication estate illustration for Credentialed Infrastructure Operations and Provider Adapters">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Credentialed Infrastructure Operations and Provider Adapters">
+  <meta name="twitter:description" content="Credentialed Infrastructure Operations and Provider Adapters: reviewed Reframe Governance chapter and public publication boundary.">
+  <meta name="twitter:image" content="https://governance.fountain.coach/assets/social/fountain-coach-governance-estate.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Credentialed Infrastructure Operations and Provider Adapters", "url": "https://governance.fountain.coach/chapters/94-credentialed-infrastructure-operations-and-provider-adapters/", "isPartOf": {"@type": "Book", "name": "Reframe Governance", "url": "https://governance.fountain.coach/"}, "publisher": {"@type": "Organization", "name": "Fountain Coach", "url": "https://fountain.coach/", "logo": "https://fountain.coach/assets/fountain-coach-logo.png"}}</script>
+  <link rel="stylesheet" href="/assets/governance.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to chapter</a>
+  <header class="topbar"><a class="wordmark" href="https://fountain.coach/" aria-label="Fountain Coach home"><img class="wordmark-logo" src="/assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>Fountain Coach <small>Governance · rules and authority</small></span></a><nav class="estate-nav" aria-label="Fountain Coach publications"><a href="https://fountain.coach/">Estate</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://book.fountain.coach/">Book</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://governance.fountain.coach/" aria-current="page">Governance</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://midi2.fountain.coach/">MIDI2</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://instruments.fountain.coach/">Instruments</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://status.fountain.coach/">Status</a></nav><div class="topbar-actions"><button class="theme-button" type="button" data-theme-toggle aria-pressed="false">Theme: system</button><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></div></header>
+  <div class="workspace">
+    <nav class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home" href="/">Governance overview</a><a class="rail-status" href="/status-quo/">Current status</a><a class="chapter-link" href="/chapters/00-abstract/"><span>00</span><span>Abstract <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/01-reading-index/"><span>01</span><span>Reading Index <span class="status-badge status-current">Current index</span></span></a><a class="chapter-link" href="/chapters/02-development-history/"><span>02</span><span>Development History and Retained Lessons <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/03-current-state-and-problem/"><span>03</span><span>Current State and Refactoring Problem <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/04-target-architecture/"><span>04</span><span>Target Architecture <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/05-grounding-contract/"><span>05</span><span>Extended Grounding Contract <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/06-refactoring-program/"><span>06</span><span>Refactoring Program <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/07-agent-operating-guide/"><span>07</span><span>Operating Guide for `.claude` and `.codex` <span class="status-badge status-current">Current operating guide</span></span></a><a class="chapter-link" href="/chapters/08-validation-and-acceptance/"><span>08</span><span>Validation and Acceptance <span class="status-badge status-current">Current acceptance</span></span></a><a class="chapter-link" href="/chapters/09-compatibility-and-future-evolution/"><span>09</span><span>Compatibility and Future Evolution <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/10-copilot-implementation-extension/"><span>10</span><span>Copilot Implementation Extension <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/11-grounding-as-a-given/"><span>11</span><span>Grounding as a Given — the Canonical Manifesto and Conversational Authoring <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/12-animating-truth/"><span>12</span><span>Animating Truth — Foreshadowing and Perceived Performance <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/13-storage-and-performance/"><span>13</span><span>Storage and Performance — What Persists Where, and Why Reads Are Fast <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/14-the-beat-and-its-arrangements/"><span>14</span><span>The Beat and Its Arrangements — One Object, Three Views, One Firing <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/15-the-situated-copilot/"><span>15</span><span>The Situated Copilot — One Copilot, Differently Placed <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/16-the-timeline-is-the-machine-room/"><span>16</span><span>The Timeline Is the Machine Room — What You See Is What You Get <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/17-the-score/"><span>17</span><span>The Score — Reframe&#x27;s Performance Space, and the One Surface That Folds the Others <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/18-the-stage-presents-the-act/"><span>18</span><span>The Stage Presents the Act — Legibility Over Density <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/19-apple-human-interface-guidelines/"><span>19</span><span>Apple&#x27;s Human Interface Guidelines — the Baseline We Build On <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/20-on-device-first-and-the-writers-key/"><span>20</span><span>Paid-First Copilot, and the Writer&#x27;s Key — Quality-First Lane Selection <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/21-training-perspectives/"><span>21</span><span>Training Perspectives — Teaching the On-Device Model the Writer&#x27;s Work <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/22-no-preferences-only-reasoning/"><span>22</span><span>No Preferences, Only Reasoning <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/23-one-reasoning/"><span>23</span><span>One Reasoning — The Single Front Door of a Turn <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/24-the-reasoning-is-an-uncertainty-map/"><span>24</span><span>The Reasoning Is an Uncertainty Map <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/25-the-copilot-is-the-surface/"><span>25</span><span>The CoPilot Is the Surface <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/26-internals-tune-themselves/"><span>26</span><span>Internals Tune Themselves — the Disposition of the Preferences Panel <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/27-parse-before-you-ask/"><span>27</span><span>Parse Before You Ask <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/28-a-beat-is-the-question-it-raises/"><span>28</span><span>A Beat Is the Question It Raises <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/29-natural-language-measures-storify-interprets/"><span>29</span><span>NaturalLanguage Measures, Storify Interprets <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/30-the-living-gazetteer/"><span>30</span><span>The Living Gazetteer <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/31-compiled-knowledge/"><span>31</span><span>Compiled Knowledge — the Cloud Teaches, the Device Remembers <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/32-referenced-knowledge/"><span>32</span><span>Referenced Knowledge — What the World Knows Outside the Book <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/33-a-want-is-a-gap-in-a-ledger/"><span>33</span><span>A Want Is a Gap in a Ledger <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/34-a-question-that-leaves-the-work/"><span>34</span><span>A Question That Leaves the Work <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/35-deep-search/"><span>35</span><span>Deep Search <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/36-every-gap-keeps-its-address/"><span>36</span><span>Every Gap Keeps Its Address <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/37-copilot-capability-governance/"><span>37</span><span>Copilot Capability Governance — From Transport Contract to Trustworthy Action <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/38-copilot-capability-audit-skill/"><span>38</span><span>Copilot Capability Audit Skill — From Boundary to Empowerment <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/39-a-model-cannot-be-told-what-it-cannot-do/"><span>39</span><span>A Model Cannot Be Told What It Cannot Do <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/40-a-citation-is-a-promise-someone-can-check/"><span>40</span><span>A Citation Is a Promise Someone Can Check <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/41-one-retrieval-two-directions/"><span>41</span><span>One Retrieval, Two Directions <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/42-what-is-already-recorded-is-read/"><span>42</span><span>What Is Already Recorded Is Read, Never Re-Derived <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/43-the-released-surface-is-a-named-build/"><span>43</span><span>The Released Surface Is a Named Build <span class="status-badge status-current">Current release boundary</span></span></a><a class="chapter-link" href="/chapters/44-publication-and-source-policy/"><span>44</span><span>Public Publication and Private Source Policy <span class="status-badge status-current">Current publication boundary</span></span></a><a class="chapter-link" href="/chapters/45-copilot-reading-surface-and-typography/"><span>45</span><span>Copilot Reading Surface and Typography — Situated, Legible, and Reframe-Native <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/46-dynamic-grounding/"><span>46</span><span>Dynamic Grounding: From Default Reading to Writer-Accepted Lens <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/47-situated-mixed-initiative-interaction/"><span>47</span><span>Situated, Mixed-Initiative Interaction <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/48-a-service-is-a-fact-not-a-symptom/"><span>48</span><span>48. A Service Is a Fact, Not a Symptom <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/49-one-definition-two-projections/"><span>49</span><span>49. One Definition, Two Projections <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/50-text-is-stored-so-it-can-be-pointed-at/"><span>50</span><span>50. Text Is Stored So It Can Be Pointed At <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/51-one-decision-decides-the-lane/"><span>51</span><span>51. One Decision Decides the Lane <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/52-the-pencil-belongs-to-the-writer/"><span>52</span><span>52. The Pencil Belongs to the Writer <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/53-a-selection-snaps-to-meaning/"><span>53</span><span>53. A Selection Snaps to Meaning <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/54-the-writer-does-not-manage-the-projection/"><span>54</span><span>The Writer Does Not Manage the Projection <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/55-one-store-authority-across-repositories/"><span>55</span><span>One Store Authority Across Repositories <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/56-the-book-library-is-a-portable-source-provider/"><span>56</span><span>The Book Library Is Reframe&#x27;s Sole Reading Provider <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/57-the-writer-enters-by-intention/"><span>57</span><span>The Writer Enters by Intention <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/58-open-turn-mediation-protocol/"><span>58</span><span>Open-Turn Mediation Protocol <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/59-copilot-initiated-library-curation/"><span>59</span><span>The Fountain-Coach Git Library and Reframe Project Flow <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/60-the-fountain-editor-is-the-project-surface/"><span>60</span><span>The Fountain Editor Is the Project Surface <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/61-the-fountain-project-round-trip/"><span>61</span><span>The Fountain Project Round Trip <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/62-reframe-maintenance-control-plane/"><span>62</span><span>Reframe Maintenance Control Plane <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/63-fountain-maintenance-kit/"><span>63</span><span>FountainMaintenanceKit — Portable Swift Maintenance Contract <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/64-fountain-project-kit-durable-draft-custody/"><span>64</span><span>FountainProjectKit — Durable Fountain Project Custody <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/65-the-copilot-as-writing-coach/"><span>65</span><span>The Copilot as Writing Coach <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/66-fountain-image-publication-kit/"><span>66</span><span>FountainImagePublicationKit — Reframe Image Cloud and Publication Boundary <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/67-fountain-composer-kit-remote-attachment-custody/"><span>67</span><span>FountainComposerKit — Remote Attachment Custody and the Composer Boundary <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/68-the-reframe-e2e-scenario-is-the-publication-unit/"><span>68</span><span>68 — The Reframe E2E Scenario Is the Publication Unit <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/69-the-book-of-reframe-is-a-dual-projection/"><span>69</span><span>The Book of Reframe Is a Dual Projection <span class="status-badge status-current">Current publication model</span></span></a><a class="chapter-link" href="/chapters/70-external-midi2-control-of-reframe/"><span>70</span><span>70 — External MIDI2 Control of Reframe <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/71-reframe-to-reframe-software-peer-acceptance/"><span>71</span><span>71 — Reframe-to-Reframe Software-Peer Acceptance <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/72-midi2-peer-projections-and-capacity-admission/"><span>72</span><span>72 — MIDI2 Peer Projections and Capacity Admission <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/73-reframe-scenario-development-cycle/"><span>73</span><span>73 — The Reframe Scenario Development Cycle <span class="status-badge status-current">Current development cycle</span></span></a><a class="chapter-link" href="/chapters/74-private-image-prompt-history/"><span>74</span><span>Private Image Prompt History <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/75-scenario-run-ownership-and-non-interference/"><span>75</span><span>75 — Scenario Run Ownership and Non-Interference <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/76-beat-movement-and-uncertainty-overlay/"><span>76</span><span>Beat Movement and the Uncertainty Overlay <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/77-swift-midi2-scenario-runtime/"><span>77</span><span>77 — The Scenario Runtime Is Swift and MIDI2-Native <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/78-scenario-driven-development-as-org-infrastructure/"><span>78</span><span>78 — Scenario-Driven Development Is Org Infrastructure <span class="status-badge status-current">Current infrastructure</span></span></a><a class="chapter-link" href="/chapters/79-default-semantic-manuscript-projection/"><span>79</span><span>79 — The Default Semantic Manuscript Projection <span class="status-badge status-current">Current product projection</span></span></a><a class="chapter-link" href="/chapters/80-independent-governance-publication/"><span>80</span><span>80 — Independent Governance Publication <span class="status-badge status-current">Current publication target</span></span></a><a class="chapter-link" href="/chapters/81-universal-midi2-command-plane/"><span>81</span><span>81 — The Universal MIDI2 Command Plane <span class="status-badge status-current">Current MIDI2 migration boundary</span></span></a><a class="chapter-link" href="/chapters/82-remote-midi2-reading-room/"><span>82</span><span>82 — Remote MIDI2 Reading Rooms <span class="status-badge status-current">Current collaboration boundary</span></span></a><a class="chapter-link" href="/chapters/83-conversational-scenario-authoring/"><span>83</span><span>83 — Conversational Scenario Authoring Is the Development Surface <span class="status-badge status-current">Current authoring boundary</span></span></a><a class="chapter-link" href="/chapters/84-governed-reframe-design-mock/"><span>84</span><span>84 — The Reframe Design Mock Is a Governed Projection <span class="status-badge status-current">Current design-reference boundary</span></span></a><a class="chapter-link" href="/chapters/85-storify-source-auto-reads-a-defined-whole/"><span>85</span><span>85 — Storify Source Auto Reads a Defined Whole <span class="status-badge status-current">Current Storify reading boundary</span></span></a><a class="chapter-link" href="/chapters/86-apple-native-semantic-pipeline-is-one-midi2-graph/"><span>86</span><span>86 — The Apple-Native Semantic Pipeline Is One MIDI2 Graph <span class="status-badge status-current">Current semantic pipeline refactoring</span></span></a><a class="chapter-link" href="/chapters/87-midi2-monitor-is-the-live-event-mirror/"><span>87</span><span>87 — The MIDI2 Monitor Is the Live Event Mirror <span class="status-badge status-current">Current MIDI2 monitor boundary</span></span></a><a class="chapter-link" href="/chapters/88-codexkit-is-a-governed-codex-app-server-boundary/"><span>88</span><span>88 — CodexKit Is a Governed Codex App-Server Boundary <span class="status-badge status-current">Current CodexKit boundary</span></span></a><a class="chapter-link" href="/chapters/89-codex-auth-instrument-is-the-copilot-login-surface/"><span>89</span><span>89 — The Codex Auth Instrument Is the Copilot Login Surface <span class="status-badge status-current">Current auth-instrument boundary</span></span></a><a class="chapter-link" href="/chapters/90-independent-security-review-is-a-separate-acceptance-boundary/"><span>90</span><span>90 — Independent Security Review Is a Separate Acceptance Boundary <span class="status-badge status-current">Current security-review boundary</span></span></a><a class="chapter-link" href="/chapters/91-fcis-kit-instrument-store-is-the-capability-plane/"><span>91</span><span>91 — The FCIS-KIT Instrument Store Is the Capability Plane <span class="status-badge status-current">Current capability-plane boundary</span></span></a><a class="chapter-link" href="/chapters/92-fountain-coach-publication-estate/"><span>92</span><span>92 — Fountain Coach Publication Estate: Semantic Domain and CI Governance <span class="status-badge status-current">Current publication-estate boundary</span></span></a><a class="chapter-link" href="/chapters/93-instrument-creation-is-a-governed-promotion-path/"><span>93</span><span>Instrument Creation Is a Governed Promotion Path <span class="status-badge status-current">Current instrument-creation boundary</span></span></a><a class="chapter-link active" href="/chapters/94-credentialed-infrastructure-operations-and-provider-adapters/" aria-current="page"><span>94</span><span>Credentialed Infrastructure Operations and Provider Adapters <span class="status-badge status-current">Current infrastructure-authorization boundary</span></span></a><a class="chapter-link" href="/chapters/reframe-app-flow-governance/"><span>·</span><span>Reframe — How the App Must Flow <span class="status-badge status-reference">Reference</span></span></a></nav>
+    <main id="main" class="chapter-canvas"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="https://fountain.coach/">Fountain Coach</a></li><li><a href="https://governance.fountain.coach/">Governance</a></li><li aria-current="page">Credentialed Infrastructure Operations and Provider Adapters</li></ol></nav><div class="canvas-kicker"><span>FCIS · REFRAME REFACTORING · <span class="publication-state">PUBLISHED PROJECTION</span></span></div><nav class="chapter-pager" data-chapter-pager aria-label="Chapter navigation"><a class="chapter-pager-link" data-chapter-prev rel="prev" href="/chapters/93-instrument-creation-is-a-governed-promotion-path/" aria-label="Previous chapter: Instrument Creation Is a Governed Promotion Path"><span aria-hidden="true">←</span><span><small>PREVIOUS CHAPTER</small>Instrument Creation Is a Governed Promotion Path</span></a><span class="chapter-pager-position">CHAPTER 95 OF 95</span><a class="chapter-pager-link chapter-pager-next" data-chapter-next rel="next" href="/chapters/reframe-app-flow-governance/" aria-label="Next reference route: Reframe — How the App Must Flow"><span><small>NEXT REFERENCE</small>Reframe — How the App Must Flow</span><span aria-hidden="true">→</span></a></nav><article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · 94</div><p class="chapter-state"><strong>Current infrastructure-authorization boundary</strong> · The maintained provider-neutral contract for SecretStore/Copilot authorization, provider adapters, signed host installation, evidence, rollback, and revocation.</p><h1 id="credentialed-infrastructure-operations-and-provider-adapters">Credentialed Infrastructure Operations and Provider Adapters</h1>
+<blockquote>
+<p>Governance chapter: 94. This chapter defines how Fountain Coach authorizes infrastructure operations through a writer-facing Copilot flow, SecretStore, and provider-specific deployment adapters. It does not claim that AWS, Hetzner, or any other provider is currently integrated or that a deployment has been performed.</p>
+</blockquote>
+<h2 id="the-decision">The decision</h2>
+<p>Fountain Coach treats cloud authorization and tool installation as a governed infrastructure operation. A writer or agent may understand and approve the operation through Copilot, but credentials and provider authority remain outside the local instrument, the reusable FCIS-KIT package, the conversation transcript, and public publication.</p>
+<p>The reusable boundary is provider-neutral:</p>
+<pre class="text"><code>fountain-coach.infrastructure-authorization</code></pre>
+<p>Provider adapters implement the provider-specific security and API rules:</p>
+<pre class="text"><code>Hetzner Cloud adapter
+AWS adapter</code></pre>
+<p>The abstraction governs intent, authorization, planning, confirmation, execution, evidence, rollback, and revocation. It does not pretend that a Hetzner API token and an AWS IAM role have the same security properties.</p>
+<h2 id="what-this-governs">What this governs</h2>
+<p>This chapter applies when Fountain Coach needs to provision or update a host, install a released FCIS-KIT host service, configure a deployment target, or connect that host to a provider such as the Book Library or Image Cloud.</p>
+<p>It governs the infrastructure control plane, not the runtime provider operation itself. The distinction is essential:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Boundary</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Infrastructure provider</td>
+<td>servers, DNS, networks, volumes, firewalls, identity, and deployment targets</td>
+</tr>
+<tr class="even">
+<td>FCIS-KIT host service</td>
+<td>released instruments, host adapters, lifecycle, policy, and runtime evidence</td>
+</tr>
+<tr class="odd">
+<td>Book Library or Image Cloud adapter</td>
+<td>provider-specific content or asset operations</td>
+</tr>
+<tr class="even">
+<td>Local instrument</td>
+<td>typed request and redacted result projection</td>
+</tr>
+<tr class="odd">
+<td>Copilot</td>
+<td>writer-facing explanation, consent, progress, refusal, and result summary</td>
+</tr>
+<tr class="even">
+<td>SecretStore</td>
+<td>protected credential and secret-reference custody</td>
+</tr>
+<tr class="odd">
+<td>FountainStore</td>
+<td>durable operation, authorization, and release receipts</td>
+</tr>
+</tbody>
+</table>
+<p>No layer may silently take authority from another.</p>
+<h2 id="the-writer-facing-authorization-flow">The writer-facing authorization flow</h2>
+<p>Authorization must be visible to the writer or maintainer in Copilot. A hidden token lookup is not an adequate operating explanation. Before asking for a credential, Copilot states:</p>
+<ul>
+<li>which provider is involved;</li>
+<li>which resource or host is affected;</li>
+<li>why authorization is required;</li>
+<li>which operations the credential can authorize;</li>
+<li>where the credential will be stored;</li>
+<li>what will not receive the credential; and</li>
+<li>whether the next step is read-only validation or a mutating deployment.</li>
+</ul>
+<p>Copilot then follows this sequence:</p>
+<pre class="text"><code>explain → look up SecretStore → request secure entry if absent → validate read-only
+→ show safe authorization facts → present deployment plan → obtain confirmation
+→ apply → verify → record receipt → offer rollback or revoke</code></pre>
+<p>Credential entry belongs in a secure field or native protected surface, never in ordinary chat text. Copilot may show provider, project, scope, expiry state, resource names, and a non-secret fingerprint. It must never echo the token, place it in a prompt, or repeat it in a result.</p>
+<p>The writer must explicitly confirm a mutating operation. A valid credential does not constitute consent to install or activate software.</p>
+<h2 id="provider-neutral-operation-contract">Provider-neutral operation contract</h2>
+<p>The capability exposes one governed intent surface with provider adapters behind it. Its operations are:</p>
+<pre class="text"><code>secret.lookup
+authorization.request
+authorization.validate
+deployment.plan
+deployment.confirm
+deployment.apply
+deployment.verify
+deployment.rollback
+authorization.revoke</code></pre>
+<p>Each operation carries a stable capability identity, provider, operation version, target, session, idempotency key, requested scope, and evidence requirement. Results are redacted and typed. A terminal result must distinguish at least:</p>
+<pre class="text"><code>authorized
+not-authorized
+credential-missing
+scope-insufficient
+provider-unavailable
+plan-ready
+confirmation-required
+applied
+verified
+rolled-back
+revoked
+failed</code></pre>
+<p>The runtime contract remains the versioned MIDI2/FCIS contract and its generated projections. An OpenAPI document may describe an HTTP-facing host service for human and tool discovery, but it does not replace the MIDI2 operation contract or become a second operational vocabulary.</p>
+<h2 id="secretstore-and-provider-credentials">SecretStore and provider credentials</h2>
+<p>SecretStore is the custody adapter. It is not the authorization authority and it does not decide what a credential may do.</p>
+<p>For Hetzner Cloud, the adapter may retrieve a narrowly scoped project token from SecretStore and use it only for the declared infrastructure operation. The token remains in deployment automation and is never sent to a local instrument or a runtime provider adapter.</p>
+<p>For AWS, the preferred design is temporary, federated authorization or an IAM role established for the deployment operation. Long-lived access keys are an explicit higher-risk exception requiring a separate policy decision, narrow scope, rotation, and evidence. The AWS adapter must not inherit Hetzner assumptions merely because both providers are behind the same abstraction.</p>
+<p>Secret values MUST NOT appear in:</p>
+<ul>
+<li>MIDI2 requests or events;</li>
+<li>FCIS-KIT artifacts or manifests;</li>
+<li>Copilot prompts or transcripts;</li>
+<li>FountainStore receipts;</li>
+<li>logs, telemetry, screenshots, or AX values;</li>
+<li>Git history or public documentation; or</li>
+<li>deployment command arguments.</li>
+</ul>
+<p>Only redacted references, safe metadata, digests, and authorization outcomes may cross those boundaries.</p>
+<h2 id="installation-and-promotion-on-a-host">Installation and promotion on a host</h2>
+<p>Infrastructure authorization does not itself install an instrument. The host installation is a separate promotion path:</p>
+<pre class="text"><code>candidate → signed → uploaded → verified → staged → scenario-tested
+→ admitted → active → released</code></pre>
+<p>The deployment service MUST:</p>
+<ol type="1">
+<li>build the FCIS-KIT host artifact from a clean, pinned source revision;</li>
+<li>record its semantic version, source revision, dependencies, permissions, and digest;</li>
+<li>sign the release manifest and artifact;</li>
+<li>authenticate the exact deployment target;</li>
+<li>upload only to a non-active staging location;</li>
+<li>verify signature, digest, version, permissions, and provider binding on the host;</li>
+<li>run installation, mock-provider, refusal, replay, timeout, and rollback scenarios;</li>
+<li>record an admission receipt before activation;</li>
+<li>activate atomically while retaining the previous release;</li>
+<li>perform a post-activation health and protocol check; and</li>
+<li>publish the release result without exposing credentials or private host configuration.</li>
+</ol>
+<p>The Hetzner Cloud API or AWS control plane authorizes infrastructure changes. A separate authenticated deployment channel installs the verified software artifact. Neither provider API is allowed to silently install an arbitrary working-tree copy.</p>
+<h2 id="local-to-host-trust-boundary">Local-to-host trust boundary</h2>
+<p>The local runtime must authenticate the already-admitted host service before sending an instrument request. The connection must provide peer identity, protocol version, session binding, replay protection, expiry, and idempotency. The local instrument receives only the operation result and its evidence reference.</p>
+<p>The host service owns provider credentials, provider endpoints, host policy, release selection, and deployment state. The reusable kit owns the typed contract, lifecycle semantics, tests, and host-neutral adapter boundary. Reframe owns writer intent, Store selection, product policy, and AX projection.</p>
+<h2 id="evidence-and-claims">Evidence and claims</h2>
+<p>The following claims remain separate:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Evidence required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>authorization was requested</td>
+<td>Copilot/Store request receipt with redacted scope</td>
+</tr>
+<tr class="even">
+<td>authorization was validated</td>
+<td>provider response and typed validation receipt</td>
+</tr>
+<tr class="odd">
+<td>release was installed</td>
+<td>signed artifact, host verification, and activation receipt</td>
+</tr>
+<tr class="even">
+<td>host is operational</td>
+<td>post-activation health and protocol result</td>
+</tr>
+<tr class="odd">
+<td>provider operation succeeded</td>
+<td>provider-specific terminal result and Store evidence</td>
+</tr>
+<tr class="even">
+<td>deployment is secure</td>
+<td>independent security review, not merely a passing API call</td>
+</tr>
+</tbody>
+</table>
+<p>A token present in SecretStore, a reachable server, a successful API response, or a generated deployment plan does not establish the stronger claims above.</p>
+<p>Fixtures and mock providers establish contract and lifecycle behavior only. They do not prove access to a real account, the security of a production deployment, or external service interoperability.</p>
+<h2 id="provider-adapter-admission">Provider adapter admission</h2>
+<p>Each provider adapter must declare:</p>
+<ul>
+<li>provider identity and API version;</li>
+<li>supported authorization methods;</li>
+<li>required scopes or roles;</li>
+<li>secret-store keys or references;</li>
+<li>permitted infrastructure operations;</li>
+<li>data movement and residency boundary;</li>
+<li>refusal and rollback behavior;</li>
+<li>rate, cost, and expiry concerns;</li>
+<li>test and mock-provider scenarios; and</li>
+<li>the independent authority for security and production acceptance.</li>
+</ul>
+<p>An adapter is not admitted because its API wrapper compiles. It becomes reusable only after a named, reproducible release is promoted by its owning authority. Provider support remains proposed until its adapter, scenarios, and acceptance evidence exist.</p>
+<h2 id="governance-and-publication-boundary">Governance and publication boundary</h2>
+<p>This chapter governs the infrastructure authorization capability. The status domain may summarize its current state; the FCIS-KIT documentation may describe the reusable contract; and the governance domain remains authoritative for the rules and claim boundary.</p>
+<p>Public pages may explain the workflow and supported states. They must not publish tokens, project identifiers that are not intentionally public, host configuration, private deployment paths, or evidence that has not been independently established.</p>
+<h2 id="governing-sentence">Governing sentence</h2>
+<p>Fountain Coach makes infrastructure authorization inspectable to writers and agents while keeping credentials, provider authority, installation, and release promotion behind separate governed boundaries; a provider adapter is reusable only when its named artifact, permissions, scenarios, evidence, and rollback path are explicit.</p>
+</article><footer class="footer"><div class="footer-estate"><strong>Fountain Coach publication estate</strong><a href="https://fountain.coach/">Identity</a><a href="https://book.fountain.coach/">Book · human reference</a><a href="https://governance.fountain.coach/">Governance · rules and authority</a><a href="https://midi2.fountain.coach/">MIDI2 · machine-readable specification</a><a href="https://instruments.fountain.coach/">Instruments · MIDI2 catalog</a><a href="https://status.fountain.coach/">Status · company and legal context</a></div><div class="footer-legal"><a href="/legal/">Legal notices</a><a href="/privacy/">Privacy</a><a href="/accessibility/">Accessibility</a><a href="/copyright/">Copyright</a><a href="/compliance/">EU compliance</a><a href="/status-quo/">Source and provenance</a></div><span>Public projection · governance establishes doctrine, not runtime state or live acceptance.</span></footer></main>
+  </div>
+  <script src="/assets/governance.js" defer></script>
+</body>
+</html>

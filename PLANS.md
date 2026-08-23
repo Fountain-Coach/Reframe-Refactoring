@@ -951,6 +951,18 @@ Integration content commit: `Fountain-Coach/midi2-gpu-fabric@9fef1e66`.
 
 Validation: guide parity, relative-link review, `git diff --check`, FCIS-KIT repository evidence, Book prepublication,
 and site AX/VRT acceptance.
+## Current planned change — Chapter 94 credentialed infrastructure operations (2026-08-23)
+
+- Change: add **Chapter 94 — Credentialed Infrastructure Operations and Provider Adapters**, defining the
+  provider-neutral SecretStore/Copilot authorization flow, provider-specific Hetzner/AWS adapters, signed host
+  installation, evidence, rollback, and the separation between infrastructure control and runtime instruments.
+- Direction: integration → publication through `Scripts/sync-integration-copy --pull`.
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@32f24f65`.
+- Claim boundary: governance only; no Hetzner or AWS credentials, infrastructure mutation, adapter implementation,
+  provider authorization, security review, or production deployment is claimed.
+- Excluded, and why: runtime implementation and deployment are downstream work requiring separate scenarios,
+  permissions, and independent acceptance.
+
 ## Current planned change — Chapter 82 Remote MIDI2 Reading Room (2026-08-17)
 
 - Change: **Chapter 82 — Remote MIDI2 Reading Rooms**, defining the multi-user Reading Room product boundary,

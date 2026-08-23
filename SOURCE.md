@@ -1,5 +1,14 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter 94 credentialed infrastructure operations (2026-08-23)
+
+- Change: add the provider-neutral governance chapter for SecretStore/Copilot authorization, Hetzner/AWS provider
+  adapters, signed FCIS-KIT host installation, release admission, evidence, rollback, and revocation.
+- Direction: integration → publication through `Scripts/sync-integration-copy --pull`.
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@32f24f65`.
+- Claim boundary: governance only. No provider adapter, credential, infrastructure mutation, security review, or
+  production deployment is established by the chapter.
+
 ## Current synchronized change — Chapter 92 estate contract enforcement (2026-08-21)
 
 - Change: the publication template now exposes estate navigation, breadcrumbs, publication state, persistent theme
