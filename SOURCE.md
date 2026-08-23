@@ -7,6 +7,7 @@
   host-agent operations, revocation, rollback, and evidence.
 - Direction: integration → publication through `Scripts/sync-integration-copy --pull`.
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@4829567b`.
+- Publication content commit: `Fountain-Coach/Reframe-Refactoring@8a92408`.
 - Claim boundary: governance only. No host agent, provider adapter, enrollment transaction, credential change, or
   production deployment is established by the chapter.
 
