@@ -768,3 +768,12 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - Publication commits: `Fountain-Coach/Reframe-Refactoring@3b4043a` and `Fountain-Coach/Reframe-Refactoring@11bd280`.
 - Production result: release `release-20260818T153714Z` is live at `governance.fountain.coach`; the root,
   `/status-quo/`, Chapter 70, and Chapter 83 returned HTTPS 200 and Chapter 70 contains the coordinator section.
+## Current planned change — Chapter 94 operational-production amendment (2026-08-23)
+
+- Change: Chapter 94 now distinguishes owner-controlled operational production from the later security-reviewed/public
+  production state while preserving provider, SecretStore, exact-target, signed-release, TLS/host, rollback,
+  revocation, and bounded live-acceptance gates.
+- Direction: publication → integration through `Scripts/sync-integration-copy --push`.
+- Integration content: synchronized in the working checkout; publication and integration commits are pending.
+- Claim boundary: governance wording only. No real provider adapter, remote host, production deployment, or external
+  security review is established.

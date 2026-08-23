@@ -1355,3 +1355,22 @@ staging tests, repository creation, and release `0.1.0` remain subsequent implem
 **Claim boundary:** this phase claims a governed proposal and local publication draft only. It does not claim that
 SwiftACMEKit exists, that ACME issuance works, that a CA account is provisioned, or that any Fountain Coach host has
 been secured by an ACME certificate.
+## Current planned change — Chapter 94 operational-production amendment (2026-08-23)
+
+**Goal:** publish the two-tier production vocabulary: owner-controlled operational production is admissible only on
+its concrete provider, provenance, TLS/host, rollback, revocation, and bounded live-acceptance evidence; independent
+external review remains later evidence for security-reviewed/public claims.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (bounded planning); 08 (acceptance evidence); 90 (independent security review as a separate
+  lane); 94 (provider authorization, SecretStore, signed promotion, and rollback); 96 (TLS/ACME and host handoff).
+- **What they forbid here:** converting a mock provider, local test, API response, or internal assessment into real
+  authorization, live host acceptance, TLS proof, or independent security assurance.
+- **Conflicts:** operational use and Chapter 90's later independent-review gate must coexist; this chapter now names
+  them as separate production states without waiving operational controls.
+- **Excluded, and why:** provider implementation, remote deployment, DNS/TLS mutation, and external review; this is a
+  governance/publication slice only.
+
+**Claim boundary:** no real provider adapter, remote host, production deployment, or external security review is
+claimed by this chapter update.

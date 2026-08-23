@@ -2,7 +2,8 @@
 
 > Governance chapter: 94. This chapter defines how Fountain Coach authorizes infrastructure operations through a
 > writer-facing Copilot flow, SecretStore, and provider-specific deployment adapters. It does not claim that AWS,
-> Hetzner, or any other provider is currently integrated or that a deployment has been performed.
+> Hetzner, or any other provider is currently integrated or that a deployment has been performed. It distinguishes
+> owner-controlled operational production from the later security-reviewed/public production state.
 
 ## The decision
 
@@ -25,6 +26,24 @@ AWS adapter
 
 The abstraction governs intent, authorization, planning, confirmation, execution, evidence, rollback, and revocation.
 It does not pretend that a Hetzner API token and an AWS IAM role have the same security properties.
+
+## Operational production and later assurance
+
+Fountain Coach recognizes two production states, with different claims and different admission evidence:
+
+| State | Meaning | Required boundary |
+| --- | --- | --- |
+| **Owner-controlled operational production** | The owner operates the owned stack for real work under an explicit, bounded deployment decision. | Named provider adapter; SecretStore-backed credentials; exact target; pinned and signed artifact; TLS and host handoff where applicable; rollback and revocation; and bounded live acceptance. |
+| **Security-reviewed/public production** | The operational system may additionally make an independent security-assurance or security-reviewed production claim. | Every operational-production requirement, plus an independent external security review whose scope, findings, remediation, and authority are recorded. |
+
+The second state is desirable and may be pursued later. The absence of an external review does not by itself block
+owner-controlled operational use when the first state's concrete gates are satisfied. It does, however, prohibit any
+claim that the deployment is independently reviewed, security-certified, or externally assured. A planned review is
+not a completed review, and internal testing is not independent evidence.
+
+This distinction changes the claim vocabulary, not the safety controls. No tier waives provider-specific admission,
+SecretStore custody, exact-target authentication, artifact provenance, TLS, rollback, revocation, or live-acceptance
+requirements. The current mock adapter remains a contract and refusal fixture; it is not real provider authorization.
 
 ## What this governs
 
@@ -187,10 +206,12 @@ The following claims remain separate:
 | release was installed | signed artifact, host verification, and activation receipt |
 | host is operational | post-activation health and protocol result |
 | provider operation succeeded | provider-specific terminal result and Store evidence |
-| deployment is secure | independent security review, not merely a passing API call |
+| owner-controlled operational production is admitted | named provider, exact-target, signed-release, TLS/host, rollback/revocation, and bounded live-acceptance evidence |
+| deployment is independently security-reviewed | independent security review with declared scope, findings, remediation, and authority; not merely a passing API call |
 
 A token present in SecretStore, a reachable server, a successful API response, or a generated deployment plan does not
-establish the stronger claims above.
+establish either production state. A passing operational acceptance establishes only the owner-controlled operational
+claim that its evidence supports; it does not establish independent security assurance.
 
 Fixtures and mock providers establish contract and lifecycle behavior only. They do not prove access to a real account,
 the security of a production deployment, or external service interoperability.
@@ -208,7 +229,8 @@ Each provider adapter must declare:
 - refusal and rollback behavior;
 - rate, cost, and expiry concerns;
 - test and mock-provider scenarios; and
-- the independent authority for security and production acceptance.
+- the named operational authority for production acceptance and, separately, the independent authority required for
+  any security-reviewed/public claim.
 
 An adapter is not admitted because its API wrapper compiles. It becomes reusable only after a named, reproducible
 release is promoted by its owning authority. Provider support remains proposed until its adapter, scenarios, and
@@ -227,5 +249,6 @@ established.
 ## Governing sentence
 
 Fountain Coach makes infrastructure authorization inspectable to writers and agents while keeping credentials,
-provider authority, installation, and release promotion behind separate governed boundaries; a provider adapter is
-reusable only when its named artifact, permissions, scenarios, evidence, and rollback path are explicit.
+provider authority, installation, and release promotion behind separate governed boundaries; owner-controlled
+operational production may proceed only on explicit provider, provenance, TLS/host, rollback, revocation, and live
+acceptance evidence, while any security-reviewed/public claim additionally requires independent external review.
