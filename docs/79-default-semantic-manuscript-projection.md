@@ -2,7 +2,8 @@
 
 Chapters 45 and 76 define Reframe's two-pane writing instrument and the distinction between Questions, Movements, and
 Read coverage. This chapter fixes how that meaning is presented by default: as a continuous, scrollable Fountain
-manuscript with semantic navigation beside it, not as a page-card gallery or a horizontal timeline.
+manuscript with semantic navigation beside it, not as a page-card gallery or a horizontal timeline. The three-way
+ownership and cross-focus contract is now refined by [Chapter 99](99-decoupled-manuscript-instruments.md).
 
 ## Purpose
 

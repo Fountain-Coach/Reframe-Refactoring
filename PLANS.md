@@ -306,6 +306,14 @@ Validation:
 
 # PLANS.md
 
+## Current planned change — Chapter 99 decoupled manuscript instruments (2026-08-24)
+
+- **Goal:** define the semantic and rendering boundary between Reading Navigation, Source View, and the independent UncertaintyScoreKit SVG Lane View.
+- **Direction:** publication authoring → synchronized integration copy through `Scripts/sync-integration-copy --push`.
+- **Scope:** `docs/99-decoupled-manuscript-instruments.md`, its reading-index entry, reciprocal links from Chapters 24, 36, 79, and 98, and local governance-site preview only.
+- **Claim boundary:** governance and design contract; no SVG renderer extraction, source-view replacement, kit release, runtime acceptance, or deployment is claimed by this chapter.
+- **Validation target:** chapter/index link checks, publication/integration parity, generated governance routes, `git diff --check`, and local preview of the Chapter 99 route.
+
 ## Current planned change — Chapter 98 Apple-native Markdown presentation (2026-08-24)
 
 - **Goal:** publish the governance boundary for semantic Markdown/Fountain parsing, Apple-native WYSIWYG rendering,

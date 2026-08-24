@@ -152,6 +152,8 @@ surface, not optional polish.
   supplies kit identity, admission, release, and consumption boundaries.
 - **[Validation and Acceptance](08-validation-and-acceptance.md)** supplies AX, window-ID, Store, and claim-specific
   evidence authority.
+- **[Decoupled Manuscript Instruments](99-decoupled-manuscript-instruments.md)** applies this text boundary to the
+  Source View and separates it from Reading Navigation and the independent SVG Lane View.
 
 ## Current implementation boundary
 

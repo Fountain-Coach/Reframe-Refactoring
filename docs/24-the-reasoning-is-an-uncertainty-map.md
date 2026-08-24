@@ -109,6 +109,8 @@ honest map possible; an honest map is what makes lean reasoning safe.
 - **Feedback doctrine** — [no deterministic fallbacks] (a `failure` fails visibly, never a canned guess),
   [reason, don't keyword-match] (the map is reasoned over meaning), [ground claims in the store] (the map is
   evidence, not decoration).
+- **[Decoupled Manuscript Instruments](99-decoupled-manuscript-instruments.md)** — defines how this map is exposed
+  through Reading Navigation, Source View, and the independent SVG Lane View without changing the map's authority.
 
 ## Acceptance
 

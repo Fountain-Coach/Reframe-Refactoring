@@ -316,6 +316,8 @@ without hue. No single colour is asked to mean lane, state, identity and selecti
 - **[Referenced Knowledge](32-referenced-knowledge.md), [A Question That Leaves the Work](34-a-question-that-leaves-the-work.md),
   and [Deep Search](35-deep-search.md)** — supply the outward lifecycle that must remain visibly attached to the
   gap whose want began it.
+- **[Decoupled Manuscript Instruments](99-decoupled-manuscript-instruments.md)** — applies the composite-address and
+  kit-host boundary to the three manuscript instruments: navigation, source text, and the independent SVG lane map.
 
 ## Acceptance
 

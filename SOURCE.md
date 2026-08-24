@@ -1,5 +1,16 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter 99 decoupled manuscript instruments (2026-08-24)
+
+- **Change:** publish the semantic boundary between Reading Navigation, Source View, and the independent
+  UncertaintyScoreKit SVG Lane View, with shared source identity, semantic addressing, AX ownership, and explicit
+  Markdown plus supported `.fountain` source preservation.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Integration content commit:** pending.
+- **Publication content commit:** pending.
+- **Claim boundary:** governance and publication contract only. The chapter does not claim a complete SVG Lane View,
+  runtime replacement of the current projection, or live acceptance of the future kit.
+
 ## Current planned change — Chapter 98 Apple-native Markdown presentation (2026-08-24)
 
 - **Change:** synchronize Chapter 98's boundary for semantic Markdown/Fountain parsing, Apple-native WYSIWYG text
