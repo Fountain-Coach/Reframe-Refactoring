@@ -45,12 +45,22 @@ def title_for(path: Path) -> str:
 def chapter_files() -> list[Path]:
     return sorted(
         (path for path in DOCS.glob("*.md") if path.name not in {"README.md"} and not path.name.startswith("._")),
-        key=lambda path: (int(path.name[:2]) if path.name[:2].isdigit() else 999, path.name),
+        key=lambda path: (chapter_number(path) if chapter_number(path) is not None else 999, path.name),
     )
 
 
+def chapter_number(path: Path) -> int | None:
+    prefix = path.stem.split("-", 1)[0]
+    return int(prefix) if prefix.isdigit() else None
+
+
+def chapter_label(path: Path) -> str:
+    number = chapter_number(path)
+    return f"{number:02d}" if number is not None else "·"
+
+
 def is_numbered_chapter(path: Path) -> bool:
-    return path.name[:2].isdigit()
+    return chapter_number(path) is not None
 
 
 def slug(path: Path) -> str:
@@ -223,7 +233,7 @@ def chapter_nav(active: str) -> str:
         current_attr = ' aria-current="page"' if current == active else ""
         links.append(
             f'<a class="chapter-link{active_class}" href="{current}"{current_attr}>'
-            f'<span>{path.stem[:2] if path.stem[:2].isdigit() else "·"}</span>'
+            f'<span>{chapter_label(path)}</span>'
             f'<span>{html.escape(title)} {status_badge(chapter_status(path))}</span></a>'
         )
     return "".join(links)
@@ -259,7 +269,7 @@ def main() -> None:
         raise FileNotFoundError(f"missing reviewed Fountain Coach logo asset: {LOGO}")
     files = chapter_files()
     index_items = "".join(
-        f'<a href="/chapters/{slug(path)}/"><span>{path.stem[:2] if path.stem[:2].isdigit() else "·"}</span>'
+        f'<a href="/chapters/{slug(path)}/"><span>{chapter_label(path)}</span>'
         f'<span>{html.escape(title_for(path))} {status_badge(chapter_status(path))}</span></a>' for path in files
     )
     status_content = markdown_html(SITE_CONTENT / "status-quo.md")
@@ -281,7 +291,7 @@ def main() -> None:
         social_link = (f'<p class="social-preview-link"><a href="{current}">Open this semantic chapter route for social sharing</a> · '
                        f'<a href="{social_image}">1200×630 image</a></p>'
                        if social_image else "")
-        content = f'<article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · {path.stem[:2] if path.stem[:2].isdigit() else "—"}</div><p class="chapter-state"><strong>{html.escape(status["label"])}</strong> · {status_description(status)}</p>{social_link}{markdown_html(path)}</article>'
+        content = f'<article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · {chapter_label(path) if chapter_number(path) is not None else "—"}</div><p class="chapter-state"><strong>{html.escape(status["label"])}</strong> · {status_description(status)}</p>{social_link}{markdown_html(path)}</article>'
         target = CHAPTERS / slug(path)
         target.mkdir(exist_ok=True)
         # A changed principal illustration changes the digest-named share route.
