@@ -11,6 +11,13 @@
 - **Claim boundary:** governance and publication contract only. The chapter does not claim a complete SVG Lane View,
   runtime replacement of the current projection, or live acceptance of the future kit.
 
+### Publication result
+
+- **Source projection:** `Fountain-Coach/Reframe-Refactoring@6ee6d1a`.
+- **Release:** `release-20260824T093805Z-56112` promoted to `/var/www/reframe-governance/current` on `65.109.14.71`.
+- **Verification:** DNS resolves to the authorized host; Caddy HTTPS returned 200 for the overview, status page, and
+  `/chapters/99-decoupled-manuscript-instruments/`.
+
 ## Current planned change — Chapter 98 Apple-native Markdown presentation (2026-08-24)
 
 - **Change:** synchronize Chapter 98's boundary for semantic Markdown/Fountain parsing, Apple-native WYSIWYG text
