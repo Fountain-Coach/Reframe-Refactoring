@@ -6,8 +6,8 @@
   UncertaintyScoreKit SVG Lane View, with shared source identity, semantic addressing, AX ownership, and explicit
   Markdown plus supported `.fountain` source preservation.
 - **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
-- **Integration content commit:** pending.
-- **Publication content commit:** pending.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@124828df`.
+- **Publication content commit:** `Fountain-Coach/Reframe-Refactoring@b04c09d`.
 - **Claim boundary:** governance and publication contract only. The chapter does not claim a complete SVG Lane View,
   runtime replacement of the current projection, or live acceptance of the future kit.
 
