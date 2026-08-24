@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Provider-Neutral Host Bootstrap and Enrollment — Reframe Governance</title>
+  <meta name="description" content="Provider-Neutral Host Bootstrap and Enrollment: reviewed Reframe Governance chapter and public publication boundary.">
+  <meta name="fountain:publication-role" content="Rules and authority">
+  <link rel="icon" type="image/png" href="/assets/fountain-coach-logo-transparent.png">
+  <link rel="apple-touch-icon" href="/assets/fountain-coach-logo-transparent.png">
+  <link rel="canonical" href="https://governance.fountain.coach/chapters/97-provider-neutral-host-bootstrap-and-enrollment/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Provider-Neutral Host Bootstrap and Enrollment">
+  <meta property="og:description" content="Provider-Neutral Host Bootstrap and Enrollment: reviewed Reframe Governance chapter and public publication boundary.">
+  <meta property="og:url" content="https://governance.fountain.coach/chapters/97-provider-neutral-host-bootstrap-and-enrollment/">
+  <meta property="og:image" content="https://governance.fountain.coach/assets/social/fountain-coach-governance-estate.jpg">
+  <meta property="og:image:alt" content="Fountain Coach publication estate illustration for Provider-Neutral Host Bootstrap and Enrollment">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Provider-Neutral Host Bootstrap and Enrollment">
+  <meta name="twitter:description" content="Provider-Neutral Host Bootstrap and Enrollment: reviewed Reframe Governance chapter and public publication boundary.">
+  <meta name="twitter:image" content="https://governance.fountain.coach/assets/social/fountain-coach-governance-estate.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Provider-Neutral Host Bootstrap and Enrollment", "url": "https://governance.fountain.coach/chapters/97-provider-neutral-host-bootstrap-and-enrollment/", "isPartOf": {"@type": "Book", "name": "Reframe Governance", "url": "https://governance.fountain.coach/"}, "publisher": {"@type": "Organization", "name": "Fountain Coach", "url": "https://fountain.coach/", "logo": "https://fountain.coach/assets/fountain-coach-logo.png"}}</script>
+  <link rel="stylesheet" href="/assets/governance.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to chapter</a>
+  <header class="topbar"><a class="wordmark" href="https://fountain.coach/" aria-label="Fountain Coach home"><img class="wordmark-logo" src="/assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>Fountain Coach <small>Governance · rules and authority</small></span></a><nav class="estate-nav" aria-label="Fountain Coach publications"><a href="https://fountain.coach/">Estate</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://book.fountain.coach/">Book</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://governance.fountain.coach/" aria-current="page">Governance</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://midi2.fountain.coach/">MIDI2</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://instruments.fountain.coach/">Instruments</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://status.fountain.coach/">Status</a></nav><div class="topbar-actions"><button class="theme-button" type="button" data-theme-toggle aria-pressed="false">Theme: system</button><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></div></header>
+  <div class="workspace">
+    <nav class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters"><div class="rail-label">READING INDEX</div><a class="rail-home" href="/">Governance overview</a><a class="rail-status" href="/status-quo/">Current status</a><a class="chapter-link" href="/chapters/00-abstract/"><span>00</span><span>Abstract <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/01-reading-index/"><span>01</span><span>Reading Index <span class="status-badge status-current">Current index</span></span></a><a class="chapter-link" href="/chapters/02-development-history/"><span>02</span><span>Development History and Retained Lessons <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/03-current-state-and-problem/"><span>03</span><span>Current State and Refactoring Problem <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/04-target-architecture/"><span>04</span><span>Target Architecture <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/05-grounding-contract/"><span>05</span><span>Extended Grounding Contract <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/06-refactoring-program/"><span>06</span><span>Refactoring Program <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/07-agent-operating-guide/"><span>07</span><span>Operating Guide for `.claude` and `.codex` <span class="status-badge status-current">Current operating guide</span></span></a><a class="chapter-link" href="/chapters/08-validation-and-acceptance/"><span>08</span><span>Validation and Acceptance <span class="status-badge status-current">Current acceptance</span></span></a><a class="chapter-link" href="/chapters/09-compatibility-and-future-evolution/"><span>09</span><span>Compatibility and Future Evolution <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/10-copilot-implementation-extension/"><span>10</span><span>Copilot Implementation Extension <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/11-grounding-as-a-given/"><span>11</span><span>Grounding as a Given — the Canonical Manifesto and Conversational Authoring <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/12-animating-truth/"><span>12</span><span>Animating Truth — Foreshadowing and Perceived Performance <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/13-storage-and-performance/"><span>13</span><span>Storage and Performance — What Persists Where, and Why Reads Are Fast <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/14-the-beat-and-its-arrangements/"><span>14</span><span>The Beat and Its Arrangements — One Object, Three Views, One Firing <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/15-the-situated-copilot/"><span>15</span><span>The Situated Copilot — One Copilot, Differently Placed <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/16-the-timeline-is-the-machine-room/"><span>16</span><span>The Timeline Is the Machine Room — What You See Is What You Get <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/17-the-score/"><span>17</span><span>The Score — Reframe&#x27;s Performance Space, and the One Surface That Folds the Others <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/18-the-stage-presents-the-act/"><span>18</span><span>The Stage Presents the Act — Legibility Over Density <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/19-apple-human-interface-guidelines/"><span>19</span><span>Apple&#x27;s Human Interface Guidelines — the Baseline We Build On <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/20-on-device-first-and-the-writers-key/"><span>20</span><span>Paid-First Copilot, and the Writer&#x27;s Key — Quality-First Lane Selection <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/21-training-perspectives/"><span>21</span><span>Training Perspectives — Teaching the On-Device Model the Writer&#x27;s Work <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/22-no-preferences-only-reasoning/"><span>22</span><span>No Preferences, Only Reasoning <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/23-one-reasoning/"><span>23</span><span>One Reasoning — The Single Front Door of a Turn <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/24-the-reasoning-is-an-uncertainty-map/"><span>24</span><span>The Reasoning Is an Uncertainty Map <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/25-the-copilot-is-the-surface/"><span>25</span><span>The CoPilot Is the Surface <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/26-internals-tune-themselves/"><span>26</span><span>Internals Tune Themselves — the Disposition of the Preferences Panel <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/27-parse-before-you-ask/"><span>27</span><span>Parse Before You Ask <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/28-a-beat-is-the-question-it-raises/"><span>28</span><span>A Beat Is the Question It Raises <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/29-natural-language-measures-storify-interprets/"><span>29</span><span>NaturalLanguage Measures, Storify Interprets <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/30-the-living-gazetteer/"><span>30</span><span>The Living Gazetteer <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/31-compiled-knowledge/"><span>31</span><span>Compiled Knowledge — the Cloud Teaches, the Device Remembers <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/32-referenced-knowledge/"><span>32</span><span>Referenced Knowledge — What the World Knows Outside the Book <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/33-a-want-is-a-gap-in-a-ledger/"><span>33</span><span>A Want Is a Gap in a Ledger <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/34-a-question-that-leaves-the-work/"><span>34</span><span>A Question That Leaves the Work <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/35-deep-search/"><span>35</span><span>Deep Search <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/36-every-gap-keeps-its-address/"><span>36</span><span>Every Gap Keeps Its Address <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/37-copilot-capability-governance/"><span>37</span><span>Copilot Capability Governance — From Transport Contract to Trustworthy Action <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/38-copilot-capability-audit-skill/"><span>38</span><span>Copilot Capability Audit Skill — From Boundary to Empowerment <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/39-a-model-cannot-be-told-what-it-cannot-do/"><span>39</span><span>A Model Cannot Be Told What It Cannot Do <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/40-a-citation-is-a-promise-someone-can-check/"><span>40</span><span>A Citation Is a Promise Someone Can Check <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/41-one-retrieval-two-directions/"><span>41</span><span>One Retrieval, Two Directions <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/42-what-is-already-recorded-is-read/"><span>42</span><span>What Is Already Recorded Is Read, Never Re-Derived <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/43-the-released-surface-is-a-named-build/"><span>43</span><span>The Released Surface Is a Named Build <span class="status-badge status-current">Current release boundary</span></span></a><a class="chapter-link" href="/chapters/44-publication-and-source-policy/"><span>44</span><span>Public Publication and Private Source Policy <span class="status-badge status-current">Current publication boundary</span></span></a><a class="chapter-link" href="/chapters/45-copilot-reading-surface-and-typography/"><span>45</span><span>Copilot Reading Surface and Typography — Situated, Legible, and Reframe-Native <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/46-dynamic-grounding/"><span>46</span><span>Dynamic Grounding: From Default Reading to Writer-Accepted Lens <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/47-situated-mixed-initiative-interaction/"><span>47</span><span>Situated, Mixed-Initiative Interaction <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/48-a-service-is-a-fact-not-a-symptom/"><span>48</span><span>48. A Service Is a Fact, Not a Symptom <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/49-one-definition-two-projections/"><span>49</span><span>49. One Definition, Two Projections <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/50-text-is-stored-so-it-can-be-pointed-at/"><span>50</span><span>50. Text Is Stored So It Can Be Pointed At <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/51-one-decision-decides-the-lane/"><span>51</span><span>51. One Decision Decides the Lane <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/52-the-pencil-belongs-to-the-writer/"><span>52</span><span>52. The Pencil Belongs to the Writer <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/53-a-selection-snaps-to-meaning/"><span>53</span><span>53. A Selection Snaps to Meaning <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/54-the-writer-does-not-manage-the-projection/"><span>54</span><span>The Writer Does Not Manage the Projection <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/55-one-store-authority-across-repositories/"><span>55</span><span>One Store Authority Across Repositories <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/56-the-book-library-is-a-portable-source-provider/"><span>56</span><span>The Book Library Is Reframe&#x27;s Sole Reading Provider <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/57-the-writer-enters-by-intention/"><span>57</span><span>The Writer Enters by Intention <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/58-open-turn-mediation-protocol/"><span>58</span><span>Open-Turn Mediation Protocol <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/59-copilot-initiated-library-curation/"><span>59</span><span>The Fountain-Coach Git Library and Reframe Project Flow <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/60-the-fountain-editor-is-the-project-surface/"><span>60</span><span>The Fountain Editor Is the Project Surface <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/61-the-fountain-project-round-trip/"><span>61</span><span>The Fountain Project Round Trip <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/62-reframe-maintenance-control-plane/"><span>62</span><span>Reframe Maintenance Control Plane <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/63-fountain-maintenance-kit/"><span>63</span><span>FountainMaintenanceKit — Portable Swift Maintenance Contract <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/64-fountain-project-kit-durable-draft-custody/"><span>64</span><span>FountainProjectKit — Durable Fountain Project Custody <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/65-the-copilot-as-writing-coach/"><span>65</span><span>The Copilot as Writing Coach <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/66-fountain-image-publication-kit/"><span>66</span><span>FountainImagePublicationKit — Reframe Image Cloud and Publication Boundary <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/67-fountain-composer-kit-remote-attachment-custody/"><span>67</span><span>FountainComposerKit — Remote Attachment Custody and the Composer Boundary <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/68-the-reframe-e2e-scenario-is-the-publication-unit/"><span>68</span><span>68 — The Reframe E2E Scenario Is the Publication Unit <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/69-the-book-of-reframe-is-a-dual-projection/"><span>69</span><span>The Book of Reframe Is a Dual Projection <span class="status-badge status-current">Current publication model</span></span></a><a class="chapter-link" href="/chapters/70-external-midi2-control-of-reframe/"><span>70</span><span>70 — External MIDI2 Control of Reframe <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/71-reframe-to-reframe-software-peer-acceptance/"><span>71</span><span>71 — Reframe-to-Reframe Software-Peer Acceptance <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/72-midi2-peer-projections-and-capacity-admission/"><span>72</span><span>72 — MIDI2 Peer Projections and Capacity Admission <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/73-reframe-scenario-development-cycle/"><span>73</span><span>73 — The Reframe Scenario Development Cycle <span class="status-badge status-current">Current development cycle</span></span></a><a class="chapter-link" href="/chapters/74-private-image-prompt-history/"><span>74</span><span>Private Image Prompt History <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/75-scenario-run-ownership-and-non-interference/"><span>75</span><span>75 — Scenario Run Ownership and Non-Interference <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/76-beat-movement-and-uncertainty-overlay/"><span>76</span><span>Beat Movement and the Uncertainty Overlay <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/77-swift-midi2-scenario-runtime/"><span>77</span><span>77 — The Scenario Runtime Is Swift and MIDI2-Native <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/78-scenario-driven-development-as-org-infrastructure/"><span>78</span><span>78 — Scenario-Driven Development Is Org Infrastructure <span class="status-badge status-current">Current infrastructure</span></span></a><a class="chapter-link" href="/chapters/79-default-semantic-manuscript-projection/"><span>79</span><span>79 — The Default Semantic Manuscript Projection <span class="status-badge status-current">Current product projection</span></span></a><a class="chapter-link" href="/chapters/80-independent-governance-publication/"><span>80</span><span>80 — Independent Governance Publication <span class="status-badge status-current">Current publication target</span></span></a><a class="chapter-link" href="/chapters/81-universal-midi2-command-plane/"><span>81</span><span>81 — The Universal MIDI2 Command Plane <span class="status-badge status-current">Current MIDI2 migration boundary</span></span></a><a class="chapter-link" href="/chapters/82-remote-midi2-reading-room/"><span>82</span><span>82 — Remote MIDI2 Reading Rooms <span class="status-badge status-current">Current collaboration boundary</span></span></a><a class="chapter-link" href="/chapters/83-conversational-scenario-authoring/"><span>83</span><span>83 — Conversational Scenario Authoring Is the Development Surface <span class="status-badge status-current">Current authoring boundary</span></span></a><a class="chapter-link" href="/chapters/84-governed-reframe-design-mock/"><span>84</span><span>84 — The Reframe Design Mock Is a Governed Projection <span class="status-badge status-current">Current design-reference boundary</span></span></a><a class="chapter-link" href="/chapters/85-storify-source-auto-reads-a-defined-whole/"><span>85</span><span>85 — Storify Source Auto Reads a Defined Whole <span class="status-badge status-current">Current Storify reading boundary</span></span></a><a class="chapter-link" href="/chapters/86-apple-native-semantic-pipeline-is-one-midi2-graph/"><span>86</span><span>86 — The Apple-Native Semantic Pipeline Is One MIDI2 Graph <span class="status-badge status-current">Current semantic pipeline refactoring</span></span></a><a class="chapter-link" href="/chapters/87-midi2-monitor-is-the-live-event-mirror/"><span>87</span><span>87 — The MIDI2 Monitor Is the Live Event Mirror <span class="status-badge status-current">Current MIDI2 monitor boundary</span></span></a><a class="chapter-link" href="/chapters/88-codexkit-is-a-governed-codex-app-server-boundary/"><span>88</span><span>88 — CodexKit Is a Governed Codex App-Server Boundary <span class="status-badge status-current">Current CodexKit boundary</span></span></a><a class="chapter-link" href="/chapters/89-codex-auth-instrument-is-the-copilot-login-surface/"><span>89</span><span>89 — The Codex Auth Instrument Is the Copilot Login Surface <span class="status-badge status-current">Current auth-instrument boundary</span></span></a><a class="chapter-link" href="/chapters/90-independent-security-review-is-a-separate-acceptance-boundary/"><span>90</span><span>90 — Independent Security Review Is a Separate Acceptance Boundary <span class="status-badge status-current">Current security-review boundary</span></span></a><a class="chapter-link" href="/chapters/91-fcis-kit-instrument-store-is-the-capability-plane/"><span>91</span><span>91 — The FCIS-KIT Instrument Store Is the Capability Plane <span class="status-badge status-current">Current capability-plane boundary</span></span></a><a class="chapter-link" href="/chapters/92-fountain-coach-publication-estate/"><span>92</span><span>92 — Fountain Coach Publication Estate: Semantic Domain and CI Governance <span class="status-badge status-current">Current publication-estate boundary</span></span></a><a class="chapter-link" href="/chapters/93-instrument-creation-is-a-governed-promotion-path/"><span>93</span><span>Instrument Creation Is a Governed Promotion Path <span class="status-badge status-current">Current instrument-creation boundary</span></span></a><a class="chapter-link" href="/chapters/94-credentialed-infrastructure-operations-and-provider-adapters/"><span>94</span><span>Credentialed Infrastructure Operations and Provider Adapters <span class="status-badge status-current">Current infrastructure-authorization boundary</span></span></a><a class="chapter-link" href="/chapters/95-fountainstore-headless-linux-authority/"><span>95</span><span>FountainStore Is the Headless Linux Persistence Authority <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/96-swiftacmekit-is-a-provider-neutral-certificate-automation-boundary/"><span>96</span><span>Chapter 96 — SwiftACMEKit Is a Provider-Neutral Certificate Automation Boundary <span class="status-badge status-current">Current certificate-automation boundary</span></span></a><a class="chapter-link active" href="/chapters/97-provider-neutral-host-bootstrap-and-enrollment/" aria-current="page"><span>97</span><span>Provider-Neutral Host Bootstrap and Enrollment <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/98-apple-native-markdown-presentation-and-transferable-engraving-rules/"><span>98</span><span>Apple-Native Markdown Presentation and Transferable Engraving Rules <span class="status-badge status-reference">Reference</span></span></a><a class="chapter-link" href="/chapters/reframe-app-flow-governance/"><span>·</span><span>Reframe — How the App Must Flow <span class="status-badge status-reference">Reference</span></span></a></nav>
+    <main id="main" class="chapter-canvas"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="https://fountain.coach/">Fountain Coach</a></li><li><a href="https://governance.fountain.coach/">Governance</a></li><li aria-current="page">Provider-Neutral Host Bootstrap and Enrollment</li></ol></nav><div class="canvas-kicker"><span>FCIS · REFRAME REFACTORING · <span class="publication-state">PUBLISHED PROJECTION</span></span></div><nav class="chapter-pager" data-chapter-pager aria-label="Chapter navigation"><a class="chapter-pager-link" data-chapter-prev rel="prev" href="/chapters/96-swiftacmekit-is-a-provider-neutral-certificate-automation-boundary/" aria-label="Previous chapter: Chapter 96 — SwiftACMEKit Is a Provider-Neutral Certificate Automation Boundary"><span aria-hidden="true">←</span><span><small>PREVIOUS CHAPTER</small>Chapter 96 — SwiftACMEKit Is a Provider-Neutral Certificate Automation Boundary</span></a><span class="chapter-pager-position">CHAPTER 98 OF 99</span><a class="chapter-pager-link chapter-pager-next" data-chapter-next rel="next" href="/chapters/98-apple-native-markdown-presentation-and-transferable-engraving-rules/" aria-label="Next chapter: Apple-Native Markdown Presentation and Transferable Engraving Rules"><span><small>NEXT CHAPTER</small>Apple-Native Markdown Presentation and Transferable Engraving Rules</span><span aria-hidden="true">→</span></a></nav><article class="governance-chapter"><div class="chapter-meta">GOVERNANCE CHAPTER · 97</div><p class="chapter-state"><strong>Reference</strong> · Retained for architectural history and context; it is not, by itself, the current operational authority.</p><h1 id="provider-neutral-host-bootstrap-and-enrollment">Provider-Neutral Host Bootstrap and Enrollment</h1>
+<blockquote>
+<p>Governance chapter: 97. This chapter defines how an Ubuntu host becomes a managed Fountain Coach host without making SSH a writer-facing dependency. It governs the bootstrap and enrollment boundary; it does not claim that a Hetzner or AWS host, host agent, enrollment service, or production deployment is currently implemented.</p>
+</blockquote>
+<h2 id="the-decision">The decision</h2>
+<p>Fountain Coach separates initial host bootstrap from ordinary host operation. A new or rebuilt Linux host may be initialized by its infrastructure provider through a first-boot mechanism such as cloud-init. The resulting host agent then enrolls with Fountain Coach and exposes a narrowly scoped, authenticated operation surface.</p>
+<p>The normal writer-facing path is:</p>
+<pre class="text"><code>provider provisioning API → first-boot bootstrap → host identity verification
+→ one-time enrollment → scoped host credential in SecretStore
+→ HTTPS host-agent operation → FountainStore receipt</code></pre>
+<p>SSH may remain an owner-only emergency or recovery channel, but it is not the normal Reframe operation path and is never required of a writer. A provider API token is not a substitute for the host-agent credential: the provider creates or configures infrastructure, while the host agent admits and operates the FountainStore release.</p>
+<h2 id="what-this-governs">What this governs</h2>
+<p>This chapter applies to:</p>
+<ul>
+<li>first-boot installation of the FountainStore host agent;</li>
+<li>provider-neutral host identity and enrollment;</li>
+<li>scoped host-agent credentials, rotation, expiry, and revocation;</li>
+<li>provider adapters for Hetzner Cloud, AWS, and later providers;</li>
+<li>migration of an existing host into the enrolled model;</li>
+<li>the Copilot and SecretStore projection of host authorization; and</li>
+<li>bootstrap, enrollment, readiness, rollback, and recovery evidence.</li>
+</ul>
+<p>It does not authorize arbitrary host discovery, provider-wide scanning, a new persistence engine, public unauthenticated host APIs, automatic Store replacement, or the placement of long-lived credentials in cloud-init user data.</p>
+<h2 id="authority-boundaries">Authority boundaries</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Boundary</th>
+<th>Authority</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Infrastructure creation and network attachment</td>
+<td>Named provider adapter</td>
+</tr>
+<tr class="even">
+<td>First-boot delivery</td>
+<td>Provider launch template, image, or cloud-init boundary</td>
+</tr>
+<tr class="odd">
+<td>Host identity and agent lifecycle</td>
+<td>FountainStore host agent</td>
+</tr>
+<tr class="even">
+<td>Enrollment authority</td>
+<td>Fountain Coach enrollment service and owner-controlled registry</td>
+</tr>
+<tr class="odd">
+<td>Credential custody</td>
+<td>SecretStore / Keychain-backed host adapter</td>
+</tr>
+<tr class="even">
+<td>Installation and rollback</td>
+<td>Enrolled host agent plus named release authority</td>
+</tr>
+<tr class="odd">
+<td>Writer explanation and confirmation</td>
+<td>Reframe Copilot</td>
+</tr>
+<tr class="even">
+<td>Durable operation and enrollment evidence</td>
+<td>FountainStore</td>
+</tr>
+<tr class="odd">
+<td>TLS and public ingress</td>
+<td>Host/TLS boundary governed separately by Chapters 94–96</td>
+</tr>
+</tbody>
+</table>
+<p>No provider adapter may silently become the enrollment authority. No host agent may enroll itself merely because it can reach an endpoint. No local instrument may infer enrollment from a successful process connection.</p>
+<h2 id="bootstrap-is-not-enrollment">Bootstrap is not enrollment</h2>
+<p>Bootstrap installs the candidate agent and supplies enough information for it to request enrollment. Enrollment is the explicit trust transition that records the host identity, permitted scope, release channel, and revocation authority.</p>
+<p>The bootstrap artifact MUST be reproducible, signed or otherwise pinned, and bound to:</p>
+<ul>
+<li>the provider and exact target identity;</li>
+<li>the FountainStore host-agent version and digest;</li>
+<li>the enrollment endpoint and protocol version;</li>
+<li>a short-lived, one-time enrollment transaction;</li>
+<li>the requested operation scope; and</li>
+<li>the owner or release authority that may revoke it.</li>
+</ul>
+<p>Cloud-init user data, launch-template data, and provider metadata are bootstrap inputs, not durable secret stores. They MUST NOT contain a long-lived SSH private key, provider master token, host-agent bearer token, or unrelated application credential. A one-time enrollment value may be delivered only when it is scoped, expiring, single-use, redacted from logs, and invalidated after successful enrollment or timeout.</p>
+<h2 id="provider-adapters">Provider adapters</h2>
+<p>The reusable host contract is provider-neutral. Provider adapters implement only the infrastructure-specific work:</p>
+<pre class="text"><code>provider account → instance/image/network → bootstrap input → provider receipt</code></pre>
+<p>For Hetzner Cloud, the adapter may create an Ubuntu server and attach cloud-init user data. For AWS, the adapter may use EC2 launch configuration, user data, launch templates, an instance profile, or an equivalent first-boot boundary. The adapter must not assume that a Hetzner project token and an AWS IAM role have the same custody or scope.</p>
+<p>Provider credentials remain in SecretStore-backed adapters. They never cross into cloud-init as reusable credentials, MIDI2 envelopes, Copilot prompts, FountainStore documents, logs, or public publication.</p>
+<h2 id="existing-host-migration-without-ssh">Existing-host migration without SSH</h2>
+<p>An existing host that was not bootstrapped with an enrollment contract cannot be declared enrolled from a health response alone. Its supported migration choices are:</p>
+<ol type="1">
+<li>a provider-controlled console or recovery boundary that runs the signed bootstrap once; or</li>
+<li>replacement from a verified image with the existing Store preserved through an explicitly checked volume/backup migration.</li>
+</ol>
+<p>The migration scenario MUST bind the old and new Store identities, prove the release and backup lineage, and retain a rollback path. It MUST NOT silently reinitialize the Store or copy credentials through a Mac user account.</p>
+<h2 id="enrollment-lifecycle">Enrollment lifecycle</h2>
+<p>The host registry and Store receipts use explicit states:</p>
+<pre class="text"><code>candidate → bootstrapped → identity-pending → enrollment-pending
+→ enrolled → ready → revoked | expired | refused | failed</code></pre>
+<p>Enrollment is terminal only when the registry and FountainStore contain matching identities and the host agent proves:</p>
+<ul>
+<li>the exact target identity;</li>
+<li>the enrolled agent build and digest;</li>
+<li>the protocol and capability version;</li>
+<li>the allowed operation scope;</li>
+<li>credential expiry and rotation state;</li>
+<li>TLS/transport identity where applicable; and</li>
+<li>the revocation and rollback authority.</li>
+</ul>
+<p>Reachability, a provider API success, a cloud-init completion marker, or a live health endpoint is not enrollment proof.</p>
+<h2 id="host-agent-operation-contract">Host-agent operation contract</h2>
+<p>After enrollment, Reframe uses the named host-agent contract for bounded operations such as:</p>
+<pre class="text"><code>host.status
+fountainstore.remote.install
+host.rollback
+host.revoke</code></pre>
+<p>Every request carries the enrolled host identity, operation version, exact target, artifact version, source revision, digest, scope, idempotency key, expiry, and evidence requirement. Credentials are presented by the host adapter and are never request fields. The host agent verifies the signed artifact and target before mutation, stages into a non-active location, reports authenticated readiness, and retains the previous release for rollback.</p>
+<p>The host API MUST reject replayed, expired, wrong-target, wrong-scope, unsigned, or digest-mismatched requests. A provider API response cannot stand in for the host-agent receipt.</p>
+<h2 id="copilot-and-secretstore-surface">Copilot and SecretStore surface</h2>
+<p>Copilot teaches the writer only the safe state:</p>
+<ul>
+<li>“The staging host is enrolled and ready.”</li>
+<li>“The staging host authorization is missing or expired.”</li>
+<li>“The host identity changed; operation refused.”</li>
+<li>“The host is ready for a pinned release.”</li>
+</ul>
+<p>When enrollment or credential setup is required, Copilot opens a protected native setup surface. It may show host name, provider, scope, expiry, public-key or certificate fingerprint, and readiness state. It must not ask the writer to paste a private key or token into chat, reveal Keychain internals as a manual procedure, or expose cloud-init user data as an operational instruction.</p>
+<p>SecretStore stores the scoped host credential and enrollment metadata. Rotation replaces the credential atomically; revocation makes the old credential unusable and records the reason and authority. Possession of a valid credential is not consent to mutate a host; mutating installation still requires explicit confirmation.</p>
+<h2 id="evidence-and-claims">Evidence and claims</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>Required evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>bootstrap was requested</td>
+<td>provider plan and pinned bootstrap descriptor</td>
+</tr>
+<tr class="even">
+<td>agent was installed</td>
+<td>signed artifact, target identity, and first-boot receipt</td>
+</tr>
+<tr class="odd">
+<td>host was enrolled</td>
+<td>registry receipt plus Store identity and agent identity match</td>
+</tr>
+<tr class="even">
+<td>host is ready</td>
+<td>authenticated host-agent readiness and Store/lease proof</td>
+</tr>
+<tr class="odd">
+<td>release was installed</td>
+<td>signed artifact, digest, staging, activation, and rollback receipt</td>
+</tr>
+<tr class="even">
+<td>credential was rotated or revoked</td>
+<td>SecretStore outcome and host-agent refusal of the old credential</td>
+</tr>
+<tr class="odd">
+<td>owner-controlled operational production</td>
+<td>Chapter 94 requirements plus enrolled-host live acceptance</td>
+</tr>
+<tr class="even">
+<td>security-reviewed/public production</td>
+<td>operational evidence plus independent external review; not implied by enrollment</td>
+</tr>
+</tbody>
+</table>
+<p>Each finding is marked observed, inferred, or not established. A cloud-init log, provider response, screenshot, or process listing alone cannot establish enrollment, readiness, release activation, or rollback.</p>
+<h2 id="governing-sentence">Governing sentence</h2>
+<p><strong>A host becomes a managed Fountain Coach host through a signed, provider-delivered bootstrap followed by an explicit, scoped, revocable enrollment; after that transition, Copilot uses the enrolled host-agent contract and SecretStore—not writer-managed SSH—to operate FountainStore.</strong></p>
+</article><footer class="footer"><div class="footer-estate"><strong>Fountain Coach publication estate</strong><a href="https://fountain.coach/">Identity</a><a href="https://book.fountain.coach/">Book · human reference</a><a href="https://governance.fountain.coach/">Governance · rules and authority</a><a href="https://midi2.fountain.coach/">MIDI2 · machine-readable specification</a><a href="https://instruments.fountain.coach/">Instruments · MIDI2 catalog</a><a href="https://status.fountain.coach/">Status · company and legal context</a></div><div class="footer-legal"><a href="/legal/">Legal notices</a><a href="/privacy/">Privacy</a><a href="/accessibility/">Accessibility</a><a href="/copyright/">Copyright</a><a href="/compliance/">EU compliance</a><a href="/status-quo/">Source and provenance</a></div><span>Public projection · governance establishes doctrine, not runtime state or live acceptance.</span></footer></main>
+  </div>
+  <script src="/assets/governance.js" defer></script>
+</body>
+</html>

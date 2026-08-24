@@ -1,5 +1,15 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter 98 Apple-native Markdown presentation (2026-08-24)
+
+- **Change:** synchronize Chapter 98's boundary for semantic Markdown/Fountain parsing, Apple-native WYSIWYG text
+  rendering, injectable layout policy, transferable engraving rules, and ScoreKit/Teatro separation.
+- **Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@ec567622`.
+- **Publication content commit:** pending in `Fountain-Coach/Reframe-Refactoring`.
+- **Claim boundary:** governance only. The chapter does not claim a generalized text-layout kit, ScoreKit integration,
+  Teatro text renderer, runtime implementation, live acceptance, or publication deployment.
+
 ## Current planned change — Chapter 97 provider-neutral host bootstrap and enrollment (2026-08-23)
 
 - Change: synchronize the provider-neutral first-boot bootstrap and explicit host enrollment boundary, including

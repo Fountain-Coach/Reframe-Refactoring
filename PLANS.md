@@ -306,6 +306,21 @@ Validation:
 
 # PLANS.md
 
+## Current planned change — Chapter 98 Apple-native Markdown presentation (2026-08-24)
+
+- **Goal:** publish the governance boundary for semantic Markdown/Fountain parsing, Apple-native WYSIWYG rendering,
+  injectable layout policy, transferable engraving rules, and the separation from ScoreKit and Teatro.
+- **Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@ec567622`.
+- **Scope:** `docs/98-apple-native-markdown-presentation-and-transferable-engraving-rules.md`, the exact reading-index
+  entry, and reciprocal provenance only.
+- **Claim boundary:** governance only; no generalized text-layout kit, renderer replacement, ScoreKit migration, Teatro
+  adapter, runtime implementation, live acceptance, or production publication is claimed.
+- **Validation:** integration/publication guide parity passes; the site generator emits 100 governance chapters; the
+  publication-estate validator passes for `governance.fountain.coach`; local independent browser AX/VRT acceptance
+  passes in light, dark, and mobile menu-open states. The strict European publication gate is **NO-GO** because this
+  checkout lacks the required compliance register and policy artifacts; DNS/server deployment is therefore not run.
+
 ## Current gate — Mandatory illustration social-post template (2026-08-18)
 
 **Goal:** make every reviewed chapter illustration publishable as a deterministic 1200×630 social-post image, with
