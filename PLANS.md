@@ -1454,3 +1454,29 @@ passed all 106 generated HTML pages. Guarded deployment promoted release `releas
 `34a33cd4febbb8195919e7709846f12cb4b6a43200438ae55e548619cfbcddb2`. DNS resolved to `65.109.14.71`; the overview,
 status route, Chapter 83, and Chapter 97 returned HTTPS 200 with Caddy. AX/VRT browser acceptance was not run because
 the repository's independent browser acceptance script is unavailable in this checkout; it remains unestablished.
+## Current planned phase — Chapter 101 TeatroStageEngine semantic scenography boundary (2026-08-24)
+
+**Goal:** govern the relationship between Teatro, TeatroStageEngine, and Reframe Semantic Scenographer before further
+implementation.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (phase planning, authority precedence, replacement before deletion, evidence-backed claims);
+  08 (artifact-bound claims, live AX/window-ID/Store acceptance, deterministic and negative evidence); 98 (semantic
+  text authority, Apple adapter boundary, Teatro is not the text authority); 99 (source/uncertainty instrument
+  separation and address-preserving coordination); 100 (Semantic Scenographer as a downstream Teatro-backed
+  proposition).
+- **What they forbid here:** using a renderer or native scene framework as source or uncertainty authority; creating a
+  second lane/navigation surface; treating a design projection as a live capability; or replacing the canonical stage
+  runtime with an ungoverned host physics engine.
+- **Conflicts:** Chapter 100 described Teatro as the structured representation boundary without distinguishing Teatro's
+  generic rendering ecosystem from TeatroStageEngine's physical stage runtime. This chapter resolves that ambiguity by
+  making the stage engine canonical and requiring future Apple/native hosts to remain adapters.
+- **Excluded, and why:** implementation, kit extraction, capability registration, live drive, and publication deployment
+  are excluded from this governance-writing slice; they follow the chapter through Chapter 93's scenario-first path.
+
+**Scope:** `docs/101-teatro-stage-engine-semantic-scenography.md`, its reading-index entry, exact integration mirror,
+and reciprocal provenance.
+
+**Claim boundary:** this phase governs the extension boundary only. It does not claim that source-addressed stage
+entities, semantic composition persistence, RealityKit integration, or a live Semantic Scenographer capability exist.
