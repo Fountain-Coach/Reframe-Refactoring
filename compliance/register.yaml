@@ -1,0 +1,109 @@
+version: 1
+scope: "Reframe Governance static technical publication at governance.fountain.coach"
+last_reviewed: "2026-08-24"
+owner: "Benedikt Eickhoff"
+requirements:
+  - id: GDPR
+    instrument: "Regulation (EU) 2016/679"
+    status: ready
+    official_source: "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    trigger: "Public delivery may create technical request and security logs; the site has no accounts, forms, analytics, advertising, uploads, or profiling."
+    rationale: "The privacy notice identifies the publisher, contact, hosting/logging scope, absence of visitor-facing data collection, and the re-review triggers."
+    evidence:
+      - "COMPLIANCE.md"
+      - "LEGAL-NOTICES.md"
+      - "site/legal-content/privacy.md"
+      - "site/privacy/index.html"
+    owner: "Benedikt Eickhoff"
+    review_date: "2027-08-24"
+    limits: "This is a bounded publication record, not legal advice or a determination of controller/processor obligations in every jurisdiction."
+  - id: ePrivacy
+    instrument: "Directive 2002/58/EC"
+    status: ready
+    official_source: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32002L0058"
+    trigger: "The site is browser-delivered and could otherwise use cookies, analytics, advertising, embeds, or non-essential storage."
+    rationale: "The recorded surface uses none of those mechanisms and states that any addition requires a new review."
+    evidence:
+      - "COMPLIANCE.md"
+      - "LEGAL-NOTICES.md"
+      - "site/legal-content/privacy.md"
+    owner: "Benedikt Eickhoff"
+    review_date: "2027-08-24"
+    limits: "Technical infrastructure logging remains subject to the hosting and delivery configuration and must be reviewed if it changes."
+  - id: AI-Act-transparency
+    instrument: "Regulation (EU) 2024/1689"
+    status: ready
+    official_source: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    trigger: "The publication contains AI-assisted editorial material but does not offer an AI interaction, deploy a high-risk system, or make AI output an autonomous authority."
+    rationale: "The legal notice discloses extensive AI assistance and human review, and the publication separates doctrine and evidence from runtime claims."
+    evidence:
+      - "LEGAL-NOTICES.md"
+      - "site/legal-content/legal-notices.md"
+      - "docs/44-publication-and-source-policy.md"
+    owner: "Benedikt Eickhoff"
+    review_date: "2027-08-24"
+    limits: "This does not classify any private runtime or future AI capability and is not an AI Act conformity assessment."
+  - id: accessibility
+    instrument: "Directive (EU) 2019/882"
+    status: ready
+    official_source: "https://eur-lex.europa.eu/eli/dir/2019/882/oj"
+    trigger: "The publication is a public web surface whose readable and operable presentation is governed by FCIS-AX and FCIS-VRT."
+    rationale: "Semantic HTML, keyboard navigation, labeled controls, reduced motion, light/dark support, AX checks, and VRT captures are recorded."
+    evidence:
+      - "ACCESSIBILITY.md"
+      - "site/legal-content/accessibility.md"
+      - "site/evidence/vrt/governance-cdp"
+    owner: "Benedikt Eickhoff"
+    review_date: "2027-08-24"
+    limits: "Engineering evidence is not a legal conformity assessment; the scope must be re-evaluated for a paid or interactive service."
+  - id: DSA
+    instrument: "Regulation (EU) 2022/2065"
+    status: not_applicable
+    official_source: "https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package"
+    trigger: "The site could trigger platform or hosting obligations only if it became an intermediary service with user content or platform functions."
+    rationale: "This surface is a publisher-controlled static publication with no accounts, user uploads, community, marketplace, or platform moderation function."
+    evidence:
+      - "COMPLIANCE.md"
+      - "PUBLICATION-POLICY.md"
+      - "site/legal-content/compliance.md"
+    owner: "Benedikt Eickhoff"
+    review_date: "2027-08-24"
+    limits: "A future user-content, hosting, marketplace, or platform feature requires a fresh applicability review."
+  - id: copyright
+    instrument: "Directive (EU) 2019/790"
+    status: ready
+    official_source: "https://eur-lex.europa.eu/eli/dir/2019/790/oj"
+    trigger: "The publication contains editorial text, software-adjacent documentation, original assets, quotations, and possible third-party references."
+    rationale: "The copyright and reuse boundary identifies ownership, reserves rights, preserves third-party terms, and requires provenance review for new material."
+    evidence:
+      - "COPYRIGHT.md"
+      - "LICENSE"
+      - "site/legal-content/copyright.md"
+    owner: "Benedikt Eickhoff"
+    review_date: "2027-08-24"
+    limits: "This record does not determine third-party permissions or relicense material owned by others."
+  - id: consumer-ecommerce
+    instrument: "Directive 2011/83/EU"
+    status: not_applicable
+    official_source: "https://eur-lex.europa.eu/eli/dir/2011/83/oj"
+    trigger: "Consumer-contract and e-commerce obligations would be triggered by a paid product, checkout, subscription, or comparable transaction."
+    rationale: "The current publication is free and offers no checkout, account, payment, subscription, or commercial transaction."
+    evidence:
+      - "LEGAL-NOTICES.md"
+      - "site/legal-content/legal-notices.md"
+    owner: "Benedikt Eickhoff"
+    review_date: "2027-08-24"
+    limits: "Any paid product or transaction must be assessed before it is added to this publication estate."
+  - id: hosting-security
+    instrument: "Directive (EU) 2022/2555"
+    status: ready
+    official_source: "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
+    trigger: "Public hosting and delivery require a documented operational security boundary even where the publication is not itself a regulated essential or important entity."
+    rationale: "The publication uses a dedicated host/root tuple, HTTPS delivery, rollback-aware promotion, private-source boundaries, and no public credentials or runtime Store data."
+    evidence:
+      - "PUBLICATION-POLICY.md"
+      - "SOURCE.md"
+      - "scripts/publish_governance_site.sh"
+    owner: "Benedikt Eickhoff"
+    review_date: "2027-08-24"
+    limits: "This is not an NIS2 classification or security certification; hosting, TLS, provider, and incident controls require separate operational review."

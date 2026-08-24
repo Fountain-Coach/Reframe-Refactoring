@@ -322,6 +322,20 @@ Validation:
   passes in light, dark, and mobile menu-open states. The strict European publication gate is **NO-GO** because this
   checkout lacks the required compliance register and policy artifacts; DNS/server deployment is therefore not run.
 
+## Current planned change — Publication compliance artifact completion (2026-08-24)
+
+- **Goal:** add the repository-level compliance and policy artifacts required by the publication gate without changing
+  the governance site template or its generated legal routes.
+- **Scope:** `COMPLIANCE.md`, `compliance/register.yaml`, `PUBLICATION-POLICY.md`, `LEGAL-NOTICES.md`, `COPYRIGHT.md`,
+  `ACCESSIBILITY.md`, and `LICENSE`; the content is bounded to the existing static governance publication scope and
+  remains explicitly non-legal-advice/non-certification material.
+- **Evidence:** existing `site/legal-content/*` statements were promoted into the repository-level artifacts; the
+  register records eight requirements with zero `requires_review` rows.
+- **Validation:** strict European publication gate `GO` within documented scope; site generator and publication-estate
+  validator pass; existing local AX/VRT acceptance remains valid. Deployment follows only after commit/push.
+- **Claim boundary:** this establishes a documented publication scope, not legal advice, conformity assessment,
+  security certification, or a claim about the private runtime.
+
 ## Current gate — Mandatory illustration social-post template (2026-08-18)
 
 **Goal:** make every reviewed chapter illustration publishable as a deterministic 1200×630 social-post image, with
