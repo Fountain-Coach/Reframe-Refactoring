@@ -314,6 +314,22 @@ Validation:
 - **Claim boundary:** governance and design contract; no SVG renderer extraction, source-view replacement, kit release, runtime acceptance, or deployment is claimed by this chapter.
 - **Validation target:** chapter/index link checks, publication/integration parity, generated governance routes, `git diff --check`, and local preview of the Chapter 99 route.
 
+## Current planned change — Chapter 100 Semantic Scenographer (2026-08-24)
+
+- **Goal:** govern a downstream Teatro-backed instrument for turning source-addressed dramatic and semantic
+  relations into inspectable spatial propositions.
+- **Decision:** retire the writer-facing Lane View as a second navigation surface. Retain `UncertaintyScoreKit` as an
+  internal model projection; keep Reading Navigation as the semantic index; make the scenographer the next spatial
+  thinking instrument.
+- **Scope:** `docs/100-semantic-scenographer.md`, its deterministic heading illustration, reading-index/status links,
+  and local governance-site preview. No runtime implementation, provider call, image generation, or production deploy.
+- **Chapters read:** 08 (independent evidence), 24 (uncertainty meaning), 36 (composite addresses), 79 (default
+  manuscript projection), 98 (Apple-native text and Teatro boundary).
+- **Validation target:** generated Chapter 100 route, illustration asset, local route/link/metadata checks, `git diff
+  --check`, and local browser/AX/VRT preview where available.
+- **Claim boundary:** the chapter defines the governance contract and design reference only; it does not claim that a
+  Semantic Scenographer capability, Teatro score executor, AX surface, Store receipt, or live acceptance exists.
+
 ## Current planned change — Chapter 98 Apple-native Markdown presentation (2026-08-24)
 
 - **Goal:** publish the governance boundary for semantic Markdown/Fountain parsing, Apple-native WYSIWYG rendering,

@@ -1,5 +1,10 @@
 # Decoupled Manuscript Instruments — Navigation, Source, and Uncertainty
 
+> **Status:** The writer-facing Lane View direction in this chapter is superseded by [Chapter 100 — Semantic
+> Scenographer](100-semantic-scenographer.md). `UncertaintyScoreKit` remains an internal uncertainty projection;
+> Reading Navigation remains the user-facing semantic index. The separation and address rules below remain applicable
+> where they do not require a dedicated Lane View product surface.
+
 > Chapter summary: Reframe presents one manuscript through three cooperating instruments. Reading Navigation
 > chooses an address, Source View renders the source faithfully, and Lane View renders the uncertainty score as an
 > independent SVG canvas. They share semantic identity and source coordinates, but they do not share rendering

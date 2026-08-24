@@ -1,5 +1,20 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter 100 Semantic Scenographer (2026-08-24)
+
+- **Change:** publish the downstream Teatro-backed Semantic Scenographer boundary: source-addressed semantic
+  interpretation becomes structured, traceable spatial proposals; `UncertaintyScoreKit` remains an internal model
+  projection rather than a second writer-facing navigation surface.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@79ec2569`.
+- **Publication content commit:** pending.
+- **Illustration:** deterministic design-reference SVG `docs/illustrations/100-semantic-scenographer.svg`; it carries
+  no runtime, Store, AX, provider, or live-acceptance claim.
+- **Validation:** governance estate validator passed for 109 generated HTML pages; governance-specific Chrome CDP
+  acceptance passed with AX nodes and light/dark/mobile captures under `/tmp/governance-chapter-100-governance-acceptance`.
+- **Claim boundary:** governance and design reference only; no Semantic Scenographer executor, Teatro score runtime,
+  image generation, AX surface, Store receipt, or production application capability is established.
+
 ## Current planned change — Chapter 99 decoupled manuscript instruments (2026-08-24)
 
 - **Change:** publish the semantic boundary between Reading Navigation, Source View, and the independent
