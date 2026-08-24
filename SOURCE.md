@@ -6,7 +6,7 @@
   rendering, injectable layout policy, transferable engraving rules, and ScoreKit/Teatro separation.
 - **Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
 - **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@ec567622`.
-- **Publication content commit:** pending in `Fountain-Coach/Reframe-Refactoring`.
+- **Publication content commit:** `Fountain-Coach/Reframe-Refactoring@94ff73b`.
 - **Claim boundary:** governance only. The chapter does not claim a generalized text-layout kit, ScoreKit integration,
   Teatro text renderer, runtime implementation, live acceptance, or publication deployment.
 

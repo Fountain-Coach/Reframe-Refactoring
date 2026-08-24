@@ -312,6 +312,7 @@ Validation:
   injectable layout policy, transferable engraving rules, and the separation from ScoreKit and Teatro.
 - **Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
 - **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@ec567622`.
+- **Publication content commit:** `Fountain-Coach/Reframe-Refactoring@94ff73b`.
 - **Scope:** `docs/98-apple-native-markdown-presentation-and-transferable-engraving-rules.md`, the exact reading-index
   entry, and reciprocal provenance only.
 - **Claim boundary:** governance only; no generalized text-layout kit, renderer replacement, ScoreKit migration, Teatro
