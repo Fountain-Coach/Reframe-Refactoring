@@ -335,6 +335,10 @@ Validation:
   validator pass; existing local AX/VRT acceptance remains valid. Deployment follows only after commit/push.
 - **Claim boundary:** this establishes a documented publication scope, not legal advice, conformity assessment,
   security certification, or a claim about the private runtime.
+- **Publication result:** source `Fountain-Coach/Reframe-Refactoring@184f674` was staged and promoted as
+  `release-20260824T075641Z-37830` to `root@65.109.14.71:/var/www/reframe-governance/current`. DNS resolves to
+  `65.109.14.71`; Caddy HTTPS returned 200 for the overview, status route, Chapter 98, compliance, legal, and
+  accessibility routes. No runtime or production FountainStore claim is made.
 
 ## Current gate — Mandatory illustration social-post template (2026-08-18)
 

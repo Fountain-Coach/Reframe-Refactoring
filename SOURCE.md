@@ -10,6 +10,16 @@
 - **Claim boundary:** governance only. The chapter does not claim a generalized text-layout kit, ScoreKit integration,
   Teatro text renderer, runtime implementation, live acceptance, or publication deployment.
 
+## Current publication result — Chapter 98 compliance-complete projection (2026-08-24)
+
+- **Source:** `Fountain-Coach/Reframe-Refactoring@184f674`.
+- **Release:** `release-20260824T075641Z-37830` promoted to `/var/www/reframe-governance/current` on
+  `65.109.14.71` for `governance.fountain.coach`.
+- **Verification:** DNS resolves to `65.109.14.71`; Caddy HTTPS returned 200 for overview, status, Chapter 98,
+  compliance, legal, and accessibility routes.
+- **Claim boundary:** public governance projection only; no private runtime, FountainStore, provider, or production
+  application deployment is claimed.
+
 ## Current planned change — Chapter 97 provider-neutral host bootstrap and enrollment (2026-08-23)
 
 - Change: synchronize the provider-neutral first-boot bootstrap and explicit host enrollment boundary, including
