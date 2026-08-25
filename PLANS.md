@@ -1515,4 +1515,5 @@ establish completion.
 **Claim boundary:** public governance projection only; no runtime completion, live scenario, production deployment, or
 security review is claimed by this chapter.
 
-**Provenance:** integration commit `Fountain-Coach/midi2-gpu-fabric@4a29b7a1`; publication commit recorded below.
+**Provenance:** integration commit `Fountain-Coach/midi2-gpu-fabric@e8bdfc09`; publication/deployment commit
+`Fountain-Coach/Reframe-Refactoring@b416ba4`.

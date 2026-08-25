@@ -857,7 +857,7 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - **Change:** publish Chapter 104's MIDI2 event-time, monotonic measurement, jitter, heartbeat, cancellation, and
   durable asynchronous-completion boundary, with its reviewed principal header illustration.
 - **Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
-- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@4a29b7a1`.
-- **Publication content commit:** pending.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@e8bdfc09`.
+- **Publication/deployment content commit:** `Fountain-Coach/Reframe-Refactoring@b416ba4`.
 - **Claim boundary:** governance and publication projection only; no runtime, Store receipt, live acceptance, or
   production claim is established here.
