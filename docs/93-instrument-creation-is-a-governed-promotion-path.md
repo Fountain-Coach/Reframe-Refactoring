@@ -190,4 +190,4 @@ Hardware interoperability is always a separate claim. Its absence does not inval
 
 ## Governing sentence
 
-An instrument is created by making a bounded capability executable, observable, reproducible, and evidence-bound; it becomes reusable only when its owning release authority promotes a named build, and it becomes public only through a sanitized projection that says exactly what the evidence establishes and what it does not.
+An instrument is created by making a bounded capability executable, observable, reproducible, and evidence-bound; it becomes reusable only when its owning release authority promotes a named build, and it becomes public only through a sanitized projection that says exactly what the evidence establishes and what it does not. [Chapter 103](103-fcis-kit-semantic-factory-and-wired-instrument-event-stream.md) applies this promotion path to a versioned composition of wired instruments.

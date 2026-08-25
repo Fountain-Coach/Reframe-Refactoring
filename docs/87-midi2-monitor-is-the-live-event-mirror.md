@@ -181,4 +181,6 @@ and visual intent; it does not establish a runtime event, Store receipt, AX stat
 ## Governing sentence
 
 The MIDI2 Monitor is Reframe's live event mirror: Swift owns the typed observation, FountainStore proves the durable
-behavior, AX exposes the writer-facing projection, and independent witnesses decide what may be claimed.
+behavior, AX exposes the writer-facing projection, and independent witnesses decide what may be claimed. For a
+multi-instrument execution, [Chapter 103](103-fcis-kit-semantic-factory-and-wired-instrument-event-stream.md)
+defines the FCIS-KIT graph and the one correlated event stream that this monitor must expose.

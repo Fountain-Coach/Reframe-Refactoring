@@ -1480,3 +1480,25 @@ and reciprocal provenance.
 
 **Claim boundary:** this phase governs the extension boundary only. It does not claim that source-addressed stage
 entities, semantic composition persistence, RealityKit integration, or a live Semantic Scenographer capability exist.
+## Current planned change — Chapter 102 semantic inference execution and latency governance (2026-08-25)
+
+- **Goal:** govern one lane-neutral semantic execution boundary for local and Codex transports before further
+  latency refactoring or transport promotion.
+- **Scope:** Chapter 102, reading-index entry, status metadata, and exact integration-copy synchronization. The
+  chapter covers warm runtime reuse, isolated source-window contexts, typed terminal events, retries, cancellation,
+  resume, critical-path measurement, and acceptance parity across lanes.
+- **Claim boundary:** governance and local publication proof only. No new executor, provider promotion, production
+  deployment, external security review, or live semantic acceptance is established by this chapter.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Validation:** local governance build, estate validator, chapter route/link checks, independent site acceptance where
+  available, guide parity, and `git diff --check`.
+## Current planned change — Chapter 103 FCIS-KIT Semantic Factory (2026-08-25)
+
+**Governance read record:**
+
+- **Chapters read:** 07 (bounded planning and governed work); 08 (independent acceptance and evidence); 87 (MIDI2 Monitor is the live event mirror); 91 (FCIS-KIT is the capability plane); 92 (publication-estate invariants); 93 (instrument promotion lifecycle).
+- **What they forbid here:** treating a local Reframe helper as a released Kit, using a generic peer card as event evidence, inferring completion from UI or process state, or publishing an unestablished runtime claim.
+- **Conflicts:** none; the request for an external SemVer library and monitored wired-instrument stream is consistent with the resolved chapters.
+- **Excluded, and why:** implementation, remote publication, and live acceptance are excluded from this local governance-writing slice; they follow the chapter's promotion gates.
+
+**Slice:** write and locally present Chapter 103 with a deterministic principal illustration. The chapter governs the future Kit boundary; it does not claim that the package or monitor integration already exists.

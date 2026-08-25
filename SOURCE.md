@@ -842,3 +842,13 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - Integration content commit: `Fountain-Coach/midi2-gpu-fabric@33528d4a`.
 - Claim boundary: governance wording only. No real provider adapter, remote host, production deployment, or external
   security review is established.
+## Current planned change — Chapter 102 semantic inference execution and latency governance (2026-08-25)
+
+- **Change:** define one lane-neutral execution contract for local and Codex semantic work: warm runtime reuse with
+  isolated source-window contexts, typed terminal outcomes, exact provenance, resumability, and decomposed latency
+  evidence.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Publication content commit:** pending.
+- **Integration content commit:** pending; local proof only at this stage.
+- **Claim boundary:** governance and local publication projection only. No executor promotion, provider change,
+  production deployment, external review, or live semantic acceptance is claimed.

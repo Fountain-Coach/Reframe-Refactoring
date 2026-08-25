@@ -180,3 +180,5 @@ Stop rather than build, admit, or publish when:
 The FCIS-KIT Instrument Store distributes governed capabilities, not opaque applications: Reframe owns mediation and
 acceptance, MIDI2 exposes the operational contract, scenarios define what must happen, FountainStore and independent
 witnesses establish what did happen, and only the owning release authority may promote an instrument for reuse.
+[Chapter 103](103-fcis-kit-semantic-factory-and-wired-instrument-event-stream.md) applies this capability-plane rule
+to a composed Semantic Factory and its monitored event stream.
