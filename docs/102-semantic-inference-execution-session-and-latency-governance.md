@@ -282,6 +282,11 @@ established by this chapter.
 This chapter supplies the shared execution rule beneath those capabilities: local and Codex lanes may differ in
 transport, but they must not differ in semantic isolation, terminal truth, provenance, cancellation, or evidence.
 
+[Chapter 104](104-midi2-event-time-jitter-and-asynchronous-completion-governance.md) refines the time boundary for
+this contract: MIDI2 sequence orders events, monotonic time measures them, jitter describes transport behavior, and a
+heartbeat observes an active run. Timeout language here means a typed transport or cancellation boundary; an arbitrary
+wall-clock watchdog may not terminate a healthy MIDI2 event stream.
+
 ## Acceptance order
 
 Acceptance proceeds in this order:

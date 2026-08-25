@@ -1502,3 +1502,17 @@ entities, semantic composition persistence, RealityKit integration, or a live Se
 - **Excluded, and why:** implementation, remote publication, and live acceptance are excluded from this local governance-writing slice; they follow the chapter's promotion gates.
 
 **Slice:** write and locally present Chapter 103 with a deterministic principal illustration. The chapter governs the future Kit boundary; it does not claim that the package or monitor integration already exists.
+## Current planned change — Chapter 104 MIDI2 event-time governance (2026-08-25)
+
+**Goal:** publish the correction that MIDI2 sequence/correlation orders asynchronous work, monotonic time measures
+elapsed time and jitter, heartbeats observe without terminating, and typed terminal events plus FountainStore receipts
+establish completion.
+
+**Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
+
+**Scope:** Chapter 104, its Chapter 102 backlink, reading-index entry, and reviewed principal illustration.
+
+**Claim boundary:** public governance projection only; no runtime completion, live scenario, production deployment, or
+security review is claimed by this chapter.
+
+**Provenance:** integration commit `Fountain-Coach/midi2-gpu-fabric@4a29b7a1`; publication commit recorded below.

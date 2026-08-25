@@ -852,3 +852,12 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - **Integration content commit:** pending; local proof only at this stage.
 - **Claim boundary:** governance and local publication projection only. No executor promotion, provider change,
   production deployment, external review, or live semantic acceptance is claimed.
+# Current publication slice — Chapter 104 MIDI2 event-time governance (2026-08-25)
+
+- **Change:** publish Chapter 104's MIDI2 event-time, monotonic measurement, jitter, heartbeat, cancellation, and
+  durable asynchronous-completion boundary, with its reviewed principal header illustration.
+- **Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@4a29b7a1`.
+- **Publication content commit:** pending.
+- **Claim boundary:** governance and publication projection only; no runtime, Store receipt, live acceptance, or
+  production claim is established here.
