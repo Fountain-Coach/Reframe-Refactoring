@@ -882,5 +882,6 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
   illustration; published together with Chapters 105 and 106 as one spatial-reasoning release.
 - **Claim boundary:** governance and public publication projection only; no completed engine integration, package
   release, live acceptance, production deployment, or external security review is claimed.
-- **Publication content commit:** pending.
-- **Integration content commit:** pending synchronization commit.
+- **Publication content commit:** `Fountain-Coach/Reframe-Refactoring@906bdf6b` plus provenance correction below.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@648d262c`.
+- **Synchronized:** 2026-08-25; unrelated integration runtime changes remain uncommitted.
