@@ -1517,3 +1517,48 @@ security review is claimed by this chapter.
 
 **Provenance:** integration commit `Fountain-Coach/midi2-gpu-fabric@e8bdfc09`; publication/deployment commit
 `Fountain-Coach/Reframe-Refactoring@b416ba4`.
+
+## Current planned change — Chapters 105 and 106 spatial reasoning integration (2026-08-25)
+
+**Goal:** step governance ahead of implementation by defining the writer-facing Semantic Scenographer contract and
+the Teatro-backed MIDI2 Monitor runtime projection from the supplied Codex briefs.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (phase planning, authority precedence, replacement before deletion, evidence-backed claims);
+  08 (artifact-bound acceptance, AX/window-ID/Store authorities, deterministic and negative evidence); 87 (MIDI2
+  Monitor as a truthful live mirror); 100 (source-addressed Semantic Scenographer); 101 (TeatroStageEngine as the
+  canonical stage authority); 104 (MIDI2 ordering, monotonic measurement, and terminal completion).
+- **What they forbid here:** treating a rendered scene as source truth, inventing a writer-facing Teatro icon grammar,
+  building a second scene or physics authority, inferring runtime state from a renderer, or presenting a design brief
+  as live acceptance evidence.
+- **Conflicts:** the briefs move the monitor toward a Teatro primary projection while Chapter 87 requires a truthful
+  event mirror; Chapters 105 and 106 resolve this by sharing a typed Teatro score while keeping runtime facts and
+  scenographic interpretation explicitly distinct.
+- **Excluded, and why:** runtime implementation, package release, live acceptance, production deployment, and external
+  security review; these are subsequent scenario-first phases governed by Chapters 91 and 93.
+
+**Scope:** Chapters 105 and 106, reading-index entries, exact integration synchronization, and deterministic reviewed
+principal illustrations. No live capability or implementation claim is made.
+
+## Current planned change — Chapter 107 canonical Teatro stage composition layer (2026-08-25)
+
+**Goal:** govern creation of the missing source-addressed Teatro composition layer that joins Semantic Scenographer,
+TeatroStageEngine, physics hosts, deterministic document projections, provenance, and replay.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (bounded planning and evidence-backed claims); 08 (artifact-bound acceptance and independent
+  runtime evidence); 87 (truthful MIDI2 event mirror); 93 (FCIS-KIT promotion); 100 (source-grounded spatial
+  proposal); 101 (TeatroStageEngine stage authority); 106 (canonical Teatro runtime score and replay).
+- **What they forbid here:** presenting the current Semantic Scenographer grid or an ImageGen raster as a completed
+  Teatro stage, creating a private physics authority, or claiming engine integration from documentation alone.
+- **Conflicts:** none; this chapter makes the missing composition boundary explicit before implementation.
+- **Excluded, and why:** implementation, package release, live acceptance, production deployment, and external security
+  review; this slice is governance publication only.
+
+**Scope:** Chapter 107, the 105–107 spatial-reasoning chapter set, reading-index/status updates, deterministic
+illustration, integration synchronization, local gates, and governed deployment.
+
+**Claim boundary:** governance and publication projection only; no completed TeatroStageEngine integration, live
+capability, package release, production deployment, or external security review is claimed.

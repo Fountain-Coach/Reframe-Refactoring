@@ -861,3 +861,26 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - **Publication/deployment content commit:** `Fountain-Coach/Reframe-Refactoring@b416ba4`.
 - **Claim boundary:** governance and publication projection only; no runtime, Store receipt, live acceptance, or
   production claim is established here.
+
+## Current planned change — Chapters 105 and 106 spatial reasoning integration (2026-08-25)
+
+- **Change:** add the source-addressed spatial-thought marker contract and the canonical Teatro MIDI2 Monitor runtime
+  projection contract from the supplied implementation briefs.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Publication content:** `docs/105-semantic-scenographer-one-spatial-thought.md`,
+  `docs/106-teatro-midi2-monitor-canonical-runtime-projection.md`, reading index, chapter status, and illustrations.
+- **Integration content commit:** pending synchronization commit.
+- **Claim boundary:** governance/design only; no implementation, package release, live acceptance, or production claim.
+
+## Current planned change — Chapter 107 canonical Teatro stage composition layer (2026-08-25)
+
+- **Change:** add the creation boundary for the missing source-addressed Teatro composition layer, including the
+  TeatroStageEngine adapter, deterministic projections, provenance, replay, and the distinction between Teatro scene
+  structure and ImageGen editorial illustrations.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Publication content:** Chapter 107, reading-index/status updates, and the deterministic Teatro-style principal
+  illustration; published together with Chapters 105 and 106 as one spatial-reasoning release.
+- **Claim boundary:** governance and public publication projection only; no completed engine integration, package
+  release, live acceptance, production deployment, or external security review is claimed.
+- **Publication content commit:** pending.
+- **Integration content commit:** pending synchronization commit.
