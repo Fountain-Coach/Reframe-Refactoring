@@ -66,6 +66,11 @@ source-addressed scenography. This chapter changes the principal illustration pr
 the illustration is itself a deterministic Teatro-style projection of declared objects and relations. ImageGen may
 remain useful for mood boards or visual research, but it is downstream of—or outside—the canonical scene contract.
 
+The same distinction applies to publication typography. A vector container does not make an illustration readable by
+itself. The canonical Teatro-style asset must keep labels as appropriately scaled vector text or well-sized glyph
+geometry, preserve generous card padding and line wrapping, and be inspected at the size at which the chapter renders
+it. A 1200×630 social JPEG is a derivative for distribution; it is not a repair for a weak canonical composition.
+
 ## The composition contract
 
 The new layer must be headless, codable, versioned, and independent of any one renderer. Its output is a canonical
@@ -173,7 +178,8 @@ Implementation proceeds in this order:
 5. render the same fixture through SVG and one approved stage host;
 6. prove source selection, provenance inspection, replay, and deterministic rerender;
 7. connect MIDI2 runtime facts where the composition represents runtime state;
-8. expose the result through the FCIS-KIT instrument contract and Reframe scenario acceptance.
+8. inspect canonical and social projections for readable type, adequate padding, preserved line breaks, and no clipping;
+9. expose the result through the FCIS-KIT instrument contract and Reframe scenario acceptance.
 
 The first release is not “an attractive scene.” It is a source-addressed composition that survives inspection,
 revision, projection changes, and replay.

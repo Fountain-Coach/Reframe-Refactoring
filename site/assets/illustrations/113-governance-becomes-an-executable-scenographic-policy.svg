@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Governance becomes an executable scenographic policy</title>
+  <desc id="desc">Governance chapters flow into a typed Semantic Scenographer Kit policy, then into TeatroStageEngine and deterministic projections, with source address and provenance preserved.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#557184"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#203444" flood-opacity=".14"/></filter>
+    <style>
+      .title{font:700 42px -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#172532}
+      .subtitle{font:400 20px -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#5a6d7a}
+      .eyebrow{font:700 14px -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;letter-spacing:2px;fill:#687d89}
+      .cardtitle{font:700 23px -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#172532}
+      .body{font:400 18px -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#4c6170}
+      .mono{font:600 17px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#d9e7ed}
+      .darktitle{font:700 24px -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#fff}
+      .small{font:400 15px -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#d3e0e5}
+      .gate{font:700 18px -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#7b5148}
+    </style>
+  </defs>
+  <rect width="1400" height="820" fill="#f5f8f9"/>
+  <text x="72" y="76" class="eyebrow">GOVERNED SPATIAL REASONING · CHAPTER 113</text>
+  <text x="72" y="132" class="title">Governance becomes policy</text>
+  <text x="72" y="168" class="subtitle">The rule is typed before the scene is composed.</text>
+
+  <rect x="72" y="238" width="300" height="250" rx="18" fill="#fff" stroke="#c9d7dd" stroke-width="2" filter="url(#shadow)"/>
+  <text x="106" y="282" class="cardtitle">Governance chapters</text>
+  <text x="106" y="322" class="body">100 · 101 · 107 · 112</text>
+  <text x="106" y="360" class="body">purpose · stage · composition</text>
+  <text x="106" y="392" class="body">kit ownership · evidence</text>
+  <line x1="106" y1="424" x2="338" y2="424" stroke="#d5e0e4" stroke-width="2"/>
+  <text x="106" y="458" class="body">declared rules</text>
+
+  <path d="M372 363 H474" fill="none" stroke="#557184" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="490" y="208" width="430" height="310" rx="20" fill="#193448" filter="url(#shadow)"/>
+  <text x="528" y="258" class="darktitle">SemanticScenographerKit</text>
+  <text x="528" y="292" class="small">typed policy · SemVer · fixture-bound</text>
+  <line x1="528" y1="320" x2="882" y2="320" stroke="#6e91a0" stroke-width="2"/>
+  <text x="528" y="358" class="mono">source address</text>
+  <text x="528" y="389" class="mono">permitted roles / modes</text>
+  <text x="528" y="420" class="mono">uncertainty boundary</text>
+  <text x="528" y="451" class="mono">provenance + replay</text>
+  <circle cx="540" cy="486" r="8" fill="#efb75b"/><circle cx="568" cy="486" r="8" fill="#78c9c1"/><circle cx="596" cy="486" r="8" fill="#ee8f7e"/>
+  <text x="620" y="492" class="small">contract before composition</text>
+
+  <path d="M920 300 C966 270 980 270 1020 270" fill="none" stroke="#557184" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M920 406 H1020" fill="none" stroke="#557184" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M920 478 C966 510 980 510 1020 510" fill="none" stroke="#557184" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="1038" y="208" width="290" height="126" rx="16" fill="#e2f1ee" stroke="#a9d1c9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1070" y="254" class="cardtitle">TeatroStageEngine</text>
+  <text x="1070" y="288" class="body">compose · stage · render</text>
+
+  <rect x="1038" y="354" width="290" height="126" rx="16" fill="#e5edf7" stroke="#b7cce1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1070" y="400" class="cardtitle">ReframeCore</text>
+  <text x="1070" y="434" class="body">mediate · dispatch · inspect</text>
+
+  <rect x="1038" y="500" width="290" height="126" rx="16" fill="#f6ead9" stroke="#e4c79d" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1070" y="546" class="cardtitle">Projection + Store</text>
+  <text x="1070" y="580" class="body">SVG · AX · receipt · replay</text>
+
+  <rect x="72" y="590" width="856" height="126" rx="18" fill="#fff7f2" stroke="#eab8a0" stroke-width="2"/>
+  <text x="106" y="638" class="gate">NO PROSE SCRAPE · NO SECOND AUTHORITY</text>
+  <text x="106" y="675" class="body">The policy preserves source identity, uncertainty, provenance, and deterministic revision.</text>
+  <text x="106" y="700" class="body">It governs interpretation without pretending interpretation is source fact.</text>
+  <text x="72" y="770" class="eyebrow">TYPED POLICY · SOURCE ADDRESS · TRACEABLE PROPOSAL · DETERMINISTIC PROJECTION</text>
+</svg>

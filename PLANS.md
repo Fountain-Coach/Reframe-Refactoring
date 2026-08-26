@@ -1683,3 +1683,52 @@ implementation, live acceptance, security review, or release of the capabilities
 `add40d2` and integration mirror commit `eec95313` are on `main`; guarded release `release-20260826T174725Z` was
 promoted to the governance host. The integration checkout still contains unrelated uncommitted Swift changes and
 `.local-governance-fountainstore-routes.json`, intentionally left untouched.
+
+## Current planned change — Chapter 113 executable scenographic policy (2026-08-26)
+
+**Goal:** convert the existing Semantic Scenographer doctrine into a typed, versioned Kit policy that raises
+scenographic quality without creating a second source, uncertainty, or stage authority.
+
+**Governance read record:** Chapters 07 (bounded planning and clean work); 08 (separate implementation, acceptance,
+and release evidence); 100 (Semantic Scenographer purpose and authority boundary); 107 (canonical Teatro composition
+layer); 112 (typed Kit ownership before implementation).
+
+**What they forbid here:** duplicating Chapter 100's instrument definition, scraping governance prose at runtime,
+flattening proposals into untraceable imagery, or claiming that the current renderer seam proves full TeatroStageEngine
+integration.
+
+**Conflicts:** none; the new chapter makes the existing conversion explicit while preserving all previously assigned
+authorities.
+
+**Excluded, and why:** implementation, package dependency changes, live scenario execution, and remote publication are
+excluded from this writing slice; they require a separate Kit implementation and acceptance phase.
+
+**Scope:** Chapter 113, deterministic SVG illustration, Reading Index/status metadata, generated local site, and local
+publication validation.
+
+**Claim boundary:** governance and design projection only; no full policy implementation, engine integration, live
+acceptance, or released capability is claimed.
+
+## Current planned change — illustration legibility governance correction (2026-08-26)
+
+**Goal:** record the observed rendering lesson in the governing chapters before replacing promoted illustration
+derivatives: vector format alone is insufficient when typography is undersized, outlined poorly, clipped, or later
+rasterized without a canonical source distinction.
+
+**Governance read record:** Chapters 07 (bounded change and evidence); 08 (visual and behavioral evidence are
+separate); 84 (design-mock claim boundary); 92 (estate and social-image contract); 107 (Teatro composition and
+deterministic projection).
+
+**What they forbid here:** treating a deterministic file conversion or HTTP 200 as proof of readable typography,
+using a social JPEG as the design source, or confusing vector containers with legible vector composition.
+
+**Conflicts:** none; this is a clarification of the existing canonical-asset, deterministic-render, and publication
+projection boundaries.
+
+**Excluded, and why:** replacing every historical illustration is a subsequent asset-repair slice; this phase first
+establishes the governing quality predicates so replacements can be reviewed consistently.
+
+**Scope:** Chapters 84, 92, 107, and 113; local generated site and estate validation.
+
+**Claim boundary:** governance correction only; no claim is made that all historical illustrations have yet been
+re-rendered or that external social platforms preserve SVG typography.

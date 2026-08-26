@@ -56,6 +56,12 @@ Every site MUST implement or explicitly inherit the following traits:
 10. **Accessibility:** semantic landmarks, skip navigation, heading order, keyboard operation, visible focus, named
     controls, adequate contrast, and mobile hit targets.
 
+For illustrated governance, the estate has one additional distinction. The chapter's canonical illustration is the
+reviewed source asset; the social image is a bounded delivery derivative. A derivative may be rasterized for platform
+compatibility, but it must not become the place where the design is authored. Vector diagrams and typography must be
+resolved in the canonical asset first, with enough scale and padding to survive responsive display. A deterministic
+conversion does not excuse blurry or clipped type.
+
 Shared traits are a contract, not a requirement that every site look identical. A domain may change its content model,
 language, navigation depth, illustration treatment, or density when that variation follows its declared role.
 
@@ -120,6 +126,10 @@ instrument admission contract, the status site's legal declarations, or the gove
    or legal status that their owning authority has not established.
 7. The generated public site is never allowed to expose private runtime source, Store data, credentials, or deployment
    secrets.
+8. A chapter illustration MUST identify one canonical reviewed asset and derive its social image from that asset. The
+   social derivative MUST NOT be used as the design source or silently replace the canonical illustration.
+9. Vector-first diagrams MUST be checked for readable typography, internal card padding, line wrapping, and clipping at
+   intrinsic and responsive display sizes. Paths used for lettering remain subject to the same legibility requirement.
 
 ## Governing sentence
 

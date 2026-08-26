@@ -89,6 +89,15 @@ provenance.
    behavior, accessibility, visual regression, image generation, placement correctness, or live acceptance.
 8. The publication skill MUST record the mock's source commit, renderer/input identity, asset digest, and claim
    boundary, and MUST keep the Teatro scenario status `executable-not-live-accepted` until its evidence exists.
+9. A diagram or typographic architecture illustration MUST use a vector-first canonical asset, preferably SVG. The
+   canonical asset MUST NOT depend on a low-resolution rasterized text layer.
+10. Canonical illustration typography MUST remain legible at its intrinsic size and at the responsive display size
+    used by the chapter template. Text must have sufficient padding, line wrapping, and contrast; technically vector
+    outlines do not satisfy this rule when their glyphs are too small to rasterize cleanly on screen.
+11. A social JPEG or other raster derivative MUST be generated from the reviewed canonical asset. It is a delivery
+    derivative, not a second illustration and not the canonical source of typography or layout.
+12. Visual review MUST inspect both the canonical asset and its social derivative. A successful file conversion or
+    HTTP response is not evidence of typographic legibility.
 
 ## Governing sentence
 
