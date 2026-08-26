@@ -223,6 +223,8 @@ identity, [Governance](https://governance.fountain.coach/) is the authority for 
 [Status](https://status.fountain.coach/) is the operational and legal context. These projections are linked
 references, not alternate runtime or release authorities.
 
+Chapter 109, [NaturalLanguage Measurement Is a MIDI2 Instrument](109-natural-language-measurement-is-a-midi2-instrument.md), applies this portability boundary to the first host-provided semantic measurement capability.
+
 ## Relationship to existing governance
 
 This chapter extends Chapter 81, [The Universal MIDI2 Command Plane](81-universal-midi2-command-plane.md), by making

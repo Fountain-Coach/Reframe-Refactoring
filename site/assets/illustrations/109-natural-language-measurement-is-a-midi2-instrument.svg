@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">NaturalLanguage measurement becomes a portable MIDI2 instrument</title>
+  <desc id="desc">A Teatro-style structured architecture diagram: bounded source enters a macOS NaturalLanguage adapter, becomes portable source-addressed evidence, crosses MIDI2, and is persisted in FountainStore for Reframe hosts.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbfaf7"/><stop offset="1" stop-color="#ece8df"/></linearGradient>
+    <linearGradient id="stage" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#263b52"/><stop offset="1" stop-color="#142331"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#111827" flood-opacity=".16"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#5c7182"/></marker>
+    <style>
+      .eyebrow{font:600 16px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;letter-spacing:3px;fill:#63717b}.title{font:700 40px -apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif;fill:#17232b}.sub{font:400 19px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;fill:#52606a}.label{font:700 18px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;fill:#17232b}.small{font:400 15px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;fill:#52606a}.mono{font:500 15px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#d9e7ef}.white{fill:#f7fbfd}.line{stroke:#5c7182;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="820" fill="url(#paper)"/>
+  <text x="70" y="62" class="eyebrow">GOVERNED INSTRUMENT PERSPECTIVE · CHAPTER 109</text>
+  <text x="70" y="112" class="title">The framework stays home; the evidence travels</text>
+  <text x="70" y="146" class="sub">NaturalLanguage is a host implementation. MIDI2 carries the inspectable result.</text>
+
+  <g filter="url(#shadow)"><rect x="70" y="210" width="270" height="190" rx="18" fill="#fff" stroke="#c9d2d7" stroke-width="2"/><text x="100" y="252" class="label">BOUNDED SOURCE</text><text x="100" y="289" class="small">document identity</text><text x="100" y="318" class="small">lines 8341–8426</text><text x="100" y="347" class="small">revision · correlation</text><text x="100" y="376" class="small">exact input address</text></g>
+  <path d="M340 305 C380 305 390 305 430 305" class="line"/>
+  <g filter="url(#shadow)"><rect x="430" y="180" width="360" height="250" rx="20" fill="#e4f0ed" stroke="#a6c8c0" stroke-width="2"/><text x="465" y="228" class="label">macOS HOST ADAPTER</text><text x="465" y="265" class="small">NaturalLanguage</text><text x="465" y="298" class="small">NLTagger · NLLanguage</text><path d="M465 330 H755" stroke="#b7d6d0" stroke-width="2"/><text x="465" y="365" class="small">framework objects stop here</text><text x="465" y="394" class="small">translation is explicit</text></g>
+  <path d="M790 305 C830 305 840 305 880 305" class="line"/>
+  <g filter="url(#shadow)"><rect x="880" y="180" width="390" height="250" rx="20" fill="url(#stage)"/><text x="915" y="228" class="label white">PORTABLE INSTRUMENT RESULT</text><text x="915" y="268" class="mono">source range · boundaries</text><text x="915" y="298" class="mono">observations · hypotheses</text><text x="915" y="328" class="mono">diagnostics · provenance</text><text x="915" y="358" class="mono">analyzer revision · digest</text><circle cx="950" cy="398" r="14" fill="#e7b566"/><circle cx="1020" cy="398" r="14" fill="#7bc5bd"/><circle cx="1090" cy="398" r="14" fill="#e58b79"/><path d="M965 398 C985 376 1000 376 1006 398 C1028 420 1055 420 1075 398" stroke="#f2d394" stroke-width="4" fill="none"/></g>
+  <path d="M1075 430 C1050 490 990 500 900 520" class="line"/>
+  <g filter="url(#shadow)"><rect x="620" y="500" width="370" height="130" rx="18" fill="#f3e9dc" stroke="#d9b98f" stroke-width="2"/><text x="655" y="542" class="label">MIDI2 LIFECYCLE</text><text x="655" y="575" class="small">start → progress → complete / fail</text><text x="655" y="604" class="small">correlation · timing · telemetry</text></g>
+  <path d="M620 565 C560 565 520 565 460 565" class="line"/>
+  <g filter="url(#shadow)"><rect x="70" y="500" width="390" height="130" rx="18" fill="#e9eef5" stroke="#b4c4d6" stroke-width="2"/><text x="105" y="542" class="label">FOUNTAINSTORE RECEIPT</text><text x="105" y="575" class="small">terminal result · provenance</text><text x="105" y="604" class="small">durable evidence · replay input</text></g>
+  <path d="M990 565 C1050 565 1090 565 1140 565" class="line"/>
+  <g filter="url(#shadow)"><rect x="1140" y="500" width="190" height="130" rx="18" fill="#fff" stroke="#c9d2d7" stroke-width="2"/><text x="1168" y="542" class="label">HOSTS</text><text x="1168" y="575" class="small">ReframeRuntime</text><text x="1168" y="604" class="small">Mac · Linux · future</text></g>
+  <text x="70" y="720" class="eyebrow">SOURCE-ADDRESSED · TYPED · ASYNCHRONOUS · DURABLE · HOST-NEUTRAL RESULT</text>
+  <text x="70" y="770" class="small">Current status: adapter boundary present · MIDI2 measurement instrument not yet released</text>
+</svg>

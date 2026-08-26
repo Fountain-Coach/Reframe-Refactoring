@@ -27,6 +27,8 @@ Each arrow is a typed MIDI2 operation. A callback, model request, Store write, o
 for an operation boundary. The operation enters through the universal command plane in Chapter 81 and is proved by
 the separate authorities required by Chapter 08.
 
+Chapter 109, [NaturalLanguage Measurement Is a MIDI2 Instrument](109-natural-language-measurement-is-a-midi2-instrument.md), defines the measurement stage's host adapter, portable result, and terminal evidence boundary.
+
 ## The platform foundation
 
 The local foundation may use Apple's Natural Language framework for language recognition, token and sentence
