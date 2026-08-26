@@ -1653,3 +1653,28 @@ Teatro-style explanatory projection; it cannot establish runtime implementation,
 
 **Scope:** principal SVG, chapter placement, deterministic social derivative, local estate/AX/VRT validation, and
 publication update. No semantic or runtime authority changes.
+
+## Current planned change — publish the unpublished governance range 104–112 (2026-08-26)
+
+**Goal:** reconcile the local governance source and its generated projections with `origin/main` and the live
+`governance.fountain.coach` estate, then publish Chapters 104–112 with one inspectable source lineage.
+
+**Governance read record:** Chapters 07 (bounded planning, explicit scope, and clean evidence); 08 (source,
+acceptance, and release claims remain separate); 92 (shared estate metadata, links, and claim boundary); 111
+(complete evidence cohorts and no unsupported publication claims); 112 (kit-owned capability contracts precede
+implementation and publication).
+
+**What they forbid here:** treating an HTTP 200 route as provenance proof, publishing a generated page without its
+source/index/status metadata, or describing the pending Chapter 112 illustration as runtime or acceptance evidence.
+
+**Conflicts:** none; the writer requests direct publication, while the publication contract still requires local
+validation, explicit source files, and an exact deployment tuple before delivery.
+
+**Excluded, and why:** integration-repository code changes and the untracked local FountainStore route manifest are
+outside this governance-source publication batch and must remain untouched.
+
+**Scope:** local governance commits from Chapters 104–112, Chapter 112 illustration/site derivative correction,
+reading index and status metadata, generated site, local estate validation, source push, and guarded deployment.
+
+**Claim boundary:** this publishes governance projections and provenance; it does not establish runtime
+implementation, live acceptance, security review, or release of the capabilities described by these chapters.
