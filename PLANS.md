@@ -1642,3 +1642,14 @@ estate validation, independent browser/AX acceptance, and guarded production pub
 
 **Claim boundary:** Chapter 112 is published as `Reference`; local Store and site acceptance are recorded, but no
 claim is made that every kit-owned capability is already implemented or released.
+
+## Current planned change — Chapter 112 deterministic Teatro illustration (2026-08-26)
+
+**Goal:** replace the chapter's generic publication fallback with a scalable, source-controlled SVG that makes its
+Kit ownership boundary directly legible and is deterministically projected into the social-publication canvas.
+
+**Governance read record:** Chapter 112, Chapter 107, and the governance publication contract. The illustration is a
+Teatro-style explanatory projection; it cannot establish runtime implementation, acceptance, or release.
+
+**Scope:** principal SVG, chapter placement, deterministic social derivative, local estate/AX/VRT validation, and
+publication update. No semantic or runtime authority changes.

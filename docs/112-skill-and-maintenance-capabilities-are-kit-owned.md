@@ -2,6 +2,10 @@
 
 > Chapter summary: Reframe skills and Fountain Coach maintenance operations are normative only when their typed contracts live in the corresponding Swift kit. Agent skills, UI commands, handwritten adapters, and scripts may explain or project a capability; they cannot define one.
 
+![Principal illustration: the Kit-owned capability boundary connects procedural projections to typed Swift contracts, ReframeCore, MIDI2, and FountainStore](illustrations/112-skill-and-maintenance-capabilities-are-kit-owned.svg)
+
+*Principal illustration — a deterministic Teatro-style architecture projection. It shows the governed ownership boundary; it is not a runtime screenshot, live acceptance result, or proof that every named kit capability has already been implemented or released.*
+
 ## The decision
 
 Every Reframe skill MUST be defined in `ReframeSkillKit`.

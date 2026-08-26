@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Kit-owned capability boundary</title>
+  <desc id="desc">A deterministic Teatro-style architecture projection. Agent procedures and publication projections surround typed Swift kits; ReframeCore dispatches the kit contract through MIDI2 and host adapters, while FountainStore retains evidence.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbfaf7"/><stop offset="1" stop-color="#ece8df"/></linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#263b52"/><stop offset="1" stop-color="#142331"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#111827" flood-opacity=".16"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5c7182"/></marker>
+    <style>
+      .eyebrow{font:600 16px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;letter-spacing:3px;fill:#63717b}
+      .title{font:700 40px -apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif;fill:#17232b}
+      .sub{font:400 19px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;fill:#52606a}
+      .label{font:700 18px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;fill:#17232b}
+      .small{font:400 15px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;fill:#52606a}
+      .mono{font:500 15px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#d9e7ef}
+      .white{fill:#f7fbfd}.line{stroke:#5c7182;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="820" fill="url(#paper)"/>
+  <text x="70" y="62" class="eyebrow">GOVERNED CAPABILITY PERSPECTIVE · CHAPTER 112</text>
+  <text x="70" y="112" class="title">The contract lives in the Kit</text>
+  <text x="70" y="146" class="sub">Procedures may explain a capability; only typed Swift contracts may define it.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="210" width="300" height="240" rx="18" fill="#fff" stroke="#d1c3b7" stroke-width="2"/>
+    <text x="100" y="252" class="label">PROCEDURAL PROJECTIONS</text>
+    <text x="100" y="292" class="small">.codex/skills</text>
+    <text x="100" y="322" class="small">.claude/skills</text>
+    <text x="100" y="352" class="small">commands · scripts · docs</text>
+    <path d="M100 380H340" stroke="#d8e0e3" stroke-width="2"/>
+    <text x="100" y="416" class="small">explain · invoke · publish</text>
+  </g>
+
+  <path d="M370 330C430 330 450 330 500 330" class="line"/>
+  <g filter="url(#shadow)">
+    <rect x="500" y="180" width="420" height="340" rx="20" fill="url(#core)"/>
+    <text x="540" y="230" class="label white">NORMATIVE SWIFT KITS</text>
+    <text x="540" y="276" class="mono">ReframeSkillKit</text>
+    <text x="540" y="310" class="mono">FountainCoachMaintenanceKit</text>
+    <path d="M540 340H880" stroke="#668093" stroke-width="2"/>
+    <text x="540" y="378" class="mono">stable identity · SemVer</text>
+    <text x="540" y="410" class="mono">typed request / result</text>
+    <text x="540" y="442" class="mono">MIDI2 or host-adapter route</text>
+    <circle cx="560" cy="480" r="10" fill="#e7b566"/><circle cx="610" cy="480" r="10" fill="#7bc5bd"/><circle cx="660" cy="480" r="10" fill="#e58b79"/>
+    <text x="690" y="486" class="mono">contract before implementation</text>
+  </g>
+
+  <path d="M920 270C970 230 1000 210 1050 200" class="line"/>
+  <path d="M920 370C980 370 1000 370 1050 370" class="line"/>
+  <path d="M920 470C970 510 1000 530 1050 540" class="line"/>
+  <g filter="url(#shadow)">
+    <rect x="1050" y="150" width="280" height="95" rx="16" fill="#e4f0ed" stroke="#a6c8c0" stroke-width="2"/>
+    <text x="1080" y="190" class="label">REFRAMECORE</text><text x="1080" y="218" class="small">resolve · dispatch · mediate</text>
+    <rect x="1050" y="320" width="280" height="95" rx="16" fill="#e9eef5" stroke="#b4c4d6" stroke-width="2"/>
+    <text x="1080" y="360" class="label">MIDI2 / HOST ADAPTER</text><text x="1080" y="388" class="small">explicit effect boundary</text>
+    <rect x="1050" y="490" width="280" height="95" rx="16" fill="#f3e9dc" stroke="#d9b98f" stroke-width="2"/>
+    <text x="1080" y="530" class="label">FOUNTAINSTORE</text><text x="1080" y="558" class="small">receipt · evidence · state</text>
+  </g>
+
+  <g transform="translate(70 610)">
+    <rect width="1260" height="105" rx="18" fill="#fff8f3" stroke="#e2b09b" stroke-width="2"/>
+    <text x="30" y="40" class="label">THE OWNERSHIP GATE</text>
+    <text x="30" y="72" class="small">No Python fallback, phrase-matched route, command-local identity, or agent skill can satisfy a Kit-owned capability.</text>
+  </g>
+  <text x="70" y="785" class="eyebrow">TYPED CONTRACT · EXPLICIT ROUTE · DURABLE EVIDENCE · NO SECOND AUTHORITY</text>
+</svg>
