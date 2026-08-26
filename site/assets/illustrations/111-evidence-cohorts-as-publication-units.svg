@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence cohort publication flow</title>
+  <desc id="desc">A complete three-run evidence cohort flows through Governance into the Book and sibling Fountain Coach publication domains, while the TLD declares their roles.</desc>
+  <rect width="1200" height="620" fill="#f7f8fa"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" fill="#14202b">
+    <text x="60" y="62" font-size="30" font-weight="700">One cohort, many projections</text>
+    <text x="60" y="94" font-size="17" fill="#53616e">Publication follows evidence state; navigation follows the estate map.</text>
+    <rect x="60" y="150" width="340" height="350" rx="22" fill="#fff" stroke="#9aa8b5" stroke-width="2"/>
+    <text x="90" y="195" font-size="22" font-weight="700">Complete cohort</text>
+    <text x="90" y="225" font-size="15" fill="#53616e">same source address</text>
+    <g stroke="#2c79d0" stroke-width="8" stroke-linecap="round">
+      <path d="M110 285 H300"/><path d="M110 350 H300"/><path d="M110 415 H300"/>
+    </g>
+    <g fill="#2c79d0"><circle cx="110" cy="285" r="16"/><circle cx="110" cy="350" r="16"/><circle cx="110" cy="415" r="16"/></g>
+    <g font-size="17"><text x="140" y="291">child A · terminal</text><text x="140" y="356">child B · terminal</text><text x="140" y="421">child C · terminal</text></g>
+    <rect x="90" y="452" width="280" height="30" rx="15" fill="#e7f1ff"/><text x="108" y="473" font-size="14" fill="#205b9e">parent receipt + provenance</text>
+    <path d="M420 325 H515" stroke="#53616e" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="535" y="150" width="270" height="350" rx="22" fill="#162536"/>
+    <text x="570" y="205" font-size="22" font-weight="700" fill="#fff">Governance</text>
+    <text x="570" y="240" font-size="16" fill="#b8c9d8">meaning · predicate</text>
+    <text x="570" y="300" font-size="16" fill="#fff">observed?</text><text x="570" y="335" font-size="16" fill="#fff">accepted?</text><text x="570" y="370" font-size="16" fill="#fff">released?</text>
+    <path d="M825 235 H920" stroke="#53616e" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M825 325 H920" stroke="#53616e" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M825 415 H920" stroke="#53616e" stroke-width="4" marker-end="url(#arrow)"/>
+    <g font-size="18"><text x="940" y="241">Book</text><text x="940" y="331">Instruments</text><text x="940" y="421">MIDI2 / Status</text></g>
+    <text x="60" y="570" font-size="16" fill="#53616e">TLD: declares the roles and edges · no page substitutes for terminal evidence</text>
+  </g>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#53616e"/></marker></defs>
+</svg>
