@@ -212,6 +212,7 @@ the procedure that applies it. A particular instrument is an instance, not the w
 | [NaturalLanguage Measurement Is a MIDI2 Instrument](109-natural-language-measurement-is-a-midi2-instrument.md) | Governs macOS NaturalLanguage as a host adapter whose source-addressed structured evidence crosses the typed MIDI2 instrument boundary and becomes durable FountainStore evidence without making the framework semantic authority. |
 | [Three-Run Semantic Drift Is a Governed Measurement Principle](110-three-run-semantic-drift-calculus.md) | Requires exactly three concurrent, independently identified readings of one source address before semantic drift is calculated; preserves all three results, correlations, provenance, and incomplete states. |
 | [Evidence Cohorts Are the Publication Units of the Fountain Coach Estate](111-evidence-cohorts-as-publication-units.md) | Extends the publication estate with evidence-cohort semantics: the TLD declares roles, Governance defines predicates, and the Book and sibling domains project only the state established by complete durable evidence. |
+| [Skill and Maintenance Capabilities Are Kit-Owned](112-skill-and-maintenance-capabilities-are-kit-owned.md) | Makes `ReframeSkillKit` and `FountainCoachMaintenanceKit` normative: typed kit ownership is required before implementation, admission, release, or publication; agent skills are procedural projections only. |
 ## Vocabulary
 
 **Canonical source** means the imported manuscript stored under the source document identity. It is evidence, not a work surface for generated analysis.
