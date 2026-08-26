@@ -1627,3 +1627,18 @@ integration synchronization, local estate validation, and governed deployment.
 
 **Claim boundary:** governance and publication projection only; the three-run drift cohort and its live acceptance
 scenario remain implementation work and are not claimed by this chapter.
+
+## Current planned change — Chapter 112 kit-owned skills and maintenance publication (2026-08-26)
+
+**Goal:** publish the on-hold Chapter 112 as a public `Reference` projection and record the local FountainStore
+publication receipt without presenting kit ownership as completed runtime implementation.
+
+**Governance read record:** Chapters 07, 08, 63, 77, 81, 91, and 112. The chapter makes Swift kit contracts
+normative while retaining agent skills as procedural projections and preserving the MIDI2, Store, and evidence
+boundaries.
+
+**Scope:** Chapter 112, generated governance projection, local FountainStore HTTP serving, Store publication receipt,
+estate validation, independent browser/AX acceptance, and guarded production publication.
+
+**Claim boundary:** Chapter 112 is published as `Reference`; local Store and site acceptance are recorded, but no
+claim is made that every kit-owned capability is already implemented or released.
