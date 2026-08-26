@@ -1562,3 +1562,25 @@ illustration, integration synchronization, local gates, and governed deployment.
 
 **Claim boundary:** governance and publication projection only; no completed TeatroStageEngine integration, live
 capability, package release, production deployment, or external security review is claimed.
+
+## Current planned change — Chapter 108 Swift-native cross-platform runtime (2026-08-26)
+
+**Goal:** establish the platform boundary that makes Reframe a portable Swift semantic runtime while preserving macOS
+as the rich writer host, Linux as a first-class headless host, and Windows as a future host.
+
+**Governance read record:**
+
+- **Chapters read:** 07 (bounded planning and evidence-backed completion); 08 (separate current, acceptance, and
+  release evidence); 81 (MIDI2 as the common command and lifecycle plane); 91 (FCIS-KIT capability distribution and
+  host boundary); 95 (headless Linux Store authority).
+- **What they forbid here:** treating a macOS application graph as a portable runtime, equating MIDI-CI or a remote
+  peer with execution proof, or claiming Linux/Windows support from architecture alone.
+- **Conflicts:** none; the brief makes the host/runtime distinction explicit without weakening Reframe's existing
+  MIDI2, Store, instrument, or scenario authorities.
+- **Excluded, and why:** implementation, target extraction, Linux build/test, Windows support, remote deployment, and
+  release; this slice writes and locally validates the governing constitution.
+
+**Scope:** Chapter 108, reading-index/status metadata, exact integration synchronization, and local governance build.
+
+**Claim boundary:** governance only; the current macOS-only graph and Apple-framework leakage remain recorded facts,
+and no cross-platform build, host, remote-execution, or released-runtime claim is established.

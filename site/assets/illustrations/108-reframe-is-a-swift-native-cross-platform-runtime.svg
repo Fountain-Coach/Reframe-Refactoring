@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Reframe as a portable Swift semantic runtime</title>
+  <desc id="desc">A structured Teatro-style architecture composition. A portable Reframe runtime sits at the centre, connected by MIDI2 to FountainStore, instruments, scenarios, and semantic state, with macOS, Linux, and future Windows hosts outside the portability boundary.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbfaf7"/><stop offset="1" stop-color="#ece8df"/></linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#263b52"/><stop offset="1" stop-color="#142331"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#111827" flood-opacity=".16"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#5c7182"/></marker>
+    <style>
+      .eyebrow{font:600 16px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;letter-spacing:3px;fill:#63717b}
+      .title{font:700 40px -apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif;fill:#17232b}
+      .sub{font:400 19px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;fill:#52606a}
+      .label{font:700 18px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;fill:#17232b}
+      .small{font:400 15px -apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;fill:#52606a}
+      .mono{font:500 15px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#d9e7ef}
+      .white{fill:#f7fbfd}.line{stroke:#5c7182;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="820" fill="url(#paper)"/>
+  <text x="70" y="62" class="eyebrow">GOVERNED RUNTIME PERSPECTIVE · CHAPTER 108</text>
+  <text x="70" y="112" class="title">One semantic runtime, many hosts</text>
+  <text x="70" y="146" class="sub">The operating system surrounds Reframe; it does not define Reframe.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="205" width="320" height="275" rx="18" fill="#fff" stroke="#c9d2d7" stroke-width="2"/>
+    <text x="100" y="248" class="label">PORTABLE RUNTIME</text>
+    <text x="100" y="284" class="small">ReframeCore</text>
+    <text x="100" y="314" class="small">ReframeRuntime</text>
+    <text x="100" y="344" class="small">ReframePlatformSPI</text>
+    <path d="M100 374 H350" stroke="#d8e0e3" stroke-width="2"/>
+    <text x="100" y="410" class="small">semantic facts · operations</text>
+    <text x="100" y="436" class="small">Store authority · scenario state</text>
+    <text x="100" y="462" class="small">No AppKit · SwiftUI · Metal · AX</text>
+  </g>
+
+  <path d="M390 342 C430 342 442 342 480 342" class="line"/>
+  <g filter="url(#shadow)">
+    <rect x="480" y="180" width="440" height="320" rx="20" fill="url(#core)"/>
+    <text x="520" y="230" class="label white">REFRAME SEMANTIC RUNTIME</text>
+    <text x="520" y="270" class="mono">MIDI2 command plane</text>
+    <text x="520" y="300" class="mono">FountainStore authority</text>
+    <text x="520" y="330" class="mono">FCIS-KIT instruments</text>
+    <text x="520" y="360" class="mono">scenarios · receipts · telemetry</text>
+    <text x="520" y="390" class="mono">semantic project state</text>
+    <circle cx="555" cy="446" r="16" fill="#e7b566"/><circle cx="650" cy="446" r="16" fill="#7bc5bd"/><circle cx="745" cy="446" r="16" fill="#e58b79"/>
+    <path d="M575 446 C602 418 628 418 632 446 C660 474 706 474 727 446" stroke="#f2d394" stroke-width="4" fill="none"/>
+    <text x="790" y="452" class="mono">one contract</text>
+  </g>
+
+  <path d="M920 245 C970 210 992 190 1040 180" class="line"/>
+  <path d="M920 340 C970 340 992 340 1040 340" class="line"/>
+  <path d="M920 435 C970 470 992 490 1040 500" class="line"/>
+  <g filter="url(#shadow)">
+    <rect x="1040" y="130" width="290" height="100" rx="16" fill="#e4f0ed" stroke="#a6c8c0" stroke-width="2"/>
+    <text x="1070" y="170" class="label">macOS HOST</text><text x="1070" y="198" class="small">editor · AX · Apple UI · Metal</text>
+    <rect x="1040" y="290" width="290" height="100" rx="16" fill="#e9eef5" stroke="#b4c4d6" stroke-width="2"/>
+    <text x="1070" y="330" class="label">LINUX HOST</text><text x="1070" y="358" class="small">headless Store · Git · services</text>
+    <rect x="1040" y="450" width="290" height="100" rx="16" fill="#f3e9dc" stroke="#d9b98f" stroke-width="2"/>
+    <text x="1070" y="490" class="label">FUTURE WINDOWS HOST</text><text x="1070" y="518" class="small">later admission · same contract</text>
+  </g>
+
+  <g transform="translate(70 570)">
+    <rect width="1250" height="145" rx="18" fill="#fff8f3" stroke="#e2b09b" stroke-width="2"/>
+    <text x="30" y="42" class="label">THE PORTABILITY GATE</text>
+    <text x="30" y="78" class="small">Clean build and test of the portable core/runtime on macOS and Linux.</text>
+    <text x="30" y="106" class="small">Host capabilities may differ; semantic identity, MIDI2 operations, Store evidence, and telemetry may not.</text>
+    <text x="30" y="134" class="small">Current status: macOS graph established · cross-platform gate not yet established.</text>
+  </g>
+  <text x="70" y="785" class="eyebrow">PORTABLE SEMANTICS · GOVERNED CAPABILITIES · HOST-SPECIFIC PROJECTIONS</text>
+</svg>

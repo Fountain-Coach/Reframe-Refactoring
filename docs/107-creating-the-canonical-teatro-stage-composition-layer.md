@@ -181,7 +181,8 @@ revision, projection changes, and replay.
 ## Relationship to existing governance
 
 This chapter extends [Chapter 100](100-semantic-scenographer.md), [Chapter 101](101-teatro-stage-engine-semantic-scenography.md),
-and [Chapter 106](106-teatro-midi2-monitor-canonical-runtime-projection.md). It depends on [Chapter 87](87-midi2-monitor-is-the-live-event-mirror.md)
+[Chapter 106](106-teatro-midi2-monitor-canonical-runtime-projection.md), and [Chapter 108](108-reframe-is-a-swift-native-cross-platform-runtime.md),
+which governs the portable runtime and host boundary around these projections. It depends on [Chapter 87](87-midi2-monitor-is-the-live-event-mirror.md)
 for runtime-event authority, [Chapter 104](104-midi2-event-time-jitter-and-asynchronous-completion-governance.md) for
 event time and asynchronous completion, [Chapter 93](93-instrument-creation-is-a-governed-promotion-path.md) for
 FCIS-KIT promotion, and [Chapter 08](08-validation-and-acceptance.md) for independent AX, window, Store, and replay

@@ -247,6 +247,11 @@ and the acceptance evidence above passes. The expected release is `v0.4.0`.
 Until then, the correct status is an implementation candidate, not a production-ready authority. A tag may be created
 only after all required evidence passes and the repository workflow permits release publication.
 
+This headless persistence boundary is one host-side participant in the portable runtime constitution of
+[Chapter 108](108-reframe-is-a-swift-native-cross-platform-runtime.md). That chapter does not promote this service
+to cross-platform release status; it requires the portable Reframe core/runtime gate and this service's own Linux
+evidence to remain separate claims.
+
 ## Governing sentence
 
 > **FountainStore is embedded first and headless second: the Linux server is trusted only when it exposes the existing

@@ -181,4 +181,5 @@ The FCIS-KIT Instrument Store distributes governed capabilities, not opaque appl
 acceptance, MIDI2 exposes the operational contract, scenarios define what must happen, FountainStore and independent
 witnesses establish what did happen, and only the owning release authority may promote an instrument for reuse.
 [Chapter 103](103-fcis-kit-semantic-factory-and-wired-instrument-event-stream.md) applies this capability-plane rule
-to a composed Semantic Factory and its monitored event stream.
+to a composed Semantic Factory and its monitored event stream. [Chapter 108](108-reframe-is-a-swift-native-cross-platform-runtime.md)
+extends the same plane across portable Reframe runtime products and platform hosts.
