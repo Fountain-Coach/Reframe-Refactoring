@@ -904,3 +904,18 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - **Publication content:** Chapter 110, Reading Index/status metadata, and deterministic Teatro-style illustration.
 - **Claim boundary:** governance and public publication projection only; no three-run implementation, live acceptance,
   package release, or production claim is established.
+
+## Current publication result — Chapters 104–112 provenance batch (2026-08-26)
+
+- **Change:** reconcile the local Chapters 104–112 governance range with `origin/main`, synchronize the Chapter 112
+  integration mirror, and promote the corrected deterministic Chapter 112 illustration and social derivative.
+- **Publication content commit:** `Fountain-Coach/Reframe-Refactoring@add40d2`.
+- **Integration mirror commit:** `Fountain-Coach/midi2-gpu-fabric@eec95313`.
+- **Local evidence:** governance build passed; estate validator passed for 121 HTML pages; independent browser/AX
+  acceptance passed in light and dark themes with desktop and mobile captures; local Chapter 112 route and SVG
+  returned HTTP 200.
+- **Production result:** guarded release `release-20260826T174725Z` was promoted to
+  `/var/www/reframe-governance/current` for `governance.fountain.coach`; Chapters 104 and 112 returned HTTPS 200,
+  and Chapter 112 served social asset `...fc2ca37fda22.jpg`.
+- **Claim boundary:** governance publication and provenance are established; runtime implementation, live acceptance,
+  security review, and release of the governed capabilities remain separate claims.

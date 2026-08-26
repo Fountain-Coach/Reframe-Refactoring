@@ -1678,3 +1678,8 @@ reading index and status metadata, generated site, local estate validation, sour
 
 **Claim boundary:** this publishes governance projections and provenance; it does not establish runtime
 implementation, live acceptance, security review, or release of the capabilities described by these chapters.
+
+**Result:** local build, estate validation, and independent browser/AX acceptance passed. Publication commit
+`add40d2` and integration mirror commit `eec95313` are on `main`; guarded release `release-20260826T174725Z` was
+promoted to the governance host. The integration checkout still contains unrelated uncommitted Swift changes and
+`.local-governance-fountainstore-routes.json`, intentionally left untouched.
