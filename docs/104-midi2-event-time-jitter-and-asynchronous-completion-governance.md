@@ -4,7 +4,7 @@
 > clock, and completed by a typed terminal event plus durable FountainStore evidence. A watchdog may observe the run;
 > it may not terminate an active execution merely because wall-clock time has passed.
 
-![Principal illustration: MIDI2 event time, jitter observation, and durable asynchronous completion](illustrations/104-midi2-event-time-jitter-and-asynchronous-completion-governance.png)
+![Principal illustration: MIDI2 event time, jitter observation, and durable asynchronous completion](illustrations/104-midi2-event-time-jitter-and-asynchronous-completion-governance.svg)
 
 *Principal illustration — an ordered event spine, measured jitter, an observational heartbeat, and durable completion.
 Design illustration; not live acceptance evidence.*

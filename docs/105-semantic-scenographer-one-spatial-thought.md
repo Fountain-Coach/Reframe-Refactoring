@@ -4,7 +4,7 @@
 > writer-facing surface exposes one quiet spatial-thought marker, while the structured semantic scene, its variants,
 > and its projections remain inside Semantic Scenographer and TeatroStageEngine.
 
-![Principal illustration: a reading-order marker opens a source passage into a structured spatial thought](illustrations/105-semantic-scenographer-one-spatial-thought.png)
+![Principal illustration: a reading-order marker opens a source passage into a structured spatial thought](illustrations/105-semantic-scenographer-one-spatial-thought.svg)
 
 *Principal illustration — a design reference for the reading-order marker and its spatial consequence. It is not live
 acceptance evidence and does not claim that a persisted scene, AX action, or Teatro runtime exists.*

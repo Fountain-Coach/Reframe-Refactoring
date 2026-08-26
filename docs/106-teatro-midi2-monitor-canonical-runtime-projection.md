@@ -4,7 +4,7 @@
 > Teatro score serves live 3D, SVG, recording, replay, inspection, and later scenographic restaging without allowing
 > Teatro or Semantic Scenographer to replace MIDI2 or FountainStore authority.
 
-![Principal illustration: one ordered MIDI2 event stream crosses a deterministic Teatro runtime stage](illustrations/106-teatro-midi2-monitor-canonical-runtime-projection.png)
+![Principal illustration: one ordered MIDI2 event stream crosses a deterministic Teatro runtime stage](illustrations/106-teatro-midi2-monitor-canonical-runtime-projection.svg)
 
 *Principal illustration — a design reference for a canonical runtime projection. It is not a live monitor capture and
 does not claim that the illustrated participants, route, receipt, or witness exist in a running session.*

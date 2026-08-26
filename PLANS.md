@@ -1732,3 +1732,26 @@ establishes the governing quality predicates so replacements can be reviewed con
 
 **Claim boundary:** governance correction only; no claim is made that all historical illustrations have yet been
 re-rendered or that external social platforms preserve SVG typography.
+
+## Current planned change — replace promoted blurry illustration projections (2026-08-26)
+
+**Goal:** replace the known weak canonical assets for Chapters 104–106 and 112 with readable, source-controlled SVG
+projections, then regenerate their social derivatives from the canonical assets.
+
+**Governance read record:** Chapters 84 (canonical design-mock asset and legibility rules); 92 (estate distinction
+between canonical illustration and social derivative); 107 (Teatro composition projection and deterministic render);
+113 (policy-level rendering-quality invariant); 08 (independent visual evidence).
+
+**What they forbid here:** embedding old raster artwork as a fake vector repair, authoring typography in the social
+JPEG, or treating a successful conversion and HTTP response as proof of readability.
+
+**Conflicts:** none; the existing chapter URLs and editorial text remain stable while their principal assets change.
+
+**Excluded, and why:** no image-generation provider, runtime, Kit, or semantic content changes; the repair is limited
+to canonical illustration sources, chapter references, generated derivatives, and publication evidence.
+
+**Scope:** Chapters 104, 105, 106, and 112 SVG replacement, deterministic social regeneration, local estate and
+visual inspection, and later publication update.
+
+**Claim boundary:** asset repair only; no claim is made that external platforms preserve the SVG source or that image
+legibility establishes runtime acceptance.
