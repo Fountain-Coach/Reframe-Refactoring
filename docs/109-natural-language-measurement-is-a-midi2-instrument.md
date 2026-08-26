@@ -163,26 +163,30 @@ The instrument is not accepted because a macOS call returns an array. Acceptance
 Only after these pass may the capability be called implemented, live-accepted, or released. The terms remain separate
 under Chapters 08, 91, 93, and 108.
 
-## Current implementation — inspected, not promoted
+## Current implementation — locally accepted, not released
 
 The repository currently contains NaturalLanguage-backed source linguistics, prose projection, claim audit, entity
 ledger, and semantic measurement code in the Reframe application graph. `ReframePortable` now defines the first
-host-neutral SPI/runtime boundary, and `ReframeMacHost` contains an adapter surface. The existing measurement path
-has not yet been migrated to the MIDI2 instrument contract described here.
+host-neutral SPI/runtime boundary, and `ReframeMacHost` contains an adapter surface. The measurement path has now
+been migrated to the typed MIDI2 instrument contract described here. The accepted evidence is bounded to the local
+macOS host adapter and its governed fixture run; it does not establish a released FCIS-KIT package, Linux
+equivalence, or production deployment.
 
 Therefore the current status is:
 
 ```text
 portable SPI/runtime seam       implemented and focused-tested
 macOS NaturalLanguage adapter   present as a host boundary
-typed measurement instrument    not yet implemented
-MIDI2 terminal evidence         not yet established for this instrument
+typed measurement instrument    implemented and locally live-accepted
+MIDI2 terminal evidence         established in the bounded acceptance run
 Linux equivalent                not admitted
 released capability             not claimed
 ```
 
-This status is deliberate. The chapter governs the next implementation boundary; it does not turn the adapter or a
-successful unit test into a released instrument.
+The local acceptance is bound to integration commit `088445a4650b7d49e676cb9533a5fb801c0da9cf`, managed Store
+`/tmp/reframe-semantic-measurement.postcommit.90cgAd/store.fountainstore`, and the matching MIDI2/AX/window evidence
+recorded by the implementation repository. This status is deliberate: implementation and local acceptance are
+established, while admission, release, Linux equivalence, and production remain separate gates.
 
 ## Relationship to existing governance
 

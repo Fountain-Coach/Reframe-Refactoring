@@ -1,5 +1,15 @@
 # Source and Synchronization Contract
 
+## Current status correction — Chapter 109 local acceptance (2026-08-26)
+
+- **Change:** correct Chapter 109's current implementation status to record the typed NaturalLanguage measurement
+  instrument and bounded local macOS acceptance proven by integration commit `088445a4650b7d49e676cb9533a5fb801c0da9cf`.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Claim boundary:** implementation and local acceptance only; no FCIS release, Linux equivalence, production
+  deployment, or external security review is claimed.
+- **Next tracked actions:** deliberate registry admission, repair capability-audit drift, Storify Source Auto live
+  acceptance, and the Chapter 108 macOS/Linux portability gate.
+
 ## Current planned change — Chapter 100 Semantic Scenographer (2026-08-24)
 
 - **Change:** publish the downstream Teatro-backed Semantic Scenographer boundary: source-addressed semantic
@@ -885,3 +895,12 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - **Publication content commit:** `Fountain-Coach/Reframe-Refactoring@906bdf6b` plus provenance correction below.
 - **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@648d262c`.
 - **Synchronized:** 2026-08-25; unrelated integration runtime changes remain uncommitted.
+
+## Current planned change — Chapter 110 three-run semantic drift calculus (2026-08-26)
+
+- **Change:** govern exactly three concurrent, independently identified semantic readings as the minimum cohort for
+  drift calculus, with preserved variance, child receipts, MIDI2 correlations, and parent terminal evidence.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Publication content:** Chapter 110, Reading Index/status metadata, and deterministic Teatro-style illustration.
+- **Claim boundary:** governance and public publication projection only; no three-run implementation, live acceptance,
+  package release, or production claim is established.

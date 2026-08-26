@@ -1,3 +1,32 @@
+## Current status correction — Chapter 109 local acceptance (2026-08-26)
+
+**Goal:** keep the governance record aligned with the accepted `semantic.measure` implementation without promoting a
+bounded local macOS result to release or portability evidence.
+
+**Governance read record:** Chapters 07/08 (planning, evidence, and claim boundaries); 81 (typed MIDI2 capability
+plane); 93 (admission and release); 104 (event-time and terminal completion); 108 (portable runtime gate); 109
+(NaturalLanguage host adapter and measurement instrument).
+
+**What they forbid here:** leaving the stale “not yet implemented” claim in the current-status section; treating the
+local macOS acceptance as Linux equivalence, public release, or production deployment; and silently admitting
+`semantic.measure` into the Copilot registry without a deliberate contract decision.
+
+**Result:** Chapter 109 now records implementation and bounded local live acceptance at integration commit
+`088445a4650b7d49e676cb9533a5fb801c0da9cf`, with its Store/MIDI2/AX evidence binding. The capability remains not
+released and Linux remains unadmitted.
+
+**Tracked next actions:**
+
+1. Decide whether `semantic.measure` is a first-class FCIS/Copilot registry identity or an internal MIDI2 instrument;
+   update the registry and generated artifacts only after that decision.
+2. Repair the audit drift where `image.generation.openai` is exposed while unavailable, then rerun the capability
+   audit and contract checks.
+3. Live-accept `storify.source.start` through the app-server transport with asynchronous MIDI2 lifecycle, Store,
+   AX, failure, and recovery evidence.
+4. Continue Chapter 108's type/model split and establish the clean macOS/Linux core-runtime build-and-test gate.
+
+These are separate gates; none is implied by the Chapter 109 local acceptance.
+
 ## Current planned phase — CodexKit FCIS-KIT governance boundary (2026-08-20)
 
 **Goal:** govern the pasted production-quality Swift CodexKit request before implementation, preserving the boundary
@@ -1584,3 +1613,17 @@ as the rich writer host, Linux as a first-class headless host, and Windows as a 
 
 **Claim boundary:** governance only; the current macOS-only graph and Apple-framework leakage remain recorded facts,
 and no cross-platform build, host, remote-execution, or released-runtime claim is established.
+
+## Current planned change — Chapter 110 three-run semantic drift calculus (2026-08-26)
+
+**Goal:** govern semantic drift as one explicit cohort of exactly three concurrent, independently identified,
+source-addressed readings whose differences remain inspectable.
+
+**Governance read record:** Chapters 07, 08, 73, 75, 102, 103, 104, 106, and 109. The chapter preserves Store and
+MIDI2 terminal authority, one-shot confirmation, and Teatro's role as a projection rather than a semantic authority.
+
+**Scope:** Chapter 110, deterministic Teatro-style principal illustration, Reading Index/status metadata, exact
+integration synchronization, local estate validation, and governed deployment.
+
+**Claim boundary:** governance and publication projection only; the three-run drift cohort and its live acceptance
+scenario remain implementation work and are not claimed by this chapter.
