@@ -1,13 +1,9 @@
-# Accessibility declaration / Barrierefreiheit
+# Accessibility declaration
 
-**Status / Stand: 17 August 2026**
+**Status: 17 August 2026**
 
 The governance book is a free technical publication, not a paid e-book or e-commerce service. The current publisher
 classification is not legal advice or a conformity certificate.
-
-Die Governance-Buchpublikation ist eine kostenfreie technische Publikation, kein kostenpflichtiges E-Book und kein
-E-Commerce-Dienst. Die aktuelle Einordnung des Herausgebers ist keine Rechtsberatung und keine
-Konformitätsbescheinigung.
 
 FCIS-AX is the semantic authority and FCIS-VRT is the visual authority for this web publication.
 

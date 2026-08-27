@@ -1,11 +1,11 @@
-# European publication compliance / Europäischer Publikationsumfang
+# European publication compliance
 
 The current governance site is a static, evidence-backed technical publication. This page records the publisher's
 documented scope; it is not a legal opinion or certification of every European or national law.
 
 ## Recorded scope
 
-- Publisher: Benedikt Eickhoff, Einzelunternehmer, Wühlischstraße 8, 10245 Berlin, Deutschland.
+- Publisher: Benedikt Eickhoff, sole proprietor, Wühlischstraße 8, 10245 Berlin, Germany.
 - Contact: [mail@benedikt-eickhoff.de](mailto:mail@benedikt-eickhoff.de).
 - Surface: free public technical publication; no accounts, forms, payments, advertising, analytics, cookies, social
   embeds, non-essential browser storage, user content, marketplace, or e-commerce function.

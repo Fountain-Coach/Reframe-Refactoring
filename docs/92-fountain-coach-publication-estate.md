@@ -18,7 +18,7 @@ fountain.coach
   ├── book.fountain.coach        human reference
   ├── governance.fountain.coach  rules and authority
   ├── instruments.fountain.coach MIDI2 instrument catalog
-  └── status.fountain.coach      German-facing company and transparency context
+  └── status.fountain.coach      company, transparency, operational, and legal context
 ```
 
 The parent domain establishes identity, founder context, lineage, and the map of authorities. A subdomain may have a
@@ -33,7 +33,7 @@ the estate's shared semantic contract.
 | `book.fountain.coach` | human-readable Reframe behavior, scenarios, release boundaries, and evidence links | the private runtime or governance authority |
 | `governance.fountain.coach` | reviewed rules, architectural doctrine, and public/private boundaries | live runtime state or a named-build release authority |
 | `instruments.fountain.coach` | MIDI2 instrument descriptions, verification snapshots, and admission context | unrestricted application-store claims or live acceptance without evidence |
-| `status.fountain.coach` | German-facing company, transparency, operational, and legal context | the technical Book or the governance source of architectural truth |
+| `status.fountain.coach` | company, transparency, operational, and legal context | the technical Book or the governance source of architectural truth |
 
 ## Shared publication contract
 

@@ -1,5 +1,14 @@
 # Source and Synchronization Contract
 
+## Current synchronized change — English-only estate language baseline (2026-08-27)
+
+- **Change:** remove German-language publication sections and German-facing estate labels while preserving factual
+  English references to Germany, German works, and European authorities.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Integration counterpart:** `Fountain-Coach/midi2-gpu-fabric` at the commit that records this synchronized change.
+- **Claim boundary:** local source and generated projection only; no remote deployment or translation-agent capability
+  is claimed.
+
 ## Current status correction — Chapter 109 local acceptance (2026-08-26)
 
 - **Change:** correct Chapter 109's current implementation status to record the typed NaturalLanguage measurement

@@ -1,3 +1,13 @@
+## Current implementation slice — English-only estate language baseline (2026-08-27)
+
+- **Chapters/readings** — 07/08 (bounded change and evidence authority); 92 (one estate with specialized
+  authorities); 111 (publication follows evidence and state is a projection).
+- **Decision** — public Fountain Coach estate projections remain English-only until translation agents are governed
+  and admitted. English factual references to Germany, German works, or European regulators remain valid.
+- **Implementation** — bilingual legal copy and German-facing status labels were removed from the publication source;
+  generated Governance HTML was rebuilt and the estate validator passed.
+- **Excluded, and why** — translation-agent implementation and remote publication remain separate governed slices.
+
 ## Current status correction — Chapter 109 local acceptance (2026-08-26)
 
 **Goal:** keep the governance record aligned with the accepted `semantic.measure` implementation without promoting a

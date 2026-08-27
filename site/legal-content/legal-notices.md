@@ -2,16 +2,13 @@
 
 ## Publisher
 
-**Benedikt Eickhoff, Einzelunternehmer**  
-Wühlischstraße 8  
-10245 Berlin, Deutschland  
+**Benedikt Eickhoff, sole proprietor**
+Wühlischstraße 8
+10245 Berlin, Germany
 [mail@benedikt-eickhoff.de](mailto:mail@benedikt-eickhoff.de)
 
 The Reframe Governance book is a free, public technical publication. It is not an account service, marketplace,
 checkout, community platform, user-upload service, e-book product, or paid service.
-
-Die Reframe-Governance-Buchpublikation ist eine kostenfreie, öffentliche technische Publikation. Sie ist kein
-Kontodienst, Marktplatz, Checkout, Community-Angebot, Upload-Dienst, E-Book-Produkt und kein kostenpflichtiger Dienst.
 
 ## Privacy and cookies
 
