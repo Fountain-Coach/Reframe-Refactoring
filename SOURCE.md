@@ -919,3 +919,22 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
   and Chapter 112 served social asset `...fc2ca37fda22.jpg`.
 - **Claim boundary:** governance publication and provenance are established; runtime implementation, live acceptance,
   security review, and release of the governed capabilities remain separate claims.
+
+## Current planned change — Chapter 116 Store-owned estate edge (2026-08-27)
+
+- **Change:** add the governance boundary for local/remote FountainStore estate projections, dynamic host-aware
+  routing, native HTTP serving, ACME/TLS promotion, and explicit external DNS evidence.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Publication content:** Chapter 116, Reading Index and status entry, deterministic SVG illustration, and generated
+  governance route/social projection.
+- **Integration content:** synchronized into `apps/modernization-studio/docs/reframe-grounding-first-refactor/`.
+- **Claim boundary:** governance and publication projection only; no complete Store-backed estate router, certificate
+  promotion, DNS mutation, or production acceptance is inferred from this chapter.
+## Current planned change — Chapter 114 server-side semantic proposals (2026-08-27)
+
+- **Change:** add the governed server-side Storify proposal boundary for one portable Mac/Linux Reframe runtime.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Publication content:** Chapter 114, Reading Index entry, and deterministic SVG illustration.
+- **Integration content:** synchronized into `apps/modernization-studio/docs/reframe-grounding-first-refactor/`.
+- **Claim boundary:** architecture and acceptance contract only; no server-side Storify release, Linux equivalence, or
+  complete live acceptance is claimed.

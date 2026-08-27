@@ -1755,3 +1755,56 @@ visual inspection, and later publication update.
 
 **Claim boundary:** asset repair only; no claim is made that external platforms preserve the SVG source or that image
 legibility establishes runtime acceptance.
+
+## Current planned change — Chapter 116 Store-owned estate edge (2026-08-27)
+
+**Goal:** govern the FountainStore-backed local/remote estate projection, dynamic host-aware serving, and the explicit
+ACME/TLS/external-DNS promotion boundary.
+
+**Governance read record:** Chapters 07/08 (bounded work and evidence); 91 (Store capability plane); 92 (estate
+identity and cross-domain contract); 94 (credentialed infrastructure operations); 95 (headless Store authority);
+96 (provider-neutral ACME); 104 (MIDI2 asynchronous completion); 108 (portable runtime); and 115 (Semantic Browser
+estate observation).
+
+**What they forbid here:** treating a static route file, local DNS override, HTTP response, certificate, or browser
+snapshot as the estate authority; conflating local editing with published state; or claiming production promotion from
+local preview evidence.
+
+**Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+
+**Claim boundary:** Chapter 116 defines the Store-owned estate-edge contract. It does not claim that the complete
+Store-backed route registry, ACME promotion flow, external DNS operation, or all estate domains are live-accepted.
+## Current planned change — Chapter 114 server-side semantic proposals (2026-08-27)
+
+**Goal:** govern Storify as a writer-facing semantic proposal instrument that can execute on a headless Linux Reframe
+host while macOS remains a rich host and projection surface.
+
+**Governance read record:** Chapters 07/08 (planning and evidence); 56 (Book Library provider boundary); 85 (defined
+whole and source-addressed Storify); 103 (FCIS-KIT semantic factory and event stream); 110 (three-run drift).
+
+**What they forbid here:** treating background NLP output as the writer-facing result; moving source authority into a
+model or FountainStore; claiming Linux parity from a macOS adapter; or accepting a model response without MIDI2 and
+durable Store evidence.
+
+**Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+
+**Claim boundary:** Chapter 114 governs the target contract. It does not claim that server-side Storify, Linux parity,
+or the complete external MIDI2-to-FountainStore chain is already released or live-accepted.
+
+**Asset:** `docs/illustrations/114-server-side-semantic-proposals.svg`, deterministic vector illustration; the
+previous standalone authority-chain illustration is also synchronized as `docs/illustrations/storify-library-store-drift.svg`.
+
+## Current planned change — Chapter 115 Semantic Browser instrument boundary (2026-08-27)
+
+**Goal:** govern the Fountain Coach Semantic Browser package as a Reframe MIDI2 instrument with a FountainStore
+adapter, durable lifecycle evidence, and replaceable macOS/Linux browser engines.
+
+**Governance read record:** Chapters 07/08 (planning and evidence); 91 (FCIS-KIT capability plane); 93 (instrument
+promotion); 104 (MIDI2 event time); 108 (portable runtime); 114 (server-side semantic proposals).
+
+**What they forbid here:** treating a browser HTTP surface, Typesense index, model analysis, or macOS engine as
+semantic authority; claiming Linux parity from a macOS-only package; or accepting a browser result without MIDI2 and
+FountainStore evidence.
+
+**Claim boundary:** Chapter 115 governs the target instrument and adapter contract. It does not claim that the current
+dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted by Reframe.

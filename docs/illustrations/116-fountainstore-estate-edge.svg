@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">FountainStore-owned estate edge</title>
+  <desc id="desc">A local Store candidate is validated and synchronized to a remote Store, which serves admitted estate domains through a native HTTP and ACME edge.</desc>
+  <rect width="1200" height="630" fill="#f6f8f9"/>
+  <text x="72" y="64" fill="#607080" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" letter-spacing="3">FOUNTAIN COACH · GOVERNED PRODUCTION EDGE · CHAPTER 116</text>
+  <text x="72" y="112" fill="#17232d" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="34" font-weight="700">The Store owns the estate edge</text>
+  <text x="72" y="143" fill="#607080" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18">A publication manifest becomes a browsable route only after validation and promotion.</text>
+
+  <rect x="72" y="207" width="270" height="190" rx="18" fill="#e5f2ef" stroke="#83bbb2" stroke-width="2"/>
+  <text x="98" y="245" fill="#173b3b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700">LOCAL FOUNTAINSTORE</text>
+  <text x="98" y="278" fill="#355d63" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="17">editable candidate</text>
+  <text x="98" y="313" fill="#355d63" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16">manifest · projection</text>
+  <text x="98" y="341" fill="#355d63" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16">digest · receipt</text>
+  <text x="98" y="378" fill="#173b3b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700">LOCAL · PRE-PUBLISHED</text>
+
+  <path d="M360 302 H462" fill="none" stroke="#607b8a" stroke-width="3"/>
+  <path d="M448 291 L468 302 L448 313" fill="none" stroke="#607b8a" stroke-width="3"/>
+  <text x="370" y="278" fill="#607080" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">typed Store sync</text>
+
+  <rect x="480" y="183" width="285" height="238" rx="18" fill="#20384b"/>
+  <text x="510" y="224" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="700">REMOTE FOUNTAINSTORE</text>
+  <text x="510" y="258" fill="#b9d7d2" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="17">staging / published state</text>
+  <line x1="510" y1="280" x2="735" y2="280" stroke="#6e8c9c" stroke-width="2"/>
+  <text x="510" y="316" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16">validate · promote · rollback</text>
+  <text x="510" y="348" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16">route snapshot · provenance</text>
+  <text x="510" y="380" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16">ACME receipt · TLS binding</text>
+
+  <path d="M783 302 H882" fill="none" stroke="#607b8a" stroke-width="3"/>
+  <path d="M868 291 L888 302 L868 313" fill="none" stroke="#607b8a" stroke-width="3"/>
+  <text x="790" y="278" fill="#607080" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">native edge</text>
+
+  <rect x="900" y="161" width="228" height="282" rx="18" fill="#ffffff" stroke="#b6c5cf" stroke-width="2"/>
+  <text x="930" y="204" fill="#17232d" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700">FOUNTAINSTORE</text>
+  <text x="930" y="232" fill="#607080" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16">HTTP / HTTPS edge</text>
+  <line x1="930" y1="254" x2="1098" y2="254" stroke="#d2dce1" stroke-width="2"/>
+  <text x="930" y="288" fill="#355d63" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">fountain.coach</text>
+  <text x="930" y="316" fill="#355d63" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">book · governance</text>
+  <text x="930" y="344" fill="#355d63" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">midi2 · instruments</text>
+  <text x="930" y="372" fill="#355d63" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">status</text>
+  <text x="930" y="414" fill="#173b3b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">PUBLISHED · HTTPS</text>
+
+  <rect x="72" y="486" width="1056" height="82" rx="16" fill="#fff5ef" stroke="#e5aa8f" stroke-width="2"/>
+  <text x="98" y="520" fill="#17232d" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="17" font-weight="700">THE BOUNDARY</text>
+  <text x="98" y="548" fill="#607080" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">Store promotion changes the served projection; ACME and DNS act only through explicit, evidenced operations.</text>
+</svg>
