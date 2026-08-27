@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">FountainStore snapshot export and Git recovery projection</title>
+  <desc id="desc">A FountainStore authority exports a verified snapshot to a production recovery repository and a private GitHub mirror, while the live Store continues to serve the estate and a separate restore path rebuilds a new Store.</desc>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; fill: #17222c; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #17222c; }
+    .eyebrow { font-size: 15px; font-weight: 700; letter-spacing: 3px; fill: #5c7180; }
+    .title { font-size: 40px; font-weight: 750; }
+    .subtitle { font-size: 20px; fill: #5c7180; }
+    .cardTitle { font-size: 20px; font-weight: 750; letter-spacing: 1px; }
+    .body { font-size: 17px; fill: #526674; }
+    .small { font-size: 15px; fill: #526674; }
+    .dark { fill: #173247; }
+    .darkText { fill: #f6f8f9; }
+    .darkMuted { fill: #b8cbd4; }
+    .line { stroke: #5d7482; stroke-width: 3; fill: none; }
+    .arrow { stroke: #5d7482; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    .dashed { stroke-dasharray: 9 9; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#5d7482"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#17222c" flood-opacity=".14"/></filter>
+  </defs>
+  <rect width="1440" height="900" fill="#f7f9fa"/>
+  <text x="90" y="78" class="sans eyebrow">FOUNTAIN COACH · GOVERNED RECOVERY</text>
+  <text x="90" y="132" class="sans title">The live Store remains the authority</text>
+  <text x="90" y="170" class="sans subtitle">A typed snapshot becomes recoverable without becoming a second publication system.</text>
+
+  <rect x="90" y="238" width="390" height="270" rx="24" class="dark" filter="url(#shadow)"/>
+  <text x="126" y="285" class="sans eyebrow darkMuted">LIVE AUTHORITY</text>
+  <text x="126" y="330" class="sans cardTitle darkText">FOUNTAINSTORE</text>
+  <text x="126" y="365" class="sans body darkMuted">estate state · scenarios</text>
+  <text x="126" y="393" class="sans body darkMuted">receipts · publication snapshot</text>
+  <line x1="126" y1="426" x2="444" y2="426" stroke="#6f8b99" stroke-width="2"/>
+  <text x="126" y="462" class="mono small darkText">typed export · source sequence</text>
+  <text x="126" y="486" class="mono small darkText">digest · evidence · identity</text>
+
+  <rect x="570" y="238" width="300" height="270" rx="24" fill="#e8f2f0" stroke="#a8d1c9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="606" y="285" class="sans eyebrow">SNAPSHOT</text>
+  <text x="606" y="330" class="sans cardTitle">SWIFT KIT</text>
+  <text x="606" y="365" class="sans body">freeze · serialize</text>
+  <text x="606" y="393" class="sans body">verify · receipt</text>
+  <line x1="606" y1="426" x2="834" y2="426" stroke="#83aaa3" stroke-width="2"/>
+  <text x="606" y="462" class="mono small">versioned manifest</text>
+  <text x="606" y="486" class="mono small">content-addressed assets</text>
+
+  <rect x="960" y="238" width="390" height="120" rx="22" fill="#edf2f8" stroke="#b6c8db" stroke-width="2" filter="url(#shadow)"/>
+  <text x="996" y="282" class="sans cardTitle">PRODUCTION GIT</text>
+  <text x="996" y="318" class="sans body">verified recovery projection</text>
+  <rect x="960" y="388" width="390" height="120" rx="22" fill="#f7eee1" stroke="#e4c99f" stroke-width="2" filter="url(#shadow)"/>
+  <text x="996" y="432" class="sans cardTitle">PRIVATE GITHUB</text>
+  <text x="996" y="468" class="sans body">off-host backup projection</text>
+
+  <path d="M480 373 H554" class="arrow"/>
+  <path d="M870 298 H944" class="arrow"/>
+  <path d="M1155 358 V378" class="arrow"/>
+  <path d="M480 445 C650 600 800 625 960 448" class="arrow dashed"/>
+  <text x="600" y="595" class="sans small">separate, explicit restore operation</text>
+
+  <rect x="90" y="610" width="1260" height="180" rx="24" fill="#fff8f3" stroke="#e9b59c" stroke-width="2"/>
+  <text x="126" y="657" class="sans cardTitle">THE AUTHORITY BOUNDARY</text>
+  <text x="126" y="696" class="sans body">Git preserves a verified recovery projection.</text>
+  <text x="126" y="724" class="sans body">FountainStore serves the estate and records the receipts.</text>
+  <text x="126" y="752" class="mono small">export ≠ publication · commit ≠ restore · mirror ≠ live Store</text>
+</svg>

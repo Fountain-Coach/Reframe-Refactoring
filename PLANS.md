@@ -1818,3 +1818,14 @@ FountainStore evidence.
 
 **Claim boundary:** Chapter 115 governs the target instrument and adapter contract. It does not claim that the current
 dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted by Reframe.
+# Current governance slice — FountainStore snapshot export and Git recovery projection (2026-08-27)
+
+- **Chapters read** — 07/08 (bounded governance work and evidence authority); 59 (Fountain-Coach Git service,
+  explicit export, and Git not being a Library release); 95 (FountainStore persistence, backup, and restore);
+  111 (evidence cohorts as publication units); 116 (Store-owned estate publication and native edge).
+- **What they forbid here** — treating a Git mirror as live publication authority, dumping the Store directory as an
+  opaque backup, losing attachment/receipt lineage, or claiming restore safety from a successful commit alone.
+- **Conflicts** — none. Chapter 59 governs project/release Git custody; Chapter 116 governs the live estate projection;
+  this chapter joins them through a typed snapshot/export boundary without creating a second authority.
+- **Excluded, and why** — implementation of the export instrument, remote promotion, restore execution, and GitHub
+  backup are follow-up work; this slice establishes the governing contract and reviewable publication chapter.
