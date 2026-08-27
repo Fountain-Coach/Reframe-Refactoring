@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Server-side semantic proposals across Mac and Linux</title>
+  <desc id="desc">Source-addressed observations from the Book Library and FountainStore are interpreted by a replaceable model provider. Storify returns a grounded proposal with alternatives and evidence to Mac and Linux Reframe hosts.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#536b78"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#173047" flood-opacity=".14"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="#f4f6f7"/>
+  <rect width="1600" height="112" fill="#173047"/>
+  <text x="82" y="56" fill="#fff" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="25" font-weight="700" letter-spacing="4">SEMANTIC PROPOSAL · SERVER-SIDE STORIFY</text>
+  <text x="82" y="88" fill="#b9d2da" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18">The point is not background NLP. The point is a grounded proposal that shows what may matter.</text>
+
+  <g filter="url(#shadow)" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif">
+    <rect x="72" y="206" width="300" height="300" rx="20" fill="#fff" stroke="#6b9fa5" stroke-width="3"/>
+    <text x="106" y="264" fill="#173047" font-size="24" font-weight="700">SOURCE + EVIDENCE</text>
+    <text x="106" y="302" fill="#526875" font-size="18">Library → FountainStore</text>
+    <text x="106" y="356" fill="#273d4a" font-size="20">exact source range</text>
+    <text x="106" y="390" fill="#273d4a" font-size="20">digest · edition · lines</text>
+    <text x="106" y="424" fill="#273d4a" font-size="20">linguistic observations</text>
+    <text x="106" y="468" fill="#a6533e" font-size="16" font-weight="700">grounding before meaning</text>
+
+    <rect x="454" y="206" width="300" height="300" rx="20" fill="#203c54" stroke="#203c54" stroke-width="3"/>
+    <text x="488" y="264" fill="#fff" font-size="24" font-weight="700">STORIFYKIT</text>
+    <text x="488" y="302" fill="#b9d2da" font-size="18">portable semantic instrument</text>
+    <text x="488" y="356" fill="#fff" font-size="20">observes → relates</text>
+    <text x="488" y="390" fill="#fff" font-size="20">interprets → proposes</text>
+    <text x="488" y="424" fill="#fff" font-size="20">alternatives → next action</text>
+    <text x="488" y="468" fill="#f1c27d" font-size="17" font-weight="700">proposal ≠ source fact</text>
+
+    <rect x="836" y="206" width="300" height="300" rx="20" fill="#fff" stroke="#477d9d" stroke-width="3"/>
+    <text x="870" y="264" fill="#173047" font-size="24" font-weight="700">MODEL PROVIDER</text>
+    <text x="870" y="302" fill="#526875" font-size="18">replaceable, recorded</text>
+    <text x="870" y="356" fill="#273d4a" font-size="20">Codex app-server</text>
+    <text x="870" y="390" fill="#273d4a" font-size="20">self-hosted model</text>
+    <text x="870" y="424" fill="#273d4a" font-size="20">macOS local instrument</text>
+    <text x="870" y="468" fill="#a6533e" font-size="16" font-weight="700">provider ≠ authority</text>
+  </g>
+
+  <g stroke="#536b78" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M386 356H442"/><path d="M768 356H824"/><path d="M1150 356H1220"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="16" font-weight="700" fill="#536b78" text-anchor="middle">
+    <text x="414" y="334">ground</text><text x="796" y="334">reason</text><text x="1185" y="334">return</text>
+  </g>
+
+  <g filter="url(#shadow)" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif">
+    <rect x="1226" y="206" width="300" height="300" rx="20" fill="#e6f1ef" stroke="#6b9fa5" stroke-width="3"/>
+    <text x="1260" y="264" fill="#173047" font-size="24" font-weight="700">PROPOSAL</text>
+    <text x="1260" y="302" fill="#526875" font-size="18">writer-facing result</text>
+    <text x="1260" y="356" fill="#273d4a" font-size="20">what stands out</text>
+    <text x="1260" y="390" fill="#273d4a" font-size="20">why it may matter</text>
+    <text x="1260" y="424" fill="#273d4a" font-size="20">alternatives + evidence</text>
+    <text x="1260" y="468" fill="#397447" font-size="16" font-weight="700">inspectable, not opaque</text>
+  </g>
+
+  <rect x="72" y="610" width="1454" height="148" rx="20" fill="#fff" stroke="#b6c4ca" stroke-width="2"/>
+  <text x="108" y="662" fill="#173047" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="23" font-weight="700">ONE CONTRACT · TWO HOSTS</text>
+  <text x="108" y="704" fill="#344b59" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="20">macOS may add Apple-native observations; Linux may run headlessly with another provider.</text>
+  <text x="108" y="736" fill="#344b59" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="20">Both return the same source-addressed proposal through MIDI2, with evidence in FountainStore.</text>
+  <text x="72" y="845" fill="#617783" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18" letter-spacing="2">NOTICE · INTERPRET · PROPOSE · PRESERVE ALTERNATIVES · KEEP THE SOURCE AUTHORITATIVE</text>
+</svg>

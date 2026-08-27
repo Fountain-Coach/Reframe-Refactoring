@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Semantic Browser: MIDI2 instrument and FountainStore evidence</title>
+  <desc id="desc">Reframe intent flows through a Semantic Browser MIDI2 instrument to FountainStore evidence, with macOS and Linux browser engines and indexing kept downstream.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfaf7"/><stop offset="1" stop-color="#eef2f3"/></linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17324a"/><stop offset="1" stop-color="#10283c"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#17324a" flood-opacity=".16"/></filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#5b7487"/></marker>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#172631}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#dce9ee}.eyebrow{font-size:14px;font-weight:700;letter-spacing:3px;fill:#617682}.title{font-size:34px;font-weight:750}.subtitle{font-size:17px;fill:#5b6e78}.card-title{font-size:18px;font-weight:750;letter-spacing:.4px}.card-copy{font-size:15px;fill:#5b6e78}.small{font-size:13px;fill:#6b7d87}.line{stroke:#5b7487;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="630" fill="url(#paper)"/><rect x="34" y="34" width="1132" height="562" rx="18" fill="none" stroke="#c5d2d6" stroke-width="2"/>
+  <text x="72" y="78" class="sans eyebrow">GOVERNED INSTRUMENT PERSPECTIVE · CHAPTER 115</text><text x="72" y="125" class="sans title">The browser is an instrument, not an authority</text><text x="72" y="155" class="sans subtitle">MIDI2 carries the work. FountainStore keeps the evidence.</text>
+  <rect x="72" y="218" width="220" height="126" rx="16" fill="#e7f2ef" stroke="#9fcfc7" stroke-width="2" filter="url(#shadow)"/><text x="96" y="256" class="sans card-title">REFRAME INTENT</text><text x="96" y="286" class="sans card-copy">bounded URL · readiness</text><text x="96" y="309" class="sans card-copy">capture policy · Store intent</text>
+  <path d="M292 281 C322 281 330 281 356 281" class="line"/>
+  <rect x="356" y="184" width="360" height="204" rx="18" fill="url(#ink)" filter="url(#shadow)"/><text x="388" y="225" class="mono card-title">SEMANTIC BROWSER</text><text x="388" y="251" class="mono" font-size="15">MIDI2 instrument</text><line x1="388" y1="273" x2="684" y2="273" stroke="#7895a5" stroke-width="2"/><text x="388" y="306" class="mono" font-size="15">browse · snapshot · analyze</text><text x="388" y="333" class="mono" font-size="15">index · query · export</text><text x="388" y="363" class="mono" font-size="14">correlation · terminal receipt</text>
+  <path d="M716 281 C746 281 752 281 782 281" class="line"/>
+  <rect x="782" y="218" width="344" height="126" rx="16" fill="#f3e9d9" stroke="#e3c28d" stroke-width="2" filter="url(#shadow)"/><text x="808" y="256" class="sans card-title">FOUNTAINSTORE</text><text x="808" y="286" class="sans card-copy">snapshot · analysis · receipt</text><text x="808" y="309" class="sans card-copy">durable evidence authority</text>
+  <path d="M536 378 C536 406 420 420 300 437" class="line"/><path d="M536 378 C536 406 652 420 772 437" class="line"/>
+  <g><rect x="112" y="430" width="376" height="86" rx="14" fill="#e8eef5" stroke="#b9cade" stroke-width="2"/><text x="138" y="464" class="sans card-title">PLATFORM HOSTS</text><text x="138" y="490" class="sans card-copy">macOS CDP / WebKit · Linux headless</text></g>
+  <g><rect x="712" y="430" width="376" height="86" rx="14" fill="#f0edf6" stroke="#c8bddf" stroke-width="2"/><text x="738" y="464" class="sans card-title">DOWNSTREAM INDEX</text><text x="738" y="490" class="sans card-copy">Typesense is derived query state, not truth</text></g>
+  <rect x="112" y="544" width="976" height="30" rx="15" fill="#fff5ef" stroke="#edb59c" stroke-width="2"/><text x="600" y="565" text-anchor="middle" class="sans small" font-weight="700">OBSERVE · CORRELATE · PERSIST · INTERPRET DOWNSTREAM</text>
+</svg>
