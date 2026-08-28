@@ -1829,3 +1829,19 @@ dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted 
   this chapter joins them through a typed snapshot/export boundary without creating a second authority.
 - **Excluded, and why** — implementation of the export instrument, remote promotion, restore execution, and GitHub
   backup are follow-up work; this slice establishes the governing contract and reviewable publication chapter.
+
+## Current planned change — Chapter 118 European cybersecurity profile (2026-08-28)
+
+- **Goal** — integrate the supplied European Cybersecurity Profile proposal as the next non-destructive governance
+  chapter, preserving its semantic requirements while fitting the public governance template.
+- **Governance read record** — 07/08 (bounded work and evidence); 44 (public/private publication boundary); 59
+  (explicit Git projection and custody); 91 (FCIS-KIT capability plane); 92 (publication estate); 95 (FountainStore
+  authority and recovery); 111 (evidence cohorts); 116 (Store-owned estate edge); and 117 (typed snapshot/export,
+  Git recovery projection, and restore separation).
+- **What they forbid here** — claiming legal compliance or certification, exposing secrets or private Store data,
+  treating Git as a second live Store or publication authority, or turning the proposal into an implementation claim.
+- **Direction** — add Chapter 118, a deterministic SVG principal illustration, Reading Index/status metadata, and the
+  corresponding integration copy; build and inspect the local governance projection before any publication action.
+- **Claim boundary** — this chapter governs an engineering and evidence model. It does not establish NIS2, CRA,
+  Cybersecurity Act, GDPR, or other legal applicability/compliance, and it does not claim that its implementation
+  gates are already satisfied.

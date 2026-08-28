@@ -1,5 +1,23 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter 118 European cybersecurity profile (2026-08-28)
+
+- **Change:** convert the supplied European Cybersecurity Profile proposal into a non-destructive governance chapter,
+  with explicit authority, continuity, recoverability, data-class separation, evidence, and Chapter 117 amendment
+  requirements; add a deterministic SVG principal illustration.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push` after local review.
+- **Claim boundary:** governance profile and local publication projection only; no legal compliance, certification,
+  security review, export/restore implementation, or production recovery evidence is claimed.
+
+## Current planned change — Chapter 117 FountainStore snapshot export and Git recovery projection (2026-08-27)
+
+- **Change:** govern FountainStore as live estate authority, typed snapshot/export, production-side Git recovery
+  custody, private GitHub mirroring, scenario/attachment permanence, and verified restore.
+- **Direction:** publication → integration through `Scripts/sync-integration-copy --push`.
+- **Integration content:** pending commit in `Fountain-Coach/midi2-gpu-fabric`.
+- **Claim boundary:** governance and local FountainStore preview only; export instrument, production mirror, GitHub
+  backup, and restore acceptance are not yet claimed.
+
 ## Current synchronized change — English-only estate language baseline (2026-08-27)
 
 - **Change:** remove German-language publication sections and German-facing estate labels while preserving factual
