@@ -1845,3 +1845,13 @@ dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted 
 - **Claim boundary** — this chapter governs an engineering and evidence model. It does not establish NIS2, CRA,
   Cybersecurity Act, GDPR, or other legal applicability/compliance, and it does not claim that its implementation
   gates are already satisfied.
+## Current planned change — Chapter 119 scenario–instrument composability amendment (2026-08-29)
+
+- **Chapters/readings** — 07 and 08 (bounded change and independent evidence); 81 (universal MIDI2 command plane);
+  86 (one composed MIDI2 graph); 119 (named serial pipelines, stage evidence, and claim boundaries).
+- **Decision** — scenarios may expose a discoverable MIDI2 instrument facade. MIDI-CI handles profile inquiry, UMP
+  carries typed execution/replay, the IDL remains message authority, and FountainStore remains behavioral authority.
+- **What this forbids here** — runtime Swift compilation, fixed scenario-name census, MIDI-CI as a second workflow
+  authority, or replay as a substitute for Store/AX evidence.
+- **Excluded, and why** — implementation of every estate instrument is not claimed by this documentation amendment;
+  the integration repository owns the Swift facade and migration queue. Publication remains a reviewed projection.
