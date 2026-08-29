@@ -1,5 +1,15 @@
 # Source and Synchronization Contract
 
+## Current synchronized change — semantic instrument selection and missing-instrument handoff (2026-08-29)
+
+- **Change:** align Chapters 93 and 119 with the implemented MIDI2 registry-selection boundary: semantic selection
+  over declared scenario requirements, explicit forward references, persisted missing-instrument requests, and the
+  governed `/instrument create` handoff without implicit compilation or authorization.
+- **Direction:** integration → publication through `Scripts/sync-integration-copy --pull`.
+- **Integration counterpart:** `Fountain-Coach/midi2-gpu-fabric@c60e87e5`.
+- **Claim boundary:** governance and generated publication projection only; no new instrument implementation,
+  admission, release, or live-drive evidence is claimed.
+
 ## Current planned change — Chapter 118 European cybersecurity profile (2026-08-28)
 
 - **Change:** convert the supplied European Cybersecurity Profile proposal into a non-destructive governance chapter,

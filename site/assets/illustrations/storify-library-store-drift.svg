@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">From Library source to Storify drift measurement</title>
+  <desc id="desc">The Book Library admits a published work, FountainStore keeps the authoritative local source and receipts, Storify reads bounded source ranges, and Chapter 110 compares exactly three independent readings.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#516879"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#172534" flood-opacity=".12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f4f6f7"/>
+  <rect x="0" y="0" width="1600" height="112" fill="#173047"/>
+  <text x="92" y="58" fill="#f7fafb" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="25" font-weight="700" letter-spacing="4">STORIFY SOURCE AUTO · THE AUTHORITY CHAIN</text>
+  <text x="92" y="88" fill="#b9d2da" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18">The Library supplies the work. FountainStore proves custody. Storify interprets. Chapter 110 measures variation.</text>
+
+  <g filter="url(#shadow)" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif">
+    <rect x="72" y="222" width="300" height="300" rx="20" fill="#fff" stroke="#6b9fa5" stroke-width="3"/>
+    <rect x="72" y="222" width="300" height="12" rx="6" fill="#6b9fa5"/>
+    <text x="104" y="286" fill="#173047" font-size="28" font-weight="700">BOOK LIBRARY</text>
+    <text x="104" y="327" fill="#526875" font-size="19">provider boundary</text>
+    <text x="104" y="382" fill="#273d4a" font-size="21">published work</text>
+    <text x="104" y="416" fill="#273d4a" font-size="21">edition · provenance</text>
+    <text x="104" y="450" fill="#273d4a" font-size="21">manifest · content digest</text>
+    <text x="104" y="490" fill="#a6533e" font-size="18" font-weight="700">does not interpret meaning</text>
+
+    <rect x="458" y="222" width="300" height="300" rx="20" fill="#fff" stroke="#c39152" stroke-width="3"/>
+    <rect x="458" y="222" width="300" height="12" rx="6" fill="#c39152"/>
+    <text x="490" y="286" fill="#173047" font-size="28" font-weight="700">FOUNTAINSTORE</text>
+    <text x="490" y="327" fill="#526875" font-size="19">durable custody</text>
+    <text x="490" y="382" fill="#273d4a" font-size="21">source identity + bytes</text>
+    <text x="490" y="416" fill="#273d4a" font-size="21">versions + receipts</text>
+    <text x="490" y="450" fill="#273d4a" font-size="21">coverage + lifecycle</text>
+    <text x="490" y="490" fill="#a6533e" font-size="18" font-weight="700">does not curate the work</text>
+
+    <rect x="844" y="222" width="300" height="300" rx="20" fill="#fff" stroke="#477d9d" stroke-width="3"/>
+    <rect x="844" y="222" width="300" height="12" rx="6" fill="#477d9d"/>
+    <text x="876" y="286" fill="#173047" font-size="28" font-weight="700">STORIFY</text>
+    <text x="876" y="327" fill="#526875" font-size="19">semantic reader</text>
+    <text x="876" y="382" fill="#273d4a" font-size="21">bounded source ranges</text>
+    <text x="876" y="416" fill="#273d4a" font-size="21">structure + movements</text>
+    <text x="876" y="450" fill="#273d4a" font-size="21">questions + uncertainty</text>
+    <text x="876" y="490" fill="#a6533e" font-size="18" font-weight="700">does not replace source</text>
+
+    <rect x="1230" y="222" width="298" height="300" rx="20" fill="#203c54" stroke="#203c54" stroke-width="3"/>
+    <text x="1262" y="286" fill="#fff" font-size="28" font-weight="700">CHAPTER 110</text>
+    <text x="1262" y="327" fill="#b9d2da" font-size="19">drift measurement</text>
+    <text x="1262" y="382" fill="#fff" font-size="21">same source address</text>
+    <text x="1262" y="416" fill="#fff" font-size="21">run A · run B · run C</text>
+    <text x="1262" y="450" fill="#fff" font-size="21">three terminal receipts</text>
+    <text x="1262" y="490" fill="#f1c27d" font-size="18" font-weight="700">difference is evidence, not truth</text>
+  </g>
+
+  <g stroke="#516879" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <path d="M376 372 H448"/>
+    <path d="M762 372 H834"/>
+    <path d="M1148 372 H1220"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="16" font-weight="700" fill="#516879" text-anchor="middle">
+    <text x="412" y="350">admit</text>
+    <text x="798" y="350">read</text>
+    <text x="1184" y="350">measure</text>
+  </g>
+
+  <rect x="72" y="628" width="1456" height="150" rx="20" fill="#fff" stroke="#b6c4ca" stroke-width="2"/>
+  <text x="108" y="680" fill="#173047" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="23" font-weight="700">THE CRITICAL POINT</text>
+  <text x="108" y="721" fill="#344b59" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="21">FountainStore can contain the Library’s admitted source without becoming the Library.</text>
+  <text x="108" y="754" fill="#344b59" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="21">Storify can derive meaning without becoming source authority. Chapter 110 can measure drift without declaring a winner.</text>
+
+  <text x="72" y="845" fill="#617783" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18" letter-spacing="2">SOURCE AUTHORITY · DURABLE EVIDENCE · GROUNDED READING · PLURAL INTERPRETATION</text>
+</svg>

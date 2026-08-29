@@ -52,7 +52,8 @@ No layer silently substitutes for another:
 | Release authority | the owning maintainer or release process | promotion of a named build for reuse |
 | Publication projection | the appropriate Fountain Coach domain | sanitized human and machine-readable public documentation |
 
-Codex or another agent may implement and exercise a candidate. It is not the arbiter of its own admission, release, security, or interoperability claim.
+Codex or another agent may reason about a missing instrument, implement it, and exercise it. It is not the arbiter of
+its own admission, release, security, or interoperability claim.
 
 ## Scenario first
 
@@ -94,11 +95,12 @@ The FCIS-KIT repository owns the reusable contract, transport seam, lifecycle mo
 
 The host adapter owns mediation, permission, account, project, Store, AX, and publication decisions. The instrument reports what it did; it does not decide that its own report is accepted.
 
-### 5. Build a named, reproducible release candidate
+### 5. Build a named, reproducible instrument build
 
 Resolve dependencies from the committed manifest and lockfile. Build from the current source revision, record the exact executable or package artifact, and run the repository’s negative deprecated-surface checks. No cached or path-dependent artifact may be treated as a released kit.
 
-The candidate must expose its version, source revision, dependency revisions, and artifact digest. A build that cannot be reproduced or identified is not promotable.
+The build must expose its version, source revision, dependency revisions, and artifact digest. A build that cannot be
+reproduced or identified is not promotable.
 
 ### 6. Execute and collect independent evidence
 
@@ -122,10 +124,12 @@ One class must never be silently used as another.
 Admission is a state transition with an authority and evidence record. The instrument moves through explicit states such as:
 
 ```text
-candidate → organization instrument → locally tested → live-accepted → released
+requested → specified → implemented → locally tested → live-accepted → released
 ```
 
-Discovery is not admission. A catalog tile is not admission. Compilation is not admission. A passing mock scenario is not proof of a real provider or physical device. If required evidence is missing, the instrument remains honestly pending or unresolved.
+Discovery is not admission. A catalog tile is not admission. Compilation is not admission. A passing mock scenario is
+not proof of a real provider or physical device. If required evidence is missing, the instrument remains explicitly
+requested, specified, implemented, or unresolved according to the evidence actually present.
 
 ### 8. Release the owned kit
 
@@ -170,7 +174,10 @@ The workflow must report claims at the narrowest supported level:
 | software-peer interoperable | independent software-peer acceptance exists |
 | hardware interoperable | physical-device evidence exists |
 
-Stop rather than promote when the IDL identity is missing, the scenario has no terminal predicate, the candidate cannot be bound to one run, lifecycle or receipts are unobservable, credentials or private data would cross the boundary, a generic fallback hides missing provenance, the release is not reproducible, or the public projection would overstate evidence.
+Stop rather than promote when the IDL identity is missing, the scenario has no terminal predicate, the instrument build
+cannot be bound to one run, lifecycle or receipts are unobservable, credentials or private data would cross the
+boundary, a generic fallback hides missing provenance, the release is not reproducible, or the public projection would
+overstate evidence.
 
 Hardware interoperability is always a separate claim. Its absence does not invalidate a machine-readable or software-only instrument, but it must not be implied.
 

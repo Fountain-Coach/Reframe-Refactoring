@@ -47,8 +47,11 @@ Every definition MUST contain:
 The scenario name is the writer-facing address. Internal IDs, filenames, and implementation symbols MAY accompany it
 for resolution and provenance, but MUST NOT replace the readable name in the command or result.
 
-A definition with an unknown scenario, duplicate stage, ambiguous source identity, missing order, or missing executor
-is rejected before persistence. Creation either stores one complete definition or stores nothing.
+A definition with a duplicate stage, ambiguous source identity, or missing order is rejected before persistence.
+An otherwise well-formed definition MAY retain an explicitly named forward reference when its scenario is not yet
+known to the current registry. Creation stores that reference as unresolved and reports it; `run` cannot start until
+the reference resolves through the MIDI2 boundary. This permits a pipeline shape to be composed before every future
+instrument exists without pretending that the missing stage is executable.
 
 ## Lifecycle
 
@@ -134,18 +137,29 @@ contract calls for one, but it MUST NOT carry scenario definitions, pipeline gra
 or evidence claims. Structured declarations and larger payloads use the established MIDI-CI Property Exchange,
 SysEx8, Mixed Data Set, or Reframe MIDI2 backplane contract as applicable.
 
-The pipeline composer MAY mix and match scenario-instruments when the discovered profiles are compatible. Compatibility
-MUST be checked before persistence: a stage's typed inputs must accept the preceding durable result, its executor must
-be available in the running Reframe build, and its evidence and authority requirements must be declared. A scenario
-using an already-shipped MIDI2 instrument can therefore be materialized and composed without invoking the Swift
-compiler. Implementing a genuinely new instrument remains a development-time Swift change and release gate; it is not
-a runtime pipeline operation.
+The pipeline composer MAY mix and match scenario-instruments when the discovered profiles are compatible. Selection is
+a semantic reasoning boundary over the scenario's declared intent, operation, input/output traits, mutation boundary,
+terminal predicates, and the currently registered MIDI2 profiles. An identifier or filename may address a profile, but
+it is not by itself a reason for selection. Compatibility MUST be checked before a binding is persisted: a stage's
+typed inputs must accept the preceding durable result, its executor must be available in the running Reframe build,
+and its evidence and authority requirements must be declared.
+
+When no registered profile satisfies the reasoned request, Reframe MUST persist a typed missing-instrument request
+containing the semantic requirements and the reason no existing instrument was selected. It MUST present that request
+as a human-readable handoff to the existing `/instrument create <brief>` scenario-first command. The handoff is a
+request, not authorization, compilation, admission, release, or execution. A maintainer may then use the governed
+instrument-creation path to create the missing MIDI2 Function Block once; after release or local admission, the
+registry can resolve the forward reference without changing the pipeline composition model.
+
+A scenario using an already-shipped MIDI2 instrument can therefore be materialized and composed without invoking the
+Swift compiler. Implementing a genuinely new instrument remains a development-time Swift change and release gate; it
+is not a runtime pipeline operation.
 
 Scenario materialization is consequently an admission and binding operation, not compilation. It resolves an existing
 named scenario to its MIDI2 instrument profile, validates the profile and typed edges, and persists one executable
-binding or rejects the operation without mutation. A missing instrument executor is an explicit bounded failure.
-Materialization MAY be performed in batch for a reviewed set of existing contracts; it MUST NOT invent scenario
-behavior or strengthen a candidate claim.
+binding. A missing instrument is not silently substituted: it becomes the persisted missing-instrument request above,
+while the pipeline retains the readable forward reference and remains non-runnable. Materialization MAY be performed
+in batch for a reviewed set of existing contracts; it MUST NOT invent scenario behavior or strengthen any claim.
 
 ## UMP replay and evidence cohorts
 
@@ -158,7 +172,7 @@ scenario explicitly declares them stable.
 UMP is transport and replay evidence, not behavioral authority. FountainStore remains authoritative for durable stage
 results, receipts, and provenance; AX and CoreGraphics window-ID evidence remain authoritative for writer-visible
 interaction and visual claims. A replay match demonstrates reproducibility of the declared contract; it cannot
-promote a candidate scenario, extend a claim boundary, or establish publication or release by itself.
+extend a claim boundary or establish publication or release by itself.
 
 ## Kit and runtime ownership
 
@@ -174,8 +188,9 @@ the declared Swift kit and host adapter are available.
 
 ## Governing rules
 
-1. Compose existing named scenarios; never create an implicit scenario as a side effect of `pipeline create`.
-2. Resolve every name and source identity before persistence.
+1. Compose named scenarios; never create an implicit scenario as a side effect of `pipeline create`.
+2. Resolve every source identity before persistence; retain an explicitly named unresolved scenario only as a
+   reported forward reference, never as an executable stage.
 3. Keep creation, inspection, execution, resume, publication, and release as separate operations.
 4. Execute serially and continue automatically across ordinary stages.
 5. Persist every transition and consume prior-stage results from FountainStore.
@@ -189,6 +204,8 @@ the declared Swift kit and host adapter are available.
     respective authorities.
 11. Do not use Flex Data as a generic scenario or pipeline control plane; its defined content messages remain the only
     admitted Flex semantics.
+12. If semantic selection finds no registered MIDI2 instrument, persist the typed missing-instrument request and
+    present the governed instrument-creation handoff; never compile, authorize, or substitute an instrument silently.
 
 ## Governing sentence
 

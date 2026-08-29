@@ -1,3 +1,12 @@
+## Governance alignment — semantic instrument selection and missing-instrument handoff (2026-08-29)
+
+- **Chapters read:** 07, 08, 91, 93, and 119.
+- **Direction:** integration → publication; source counterpart `Fountain-Coach/midi2-gpu-fabric@c60e87e5`.
+- **Result:** Chapters 93 and 119 now describe semantic registry selection, explicit unresolved forward references,
+  persisted missing-instrument requests, and the separate `/instrument create` governance path.
+- **Claim boundary:** documentation and generated site projection only; no instrument implementation, admission,
+  release, or live-acceptance claim.
+
 ## Current implementation slice — English-only estate language baseline (2026-08-27)
 
 - **Chapters/readings** — 07/08 (bounded change and evidence authority); 92 (one estate with specialized
