@@ -1869,3 +1869,7 @@ dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted 
   topology wording therefore takes precedence without changing the scenario-facing command.
 - **Excluded, and why** — runtime Function Block registration and independent live acceptance remain implementation
   work in the integration repository; this amendment corrects the governance contract and transport boundary only.
+- **Publication evidence** — source `cd2583b`; clean build emitted 121 chapters / 128 HTML pages; the publication
+  estate validator passed; independent Chrome CDP AX/VRT acceptance passed for desktop light/dark, mobile menu-open,
+  status, chapter, and legal routes; deployed to `governance.fountain.coach` at the governed Caddy root with HTTPS
+  verification and rollback retention.
