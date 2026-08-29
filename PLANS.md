@@ -1855,3 +1855,17 @@ dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted 
   authority, or replay as a substitute for Store/AX evidence.
 - **Excluded, and why** — implementation of every estate instrument is not claimed by this documentation amendment;
   the integration repository owns the Swift facade and migration queue. Publication remains a reviewed projection.
+
+## Current planned change — Chapter 119 MIDI2 Endpoint and Function Block clarification (2026-08-29)
+
+- **Chapters read** — 07 and 08 (bounded governance work and evidence authority); 70 (negotiated MIDI2 peer and
+  typed lifecycle); 72 (generic MIDI2 endpoint and Function Block projection); 119 (scenario composition and claim
+  boundaries).
+- **What they forbid here** — calling Reframe a generic host-side instrument, treating a MIDI-CI responder role as
+  the device identity, using Flex Data as a JSON/control transport, or claiming a Function Block is live from a
+  discovery descriptor alone.
+- **Conflicts** — the existing Chapter 119 phrase “scenario MIDI2 instrument facade” is retained as readable product
+  language, but 70/72 require the normative topology to be an Endpoint/Device containing Function Blocks; the
+  topology wording therefore takes precedence without changing the scenario-facing command.
+- **Excluded, and why** — runtime Function Block registration and independent live acceptance remain implementation
+  work in the integration repository; this amendment corrects the governance contract and transport boundary only.

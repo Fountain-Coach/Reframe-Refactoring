@@ -113,17 +113,26 @@ The pipeline result MUST present, for humans and machine readers:
 The result is a reading of the work, not a compiler transcript. Technical events support the explanation; they do not
 replace it.
 
-## Scenario–instrument composability
+## MIDI2 Endpoint topology and scenario composability
 
-A scenario MAY expose a MIDI2 instrument facade. The facade preserves the scenario's human-readable identity and
-claim boundary while presenting its executable behavior as a discoverable, typed MIDI2 instrument profile. This is
-the composability boundary for future scenarios: pipeline definitions do not require a fixed census of scenario names
-or a runtime Swift compiler.
+A scenario MAY be exposed as a MIDI2 instrument in the writer-facing vocabulary, but the normative MIDI2 topology is
+an Endpoint/Device containing one or more Function Blocks. Reframe presents one software MIDI2 Endpoint/Device;
+materialized scenarios and composed pipelines are Function Blocks within that endpoint. This is the composability
+boundary for future scenarios: pipeline definitions do not require a fixed census of scenario names or a runtime Swift
+compiler.
 
-The facade MUST declare the scenario name, instrument/profile identity and version, supported MIDI2 inputs and outputs,
-lifecycle messages, terminal predicates, evidence authorities, and claim boundary. MIDI-CI discovery and capability
-inquiry MAY be used to discover and negotiate those profiles. The repository MIDI2 IDL remains authoritative for
-message shapes and lifecycle semantics; MIDI-CI is discovery and inquiry, not a second workflow authority.
+Each scenario Function Block MUST declare the scenario name, Function Block identity and version, supported inputs and
+outputs, lifecycle messages, terminal predicates, evidence authorities, and claim boundary. UMP Endpoint and Function
+Block discovery establish the device topology. MIDI-CI provides bidirectional discovery, inquiry, negotiation, and
+Property Exchange; its `initiator` and `responder` labels describe transaction roles, not separate device or
+instrument identities. The repository MIDI2 IDL remains authoritative for Reframe message shapes and lifecycle
+semantics; MIDI-CI is discovery and inquiry, not a second workflow authority.
+
+Flex Data MUST remain within its defined MIDI2 message vocabulary: tempo, time signature, metronome, key signature,
+chord name, text, lyric, and ruby. It MAY carry a declared human-facing content annotation where the Function Block
+contract calls for one, but it MUST NOT carry scenario definitions, pipeline graphs, lifecycle control, arbitrary JSON,
+or evidence claims. Structured declarations and larger payloads use the established MIDI-CI Property Exchange,
+SysEx8, Mixed Data Set, or Reframe MIDI2 backplane contract as applicable.
 
 The pipeline composer MAY mix and match scenario-instruments when the discovered profiles are compatible. Compatibility
 MUST be checked before persistence: a stage's typed inputs must accept the preceding durable result, its executor must
@@ -154,8 +163,9 @@ promote a candidate scenario, extend a claim boundary, or establish publication 
 ## Kit and runtime ownership
 
 `FountainCoachMaintenanceKit` owns the typed maintenance operations, pipeline definition, validation, state machine,
-and evidence boundary. `ReframeSkillKit` owns the Reframe skill identities. MIDI2 instruments own executable behavior;
-Reframe provides the Swift host adapters and routes scenario facades through the MIDI2 instrument contract.
+and evidence boundary. `ReframeSkillKit` owns the Reframe skill identities. MIDI2 Function Blocks own executable
+behavior within the Endpoint/Device contract; Reframe provides the Swift Endpoint/Device adapter and routes scenario
+and pipeline Function Blocks through the MIDI2 instrument contract.
 FountainStore owns durable definitions, stage results, and receipts. Agent procedures may explain how to operate the
 system but are not runtime authority.
 
@@ -172,10 +182,13 @@ the declared Swift kit and host adapter are available.
 6. Stop only at a typed failure or an explicitly governed human authority boundary.
 7. Preserve each scenario's claim boundary; pipeline composition cannot strengthen evidence.
 8. Report motivation, observation, critique, learning, and next action in human-facing language.
-9. Treat each scenario's MIDI2 instrument facade as the composability boundary; do not require runtime compilation of
-   a new pipeline.
-10. Use MIDI-CI for discovery/inquiry and UMP for typed transport/replay, while retaining IDL, FountainStore, AX, and
-    CoreGraphics as their respective authorities.
+9. Treat the Reframe MIDI2 Endpoint/Device and its scenario or pipeline Function Blocks as the composability
+   boundary; do not require runtime compilation of a new pipeline.
+10. Use UMP Endpoint/Function Block discovery for topology, MIDI-CI for discovery/inquiry/negotiation and Property
+    Exchange, and UMP for typed transport/replay, while retaining IDL, FountainStore, AX, and CoreGraphics as their
+    respective authorities.
+11. Do not use Flex Data as a generic scenario or pipeline control plane; its defined content messages remain the only
+    admitted Flex semantics.
 
 ## Governing sentence
 
