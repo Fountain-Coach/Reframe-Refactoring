@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 510" role="img" aria-labelledby="title desc">
+  <title id="title">Internal dialogue stage projection</title>
+  <desc id="desc">User intention enters the Composer, a variable agent reasons with it, and Reframe returns a grounded result with durable evidence.</desc>
+  <defs>
+    <filter id="lift" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#233746" flood-opacity=".13"/></filter>
+  </defs>
+  <rect width="1200" height="510" rx="26" fill="#F7F2E9"/>
+  <path d="M55 72H1145" stroke="#D8CDBD" stroke-width="2"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" fill="#203344">
+    <text x="65" y="49" font-size="19" font-weight="700" letter-spacing="3" fill="#4D7478">THE INTERNAL DIALOGUE</text>
+    <text x="65" y="475" font-size="18" fill="#607176">one intention · one replaceable voice · one runtime authority</text>
+  </g>
+  <g filter="url(#lift)">
+    <rect x="65" y="145" width="275" height="190" rx="18" fill="#FFFDF8" stroke="#B9C6C2" stroke-width="2"/>
+    <rect x="462" y="145" width="275" height="190" rx="18" fill="#E7B85C" stroke="#C89142" stroke-width="2"/>
+    <rect x="860" y="145" width="275" height="190" rx="18" fill="#FFFDF8" stroke="#B9C6C2" stroke-width="2"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" fill="#203344">
+    <text x="94" y="190" font-size="20" font-weight="700" letter-spacing="1">USER INTENTION</text>
+    <path d="M94 207h96" stroke="#C96A54" stroke-width="4"/>
+    <text x="94" y="246" font-size="18">purpose + consent</text><text x="94" y="278" font-size="18">desired outcome</text><text x="94" y="310" font-size="18">writer origin</text>
+    <text x="94" y="328" font-size="13" font-weight="700" letter-spacing="1" fill="#C96A54">AUTHORITY · INTENT</text>
+    <text x="491" y="190" font-size="20" font-weight="700" letter-spacing="1">COMPOSER</text>
+    <path d="M491 207h104" stroke="#203344" stroke-width="4"/>
+    <text x="491" y="246" font-size="18">dialogue instrument</text><text x="491" y="278" font-size="18">MIDI2 correlation</text><text x="491" y="310" font-size="18">role provenance</text>
+    <text x="491" y="328" font-size="13" font-weight="700" letter-spacing="1">CONNECTS · DOES NOT DECIDE</text>
+    <text x="889" y="190" font-size="20" font-weight="700" letter-spacing="1">REFRAME RUNTIME</text>
+    <path d="M889 207h125" stroke="#4D7478" stroke-width="4"/>
+    <text x="889" y="246" font-size="18">mediation + grounding</text><text x="889" y="278" font-size="18">instruments + execution</text><text x="889" y="310" font-size="18">Store + terminal proof</text>
+    <text x="889" y="328" font-size="13" font-weight="700" letter-spacing="1" fill="#4D7478">AUTHORITY · LIVE STATE</text>
+  </g>
+  <g stroke="#C96A54" stroke-width="3" fill="none">
+    <path d="M340 240h105"/><path d="M737 240h105"/>
+  </g>
+  <g fill="#C96A54"><path d="M445 240l-13-8v16z"/><path d="M842 240l-13-8v16z"/></g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" text-anchor="middle" fill="#C96A54" font-size="13" font-weight="700">
+    <text x="392" y="220">INTENTION IN</text><text x="790" y="220">GROUNDED REPLY</text>
+  </g>
+  <g filter="url(#lift)">
+    <rect x="398" y="92" width="404" height="38" rx="13" fill="#203344"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <text x="424" y="117" font-size="15" font-weight="700" letter-spacing="1" fill="#FFFDF8">VARIABLE AGENT</text>
+    <text x="684" y="117" font-size="15" fill="#E7B85C">Codex today</text>
+  </g>
+  <path d="M65 365H1135" stroke="#4D7478" stroke-width="3"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" fill="#607176" font-size="16">
+    <text x="65" y="398" font-weight="700" letter-spacing="1">EVIDENCE RAIL</text><text x="220" y="398">FountainStore</text><text x="355" y="398">·</text><text x="378" y="398">AX</text><text x="418" y="398">·</text><text x="441" y="398">window-ID visual truth</text><text x="665" y="398">·</text><text x="688" y="398">typed lifecycle</text>
+  </g>
+</svg>

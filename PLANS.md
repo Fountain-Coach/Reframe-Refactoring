@@ -1873,3 +1873,16 @@ dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted 
   estate validator passed; independent Chrome CDP AX/VRT acceptance passed for desktop light/dark, mobile menu-open,
   status, chapter, and legal routes; deployed to `governance.fountain.coach` at the governed Caddy root with HTTPS
   verification and rollback retention.
+
+## Current planned change — Chapter 120 internal triadic peer dialogue (2026-08-29)
+
+- **Chapters read** — 07 and 08 (grounded reasoning and evidence authority); 70 (external MIDI2 peer control); 71
+  (separate Reframe software peers); and 119 (scenario composition, human-facing reconciliation, and claim boundary).
+- **What they forbid here** — collapsing user intention, agent reasoning, and Reframe runtime authority; treating
+  personification as evidence; hard-coding Codex as the only agent; or presenting the internal dialogue as a separate
+  process or hardware acceptance claim.
+- **Direction** — add a Teatro-style illustrated chapter defining the internal Composer dialogue, role binding,
+  Copilot presentation, MIDI2 correlation, Store/AX evidence, and replaceable companion-agent boundary; update the
+  reading index and synchronize the reviewed integration copy.
+- **Excluded, and why** — this slice documents the governance contract and previews it locally; runtime participant
+  binding implementation, live-drive evidence, publication, and deployment remain separate acceptance actions.
