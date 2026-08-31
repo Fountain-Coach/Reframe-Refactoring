@@ -1845,3 +1845,13 @@ dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted 
 - **Claim boundary** — this chapter governs an engineering and evidence model. It does not establish NIS2, CRA,
   Cybersecurity Act, GDPR, or other legal applicability/compliance, and it does not claim that its implementation
   gates are already satisfied.
+## Current planned change — bounded FountainStore route publication (2026-08-31)
+
+- **Goal:** codify the proven route-scoped Store-to-Store publication path for one chapter, page, or route.
+- **Chapters read:** 07 (bounded planning and source authority), 08 (separate evidence authorities), 116 (Store-owned
+  publication and native edge), and 122 only to preserve its semantic-transformer/deployment separation.
+- **Direction:** publication Chapter 116 → exact integration copy; unrelated guide and generated-site drift remains
+  untouched.
+- **Proof:** host-and-path scope, explicit whole-estate intent, source/remote/credential/capacity/single-process
+  preflight, and correlated route-write/read-back/public-digest completion are present in both byte-identical copies.
+- **Excluded:** Chapter 122 content, runtime implementation, generated-site regeneration, and production deployment.
