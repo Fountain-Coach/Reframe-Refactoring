@@ -105,6 +105,17 @@ FountainStore HTTP edge
   → activate certificate and edge route
   → verify HTTPS and semantic estate graph</code></pre>
 <p>The sync is not a blind filesystem copy. It MUST be idempotent, preserve the source revision and digest, reject a conflicting route identity, and retain the prior published snapshot for rollback. A failed validation, incomplete artifact, missing certificate, or failed HTTPS check leaves the current published snapshot unchanged.</p>
+<h3 id="bounded-route-publication">Bounded route publication</h3>
+<p>A publication request that names one chapter, page, or route is a bounded route publication. The publisher MUST identify that unit by its canonical host and normalized path prefix, transfer only the selected route files, and merge the resulting route patch into the current remote manifest atomically. It MUST NOT turn a bounded request into a whole-estate transfer. Whole-estate synchronization is a separate, explicit intent.</p>
+<p>Before mutation, the publisher MUST establish that the selected route exists in the current local Store snapshot, the authenticated remote Store is ready, the named SecretStore credential is available to one admitted publication process, and the destination has enough capacity to accept and promote the patch. A credential prompt belongs to that single process; spawning retries or overlapping publication clients is not recovery.</p>
+<p>The bounded operation is complete only when one correlated receipt establishes all of the following:</p>
+<ol type="1">
+<li>the remote Store accepted the route patch;</li>
+<li>typed remote manifest read-back contains the selected host and path;</li>
+<li>typed selected-path read-back matches the frozen local content digest; and</li>
+<li>the canonical public HTTPS route returns that same digest.</li>
+</ol>
+<p>Process completion, an HTTP success alone, or a remote manifest without selected-path read-back cannot satisfy this proof. If a preflight or proof condition fails, the operation stops at that named seam; it does not fall back to a filesystem copy, a generic HTTP upload, a site generator, or an edge-server reconfiguration.</p>
 <p>The operation enters Reframe through the governed MIDI2 plane described in <a href="/chapters/81-universal-midi2-command-plane/">Chapter 81</a>, emits asynchronous lifecycle events under <a href="/chapters/104-midi2-event-time-jitter-and-asynchronous-completion-governance/">Chapter 104</a>, and persists its receipt through the Store boundary described in <a href="/chapters/91-fcis-kit-instrument-store-is-the-capability-plane/">Chapter 91</a>. It is therefore an instrument operation, not a shell convention.</p>
 <h2 id="fountainstore-as-the-native-edge">FountainStore as the native edge</h2>
 <p>The FountainStore HTTP server may serve static publication roots, Store-backed data, and other admitted routes through one native edge. Host-aware routing selects the manifest record; it must not infer authority from the request path alone. The edge MUST reject an unknown or unadmitted host rather than falling through to an arbitrary root.</p>
@@ -157,6 +168,8 @@ semantic graph matches           browser/AX equivalence witness</code></pre>
 <li>A local mirror MUST preserve the remote estate's semantic graph while visibly declaring its local/pre-published state.</li>
 <li>A bootstrap route file MAY configure development, but it MUST NOT become a second authority or replace Store state.</li>
 <li>FountainStore edge readiness, certificate readiness, DNS readiness, and semantic-browser equivalence MUST be reported as separate acceptance claims.</li>
+<li>A chapter, page, or route publication MUST use a host-and-path-scoped Store patch; whole-estate synchronization requires explicit whole-estate intent.</li>
+<li>Route publication MUST preflight source, remote readiness, credential custody, capacity, and single-process ownership, then prove remote write, typed read-back, public HTTPS, and matching digest before reporting completion.</li>
 </ol>
 <h2 id="governing-sentence">Governing sentence</h2>
 <p>The Fountain Coach estate is a Store-owned publication projection: Reframe edits locally, a governed secondary Store promotes immutable route state, and FountainStore serves admitted domains with ACME, TLS, and DNS remaining explicit, evidenced, and reversible operations.</p>
