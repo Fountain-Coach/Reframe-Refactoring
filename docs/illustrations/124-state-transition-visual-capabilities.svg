@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Visual State A to State B transition</title>
+  <desc id="desc">A publication page changes from an ordinary State A to State B with reordered navigation, an emphasized domain lens, moved content cards, and a transformed diagram.</desc>
+  <rect width="1600" height="900" fill="#f5f1ea"/>
+  <rect x="34" y="30" width="1532" height="840" rx="26" fill="#fffdf9" stroke="#d7cec1" stroke-width="2"/>
+  <text x="82" y="86" fill="#1c293b" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" letter-spacing="3">GOVERNANCE 124</text>
+  <text x="82" y="132" fill="#1c293b" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="700">What the reader sees changing</text>
+  <text x="82" y="166" fill="#6b7785" font-family="Arial,Helvetica,sans-serif" font-size="18">one writer pointer · two semantic states · one timed visual transition</text>
+  <line x1="82" y1="198" x2="1518" y2="198" stroke="#e0d8ce" stroke-width="2"/>
+  <g font-family="Arial,Helvetica,sans-serif">
+    <rect x="82" y="244" width="610" height="420" rx="20" fill="#f0ece5" stroke="#d7cec1" stroke-width="2"/>
+    <text x="116" y="286" fill="#5a43bb" font-size="12" font-weight="700" letter-spacing="2">STATE A · BEFORE</text>
+    <text x="116" y="334" fill="#172236" font-size="25" font-weight="700">Ordinary publication page</text>
+    <rect x="116" y="366" width="542" height="48" rx="10" fill="#ffffff"/>
+    <text x="138" y="396" fill="#687483" font-size="14">ESTATE   ·   BOOK   ·   GOVERNANCE   ·   MIDI2</text>
+    <rect x="116" y="438" width="252" height="94" rx="14" fill="#ffffff"/>
+    <text x="140" y="472" fill="#687483" font-size="12" font-weight="700">CURRENT LENS</text>
+    <text x="140" y="508" fill="#172236" font-size="20" font-weight="700">Governance</text>
+    <rect x="398" y="438" width="260" height="94" rx="14" fill="#ffffff"/>
+    <text x="422" y="472" fill="#687483" font-size="12" font-weight="700">CONTENT ORDER</text>
+    <text x="422" y="508" fill="#172236" font-size="19" font-weight="700">A · B · C</text>
+    <rect x="116" y="556" width="542" height="70" rx="14" fill="#ffffff"/>
+    <text x="140" y="598" fill="#687483" font-size="14">diagram: one static arrangement</text>
+
+    <rect x="908" y="244" width="610" height="420" rx="20" fill="#e8f3ed" stroke="#c5dfd2" stroke-width="2"/>
+    <text x="942" y="286" fill="#27755f" font-size="12" font-weight="700" letter-spacing="2">STATE B · AFTER</text>
+    <text x="942" y="334" fill="#172236" font-size="25" font-weight="700">Readable transformed page</text>
+    <rect x="942" y="366" width="542" height="48" rx="10" fill="#ffffff"/>
+    <rect x="962" y="376" width="126" height="28" rx="14" fill="#e5ddff"/>
+    <text x="980" y="395" fill="#5a43bb" font-size="12" font-weight="700">GOVERNANCE</text>
+    <text x="1110" y="396" fill="#687483" font-size="14">ESTATE   ·   BOOK   ·   MIDI2   ·   INSTRUMENTS</text>
+    <rect x="942" y="438" width="252" height="94" rx="14" fill="#eee9df"/>
+    <text x="966" y="472" fill="#5a43bb" font-size="12" font-weight="700">ACTIVE LENS</text>
+    <text x="966" y="508" fill="#172236" font-size="20" font-weight="700">Governance</text>
+    <rect x="1224" y="438" width="260" height="94" rx="14" fill="#e9e4fa"/>
+    <text x="1248" y="472" fill="#5a43bb" font-size="12" font-weight="700">CONTENT ORDER</text>
+    <text x="1248" y="508" fill="#172236" font-size="19" font-weight="700">C · A · B</text>
+    <rect x="942" y="556" width="542" height="70" rx="14" fill="#ffffff"/>
+    <path d="M972 600 C1030 565 1075 625 1130 590 S1230 568 1280 600 S1370 620 1452 578" fill="none" stroke="#6c56c8" stroke-width="5"/>
+    <text x="972" y="580" fill="#687483" font-size="12">diagram: compatible SVG path morph</text>
+  </g>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#6c56c8"/></marker></defs>
+  <path d="M710 454 H890" fill="none" stroke="#6c56c8" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="800" y="420" text-anchor="middle" fill="#5a43bb" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">MIDI2 timeline · Teatro motion</text>
+  <rect x="82" y="706" width="1436" height="96" rx="18" fill="#202833"/>
+  <text x="116" y="746" fill="#edf2f6" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Visual capabilities</text>
+  <text x="116" y="778" fill="#b7c3cd" font-family="Arial,Helvetica,sans-serif" font-size="13">reorder · move · emphasize · insert · remove · crossfade · morph SVG · pointer custody · settle · replay</text>
+  <text x="1484" y="746" text-anchor="end" fill="#8fd6b1" font-family="Arial,Helvetica,sans-serif" font-size="13">WebKit renders</text>
+  <text x="1484" y="778" text-anchor="end" fill="#e2b36e" font-family="Arial,Helvetica,sans-serif" font-size="13">AX + Store prove</text>
+</svg>

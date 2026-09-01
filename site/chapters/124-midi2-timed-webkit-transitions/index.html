@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MIDI2-Timed WebKit Transitions · Reframe Governance</title>
+  <meta name="description" content="Chapter 124 defines the boundary between semantic transformation, MIDI2 timing, Teatro motion, and WebKit rendering.">
+  <link rel="stylesheet" href="/assets/governance.css">
+  <style>
+    .chapter-canvas { max-width: 1120px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+    .breadcrumbs { color: #6b7785; font-size: .82rem; margin-bottom: 2rem; }
+    .breadcrumbs a { color: inherit; }
+    .chapter-canvas h1 { max-width: 12ch; color: #182235; font-size: clamp(3rem, 7vw, 6rem); line-height: .98; margin: 1rem 0; }
+    .lede { max-width: 54rem; color: #5f6d79; font-size: 1.35rem; line-height: 1.5; }
+    .chapter-state { color: #28755f; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .hero-illustration { width: 100%; margin: 3rem 0 4rem; border: 1px solid #d7cec1; border-radius: 1.2rem; background: #f5f1ea; }
+    .principal-illustration { display: block; width: 100%; margin: 3rem 0 4rem; border: 1px solid #d7cec1; border-radius: 1.2rem; background: #f5f1ea; }
+    .legacy-illustration { display: none; }
+    .chapter-body { max-width: 52rem; color: #33414e; font-size: 1.08rem; line-height: 1.7; }
+    .chapter-body h2 { color: #182235; margin-top: 3rem; }
+    .authority-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: .75rem; margin: 2rem 0; }
+    .authority-grid div { padding: 1rem; border-radius: .8rem; background: #eee9df; color: #182235; font-size: .9rem; font-weight: 700; }
+    .authority-grid div:nth-child(2) { background: #eaf3ef; } .authority-grid div:nth-child(3) { background: #f7eee2; }
+    .authority-grid div:nth-child(4) { background: #e9e4fa; } .authority-grid div:nth-child(5) { background: #e4f2e9; }
+    @media (max-width: 700px) { .authority-grid { grid-template-columns: 1fr 1fr; } .authority-grid div:last-child { grid-column: span 2; } }
+  </style>
+</head>
+<body>
+<main class="chapter-canvas">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Fountain Coach Governance</a> <span aria-hidden="true">/</span> <span aria-current="page">Chapter 124</span></nav>
+  <div class="chapter-state">Governance 124 · local preview</div>
+  <h1>MIDI2-timed WebKit transitions</h1>
+  <p class="lede">The semantic transformer decides what changes, MIDI2 discovers and schedules the participating slots, Teatro plans the motion, and WebKit renders the full web surface.</p>
+  <img class="principal-illustration" src="/assets/illustrations/124-state-transition-visual-capabilities.svg" alt="State A becomes State B: navigation is reordered, the Governance lens is emphasized, content order changes, and an SVG diagram morphs through a MIDI2-timed Teatro transition.">
+  <svg class="hero-illustration legacy-illustration" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+    <title id="title">MIDI2-timed WebKit transition</title>
+    <desc id="desc">Six boxes show State A, MIDI-CI slot discovery, MIDI2 timeline scheduling, Teatro planning, WebKit rendering, and settled State B.</desc>
+    <rect width="1440" height="900" fill="#f5f1ea"/><rect x="34" y="30" width="1372" height="840" rx="26" fill="#fffdf9" stroke="#d7cec1" stroke-width="2"/>
+    <text x="84" y="86" fill="#1c293b" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">GOVERNANCE 124</text>
+    <text x="84" y="132" fill="#1c293b" font-family="Arial, sans-serif" font-size="42" font-weight="700">MIDI2-timed WebKit transitions</text>
+    <text x="84" y="166" fill="#6b7785" font-family="Arial, sans-serif" font-size="18">semantic change · discovered slots · timed motion · full web rendering</text>
+    <line x1="84" y1="198" x2="1356" y2="198" stroke="#e0d8ce" stroke-width="2"/>
+    <g font-family="Arial, sans-serif">
+      <rect x="84" y="244" width="360" height="164" rx="18" fill="#eee9df"/><text x="112" y="282" fill="#5a43bb" font-size="13" font-weight="700" letter-spacing="2">STATE A</text><text x="112" y="326" fill="#172236" font-size="27" font-weight="700">current web meaning</text><text x="112" y="360" fill="#687483" font-size="16">HTML · CSS · SVG · semantic roles</text><text x="112" y="388" fill="#8b8175" font-size="14">read from the declared authority</text>
+      <rect x="540" y="244" width="360" height="164" rx="18" fill="#eaf3ef"/><text x="568" y="282" fill="#27755f" font-size="13" font-weight="700" letter-spacing="2">MIDI-CI</text><text x="568" y="326" fill="#172236" font-size="27" font-weight="700">discover the slots</text><text x="568" y="360" fill="#687483" font-size="16">identity · role · operations</text><text x="568" y="388" fill="#8b8175" font-size="14">who can participate?</text>
+      <rect x="996" y="244" width="360" height="164" rx="18" fill="#f7eee2"/><text x="1024" y="282" fill="#a25d29" font-size="13" font-weight="700" letter-spacing="2">MIDI2 TIMELINE</text><text x="1024" y="326" fill="#172236" font-size="27" font-weight="700">schedule the change</text><text x="1024" y="360" fill="#687483" font-size="16">correlation · sequence · clock</text><text x="1024" y="388" fill="#8b8175" font-size="14">when does it happen?</text>
+      <rect x="84" y="492" width="360" height="164" rx="18" fill="#e9e4fa"/><text x="112" y="530" fill="#5a43bb" font-size="13" font-weight="700" letter-spacing="2">TEATRO</text><text x="112" y="574" fill="#172236" font-size="27" font-weight="700">plan the motion</text><text x="112" y="608" fill="#687483" font-size="16">move · fade · morph · settle</text><text x="112" y="636" fill="#8b8175" font-size="14">visual plan, not semantic authority</text>
+      <rect x="540" y="492" width="360" height="164" rx="18" fill="#e9f0f5"/><text x="568" y="530" fill="#2d6388" font-size="13" font-weight="700" letter-spacing="2">WEBKIT</text><text x="568" y="574" fill="#172236" font-size="27" font-weight="700">render the web</text><text x="568" y="608" fill="#687483" font-size="16">DOM · CSS · SVG · AX</text><text x="568" y="636" fill="#8b8175" font-size="14">full browser semantics remain</text>
+      <rect x="996" y="492" width="360" height="164" rx="18" fill="#e4f2e9"/><text x="1024" y="530" fill="#27755f" font-size="13" font-weight="700" letter-spacing="2">STATE B</text><text x="1024" y="574" fill="#172236" font-size="27" font-weight="700">settled and proven</text><text x="1024" y="608" fill="#687483" font-size="16">AX witness · Store receipt</text><text x="1024" y="636" fill="#8b8175" font-size="14">what actually settled?</text>
+    </g>
+    <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#6c56c8"/></marker></defs>
+    <g fill="none" stroke="#6c56c8" stroke-width="4" marker-end="url(#arrow)"><path d="M444 326 H520"/><path d="M900 326 H976"/><path d="M1176 408 V466"/><path d="M996 574 H920"/><path d="M540 574 H464"/></g>
+    <line x1="84" y1="718" x2="1356" y2="718" stroke="#e0d8ce" stroke-width="2"/><text x="84" y="760" fill="#1c293b" font-family="Arial, sans-serif" font-size="18" font-weight="700">One transition, five authorities</text><text x="84" y="796" fill="#687483" font-family="Arial, sans-serif" font-size="16">Transformer decides · MIDI2 schedules · Teatro animates · WebKit renders · AX + Store prove</text>
+  </svg>
+  <article class="chapter-body">
+    <h2>The contract in plain language</h2>
+    <p>WebKit stays the complete web platform. Teatro does not become a second browser. The semantic transformer produces the meaning of State B; MIDI2 identifies the participating slots and schedules the transition; Teatro turns that schedule into motion; WebKit renders the result.</p>
+    <div class="authority-grid" aria-label="Transition authority map"><div>Transformer<br><small>what</small></div><div>MIDI-CI<br><small>who</small></div><div>MIDI2<br><small>when</small></div><div>Teatro<br><small>how</small></div><div>WebKit<br><small>render</small></div></div>
+    <h2>Visual capabilities</h2>
+    <p>The contract supports movement, reordering, insertion and removal, emphasis, crossfades, SVG morphing, expansion and collapse, route transitions, evidence progression, synchronized slots, pause, resume, cancellation, reduced motion, and deterministic replay.</p>
+    <h2>Claim boundary</h2>
+    <p>Animation is not semantic proof. AX establishes the accessible surface, and FountainStore establishes durable behavioral evidence. A smooth transition never turns a proposal into an acceptance or release claim.</p>
+    <h2>State transition record</h2>
+    <p>A transition binds State A, State B, the semantic diff, source revision, transformer identity, scenario composition, participating slots, timeline identity, and claim boundary. States are semantic publication records—not screenshots, server directories, or uncommitted DOM.</p>
+    <p>State B carries an explicit <code>publishable</code> Boolean. <code>true</code> means the declared semantic transformation has met its publication-eligibility rule; it does not authorize publication, replace the remote FountainStore receipt, or claim that the route is already published. Legacy State A records without the field decode as <code>false</code>.</p>
+    <h2>One shared visual pointer</h2>
+    <p>The pointer belongs to the writer. It is one visual instrument, not a Codex cursor or a second dialogue channel. When the writer points at a DOM region and comments, WebKit emits a typed anchor with the route, stable DOM/AX address, semantic role, text digest, State identity, source revision, and the writer's comment. Composer then hands custody to the active character through MIDI2.</p>
+    <p>The writer remains the origin peer; the character may inspect and speak about the pointer; Codex reasons over the received anchor; Reframe mediates. The MIDI trail records origin, recipient, custody handoff, anchor, comment, correlation, sequence, time, response, and terminal outcome. A stale route, State, revision, or DOM/AX digest is rejected and must be reselected—not guessed.</p>
+    <h2>Slots and MIDI2 instruments</h2>
+    <p>A slot such as <code>estate.navigation</code>, <code>domain.lens</code>, or <code>publication.meta</code> receives a MIDI2 instrument identity only when it is independently discoverable, addressable, and able to declare operations and terminal predicates. Internal visual fragments keep their Teatro identity.</p>
+    <h2>Event and timeline contract</h2>
+    <p>The lifecycle is <code>admitted → armed → prepare → start → progress → settled</code>. Cancellation, interruption, and failure remain distinct outcomes. Correlation and sequence are preserved even when packets arrive late. Transport jitter, schedule deviation, Teatro time, WebKit frame time, and persistence completion are measured separately.</p>
+    <h2>Teatro transition plan</h2>
+    <p>Teatro receives the admitted semantic diff and MIDI2 timeline, then returns declared correspondence and tracks: preserve, move, enter, exit, emphasize, deemphasize, SVG morph, expand, collapse, or replace-crossfade. It never guesses correspondence from visual proximity or text similarity.</p>
+    <h2>WebKit application</h2>
+    <p>WebKit remains responsible for the full web platform: DOM, CSS cascade, layout, typography, SVG, links, forms, focus, responsive behavior, and accessibility. Teatro may use CSS transitions, Web Animations, SVG animation, and feature-detected view transitions, but an unavailable animation feature must still settle on an equivalent State B.</p>
+    <h2>Accessibility, interruption, and replay</h2>
+    <p>The surface exposes lifecycle, active slot, controls, settled State B, keyboard actions, and reduced-motion state. Reduced motion changes interpolation only. Cancellation records incomplete state. For fixed identified inputs, plan version, browser capability profile, and timeline, replay must settle on the same semantic State B.</p>
+    <h2>Acceptance target</h2>
+    <p>Acceptance requires correlated MIDI-CI discovery, State binding, MIDI2 sequencing, Teatro correspondence, accessible WebKit State B, reduced-motion equivalence, distinct failure/cancellation handling, replay, AX evidence, matching FountainStore receipt, and window-ID visual evidence. A screenshot alone never proves behavior.</p>
+  </article>
+</main>
+</body>
+</html>
