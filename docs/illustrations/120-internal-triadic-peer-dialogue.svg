@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">The internal triadic peer dialogue</title>
+  <desc id="desc">A stage card showing user intention, a variable companion agent, and Reframe connected by the Composer and a governed MIDI2 dialogue.</desc>
+  <defs>
+    <filter id="lift" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#233746" flood-opacity=".13"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" rx="28" fill="#F7F2E9"/>
+  <path d="M58 96H1142" stroke="#D8CDBD" stroke-width="2"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" fill="#203344">
+    <text x="70" y="66" font-size="20" font-weight="700" letter-spacing="3" fill="#4D7478">GOVERNANCE 120</text>
+    <text x="70" y="548" font-size="34" font-weight="700">The Internal Triadic Peer Dialogue</text>
+    <text x="70" y="583" font-size="19" fill="#607176">intention · companion agent · Reframe · one governed conversation</text>
+  </g>
+  <g filter="url(#lift)">
+    <rect x="70" y="170" width="300" height="214" rx="20" fill="#FFFDF8" stroke="#B9C6C2" stroke-width="2"/>
+    <rect x="450" y="170" width="300" height="214" rx="20" fill="#E7B85C" stroke="#C89142" stroke-width="2"/>
+    <rect x="830" y="170" width="300" height="214" rx="20" fill="#FFFDF8" stroke="#B9C6C2" stroke-width="2"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" fill="#203344">
+    <text x="101" y="215" font-size="21" font-weight="700" letter-spacing="1">USER INTENTION</text>
+    <path d="M101 232h96" stroke="#C96A54" stroke-width="4"/>
+    <text x="101" y="270" font-size="18">purpose + consent</text>
+    <text x="101" y="302" font-size="18">desired outcome</text>
+    <text x="101" y="334" font-size="18">writer origin</text>
+    <text x="101" y="365" font-size="14" font-weight="700" letter-spacing="1" fill="#C96A54">AUTHORITY · INTENT</text>
+    <text x="481" y="215" font-size="21" font-weight="700" letter-spacing="1">COMPOSER</text>
+    <path d="M481 232h104" stroke="#203344" stroke-width="4"/>
+    <text x="481" y="270" font-size="18">dialogue instrument</text>
+    <text x="481" y="302" font-size="18">MIDI2 correlation</text>
+    <text x="481" y="334" font-size="18">role provenance</text>
+    <text x="481" y="365" font-size="14" font-weight="700" letter-spacing="1">NOT A SECOND ROUTER</text>
+    <text x="861" y="215" font-size="21" font-weight="700" letter-spacing="1">REFRAME RUNTIME</text>
+    <path d="M861 232h125" stroke="#4D7478" stroke-width="4"/>
+    <text x="861" y="270" font-size="18">mediation + grounding</text>
+    <text x="861" y="302" font-size="18">instruments + execution</text>
+    <text x="861" y="334" font-size="18">Store + terminal proof</text>
+    <text x="861" y="365" font-size="14" font-weight="700" letter-spacing="1" fill="#4D7478">AUTHORITY · LIVE STATE</text>
+  </g>
+  <g filter="url(#lift)">
+    <rect x="450" y="112" width="300" height="46" rx="15" fill="#203344"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" fill="#FFFDF8">
+    <text x="476" y="141" font-size="16" font-weight="700" letter-spacing="1">VARIABLE AGENT</text>
+    <text x="654" y="141" font-size="16" fill="#E7B85C">Codex today</text>
+  </g>
+  <g stroke="#C96A54" stroke-width="3" fill="none">
+    <path d="M370 277h65"/>
+    <path d="M765 277h65"/>
+  </g>
+  <g fill="#C96A54">
+    <path d="M435 277l-12-8v16z"/>
+    <path d="M830 277l-12-8v16z"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" text-anchor="middle">
+    <text x="402" y="256" font-size="13" font-weight="700" fill="#C96A54">INTENTION IN</text>
+    <text x="798" y="256" font-size="13" font-weight="700" fill="#C96A54">GROUNDED REPLY</text>
+  </g>
+  <path d="M70 414H1130" stroke="#4D7478" stroke-width="3"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" fill="#607176">
+    <text x="70" y="442" font-size="16" font-weight="700" letter-spacing="1">THE STAGE RAIL</text>
+    <text x="245" y="442" font-size="16">typed dialogue</text><text x="407" y="442" font-size="16">·</text><text x="429" y="442" font-size="16">lifecycle</text><text x="520" y="442" font-size="16">·</text><text x="542" y="442" font-size="16">FountainStore</text><text x="685" y="442" font-size="16">·</text><text x="707" y="442" font-size="16">AX</text><text x="750" y="442" font-size="16">·</text><text x="772" y="442" font-size="16">visual evidence</text>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 780" role="img" aria-labelledby="title desc">
+  <title id="title">Commands must be legible to reasoning</title>
+  <desc id="desc">Writer intention enters Composer mediation, is compared with a reasoning-facing command declaration, and becomes one grounded MIDI2 operation followed to terminal evidence.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#f3efe7"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" x2="1">
+      <stop stop-color="#6656ca"/>
+      <stop offset="1" stop-color="#463a9b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#253047" flood-opacity=".12"/>
+    </filter>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5.5" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 Z" fill="#6656ca"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="780" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1344" height="724" rx="28" fill="none" stroke="#d8d0c3" stroke-width="2"/>
+  <text x="82" y="94" fill="#665f57" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="21" font-weight="700" letter-spacing="5">GOVERNANCE 123</text>
+  <text x="82" y="146" fill="#20283a" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="43" font-weight="750">A command explains why it fits</text>
+  <text x="82" y="181" fill="#665f57" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="19">intention · declaration · grounded selection · terminal proof</text>
+  <g filter="url(#shadow)">
+    <rect x="82" y="250" width="310" height="246" rx="22" fill="#ffffff" stroke="#c9c0b3" stroke-width="2"/>
+    <rect x="545" y="220" width="310" height="300" rx="24" fill="url(#violet)"/>
+    <rect x="1008" y="250" width="310" height="246" rx="22" fill="#ffffff" stroke="#c9c0b3" stroke-width="2"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif">
+    <text x="122" y="300" fill="#6656ca" font-size="16" font-weight="750" letter-spacing="2">WRITER INTENTION</text>
+    <text x="122" y="350" fill="#20283a" font-size="30" font-weight="750">“Publish this</text>
+    <text x="122" y="388" fill="#20283a" font-size="30" font-weight="750">chapter.”</text>
+    <text x="122" y="448" fill="#665f57" font-size="18">purpose · target · consent</text>
+    <text x="585" y="270" fill="#f5f2ff" font-size="16" font-weight="750" letter-spacing="2">COMMAND DECLARATION</text>
+    <text x="585" y="322" fill="#ffffff" font-size="28" font-weight="750">Route publication</text>
+    <line x1="585" y1="348" x2="815" y2="348" stroke="#a99df1" stroke-width="2"/>
+    <text x="585" y="385" fill="#f5f2ff" font-size="17">what it does · inputs</text>
+    <text x="585" y="417" fill="#f5f2ff" font-size="17">preconditions · mutation</text>
+    <text x="585" y="449" fill="#f5f2ff" font-size="17">consent · lifecycle</text>
+    <text x="585" y="481" fill="#f5f2ff" font-size="17">terminal proof · evidence</text>
+    <text x="1048" y="300" fill="#6656ca" font-size="16" font-weight="750" letter-spacing="2">GROUNDED SELECTION</text>
+    <text x="1048" y="350" fill="#20283a" font-size="29" font-weight="750">One typed MIDI2</text>
+    <text x="1048" y="388" fill="#20283a" font-size="29" font-weight="750">operation</text>
+    <text x="1048" y="448" fill="#665f57" font-size="18">or one precise question</text>
+  </g>
+  <path d="M414 370 H520" fill="none" stroke="#6656ca" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M880 370 H983" fill="none" stroke="#6656ca" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="467" y="344" text-anchor="middle" fill="#6656ca" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="15" font-weight="700">mediate</text>
+  <text x="931" y="344" text-anchor="middle" fill="#6656ca" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="15" font-weight="700">reason</text>
+  <g filter="url(#shadow)">
+    <rect x="260" y="588" width="880" height="104" rx="20" fill="#ffffff" stroke="#c9c0b3" stroke-width="2"/>
+  </g>
+  <path d="M1163 514 V550 H700 V570" fill="none" stroke="#6656ca" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="300" y="630" fill="#20283a" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="20" font-weight="750">TERMINAL RESULT</text>
+  <text x="300" y="665" fill="#665f57" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18">MIDI2 lifecycle · FountainStore evidence address · AX projection where applicable</text>
+  <text x="82" y="724" fill="#665f57" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="16">The declaration enables dialogue. The instrument and its evidence establish truth.</text>
+</svg>
