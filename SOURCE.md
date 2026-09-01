@@ -1,5 +1,16 @@
 # Source and Synchronization Contract
 
+## Current synchronized change — Chapter 123 command reasoning governance (2026-09-01)
+
+- Publication source: this branch, Chapters 120–123 and the Chapter 123 checked route projection.
+- Direction: publication → integration for Chapters 122–123; existing integration Chapters 120–121 are retained as
+  the converged publication source.
+- Integration content commit: `Fountain-Coach/midi2-gpu-fabric@31a6c51b`.
+- Public mutation scope: only
+  `chapters/123-commands-must-be-legible-to-reasoning/`, including its route-local illustration.
+- Claim boundary: governance publication only. No runtime command-registry implementation or live acceptance is
+  established.
+
 ## Current planned change — Chapter 118 European cybersecurity profile (2026-08-28)
 
 - **Change:** convert the supplied European Cybersecurity Profile proposal into a non-destructive governance chapter,

@@ -1855,3 +1855,19 @@ dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted 
 - **Proof:** host-and-path scope, explicit whole-estate intent, source/remote/credential/capacity/single-process
   preflight, and correlated route-write/read-back/public-digest completion are present in both byte-identical copies.
 - **Excluded:** Chapter 122 content, runtime implementation, generated-site regeneration, and production deployment.
+## Current planned change — Chapter 123 reasoning-facing command declarations (2026-09-01)
+
+- **Goal:** publish the self-describing command standard that lets companion agents reason over live Reframe commands,
+  conduct grounded dialogue, select one existing MIDI2 operation, and follow it to terminal evidence.
+- **Chapters read:** 07 (authority and planning), 08 (artifact-bound claims), 81 (one MIDI2 command plane), 120
+  (triadic Composer dialogue), and 116 (route-scoped FountainStore publication).
+- **What they forbid here:** OpenAPI as a second contract, remembered or trial-and-error command selection, hidden
+  mutation/authorization semantics, completion without terminal evidence, and whole-estate deployment for one chapter.
+- **Direction:** publication → integration for Chapters 120–123 convergence; public mutation remains bounded to the
+  Chapter 123 route.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@31a6c51b`.
+- **Acceptance proof:** clean reciprocal Git provenance; exact guide parity; valid SVG and HTML projection; explicit
+  local FountainStore candidate; one route-scoped Store-to-Store sync; remote manifest and selected-path read-back;
+  public HTTPS 200 for the chapter and illustration; and matching content digests.
+- **Claim boundary:** governance publication only. No runtime command declaration audit or Reframe implementation is
+  established by publishing this chapter.

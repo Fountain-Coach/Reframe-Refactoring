@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">The governed semantic transformation instrument</title>
+  <desc id="desc">A semantic publication state enters a named scenario transformer and leaves as a new semantic state. WebKit renders the result and FountainStore records it; those are separate boundaries.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#f2eee5"/></linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6355c7"/><stop offset="1" stop-color="#3b348f"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#6355c7"/></marker>
+  </defs>
+  <rect width="1600" height="760" fill="#f7f4ee"/>
+  <rect x="28" y="28" width="1544" height="704" rx="28" fill="url(#paper)" stroke="#d9d2c5" stroke-width="2"/>
+  <text x="92" y="104" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="25" font-weight="700" letter-spacing="4" fill="#675f57">GOVERNANCE 122</text>
+  <text x="92" y="156" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="42" font-weight="700" fill="#20283a">Meaning changes by declared rule</text>
+  <text x="92" y="194" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="20" fill="#675f57">Semantic State A → semantic State B · WebKit renders · FountainStore records</text>
+
+  <g>
+    <rect x="92" y="278" width="350" height="260" rx="20" fill="#fff" stroke="#b9b0a4" stroke-width="2"/>
+    <rect x="120" y="304" width="92" height="28" rx="14" fill="#e9e5dc"/>
+    <text x="135" y="324" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="13" font-weight="700" fill="#4e4841">STATE A</text>
+    <text x="120" y="383" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="27" font-weight="700" fill="#20283a">Current meaning</text>
+    <text x="120" y="427" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18" fill="#4f5868">page roles · journey</text>
+    <text x="120" y="458" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18" fill="#4f5868">claims · evidence · states</text>
+    <text x="120" y="506" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="15" fill="#756e66">typed semantic publication graph</text>
+  </g>
+
+  <line x1="478" y1="408" x2="600" y2="408" stroke="#6355c7" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="539" y="368" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="13" font-weight="700" fill="#6355c7"><tspan x="539" dy="0">approved</tspan><tspan x="539" dy="17">composition</tspan></text>
+
+  <g>
+    <rect x="635" y="246" width="330" height="324" rx="24" fill="url(#violet)" stroke="#5147a5" stroke-width="2"/>
+    <text x="675" y="310" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="14" font-weight="700" letter-spacing="1.5" fill="#e9e7ff">MIDI2 INSTRUMENT</text>
+    <text x="675" y="368" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="27" font-weight="700" fill="#fff">Semantic</text>
+    <text x="675" y="403" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="27" font-weight="700" fill="#fff">Transformer</text>
+    <line x1="675" y1="432" x2="925" y2="432" stroke="#aaa4e8" stroke-width="2"/>
+    <text x="675" y="469" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="17" fill="#efedff">named rules only</text>
+    <text x="675" y="499" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="17" fill="#efedff">deterministic diff</text>
+    <text x="675" y="529" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="17" fill="#efedff">no model mutation</text>
+  </g>
+
+  <line x1="1000" y1="408" x2="1122" y2="408" stroke="#6355c7" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="1061" y="382" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="14" font-weight="700" fill="#6355c7">semantic diff</text>
+
+  <g>
+    <rect x="1158" y="278" width="350" height="260" rx="20" fill="#fff" stroke="#b9b0a4" stroke-width="2"/>
+    <rect x="1186" y="304" width="92" height="28" rx="14" fill="#dcece5"/>
+    <text x="1201" y="324" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="13" font-weight="700" fill="#27634e">STATE B</text>
+    <text x="1186" y="383" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="27" font-weight="700" fill="#20283a">New meaning</text>
+    <text x="1186" y="427" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18" fill="#4f5868">reordered journey · roles</text>
+    <text x="1186" y="458" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18" fill="#4f5868">linked claims · evidence</text>
+    <text x="1186" y="506" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="15" fill="#756e66">new semantic identity + predecessor</text>
+  </g>
+
+  <g transform="translate(265 616)"><rect width="280" height="62" rx="16" fill="#eee9df"/><text x="24" y="39" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18" font-weight="700" fill="#4e4841">WebKit · renders State B</text></g>
+  <g transform="translate(660 616)"><rect width="280" height="62" rx="16" fill="#eee9df"/><text x="24" y="39" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18" font-weight="700" fill="#4e4841">Store · records State B</text></g>
+  <g transform="translate(1055 616)"><rect width="280" height="62" rx="16" fill="#eee9df"/><text x="24" y="39" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="18" font-weight="700" fill="#4e4841">deploy · separate concern</text></g>
+</svg>
