@@ -1,5 +1,13 @@
 # Source and Synchronization Contract
 
+## Current planned change — Chapter 125 Store publication graph (2026-09-01)
+
+- **Change:** define the FountainStore publication graph, explicit source/destination route identities, reversible
+  State A → State B route mapping, atomic route promotion, and separate DNS/HTTPS evidence.
+- **Direction:** publication → integration through the targeted Chapter 125 counterpart; do not sweep unrelated drift.
+- **Claim boundary:** reviewed chapter, deterministic SVG, and local Store-backed preview only; the cross-domain
+  transformer, destination-host rewriter, DNS adapter, and remote promotion are not claimed.
+
 ## Current planned change — Chapter 118 European cybersecurity profile (2026-08-28)
 
 - **Change:** convert the supplied European Cybersecurity Profile proposal into a non-destructive governance chapter,
