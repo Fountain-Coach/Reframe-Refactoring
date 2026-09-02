@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>126 — The Fountain Coach Organization Web Projection — Reframe Governance</title>
+  <meta name="description" content="Agents administer Fountain Coach through typed Swift instruments while the browser presents a human-facing organization projection.">
+  <meta name="fountain:publication-role" content="Rules and authority">
+  <meta name="fountain:publication-state" content="Local review projection">
+  <link rel="icon" type="image/png" href="/assets/fountain-coach-logo-transparent.png">
+  <link rel="canonical" href="https://governance.fountain.coach/chapters/126-fountain-coach-organization-web-projection/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="126 — The Fountain Coach Organization Web Projection">
+  <meta property="og:description" content="A human-facing organization projection administered by typed agents and persisted by Git, FountainStore, and governed recovery storage.">
+  <meta property="og:url" content="https://governance.fountain.coach/chapters/126-fountain-coach-organization-web-projection/">
+  <meta property="og:image" content="https://governance.fountain.coach/assets/illustrations/126-fountain-coach-organization-web-projection.svg">
+  <meta property="og:image:alt" content="Agents administer Fountain Coach through typed Swift instruments while a read-only web view presents the organization.">
+  <meta property="og:image:width" content="1400">
+  <meta property="og:image:height" content="800">
+  <link rel="stylesheet" href="/assets/governance.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to chapter</a>
+  <header class="topbar" role="banner">
+    <a class="wordmark" href="https://fountain.coach/" aria-label="Fountain Coach home"><img class="wordmark-logo" src="/assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>Fountain Coach <small>Governance · rules and authority</small></span></a>
+    <nav class="estate-nav" aria-label="Fountain Coach publications"><a href="https://fountain.coach/">Estate</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://book.fountain.coach/">Book</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://governance.fountain.coach/" aria-current="page">Governance</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://midi2.fountain.coach/">MIDI2</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://instruments.fountain.coach/">Instruments</a><span class="estate-separator" aria-hidden="true">·</span><a href="https://status.fountain.coach/">Status</a></nav>
+    <div class="topbar-actions"><button class="theme-button" type="button" data-theme-toggle aria-pressed="false">Theme: system</button><button class="menu-button" type="button" data-menu-button aria-controls="chapter-nav" aria-expanded="false">Chapters</button></div>
+  </header>
+  <div class="workspace">
+    <nav class="chapter-rail" id="chapter-nav" data-chapter-nav aria-label="Governance chapters">
+      <div class="rail-label">READING INDEX</div>
+      <a class="rail-home" href="/">Governance overview</a>
+      <a class="rail-status" href="/status-quo/">Current status</a>
+      <a class="chapter-link" href="/chapters/123-commands-must-be-legible-to-reasoning/"><span>123</span><span>Commands Must Be Legible to Reasoning</span></a>
+      <a class="chapter-link" href="/chapters/124-midi2-timed-webkit-transitions/"><span>124</span><span>MIDI2-Timed WebKit Transitions</span></a>
+      <a class="chapter-link" href="/chapters/125-store-publication-graph-domain-mapping-and-atomic-route-promotion/"><span>125</span><span>The Store Publication Graph</span></a>
+      <a class="chapter-link active" href="/chapters/126-fountain-coach-organization-web-projection/" aria-current="page"><span>126</span><span>The Fountain Coach Organization Web Projection</span></a>
+    </nav>
+    <main id="main" class="chapter-canvas">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="https://fountain.coach/">Fountain Coach</a></li><li><a href="https://governance.fountain.coach/">Governance</a></li><li aria-current="page">126 — Organization Web Projection</li></ol></nav>
+      <div class="canvas-kicker"><span>FCIS · SOURCE ESTATE · <span class="publication-state">LOCAL REVIEW PROJECTION</span></span></div>
+      <nav class="chapter-pager" data-chapter-pager aria-label="Chapter navigation"><a class="chapter-pager-link" rel="prev" href="/chapters/125-store-publication-graph-domain-mapping-and-atomic-route-promotion/"><span aria-hidden="true">←</span><span><small>PREVIOUS CHAPTER</small>125 — The Store Publication Graph</span></a><span class="chapter-pager-position">CHAPTER 126</span></nav>
+      <article class="governance-chapter">
+        <div class="chapter-meta">GOVERNANCE CHAPTER · 126</div>
+        <p class="chapter-state"><strong>Local review</strong> · This projection presents reviewed governance source; it is not runtime or remote publication evidence.</p>
+        <h1>126 — The Fountain Coach Organization Web Projection</h1>
+        <blockquote><p>Fountain Coach needs a human-facing organization projection, not a GitHub clone. Agents administer the estate through typed Swift and FCIS-KIT instruments; Git preserves source history; FountainStore preserves the governed organization and publication projection; and the browser presents that state without becoming its authority.</p></blockquote>
+        <p><img src="/assets/illustrations/126-fountain-coach-organization-web-projection.svg" alt="Agents administer a self-hosted Fountain Coach estate through typed Swift instruments while a browser receives a read-oriented organization projection"></p>
+        <p><em>Principal illustration — a deterministic vector governance projection. It describes the intended authority and browser boundary; it is not a live repository listing, Store receipt, deployment result, or claim that the source host has already been implemented.</em></p>
+        <p>The Fountain Coach organization should be visible as a coherent place on the web: a name, a set of repositories, release lines, governance documents, recovery state, and links between them. The writer should not have to infer that coherence from unrelated server paths. The browser must not become the place where an agent invents, mutates, or silently approves that state.</p>
+        <h2>The decision</h2>
+        <p>The organization landing page is a read-oriented projection of two authorities that remain distinct:</p>
+        <pre class="text"><code>agent intention
+      ↓ typed FCIS-KIT / Swift operation
+source host + FountainStore authorities
+      ↓ validated projection
+human-facing organization web view</code></pre>
+        <p>The page explains what exists and how it is related. It does not grant access, create a repository, promote a release, or declare a backup complete merely because a route rendered successfully.</p>
+        <p>This is deliberately smaller than GitHub. The initial product is an organization view that lets a human understand the estate while Codex and other admitted agents perform administration through the governed operation plane.</p>
+        <h2>The four boundaries</h2>
+        <table><thead><tr><th>Boundary</th><th>Owns</th><th>Does not own</th></tr></thead><tbody><tr><th>Agent and FCIS-KIT instruments</th><td>Requested operations, authorization, lifecycle, receipts, and terminal proof</td><td>Browser wording, source history, or unapproved mutations</td></tr><tr><th>Git source host</th><td>Repository objects, refs, revisions, tags, and clone/push transport</td><td>FountainStore publication state or human approval</td></tr><tr><th>FountainStore</th><td>Organization projection, publication graph, release evidence, recovery references, and durable operation records</td><td>Git object storage or meaning inferred from an HTTP response</td></tr><tr><th>Web view</th><td>Readable organization, repository, release, governance, and recovery projections</td><td>Credentials, authority, mutation, or proof from appearance alone</td></tr></tbody></table>
+        <p>The organization view may join these records by stable identities and digests. It must not flatten them into a single ambiguous “server status.”</p>
+        <h2>What the human sees</h2>
+        <ol><li><strong>What is this?</strong> — Fountain Coach, its purpose, and the source/publication boundary.</li><li><strong>What is here?</strong> — repositories and governed public projections, each with a stable identity and state.</li><li><strong>What changed?</strong> — current release or revision, predecessor, and checkable evidence.</li><li><strong>What can I follow?</strong> — source, governance, Book, MIDI2, instruments, status, and recovery policy.</li></ol>
+        <p>Every page states whether its content is a local, staging, or published projection. A generated registry or Store-backed catalog is preferred over a manually maintained inventory.</p>
+        <h2>What the agent does</h2>
+        <p>Codex is an agent peer, not the browser and not FountainStore. It uses admitted typed operations, validates target and authority, records correlation, and returns a terminal receipt that the projection can later show.</p>
+        <pre class="text"><code>source.repository.admit
+source.repository.release
+organization.projection.refresh
+recovery.projection.export
+recovery.restore.verify</code></pre>
+        <p>These names describe required operation classes; they do not claim that every operation already exists. A command or instrument is not executable merely because a page lists its name.</p>
+        <h2>Storage and persistence</h2>
+        <p><strong>Git objects</strong> preserve source history and transportable repository state. <strong>FountainStore records</strong> preserve the typed organization projection, publication state, release lineage, operation receipts, and recovery references. <strong>Recovery storage</strong> preserves encrypted, digest-addressed projections and restore material under a separate custody boundary.</p>
+        <p>The browser reads a validated projection assembled from these authorities. A second disk on the same host is storage separation, not independent disaster-recovery custody.</p>
+        <h2>The web view is not an administration console</h2>
+        <p>The first organization projection is read-only. Any future mutation affordance must identify and invoke the same admitted instrument operation, consent boundary, target, lifecycle, and terminal result used by Codex.</p>
+        <h2>Swift server, browser client</h2>
+        <p>The web-facing host is a Swift projection service. TypeScript is allowed as presentation source only when compiled before deployment; a Node runtime, package registry, or JavaScript service is not production authority.</p>
+        <h2>Acceptance boundary</h2>
+        <p>This chapter is a governance contract and design projection. It does not claim that the Swift source host, organization catalog, browser routes, agent instruments, DNS, or public deployment are implemented.</p>
+        <ol><li>stable organization and repository identity;</li><li>revision and content digest from the source authority;</li><li>matching FountainStore projection record;</li><li>visible local/staging/published distinction;</li><li>browser-accessible source/release/governance links; and</li><li>an independently readable terminal receipt for projection refresh.</li></ol>
+        <h2>Rules</h2>
+        <ol><li>The organization web view is a human-facing projection, not a source, Store, or authorization authority.</li><li>Agents administer through typed Swift/FCIS-KIT operations.</li><li>Git owns source objects and transport; FountainStore owns governed organization and publication projections.</li><li>Repository, release, publication, and recovery claims retain identities, provenance, digests, and state.</li><li>The initial organization projection is read-only.</li><li>TypeScript may be compiled into browser assets, but Node must not become a production runtime dependency.</li><li>Same-host storage separation is not independent recovery custody.</li><li>Unknown, stale, or uncorrelated state is shown as not established.</li></ol>
+        <h2>Governing sentence</h2>
+        <p>The Fountain Coach organization is administered by typed agents and persisted by Git, FountainStore, and governed recovery storage; the browser is the readable face of that state, never its authority.</p>
+      </article>
+      <footer class="footer"><div class="footer-estate"><strong>Fountain Coach publication estate</strong><a href="https://fountain.coach/">Identity</a><a href="https://book.fountain.coach/">Book · human reference</a><a href="https://governance.fountain.coach/">Governance · rules and authority</a><a href="https://midi2.fountain.coach/">MIDI2 · machine-readable specification</a><a href="https://instruments.fountain.coach/">Instruments · MIDI2 catalog</a><a href="https://status.fountain.coach/">Status · company and legal context</a></div><div class="footer-legal"><a href="/legal/">Legal notices</a><a href="/privacy/">Privacy</a><a href="/accessibility/">Accessibility</a><a href="/copyright/">Copyright</a><a href="/compliance/">EU compliance</a><a href="/status-quo/">Source and provenance</a></div><span>Local review projection · governance establishes doctrine, not runtime state or live acceptance.</span></footer>
+    </main>
+  </div>
+  <script src="/assets/governance.js" defer></script>
+</body>
+</html>

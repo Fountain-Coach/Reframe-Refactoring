@@ -73,6 +73,29 @@ candidate
 
 The sync is not a blind filesystem copy. It MUST be idempotent, preserve the source revision and digest, reject a conflicting route identity, and retain the prior published snapshot for rollback. A failed validation, incomplete artifact, missing certificate, or failed HTTPS check leaves the current published snapshot unchanged.
 
+### Bounded route publication
+
+A publication request that names one chapter, page, or route is a bounded route publication. The publisher MUST
+identify that unit by its canonical host and normalized path prefix, transfer only the selected route files, and merge
+the resulting route patch into the current remote manifest atomically. It MUST NOT turn a bounded request into a
+whole-estate transfer. Whole-estate synchronization is a separate, explicit intent.
+
+Before mutation, the publisher MUST establish that the selected route exists in the current local Store snapshot, the
+authenticated remote Store is ready, the named SecretStore credential is available to one admitted publication
+process, and the destination has enough capacity to accept and promote the patch. A credential prompt belongs to that
+single process; spawning retries or overlapping publication clients is not recovery.
+
+The bounded operation is complete only when one correlated receipt establishes all of the following:
+
+1. the remote Store accepted the route patch;
+2. typed remote manifest read-back contains the selected host and path;
+3. typed selected-path read-back matches the frozen local content digest; and
+4. the canonical public HTTPS route returns that same digest.
+
+Process completion, an HTTP success alone, or a remote manifest without selected-path read-back cannot satisfy this
+proof. If a preflight or proof condition fails, the operation stops at that named seam; it does not fall back to a
+filesystem copy, a generic HTTP upload, a site generator, or an edge-server reconfiguration.
+
 The operation enters Reframe through the governed MIDI2 plane described in [Chapter 81](81-universal-midi2-command-plane.md), emits asynchronous lifecycle events under [Chapter 104](104-midi2-event-time-jitter-and-asynchronous-completion-governance.md), and persists its receipt through the Store boundary described in [Chapter 91](91-fcis-kit-instrument-store-is-the-capability-plane.md). It is therefore an instrument operation, not a shell convention.
 
 ## FountainStore as the native edge
@@ -143,6 +166,8 @@ No one row proves another.
 6. A local mirror MUST preserve the remote estate's semantic graph while visibly declaring its local/pre-published state.
 7. A bootstrap route file MAY configure development, but it MUST NOT become a second authority or replace Store state.
 8. FountainStore edge readiness, certificate readiness, DNS readiness, and semantic-browser equivalence MUST be reported as separate acceptance claims.
+9. A chapter, page, or route publication MUST use a host-and-path-scoped Store patch; whole-estate synchronization requires explicit whole-estate intent.
+10. Route publication MUST preflight source, remote readiness, credential custody, capacity, and single-process ownership, then prove remote write, typed read-back, public HTTPS, and matching digest before reporting completion.
 
 ## Governing sentence
 

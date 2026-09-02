@@ -1,3 +1,38 @@
+## Current governance slice — Fountain Coach organization web projection (2026-09-02)
+
+**Capability:** define the human-facing organization projection for the self-hosted Fountain Coach source estate.
+Agents administer the estate through typed Swift/FCIS-KIT operations; a browser or WebView presents the resulting
+state and does not become a second authority.
+
+**Governance read record:** Chapters 07 (bounded phases, evidence, and no unbounded implementation); 08 (separate
+source, Store, UI, and recovery evidence); 60 (managed Git owns repository objects while Reframe presents the writer
+surface); 116 (FountainStore owns the estate publication graph and native edge); 117 (typed recovery projection and
+non-authoritative Git recovery).
+
+**What they forbid here:** treating a browser page as Git or FountainStore authority; building a GitHub clone before
+the agent operation boundary exists; using a static mock as live persistence evidence; or putting administration in
+browser text/JavaScript when a typed Swift instrument should own it.
+
+**Conflicts:** Chapter 117's historical private-GitHub mirror language conflicts with the current owner-controlled
+self-hosting direction; this chapter preserves the existing Store/Git/recovery authority split and leaves that
+replacement governance amendment as a separate phase.
+
+**Scope:** write and illustrate Chapter 126 as a design contract for the thin web projection. Preview is limited to
+the checked-in local governance projection; no Git service, DNS, remote publication, or agent instrument is claimed.
+
+**Acceptance proof:** Chapter 126 exists in the source and reading index, its SVG has no text/geometry collisions and
+has descriptive metadata, its local route is reachable through the existing native preview path, and the page states
+its design-only claim boundary. Stop after this proof; implementation of the source host is a later phase.
+
+## Current implementation slice — retire the Python governance site generator (2026-08-30)
+
+- **Governance read** — Chapters 07/08 establish bounded change and evidence claims; Chapter 80 establishes the
+  independent governance publication boundary.
+- **Decision** — remove `site/build-governance-site.py` and its invocation instructions. Preserve the checked-in site
+  as a static publication snapshot; do not present it as freshly regenerated output.
+- **Forbidden** — Python runtime or publication execution, a replacement ad-hoc server, or an unadmitted generator.
+- **Excluded** — implementing the future Swift publication instrument and deploying a new publication release.
+
 ## Current implementation slice — English-only estate language baseline (2026-08-27)
 
 - **Chapters/readings** — 07/08 (bounded change and evidence authority); 92 (one estate with specialized
@@ -344,6 +379,17 @@ Validation:
 - The release manifest explicitly says `no-released-build` until a named distribution build exists.
 
 # PLANS.md
+
+## Current planned change — bounded FountainStore route publication (2026-08-31)
+
+- **Goal:** codify the proven route-scoped Store-to-Store publication path for one chapter, page, or route.
+- **Chapters read:** 07 (bounded planning and source authority), 08 (separate evidence authorities), 116 (Store-owned
+  publication and native edge), and 122 only to preserve its semantic-transformer/deployment separation.
+- **Direction:** publication Chapter 116 → exact integration copy; unrelated guide and generated-site drift remains
+  untouched.
+- **Proof:** host-and-path scope, explicit whole-estate intent, source/remote/credential/capacity/single-process
+  preflight, and correlated route-write/read-back/public-digest completion are present in both byte-identical copies.
+- **Excluded:** Chapter 122 content, runtime implementation, generated-site regeneration, and production deployment.
 
 ## Current planned change — Chapter 99 decoupled manuscript instruments (2026-08-24)
 
@@ -1886,3 +1932,75 @@ dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted 
   reading index and synchronize the reviewed integration copy.
 - **Excluded, and why** — this slice documents the governance contract and previews it locally; runtime participant
   binding implementation, live-drive evidence, publication, and deployment remain separate acceptance actions.
+## Current planned change — Chapter 122 governed semantic transformation instrument (2026-08-30)
+
+- **Goal:** define the deterministic semantic State A → State B instrument that receives an approved named-scenario
+  composition, transforms publication meaning, and leaves WebKit rendering and FountainStore/deployment logistics to
+  their owning boundaries.
+- **Chapters read:** 07 (planning, authority, and deterministic semantic transformation); 08 (independent evidence,
+  source authority, and live acceptance); 73 rule 9 (resolve → validate → execute → witness → reconcile); 81 rule 6
+  (MIDI2 as a projection, not a second semantic authority); 91 rules 1–6 (instrument ownership and admission).
+- **What they forbid here:** treating WebKit or a publication server as the semantic authority, allowing a model call
+  to mutate the estate directly, mixing semantic changes with transport/deployment work, or claiming the instrument
+  exists before its typed contract and evidence are implemented.
+- **Conflicts:** none. The chapter is governance/design material; current runtime still has no semantic transformer.
+- **Excluded, and why:** implementation, live acceptance, and deployment are downstream slices; this change establishes
+  the semantic boundary and its claim limits first.
+- **Claim boundary:** reviewed governance and local publication projection only. No semantic mutation, WebKit mutation,
+  FountainStore write, or deployed site change is claimed by writing this chapter.
+## Current planned change — Chapter 123 reasoning-facing command declarations (2026-09-01)
+
+- **Goal:** define the command declaration standard that lets Codex and other companion agents reason over Reframe's
+  live command surface, conduct a grounded dialogue, select an existing command without trial and error, and follow
+  its result to terminal evidence.
+- **Chapters read:** 07 (planning, authority order, and command grammar versus natural-language meaning); 08
+  (artifact-bound claims and capability-parity evidence); 81 (one MIDI2 command plane and distinct MIDI-CI discovery);
+  and 120 (triadic roles, Composer mediation, and role provenance).
+- **What they forbid here:** OpenAPI as a second runtime contract; selecting commands from memory or terse labels;
+  guessing hidden effects or arguments; phrase-matching writer intent; collapsing Codex into the writer; and treating
+  acknowledgement, dialogue, or a command listing as terminal proof.
+- **Conflicts:** none. The repository's MIDI2 IDL remains sole operational contract; the reasoning-facing declaration
+  is its discoverable semantic projection, not another executor or schema authority.
+- **Excluded, and why:** runtime registry implementation, generated reasoning artifacts, Reframe UI changes, and live
+  acceptance are downstream implementation work. This slice writes and synchronizes the governance contract only.
+- **Acceptance proof:** Chapter 123 and its illustration exist in the authoritative publication source; the reading
+  index names it; the integration copy is text-identical for the new chapter, illustration, and index entry; relative
+  links and `git diff --check` pass. Existing unrelated guide drift remains separately visible and is not overwritten.
+## Current planned change — Chapter 124 MIDI2-timed WebKit transitions (2026-09-01)
+
+- **Goal:** define how a semantic State A → State B change becomes an observable, timed visual transition without
+  replacing WebKit's full web-spec renderer or creating a second semantic authority.
+- **Chapters read:** 07/08 (bounded work and independent evidence); 92 (shared publication shell and claim boundary);
+  101 (Teatro composition boundary); 104 (MIDI2 event time, correlation, and terminal completion); 106 (canonical
+  Teatro runtime projection); and 122 (semantic transformation authority).
+- **What they forbid here:** treating Teatro as a browser, treating animation as semantic proof, using MIDI2 timing as
+  a zero-jitter guarantee, assigning instrument identities to non-addressable fragments, or claiming live acceptance
+  from a mock.
+- **Conflicts:** none. WebKit remains the renderer; Teatro remains the transition planner; MIDI2 remains the discovery,
+  scheduling, and lifecycle plane.
+- **Excluded, and why:** implementing the slot runtime, WebKit adapter, live transition executor, publication change,
+  and acceptance evidence are downstream proof-bounded slices. This chapter establishes their contract and visual
+  projection; it does not claim those runtime seams exist.
+- **Acceptance proof:** Chapter 124, its deterministic SVG illustration, both reading-index entries, and this record
+  exist; source and integration chapter/illustration copies are text-identical; relative links and `git diff --check`
+  pass. No runtime or publication claim is made.
+## Current publication slice — Chapter 126 and complete governance projection (2026-09-02)
+
+**Capability:** publish Chapter 126 and the complete checked-in governance route set through the fixed
+`governance.fountain.coach` FountainStore publication tuple.
+
+**Governance read record:** Chapters 07 and 08 (bounded work and separate source/Store/public evidence); 60 (source
+repository and writer-facing project boundary); 116 (native Store-to-Store estate publication); 117 (Store snapshot
+and recovery projection); 125 (typed publication graph and atomic route promotion).
+
+**What they forbid here:** treating the browser document root or Caddy as publication authority, copying files directly
+to the host, publishing from an ambiguous local snapshot, or claiming Chapter 126 from a route that has not received
+typed remote read-back.
+
+**Conflicts:** none for this publication slice. Existing unrelated source-checkout changes remain outside the selected
+publication commit; the selected release is built from an explicit clean worktree at its source commit.
+
+**Acceptance proof:** the selected clean source commit contains the complete governance projection and Chapter 126;
+the explicit local FountainStore snapshot contains the selected host route; native `estate.publication.sync` completes
+with typed remote manifest/read-back and public HTTPS digest verification; the fixed domain index and representative
+Chapter 126 route return the new projection. Stop when this proof passes.

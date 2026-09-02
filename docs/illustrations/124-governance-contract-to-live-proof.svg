@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+  <title id="title">Governance contract to animated result</title>
+  <desc id="desc">A governance chapter defines the contract, an existing Teatro scenario implements the animation, and live AX and FountainStore evidence prove the result.</desc>
+  <rect width="1440" height="820" fill="#f5f1ea"/>
+  <rect x="34" y="30" width="1372" height="760" rx="26" fill="#fffdf9" stroke="#d7cec1" stroke-width="2"/>
+  <text x="84" y="86" fill="#1c293b" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" letter-spacing="3">GOVERNANCE 124</text>
+  <text x="84" y="132" fill="#1c293b" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700">Contract → animation → proof</text>
+  <text x="84" y="166" fill="#6b7785" font-family="Arial,Helvetica,sans-serif" font-size="18">the chapter governs the result; the scenario makes it visible; evidence establishes what happened</text>
+  <line x1="84" y1="198" x2="1356" y2="198" stroke="#e0d8ce" stroke-width="2"/>
+  <g font-family="Arial,Helvetica,sans-serif">
+    <rect x="84" y="250" width="364" height="300" rx="20" fill="#eee9df"/>
+    <text x="116" y="294" fill="#5a43bb" font-size="13" font-weight="700" letter-spacing="2">1 · GOVERNANCE</text>
+    <text x="116" y="348" fill="#172236" font-size="29" font-weight="700">Chapter 124</text>
+    <text x="116" y="390" fill="#687483" font-size="17">defines the contract</text>
+    <text x="116" y="434" fill="#172236" font-size="17">State A → State B</text>
+    <text x="116" y="466" fill="#172236" font-size="17">MIDI2 slots + timeline</text>
+    <text x="116" y="498" fill="#172236" font-size="17">Teatro plan + WebKit</text>
+    <text x="116" y="530" fill="#8b8175" font-size="14">not runtime evidence</text>
+
+    <rect x="538" y="250" width="364" height="300" rx="20" fill="#e9e4fa"/>
+    <text x="570" y="294" fill="#5a43bb" font-size="13" font-weight="700" letter-spacing="2">2 · IMPLEMENTATION</text>
+    <text x="570" y="348" fill="#172236" font-size="29" font-weight="700">Teatro scenario</text>
+    <text x="570" y="390" fill="#687483" font-size="17">discovers real slots</text>
+    <text x="570" y="434" fill="#172236" font-size="17">arms the MIDI2 clock</text>
+    <text x="570" y="466" fill="#172236" font-size="17">animates the WebKit page</text>
+    <text x="570" y="498" fill="#172236" font-size="17">settles on State B</text>
+    <text x="570" y="530" fill="#8b8175" font-size="14">existing scenario, not invented here</text>
+
+    <rect x="992" y="250" width="364" height="300" rx="20" fill="#e4f2e9"/>
+    <text x="1024" y="294" fill="#27755f" font-size="13" font-weight="700" letter-spacing="2">3 · ACCEPTANCE</text>
+    <text x="1024" y="348" fill="#172236" font-size="29" font-weight="700">Live evidence</text>
+    <text x="1024" y="390" fill="#687483" font-size="17">AX exposes the state</text>
+    <text x="1024" y="434" fill="#172236" font-size="17">Store records the result</text>
+    <text x="1024" y="466" fill="#172236" font-size="17">window ID proves pixels</text>
+    <text x="1024" y="498" fill="#172236" font-size="17">replay checks determinism</text>
+    <text x="1024" y="530" fill="#8b8175" font-size="14">only evidence permits a claim</text>
+  </g>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#6c56c8"/></marker></defs>
+  <path d="M448 400 H520" fill="none" stroke="#6c56c8" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M902 400 H974" fill="none" stroke="#6c56c8" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="84" y1="638" x2="1356" y2="638" stroke="#e0d8ce" stroke-width="2"/>
+  <text x="84" y="686" fill="#1c293b" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700">The governing boundary</text>
+  <text x="84" y="724" fill="#687483" font-family="Arial,Helvetica,sans-serif" font-size="17">A beautiful animation is a projection. AX and FountainStore decide whether it can be called proven.</text>
+</svg>

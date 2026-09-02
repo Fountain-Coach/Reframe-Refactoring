@@ -10,15 +10,10 @@ source repository's GitHub presentation and from the human-facing Book of Refram
 - `docs/` remains the governance source of truth; `site/` is generated output;
 - deployment target: `governance.fountain.coach` → `/var/www/reframe-governance`.
 
-Build locally with:
-
-```sh
-python3 site/build-governance-site.py
-```
-
-The generator uses the installed `pandoc` executable, copies reviewed chapter illustrations, creates a chapter route
-for every top-level governance Markdown file, includes the reviewed Fountain Coach identity asset, and emits no runtime
-or Store data. The homepage and stable `/status-quo/` route are generated from `content/status-quo.md`; the
+The checked-in `site/` directory is a retained publication snapshot. The former Python generator is retired and must
+not be invoked. Future regeneration requires an admitted Swift publication instrument. The snapshot contains chapter
+routes, reviewed illustrations, the reviewed Fountain Coach identity asset, and no runtime or Store data. The homepage
+and stable `/status-quo/` route are projections of `content/status-quo.md`; the
 machine-readable `chapter-status.json` labels current orientation chapters without deleting or silently rewriting
 historical material. Every page emits canonical metadata, JSON-LD, keyboard navigation, and an accessible chapter rail.
 A chapter with a reviewed principal illustration emits a deterministic 1200×630 social illustration derived from that

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
   <title id="title">FountainStore snapshot export and Git recovery projection</title>
-  <desc id="desc">A FountainStore authority exports a verified snapshot to a production recovery repository and a private GitHub mirror, while the live Store continues to serve the estate and a separate restore path rebuilds a new Store.</desc>
+  <desc id="desc">A FountainStore authority exports a verified snapshot to a production recovery repository and an owner-controlled off-host recovery mirror, while the live Store continues to serve the estate and a separate restore path rebuilds a new Store.</desc>
   <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; fill: #17222c; }
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #17222c; }
@@ -48,7 +48,7 @@
   <text x="996" y="282" class="sans cardTitle">PRODUCTION GIT</text>
   <text x="996" y="318" class="sans body">verified recovery projection</text>
   <rect x="960" y="388" width="390" height="120" rx="22" fill="#f7eee1" stroke="#e4c99f" stroke-width="2" filter="url(#shadow)"/>
-  <text x="996" y="432" class="sans cardTitle">PRIVATE GITHUB</text>
+  <text x="996" y="432" class="sans cardTitle">OFF-HOST MIRROR</text>
   <text x="996" y="468" class="sans body">off-host backup projection</text>
 
   <path d="M480 373 H554" class="arrow"/>

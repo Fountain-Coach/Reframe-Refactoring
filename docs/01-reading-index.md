@@ -226,6 +226,7 @@ the procedure that applies it. A particular instrument is an instance, not the w
 | [Commands Must Be Legible to Reasoning](123-commands-must-be-legible-to-reasoning.md) | Defines the MIDI2-native command declaration standard that lets companion agents reason over live commands, conduct grounded dialogue, select one existing operation, and follow it to terminal evidence. |
 | [MIDI2-Timed WebKit Transitions](124-midi2-timed-webkit-transitions.md) | Defines the boundary in which the semantic transformer decides what changes, MIDI2 discovers and schedules visual slots, Teatro plans motion, WebKit renders the full web surface, and AX plus FountainStore prove the settled result. |
 | [The Store Publication Graph](125-store-publication-graph-domain-mapping-and-atomic-route-promotion.md) | Defines the typed Store graph that maps a selected route from one admitted domain to another as a reversible State A → State B publication, with atomic promotion and separate DNS/HTTPS evidence. |
+| [The Fountain Coach Organization Web Projection](126-fountain-coach-organization-web-projection.md) | Defines the human-facing organization projection: agents administer through typed Swift/FCIS-KIT operations, Git preserves source history, FountainStore preserves governed projection state, and the browser remains a read-oriented face rather than an authority. |
 ## Vocabulary
 
 **Canonical source** means the imported manuscript stored under the source document identity. It is evidence, not a work surface for generated analysis.

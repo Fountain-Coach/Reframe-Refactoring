@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="title desc">
+  <title id="title">The Fountain Coach organization web projection</title>
+  <desc id="desc">Codex and other agents use typed Swift instruments to administer Git and FountainStore. A read-only organization web view presents the resulting state to people.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfaf7"/><stop offset="1" stop-color="#f1eee7"/></linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6454d8"/><stop offset="1" stop-color="#4637a6"/></linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9f1e8"/><stop offset="1" stop-color="#b9e1d3"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#30384a" flood-opacity=".14"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#5949c7"/></marker>
+    <marker id="mint-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1 L8 4.5 L1 8 Z" fill="#18846e"/></marker>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; fill: #1d2940; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #5f5b56; }
+      .eyebrow { font-size: 18px; font-weight: 700; letter-spacing: 4px; fill: #6b625a; }
+      .title { font-size: 42px; font-weight: 760; letter-spacing: -.8px; }
+      .subtitle { font-size: 20px; fill: #6b625a; }
+      .label { font-size: 15px; font-weight: 750; letter-spacing: 2px; }
+      .card-title { font-size: 25px; font-weight: 760; }
+      .body { font-size: 18px; }
+      .small { font-size: 16px; }
+      .white { fill: #fff; }
+    </style>
+  </defs>
+
+  <rect x="14" y="14" width="1372" height="772" rx="30" fill="url(#paper)" stroke="#d9d2c6" stroke-width="2"/>
+  <text x="72" y="78" class="sans eyebrow">FOUNTAIN COACH · SOURCE ESTATE</text>
+  <text x="72" y="130" class="sans title">A readable organization, administered by agents</text>
+  <text x="72" y="165" class="sans subtitle">typed operations establish state · the browser presents it · authority stays behind the view</text>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="238" width="310" height="228" rx="22" fill="#fff" stroke="#d5cec2" stroke-width="2"/>
+    <rect x="545" y="206" width="310" height="292" rx="22" fill="url(#violet)"/>
+    <rect x="1018" y="238" width="310" height="228" rx="22" fill="#fff" stroke="#d5cec2" stroke-width="2"/>
+  </g>
+
+  <text x="104" y="278" class="sans label" fill="#5949c7">AGENT PEER</text>
+  <text x="104" y="321" class="sans card-title">Codex / maintainer</text>
+  <text x="104" y="362" class="sans body">intent · consent · target</text>
+  <text x="104" y="394" class="sans body">typed operation · receipt</text>
+  <text x="104" y="436" class="sans small">administers through FCIS-KIT</text>
+
+  <text x="577" y="248" class="sans label white">SWIFT AUTHORITY PLANE</text>
+  <text x="577" y="294" class="sans card-title white">Typed instruments</text>
+  <text x="577" y="338" class="sans body white">validate · execute · persist</text>
+  <text x="577" y="372" class="sans body white">MIDI2 lifecycle · evidence</text>
+  <line x1="577" y1="401" x2="823" y2="401" stroke="#cfc8ff" stroke-width="2"/>
+  <text x="577" y="438" class="sans small white">Git source history</text>
+  <text x="577" y="465" class="sans small white">FountainStore projection</text>
+
+  <text x="1050" y="278" class="sans label" fill="#18846e">HUMAN WEB VIEW</text>
+  <text x="1050" y="321" class="sans card-title">Organization landing</text>
+  <text x="1050" y="362" class="sans body">repositories · releases</text>
+  <text x="1050" y="394" class="sans body">governance · recovery</text>
+  <text x="1050" y="436" class="sans small">read-only projection</text>
+
+  <line x1="398" y1="352" x2="527" y2="352" stroke="#5949c7" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="409" y="328" class="sans small" fill="#5949c7">invoke</text>
+  <line x1="869" y1="352" x2="998" y2="352" stroke="#5949c7" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="890" y="328" class="sans small" fill="#5949c7">project</text>
+
+  <path d="M700 520 V566 H383" fill="none" stroke="#18846e" stroke-width="3"/>
+  <path d="M700 520 V566 H1017" fill="none" stroke="#18846e" stroke-width="3"/>
+  <line x1="383" y1="566" x2="383" y2="592" stroke="#18846e" stroke-width="3" marker-end="url(#mint-arrow)"/>
+  <line x1="1017" y1="566" x2="1017" y2="592" stroke="#18846e" stroke-width="3" marker-end="url(#mint-arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="162" y="604" width="442" height="92" rx="18" fill="url(#mint)" stroke="#a8d4c5" stroke-width="2"/>
+    <rect x="796" y="604" width="442" height="92" rx="18" fill="#fff" stroke="#d5cec2" stroke-width="2"/>
+  </g>
+  <text x="192" y="638" class="sans label" fill="#176b59">PERSISTED STATE</text>
+  <text x="192" y="670" class="sans body">source identity · Store record · digest</text>
+  <text x="826" y="638" class="sans label" fill="#5949c7">CLAIM BOUNDARY</text>
+  <text x="826" y="670" class="sans body">a page load is not authority or proof</text>
+
+  <text x="72" y="744" class="mono small">agents have the hands · Stores keep the memory · the browser gives the estate a face</text>
+</svg>

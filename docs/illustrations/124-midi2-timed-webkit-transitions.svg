@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">MIDI2-timed WebKit transition</title>
+  <desc id="desc">Six readable boxes show State A, MIDI-CI slot discovery, MIDI2 timeline scheduling, Teatro planning, WebKit rendering, and settled State B.</desc>
+  <rect width="1440" height="900" fill="#f5f1ea"/>
+  <rect x="34" y="30" width="1372" height="840" rx="26" fill="#fffdf9" stroke="#d7cec1" stroke-width="2"/>
+  <text x="84" y="86" fill="#1c293b" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" letter-spacing="3">GOVERNANCE 124</text>
+  <text x="84" y="132" fill="#1c293b" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700">MIDI2-timed WebKit transitions</text>
+  <text x="84" y="166" fill="#6b7785" font-family="Arial,Helvetica,sans-serif" font-size="18">semantic change · discovered slots · timed motion · full web rendering</text>
+  <line x1="84" y1="198" x2="1356" y2="198" stroke="#e0d8ce" stroke-width="2"/>
+
+  <g font-family="Arial,Helvetica,sans-serif">
+    <rect x="84" y="244" width="360" height="164" rx="18" fill="#eee9df"/>
+    <text x="112" y="282" fill="#5a43bb" font-size="13" font-weight="700" letter-spacing="2">STATE A</text>
+    <text x="112" y="326" fill="#172236" font-size="27" font-weight="700">current web meaning</text>
+    <text x="112" y="360" fill="#687483" font-size="16">HTML · CSS · SVG · semantic roles</text>
+    <text x="112" y="388" fill="#8b8175" font-size="14">read from the declared authority</text>
+
+    <rect x="540" y="244" width="360" height="164" rx="18" fill="#eaf3ef"/>
+    <text x="568" y="282" fill="#27755f" font-size="13" font-weight="700" letter-spacing="2">MIDI-CI</text>
+    <text x="568" y="326" fill="#172236" font-size="27" font-weight="700">discover the slots</text>
+    <text x="568" y="360" fill="#687483" font-size="16">identity · role · operations</text>
+    <text x="568" y="388" fill="#8b8175" font-size="14">who can participate?</text>
+
+    <rect x="996" y="244" width="360" height="164" rx="18" fill="#f7eee2"/>
+    <text x="1024" y="282" fill="#a25d29" font-size="13" font-weight="700" letter-spacing="2">MIDI2 TIMELINE</text>
+    <text x="1024" y="326" fill="#172236" font-size="27" font-weight="700">schedule the change</text>
+    <text x="1024" y="360" fill="#687483" font-size="16">correlation · sequence · clock</text>
+    <text x="1024" y="388" fill="#8b8175" font-size="14">when does it happen?</text>
+
+    <rect x="84" y="492" width="360" height="164" rx="18" fill="#e9e4fa"/>
+    <text x="112" y="530" fill="#5a43bb" font-size="13" font-weight="700" letter-spacing="2">TEATRO</text>
+    <text x="112" y="574" fill="#172236" font-size="27" font-weight="700">plan the motion</text>
+    <text x="112" y="608" fill="#687483" font-size="16">move · fade · morph · settle</text>
+    <text x="112" y="636" fill="#8b8175" font-size="14">visual plan, not semantic authority</text>
+
+    <rect x="540" y="492" width="360" height="164" rx="18" fill="#eaf0f5"/>
+    <text x="568" y="530" fill="#2d6388" font-size="13" font-weight="700" letter-spacing="2">WEBKIT</text>
+    <text x="568" y="574" fill="#172236" font-size="27" font-weight="700">render the web</text>
+    <text x="568" y="608" fill="#687483" font-size="16">DOM · CSS · SVG · AX</text>
+    <text x="568" y="636" fill="#8b8175" font-size="14">full browser semantics remain</text>
+
+    <rect x="996" y="492" width="360" height="164" rx="18" fill="#e4f2e9"/>
+    <text x="1024" y="530" fill="#27755f" font-size="13" font-weight="700" letter-spacing="2">STATE B</text>
+    <text x="1024" y="574" fill="#172236" font-size="27" font-weight="700">settled and proven</text>
+    <text x="1024" y="608" fill="#687483" font-size="16">AX witness · Store receipt</text>
+    <text x="1024" y="636" fill="#8b8175" font-size="14">what actually settled?</text>
+  </g>
+
+  <g fill="none" stroke="#6c56c8" stroke-width="4">
+    <path d="M444 326 H520" marker-end="url(#arrow)"/>
+    <path d="M900 326 H976" marker-end="url(#arrow)"/>
+    <path d="M1176 408 V466" marker-end="url(#arrow)"/>
+    <path d="M996 574 H920" marker-end="url(#arrow)"/>
+    <path d="M540 574 H464" marker-end="url(#arrow)"/>
+  </g>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#6c56c8"/></marker></defs>
+  <line x1="84" y1="718" x2="1356" y2="718" stroke="#e0d8ce" stroke-width="2"/>
+  <text x="84" y="760" fill="#1c293b" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">One transition, five authorities</text>
+  <text x="84" y="796" fill="#687483" font-family="Arial,Helvetica,sans-serif" font-size="16">Transformer decides · MIDI2 schedules · Teatro animates · WebKit renders · AX + Store prove</text>
+  <text x="1356" y="796" text-anchor="end" fill="#8b8175" font-family="Arial,Helvetica,sans-serif" font-size="14">FULL WEB SPEC · NO SECOND BROWSER</text>
+</svg>

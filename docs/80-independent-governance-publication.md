@@ -15,8 +15,9 @@ inherit the other's shell or claim its evidence.
 
 ## Publication contract
 
-1. `Reframe-Refactoring/docs/` is the reviewed governance source. The generated `site/` projection is built by
-   `site/build-governance-site.py`; hand-edited generated HTML is not authoritative.
+1. `Reframe-Refactoring/docs/` is the reviewed governance source. The checked-in `site/` projection is a retained
+   publication snapshot; the former Python generator is retired, and future regeneration requires an admitted Swift
+   publication instrument. Hand-edited generated HTML is not authoritative.
 2. The canonical public host is `governance.fountain.coach`. Its deployment root is a dedicated, rollback-capable
    document root and must not share the Book or manifesto root.
 3. The deployment host keeps clean source clones for provenance and reproducibility. A source clone is not permission

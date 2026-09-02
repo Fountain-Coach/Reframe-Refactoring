@@ -22,6 +22,20 @@
   const button = document.querySelector('[data-menu-button]');
   const nav = document.querySelector('[data-chapter-nav]');
   if (!button || !nav) return;
+
+  // Keep the chapter rail complete when a checked-in publication snapshot is
+  // extended by a new chapter. The route itself remains a static, typed Store
+  // projection; this only repairs the shared navigation presentation.
+  const finalFlow = nav.querySelector('a[href="/chapters/reframe-app-flow-governance/"]');
+  const chapter126 = '/chapters/126-fountain-coach-organization-web-projection/';
+  if (finalFlow && !nav.querySelector(`a[href="${chapter126}"]`)) {
+    const link = document.createElement('a');
+    link.className = 'chapter-link';
+    link.href = chapter126;
+    link.innerHTML = '<span>126</span><span>The Fountain Coach Organization Web Projection</span>';
+    nav.insertBefore(link, finalFlow);
+  }
+
   button.addEventListener('click', () => {
     const open = nav.dataset.open === 'true';
     nav.dataset.open = String(!open);

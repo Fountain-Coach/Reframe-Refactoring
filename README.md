@@ -8,7 +8,8 @@ maintainer/editorial projection in `site/`; it is intentionally visually distinc
 [Book of Reframe](https://book.fountain.coach/). GitHub remains the source and provenance mirror, not the public
 delivery surface.
 
-Build the projection locally with `python3 site/build-governance-site.py`. Publication is governed by the
+The checked-in `site/` directory is a retained publication snapshot. The former Python site generator has been
+retired; future publication requires an admitted Swift publication instrument. Publication is governed by the
 `governance-book-publish` skill in the integration repository and requires local route/asset checks, HTTPS
 verification, deployment provenance, and an explicit rollback target.
 
