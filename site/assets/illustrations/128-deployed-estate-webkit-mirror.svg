@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Remote Estate WebKit Mirror</title>
+  <desc id="desc">A Teatro-style triptych compares the local FountainStore projection with the deployed HTTPS WebKit observation, transforms their semantic correspondence, and records either an exact match or a typed diff.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbfaf7"/><stop offset="1" stop-color="#edf1f2"/></linearGradient>
+    <linearGradient id="local" x1="0" x2="1"><stop stop-color="#e2f2ee"/><stop offset="1" stop-color="#cbe8df"/></linearGradient>
+    <linearGradient id="engine" x1="0" x2="1"><stop stop-color="#5a4b86"/><stop offset="1" stop-color="#7e67a7"/></linearGradient>
+    <linearGradient id="remote" x1="0" x2="1"><stop stop-color="#f0eafa"/><stop offset="1" stop-color="#e4daf4"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#26333a" flood-opacity=".15"/></filter>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M1 1 10 5.5 1 10Z" fill="#52636a"/></marker>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#1c2930}
+      .mono{font-family:ui-monospace,Menlo,monospace;fill:#607178}
+      .eyebrow{font-size:17px;font-weight:760;letter-spacing:4px;fill:#607178}
+      .title{font-size:44px;font-weight:790;letter-spacing:-1.2px}
+      .subtitle{font-size:18px;fill:#607178}
+      .label{font-size:14px;font-weight:800;letter-spacing:2px}
+      .head{font-size:27px;font-weight:780}
+      .body{font-size:18px}
+      .small{font-size:15px}
+      .light{fill:#fff !important}
+    </style>
+  </defs>
+  <rect x="14" y="14" width="1372" height="792" rx="28" fill="url(#paper)" stroke="#cbd6d9" stroke-width="2"/>
+  <text x="70" y="76" class="sans eyebrow">FOUNTAIN COACH · GOVERNANCE 128 · TEATRO</text>
+  <text x="70" y="132" class="sans title">Observe. Transform. Compare.</text>
+  <text x="70" y="168" class="sans subtitle">two accountable states · one route manifest · no silent replacement</text>
+  <g filter="url(#shadow)">
+    <rect x="70" y="232" width="370" height="268" rx="22" fill="url(#local)" stroke="#a9d2c7" stroke-width="2"/>
+    <rect x="515" y="202" width="370" height="328" rx="22" fill="url(#engine)" stroke="#4e4178" stroke-width="2"/>
+    <rect x="960" y="232" width="370" height="268" rx="22" fill="url(#remote)" stroke="#cbbbe5" stroke-width="2"/>
+  </g>
+  <text x="106" y="274" class="sans label" fill="#176b68">STATE A · LOCAL</text>
+  <text x="106" y="322" class="sans head">FountainStore</text>
+  <text x="106" y="361" class="sans body">Publication Core projection</text>
+  <text x="106" y="393" class="sans body">native local WebKit</text>
+  <line x1="106" y1="426" x2="404" y2="426" stroke="#9ccabd" stroke-width="2"/>
+  <text x="106" y="460" class="sans small">AX tree · assets · screenshot</text>
+  <text x="551" y="244" class="sans label light">TEATRO TRANSFORMER</text>
+  <text x="551" y="296" class="sans head light">correspondence</text>
+  <text x="551" y="338" class="sans body light">preserve · move · insert</text>
+  <text x="551" y="370" class="sans body light">remove · reflow · replace</text>
+  <line x1="551" y1="408" x2="849" y2="408" stroke="#d9cff0" stroke-width="2"/>
+  <text x="551" y="444" class="sans small light">semantic addresses</text>
+  <text x="551" y="470" class="sans small light">+ pixel evidence</text>
+  <text x="996" y="274" class="sans label" fill="#51437d">STATE B · DEPLOYED</text>
+  <text x="996" y="322" class="sans head">HTTPS / DNS</text>
+  <text x="996" y="361" class="sans body">public WebKit observation</text>
+  <text x="996" y="393" class="sans body">canonical route identity</text>
+  <line x1="996" y1="426" x2="1294" y2="426" stroke="#c6b6df" stroke-width="2"/>
+  <text x="996" y="460" class="sans small">TLS · AX tree · screenshot</text>
+  <line x1="450" y1="366" x2="500" y2="366" stroke="#52636a" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="895" y1="366" x2="945" y2="366" stroke="#52636a" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="454" y="340" class="sans small">capture</text>
+  <text x="899" y="340" class="sans small">compare</text>
+  <path d="M700 552v34H385" fill="none" stroke="#2b8978" stroke-width="3"/>
+  <path d="M700 552v34h315" fill="none" stroke="#8068a5" stroke-width="3"/>
+  <circle cx="700" cy="552" r="6" fill="#8068a5"/>
+  <g filter="url(#shadow)">
+    <rect x="180" y="620" width="430" height="82" rx="16" fill="#d8eee8" stroke="#a8d4c5" stroke-width="2"/>
+    <rect x="790" y="620" width="430" height="82" rx="16" fill="#eee9f8" stroke="#d2c5e5" stroke-width="2"/>
+  </g>
+  <text x="214" y="655" class="sans label" fill="#176b68">MATCH</text>
+  <text x="214" y="684" class="sans small">exact-mirror: PASS only if complete</text>
+  <text x="824" y="655" class="sans label" fill="#51437d">DIFF / REFUSAL</text>
+  <text x="824" y="684" class="sans small">typed mismatch · no silent repair</text>
+  <text x="70" y="764" class="mono small">FountainStore proves content · WebKit observes readers receive · Teatro keeps correspondence inspectable</text>
+</svg>

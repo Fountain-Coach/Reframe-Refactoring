@@ -1,3 +1,23 @@
+## Current delivery slice — Chapters 127–128 governed estate publication (2026-09-04)
+
+**Capability:** publish Chapters 127 and 128 as bounded governance routes under the reviewed Personal Pointer estate
+shell, then prove their Store and public HTTPS projections without replacing sibling routes.
+
+**Acceptance proof:** the two authoritative Markdown chapters and illustrations are indexed and synchronized with
+the integration copy; the Swift governance route builder emits complete pages with canonical metadata and no raw
+tokens; the selected-route validator, SVG validation, JSON-LD checks, and European publication gate pass; each route
+is promoted independently through `estate.publication.sync`; typed remote read-back and public HTTPS bytes match the
+selected local projection; Reframe records State A, State B, the transformer, and the resulting diff.
+
+**Implementation state:** the route builder is fixed at integration commit
+`837dbe6ced2370c6e71c7f76c73b6ac405a33e8b`. FountainStore `v0.7.4` is active at
+`2b22119c239b468e593e1becff782a4a3f834a05`; its native edge now reserves Store API routes before estate lookup.
+The local selected-route and compliance gates pass. Publication commit, route-scoped sync receipts, HTTPS digest
+read-back, and Reframe A/B/diff evidence remain the terminal gates.
+
+**Excluded:** whole-estate regeneration or synchronization, unrelated retained generated-route defects, DNS or TLS
+changes, filesystem deployment, and screenshot-only acceptance.
+
 ## Current governance slice — Fountain Coach organization web projection (2026-09-02)
 
 **Capability:** define the human-facing organization projection for the self-hosted Fountain Coach source estate.
@@ -1984,6 +2004,32 @@ dirty Semantic Browser checkout is released, Linux-compatible, or live-accepted 
 - **Acceptance proof:** Chapter 124, its deterministic SVG illustration, both reading-index entries, and this record
   exist; source and integration chapter/illustration copies are text-identical; relative links and `git diff --check`
   pass. No runtime or publication claim is made.
+## Current implementation slice — Governance adopts the one Personal Pointer shell (2026-09-03)
+
+**Capability:** render the Governance domain with the canonical `personal-pointer-v1` shell while retaining its
+chapter content, reading index, route identity, accessibility semantics, and legal publication boundary.
+
+**Contract:** the shell is one shared frame composed of header, icon-capable global navigation, theme control,
+domain sidebar/index, main content frame, shared content primitives, interaction/accessibility state, complete legal
+footer, and browser/share metadata. Domain identity, route map, chapters, images, semantic meaning, and Store records
+remain content or authority inputs; they are not alternate shells.
+
+**Forbidden:** iframe projection, copied domain shell, static-server substitute, or treating this visual adaptation as
+publication or runtime evidence.
+
+**Acceptance proof:** the native local FountainStore preview serves the Governance overview and a representative
+chapter with the same Personal Pointer material language and responsive frame; the Governance routes and chapter
+content remain intact; no iframe or alternate renderer is introduced; `git diff --check` passes. AX/VRT and remote
+publication remain separate gates.
+
+**Slice:** adapt the shared Governance stylesheet and preview contract only. Defer route-by-route content redesign,
+remote publication, and final browser AX/VRT release evidence.
+
+**Route-map correction:** the shell navigation consumes the checked-in estate route map (`site/estate-route-map.json`)
+with one typed entry per domain route. Header links are bound by route ID; they are not independently authored in the
+Governance template. The Personal Pointer estate manifest remains the route-map source and this file is its reviewed
+Governance projection.
+
 ## Current publication slice — Chapter 126 and complete governance projection (2026-09-02)
 
 **Capability:** publish Chapter 126 and the complete checked-in governance route set through the fixed
@@ -2004,3 +2050,43 @@ publication commit; the selected release is built from an explicit clean worktre
 the explicit local FountainStore snapshot contains the selected host route; native `estate.publication.sync` completes
 with typed remote manifest/read-back and public HTTPS digest verification; the fixed domain index and representative
 Chapter 126 route return the new projection. Stop when this proof passes.
+# Current bounded change — Chapter 127 institutional-core amendment (2026-09-03)
+
+- **Capability:** amend Chapter 127 so the shared shell is owned by the Fountain Coach Publication Core, while
+  Personal Pointer remains the founder publication projection and the design provenance from which the core was
+  extracted.
+- **Acceptance proof:** the authoritative chapter, illustration, reading index, integration counterpart, and
+  synchronization provenance agree on the three-layer identity model; targeted parity and documentation checks pass.
+- **Chapters read:** 07 — phase-sized governance edit; 08 — documentation establishes doctrine, not runtime or public
+  acceptance; 68 — scenario state remains a separate publication unit; 92 rules 1–3 — the TLD owns institutional
+  identity and domains retain distinct authority; 127 rules 1–7 — one shell and one Store-backed publication path.
+- **What they forbid here:** making every institutional domain a Personal Pointer, treating the founder projection as
+  an evidence authority, or upgrading the locally accepted Pointer route into a public-publication claim.
+- **Conflicts:** Chapter 127 currently names Personal Pointer as the estate template authority, while Chapter 92 makes
+  Fountain Coach the institutional identity. The writer explicitly directed the amendment: design provenance remains
+  Personal Pointer; template authority becomes Fountain Coach Publication Core.
+- **Excluded, and why:** scenario contract rewrites, runtime/template symbol renames, Store migration, and remote
+  publication require their own proof-bounded units after this governance contract is reviewed.
+- **Verification and status:** COMPLETE. Chapter 127 now names the Fountain Coach Publication Core as institutional
+  template authority, records Personal Pointer as the adjacent founder publication/design provenance, and confines
+  Memory Vector and Teatro Score to Pointer content semantics. The authoritative and integration chapter/SVG copies
+  are byte-identical; the reading-index entries match; the SVG parses and Quick Look rendering was visually reviewed;
+  relative-link and both-repository diff checks pass. The full sync checker reports only pre-existing unrelated drift
+  and contains no Chapter 127 difference. No generated site, scenario, runtime, Store, or public route was changed.
+## Current governance slice — Deployed Estate WebKit mirror authority (2026-09-04)
+
+**Capability:** define the read-only WebKit/DNS observation and exact route-by-route State A/State B mirror contract
+needed by the planned FCIS-Kit instrument.
+
+**Governance read record:** Chapters 07/08 (bounded work and independent evidence), 91/93 (FCIS-Kit instrument
+promotion), 115 (Semantic Browser/WebKit boundary), and 127 (Publication Core and Personal Pointer identity).
+
+**Decision:** add Chapter 128 before implementation or admission. It keeps FountainStore as content/publication
+authority, deployed HTTPS/DNS as visual observation authority, and requires typed semantic plus image diff evidence.
+
+**Claim boundary:** governance contract and reading-index synchronization only; no instrument build, remote assertion,
+exact-mirror result, publication, or DNS/TLS mutation is claimed.
+
+**Publication-state correction (2026-09-04).** The live governance site remains at Chapter 126. Chapter 127 and the
+new Chapter 128 file are local uncommitted candidates and are not represented on the deployed site. Publication and
+deployment are separate future gates.

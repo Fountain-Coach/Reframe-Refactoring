@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "shell": "fountain-coach-estate-shell-v1",
+  "template": "personal-pointer-v1",
+  "routes": [
+    { "id": "estate", "label": "Estate", "host": "fountain.coach", "path": "/", "href": "https://fountain.coach/" },
+    { "id": "status", "label": "Status", "host": "status.fountain.coach", "path": "/", "href": "https://status.fountain.coach/" },
+    { "id": "book", "label": "Book", "host": "book.fountain.coach", "path": "/", "href": "https://book.fountain.coach/" },
+    { "id": "governance", "label": "Governance", "host": "governance.fountain.coach", "path": "/", "href": "https://governance.fountain.coach/" },
+    { "id": "midi2", "label": "MIDI2", "host": "midi2.fountain.coach", "path": "/", "href": "https://midi2.fountain.coach/" },
+    { "id": "instruments", "label": "Instruments", "host": "instruments.fountain.coach", "path": "/", "href": "https://instruments.fountain.coach/" },
+    { "id": "git", "label": "Git", "host": "git.fountain.coach", "path": "/", "href": "https://git.fountain.coach/" },
+    { "id": "copilot", "label": "Copilot", "host": "fountain.coach", "path": "/copilot/", "href": "https://fountain.coach/copilot/" },
+    { "id": "pointer", "label": "Personal pointer", "host": "benedikt-eickhoff.de", "path": "/", "href": "https://benedikt-eickhoff.de/", "previewHref": "http://127.0.0.1:4185/" }
+  ]
+}

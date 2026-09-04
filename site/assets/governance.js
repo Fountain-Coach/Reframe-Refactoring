@@ -1,26 +1,21 @@
 (() => {
-  const root = document.documentElement;
-  const themeButton = document.querySelector('[data-theme-toggle]');
-  const savedTheme = window.localStorage.getItem('fountain-coach-theme');
-  const setTheme = (theme) => {
-    if (theme === 'light' || theme === 'dark') root.dataset.theme = theme;
-    else delete root.dataset.theme;
-    if (themeButton) {
-      themeButton.textContent = `Theme: ${theme || 'system'}`;
-      themeButton.setAttribute('aria-pressed', theme !== 'system' ? 'true' : 'false');
-    }
-  };
-  setTheme(savedTheme || 'system');
-  themeButton?.addEventListener('click', () => {
-    const current = root.dataset.theme || 'system';
-    const next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
-    if (next === 'system') window.localStorage.removeItem('fountain-coach-theme');
-    else window.localStorage.setItem('fountain-coach-theme', next);
-    setTheme(next);
-  });
+  fetch('/estate-route-map.json')
+    .then((response) => response.json())
+    .then((map) => {
+      const routes = new Map((map.routes || []).map((route) => [route.id, route]));
+      const isLocalPreview = ['127.0.0.1', 'localhost'].includes(window.location.hostname);
+      document.querySelectorAll('[data-estate-route]').forEach((link) => {
+        const route = routes.get(link.dataset.estateRoute);
+        if (!route) return;
+        link.href = isLocalPreview && route.previewHref ? route.previewHref : route.href;
+        link.setAttribute('aria-label', route.label);
+        link.title = route.label;
+      });
+    })
+    .catch(() => {});
 
-  const button = document.querySelector('[data-menu-button]');
-  const nav = document.querySelector('[data-chapter-nav]');
+  const button = document.querySelector('[data-nav-toggle]');
+  const nav = document.querySelector('[data-site-rail]');
   if (!button || !nav) return;
 
   // Keep the chapter rail complete when a checked-in publication snapshot is
@@ -28,12 +23,21 @@
   // projection; this only repairs the shared navigation presentation.
   const finalFlow = nav.querySelector('a[href="/chapters/reframe-app-flow-governance/"]');
   const chapter126 = '/chapters/126-fountain-coach-organization-web-projection/';
+  const chapter127 = '/chapters/127-estate-template-publishing-path/';
   if (finalFlow && !nav.querySelector(`a[href="${chapter126}"]`)) {
     const link = document.createElement('a');
     link.className = 'chapter-link';
     link.href = chapter126;
     link.innerHTML = '<span>126</span><span>The Fountain Coach Organization Web Projection</span>';
     nav.insertBefore(link, finalFlow);
+  }
+  const chapter126Link = nav.querySelector(`a[href="${chapter126}"]`);
+  if (finalFlow && chapter126Link && !nav.querySelector(`a[href="${chapter127}"]`)) {
+    const link = document.createElement('a');
+    link.className = 'chapter-link';
+    link.href = chapter127;
+    link.innerHTML = '<span>127</span><span>The Estate Template Is the Publishing Path</span>';
+    finalFlow.parentNode.insertBefore(link, finalFlow);
   }
 
   button.addEventListener('click', () => {

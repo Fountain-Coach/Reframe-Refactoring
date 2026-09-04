@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">The estate template is the publishing path</title>
+  <desc id="desc">Institutional domain records and the adjacent Personal Pointer founder publication enter the Fountain Coach Publication Core, pass preview and acceptance, and are promoted by a typed FountainStore route operation.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbfaf6"/><stop offset="1" stop-color="#eee9df"/></linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6d5b37"/><stop offset="1" stop-color="#b56a4c"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#32404a" flood-opacity=".16"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 9 5 1 9Z" fill="#6d5b37"/></marker>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#202b3d}.mono{font-family:ui-monospace,Menlo,monospace;fill:#665f56}.eyebrow{font-size:17px;font-weight:700;letter-spacing:4px;fill:#746b61}.title{font-size:43px;font-weight:760;letter-spacing:-1px}.label{font-size:15px;font-weight:750;letter-spacing:2px}.head{font-size:25px;font-weight:760}.body{font-size:18px}.small{font-size:15px}
+    </style>
+  </defs>
+  <rect x="14" y="14" width="1372" height="792" rx="28" fill="url(#paper)" stroke="#d5cdbf" stroke-width="2"/>
+  <text x="70" y="76" class="sans eyebrow">FOUNTAIN COACH · GOVERNANCE 127</text>
+  <text x="70" y="132" class="sans title">One shell. Many domains. One path.</text>
+  <text x="70" y="168" class="sans body" fill="#746b61">content changes by domain · presentation and promotion remain governed</text>
+  <g filter="url(#shadow)">
+    <rect x="70" y="244" width="280" height="218" rx="18" fill="#fff" stroke="#d7cfc2" stroke-width="2"/>
+    <rect x="485" y="210" width="430" height="286" rx="22" fill="url(#ink)"/>
+    <rect x="1050" y="244" width="280" height="218" rx="18" fill="#fff" stroke="#d7cfc2" stroke-width="2"/>
+  </g>
+  <text x="100" y="284" class="sans label" fill="#6d5b37">DOMAINS + FOUNDER</text>
+  <text x="100" y="328" class="sans head">distinct identities</text>
+  <text x="100" y="365" class="sans body">institutional authorities</text>
+  <text x="100" y="394" class="sans body">Personal Pointer · authored</text>
+  <text x="100" y="433" class="sans small">content, media, references</text>
+  <text x="515" y="258" class="sans label" fill="#f7e9cc">FOUNTAIN COACH CORE</text>
+  <text x="515" y="306" class="sans head" fill="#fff">Publication Core</text>
+  <text x="515" y="350" class="sans body" fill="#fff">identity · nav · rail · main</text>
+  <text x="515" y="382" class="sans body" fill="#fff">theme · AX · metadata · footer</text>
+  <line x1="515" y1="414" x2="885" y2="414" stroke="#ead7be" stroke-width="2"/>
+  <text x="515" y="450" class="sans small" fill="#fff">one versioned template contract</text>
+  <text x="1080" y="284" class="sans label" fill="#ad6349">PUBLIC ROUTE</text>
+  <text x="1080" y="328" class="sans head">domain page</text>
+  <text x="1080" y="365" class="sans body">canonical URL</text>
+  <text x="1080" y="394" class="sans body">social metadata</text>
+  <text x="1080" y="433" class="sans small">readable projection</text>
+  <line x1="366" y1="350" x2="470" y2="350" stroke="#6d5b37" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="930" y1="350" x2="1035" y2="350" stroke="#6d5b37" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="389" y="326" class="sans small" fill="#6d5b37">render</text><text x="957" y="326" class="sans small" fill="#6d5b37">promote</text>
+  <path d="M700 520v52H380" fill="none" stroke="#287f70" stroke-width="3"/><path d="M700 520v52h320" fill="none" stroke="#287f70" stroke-width="3"/>
+  <rect x="180" y="596" width="420" height="92" rx="16" fill="#d6eee5" stroke="#a8d4c5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="800" y="596" width="420" height="92" rx="16" fill="#fff" stroke="#d7cfc2" stroke-width="2" filter="url(#shadow)"/>
+  <text x="210" y="633" class="sans label" fill="#287f70">PREVIEW + PROOF</text><text x="210" y="667" class="sans body">AX · VRT · links · assets · claim boundary</text>
+  <text x="830" y="633" class="sans label" fill="#ad6349">FOUNTAINSTORE SYNC</text><text x="830" y="667" class="sans body">route patch · receipt · read-back · digest</text>
+  <text x="70" y="754" class="mono small">content has meaning · the shell gives it a face · the Store proves what became public</text>
+</svg>

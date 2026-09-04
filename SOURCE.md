@@ -1,5 +1,30 @@
 # Source and Synchronization Contract
 
+## Current targeted synchronization — Chapters 127–128 estate publication (2026-09-04)
+
+- **Change:** publish the institutional Publication Core and Personal Pointer relationship in Chapter 127, and the
+  deployed read-only WebKit mirror authority in Chapter 128, using the reviewed Personal Pointer estate shell.
+- **Direction:** publication and integration chapter text, reading index, and deterministic SVGs are byte-identical;
+  unrelated governance drift is deliberately not swept.
+- **Integration implementation:** `Fountain-Coach/midi2-gpu-fabric@837dbe6ced2370c6e71c7f76c73b6ac405a33e8b`
+  supplies the Swift route builder. FountainStore `v0.7.4@2b22119c239b468e593e1becff782a4a3f834a05`
+  supplies the corrected native Store/API edge.
+- **Local verification:** selected route construction, estate validation, SVG XML validation, JSON-LD identity,
+  source-token rejection, and the European publication applicability gate pass.
+- **Claim boundary:** local reviewed projection only until route-scoped Store receipts, typed remote read-back,
+  public HTTPS digest equality, and Reframe A/B/diff evidence are recorded.
+
+## Previous targeted synchronization — Chapters 126–127 estate projection and template path (2026-09-03)
+
+- **Change:** synchronize the organization web-projection boundary and amend Chapter 127 so the institutional
+  Fountain Coach Publication Core is distinct from the adjacent Personal Pointer founder publication and its
+  Memory Vector / Teatro Score content semantics, including deterministic illustration and reading-index wording.
+- **Direction:** publication → integration through a targeted copy; unrelated governance drift is deliberately not
+  swept into this change.
+- **Counterpart:** the `midi2-gpu-fabric` integration working tree; publication and integration commits remain pending.
+- **Claim boundary:** governance text, illustration, and Swift unit seam only. No Store admission, AX/VRT, remote
+  promotion, or public estate transformation is established.
+
 ## Current planned change — Chapter 125 Store publication graph (2026-09-01)
 
 - **Change:** define the FountainStore publication graph, explicit source/destination route identities, reversible
@@ -973,3 +998,14 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - **Integration content:** synchronized into `apps/modernization-studio/docs/reframe-grounding-first-refactor/`.
 - **Claim boundary:** architecture and acceptance contract only; no server-side Storify release, Linux equivalence, or
   complete live acceptance is claimed.
+# Current targeted synchronization — Chapter 128 deployed estate WebKit mirror (2026-09-04)
+
+- **Change:** add the read-only HTTPS/DNS/WebKit observation boundary, explicit local State A and deployed State B,
+  deterministic semantic/image diff, and exact-mirror acceptance contract for the planned FCIS-Kit instrument.
+- **Direction:** publication → integration, targeted to Chapter 128 and its reading-index entry; existing unrelated
+  guide drift is not swept into this change.
+- **Counterpart:** `Fountain-Coach/midi2-gpu-fabric`; reciprocal commits remain pending.
+- **Claim boundary:** governance and index text only. No instrument implementation, remote visual proof, publication,
+  or DNS/TLS mutation is established.
+- **Publication state:** the deployed governance site currently stops at Chapter 126; Chapters 127/128 remain
+  unpublished local candidates pending review and deployment.
