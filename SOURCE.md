@@ -1009,3 +1009,14 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
   or DNS/TLS mutation is established.
 - **Publication state:** the deployed governance site currently stops at Chapter 126; Chapters 127/128 remain
   unpublished local candidates pending review and deployment.
+
+# Current targeted synchronization — Chapter 129 native animated SVG publication (2026-09-05)
+
+- **Change:** add the native animated SVG representation contract, deterministic illustration, reading-index entry,
+  and integration estate presentation.
+- **Direction:** publication → integration, targeted to Chapter 129; older unrelated guide drift remains visible.
+- **Publication content commit:** `Fountain-Coach/Reframe-Refactoring@3dc3f1f`.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@b116d97d`.
+- **Local evidence:** the integration estate's native FountainStore preview passed 194 routes, 388 desktop/mobile
+  captures, and 49 cross-identity navigation transitions with zero failures.
+- **Claim boundary:** governance and local presentation only; no renderer implementation or public deployment.
