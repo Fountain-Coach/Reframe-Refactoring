@@ -2090,3 +2090,18 @@ exact-mirror result, publication, or DNS/TLS mutation is claimed.
 **Publication-state correction (2026-09-04).** The live governance site remains at Chapter 126. Chapter 127 and the
 new Chapter 128 file are local uncommitted candidates and are not represented on the deployed site. Publication and
 deployment are separate future gates.
+
+## Current governance slice — Chapter 129 native animated SVG publication (2026-09-05)
+
+- **Capability:** govern native animated SVG as a deterministic, accessible projection of an explicitly admitted
+  publication object, without creating a site generator or changing FountainStore publication authority.
+- **Acceptance proof:** Chapter 129, its native SVG illustration, reading-index entry, and integration counterparts
+  are present and byte-identical; the illustration is script-free, self-contained, reduced-motion aware, XML-valid,
+  and visually legible. Localhost presentation belongs to the integration estate and is not public evidence.
+- **Chapters read:** 07, 08, 18, 92, and 127.
+- **Conflict resolved:** the object governs meaning for this declared representation class; the complete static route
+  remains the payload admitted under Chapter 127, with no runtime compilation or hydration.
+- **Excluded:** renderer implementation, IDL/runtime work, remote publication, and deployment.
+- **Status:** COMPLETE for governance source. The chapter and illustration are synchronized byte-for-byte with the
+  integration copy, XML-valid, script-free, reduced-motion aware, and locally presented by the integration estate.
+  The repository-wide sync checker continues to report older unrelated drift and was not used to overwrite it.
