@@ -1,5 +1,18 @@
 # Source and Synchronization Contract
 
+## Current targeted synchronization — Chapters 130–133 governance verdicts (2026-09-08)
+
+- **Change:** commit the final governance verdicts for human/machine scenario identity, remote SecretStore approval
+  sessions, and the Csound AUv3 instrument boundary, with their deterministic principal illustrations and index/
+  planning records.
+- **Direction:** publication source → integration copy; the integration counterpart is committed at
+  `Fountain-Coach/midi2-gpu-fabric@d6a4d74f` for Chapter 133 and its prior synchronized cohort.
+- **Claim boundary:** these are reviewed governance and publication-source records. Csound AUv3, AUM hosting,
+  MIDI2 adapter behavior, Store promotion, and public runtime acceptance remain separate evidence gates.
+- **Preserved state:** unrelated generated `site/` snapshot drift was stashed locally as
+  `preserve unrelated governance site snapshot drift before Chapter 133 promotion`; it was not discarded or included
+  in this source commit.
+
 ## Current targeted synchronization — Chapters 127–128 estate publication (2026-09-04)
 
 - **Change:** publish the institutional Publication Core and Personal Pointer relationship in Chapter 127, and the

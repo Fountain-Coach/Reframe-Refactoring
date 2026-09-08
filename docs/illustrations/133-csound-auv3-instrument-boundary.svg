@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Csound AUv3 instrument boundary</title>
+  <desc id="desc">AUM provides a MIDI 1 edge to an AUv3 host boundary containing prepared Csound. A later MIDI 2 adapter and FountainStore evidence remain outside the real-time render callback.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#171b2c"/><stop offset="1" stop-color="#30253b"/></linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2b56b"/><stop offset="1" stop-color="#d97372"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f7e7c8"/></marker>
+    <style>
+      .label{font:600 20px -apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;fill:#fff8ea}
+      .small{font:15px -apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;fill:#f1dfc5}
+      .tiny{font:13px -apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;fill:#d9c6ad}
+      .box{stroke:#f1d5ac;stroke-width:2}
+      .line{stroke:#f7e7c8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .dash{stroke:#c9a6cf;stroke-width:2;stroke-dasharray:8 7;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="630" rx="28" fill="url(#bg)"/>
+  <text x="58" y="62" class="label" font-size="27">CSOUND AUv3 · ONE BOUNDED INSTRUMENT</text>
+  <text x="58" y="90" class="small">Host-clocked audio, explicit MIDI compatibility, evidence outside the callback</text>
+
+  <rect x="55" y="170" width="220" height="170" rx="18" fill="#4e3e62" class="box"/>
+  <text x="82" y="214" class="label">AUM</text>
+  <text x="82" y="244" class="small">named host witness</text>
+  <text x="82" y="282" class="tiny">MIDI 1.0 edge</text>
+  <text x="82" y="306" class="tiny">audio input/output</text>
+
+  <rect x="335" y="130" width="545" height="260" rx="26" fill="#252c45" stroke="#f2b56b" stroke-width="3"/>
+  <text x="370" y="170" class="label">AUv3 HOST BOUNDARY</text>
+  <text x="370" y="198" class="small">prepare · schedule · render · reset</text>
+  <rect x="390" y="225" width="205" height="110" rx="16" fill="url(#core)" class="box"/>
+  <text x="424" y="270" class="label">prepared</text>
+  <text x="424" y="297" class="label">Csound DSP</text>
+  <text x="424" y="320" class="tiny" fill="#2b2030">bounded state</text>
+  <rect x="625" y="225" width="220" height="110" rx="16" fill="#3b4961" class="box"/>
+  <text x="653" y="267" class="label">render callback</text>
+  <text x="653" y="293" class="tiny">timestamp · frames</text>
+  <text x="653" y="316" class="tiny">no Store · no await</text>
+  <path d="M595 280 H625" class="line"/>
+
+  <path d="M275 245 H335" class="line"/>
+  <text x="280" y="226" class="tiny">events in</text>
+  <path d="M880 245 H1060" class="line"/>
+  <text x="902" y="226" class="tiny">audio out</text>
+  <path d="M845 315 C930 360 970 365 1060 335" class="line"/>
+  <text x="900" y="382" class="tiny">MIDI out callback/list</text>
+
+  <rect x="55" y="465" width="355" height="105" rx="18" fill="#293b4b" class="box"/>
+  <text x="82" y="505" class="label">Fountain MIDI 2</text>
+  <text x="82" y="534" class="small">future explicit adapter · not inferred</text>
+  <path d="M410 505 C520 430 590 410 690 390" class="dash"/>
+
+  <rect x="760" y="465" width="385" height="105" rx="18" fill="#49354d" class="box"/>
+  <text x="790" y="505" class="label">FountainStore / control plane</text>
+  <text x="790" y="534" class="small">receipts · configuration · release evidence</text>
+  <path d="M850 465 C850 425 820 405 780 390" class="dash"/>
+
+  <text x="58" y="606" class="tiny">Dashed paths are outside real time. The illustration is governance, not host or Store proof.</text>
+</svg>
