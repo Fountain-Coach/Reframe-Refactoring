@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Human and machine scenario naming boundary</title>
+  <desc id="desc">A writer-facing scenario name passes through Reframe's live command declaration and Composer into one typed MIDI2 operation, then into a kit identity and a FountainStore receipt.</desc>
+  <style>
+    :root { color-scheme: light dark; }
+    .bg { fill: #f7f5ef; }
+    .card { fill: #fffdf8; stroke: #263238; stroke-width: 3; }
+    .accent { fill: #d9e8e4; stroke: #0e6251; stroke-width: 3; }
+    .machine { fill: #e5e9f5; stroke: #354a8a; stroke-width: 3; }
+    .receipt { fill: #f2e4cc; stroke: #8a5a18; stroke-width: 3; }
+    .ink { fill: #172027; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .small { font-size: 24px; letter-spacing: .04em; }
+    .label { font-size: 32px; font-weight: 700; }
+    .body { font-size: 26px; }
+    .line { stroke: #546e7a; stroke-width: 7; fill: none; stroke-linecap: round; }
+    .arrow { fill: #546e7a; }
+    @media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
+    @media (prefers-reduced-motion: no-preference) { .pulse { animation: pulse 4s ease-in-out infinite; } }
+    @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+  </style>
+  <rect class="bg" width="1400" height="900" rx="28"/>
+  <text class="ink small" x="70" y="75">GOVERNED NAMING · ONE EXECUTION BINDING</text>
+  <rect class="card" x="70" y="180" width="260" height="210" rx="24"/>
+  <text class="ink label" x="105" y="235">Writer</text>
+  <text class="ink body" x="105" y="290">/scenario run</text>
+  <text class="ink body" x="105" y="330">“A Day Becomes</text>
+  <text class="ink body" x="105" y="365">a Readable Scene”</text>
+  <path class="line" d="M330 285 H410"/><path class="arrow" d="m410 285-24-16v32z"/>
+  <rect class="accent" x="420" y="145" width="300" height="280" rx="24"/>
+  <text class="ink label" x="455" y="205">Reframe</text>
+  <text class="ink body" x="455" y="255">live /commands</text>
+  <text class="ink body" x="455" y="295">declaration</text>
+  <text class="ink small" x="455" y="350">preconditions · effect</text>
+  <text class="ink small" x="455" y="382">lifecycle · evidence</text>
+  <path class="line" d="M720 285 H800"/><path class="arrow" d="m800 285-24-16v32z"/>
+  <rect class="machine" x="810" y="145" width="270" height="280" rx="24"/>
+  <text class="ink label" x="845" y="205">Composer</text>
+  <text class="ink body" x="845" y="265">one selected</text>
+  <text class="ink body" x="845" y="300">typed MIDI2</text>
+  <text class="ink body" x="845" y="335">operation</text>
+  <text class="ink small" x="845" y="385">IDL + version</text>
+  <path class="line" d="M1080 285 H1160"/><path class="arrow" d="m1160 285-24-16v32z"/>
+  <rect class="receipt" x="1170" y="180" width="170" height="210" rx="24"/>
+  <text class="ink label" x="1195" y="235">Store</text>
+  <text class="ink body" x="1195" y="285">kit identity</text>
+  <text class="ink body" x="1195" y="325">terminal</text>
+  <text class="ink body" x="1195" y="360">receipt</text>
+  <path class="line pulse" d="M150 570 H1250"/><path class="arrow" d="m1250 570-24-16v32z"/>
+  <text class="ink small" x="90" y="540">DISTINCT ADDRESSES, ONE CORRELATED LIFECYCLE</text>
+  <text class="ink body" x="90" y="660">Scenario name ≠ command name ≠ operation ≠ kit identity</text>
+  <text class="ink body" x="90" y="715">The readable name retrieves the contract; typed evidence establishes what became true.</text>
+  <text class="ink small" x="90" y="815">LOCAL GOVERNANCE PROJECTION · NOT RUNTIME OR LIVE ACCEPTANCE EVIDENCE</text>
+</svg>
+

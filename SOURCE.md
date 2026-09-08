@@ -1,5 +1,18 @@
 # Source and Synchronization Contract
 
+## Current targeted synchronization — Chapters 130–133 governance verdicts (2026-09-08)
+
+- **Change:** commit the final governance verdicts for human/machine scenario identity, remote SecretStore approval
+  sessions, and the Csound AUv3 instrument boundary, with their deterministic principal illustrations and index/
+  planning records.
+- **Direction:** publication source → integration copy; the integration counterpart is committed at
+  `Fountain-Coach/midi2-gpu-fabric@d6a4d74f` for Chapter 133 and its prior synchronized cohort.
+- **Claim boundary:** these are reviewed governance and publication-source records. Csound AUv3, AUM hosting,
+  MIDI2 adapter behavior, Store promotion, and public runtime acceptance remain separate evidence gates.
+- **Preserved state:** unrelated generated `site/` snapshot drift was stashed locally as
+  `preserve unrelated governance site snapshot drift before Chapter 133 promotion`; it was not discarded or included
+  in this source commit.
+
 ## Current targeted synchronization — Chapters 127–128 estate publication (2026-09-04)
 
 - **Change:** publish the institutional Publication Core and Personal Pointer relationship in Chapter 127, and the
@@ -1009,3 +1022,14 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
   or DNS/TLS mutation is established.
 - **Publication state:** the deployed governance site currently stops at Chapter 126; Chapters 127/128 remain
   unpublished local candidates pending review and deployment.
+
+# Current targeted synchronization — Chapter 129 native animated SVG publication (2026-09-05)
+
+- **Change:** add the native animated SVG representation contract, deterministic illustration, reading-index entry,
+  and integration estate presentation.
+- **Direction:** publication → integration, targeted to Chapter 129; older unrelated guide drift remains visible.
+- **Publication content commit:** `Fountain-Coach/Reframe-Refactoring@3dc3f1f`.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@b116d97d`.
+- **Local evidence:** the integration estate's native FountainStore preview passed 194 routes, 388 desktop/mobile
+  captures, and 49 cross-identity navigation transitions with zero failures.
+- **Claim boundary:** governance and local presentation only; no renderer implementation or public deployment.

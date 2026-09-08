@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Native animated SVG publication path</title>
+  <desc id="desc">A five-stage path moves from author to semantic publication object, accessible projections, FountainStore, and canonical URL. Four admission gates preserve determinism, accessibility, security, and atomic promotion.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fbf7ef"/><stop offset="1" stop-color="#eee7dc"/>
+    </linearGradient>
+    <linearGradient id="object" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1c4d48"/><stop offset="1" stop-color="#28766d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#332b23" flood-opacity=".14"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#b96945"/>
+    </marker>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.ink{fill:#211d19}.muted{fill:#6d675f}.label{font-size:15px;font-weight:700;letter-spacing:3px}.title{font-size:42px;font-weight:720}.stage{font-size:21px;font-weight:750}.body{font-size:17px}.tiny{font-size:14px}.flow{fill:none;stroke:#b96945;stroke-width:5;stroke-linecap:round;marker-end:url(#arrow);stroke-dasharray:12 11;animation:travel 3.4s linear infinite}.pulse{transform-box:fill-box;transform-origin:center;animation:breathe 3.4s ease-in-out infinite}.gate{fill:#fffdf8;stroke:#cdbfae;stroke-width:2}.card{fill:#fffdf8;stroke:#cdbfae;stroke-width:2}.address{fill:#f4ddcf}.divider{stroke:#cdbfae;stroke-width:2}.projection{fill:#f1ebe2;stroke:#8d7d6d;stroke-width:1.5}@keyframes travel{to{stroke-dashoffset:-46}}@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.018)}}@media(prefers-reduced-motion:reduce){.flow,.pulse{animation:none}.flow{stroke-dasharray:none}}
+    </style>
+  </defs>
+  <rect width="1440" height="900" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1384" height="844" rx="30" fill="none" stroke="#cdbfae" stroke-width="2"/>
+
+  <text x="76" y="88" class="sans label muted">GOVERNANCE 129 · REPRESENTATION CONTRACT</text>
+  <text x="76" y="143" class="sans title ink">Meaning first. Motion with evidence.</text>
+  <text x="76" y="180" class="sans body muted">One admitted object · several accessible projections · one Store-backed route</text>
+  <rect x="1138" y="66" width="226" height="54" rx="27" class="address"/>
+  <text x="1251" y="98" text-anchor="middle" class="mono tiny ink">LOCAL PROJECTION</text>
+
+  <path d="M252 343H312M532 343H572M872 343H932M1132 343H1192" class="flow"/>
+
+  <g filter="url(#shadow)">
+    <rect x="76" y="260" width="176" height="166" rx="24" class="card"/>
+    <rect x="312" y="238" width="220" height="210" rx="28" fill="url(#object)" stroke="#143c38" stroke-width="2" class="pulse"/>
+    <rect x="572" y="220" width="300" height="246" rx="28" class="card"/>
+    <rect x="932" y="260" width="200" height="166" rx="24" class="card"/>
+    <rect x="1192" y="260" width="172" height="166" rx="24" class="card"/>
+  </g>
+
+  <text x="100" y="300" class="sans label muted">01</text><text x="100" y="342" class="sans stage ink">AUTHOR</text>
+  <text x="100" y="375" class="sans body muted">intent</text><text x="100" y="402" class="sans body muted">voice · rights</text>
+
+  <text x="340" y="282" class="sans label" fill="#d9eee9">02 · AUTHORITY</text><text x="340" y="328" class="sans stage" fill="#fffdf8">OBJECT</text>
+  <text x="340" y="362" class="sans body" fill="#d9eee9">identity · meaning</text><text x="340" y="390" class="sans body" fill="#d9eee9">relations · provenance</text><text x="340" y="418" class="sans body" fill="#d9eee9">motion intent</text>
+
+  <text x="600" y="259" class="sans label muted">03 · PROJECTIONS</text>
+  <rect x="600" y="280" width="116" height="62" rx="15" class="projection"/><rect x="728" y="280" width="116" height="62" rx="15" class="projection"/>
+  <rect x="600" y="354" width="116" height="62" rx="15" class="projection"/><rect x="728" y="354" width="116" height="62" rx="15" class="projection"/>
+  <text x="658" y="317" text-anchor="middle" class="sans stage ink">SVG</text><text x="786" y="317" text-anchor="middle" class="sans stage ink">HTML</text>
+  <text x="658" y="391" text-anchor="middle" class="sans stage ink">JSON</text><text x="786" y="391" text-anchor="middle" class="sans stage ink">FEED</text>
+  <text x="722" y="443" text-anchor="middle" class="sans tiny muted">same addressable meaning</text>
+
+  <text x="960" y="300" class="sans label muted">04</text><text x="960" y="342" class="sans stage ink">STORE</text>
+  <text x="960" y="375" class="sans body muted">admitted bytes</text><text x="960" y="402" class="sans body muted">digest · receipt</text>
+
+  <text x="1220" y="300" class="sans label muted">05</text><text x="1220" y="342" class="sans stage ink">URL</text>
+  <text x="1220" y="375" class="sans body muted">canonical</text><text x="1220" y="402" class="sans body muted">static route</text>
+
+  <line x1="76" y1="528" x2="1364" y2="528" class="divider"/>
+  <text x="76" y="578" class="sans label muted">ADMISSION GATES</text>
+  <g filter="url(#shadow)">
+    <rect x="76" y="612" width="290" height="146" rx="22" class="gate"/>
+    <rect x="390" y="612" width="290" height="146" rx="22" class="gate"/>
+    <rect x="704" y="612" width="290" height="146" rx="22" class="gate"/>
+    <rect x="1018" y="612" width="346" height="146" rx="22" class="gate"/>
+  </g>
+  <text x="104" y="651" class="sans stage ink">Deterministic</text><text x="104" y="684" class="sans body muted">versioned renderer</text><text x="104" y="712" class="sans body muted">stable bundle digests</text>
+  <text x="418" y="651" class="sans stage ink">Accessible</text><text x="418" y="684" class="sans body muted">title · description · HTML</text><text x="418" y="712" class="sans body muted">reduced motion</text>
+  <text x="732" y="651" class="sans stage ink">Bounded</text><text x="732" y="684" class="sans body muted">script-free by default</text><text x="732" y="712" class="sans body muted">no external resources</text>
+  <text x="1046" y="651" class="sans stage ink">Atomic</text><text x="1046" y="684" class="sans body muted">validate → stage → promote</text><text x="1046" y="712" class="sans body muted">failure preserves prior route</text>
+
+  <rect x="76" y="800" width="1288" height="42" rx="21" fill="#211d19"/>
+  <text x="720" y="827" text-anchor="middle" class="mono tiny" fill="#fbf7ef">AUTHOR → OBJECT → PROJECTION → STORE → URL</text>
+</svg>

@@ -2090,3 +2090,57 @@ exact-mirror result, publication, or DNS/TLS mutation is claimed.
 **Publication-state correction (2026-09-04).** The live governance site remains at Chapter 126. Chapter 127 and the
 new Chapter 128 file are local uncommitted candidates and are not represented on the deployed site. Publication and
 deployment are separate future gates.
+
+## Current governance slice — Chapter 129 native animated SVG publication (2026-09-05)
+
+- **Capability:** govern native animated SVG as a deterministic, accessible projection of an explicitly admitted
+  publication object, without creating a site generator or changing FountainStore publication authority.
+- **Acceptance proof:** Chapter 129, its native SVG illustration, reading-index entry, and integration counterparts
+  are present and byte-identical; the illustration is script-free, self-contained, reduced-motion aware, XML-valid,
+  and visually legible. Localhost presentation belongs to the integration estate and is not public evidence.
+- **Chapters read:** 07, 08, 18, 92, and 127.
+- **Conflict resolved:** the object governs meaning for this declared representation class; the complete static route
+  remains the payload admitted under Chapter 127, with no runtime compilation or hydration.
+- **Excluded:** renderer implementation, IDL/runtime work, remote publication, and deployment.
+- **Status:** COMPLETE for governance source. The chapter and illustration are synchronized byte-for-byte with the
+  integration copy, XML-valid, script-free, reduced-motion aware, and locally presented by the integration estate.
+  The repository-wide sync checker continues to report older unrelated drift and was not used to overwrite it.
+## Current planned change — Chapter 131 remote SecretStore authorization sessions (2026-09-06)
+
+**Capability:** define and publish the cross-operation authorization-session boundary that lets a trusted phone or
+tablet approve an exact operation while a native local or remote SecretStore provider releases only a short-lived
+credential lease to the admitted host adapter.
+
+**Scope:** Chapter 131, deterministic SVG illustration, reading-index entry, synchronized integration copy, and the
+shared MaintenanceKit contract that Git diff will consume. No raw credential enters chat, MIDI2, Store, logs, or
+screenshots. No local preview is requested; publication remains subject to the guarded deployment gates.
+
+**Claim boundary:** governance contract and implementation plan only until the reusable session instrument and a
+remote approval witness are live-accepted.
+
+**Publication status:** source chapter and illustration are authored and synchronized, but direct deployment is
+blocked before promotion because this checkout has no admitted Swift governance-site generator and the retained site
+snapshot has no Chapter 131 route. No public publication claim is made.
+
+## Current governance slice — Chapter 133 Csound AUv3 instrument boundary (2026-09-08)
+
+- **Capability:** define the Csound-as-AUv3 instrument boundary: AUM as a named MIDI 1.0 host edge, a host-clocked
+  render-safe Csound seam, and a later explicit MIDI2 adapter without claiming that any of those host/runtime facts
+  are already accepted.
+- **Chapters read:** 07 and 08 (bounded work and independent evidence); 81 (MIDI2 as the governed runtime boundary);
+  93 (instrument creation and promotion); 132 (AUv3 estate instrument and AUM demo-host boundary, verified against
+  the live governance index and chapter).
+- **What they forbid here:** treating an AUv3 API or AUM connection as MIDI2 proof, calling actors or Csound
+  compilation from the render callback, putting Store/network/model work in real time, or publishing a host demo as
+  a released instrument.
+- **Repository truth:** `swift-csound` HEAD `324d9ed` has the actor/C API backend and a future AUv3 direction;
+  `Teatro` HEAD `2da76dc` has a non-AUv3 Csound sampler; `midi2` HEAD `73f21fc` has a separate AUv3 bridge sample;
+  no repository currently proves Csound inside an iPadOS AUv3 hosted by AUM.
+- **Acceptance proof:** Chapter 133, its deterministic SVG illustration, both reading-index entries, and this record
+  exist; source and integration chapter/illustration copies are byte-identical; Apple/Csound links are direct and
+  relative links plus `git diff --check` pass. The chapter remains `DESIGNED — NOT HOST-ACCEPTED`; no native AUv3,
+  AUM, Store, or public deployment claim is made.
+- **Excluded, and why:** native AUv3 implementation, Csound artifact packaging, AUM hardware acceptance, MIDI2
+  adapter work, social/site snapshot regeneration, Store publication, and deployment require their own bounded
+  implementation and evidence cohorts. The retained site snapshot is generated output and its admitted Swift
+  generator is not present.
