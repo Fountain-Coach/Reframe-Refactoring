@@ -2138,9 +2138,16 @@ snapshot has no Chapter 131 route. No public publication claim is made.
   no repository currently proves Csound inside an iPadOS AUv3 hosted by AUM.
 - **Acceptance proof:** Chapter 133, its deterministic SVG illustration, both reading-index entries, and this record
   exist; source and integration chapter/illustration copies are byte-identical; Apple/Csound links are direct and
-  relative links plus `git diff --check` pass. The chapter remains `DESIGNED — NOT HOST-ACCEPTED`; no native AUv3,
-  AUM, Store, or public deployment claim is made.
+  relative links plus `git diff --check` pass. The chapter remains `DESIGNED — NOT HOST-ACCEPTED`; publication is
+  governance projection only and does not claim native AUv3, AUM, MIDI2, or release acceptance.
+- **Publication evidence (2026-09-08):** Native `ReframeEstatePreview` admitted the selected estate into a fresh
+  explicit Store with revision `chapter-133-8c8d5a1` and receipt `ch133-estate-promotion`. The route-scoped
+  `estate.publication.sync` operation completed for `governance.fountain.coach/chapters/133-csound-auv3-instrument-boundary`
+  from source `Fountain-Coach/Reframe-Refactoring@833246a6efcb8a0d0088181c5105669b861d734a` and integration
+  governance revision `ae0616725db5e7a522c4f2d0a4e7502f5edb241`; the typed receipt recorded 8 transferred files,
+  remote manifest/read-back, atomic domain state, DNS/HTTPS verification, and content digest
+  `sha256:3976f1165990120b17f971a736dd2adfd127c6bedc9d9fd33302378debe25d95`. Public HTML returned HTTP 200 with
+  ETag `sha256:defc76b8f3cb5922d0d524bd4989b2c3606cb720a43c05f546a53f008fe0d52e`.
 - **Excluded, and why:** native AUv3 implementation, Csound artifact packaging, AUM hardware acceptance, MIDI2
-  adapter work, social/site snapshot regeneration, Store publication, and deployment require their own bounded
-  implementation and evidence cohorts. The retained site snapshot is generated output and its admitted Swift
-  generator is not present.
+  adapter work, and release evidence require their own bounded implementation cohorts. Unrelated generated `site/`
+  snapshot drift remains preserved in the source repository stash and was not published.
