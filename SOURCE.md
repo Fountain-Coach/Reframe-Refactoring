@@ -6,7 +6,8 @@
   sessions, and the Csound AUv3 instrument boundary, with their deterministic principal illustrations and index/
   planning records.
 - **Direction:** publication source → integration copy; the integration counterpart is committed at
-  `Fountain-Coach/midi2-gpu-fabric@d6a4d74f` for Chapter 133 and its prior synchronized cohort.
+  `Fountain-Coach/midi2-gpu-fabric@079bffe1` for the synchronized cohort, with the original Chapter 133 content
+  commit at `d6a4d74f`.
 - **Claim boundary:** these are reviewed governance and publication-source records. Csound AUv3, AUM hosting,
   MIDI2 adapter behavior, Store promotion, and public runtime acceptance remain separate evidence gates.
 - **Preserved state:** unrelated generated `site/` snapshot drift was stashed locally as
