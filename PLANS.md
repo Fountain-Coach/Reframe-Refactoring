@@ -2181,3 +2181,14 @@ snapshot has no Chapter 131 route. No public publication claim is made.
   path. Those require a later bounded scenario and acceptance proof.
 - **Reciprocal integration copy:**
   `midi2-gpu-fabric/apps/modernization-studio/docs/reframe-grounding-first-refactor/146-local-fountainstore-remote-caddy-production-estate.md`.
+## Chapter 147 — local route materialization exposures (2026-09-20)
+
+- **Capability:** govern the existing local EstatePublisher draft lifecycle without adding a duplicate CRUD or REST
+  authority.
+- **Decision:** Chapter 147 names `estate.preview.draft-refresh` and `estate.preview.draft-check-in` as the existing
+  typed local exposures. One native route patch updates an existing route or creates an absent route; FountainStoreHTTP
+  remains read-only and remote publication remains separate.
+- **Excluded:** new CLI operations, OpenAPI, remote publication, and route deletion. The existing operations require
+  focused acceptance before further exposure changes.
+- **Reciprocal integration copy:**
+  `midi2-gpu-fabric/apps/modernization-studio/docs/reframe-grounding-first-refactor/147-local-route-materialization-estatepublisher-preview.md`.

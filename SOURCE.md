@@ -1053,3 +1053,11 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - **Counterpart:** `Fountain-Coach/midi2-gpu-fabric@2373ce65` (Chapter 146 integration copy and history-first record).
 - **Claim boundary:** governance only. The FCIS-KIT Caddy capability, remote mutation, DNS/TLS changes, migration, and
   retirement of the Store-native profile remain unestablished.
+
+# Current targeted synchronization — Chapter 147 local route materialization (2026-09-20)
+
+- **Change:** govern the existing typed local draft-refresh and draft-check-in exposures; no new CRUD or REST authority.
+- **Direction:** publication → integration, targeted to Chapter 147 and its illustration/index entry.
+- **Counterpart:** `Fountain-Coach/midi2-gpu-fabric`; reciprocal commits are recorded after validation.
+- **Claim boundary:** governance and existing catalog inspection only; focused route create/update acceptance remains
+  unestablished.
