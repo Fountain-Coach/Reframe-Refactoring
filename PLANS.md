@@ -1,3 +1,20 @@
+## FCIS mechanical constraint term (2026-09-20)
+
+**Capability:** integrate “mechanical constraint” as a normative FCIS contract term.
+
+**Chapters read:** 07 and 08 (planning, bounded claims, and acceptance); 91 (FCIS-KIT Instrument Store capability
+plane); 130 (scenario identity, executable predicates, and terminal proof).
+
+**Rule added:** a mechanical constraint is typed, executable, evaluated by a named authority, refuses in a typed
+bounded state when unmet, and requires terminal evidence; no agent or runtime path may invent, widen, reinterpret, or
+bypass it.
+
+**Status boundary:** the canonical chapter and synchronized integration copy establish governance only. Complete
+enforcement across every existing mutator remains unestablished and requires a separate capability proof.
+
+**History-first record:** integration counterpart
+`docs/history-first/fcis-mechanical-constraint-term.md`.
+
 ## Current delivery slice — Chapters 127–128 governed estate publication (2026-09-04)
 
 **Capability:** publish Chapters 127 and 128 as bounded governance routes under the reviewed Personal Pointer estate

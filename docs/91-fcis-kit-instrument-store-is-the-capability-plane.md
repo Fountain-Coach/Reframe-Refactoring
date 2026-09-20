@@ -33,6 +33,31 @@ No layer silently replaces another:
 - independent scenario and security witnesses establish acceptance; and
 - release authority promotes a named build.
 
+## Mechanical constraints are FCIS contract terms
+
+A **mechanical constraint** is an FCIS-declared condition that is represented in the executable contract and enforced
+by the owning kit or host adapter. It is what makes a governed operation binding on the runtime and on the agent
+acting through that runtime; it is not a prose instruction, a prompt convention, a screenshot, a remembered procedure,
+or an inferred boundary.
+
+Every mechanical constraint MUST identify:
+
+- its typed FCIS/MIDI2 identity and contract version;
+- the executable admission or precondition predicate;
+- the named authority that evaluates it;
+- the typed refusal or bounded-stop state when it is not satisfied; and
+- the terminal evidence required before success or publication may be claimed.
+
+The constraint applies to every admitted mutation path for that capability. An agent, scenario runner, instrument, or
+host adapter MUST NOT create, widen, reinterpret, or bypass it. If the required constraint is not admitted or cannot
+be evaluated, the operation stops as unestablished; it does not acquire a substitute prompt, CLI flag, JSON document,
+human ceremony, or parallel authority. A scenario declaration or governance paragraph alone therefore does not make
+a constraint mechanical: the owning runtime path must enforce the declared predicate and expose its refusal and
+terminal evidence.
+
+This term is a standard FCIS contract property. It strengthens the existing MIDI2, FCIS-KIT, Reframe, Store, AX,
+scenario, and release boundaries; it does not create a second authority.
+
 ## Instrument, not application
 
 A conventional application store distributes complete applications. The FCIS-KIT Instrument Store distributes
@@ -178,8 +203,9 @@ Stop rather than build, admit, or publish when:
 ## Governing sentence
 
 The FCIS-KIT Instrument Store distributes governed capabilities, not opaque applications: Reframe owns mediation and
-acceptance, MIDI2 exposes the operational contract, scenarios define what must happen, FountainStore and independent
-witnesses establish what did happen, and only the owning release authority may promote an instrument for reuse.
+acceptance, MIDI2 exposes the operational contract, scenarios define what must happen, FCIS mechanical constraints
+make admitted preconditions and refusal paths executable, FountainStore and independent witnesses establish what did
+happen, and only the owning release authority may promote an instrument for reuse.
 [Chapter 103](103-fcis-kit-semantic-factory-and-wired-instrument-event-stream.md) applies this capability-plane rule
 to a composed Semantic Factory and its monitored event stream. [Chapter 108](108-reframe-is-a-swift-native-cross-platform-runtime.md)
 extends the same plane across portable Reframe runtime products and platform hosts.
