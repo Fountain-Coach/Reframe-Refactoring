@@ -1034,3 +1034,13 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - **Local evidence:** the integration estate's native FountainStore preview passed 194 routes, 388 desktop/mobile
   captures, and 49 cross-identity navigation transitions with zero failures.
 - **Claim boundary:** governance and local presentation only; no renderer implementation or public deployment.
+
+# Current targeted synchronization — FCIS mechanical constraint term (2026-09-20)
+
+- **Change:** define “mechanical constraint” as a normative FCIS contract property in Chapter 91 and record its
+  typed predicate, named evaluator, bounded refusal, terminal evidence, and no-bypass rule.
+- **Direction:** publication → integration; targeted to Chapter 91 and the corresponding planning/proof records.
+- **Publication content commit:** `Fountain-Coach/Reframe-Refactoring@58946dd`.
+- **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@c1e6ca76`.
+- **Claim boundary:** governance term and synchronized source copy only; complete enforcement across every existing
+  runtime mutator remains unestablished and requires a separate capability proof.
