@@ -26,7 +26,7 @@ No layer silently replaces another:
 
 - the MIDI2 IDL defines the operation and lifecycle contract;
 - FCIS-KIT defines the reusable instrument package boundary;
-- Reframe mediates intention, permissions, project state, and host authority;
+- Reframe presents intention and observes typed kit state; it does not mediate or execute the capability operation;
 - the instrument owns its declared execution and reports its lifecycle;
 - FountainStore proves durable effects and receipts;
 - AX proves the user-facing surface;
@@ -36,7 +36,7 @@ No layer silently replaces another:
 ## Mechanical constraints are FCIS contract terms
 
 A [**mechanical constraint**](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-KIT-Standard.md#fcis-kit-14-mechanical-constraints) is an FCIS-declared condition that is represented in the executable contract and enforced
-by the owning kit or host adapter. It is what makes a governed operation binding on the runtime and on the agent
+only by the owning kit. It is what makes a governed operation binding on the runtime and on the agent
 acting through that runtime; it is not a prose instruction, a prompt convention, a screenshot, a remembered procedure,
 or an inferred boundary.
 
@@ -48,14 +48,15 @@ Every mechanical constraint MUST identify:
 - the typed refusal or bounded-stop state when it is not satisfied; and
 - the terminal evidence required before success or publication may be claimed.
 
-The constraint applies to every admitted mutation path for that capability. An agent, scenario runner, instrument, or
-host adapter MUST NOT create, widen, reinterpret, or bypass it. If the required constraint is not admitted or cannot
+The constraint applies to every admitted mutation path for that capability. An agent, scenario runner, instrument,
+consumer, or host adapter MUST NOT create, widen, reinterpret, or bypass it. Under FCIS-KIT-15, only the owning kit
+may enforce the capability operation; a host adapter is not an admissible execution authority. If the required constraint is not admitted or cannot
 be evaluated, the operation stops as unestablished; it does not acquire a substitute prompt, CLI flag, JSON document,
 human ceremony, or parallel authority. A scenario declaration or governance paragraph alone therefore does not make
 a constraint mechanical: the owning runtime path must enforce the declared predicate and expose its refusal and
 terminal evidence.
 
-This term is the repository-level application of [FCIS-KIT-14](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-KIT-Standard.md#fcis-kit-14-mechanical-constraints), the normative org-level FCIS contract property. It strengthens the existing MIDI2, FCIS-KIT, Reframe, Store, AX,
+This term is the repository-level application of [FCIS-KIT-14 and FCIS-KIT-15](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-KIT-Standard.md#fcis-kit-14-mechanical-constraints), the normative org-level FCIS contract property. It strengthens the existing MIDI2, FCIS-KIT, Reframe, Store, AX,
 scenario, and release boundaries; it does not create a second authority.
 
 ## Instrument, not application
@@ -80,18 +81,19 @@ to reason about:
 This list is an instrument admission contract, not a census of instruments. The current instrument registry remains an
 implementation authority and must be queried rather than copied into this chapter.
 
-## Reframe remains the host authority
+## Reframe remains the presentation host
 
 Reframe is not merely a client of the Store. It is the environment in which capabilities become useful. The writer,
 developer, composer, or operator enters through Reframe and its Copilot. A reasoning worker may select and compose
 admitted instruments, but neither the model nor an individual instrument owns product authority.
 
-Reframe remains responsible for:
+Reframe remains responsible for presentation and observation, while the owning kit remains responsible for executable
+capability authority. Reframe remains responsible for:
 
-- mediating intention before execution;
+- presenting the mediated request to the owning kit without changing its contract;
 - resolving capability identity and admission;
-- applying permissions, lane, cost, privacy, and consent policy;
-- binding work to a project and FountainStore;
+- displaying kit-declared permissions, lane, cost, privacy, and consent requirements;
+- displaying the kit's Store binding and receipt;
 - exposing state through MIDI2 Monitor and AX; and
 - deciding whether the resulting evidence supports live acceptance or release.
 

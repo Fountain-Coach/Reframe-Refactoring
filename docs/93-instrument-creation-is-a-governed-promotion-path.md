@@ -75,7 +75,7 @@ The named skill MUST perform these phases in order. It may delegate individual c
 
 ### 1. Resolve governance and plan the slice
 
-Read the task-specific governance chapters before editing. Record the scope, authorities, risks, exclusions, and validation plan in `PLANS.md`. Resolve whether the work is a new instrument, a revision, a kit extraction, a host adapter, a catalog projection, or a release-only change.
+Read the task-specific governance chapters before editing. Record the scope, authorities, risks, exclusions, and validation plan in `PLANS.md`. Resolve whether the work is a new instrument, a revision, a kit extraction, a catalog projection, or a release-only change. Host adapters are not an admissible capability boundary under FCIS-KIT-15.
 
 The skill must stop if the proposed boundary conflicts with the MIDI2 IDL, host authority, publication policy, or an existing released kit without an explicit migration decision.
 
@@ -93,7 +93,10 @@ Author the scenario beside the implementation and generate its checked projectio
 
 The FCIS-KIT repository owns the reusable contract, transport seam, lifecycle model, and instrument-local implementation. It must not absorb Reframe product policy, private Store schemas, UI ownership, credentials, manuscript data, or deployment secrets.
 
-The host adapter owns mediation, permission, account, project, Store, AX, and publication decisions. The instrument reports what it did; it does not decide that its own report is accepted.
+The owning kit owns capability execution, mechanical constraints, permission/admission predicates, Store effects,
+publication decisions, lifecycle, refusal, and terminal evidence. A host or CLI may invoke and display the typed kit
+contract, but it is not an execution authority and cannot provide a fallback. The instrument reports what it did; it
+does not decide that its own report is accepted.
 
 ### 5. Build a named, reproducible instrument build
 
