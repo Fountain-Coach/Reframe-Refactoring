@@ -1050,6 +1050,6 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - **Change:** add the named local-FountainStore to remote-Caddy production profile and perspective crosswalk.
 - **Direction:** publication → integration, targeted to Chapter 146 and its illustration/index entry; existing unrelated
   guide drift is not swept into this change.
-- **Counterpart:** `Fountain-Coach/midi2-gpu-fabric`; reciprocal commits are recorded after validation.
+- **Counterpart:** `Fountain-Coach/midi2-gpu-fabric@2373ce65` (Chapter 146 integration copy and history-first record).
 - **Claim boundary:** governance only. The FCIS-KIT Caddy capability, remote mutation, DNS/TLS changes, migration, and
   retirement of the Store-native profile remain unestablished.
