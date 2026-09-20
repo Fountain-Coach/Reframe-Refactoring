@@ -1058,6 +1058,6 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 
 - **Change:** govern the existing typed local draft-refresh and draft-check-in exposures; no new CRUD or REST authority.
 - **Direction:** publication → integration, targeted to Chapter 147 and its illustration/index entry.
-- **Counterpart:** `Fountain-Coach/midi2-gpu-fabric`; reciprocal commits are recorded after validation.
+- **Counterpart:** `Fountain-Coach/midi2-gpu-fabric@386f0f4b` (Chapter 147 integration copy).
 - **Claim boundary:** governance and existing catalog inspection only; focused route create/update acceptance remains
   unestablished.
