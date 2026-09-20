@@ -35,7 +35,7 @@ No layer silently replaces another:
 
 ## Mechanical constraints are FCIS contract terms
 
-A **mechanical constraint** is an FCIS-declared condition that is represented in the executable contract and enforced
+A [**mechanical constraint**](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-KIT-Standard.md#fcis-kit-14-mechanical-constraints) is an FCIS-declared condition that is represented in the executable contract and enforced
 by the owning kit or host adapter. It is what makes a governed operation binding on the runtime and on the agent
 acting through that runtime; it is not a prose instruction, a prompt convention, a screenshot, a remembered procedure,
 or an inferred boundary.
@@ -55,7 +55,7 @@ human ceremony, or parallel authority. A scenario declaration or governance para
 a constraint mechanical: the owning runtime path must enforce the declared predicate and expose its refusal and
 terminal evidence.
 
-This term is a standard FCIS contract property. It strengthens the existing MIDI2, FCIS-KIT, Reframe, Store, AX,
+This term is the repository-level application of [FCIS-KIT-14](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-KIT-Standard.md#fcis-kit-14-mechanical-constraints), the normative org-level FCIS contract property. It strengthens the existing MIDI2, FCIS-KIT, Reframe, Store, AX,
 scenario, and release boundaries; it does not create a second authority.
 
 ## Instrument, not application
