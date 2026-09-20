@@ -2168,3 +2168,16 @@ snapshot has no Chapter 131 route. No public publication claim is made.
 - **Excluded, and why:** native AUv3 implementation, Csound artifact packaging, AUM hardware acceptance, MIDI2
   adapter work, and release evidence require their own bounded implementation cohorts. Unrelated generated `site/`
   snapshot drift remains preserved in the source repository stash and was not published.
+## Chapter 146 — local FountainStore and remote Caddy production profile (2026-09-20)
+
+- **Capability:** establish a named static-production governance profile and crosswalk existing chapters without
+  erasing the current Store-native profile.
+- **Decision:** local FountainStore authors and preflights; EstatePublisher/FCIS-KIT admits and atomically promotes one
+  immutable release; remote Caddy serves it; Reframe observes it. Remote FountainStore is not in this profile's public
+  request path.
+- **Conflict resolution:** Chapter 116 remains authoritative for the explicitly selected Store-native topology. The
+  new Chapter 146 governs the Caddy topology and requires a separate kit-owned implementation proof before migration.
+- **Excluded:** implementing Caddy administration, remote mutation, DNS/TLS changes, or retiring the Store-native
+  path. Those require a later bounded scenario and acceptance proof.
+- **Reciprocal integration copy:**
+  `midi2-gpu-fabric/apps/modernization-studio/docs/reframe-grounding-first-refactor/146-local-fountainstore-remote-caddy-production-estate.md`.

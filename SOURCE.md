@@ -1044,3 +1044,12 @@ Runtime implementation, tests, generated reasoning manifests, and application-sp
 - **Integration content commit:** `Fountain-Coach/midi2-gpu-fabric@c1e6ca76`.
 - **Claim boundary:** governance term and synchronized source copy only; complete enforcement across every existing
   runtime mutator remains unestablished and requires a separate capability proof.
+
+# Current targeted synchronization — Chapter 146 static production profile (2026-09-20)
+
+- **Change:** add the named local-FountainStore to remote-Caddy production profile and perspective crosswalk.
+- **Direction:** publication → integration, targeted to Chapter 146 and its illustration/index entry; existing unrelated
+  guide drift is not swept into this change.
+- **Counterpart:** `Fountain-Coach/midi2-gpu-fabric`; reciprocal commits are recorded after validation.
+- **Claim boundary:** governance only. The FCIS-KIT Caddy capability, remote mutation, DNS/TLS changes, migration, and
+  retirement of the Store-native profile remain unestablished.
