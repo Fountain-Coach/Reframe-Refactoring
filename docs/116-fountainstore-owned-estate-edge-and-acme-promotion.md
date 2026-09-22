@@ -12,7 +12,7 @@ The [Fountain Coach Publication Estate](92-fountain-coach-publication-estate.md)
 
 FountainStore is the estate's **single durable publication-state authority**. The writer's Mac or the admitted local Ubuntu machine may host that authority; moving compute between those local machines does not create another publication authority. A remote public host is an enrolled MIDI2 instrument that receives, validates, activates, serves, and reports an immutable estate projection.
 
-The remote edge does **not** need a second authoritative FountainStore. It may keep the last admitted projection in memory and/or a disposable content-addressed cache so it can continue serving during a temporary authority outage, but it cannot create, edit, promote, or reinterpret publication state while disconnected.
+The remote edge does **not** need a second authoritative FountainStore. Its restart continuity is provided by a distinct subordinate **MIDI2 cache instrument** that durably retains only the last projection already admitted by the edge. That cache instrument may restore and report the admitted revision, but it cannot create, edit, promote, reinterpret, or independently authorize publication state.
 
 ```text
 local FountainStore authority
@@ -24,6 +24,13 @@ local publication / projection instrument
         ▼
 remote edge machine = enrolled MIDI2 instrument
         │ validate → atomically admit → serve
+        │
+        ├── active in-memory projection
+        │
+        └── subordinate MIDI2 cache instrument
+              │ persist last admitted revision only
+              │ report revision / digest / predecessor
+              └── restore exact cached projection after restart
         ▼
 HTTPS projection
         ├── fountain.coach
@@ -109,6 +116,39 @@ If the local authority is temporarily unreachable, the edge MAY continue serving
 
 The machine identity is a MIDI2 instrument identity. MIDI-CI Discovery and Property Exchange expose the bounded capabilities and revision/protocol metadata needed to decide whether it may participate. HTTP health endpoints, SSH reachability, an IP address, or possession of cached files do not enroll the machine and do not establish publication authority.
 
+## Durable subordinate cache instrument
+
+Restart continuity is owned by a distinct MIDI2 instrument, not by an opaque filesystem cache and not by a second FountainStore.
+
+The cache instrument:
+
+- has its own stable instrument identity, MIDI-CI Discovery descriptor, Property Exchange state resource, enrollment binding, and revocation path;
+- is subordinate to exactly one enrolled edge instrument;
+- may persist only a projection that the parent edge has already admitted successfully;
+- records the admitted revision, predecessor, source revision, content digest, file count, and immutable files needed to restore that exact projection;
+- answers authenticated MIDI2 state queries about the cached revision;
+- may restore the parent edge after process or machine restart only after validating its own cache identity and content digests; and
+- MUST NOT author, merge, promote, reinterpret, or independently advance publication state.
+
+Cache replacement MUST be atomic on the host filesystem. The canonical cache file remains either the previous complete revision or the new complete revision; a partial temporary file cannot become serving state.
+
+Publication admission and cache persistence form one acceptance boundary. If persistence of a newly admitted revision fails, the edge MUST roll back its active in-memory projection to the previously admitted revision before returning failure. An acknowledged state of “active but not durable” is forbidden.
+
+A restart therefore follows this bounded sequence:
+
+```text
+cache instrument starts / remains available
+  → identifies itself by MIDI-CI
+  → reports cached revision + digest + predecessor
+edge instrument starts
+  → loads and validates the cache instrument's last-admitted projection
+  → restores exactly that projection into memory
+  → emits restore evidence
+  → becomes READY
+```
+
+The cache's durable bytes are availability state, not publication authority. The remote FountainStore publication snapshot MUST remain absent; possession of the cached projection does not grant mutation or promotion rights.
+
 ## ACME, TLS, and external DNS
 
 ACME is a separate but connected production operation. [Chapter 96](96-swiftacmekit-is-a-provider-neutral-certificate-automation-boundary.md) owns the provider-neutral certificate lifecycle; [Chapter 94](94-credentialed-infrastructure-operations-and-provider-adapters.md) owns credential custody and provider-specific authorization.
@@ -138,9 +178,9 @@ Acceptance requires, at minimum:
 2. MIDI-CI discovery of the exact staging/public edge machine instrument and its projection capability;
 3. a correlated projection transfer and admission receipt bound to that instrument identity;
 4. an atomic edge projection that serves every admitted domain in the scenario without per-request Store authority reads;
-5. continuity proof that the previous projection remains active until replacement validation succeeds;
+5. continuity proof that the previous projection remains active until replacement validation succeeds, and that cache-persistence failure rolls the edge back before acknowledgement;
 6. rejection of unknown hosts, conflicting revisions, wrong predecessors, and wrong instrument identities;
-7. retained rollback state and a proven rollback operation;
+7. a separately enrolled subordinate MIDI2 cache instrument whose authenticated state query reports the admitted revision/digest/predecessor, plus a restart proof that restores that exact revision while the remote Store publication snapshot remains absent;
 8. certificate identity and TLS evidence for the active host set;
 9. external DNS evidence where a public route is claimed; and
 10. Semantic Browser, AX, visual, edge, MIDI2, and FountainStore witnesses that agree about the same source revision.
@@ -164,9 +204,9 @@ No one row proves another.
 
 1. Exactly one declared local FountainStore MUST own the durable estate publication manifest for a publication lineage.
 2. A remote staging or public machine MUST participate as an enrolled MIDI2 instrument and MUST NOT silently become a second Store authority.
-3. Edge projection activation MUST be complete, digest-verified, predecessor-aware, atomic, and rollback-capable.
+3. Edge projection activation MUST be complete, digest-verified, predecessor-aware, atomic, rollback-capable, and coupled to durable cache persistence before acknowledgement.
 4. Candidate transfer MUST leave the currently active edge projection untouched until replacement admission succeeds.
-5. The last admitted projection MAY remain servable while the local authority is unreachable; mutation and promotion MUST fail closed.
+5. The last admitted projection MAY remain servable while the local authority is unreachable. Restart continuity MUST come from a separately enrolled subordinate MIDI2 cache instrument; mutation and promotion MUST fail closed.
 6. Host-aware routing MUST select only an admitted manifest record and MUST reject unknown or conflicting hosts.
 7. MIDI-CI identity/capability evidence and FountainStore publication evidence MUST remain distinct and correlated.
 8. Credentials remain in SecretStore/host adapters; MIDI2 messages and projection receipts MUST be redacted capability/evidence objects, not secret containers.
@@ -174,8 +214,10 @@ No one row proves another.
 10. A chapter, page, or route publication MUST remain host-and-path scoped unless whole-estate intent is explicit.
 11. HTTP, SSH, filesystem presence, or process reachability MUST NOT establish enrollment or publication authority.
 12. Local, staging, and published projections MUST report their environment and source revision without inventing a second semantic model.
+13. A cache instrument MUST persist only already-admitted projection state, MUST replace its canonical cache atomically, and MUST never expose publication-authority operations.
+14. If cache persistence fails after tentative in-memory admission, the edge MUST restore the prior projection before returning failure.
 
 ## Governing sentence
 
-The Fountain Coach estate has one durable local FountainStore publication authority; every remote serving machine joins as a MIDI2 instrument, admits an immutable verified projection, and serves that projection without becoming another Store, while TLS, DNS, rollback, and public verification remain explicit evidenced operations.
+The Fountain Coach estate has one durable local FountainStore publication authority; every remote serving machine joins as a MIDI2 edge instrument and may own a separately enrolled subordinate MIDI2 cache instrument that durably restores only the last admitted projection, while neither edge nor cache becomes another Store authority and TLS, DNS, rollback, and public verification remain explicit evidenced operations.
 
