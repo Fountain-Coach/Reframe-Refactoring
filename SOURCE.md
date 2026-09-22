@@ -1,5 +1,13 @@
 # Source and Synchronization Contract
 
+## Current targeted synchronization — local Store authority and MIDI2 edge instruments (2026-09-22)
+
+- **Change:** amend Chapters 97 and 116 so every managed remote machine joins as a MIDI2 instrument while one local FountainStore remains the durable estate publication authority; remote staging/public hosts admit immutable projections rather than becoming secondary Stores.
+- **Direction:** integration → publication through the targeted Chapter 97/116 copy.
+- **Integration counterpart:** `Fountain-Coach/midi2-gpu-fabric#46`.
+- **Implementation evidence:** `Fountain-Coach/midi2#177`, `Fountain-Coach/Fountain-Store#52`, and `Fountain-Coach/Fountain-Store#53` establish cross-machine MIDI-CI discovery, safe compaction, and admitted in-memory estate serving respectively.
+- **Claim boundary:** governance and local implementation evidence only. Distributed projection transport, remote instrument admission, live staging/public cutover, TLS/DNS mutation, and production acceptance remain separate gates.
+
 ## Current targeted synchronization — Chapters 130–133 governance verdicts (2026-09-08)
 
 - **Change:** commit the final governance verdicts for human/machine scenario identity, remote SecretStore approval
