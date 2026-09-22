@@ -1,5 +1,13 @@
 # Source and Synchronization Contract
 
+## Current targeted synchronization — subordinate MIDI2 estate cache instrument (2026-09-22)
+
+- **Change:** amend Chapter 116 so restart continuity is owned by a separately enrolled subordinate MIDI2 cache instrument, not an opaque filesystem cache or second FountainStore authority.
+- **Direction:** integration → publication from `Fountain-Coach/midi2-gpu-fabric#52`.
+- **Implementation evidence:** Fountain-Store `v0.4.18@3c9d1d92` provides the cache MIDI-CI identity/state resource, atomic POSIX cache replacement, rollback on persistence failure, and restore path. Reframe pins that release through `Fountain-Coach/midi2-gpu-fabric#51`.
+- **Live acceptance:** edge instrument `fountaincoach.estate-edge.ubuntu-staging-01` on UDP 5006 and cache instrument `fountaincoach.estate-edge-cache.ubuntu-staging-01` on UDP 5007 both authenticated; revision `edge-live-20260922-02` restored after edge restart with predecessor/digest evidence while the remote Store publication snapshot remained absent.
+- **Claim boundary:** staging continuity is proven on the enrolled Ubuntu machine. Public HTTPS/TLS/DNS cutover and production-domain acceptance remain separate gates.
+
 ## Current targeted synchronization — local Store authority and MIDI2 edge instruments (2026-09-22)
 
 - **Change:** amend Chapters 97 and 116 so every managed remote machine joins as a MIDI2 instrument while one local FountainStore remains the durable estate publication authority; remote staging/public hosts admit immutable projections rather than becoming secondary Stores.
