@@ -7,27 +7,16 @@
 ## The decision
 
 Fountain Coach separates initial host bootstrap from ordinary host operation. A new or rebuilt Linux host may be
-initialized by its infrastructure provider through a first-boot mechanism such as cloud-init. After bootstrap, the
-machine joins the Fountain Coach operational plane as a **MIDI2 instrument**. MIDI-CI discovers the peer and its
-declared capabilities; enrollment binds that negotiated peer to a stable host identity, permitted scope, revocation
-authority, and credential custody.
-
-A MIDI-CI MUID is session/protocol identity, not by itself durable host identity. Durable enrollment therefore binds
-the exact machine identity and release/fingerprint evidence exposed through the governed instrument contract; a new
-MUID after restart or conflict does not silently create a new trusted host.
+initialized by its infrastructure provider through a first-boot mechanism such as cloud-init. The resulting host
+agent then enrolls with Fountain Coach and exposes a narrowly scoped, authenticated operation surface.
 
 The normal writer-facing path is:
 
 ```text
-provider provisioning API → first-boot bootstrap
-→ MIDI-CI discovery / capability declaration
-→ stable host identity verification → one-time enrollment
-→ scoped host credential in SecretStore
-→ governed MIDI2 instrument operation → FountainStore receipt
+provider provisioning API → first-boot bootstrap → host identity verification
+→ one-time enrollment → scoped host credential in SecretStore
+→ HTTPS host-agent operation → FountainStore receipt
 ```
-
-HTTPS may remain a negotiated transport projection for bulk artifacts, health, or provider-specific handoff, but it
-does not define the machine's operational identity and it is not a parallel command authority.
 
 SSH may remain an owner-only emergency or recovery channel, but it is not the normal Reframe operation path and is
 never required of a writer. A provider API token is not a substitute for the host-agent credential: the provider
@@ -54,17 +43,16 @@ host APIs, automatic Store replacement, or the placement of long-lived credentia
 | --- | --- |
 | Infrastructure creation and network attachment | Named provider adapter |
 | First-boot delivery | Provider launch template, image, or cloud-init boundary |
-| Host identity and agent lifecycle | Enrolled MIDI2 machine instrument; host agent is its platform adapter |
+| Host identity and agent lifecycle | FountainStore host agent |
 | Enrollment authority | Fountain Coach enrollment service and owner-controlled registry |
 | Credential custody | SecretStore / Keychain-backed host adapter |
-| Installation and rollback | Enrolled MIDI2 machine instrument plus named release authority |
+| Installation and rollback | Enrolled host agent plus named release authority |
 | Writer explanation and confirmation | Reframe Copilot |
 | Durable operation and enrollment evidence | FountainStore |
 | TLS and public ingress | Host/TLS boundary governed separately by Chapters 94–96 |
 
-No provider adapter may silently become the enrollment authority. No host may enroll itself merely because it can
-reach an endpoint or answer MIDI-CI Discovery. Discovery establishes a peer; enrollment establishes trust. No local
-instrument may infer enrollment from a successful process, UDP, RTP-MIDI2, HTTP, or SSH connection.
+No provider adapter may silently become the enrollment authority. No host agent may enroll itself merely because it can
+reach an endpoint. No local instrument may infer enrollment from a successful process connection.
 
 ## Bootstrap is not enrollment
 
@@ -133,9 +121,9 @@ Enrollment is terminal only when the registry and FountainStore contain matching
 
 Reachability, a provider API success, a cloud-init completion marker, or a live health endpoint is not enrollment proof.
 
-## Enrolled machine-instrument operation contract
+## Host-agent operation contract
 
-After enrollment, Reframe addresses the machine through its named MIDI2 instrument contract for bounded operations such as:
+After enrollment, Reframe uses the named host-agent contract for bounded operations such as:
 
 ```text
 host.status
@@ -149,10 +137,8 @@ digest, scope, idempotency key, expiry, and evidence requirement. Credentials ar
 are never request fields. The host agent verifies the signed artifact and target before mutation, stages into a
 non-active location, reports authenticated readiness, and retains the previous release for rollback.
 
-The instrument boundary MUST reject replayed, expired, wrong-target, wrong-scope, unsigned, or digest-mismatched
-requests. A negotiated HTTPS endpoint may carry a bounded payload, but it remains a projection of the same instrument
-operation and correlation identity. A provider API response, HTTP response, or bare MIDI-CI discovery cannot stand in
-for the terminal instrument receipt.
+The host API MUST reject replayed, expired, wrong-target, wrong-scope, unsigned, or digest-mismatched requests. A
+provider API response cannot stand in for the host-agent receipt.
 
 ## Copilot and SecretStore surface
 
@@ -190,6 +176,6 @@ process listing alone cannot establish enrollment, readiness, release activation
 
 ## Governing sentence
 
-**A machine becomes a managed Fountain Coach host through signed bootstrap, MIDI-CI discovery, and explicit scoped
-enrollment; after that transition it participates as a revocable MIDI2 instrument whose platform adapter and
-SecretStore perform bounded operations—never as a writer-managed SSH session or an implicitly trusted endpoint.**
+**A host becomes a managed Fountain Coach host through a signed, provider-delivered bootstrap followed by an explicit,
+scoped, revocable enrollment; after that transition, Copilot uses the enrolled host-agent contract and SecretStore—not
+writer-managed SSH—to operate FountainStore.**

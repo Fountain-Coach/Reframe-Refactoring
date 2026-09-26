@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">EstatePublisher publication authority flow</title>
+  <desc id="description">The local FountainStore is compared by EstatePublisher with the remote FountainStore. The resulting typed publication state is reflected by every estate domain and observed by Reframe's Semantic Browser and Copilot. Reframe mediates the next governed action but does not publish.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbfaf6"/>
+      <stop offset="1" stop-color="#f0eee7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#182b45" flood-opacity=".13"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M1 1 7 4 1 7Z" fill="#c87828"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M1 1 7 4 1 7Z" fill="#24537a"/>
+    </marker>
+    <style>
+      .eyebrow { font: 700 14px system-ui, sans-serif; letter-spacing: 3px; fill: #647080; }
+      .heading { font: 700 22px system-ui, sans-serif; fill: #172d4c; }
+      .heading.compact { font-size: 18px; letter-spacing: -.2px; }
+      .body { font: 500 16px system-ui, sans-serif; fill: #2e4054; }
+      .small { font: 500 14px system-ui, sans-serif; fill: #5b6876; }
+      .connector { fill: none; stroke: #c87828; stroke-width: 4; marker-end: url(#arrow); }
+      .observation { fill: none; stroke: #24537a; stroke-width: 3; stroke-dasharray: 10 10; marker-end: url(#arrow-blue); }
+      .dark .eyebrow { fill: #dce8f2; }
+      .dark .heading { fill: #ffffff; }
+      .dark .body { fill: #e4edf4; }
+      .flow { stroke-dasharray: 12 12; animation: travel 2.4s linear infinite; }
+      @keyframes travel { to { stroke-dashoffset: -48; } }
+      @media (prefers-reduced-motion: reduce) { .flow { animation: none; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="620" rx="28" fill="url(#paper)" stroke="#c9d0d6" stroke-width="2"/>
+  <text x="54" y="58" class="eyebrow">ONE AUTHORITY · ONE STATE · MANY PROJECTIONS</text>
+  <text x="54" y="94" class="heading">The publication state has one owner and two honest directions.</text>
+  <text x="54" y="122" class="small">Orange is publication authority. Blue is observation and governed mediation.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="54" y="178" width="238" height="142" rx="18" fill="#e8f0f6" stroke="#8eafc5" stroke-width="2"/>
+    <text x="78" y="214" class="eyebrow">SOURCE</text>
+    <text x="78" y="248" class="heading compact">Local FountainStore</text>
+    <text x="78" y="278" class="body">authored estate</text>
+    <text x="78" y="302" class="small">explicit local snapshot</text>
+
+    <rect x="350" y="178" width="238" height="142" rx="18" fill="#f6cf83" stroke="#c87828" stroke-width="2"/>
+    <text x="374" y="214" class="eyebrow">AUTHORITY</text>
+    <text x="374" y="248" class="heading">EstatePublisher</text>
+    <text x="374" y="278" class="body">semantic diff</text>
+    <text x="374" y="302" class="small">estate.publication.sync</text>
+
+    <rect x="646" y="178" width="238" height="142" rx="18" fill="#dcecdf" stroke="#79a487" stroke-width="2"/>
+    <text x="670" y="214" class="eyebrow">DESTINATION</text>
+    <text x="670" y="248" class="heading compact">Remote FountainStore</text>
+    <text x="670" y="278" class="body">atomic promotion</text>
+    <text x="670" y="302" class="small">typed read-back receipt</text>
+  </g>
+
+  <path class="connector flow" d="M292 249h58"/>
+  <path class="connector flow" d="M588 249h58"/>
+  <text x="320" y="350" class="small">compare and admit</text>
+  <text x="620" y="350" class="small">promote and verify</text>
+
+  <g class="dark" filter="url(#shadow)">
+    <rect x="350" y="410" width="500" height="116" rx="20" fill="#173e63"/>
+    <text x="382" y="449" class="eyebrow" fill="#dce8f2">SHARED FACT</text>
+    <text x="382" y="484" class="heading" fill="#fff">One typed publication state</text>
+    <text x="382" y="510" class="body" fill="#e4edf4">digest · correlation · session · receipt · sequence</text>
+  </g>
+  <path class="connector flow" d="M765 320v90"/>
+
+  <g filter="url(#shadow)">
+    <rect x="54" y="410" width="238" height="116" rx="18" fill="#fbfaf6" stroke="#b9c2ca" stroke-width="2"/>
+    <text x="78" y="448" class="eyebrow">PROJECTION</text>
+    <text x="78" y="482" class="heading">Every domain logo</text>
+    <text x="78" y="508" class="small">same state, never authority</text>
+
+    <rect x="908" y="410" width="238" height="116" rx="18" fill="#eee5f4" stroke="#9c7caf" stroke-width="2"/>
+    <text x="932" y="448" class="eyebrow">SEMANTIC SURFACE</text>
+    <text x="932" y="482" class="heading compact">Reframe + Copilot</text>
+    <text x="932" y="508" class="small">observe · explain · mediate</text>
+  </g>
+  <path class="observation" d="M350 468H292"/>
+  <path class="observation" d="M850 468h58"/>
+  <text x="54" y="584" class="small">Reframe may mediate the next admitted action; only EstatePublisher changes the remote Store.</text>
+</svg>

@@ -126,4 +126,3 @@ governs the illustration's direct-static publication boundary.
 
 A human name retrieves a scenario, a live declaration explains its fit, Composer sends one typed MIDI2 operation, and
 the owning kit plus FountainStore establish the result without collapsing distinct identities into one opaque label.
-

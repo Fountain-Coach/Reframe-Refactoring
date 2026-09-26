@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Reframe iPad and remote CodexKit as governed MIDI2 peers</title>
+  <desc id="desc">Reframe on iPad establishes a MIDI-CI relationship over RTP-MIDI2 with a CodexKit instrument. CodexKit translates typed MIDI2 operations into the pinned Codex app-server protocol, which reaches an admitted development host. Lifecycle and terminal evidence return through CodexKit to Reframe, while FountainStore remains durable evidence authority.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#315c83"/></marker>
+    <marker id="arrow-gold" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#b66a21"/></marker>
+  </defs>
+  <rect width="1400" height="760" fill="#f7f4ed"/>
+  <rect x="26" y="26" width="1348" height="708" rx="24" fill="none" stroke="#b9c6cf" stroke-width="2"/>
+  <text x="70" y="78" fill="#315c83" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="4">GOVERNANCE 149 · REMOTE CODEX PEER</text>
+  <text x="70" y="118" fill="#20364b" font-family="Arial,sans-serif" font-size="30" font-weight="700">One capability plane. Separate authorities.</text>
+
+  <rect x="70" y="190" width="240" height="190" rx="18" fill="#e5f1fa" stroke="#6c9bc0" stroke-width="2"/>
+  <text x="96" y="228" fill="#315c83" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">FIRST-CLASS HOST</text>
+  <text x="96" y="270" fill="#17324d" font-family="Arial,sans-serif" font-size="25" font-weight="700">Reframe iPad</text>
+  <text x="96" y="305" fill="#334e66" font-family="Arial,sans-serif" font-size="16">human projection</text>
+  <text x="96" y="334" fill="#334e66" font-family="Arial,sans-serif" font-size="16">thread · turn · approval</text>
+  <text x="96" y="363" fill="#334e66" font-family="Arial,sans-serif" font-size="16">disconnect · resume</text>
+
+  <rect x="365" y="165" width="300" height="240" rx="18" fill="#f6cc7b" stroke="#c27524" stroke-width="2"/>
+  <text x="393" y="205" fill="#81430e" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">PEER PLANE</text>
+  <text x="393" y="247" fill="#17324d" font-family="Arial,sans-serif" font-size="24" font-weight="700">MIDI-CI</text>
+  <text x="393" y="278" fill="#334e66" font-family="Arial,sans-serif" font-size="16">identity · profiles</text>
+  <text x="393" y="306" fill="#334e66" font-family="Arial,sans-serif" font-size="16">Property Exchange</text>
+  <line x1="393" y1="326" x2="637" y2="326" stroke="#c27524" stroke-width="2"/>
+  <text x="393" y="355" fill="#17324d" font-family="Arial,sans-serif" font-size="20" font-weight="700">RTP-MIDI2</text>
+  <text x="393" y="383" fill="#334e66" font-family="Arial,sans-serif" font-size="15">typed operations + lifecycle</text>
+
+  <rect x="720" y="190" width="280" height="190" rx="18" fill="#dcefe5" stroke="#6ea887" stroke-width="2"/>
+  <text x="748" y="228" fill="#286445" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">GOVERNED INSTRUMENT</text>
+  <text x="748" y="270" fill="#17324d" font-family="Arial,sans-serif" font-size="26" font-weight="700">CodexKit</text>
+  <text x="748" y="305" fill="#334e66" font-family="Arial,sans-serif" font-size="16">admission · auth</text>
+  <text x="748" y="334" fill="#334e66" font-family="Arial,sans-serif" font-size="16">correlation · lifecycle</text>
+  <text x="748" y="363" fill="#334e66" font-family="Arial,sans-serif" font-size="16">approval · cancellation</text>
+
+  <rect x="1055" y="190" width="265" height="190" rx="18" fill="#eee5f5" stroke="#9a72af" stroke-width="2"/>
+  <text x="1081" y="228" fill="#5b3d6c" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">INTERNAL BACKEND</text>
+  <text x="1081" y="270" fill="#26394d" font-family="Arial,sans-serif" font-size="24" font-weight="700">app-server</text>
+  <text x="1081" y="305" fill="#46596b" font-family="Arial,sans-serif" font-size="16">pinned JSON-RPC</text>
+  <text x="1081" y="334" fill="#46596b" font-family="Arial,sans-serif" font-size="16">runtime + tools</text>
+  <text x="1081" y="363" fill="#46596b" font-family="Arial,sans-serif" font-size="16">not a public plane</text>
+
+  <path d="M310 285H355" fill="none" stroke="#b66a21" stroke-width="5" marker-end="url(#arrow-gold)"/>
+  <path d="M665 285H710" fill="none" stroke="#b66a21" stroke-width="5" marker-end="url(#arrow-gold)"/>
+  <path d="M1000 285H1045" fill="none" stroke="#b66a21" stroke-width="5" marker-end="url(#arrow-gold)"/>
+  <text x="332" y="264" text-anchor="middle" fill="#81430e" font-family="Arial,sans-serif" font-size="13">discover</text>
+  <text x="687" y="264" text-anchor="middle" fill="#81430e" font-family="Arial,sans-serif" font-size="13">invoke</text>
+  <text x="1022" y="264" text-anchor="middle" fill="#81430e" font-family="Arial,sans-serif" font-size="13">translate</text>
+
+  <rect x="260" y="500" width="880" height="120" rx="18" fill="#244f78"/>
+  <text x="700" y="540" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">DURABLE EVIDENCE · NOT STREAM AUTHORITY</text>
+  <text x="700" y="578" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="21" font-weight="700">FountainStore receipt · terminal result · correlation · resume witness</text>
+  <text x="700" y="603" text-anchor="middle" fill="#dcecf7" font-family="Arial,sans-serif" font-size="14">The client may disconnect; durable truth remains with its owning authorities.</text>
+  <path d="M1188 380V485H1040" fill="none" stroke="#315c83" stroke-width="4" stroke-dasharray="10 9" marker-end="url(#arrow-blue)"/>
+  <path d="M360 500V430H190V390" fill="none" stroke="#315c83" stroke-width="4" stroke-dasharray="10 9" marker-end="url(#arrow-blue)"/>
+  <text x="70" y="688" fill="#46596b" font-family="Arial,sans-serif" font-size="16">MIDI-CI establishes the relationship; MIDI2 carries the operation; CodexKit contains app-server semantics; evidence establishes completion.</text>
+</svg>

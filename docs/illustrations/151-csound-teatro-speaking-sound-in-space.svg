@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Csound Teatro semantic grammar from human request to governed evidence</title>
+  <desc id="desc">A provider-independent human request is resolved into a canonical Scenario. Physics, Csound, WebGL and Ear are adapters around that Scenario. MIDI2 carries governed lifecycle while FountainStore owns durable evidence.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#315c83"/></marker>
+    <marker id="arrow-gold" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#b66a21"/></marker>
+  </defs>
+  <rect width="1400" height="760" fill="#f7f4ed"/>
+  <rect x="26" y="26" width="1348" height="708" rx="24" fill="none" stroke="#b9c6cf" stroke-width="2"/>
+  <text x="70" y="78" fill="#315c83" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="4">GOVERNANCE 151 · CSOUND TEATRO</text>
+  <text x="70" y="118" fill="#20364b" font-family="Arial,sans-serif" font-size="30" font-weight="700">One semantic grammar. Engines realize it; evidence verifies it.</text>
+
+  <rect x="70" y="190" width="235" height="190" rx="18" fill="#e5f1fa" stroke="#6c9bc0" stroke-width="2"/>
+  <text x="96" y="228" fill="#315c83" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">HUMAN INTENT</text>
+  <text x="96" y="270" fill="#17324d" font-family="Arial,sans-serif" font-size="24" font-weight="700">this ball</text>
+  <text x="96" y="302" fill="#17324d" font-family="Arial,sans-serif" font-size="24" font-weight="700">excites that plate</text>
+  <text x="96" y="342" fill="#334e66" font-family="Arial,sans-serif" font-size="15">deterministic by default</text>
+  <text x="96" y="366" fill="#334e66" font-family="Arial,sans-serif" font-size="15">models optional</text>
+
+  <rect x="360" y="165" width="320" height="240" rx="18" fill="#f6cc7b" stroke="#c27524" stroke-width="2"/>
+  <text x="390" y="205" fill="#81430e" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">CANONICAL AUTHORITY</text>
+  <text x="390" y="248" fill="#17324d" font-family="Arial,sans-serif" font-size="26" font-weight="700">Csound Teatro</text>
+  <text x="390" y="280" fill="#334e66" font-family="Arial,sans-serif" font-size="16">finite vocabulary · stable identity</text>
+  <text x="390" y="310" fill="#334e66" font-family="Arial,sans-serif" font-size="16">relations · events · mappings</text>
+  <line x1="390" y1="330" x2="650" y2="330" stroke="#c27524" stroke-width="2"/>
+  <text x="390" y="360" fill="#17324d" font-family="Arial,sans-serif" font-size="20" font-weight="700">Admitted Scenario</text>
+  <text x="390" y="385" fill="#334e66" font-family="Arial,sans-serif" font-size="14">GIVEN · TRANSFORM · CONSTRAINTS · EXPECT · VERIFY</text>
+
+  <rect x="740" y="165" width="590" height="240" rx="18" fill="#dcefe5" stroke="#6ea887" stroke-width="2"/>
+  <text x="770" y="205" fill="#286445" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">ADAPTERS · NOT SEMANTIC AUTHORITY</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="775" y="235" width="120" height="72" rx="12" fill="#fff" stroke="#8db39e"/><text x="835" y="278" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">Physics</text>
+    <rect x="915" y="235" width="120" height="72" rx="12" fill="#fff" stroke="#8db39e"/><text x="975" y="278" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">Csound</text>
+    <rect x="1055" y="235" width="120" height="72" rx="12" fill="#fff" stroke="#8db39e"/><text x="1115" y="278" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">WebGL</text>
+    <rect x="1195" y="235" width="100" height="72" rx="12" fill="#fff" stroke="#8db39e"/><text x="1245" y="278" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">Ear</text>
+    <text x="770" y="345" fill="#334e66" font-size="15">events · synthesis · projection · measurement</text>
+    <text x="770" y="374" fill="#334e66" font-size="15">all derived from the admitted Scenario</text>
+  </g>
+
+  <path d="M305 285H350" fill="none" stroke="#b66a21" stroke-width="5" marker-end="url(#arrow-gold)"/>
+  <path d="M680 285H730" fill="none" stroke="#b66a21" stroke-width="5" marker-end="url(#arrow-gold)"/>
+
+  <rect x="205" y="500" width="990" height="135" rx="18" fill="#244f78"/>
+  <text x="700" y="540" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">GOVERNED LIFECYCLE + DURABLE EVIDENCE</text>
+  <text x="700" y="578" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="700">MIDI2 carries identity and lifecycle · FountainStore owns evidence</text>
+  <text x="700" y="607" text-anchor="middle" fill="#dcecf7" font-family="Arial,sans-serif" font-size="14">admission receipt · run identity · measured Ear observation · verification · terminal result</text>
+  <path d="M1035 405V485H700" fill="none" stroke="#315c83" stroke-width="4" stroke-dasharray="10 9" marker-end="url(#arrow)"/>
+
+  <text x="70" y="692" fill="#46596b" font-family="Arial,sans-serif" font-size="16">Provider-independent request interpretation is guaranteed; local or remote models may collaborate but never become execution authority.</text>
+</svg>

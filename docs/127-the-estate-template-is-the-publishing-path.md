@@ -1,9 +1,9 @@
 # 127 — The Estate Template Is the Publishing Path
 
-> Chapter summary: Fountain Coach publishing follows a CMS-shaped path: typed content enters a domain collection,
-> one institutional Fountain Coach Publication Core renders it, and the native FountainStore publication operation
-> promotes the selected route. Personal Pointer remains the founder publication and design provenance of that core;
-> institutional domains vary in meaning and records without becoming Personal Pointer projections.
+> Chapter summary: Fountain Coach publishing follows a direct-static path: Codex authors each route as complete,
+> checked-in HTML, CSS, and JavaScript under the Fountain Coach Publication Core, and the native FountainStore
+> publication operation promotes those finished bytes. Personal Pointer remains the founder publication and design
+> provenance of that core; institutional domains vary in meaning without becoming Personal Pointer projections.
 
 ![Principal illustration: the Fountain Coach Publication Core receives institutional domains and the adjacent Personal Pointer founder projection, then produces route-scoped public projections](illustrations/127-estate-template-publishing-path.svg)
 
@@ -24,24 +24,37 @@ dependency coherence passes, and searches find no override. Once closed, the ord
 apply without exception. This rule records the migration that moved the Chapter 127 renderer into its released owner;
 it does not create an ongoing development fallback.
 
-The Fountain Coach estate adopts one reusable publishing template. It is the web equivalent of a classical CMS theme:
-the content model supplies records, the template supplies the presentation contract, the route renderer joins them,
-and the publication adapter promotes the result.
+The Fountain Coach estate adopts one reusable publishing template. Codex applies that contract while authoring each
+route, producing complete static HTML, CSS, and JavaScript. The publication adapter promotes that reviewed result.
+There is no intermediate site generator, Markdown-to-HTML compiler, client-side content hydration, or runtime shell
+wrapper in the publication path.
 
 ```text
-domain content record
+domain source and route identity
   → canonical route identity
-  → Fountain Coach Publication Core + domain content renderer
+  → Codex-authored static HTML / CSS / JavaScript under the Publication Core
   → metadata / accessibility / asset checks
   → local preview and AX/VRT proof
   → route-scoped FountainStore publication
   → typed remote read-back
 ```
 
-The shell is not copied into every domain as a new design. It is one versioned contract consumed by each domain
-projection. A domain may change its title, role, sidebar entries, content blocks, language, and density. It may not
+The shell is not regenerated at request time and is not copied into every domain as a new design. It is one versioned
+authoring contract embodied directly by each checked-in route. A domain may change its title, role, sidebar entries,
+content blocks, language, and density. It may not
 remove the estate identity, navigation, theme control, accessibility surface, provenance, legal footer, or publication
 state.
+
+### Direct-static implementation rule
+
+Codex is the authoring-time manager of the estate projection. It may use its repository editing and validation tools
+to compose or revise a route, but the admitted output is the route itself: human-inspectable HTML plus referenced CSS,
+JavaScript, images, and fonts. A browser must be able to render that output without fetching a content record, running
+a template compiler, applying a second shell, or reconstructing the page from Markdown or JSON.
+
+FountainStore may retain provenance, route identity, revisions, receipts, and the final route payload. Those records do
+not authorize a browser-side or deployment-side generator. Reframe's semantic browser mirrors the already-complete
+route and may scope its root-relative assets to the selected host; it must not redesign, hydrate, or wrap the page.
 
 ## Amendment — institutional core and founder projection
 
@@ -77,10 +90,10 @@ status. Each of those effects requires a subsequent bounded scenario and its own
 
 | Layer | Owns | Must not own |
 | --- | --- | --- |
-| Content record | domain meaning, body, media, dates, references, status | shell structure or publication authority |
+| Static route source | complete HTML, domain meaning, body, media, dates, references, status | runtime generation or publication authority |
 | Route manifest | canonical host, path, page identity, predecessor, source record | guessed availability or deployment state |
 | Fountain Coach Publication Core | institutional mark, header, estate navigation, theme/icon control, sidebar frame, main frame, footer, metadata slots | domain claims, founder authorship, Store writes, credentials |
-| Domain renderer | content blocks placed into the shell's named regions | an alternate shell or a second route map |
+| Codex authoring pass | content composed into the shell's named regions before review | a deployed generator, alternate shell, or second route map |
 | Founder publication projection | Personal Pointer authorship, blog navigation, Memory Vector collections, Teatro Score posts | institutional authority, scenario status, runtime or release evidence |
 | Preview and acceptance | local rendering, AX semantics, VRT evidence, link/asset checks | production proof |
 | FountainStore adapter | authenticated route-scoped promotion and typed read-back | browser layout or an unreviewed whole-estate dump |
@@ -126,8 +139,8 @@ visible so a reader can follow continuity.
 ## One publication path
 
 The publication operation is always `estate.publication.sync`: explicit local FountainStore source, authenticated
-remote FountainStore destination, canonical host, normalized path prefix, and typed receipt. The shell renderer is
-upstream of that operation; the web server is downstream of the remote Store projection.
+remote FountainStore destination, canonical host, normalized path prefix, and typed receipt. The checked-in static
+route is upstream of that operation; the web server is downstream of the remote Store projection.
 
 For one page, the operation transfers one selected route. Whole-estate synchronization requires explicit whole-estate
 intent. A static-directory copy, site generator deployment, Caddy copy, generic HTTP wrapper, or browser upload is not
@@ -152,11 +165,12 @@ filled with placeholder pages and are not silently redirected.
 
 1. The Fountain Coach Publication Core is the single institutional estate-template authority; Personal Pointer is its
    founder publication projection and recorded design provenance, not the institutional identity.
-2. Domain content is injected into named shell regions; it does not redefine the shell.
+2. Codex authors domain content directly into named shell regions as final HTML, CSS, and JavaScript; deployed code
+   does not inject, compile, hydrate, or wrap that content.
 3. The route manifest is the join key for navigation, metadata, preview, and publication.
 4. Preview proves rendering; AX proves operability; VRT proves visual legibility; Store read-back proves publication.
 5. Publication is route-scoped by default through native `estate.publication.sync`.
-6. No iframe, static copy, guessed route, or second publication authority may satisfy this contract.
+6. No iframe, generated intermediary, guessed route, or second publication authority may satisfy this contract.
 7. Unknown or unavailable state remains visible as `not established`.
 8. Institutional domain projections MUST identify Fountain Coach and their local authority; they MUST NOT present
    themselves as Personal Pointer publications.
@@ -164,9 +178,10 @@ filled with placeholder pages and are not silently redirected.
    estate-wide evidence or authority types merely because they share the Publication Core.
 10. Moving an identity between institutional domain, founder publication, and content template is a manifest and
     governance change with scenario proof; visual similarity or a shared shell cannot perform that move implicitly.
+11. Reframe's semantic browser mirrors final route bytes and scopes their assets; it MUST NOT become a site generator.
 
 ## Governing sentence
 
-Fountain Coach has one institutional Publication Core and one Store-backed publishing path; institutional domains
-contribute distinct authority, Personal Pointer contributes founder authorship and design provenance, and only
-preview, acceptance, and typed promotion establish what is actually public.
+Fountain Coach has one institutional Publication Core embodied as complete static routes and one Store-backed
+publishing path; institutional domains contribute distinct authority, Personal Pointer contributes founder authorship
+and design provenance, and only preview, acceptance, and typed promotion establish what is actually public.

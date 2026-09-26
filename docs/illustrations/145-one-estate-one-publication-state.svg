@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+  <title id="title">One estate, one publication state, and one governed Reframe surface</title>
+  <desc id="desc">EstatePublisher observes local Store changes and publishes a typed estate state. Every domain shows the same state through its logo, while Reframe Semantic Browser and Copilot read the state and mediate the next governed action.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#f2eee6"/></linearGradient>
+    <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#173b63"/><stop offset="1" stop-color="#2d6a8a"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#e8a63b"/><stop offset="1" stop-color="#f2c96b"/></linearGradient>
+    <linearGradient id="green" x1="0" x2="1"><stop stop-color="#6f9d78"/><stop offset="1" stop-color="#a4c79b"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="11" flood-color="#173b63" flood-opacity=".14"/></filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#d6902f"/></marker>
+    <style>.flow-line{stroke-dasharray:5 9;animation:flow 2.8s linear infinite}@keyframes flow{to{stroke-dashoffset:-28}}@media(prefers-reduced-motion:reduce){.flow-line{animation:none}}</style>
+  </defs>
+  <rect width="1440" height="820" fill="url(#paper)"/><rect x="26" y="26" width="1388" height="768" rx="28" fill="none" stroke="#173b63" stroke-width="2" opacity=".25"/>
+  <text x="78" y="88" fill="#173b63" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="22" letter-spacing="5">GOVERNANCE 145</text>
+  <text x="78" y="140" fill="#173b63" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="40" font-weight="700">One estate. One publication state.</text>
+  <text x="78" y="174" fill="#5a6873" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="19">EstatePublisher publishes · every domain reflects · Reframe understands</text>
+  <g filter="url(#shadow)">
+    <rect x="78" y="252" width="252" height="222" rx="22" fill="#fff" stroke="#b7c8d2" stroke-width="2"/>
+    <rect x="400" y="226" width="280" height="274" rx="26" fill="url(#gold)" stroke="#c47d20" stroke-width="2"/>
+    <rect x="750" y="252" width="250" height="222" rx="22" fill="url(#green)" stroke="#62886a" stroke-width="2"/>
+    <rect x="1070" y="226" width="292" height="274" rx="26" fill="url(#blue)"/>
+    <rect x="214" y="584" width="1012" height="112" rx="22" fill="#fff" stroke="#b7c8d2" stroke-width="2"/>
+  </g>
+  <g fill="#173b63" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif">
+    <text x="204" y="306" text-anchor="middle" font-size="20" font-weight="700">LOCAL FOUNTAINSTORE</text><text x="204" y="346" text-anchor="middle" font-size="17">authored estate state</text><text x="204" y="378" text-anchor="middle" font-size="17">semantic diff + receipt</text><text x="204" y="410" text-anchor="middle" font-size="17">one source of truth</text>
+    <text x="540" y="286" text-anchor="middle" font-size="22" font-weight="700">ESTATEPUBLISHER</text><text x="540" y="328" text-anchor="middle" font-size="17">observe · compare · publish</text><text x="540" y="362" text-anchor="middle" font-size="17">typed state + evidence</text><text x="540" y="396" text-anchor="middle" font-size="17">remote mirror session</text><rect x="438" y="428" width="204" height="34" rx="10" fill="#fffdf8" fill-opacity=".48"/><text x="540" y="450" text-anchor="middle" font-size="13" font-weight="700">sole promotion authority</text>
+    <text x="875" y="306" text-anchor="middle" font-size="20" font-weight="700">ALL DOMAINS</text><text x="875" y="346" text-anchor="middle" font-size="17">one publication state</text><text x="875" y="378" text-anchor="middle" font-size="17">shared logo signal</text><text x="875" y="410" text-anchor="middle" font-size="17">no second authority</text>
+    <text x="1216" y="286" text-anchor="middle" fill="#fffdf8" font-size="21" font-weight="700">REFRAME</text><text x="1216" y="326" text-anchor="middle" fill="#fffdf8" font-size="17">Semantic Browser</text><text x="1216" y="360" text-anchor="middle" fill="#fffdf8" font-size="17">Copilot mediation</text><text x="1216" y="394" text-anchor="middle" fill="#fffdf8" font-size="17">next governed action</text><text x="1216" y="436" text-anchor="middle" fill="#fffdf8" font-size="14">reader + operator, not publisher</text>
+  </g>
+  <path class="flow-line" d="M336 364 H382" fill="none" stroke="#d6902f" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)"/><path class="flow-line" d="M686 364 H732" fill="none" stroke="#d6902f" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)"/><path class="flow-line" d="M1006 364 H1052" fill="none" stroke="#d6902f" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <g fill="#173b63" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif"><text x="254" y="630" font-size="19" font-weight="700">MIDI2 + FOUNTAINSTORE STATE BOUNDARY</text><text x="254" y="662" font-size="16">EstatePublisher emits lifecycle, receipt, drift, and terminal state; Reframe observes it through the native instrument path.</text></g>
+  <rect x="78" y="744" width="1284" height="1" fill="#c9d2d8"/><text x="78" y="775" fill="#5a6873" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="17">A pulsing logo signals state; only a typed Store receipt and remote read-back establish publication.</text>
+</svg>

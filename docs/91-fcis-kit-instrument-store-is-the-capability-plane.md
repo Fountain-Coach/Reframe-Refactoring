@@ -87,13 +87,12 @@ Reframe is not merely a client of the Store. It is the environment in which capa
 developer, composer, or operator enters through Reframe and its Copilot. A reasoning worker may select and compose
 admitted instruments, but neither the model nor an individual instrument owns product authority.
 
-Reframe remains responsible for presentation and observation, while the owning kit remains responsible for executable
-capability authority. Reframe remains responsible for:
+Reframe remains responsible for:
 
-- presenting the mediated request to the owning kit without changing its contract;
+- mediating intention before execution;
 - resolving capability identity and admission;
-- displaying kit-declared permissions, lane, cost, privacy, and consent requirements;
-- displaying the kit's Store binding and receipt;
+- applying permissions, lane, cost, privacy, and consent policy;
+- binding work to a project and FountainStore;
 - exposing state through MIDI2 Monitor and AX; and
 - deciding whether the resulting evidence supports live acceptance or release.
 

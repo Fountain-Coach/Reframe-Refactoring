@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Owner trust root and SecretStore custody</title>
+  <desc id="desc">Private owner keys remain in local SecretStore custody while EstatePublisher sends typed signed requests to the FountainStore host adapter, which returns a redacted terminal receipt.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#282521"/>
+    </marker>
+    <style>
+      .card { fill:#f3efe7; stroke:#282521; stroke-width:2; }
+      .soft { fill:#e8dfd1; stroke:#282521; stroke-width:2; }
+      .label { font: 26px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#282521; }
+      .small { font: 17px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#625b50; }
+      .line { fill:none; stroke:#282521; stroke-width:2; marker-end:url(#arrow); }
+      .dash { stroke-dasharray:8 8; }
+    </style>
+  </defs>
+  <rect width="1200" height="630" fill="#f8f4ec"/>
+  <rect x="28" y="28" width="1144" height="574" rx="8" fill="none" stroke="#b9ad9b" stroke-width="2"/>
+
+  <rect class="soft" x="70" y="92" width="270" height="166" rx="18"/>
+  <text class="label" x="98" y="140">OWNER KEY</text>
+  <text class="small" x="98" y="178">private signing key</text>
+  <text class="small" x="98" y="208">native SecretStore</text>
+  <text class="small" x="98" y="238">never exported</text>
+
+  <rect class="card" x="438" y="92" width="300" height="166" rx="18"/>
+  <text class="label" x="468" y="140">ESTATEPUBLISHER</text>
+  <text class="small" x="468" y="178">typed request</text>
+  <text class="small" x="468" y="208">owner signature</text>
+  <text class="small" x="468" y="238">exact target binding</text>
+
+  <rect class="card" x="842" y="92" width="270" height="166" rx="18"/>
+  <text class="label" x="872" y="140">HOST ADAPTER</text>
+  <text class="small" x="872" y="178">API key reference</text>
+  <text class="small" x="872" y="208">host credential</text>
+  <text class="small" x="872" y="238">native HTTPS only</text>
+
+  <path class="line" d="M340 175 H438"/>
+  <path class="line" d="M738 175 H842"/>
+
+  <rect class="soft" x="170" y="382" width="300" height="142" rx="18"/>
+  <text class="label" x="200" y="430">FOUNTAINSTORE</text>
+  <text class="small" x="200" y="468">active trust set</text>
+  <text class="small" x="200" y="498">backup before change</text>
+
+  <rect class="card" x="650" y="382" width="380" height="142" rx="18"/>
+  <text class="label" x="680" y="430">TERMINAL RECEIPT</text>
+  <text class="small" x="680" y="468">active · backup · health</text>
+  <text class="small" x="680" y="498">redacted evidence only</text>
+
+  <path class="line" d="M977 258 V330 H320 V382"/>
+  <path class="line" d="M470 453 H650"/>
+  <path class="line dash" d="M738 258 V315 H840 V382"/>
+  <text class="small" x="760" y="305">credential-free proof</text>
+
+  <text class="small" x="70" y="574">owner trust root ≠ device key ≠ host credential ≠ TLS key</text>
+</svg>

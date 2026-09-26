@@ -123,3 +123,4 @@ defines host-agent custody and enrollment.
 
 Approve the exact operation on the device at hand; let the native host adapter obtain a short-lived SecretStore lease;
 and leave the secret outside every conversation, MIDI2 message, Store receipt, log, and screenshot.
+

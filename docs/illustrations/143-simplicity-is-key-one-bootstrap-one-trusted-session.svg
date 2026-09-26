@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+  <title id="title">Simplicity is key: one bootstrap, one trusted session</title>
+  <desc id="desc">An owner authorizes a device once through Keychain bootstrap. The remote Golden Key Vault then holds runtime custody for one bounded session. Normal EstatePublisher operations use that session without repeated prompts; expiry, revocation, rotation, and recovery are separate trust transitions. ACME remains a separate TLS certificate authority.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#f2eee6"/></linearGradient>
+    <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#173b63"/><stop offset="1" stop-color="#275d7c"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#e8a63b"/><stop offset="1" stop-color="#f2c96b"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="11" flood-color="#173b63" flood-opacity=".14"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#d6902f"/></marker>
+  </defs>
+  <rect width="1440" height="820" fill="url(#paper)"/>
+  <rect x="26" y="26" width="1388" height="768" rx="28" fill="none" stroke="#173b63" stroke-width="2" opacity=".25"/>
+  <text x="78" y="88" fill="#173b63" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="22" letter-spacing="5">GOVERNANCE 143</text>
+  <text x="78" y="140" fill="#173b63" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="42" font-weight="700">Simplicity is key.</text>
+  <text x="78" y="174" fill="#5a6873" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="19">one owner bootstrap · one bounded session · no repeated ceremony</text>
+
+  <g filter="url(#shadow)">
+    <rect x="78" y="248" width="292" height="214" rx="22" fill="#fff" stroke="#b7c8d2" stroke-width="2"/>
+    <rect x="574" y="220" width="292" height="270" rx="28" fill="url(#gold)" stroke="#c47d20" stroke-width="2"/>
+    <rect x="1070" y="248" width="292" height="214" rx="22" fill="#fff" stroke="#b7c8d2" stroke-width="2"/>
+    <rect x="350" y="590" width="740" height="116" rx="22" fill="url(#blue)"/>
+  </g>
+
+  <g fill="#173b63" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif">
+    <text x="112" y="302" font-size="22" font-weight="700">OWNER BOOTSTRAP</text>
+    <text x="112" y="341" font-size="18">Keychain · exactly once</text>
+    <text x="112" y="373" font-size="18">declared purpose + expiry</text>
+    <text x="112" y="405" font-size="18">no secret enters the request</text>
+
+    <text x="720" y="286" text-anchor="middle" font-size="24" font-weight="700">REMOTE VAULT</text>
+    <text x="720" y="327" text-anchor="middle" font-size="18">Golden Key custody</text>
+    <text x="720" y="359" text-anchor="middle" font-size="18">one trusted session</text>
+    <text x="720" y="391" text-anchor="middle" font-size="18">encrypted records</text>
+    <text x="720" y="423" text-anchor="middle" font-size="18">expiry · revocation</text>
+    <text x="720" y="457" text-anchor="middle" font-size="15" font-weight="700">internal broker ≠ another prompt</text>
+
+    <text x="1104" y="302" font-size="22" font-weight="700">NORMAL OPERATION</text>
+    <text x="1104" y="341" font-size="18">EstatePublisher</text>
+    <text x="1104" y="373" font-size="18">uses the admitted session</text>
+    <text x="1104" y="405" font-size="18">zero repeated prompts</text>
+  </g>
+
+  <path d="M376 355 H548" fill="none" stroke="#d6902f" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M870 355 H1044" fill="none" stroke="#d6902f" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M720 500 V576" fill="none" stroke="#d6902f" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <g fill="#fffdf8" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif">
+    <text x="390" y="635" font-size="21" font-weight="700">TRUST-BOUNDARY CHANGES</text>
+    <text x="390" y="670" font-size="17">rotation · recovery · scope expansion · re-enrollment</text>
+  </g>
+  <rect x="78" y="744" width="1284" height="1" fill="#c9d2d8"/>
+  <text x="78" y="775" fill="#5a6873" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="17">ACME establishes TLS identity only. It does not unlock the vault, enroll a device, or authorize an operation.</text>
+</svg>

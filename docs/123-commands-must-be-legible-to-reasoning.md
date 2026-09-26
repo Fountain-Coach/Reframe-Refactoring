@@ -172,3 +172,4 @@ claim that the current catalogue has passed a declaration audit.
 
 A Reframe command must explain itself well enough for a companion agent to reason with the writer before acting, while
 the MIDI2 instrument contract and terminal evidence remain the authority for what the command can make true.
+

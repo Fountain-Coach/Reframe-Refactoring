@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+  <title id="title">Fountain Media Service is the governed media plane</title>
+  <desc id="desc">An archival source passes through a media compiler into verified poster, reading-size, and large derivatives. FountainStore records identity and evidence, EstatePublisher promotes reviewed routes, and Teatro receives a manifest before progressive media delivery. MIDI2 carries lifecycle events but never media bytes.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#f2eee6"/></linearGradient>
+    <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#173b63"/><stop offset="1" stop-color="#2d6a8a"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#e8a63b"/><stop offset="1" stop-color="#f2c96b"/></linearGradient>
+    <linearGradient id="green" x1="0" x2="1"><stop stop-color="#6f9d78"/><stop offset="1" stop-color="#a4c79b"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="11" flood-color="#173b63" flood-opacity=".14"/></filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#d6902f"/></marker>
+    <style>
+      .flow-line { stroke-dasharray: 5 9; animation: media-flow 2.8s linear infinite; }
+      @keyframes media-flow { to { stroke-dashoffset: -28; } }
+      @media (prefers-reduced-motion: reduce) { .flow-line { animation: none; } }
+    </style>
+  </defs>
+  <rect width="1440" height="820" fill="url(#paper)"/>
+  <rect x="26" y="26" width="1388" height="768" rx="28" fill="none" stroke="#173b63" stroke-width="2" opacity=".25"/>
+  <text x="78" y="88" fill="#173b63" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="22" letter-spacing="5">GOVERNANCE 144</text>
+  <text x="78" y="140" fill="#173b63" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="42" font-weight="700">The governed media plane.</text>
+  <text x="78" y="174" fill="#5a6873" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="19">source bytes · verified derivatives · truthful progressive delivery</text>
+
+  <g filter="url(#shadow)">
+    <rect x="78" y="234" width="230" height="225" rx="22" fill="#fff" stroke="#b7c8d2" stroke-width="2"/>
+    <rect x="366" y="210" width="250" height="273" rx="26" fill="url(#gold)" stroke="#c47d20" stroke-width="2"/>
+    <rect x="674" y="234" width="264" height="225" rx="22" fill="url(#green)" stroke="#62886a" stroke-width="2"/>
+    <rect x="996" y="234" width="190" height="225" rx="22" fill="#fff" stroke="#b7c8d2" stroke-width="2"/>
+    <rect x="1230" y="234" width="132" height="225" rx="22" fill="url(#blue)"/>
+    <rect x="240" y="574" width="960" height="120" rx="22" fill="url(#blue)"/>
+  </g>
+
+  <g fill="#173b63" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif">
+    <text x="108" y="288" font-size="20" font-weight="700">ARCHIVAL SOURCE</text>
+    <text x="108" y="328" font-size="17">immutable master</text>
+    <text x="108" y="360" font-size="17">identity + recovery</text>
+    <text x="108" y="392" font-size="17">authored meaning</text>
+
+    <text x="491" y="270" text-anchor="middle" font-size="22" font-weight="700">MEDIA COMPILER</text>
+    <text x="491" y="314" text-anchor="middle" font-size="17">inspect · derive · validate</text>
+    <text x="491" y="348" text-anchor="middle" font-size="17">dimensions · codecs · hashes</text>
+    <text x="491" y="382" text-anchor="middle" font-size="17">poster · reading · large</text>
+    <rect x="398" y="412" width="186" height="34" rx="10" fill="#fffdf8" fill-opacity=".42"/>
+    <text x="491" y="434" text-anchor="middle" font-size="13" font-weight="700">publication-time · not request-time</text>
+
+    <text x="806" y="288" text-anchor="middle" font-size="20" font-weight="700">VERIFIED PROJECTIONS</text>
+    <text x="806" y="328" text-anchor="middle" font-size="17">content-addressed variants</text>
+    <text x="806" y="362" text-anchor="middle" font-size="17">delivery manifest</text>
+    <text x="806" y="396" text-anchor="middle" font-size="17">Store receipt + readiness</text>
+
+    <text x="1091" y="288" text-anchor="middle" font-size="19" font-weight="700">NETWORK</text>
+    <text x="1091" y="322" text-anchor="middle" font-size="19" font-weight="700">DELIVERY</text>
+    <text x="1091" y="364" text-anchor="middle" font-size="16">manifest → poster</text>
+    <text x="1091" y="398" text-anchor="middle" font-size="16">→ selected variant</text>
+
+    <text x="1296" y="286" text-anchor="middle" fill="#fffdf8" font-size="18" font-weight="700">TEATRO</text>
+    <text x="1296" y="326" text-anchor="middle" fill="#fffdf8" font-size="15">semantic frame</text>
+    <text x="1296" y="358" text-anchor="middle" fill="#fffdf8" font-size="15">progressive media</text>
+    <text x="1296" y="390" text-anchor="middle" fill="#fffdf8" font-size="15">truthful failure</text>
+  </g>
+
+  <path class="flow-line" d="M314 346 H346" fill="none" stroke="#d6902f" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path class="flow-line" d="M622 346 H654" fill="none" stroke="#d6902f" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path class="flow-line" d="M944 346 H976" fill="none" stroke="#d6902f" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path class="flow-line" d="M1192 346 H1212" fill="none" stroke="#d6902f" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g fill="#fffdf8" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif">
+    <text x="274" y="620" font-size="20" font-weight="700">CONTROL + EVIDENCE</text>
+    <text x="274" y="654" font-size="16">FountainStore records identity, lineage, admission, receipts, recovery, and publication history.</text>
+    <text x="274" y="680" font-size="16">EstatePublisher promotes reviewed routes. MIDI2 carries lifecycle only — never media bytes.</text>
+  </g>
+  <rect x="78" y="744" width="1284" height="1" fill="#c9d2d8"/>
+  <text x="78" y="775" fill="#5a6873" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif" font-size="17">A manifest establishes choices and readiness; a URL, cache hit, screenshot, or illustration does not establish publication.</text>
+</svg>

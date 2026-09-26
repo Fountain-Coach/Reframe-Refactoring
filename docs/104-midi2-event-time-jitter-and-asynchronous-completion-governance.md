@@ -193,8 +193,8 @@ cancelled, and completed.
 
 [Chapter 87](87-midi2-monitor-is-the-live-event-mirror.md) governs the MIDI2 Monitor as a mirror rather than an
 authority. [Chapter 88](88-codexkit-is-a-governed-codex-app-server-boundary.md) governs the app-server process and
-typed transport boundary. [Chapter 07](07-scenario-first-development-and-evidence.md) and [Chapter
-08](08-fountainstore-evidence-and-terminal-proof.md) govern scenario evidence and durable terminal proof.
+typed transport boundary. [Chapter 07](07-agent-operating-guide.md) and [Chapter
+08](08-validation-and-acceptance.md) govern scenario evidence and durable terminal proof.
 
 ## Governing sentence
 

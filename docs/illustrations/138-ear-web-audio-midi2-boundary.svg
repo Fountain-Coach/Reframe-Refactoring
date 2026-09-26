@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Ear Web Audio graph to MIDI2 boundary</title>
+  <desc id="desc">Microphone, Teatro and other AudioWorklets connect to an explicit audio tap, then Ear emits MIDI2 UMP and witness telemetry.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 10 5 0 10Z" fill="#262421"/>
+    </marker>
+    <style>
+      .flow { stroke-dasharray: 8 10; animation: flow 1.8s linear infinite; }
+      @keyframes flow { to { stroke-dashoffset: -36; } }
+      @media (prefers-reduced-motion: reduce) { .flow { animation: none; stroke-dasharray: none; } }
+    </style>
+  </defs>
+  <rect width="1200" height="630" fill="#f5f0e8"/>
+  <g fill="none" stroke="#262421" stroke-width="2">
+    <rect x="64" y="96" width="235" height="92" rx="12"/>
+    <rect x="64" y="268" width="235" height="92" rx="12"/>
+    <rect x="64" y="440" width="235" height="92" rx="12"/>
+    <rect x="424" y="226" width="220" height="206" rx="16" fill="#e9dfce"/>
+    <rect x="796" y="154" width="300" height="132" rx="16"/>
+    <rect x="796" y="360" width="300" height="150" rx="16"/>
+    <path class="flow" d="M299 142h125" marker-end="url(#arrowhead)"/>
+    <path class="flow" d="M299 314h125" marker-end="url(#arrowhead)"/>
+    <path class="flow" d="M299 486h125" marker-end="url(#arrowhead)"/>
+    <path class="flow" d="M644 280h152" marker-end="url(#arrowhead)"/>
+    <path class="flow" d="M644 350h152" marker-end="url(#arrowhead)"/>
+  </g>
+  <g fill="#262421" font-family="Courier New,monospace">
+    <text x="88" y="135" font-size="22">microphone</text><text x="88" y="166" font-size="16">optional source</text>
+    <text x="88" y="307" font-size="20">Teatro / Csound</text><text x="88" y="338" font-size="16">Web Audio output</text>
+    <text x="88" y="479" font-size="22">other worklet</text><text x="88" y="510" font-size="16">explicitly connected</text>
+    <text x="450" y="270" font-size="24">AUDIO TAP</text><text x="450" y="308" font-size="14">one declared graph</text><text x="450" y="332" font-size="14">input</text><text x="450" y="356" font-size="14">bounded sample</text><text x="450" y="380" font-size="14">window</text><text x="450" y="400" font-size="14">no UI-thread DSP</text>
+    <text x="856" y="208" font-size="38">EAR</text><text x="856" y="242" font-size="16">AudioWorklet</text><text x="856" y="266" font-size="16">analyzer</text>
+    <text x="835" y="405" font-size="28">MIDI2 UMP</text><text x="835" y="434" font-size="14">validated events</text><text x="835" y="456" font-size="14">timestamps</text><text x="835" y="478" font-size="14">witness telemetry</text>
+  </g>
+</svg>
