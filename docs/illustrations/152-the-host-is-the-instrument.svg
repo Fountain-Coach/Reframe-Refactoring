@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">The host is the instrument</title>
+  <desc id="desc">Reframe and ChatGPT are independent clients of one governed host capability plane. Terminal, filesystem, build, Scenario, EstatePublisher and CodexKit are capabilities behind the host boundary.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#315c83"/></marker>
+  </defs>
+  <rect width="1400" height="760" fill="#f7f4ed"/>
+  <rect x="26" y="26" width="1348" height="708" rx="24" fill="none" stroke="#b9c6cf" stroke-width="2"/>
+  <text x="70" y="78" fill="#315c83" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="4">GOVERNANCE 152 · THE HOST IS THE INSTRUMENT</text>
+  <text x="70" y="120" fill="#20364b" font-family="Arial,sans-serif" font-size="30" font-weight="700">One machine capability plane. More than one client lane.</text>
+  <rect x="70" y="190" width="250" height="135" rx="18" fill="#e5f1fa" stroke="#6c9bc0" stroke-width="2"/>
+  <text x="195" y="228" text-anchor="middle" fill="#315c83" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">REFRAME · IPAD</text>
+  <text x="195" y="266" text-anchor="middle" fill="#17324d" font-family="Arial,sans-serif" font-size="21" font-weight="700">MIDI2 / MIDI-CI</text>
+  <text x="195" y="296" text-anchor="middle" fill="#334e66" font-family="Arial,sans-serif" font-size="14">native owner control lane</text>
+  <rect x="70" y="390" width="250" height="135" rx="18" fill="#e5f1fa" stroke="#6c9bc0" stroke-width="2"/>
+  <text x="195" y="428" text-anchor="middle" fill="#315c83" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">CHATGPT</text>
+  <text x="195" y="466" text-anchor="middle" fill="#17324d" font-family="Arial,sans-serif" font-size="21" font-weight="700">FOUNTAIN MCP</text>
+  <text x="195" y="496" text-anchor="middle" fill="#334e66" font-family="Arial,sans-serif" font-size="14">independent client lane</text>
+  <rect x="415" y="165" width="870" height="430" rx="24" fill="#fffaf0" stroke="#c27524" stroke-width="3"/>
+  <text x="455" y="210" fill="#81430e" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">GOVERNED HOST INSTRUMENT</text>
+  <text x="455" y="248" fill="#17324d" font-family="Arial,sans-serif" font-size="25" font-weight="700">identity · authorization · admission · lifecycle · evidence</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="455" y="300" width="180" height="78" rx="12" fill="#fff" stroke="#b9c6cf"/><text x="545" y="347" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">terminal</text>
+    <rect x="655" y="300" width="180" height="78" rx="12" fill="#fff" stroke="#b9c6cf"/><text x="745" y="347" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">filesystem</text>
+    <rect x="855" y="300" width="180" height="78" rx="12" fill="#fff" stroke="#b9c6cf"/><text x="945" y="347" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">build · test</text>
+    <rect x="1055" y="300" width="180" height="78" rx="12" fill="#fff" stroke="#b9c6cf"/><text x="1145" y="347" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">git</text>
+    <rect x="455" y="410" width="180" height="78" rx="12" fill="#dcefe5" stroke="#6ea887"/><text x="545" y="457" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">Scenario</text>
+    <rect x="655" y="410" width="180" height="78" rx="12" fill="#dcefe5" stroke="#6ea887"/><text x="745" y="457" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">EstatePublisher</text>
+    <rect x="855" y="410" width="180" height="78" rx="12" fill="#dcefe5" stroke="#6ea887"/><text x="945" y="457" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">process · logs</text>
+    <rect x="1055" y="410" width="180" height="78" rx="12" fill="#f6cc7b" stroke="#c27524"/><text x="1145" y="447" text-anchor="middle" fill="#17324d" font-size="18" font-weight="700">CodexKit</text><text x="1145" y="470" text-anchor="middle" fill="#81430e" font-size="13">optional capability</text>
+  </g>
+  <path d="M320 258H400" fill="none" stroke="#315c83" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M320 458H400" fill="none" stroke="#315c83" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="420" y="625" width="860" height="65" rx="16" fill="#244f78"/>
+  <text x="850" y="651" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">AUTHORITY STAYS WITH THE HOST</text>
+  <text x="850" y="676" text-anchor="middle" fill="#dcecf7" font-family="Arial,sans-serif" font-size="15">clients and transports may change · owned capability remains reachable</text>
+</svg>
