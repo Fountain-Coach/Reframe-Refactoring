@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Production runtime nodes are artifact-only</title>
+  <desc id="desc">A builder creates a signed immutable artifact which EstatePublisher transfers to a production runtime. A barrier marks compilation as forbidden on production.</desc>
+  <rect width="1200" height="675" fill="#f6f1e7"/>
+  <rect x="32" y="32" width="1136" height="611" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="64" y="82" font-family="Courier New, monospace" font-size="26" fill="#111">PRODUCTION RUNTIME — ARTIFACT ONLY</text>
+  <text x="64" y="113" font-family="Courier New, monospace" font-size="15" fill="#333">CHAPTER 148 / BUILDER-RUNTIME AUTHORITY BOUNDARY</text>
+  <g font-family="Courier New, monospace" fill="#111" stroke="#111" stroke-width="2">
+    <rect x="95" y="205" width="260" height="180" fill="none"/>
+    <text x="122" y="245" font-size="20" stroke="none">ADMITTED BUILDER</text>
+    <text x="122" y="286" font-size="15" stroke="none">build / test</text>
+    <text x="122" y="314" font-size="15" stroke="none">package / sign</text>
+    <text x="122" y="342" font-size="15" stroke="none">digest / provenance</text>
+    <rect x="470" y="235" width="260" height="120" fill="none"/>
+    <text x="496" y="276" font-size="20" stroke="none">IMMUTABLE ARTIFACT</text>
+    <text x="496" y="313" font-size="15" stroke="none">version + digest + proof</text>
+    <rect x="845" y="205" width="260" height="180" fill="none"/>
+    <text x="872" y="245" font-size="20" stroke="none">PRODUCTION RUNTIME</text>
+    <text x="872" y="286" font-size="15" stroke="none">verify / activate</text>
+    <text x="872" y="314" font-size="15" stroke="none">serve / read-back</text>
+    <text x="872" y="342" font-size="15" stroke="none">rollback</text>
+    <line x1="355" y1="295" x2="470" y2="295"/>
+    <path d="M456 287l14 8-14 8" fill="none"/>
+    <line x1="730" y1="295" x2="845" y2="295"/>
+    <path d="M831 287l14 8-14 8" fill="none"/>
+    <line x1="805" y1="165" x2="805" y2="430" stroke-dasharray="9 7"/>
+    <text x="765" y="458" font-size="15" stroke="none">AUTHORITY BOUNDARY</text>
+    <line x1="880" y1="485" x2="1070" y2="485" stroke-width="4"/>
+    <line x1="880" y1="535" x2="1070" y2="535" stroke-width="4"/>
+    <line x1="895" y1="470" x2="1055" y2="550" stroke-width="5"/>
+    <text x="900" y="585" font-size="20" stroke="none">NO BUILD ON TARGET</text>
+  </g>
+  <text x="64" y="610" font-family="Courier New, monospace" font-size="14" fill="#333">EstatePublisher: desired state / approval / artifact admission / atomic activation</text>
+</svg>
