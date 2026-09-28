@@ -4,7 +4,7 @@
 
 - **Direction:** integration → publication for Chapter 154 and the repaired Chapter 153 illustration.
 - **Publication source:** this repository, commit pending review.
-- **Integration counterpart:** `Fountain-Coach/midi2-gpu-fabric`, commit pending review.
+- **Integration counterpart:** `Fountain-Coach/midi2-gpu-fabric@55f9a8d25` on `EstatePublisher-Refactoring`.
 - **Claim boundary:** synchronized governance source only. Route materialization, Store admission, EstatePublisher
   publication, remote read-back, and public HTTPS remain separately evidenced operations.
 
