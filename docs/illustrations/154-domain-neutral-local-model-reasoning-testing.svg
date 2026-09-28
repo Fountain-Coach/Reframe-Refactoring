@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Domain-neutral local-model reasoning test boundary</title>
+  <desc id="desc">A finite MIDI2 contract and grounded state enter a local model. Its typed proposal, clarification, or refusal is tested directly and through a MIDI2 loopback before reaching the native resolver. Effects remain outside the harness.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f2e8"/><stop offset="1" stop-color="#e7ded0"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" x2="1">
+      <stop offset="0" stop-color="#193b4a"/><stop offset="1" stop-color="#286b73"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#193b4a" flood-opacity=".15"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#c56b45"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" fill="url(#paper)"/>
+  <path d="M0 510C190 465 330 560 510 510s330-50 690 5v115H0Z" fill="#d7c9b8" opacity=".48"/>
+  <text x="72" y="74" font-family="Georgia,serif" font-size="34" fill="#193b4a">Reasoning is tested before authority</text>
+  <text x="74" y="107" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#c56b45">DOMAIN-NEUTRAL · OFFLINE · MIDI2-AWARE</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="160" width="235" height="220" rx="18" fill="#fffdf8" stroke="#b8a997" stroke-width="2"/>
+    <rect x="335" y="160" width="235" height="220" rx="18" fill="#fffdf8" stroke="#b8a997" stroke-width="2"/>
+    <rect x="600" y="160" width="235" height="220" rx="18" fill="#fffdf8" stroke="#b8a997" stroke-width="2"/>
+    <rect x="865" y="160" width="265" height="220" rx="18" fill="#fffdf8" stroke="#b8a997" stroke-width="2"/>
+  </g>
+
+  <g font-family="Arial,sans-serif" fill="#193b4a">
+    <text x="94" y="197" font-size="14" letter-spacing="1.6" fill="#c56b45">INPUT</text>
+    <text x="94" y="232" font-size="24" font-weight="700">Contract + state</text>
+    <text x="94" y="268" font-size="15">finite MIDI2 catalog</text>
+    <text x="94" y="294" font-size="15">typed schemas</text>
+    <text x="94" y="320" font-size="15">grounded observation</text>
+    <text x="94" y="346" font-size="15">natural-language task</text>
+
+    <text x="359" y="197" font-size="14" letter-spacing="1.6" fill="#c56b45">REASON</text>
+    <text x="359" y="232" font-size="24" font-weight="700">Local model</text>
+    <text x="359" y="270" font-size="15">candidate intent</text>
+    <text x="359" y="296" font-size="15">clarification</text>
+    <text x="359" y="322" font-size="15">typed refusal</text>
+    <text x="359" y="353" font-size="14" fill="#6d6259">no authority · no secrets</text>
+
+    <text x="624" y="197" font-size="14" letter-spacing="1.6" fill="#c56b45">COMPARE</text>
+    <text x="624" y="232" font-size="24" font-weight="700">Two test paths</text>
+    <text x="624" y="270" font-size="15">direct semantic mode</text>
+    <text x="624" y="300" font-size="15">MIDI2 loopback mode</text>
+    <text x="624" y="340" font-size="15">same typed result?</text>
+    <circle cx="636" cy="365" r="6" fill="#286b73"/><text x="651" y="371" font-size="14">yes → continue</text>
+
+    <text x="889" y="197" font-size="14" letter-spacing="1.6" fill="#c56b45">NATIVE ORACLE</text>
+    <text x="889" y="232" font-size="24" font-weight="700">Resolver</text>
+    <text x="889" y="270" font-size="15">admit one capability</text>
+    <text x="889" y="296" font-size="15">or fail closed</text>
+    <text x="889" y="334" font-size="14" fill="#6d6259">effects remain outside</text>
+    <text x="889" y="359" font-size="14" fill="#6d6259">with owner + adapter</text>
+  </g>
+
+  <g stroke="#c56b45" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M305 270h25"/><path d="M570 270h25"/><path d="M835 270h25"/>
+  </g>
+  <path d="M455 402C455 455 715 455 715 402" fill="none" stroke="#286b73" stroke-width="3" stroke-dasharray="8 9"/>
+  <text x="510" y="488" font-family="Arial,sans-serif" font-size="15" fill="#286b73">loopback checks the boundary, not production</text>
+
+  <rect x="70" y="542" width="1060" height="1" fill="#b8a997"/>
+  <text x="70" y="575" font-family="Arial,sans-serif" font-size="14" fill="#6d6259">EstatePublisher and EP-02 are fixtures — not the harness's hidden vocabulary.</text>
+  <text x="1130" y="575" text-anchor="end" font-family="Arial,sans-serif" font-size="14" fill="#c56b45">CHAPTER 154 · UNPUBLISHED PREVIEW</text>
+</svg>

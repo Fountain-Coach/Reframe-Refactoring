@@ -1,5 +1,13 @@
 # Source and Synchronization Contract
 
+## Current targeted synchronization — Chapters 153–154 publication cohort (2026-09-28)
+
+- **Direction:** integration → publication for Chapter 154 and the repaired Chapter 153 illustration.
+- **Publication source:** this repository, commit pending review.
+- **Integration counterpart:** `Fountain-Coach/midi2-gpu-fabric`, commit pending review.
+- **Claim boundary:** synchronized governance source only. Route materialization, Store admission, EstatePublisher
+  publication, remote read-back, and public HTTPS remain separately evidenced operations.
+
 ## Current targeted synchronization — Chapters 152–153 and Chapter 148 (2026-09-28)
 
 - **Publication source:** `Fountain-Coach/Reframe-Refactoring@47f7be5` for Chapters 152–153; Chapter 148 was received from integration and published at `0497f4d`.
