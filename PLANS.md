@@ -2192,3 +2192,17 @@ snapshot has no Chapter 131 route. No public publication claim is made.
   focused acceptance before further exposure changes.
 - **Reciprocal integration copy:**
   `midi2-gpu-fabric/apps/modernization-studio/docs/reframe-grounding-first-refactor/147-local-route-materialization-estatepublisher-preview.md`.
+# Current publication slice — Chapters 153–154 (2026-09-28)
+
+- **Chapters read:** 07 (bounded plan and explicit source authority); 08 (artifact-bound claims); 80 (independent
+  Governance projection); 92 rules 1–9 (shared estate contract and public-data boundary); 116 rules 1–10
+  (host/path-scoped Store publication, typed read-back, HTTPS, and matching digest).
+- **What they forbid here:** hard-coding publication state in chapter prose, publishing Chapter 154 before Chapter
+  153, using the retired generator or rsync deployment path, whole-estate synchronization, direct Hetzner filesystem
+  mutation, or claiming completion from HTTP reachability without the EstatePublisher receipt.
+- **Conflicts:** the retained `site/` snapshot cannot generate these routes, while the integration repository now owns
+  the admitted Swift `FountainCoachGovernanceRouteBuild` adapter. Source doctrine remains authoritative here; the
+  checked-in estate route is materialized by that adapter and publication remains route-scoped EstatePublisher.
+- **Excluded, and why:** no DNS, certificate, edge-binding, service-release, or whole-estate mutation is requested;
+  both chapter routes are published sequentially through `estate.publication.sync` only after their individual live
+  numbering fence and local acceptance pass.
