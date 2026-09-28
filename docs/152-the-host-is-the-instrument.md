@@ -248,4 +248,3 @@ It establishes the authority boundary that implementations must satisfy.
 ## Governing sentence
 
 **The host is the instrument: terminal, filesystem, build, Scenario, publication, and Codex are capabilities of an admitted machine, and no model, client, transport, subscription, or relay is allowed to stand between the owner and the governed capabilities of that machine.**
-
