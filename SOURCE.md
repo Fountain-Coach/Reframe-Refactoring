@@ -1,5 +1,12 @@
 # Source and Synchronization Contract
 
+## Current targeted synchronization — Chapters 152–153 and Chapter 148 (2026-09-28)
+
+- **Publication source:** `Fountain-Coach/Reframe-Refactoring@47f7be5` for Chapters 152–153; Chapter 148 was received from integration and published at `0497f4d`.
+- **Direction:** Chapters 152–153 publication → integration; Chapter 148 integration → publication.
+- **Integration counterpart:** `Fountain-Coach/midi2-gpu-fabric@0e0f9be9` for the synchronized 152–153 cohort; Chapter 148 is present in `ffca9f733`.
+- **Validation:** `Scripts/sync-integration-copy --check` passes. This records source parity only; route publication and live acceptance remain separate gates.
+
 ## Current targeted synchronization — subordinate MIDI2 estate cache instrument (2026-09-22)
 
 - **Change:** amend Chapter 116 so restart continuity is owned by a separately enrolled subordinate MIDI2 cache instrument, not an opaque filesystem cache or second FountainStore authority.
